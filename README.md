@@ -1,0 +1,71 @@
+# pokedata
+
+> **Projet de fans non officiel.** Données © Nintendo / Creatures Inc. / GAME FREAK inc. / The Pokémon Company. Ni affilié, ni approuvé par eux. Voir [NOTICE.md](NOTICE.md).
+
+Base de données Pokémon ouverte, vérifiée et multilingue (ja, en, fr, de, it, es, es-419, ko, zh-Hans, zh-Hant + romaji), publiée sous forme de :
+
+- **API statique JSON** : <https://sigjouea.github.io/pokedata/api/v1/index.json>
+- **base SQLite** téléchargeable à chaque version de données (Releases `data-AAAA.MM.JJ`)
+- **CSV** triés dans [`db/data/`](db/data), qui sont la source de vérité (diffs lisibles d'une mise à jour à l'autre)
+
+## Contenu (phase 1)
+
+Espèces (1025) et formes (1588) pour chaque jeu du périmètre (Rouge/Bleu → Légendes Z-A et leurs DLC), avec types, statistiques, talents, taille, poids, taux de capture, EV, groupes d'œufs, sexe, croissance, et les noms officiels dans chaque langue où le jeu est sorti (`game_language`).
+
+Prévu ensuite : évolutions et Pokédex régionaux, capacités et apprentissages, objets, lieux et rencontres, GO, tables des types, combats. Voir [`docs/plan.md`](docs/plan.md).
+
+## Vérification
+
+Chaque valeur a une provenance (`citation` → `source_document`, avec empreinte sha256 du fichier ou de la révision de page) et un statut (`verification`) :
+
+| Statut | Règle |
+|---|---|
+| `game-data` | confirmé par extraction des données des jeux |
+| `unanimous` | toutes les sources disponibles concordent |
+| `majority` | au moins 2 sources concordantes, dont une de rang 1–2 |
+| `single-source` | une seule source existe (signalé dans l'API) |
+| `manual` | référentiel saisi à la main et sourcé |
+
+Les désaccords entre sources sont conservés dans `discrepancy` (et dans l'API, champ `discrepancies`). Une valeur déjà vérifiée n'est re-vérifiée que si son empreinte change. Aucun texte rédigé par un wiki n'est stocké : uniquement des faits et des textes officiels des jeux.
+
+## API
+
+Adresses = identifiants du Pokédex (numéro national, `{numéro}-{forme}` pour les formes) ; les slugs lisibles sont fournis en alias.
+
+| Point d'accès | Contenu |
+|---|---|
+| `api/v1/index.json` | versions, compteurs, liste des points d'accès |
+| `api/v1/pokemon/index.json` | toutes les espèces (noms, formes, types actuels) |
+| `api/v1/pokemon/{id}.json` | une espèce, ses formes et leurs données par jeu |
+| `api/v1/form/{form_id}.json` | une forme (ex. `6-mega-x`, `37-alola`) |
+| `api/v1/ability/{id}.json` | un talent, ses noms et ses porteurs par jeu |
+| `api/v1/type/index.json`, `game/index.json`, `game/{id}.json` | référentiels |
+| `api/v1/search/{lang}.json` | index de recherche `[nom normalisé, nom, id]` |
+| `api/v1/meta/{sources,changelog,verification,languages}.json` | provenance, journal, statuts |
+| `api/v1/download.json` | lien vers la base SQLite de la version courante |
+
+Les fichiers de données ne contiennent ni date ni numéro de version (seul `index.json` en a), pour que chaque mise à jour ne modifie que ce qui a réellement changé.
+
+## Construire localement
+
+```sh
+python3 scripts/build_sqlite.py      # db/data/*.csv + db/schema.sql -> build/pokedata.sqlite
+python3 scripts/export_api.py        # -> site/api/v1/**
+python3 -m unittest discover tests
+```
+
+Réimporter depuis les sources (nécessite git, Node.js et .NET 10) :
+
+```sh
+python3 scripts/fetch/fetch_sources.py   # cache/ : PokeAPI, Showdown, extraction PKHeX, pages Bulbapedia/Poképédia
+python3 scripts/import_phase1.py         # -> db/data/*.csv + reports/
+python3 scripts/changelog.py             # -> CHANGELOG.md
+```
+
+## Journal
+
+Voir [CHANGELOG.md](CHANGELOG.md) (généré depuis la table `update_log`).
+
+## Licence
+
+Code et structure : [MIT](LICENSE). Les noms, textes et données Pokémon restent la propriété de leurs ayants droit ([NOTICE.md](NOTICE.md)).

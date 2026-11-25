@@ -1,0 +1,71 @@
+id,source_id,locator,revision,retrieved_at,content_sha256
+1,bulbapedia,https://bulbapedia.bulbagarden.net/wiki/Gigantamax (oldid 4669238),4669238,2026-11-25T20:05:16Z,a40f22fa8cbecd913b0efd00f36e4447cce7a91047921e819c9ce691d727b3a2
+2,pokepedia,https://www.pokepedia.fr/Cat%C3%A9gorie:Pok%C3%A9mon_l%C3%A9gendaire,categorymembers@2026-11-25,2026-11-25T20:05:16Z,ea4aa078afaecf9747cd6038959b11c89758c8b0cfd327eeaf80feb456294a13
+3,pokepedia,https://www.pokepedia.fr/Cat%C3%A9gorie:Pok%C3%A9mon_fabuleux,categorymembers@2026-11-25,2026-11-25T20:05:16Z,a61bb8bca6883ac868ac6e4e38b3df62a9c96d722235185ad7e56ac081c21e9a
+4,pokepedia,https://www.pokepedia.fr/Cat%C3%A9gorie:Ultra-Chim%C3%A8re,categorymembers@2026-11-25,2026-11-25T20:05:16Z,916463c556b02c433d1adc2ba23a7ade49dfd93b31993367a88c5843798c70aa
+5,pokepedia,https://www.pokepedia.fr/Cat%C3%A9gorie:Pok%C3%A9mon_Paradoxe,categorymembers@2026-11-25,2026-11-25T20:05:16Z,b9c9f47f9042c2ae0347a5815ff5083e465e45a54bf8d91e75f672787db25107
+6,bulbapedia,https://bulbapedia.bulbagarden.net/wiki/Category:Legendary_Pok%C3%A9mon,categorymembers@2026-11-25,2026-11-25T20:05:16Z,aef05802d5f14434676d8f577b7f5a81dccc205d1e7f12c4ece4bc7aa2d1c8aa
+7,bulbapedia,https://bulbapedia.bulbagarden.net/wiki/Category:Mythical_Pok%C3%A9mon,categorymembers@2026-11-25,2026-11-25T20:05:16Z,d325c632e4782f142974dad665866418eb2260740ec85954a296b07abeed1b5e
+8,bulbapedia,https://bulbapedia.bulbagarden.net/wiki/Category:Ultra_Beasts,categorymembers@2026-11-25,2026-11-25T20:05:16Z,73908e719a5f84772043ce88bb3b68588e1b3ddeb6728499e5e95353acc124c8
+9,bulbapedia,https://bulbapedia.bulbagarden.net/wiki/Category:Paradox_Pok%C3%A9mon,categorymembers@2026-11-25,2026-11-25T20:05:16Z,6270a5610fa47ab67018ae985615d91f09f640ee80c6ea82fa94425108a4b33c
+10,bulbapedia,https://bulbapedia.bulbagarden.net/wiki/Category:Baby_Pok%C3%A9mon,categorymembers@2026-11-25,2026-11-25T20:05:16Z,ba04339ec41e0a71ed42249fcc742929df358659e4bbd6e925ec09a661b7dc5f
+11,bulbapedia,https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_with_gender_differences (oldid 4668355),4668355,2026-11-25T20:05:16Z,960adbd57831b15d29a0ad61fe23db3d3dbbbe321b3ef89fae81cf51bdef6271
+12,pokeapi,data/v2/csv/pokemon_species.csv@de6760be38b6,de6760be38b60a3024f1d9054330ff265f0dc619,2026-11-25T19:57:08Z,e66e2eeb25fd3836b0ebab6bf87bbf01960aa3c0555e2bac495fa8393c5e0c45
+13,showdown,data/pokedex.ts (mod gen9)@c7fa6f16503d,c7fa6f16503de510c319239b5b2d29d4f7abd8c4,2026-11-25T19:57:08Z,5e572601f4700f99835845eee5cd3e53362e43d885e2753fcc32418f636b83ed
+14,pkhex,PKHeX.Core 26.10.18 · PersonalTable.SV,PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,931022a402fbb4d9ab6dd7ed1b4b83ef54ff524a728309ddf11c4ff205ee214a
+15,pkhex,PKHeX.Core 26.10.18 · PersonalTable.BDSP,PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,435f48bc6f21030cacbdca768915d4461a0ecdbfcd556220fc3b69a36930a409
+16,pkhex,PKHeX.Core 26.10.18 · PersonalTable.SW,PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,96c2fffeeaea31dd41f157edf4344c6cf32e3e8fc6075ed04318d212604ed37c
+17,pkhex,PKHeX.Core 26.10.18 · PersonalTable.USUM,PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,bc2389585b13e4a6417875211c5858310038345b98dab363b6c6a42d7f3ba279
+18,pokeapi,data/v2/csv/pokemon_forms.csv@de6760be38b6,de6760be38b60a3024f1d9054330ff265f0dc619,2026-11-25T19:57:08Z,99bf8f7ad4dc1f2e291357a090cef6a575623ec3cbf9030d0e33656e6e608ae2
+19,pkhex,PKHeX.Core 26.10.18 · PersonalTable.RB,PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,90921dcad3bc3679889db31825e11d13ca7221a20cda365eedc80bda83d60a36
+20,pkhex,PKHeX.Core 26.10.18 · PersonalTable.GS,PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,4ad976d664c0be17f879cd24e9559bb6da29145da8951f080902c10e31bd091b
+21,pkhex,PKHeX.Core 26.10.18 · PersonalTable.RS,PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,32d3f6d6cb8f10bee9bd852672ffecdd5b40ebdb6e19f9b7ec9ee5c7e9900fb6
+22,pkhex,PKHeX.Core 26.10.18 · PersonalTable.DP,PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,0d657bbc0cf1c2c89c9649b36db46a657dd0c3c4e41337597d5173689ae30c65
+23,pkhex,PKHeX.Core 26.10.18 · PersonalTable.BW,PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,98ca65ada380c304e4c3caeec26f00c20739962466a47e202856d806f8679e34
+24,pkhex,PKHeX.Core 26.10.18 · PersonalTable.XY,PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,8d03f896650005d4074946918d65763f68fa1ff71b3a21c14385ececef9a9fd8
+25,pkhex,PKHeX.Core 26.10.18 · PersonalTable.SM,PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,95ebcda1ab55e516738d29a47987c7758e094c1cf8410a3306c4c64195b06eaf
+26,pkhex,PKHeX.Core 26.10.18 · PersonalTable.LGPE,PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,b6c2b1e521e34021f872099ddbbe66b82296a4c4a2ea5e82b07d548edc4c9634
+27,pkhex,PKHeX.Core 26.10.18 · PersonalTable.LA,PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,b077690347514a6e4b7a561d94fda9026ee5050145aedfab7ee8f90b397769fd
+28,pkhex,PKHeX.Core 26.10.18 · PersonalTable.FR,PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,0ab797a921f4aba98a9b0168dff825e9ec5c9e1e7ae16c70156e981293de53a7
+29,pkhex,PKHeX.Core 26.10.18 · PersonalTable.E,PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,30246345822e6a6b5b9621d049337d252ff2336787f878ad035a4c8ff16d4418
+30,pkhex,PKHeX.Core 26.10.18 · PersonalTable.PT,PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,31bb81630c28dd25b2641d081316935a56a8b6faf8d297c860b0c5f9291d8d45
+31,pkhex,PKHeX.Core 26.10.18 · PersonalTable.HGSS,PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,71e29c500fc56c37fd5f52323263baa283d8547b6e726cc314919038b1ac0e1d
+32,pkhex,PKHeX.Core 26.10.18 · PersonalTable.B2W2,PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,2607d4bb2093af24994c08e547905c14b674a646a023dc2e4f45b6c99e0d4919
+33,pkhex,PKHeX.Core 26.10.18 · PersonalTable.ORAS,PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,17033ec73684602abd37edd83629bc04c71512745c7f4c109fd7ba073955f7d0
+34,pkhex,PKHeX.Core 26.10.18 · PersonalTable.ZA,PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,881b5b3d668b8a0a2a9ae34518be49e0a12eec6d43a34a20ef653fea1c16c38d
+35,pokeapi,data/v2/csv/pokemon_stats.csv@de6760be38b6,de6760be38b60a3024f1d9054330ff265f0dc619,2026-11-25T19:57:08Z,fa2c44263a3706468682fefc3e0b3c4f5487fe9febed7d4ebcd6939c34b16aa8
+36,pokeapi,data/v2/csv/pokemon_types.csv@de6760be38b6,de6760be38b60a3024f1d9054330ff265f0dc619,2026-11-25T19:57:08Z,f1fc4bfd657a034ea3bf6972423b10276424aa068577b304a78a08996425ba05
+37,pokeapi,data/v2/csv/pokemon_abilities.csv@de6760be38b6,de6760be38b60a3024f1d9054330ff265f0dc619,2026-11-25T19:57:08Z,4a79ee53d386a8ad3a89657483ddfd31594e05a5d52400fe131e5e4dfd7ec04a
+38,showdown,data/mods/gen5/pokedex.ts (mod gen5)@c7fa6f16503d,c7fa6f16503de510c319239b5b2d29d4f7abd8c4,2026-11-25T19:57:08Z,ab262749c0ee90268aee92343a186597765daadb12373796aaebe0ab98d48b6f
+39,showdown,data/mods/gen8bdsp/pokedex.ts (mod gen8bdsp)@c7fa6f16503d,c7fa6f16503de510c319239b5b2d29d4f7abd8c4,2026-11-25T19:57:08Z,01c5fc272227100963b5e6c3e65130d69bc63d423a258676d7738640d0ee105a
+40,showdown,data/mods/gen5bw1/pokedex.ts (mod gen5bw1)@c7fa6f16503d,c7fa6f16503de510c319239b5b2d29d4f7abd8c4,2026-11-25T19:57:08Z,a9412b0363cbddae117cce06caa60f1998ecfdee310ad97037d25a29b546b072
+41,pkhex,PKHeX.Core 26.10.18 · PersonalTable.C,PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,4ad976d664c0be17f879cd24e9559bb6da29145da8951f080902c10e31bd091b
+42,showdown,data/mods/gen2/pokedex.ts (mod gen2)@c7fa6f16503d,c7fa6f16503de510c319239b5b2d29d4f7abd8c4,2026-11-25T19:57:08Z,93b42665a92f2e2916cd99661cc0343b7d54388d141b41969e194c18f7e10717
+43,showdown,data/mods/gen4/pokedex.ts (mod gen4)@c7fa6f16503d,c7fa6f16503de510c319239b5b2d29d4f7abd8c4,2026-11-25T19:57:08Z,8ee17d63fed6f5255e7ec531032e237a2a539782e013dbe013fc845a86d3d2d6
+44,showdown,data/mods/gen3/pokedex.ts (mod gen3)@c7fa6f16503d,c7fa6f16503de510c319239b5b2d29d4f7abd8c4,2026-11-25T19:57:08Z,5e572601f4700f99835845eee5cd3e53362e43d885e2753fcc32418f636b83ed
+45,showdown,data/mods/gen3frlg/pokedex.ts (mod gen3frlg)@c7fa6f16503d,c7fa6f16503de510c319239b5b2d29d4f7abd8c4,2026-11-25T19:57:08Z,5e572601f4700f99835845eee5cd3e53362e43d885e2753fcc32418f636b83ed
+46,showdown,data/mods/gen7letsgo/pokedex.ts (mod gen7letsgo)@c7fa6f16503d,c7fa6f16503de510c319239b5b2d29d4f7abd8c4,2026-11-25T19:57:08Z,2ee388fba8680281c221621cf25878d366b3540af6341391ef11d8c3d6828616
+47,showdown,data/mods/gen6/pokedex.ts (mod gen6)@c7fa6f16503d,c7fa6f16503de510c319239b5b2d29d4f7abd8c4,2026-11-25T19:57:08Z,cf692e61ba60a9affd69e97f12b04b8b6a2d74103bd0ef0df6194bf2c0a19ce5
+48,showdown,data/mods/gen4pt/pokedex.ts (mod gen4pt)@c7fa6f16503d,c7fa6f16503de510c319239b5b2d29d4f7abd8c4,2026-11-25T19:57:08Z,5e572601f4700f99835845eee5cd3e53362e43d885e2753fcc32418f636b83ed
+49,showdown,data/mods/gen1/pokedex.ts (mod gen1)@c7fa6f16503d,c7fa6f16503de510c319239b5b2d29d4f7abd8c4,2026-11-25T19:57:08Z,ac05fc45df4674aaf4e4fdf70dbc468f6448680c47de85934feba85640548853
+50,showdown,data/mods/gen3rs/pokedex.ts (mod gen3rs)@c7fa6f16503d,c7fa6f16503de510c319239b5b2d29d4f7abd8c4,2026-11-25T19:57:08Z,5e572601f4700f99835845eee5cd3e53362e43d885e2753fcc32418f636b83ed
+51,showdown,data/mods/gen7sm/pokedex.ts (mod gen7sm)@c7fa6f16503d,c7fa6f16503de510c319239b5b2d29d4f7abd8c4,2026-11-25T19:57:08Z,daa40abd922e31c14fcb4b1e938154b51ad3e72a03860a4f8919245055e6f24f
+52,showdown,data/mods/gen8/pokedex.ts (mod gen8)@c7fa6f16503d,c7fa6f16503de510c319239b5b2d29d4f7abd8c4,2026-11-25T19:57:08Z,ef0511011bb28806053e9993f6f466d011933054e7a2ed46c0c8ee2f0771c3a6
+53,showdown,data/mods/gen7/pokedex.ts (mod gen7)@c7fa6f16503d,c7fa6f16503de510c319239b5b2d29d4f7abd8c4,2026-11-25T19:57:08Z,243644f150123187c6941ae89a92f1be3d0ea7e128f22e759d5924b334ce529e
+54,showdown,data/mods/gen6xy/pokedex.ts (mod gen6xy)@c7fa6f16503d,c7fa6f16503de510c319239b5b2d29d4f7abd8c4,2026-11-25T19:57:08Z,a96757e62c6641cb5c80a8f878fef129544a16a9feb310491c7133959fdb4838
+55,pkhex,PKHeX.Core 26.10.18 · PersonalTable.Y,PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,127821b8a81fbafff667e6afee0e9d6d6aab7cfe0b2fee003487884bf65c02de
+56,showdown,data/mods/gen9legends/pokedex.ts (mod gen9legends)@c7fa6f16503d,c7fa6f16503de510c319239b5b2d29d4f7abd8c4,2026-11-25T19:57:08Z,c54238bc10b5f9e5839942b527695236d0133a83886b621e9fec6364d2abcb09
+57,showdown,data/mods/gen8legends/pokedex.ts (mod gen8legends)@c7fa6f16503d,c7fa6f16503de510c319239b5b2d29d4f7abd8c4,2026-11-25T19:57:08Z,9f7ff2068264c929715b710d1ffc723809ff5bb13ba31c43f8cdccdd911a7438
+58,pkhex,PKHeX.Core 26.10.18 · PersonalTable.LG,PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,43eb464ddd2713820b1edb3d02cf7c3281b89bb0a787f585bec48e09fed80c9f
+59,showdown,data/abilities.ts@c7fa6f16503d,c7fa6f16503de510c319239b5b2d29d4f7abd8c4,2026-11-25T19:57:08Z,e942ef6a75cdd50095f6b68c27e772ea91f2202714a30b04539ff17b7b93c065
+60,pokeapi,data/v2/csv/ability_names.csv@de6760be38b6,de6760be38b60a3024f1d9054330ff265f0dc619,2026-11-25T19:57:08Z,ce749a480b4320847fcf5656adf7af3b49830ef13da84fd43de1df5adf19e6c5
+61,pkhex,"PKHeX.Core 26.10.18 · GameInfo.Strings (species, abilities, types)",PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,03e50ea298b32aa7d3d69ab6d82916508a960f47ec89220dcd2624a624de085c
+62,bulbapedia,https://bulbapedia.bulbagarden.net/wiki/List_of_Japanese_Pok%C3%A9mon_names (oldid 4646867),4646867,2026-11-25T20:05:16Z,95345c0400df2c4634ca9d9557b8c25a8c27ef15a810acb13ab5fe19155fc66f
+63,bulbapedia,https://bulbapedia.bulbagarden.net/wiki/List_of_French_Pok%C3%A9mon_names (oldid 4501947),4501947,2026-11-25T20:05:16Z,32a79971ab65f5a16cce72bfabc81c43e7bbcb3d055215d3f248ef5c61e13b80
+64,bulbapedia,https://bulbapedia.bulbagarden.net/wiki/List_of_German_Pok%C3%A9mon_names (oldid 4501946),4501946,2026-11-25T20:05:16Z,8ec4390f04a08027f2ba90ce0b1b85c035546ac923082aef523ba970fc91cf90
+65,bulbapedia,https://bulbapedia.bulbagarden.net/wiki/List_of_Korean_Pok%C3%A9mon_names (oldid 4545005),4545005,2026-11-25T20:05:16Z,027cc6f265018dcf20c16bc893b279f1f0701e34bad9ec999cd18dad80f9bf0a
+66,bulbapedia,https://bulbapedia.bulbagarden.net/wiki/List_of_Chinese_Pok%C3%A9mon_names (oldid 4659431),4659431,2026-11-25T20:05:16Z,018eb578b442c4633c1c12853f230348501fae23d6b435985ec6dc65226dea4f
+67,bulbapedia,https://bulbapedia.bulbagarden.net/wiki/List_of_Italian_Pok%C3%A9mon_names (oldid 4232107),4232107,2026-11-25T20:05:16Z,056e61937518db773ebffddeeb0d6b2279c0861ba50666533fe54eb0d91587ff
+68,bulbapedia,https://bulbapedia.bulbagarden.net/wiki/List_of_Spanish_Pok%C3%A9mon_names (oldid 4471530),4471530,2026-11-25T20:05:16Z,73e0638313947cbacb1d32374fac11ae03a8901d6b559137f0d0bdcd228057a4
+69,pokeapi,data/v2/csv/pokemon_species_names.csv@de6760be38b6,de6760be38b60a3024f1d9054330ff265f0dc619,2026-11-25T19:57:08Z,dccdc3dfaae50ab69802b97eeeb7418d5aadf00664366d0c91f73c02345850ce
+70,pokeapi,data/v2/csv/type_names.csv@de6760be38b6,de6760be38b60a3024f1d9054330ff265f0dc619,2026-11-25T19:57:08Z,bb92d0439a08b7dae00909a8db6d1af27422959f13f6c5e9ae065b99730cf863

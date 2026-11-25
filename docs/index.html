@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>pokedata — base de données Pokémon ouverte (projet de fans)</title>
+<style>
+ body{font:16px/1.55 system-ui,sans-serif;max-width:46rem;margin:2rem auto;padding:0 1rem;color:#222}
+ code{background:#f2f2f2;padding:.1em .3em;border-radius:3px}
+ .notice{border-left:4px solid #e3350d;padding:.5rem 1rem;background:#fff4f1}
+ table{border-collapse:collapse} td,th{border:1px solid #ddd;padding:.3rem .6rem;text-align:left}
+</style>
+</head>
+<body>
+<h1>pokedata</h1>
+<p class="notice"><strong>Projet de fans non officiel.</strong> Données © Nintendo / Creatures Inc. / GAME FREAK inc. / The Pokémon Company. Ni affilié, ni approuvé par eux.</p>
+<p>Base de données Pokémon vérifiée et multilingue : API JSON statique, base SQLite et CSV. Code sous licence MIT.</p>
+<p id="stats">Chargement…</p>
+<h2>Points d'accès</h2>
+<ul>
+ <li><a href="api/v1/index.json"><code>api/v1/index.json</code></a> — versions et liste des points d'accès</li>
+ <li><a href="api/v1/pokemon/index.json"><code>api/v1/pokemon/index.json</code></a> — espèces</li>
+ <li><a href="api/v1/pokemon/25.json"><code>api/v1/pokemon/25.json</code></a> — exemple d'espèce</li>
+ <li><a href="api/v1/meta/changelog.json"><code>api/v1/meta/changelog.json</code></a> — journal des mises à jour</li>
+ <li><a href="api/v1/download.json"><code>api/v1/download.json</code></a> — base SQLite</li>
+</ul>
+<p><a href="https://github.com/SIGjoueA/pokedata">Code source et CSV sur GitHub</a></p>
+<script>
+fetch('api/v1/index.json').then(r=>r.json()).then(d=>{
+ const c=d.counts;document.getElementById('stats').textContent=
+ `Données ${d.data_version} (schéma ${d.schema_version}) : ${c.species} espèces, ${c.forms} formes, ${c.abilities} talents, ${c.translations} traductions.`;
+}).catch(()=>{document.getElementById('stats').textContent='';});
+</script>
+</body>
+</html>

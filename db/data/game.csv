@@ -1,0 +1,32 @@
+id,kind,generation_id,base_game_id,release_date,platform,sort_order,pokeapi_version_group,is_active_service,note
+b2w2,main,5,,2012-06-23,Nintendo DS,120,black-2-white-2,0,Pokémon Noir 2 / Blanc 2
+bdsp,remake,8,,2021-11-19,Nintendo Switch,210,brilliant-diamond-shining-pearl,0,Pokémon Diamant Étincelant / Perle Scintillante
+bw,main,5,,2010-09-18,Nintendo DS,110,black-white,0,Pokémon Noir / Blanc
+c,main,2,,2000-12-14,Game Boy Color,40,crystal,0,Pokémon Cristal
+champions,battle,9,,2026-04-08,Nintendo Switch / iOS / Android,920,,1,Pokémon Champions
+dp,main,4,,2006-09-28,Nintendo DS,80,diamond-pearl,0,Pokémon Diamant / Perle
+e,main,3,,2004-09-16,Game Boy Advance,70,emerald,0,Pokémon Émeraude
+frlg,remake,3,,2004-01-29,Game Boy Advance,60,firered-leafgreen,0,Pokémon Rouge Feu / Vert Feuille
+frlgsw,rerelease,3,frlg,2026-02-27,Nintendo Switch,280,,0,Pokémon Rouge Feu / Vert Feuille (Nintendo Switch)
+go,mobile,,,2016-07-06,iOS / Android,900,,1,Pokémon GO
+gs,main,2,,1999-11-21,Game Boy Color,30,gold-silver,0,Pokémon Or / Argent
+hgss,remake,4,,2009-09-12,Nintendo DS,100,heartgold-soulsilver,0,Pokémon Or HeartGold / Argent SoulSilver
+home,service,,,2020-02-12,Nintendo Switch / iOS / Android,910,,1,Pokémon HOME
+la,legends,8,,2022-01-28,Nintendo Switch,220,legends-arceus,0,Légendes Pokémon : Arceus
+lgpe,remake,7,,2018-11-16,Nintendo Switch,170,lets-go-pikachu-lets-go-eevee,0,"Pokémon : Let's Go, Pikachu / Évoli"
+oras,remake,6,,2014-11-21,Nintendo 3DS,140,omega-ruby-alpha-sapphire,0,Pokémon Rubis Oméga / Saphir Alpha
+pt,main,4,,2008-09-13,Nintendo DS,90,platinum,0,Pokémon Platine
+rb,main,1,,1996-02-27,Game Boy,10,red-blue,0,Pokémon Rouge / Bleu (Vert au Japon)
+rs,main,3,,2002-11-21,Game Boy Advance,50,ruby-sapphire,0,Pokémon Rubis / Saphir
+sm,main,7,,2016-11-18,Nintendo 3DS,150,sun-moon,0,Pokémon Soleil / Lune
+sv,main,9,,2022-11-18,Nintendo Switch,230,scarlet-violet,0,Pokémon Écarlate / Violet
+svdisk,dlc,9,sv,2023-12-14,Nintendo Switch,250,the-indigo-disk,0,Écarlate / Violet : Le Disque Indigo
+svmask,dlc,9,sv,2023-09-13,Nintendo Switch,240,the-teal-mask,0,Écarlate / Violet : Le Masque Turquoise
+sw,main,8,,2019-11-15,Nintendo Switch,180,sword-shield,0,Pokémon Épée / Bouclier
+swcrown,dlc,8,sw,2020-10-22,Nintendo Switch,200,the-crown-tundra,0,Épée / Bouclier : Les terres enneigées de la Couronne
+swisle,dlc,8,sw,2020-06-17,Nintendo Switch,190,the-isle-of-armor,0,Épée / Bouclier : L'île solitaire de l'Armure
+usum,main,7,,2017-11-17,Nintendo 3DS,160,ultra-sun-ultra-moon,0,Pokémon Ultra-Soleil / Ultra-Lune
+xy,main,6,,2013-10-12,Nintendo 3DS,130,x-y,0,Pokémon X / Y
+y,main,1,,1998-09-12,Game Boy,20,yellow,0,Pokémon Jaune
+za,legends,9,,2025-10-16,Nintendo Switch / Switch 2,260,legends-za,0,Légendes Pokémon : Z-A
+zadlc,dlc,9,za,2025-12-10,Nintendo Switch / Switch 2,270,mega-dimension,0,Légendes Pokémon : Z-A – Méga-Dimension

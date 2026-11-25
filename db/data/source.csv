@@ -1,0 +1,8 @@
+id,name,tier,base_url,license,note
+bulbapedia,Bulbapedia,2,https://bulbapedia.bulbagarden.net,CC BY-NC-SA 2.5,"Faits seulement, aucune prose reprise."
+official,"Sources officielles (pokemon.com, Nintendo eShop, communiqués)",4,https://www.pokemon.com,,Dates et langues.
+pkhex,PKHeX.Core (tables personnelles et textes extraits des jeux),1,https://github.com/kwsch/PKHeX,GPL-3.0 (code) ; données de jeu © Nintendo / Game Freak / TPC,"Tables personnelles et textes des jeux tels qu'extraits des fichiers de jeu ; lus via le paquet NuGet PKHeX.Core, sans copier son code. Noms de formes : liste éditée par PKHeX, traitée en rang 3."
+pokeapi,PokeAPI (CSV),3,https://github.com/PokeAPI/pokeapi,BSD-3-Clause (code),Amorce et correspondance des identifiants.
+pokepedia,Poképédia,2,https://www.pokepedia.fr,CC BY-NC-SA 3.0 FR,"Faits seulement, aucune prose reprise."
+serebii,Serebii.net,2,https://www.serebii.net,Tous droits réservés,Faits seulement.
+showdown,Pokémon Showdown (data/),3,https://github.com/smogon/pokemon-showdown,MIT,Données par génération (mods).

@@ -1,0 +1,7 @@
+id,formula
+erratic,par paliers (600 000 au niv. 100)
+fast,0.8n^3
+fluctuating,par paliers (1 640 000 au niv. 100)
+medium-fast,n^3
+medium-slow,1.2n^3 - 15n^2 + 100n - 140
+slow,1.25n^3
