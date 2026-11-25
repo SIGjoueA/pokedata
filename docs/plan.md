@@ -1,7 +1,7 @@
 # pokedata — plan de projet
 
 Base de données Pokémon indépendante et réutilisable, qui deviendra aussi la source unique et vérifiée du Pokédex (sigjouea.github.io/pokedex).
-Statut : **validé le 25/11/2026** (plan et schéma 1.0.0). Décisions prises : identifiants du Pokédex dans les adresses de l'API, alias lisibles en plus (option A) ; textes rédigés par les wikis **exclus** de la base. Phase 1 publiée (section 16), phase 1b publiée (section 17).
+Statut : **validé le 25/11/2026** (plan et schéma 1.0.0). Décisions prises : identifiants du Pokédex dans les adresses de l'API, alias lisibles en plus (option A) ; textes rédigés par les wikis **exclus** de la base. Phase 1 publiée (section 16), phase 1b publiée (section 17), phase 2 publiée sans les movesets (section 18).
 
 ---
 
@@ -319,3 +319,29 @@ Reporté :
 - catégories en espagnol d'Amérique latine (pas de seconde source) ;
 - noms de formes non concordants (≈ 2 750 couples forme × langue ; ≈ 1 200 publiés, surtout japonais, coréen et chinois) ;
 - objets hors évolutions, objet d'incubation des bébés (`evolution_chain.baby_item_id`).
+
+## 18. Phase 2 : règles appliquées, reports et décision en attente
+
+Même structure (schéma 1.0.0). Précisions :
+- **Capacités** : id = index du jeu (= PokeAPI) ; génération = premier contexte de jeu où la capacité existe (PKHeX, concordant avec PokeAPI) ; `kind` z / max / gmax d'après Showdown. Noms : PKHeX (rang 1) + PokeAPI, suffixes « (P) / (S) » des capacités Z retirés.
+- **Valeurs par jeu** (`move_game`), vérifiées par groupes de colonnes :
+  - `type_pp` (type, PP) et `is_usable` (capacités retirées) : tables des jeux (PKHeX, rang 1), autres sources citées ;
+  - `power` (catégorie, puissance, précision) : Serebii (rang 2, une page par génération), Poképédia (rang 2, valeurs actuelles = Écarlate/Violet), PokeAPI (valeurs actuelles corrigées par `move_changelog`), Showdown (mod du jeu). La ligne n'est publiée que si ce groupe est vérifié ;
+  - `priority` : tableau de Bulbapedia par génération (rang 2) + Poképédia + PokeAPI + Showdown ;
+  - générations 1 à 3 : la catégorie physique/spéciale dépend du type (statut d'après PokeAPI/Showdown) ; seuls puissance et précision sont comparés. Précisions de la génération 1 en x/256 arrondies (74,6 → 75) ; « 100 » des pages Serebii 1–3 pour une capacité sans test de précision lu comme « — » quand la page de la génération 4 l'indique ;
+  - puissance variable ou dégâts fixes = NULL ; `target`, `makes_contact`, `flags`, `effect_chance` laissés vides (seules des sources de rang 3 existent).
+- **CT / CS / DT** : listes des jeux (PKHeX) contrôlées par PokeAPI ; libellés à 3 chiffres pour Écarlate/Violet et Légendes Z-A (`TM001`) ; la liste de PKHeX pour Écarlate/Violet commence par un emplacement inutilisé (TM000), ignoré. Légendes Z-A : les 160 CT de la version à jour (DLC compris) sont rattachées à `za`. `item_id` laissé vide (objets CT non importés).
+- **Descriptions de jeu** : anglais (PokeAPI + Serebii) et français (PokeAPI + Poképédia, jeux Switch) publiées par jeu seulement si les deux textes sont identiques ; pas de description dans les jeux de génération 1.
+- **Évolutions** : `known_move_id` est rempli à partir de cette phase (au lieu de `conditions.known_move`).
+
+Reporté :
+- valeurs par jeu pour Let's Go, DEPS, Légendes Arceus et Légendes Z-A (aucune source de rang 2 lue ; PKHeX ne donne que type et PP) ;
+- ≈ 160 lignes capacité × jeu où les sources ne concordent pas (dégâts fixes affichés comme puissance, « 100 » contre « — », capacités Z) ;
+- descriptions dans les 8 autres langues (une seule source de rang 3, PKHeX n'expose pas ces textes) ;
+- `target`, contact, drapeaux, probabilité d'effet ; objets CT.
+
+**Movesets : calculés, non publiés — changement de structure à valider.** L'extraction des jeux donne ≈ 614 000 lignes `learnset` (≈ 14 Mo en CSV, 32 000 ensembles forme × jeu × méthode). Avec la règle actuelle (une ligne de `verification` par ligne de données, citations par source), il faudrait ≈ 125 Mo de `verification.csv` et ≈ 100–150 Mo de `citation.csv`, au-delà de la limite de 100 Mo par fichier de GitHub ; après la phase 2, `verification.csv` fait déjà ≈ 36 Mo et `citation.csv` ≈ 33 Mo (alerte GitHub à 50 Mo). Options :
+- **A (recommandée)** : vérification par ensemble — `row_key` = `[form_id, game_id, method_id]`, `column_name = '*'`, `value_sha256` = empreinte de la liste triée (capacité, niveau) ; citations au même niveau avec l'empreinte de l'ensemble observé par chaque source ; les écarts détaillés (capacités en plus ou en moins) dans `discrepancy.alternatives`. ≈ 32 000 vérifications (+7 Mo) et ≈ 100 000 citations (+15 Mo).
+- **B** : découper les CSV de provenance par table (`db/data/verification/{table}.csv`, idem pour `citation`) — nécessaire aussi avec A à moyen terme pour rester sous 50 Mo par fichier.
+- **C** : garder la provenance des movesets hors du dépôt (seulement dans la base SQLite de la Release).
+Proposition : A + B. Défauts connus de l'extraction à corriger avant publication : tuteurs des générations 3 (Émeraude), 6 et 7 non lus (API non publique de PKHeX), DT d'Épée/Bouclier sous-comptés.

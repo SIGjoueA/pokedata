@@ -82,7 +82,8 @@ def method_cols(ctx, r):
     elif m.startswith("LevelUpHeldItem"):
         c["held_item_id"] = item_of(ctx, a)
     elif m.startswith("LevelUpKnowMove"):
-        cond["known_move"] = a       # → known_move_id once the move table exists (phase 2)
+        if "2" in PHASES: c["known_move_id"] = a     # the move table exists from phase 2 on
+        else: cond["known_move"] = a
     elif m == "LevelUpMoveType":   # PKHeX method 30: a Dark-type Pokémon in the party (Pancham); the argument is unused
         cond["party_type"] = "dark"
     elif m == "LevelUpAffection50MoveType":

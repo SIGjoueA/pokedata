@@ -5,3 +5,4 @@ scripts/fetch/pkhex_dumper/bin/
 scripts/fetch/pkhex_dumper/obj/
 __pycache__/
 *.pyc
+work/

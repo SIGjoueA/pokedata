@@ -739,7 +739,7 @@ for aid, slug, gen in ab_rows:
 out["external_id"] = (["entity_type", "entity_id", "system", "value"], ext)
 
 # ----------------------------------------------------------------------------- later phases (same namespace, same rules)
-PHASES = [p for p in os.environ.get("PHASES", "1b").split(",") if p]
+PHASES = [p for p in os.environ.get("PHASES", "1b,2").split(",") if p]
 for _ph in PHASES:
     exec(compile(open(ROOT / f"scripts/phases/phase{_ph}.py", encoding="utf-8").read(), f"phase{_ph}.py", "exec"), globals())
 PHASE_LABEL = os.environ.get("PHASE_LABEL", "Phase " + (PHASES[-1] if PHASES else "1"))

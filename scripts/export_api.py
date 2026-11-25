@@ -4,7 +4,7 @@ Only verified data is exported (status game-data, unanimous, majority, manual; s
 and flagged). Data files carry no version or timestamp: only api/v1/index.json does, so a weekly update
 only changes the files whose data really changed.
 """
-import collections, json, os, shutil, sqlite3, sys, unicodedata
+import collections, json, os, re, shutil, sqlite3, sys, unicodedata
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from common import BUILD, ROOT
 
@@ -221,6 +221,46 @@ def main():
         dlist.append(o)
     write("pokedex/index.json", dlist)
 
+    # moves: values per game, machines, in-game descriptions
+    mlist = []
+    if db.execute("SELECT COUNT(*) FROM move").fetchone()[0]:
+        flav = collections.defaultdict(lambda: collections.defaultdict(dict))
+        for r in q("SELECT entity_id, language_id, game_id, text FROM translation WHERE entity_type='move' AND field='flavor'"):
+            if okv("translation", rk("move", r["entity_id"], "flavor", r["language_id"], r["game_id"], None), "text"):
+                flav[int(r["entity_id"])][r["game_id"]][r["language_id"]] = r["text"]
+        mach = collections.defaultdict(dict)
+        mach_by_game = collections.defaultdict(list)
+        for r in q("SELECT * FROM machine"):
+            if okv("machine", rk(r["game_id"], r["label"])):
+                mach[r["move_id"]][r["game_id"]] = r["label"]
+                mach_by_game[r["game_id"]].append([r["label"], r["move_id"]])
+        mgames = collections.defaultdict(dict)
+        for r in q("SELECT * FROM move_game"):
+            key = rk(r["move_id"], r["game_id"])
+            if not okv("move_game", key, "power"):
+                continue
+            e = {"type": r["type_id"] if okv("move_game", key, "type_pp") else None, "pp": r["pp"] if okv("move_game", key, "type_pp") else None,
+                 "damage_class": r["damage_class"], "power": r["power"], "accuracy": r["accuracy"],
+                 "priority": r["priority"] if okv("move_game", key, "priority") else None, "usable": bool(r["is_usable"])}
+            mgames[r["move_id"]][r["game_id"]] = e
+        for m in q("SELECT * FROM move ORDER BY id"):
+            if not okv("move", rk(m["id"])):
+                continue
+            nm = names[("move", str(m["id"]))]
+            o = {"id": m["id"], "slug": m["slug"], "generation": m["generation_id"], "kind": m["kind"], "names": nm,
+                 "aliases": aliases[("move", str(m["id"]))],
+                 "games": dict(sorted(mgames[m["id"]].items(), key=lambda kv: game_order.index(kv[0]))),
+                 "machines": dict(sorted(mach[m["id"]].items(), key=lambda kv: game_order.index(kv[0]))),
+                 "descriptions": dict(sorted(flav[m["id"]].items(), key=lambda kv: game_order.index(kv[0])))}
+            d_ = [d for k, v in disc.items() if k.startswith(f"[{m['id']},") for d in v if d["table"] in ("move_game", "move")]
+            if d_:
+                o["discrepancies"] = d_
+            write(f"move/{m['id']}.json", o)
+            mlist.append({"id": m["id"], "slug": m["slug"], "kind": m["kind"], "names": nm})
+        write("move/index.json", mlist)
+        for g, lst in mach_by_game.items():
+            write(f"machine/{g}.json", sorted(lst, key=lambda x: (x[0][:2], int(re.sub(r"\D", "", x[0]) or 0))))
+
     write("type/index.json", [{"id": t["id"], "generation": t["generation_id"], "names": names[("type", t["id"])]}
                               for t in q("SELECT * FROM type ORDER BY pokeapi_id")])
     glist = []
@@ -259,7 +299,9 @@ def main():
     counts = {"species": len(index), "forms": len(form_objs), "abilities": len(alist), "games": len(glist),
               "translations": db.execute("SELECT COUNT(*) FROM translation").fetchone()[0],
               "evolution_chains": len(clist), "evolutions": sum(len(v) for v in chains.values()), "items": len(ilist),
-              "pokedexes": len(dlist), "pokedex_entries": sum(d["count"] for d in dlist)}
+              "pokedexes": len(dlist), "pokedex_entries": sum(d["count"] for d in dlist),
+              "moves": len(mlist), "move_game": db.execute("SELECT COUNT(*) FROM move_game").fetchone()[0],
+              "machines": db.execute("SELECT COUNT(*) FROM machine").fetchone()[0]}
     write("index.json", {"api_version": "v1", "schema_version": meta["schema_version"], "data_version": dv,
                          "generated_at": meta["generated_at"], "license": {"code": "MIT", "notice": meta["license_notice"]},
                          "counts": counts, "download": dl,
@@ -270,6 +312,7 @@ def main():
                              "evolution_index": "evolution/index.json", "evolution_chain": "evolution/{chain_id}.json",
                              "item_index": "item/index.json", "item": "item/{id}.json",
                              "pokedex_index": "pokedex/index.json", "pokedex": "pokedex/{pokedex_id}.json",
+                             "move_index": "move/index.json", "move": "move/{id}.json", "machines": "machine/{game_id}.json",
                              "sources": "meta/sources.json", "changelog": "meta/changelog.json", "verification": "meta/verification.json",
                              "languages": "meta/languages.json", "download": "download.json"}.items()}})
     if (ROOT / "docs").exists():

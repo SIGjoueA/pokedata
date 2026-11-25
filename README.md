@@ -42,6 +42,8 @@ Adresses = identifiants du Pokédex (numéro national, `{numéro}-{forme}` pour 
 | `api/v1/evolution/{chain_id}.json` | une famille d'évolution : paires de formes et méthodes par jeu (id de chaîne PokeAPI, donné par `pokemon/{id}.json`) |
 | `api/v1/pokedex/index.json`, `pokedex/{pokedex_id}.json` | Pokédex régionaux par jeu (ex. `sv-paldea`, `xy-kalos-coastal`) et leurs numéros |
 | `api/v1/item/{id}.json` | objets utilisés par les évolutions (noms en 10 langues) |
+| `api/v1/move/index.json`, `move/{id}.json` | capacités : noms en 10 langues, valeurs par jeu (type, catégorie, puissance, précision, PP, priorité), CT/CS/DT, descriptions de jeu (anglais, français) |
+| `api/v1/machine/{game_id}.json` | liste des CT/CS/DT d'un jeu `[libellé, id de capacité]` |
 | `api/v1/type/index.json`, `game/index.json`, `game/{id}.json` | référentiels |
 | `api/v1/search/{lang}.json` | index de recherche `[nom normalisé, nom, id]` |
 | `api/v1/meta/{sources,changelog,verification,languages}.json` | provenance, journal, statuts |

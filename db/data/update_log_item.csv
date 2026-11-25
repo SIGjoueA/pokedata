@@ -24,3 +24,8 @@ update_id,table_name,row_key,column_name,action,old_value,new_value,document_ids
 2,pokedex_entry,*,*,verify,,7460,
 2,species,*,*,verify,,1025,
 2,translation,*,*,verify,,10863,
+3,evolution_method,*,*,verify,,138,
+3,machine,*,*,verify,,2061,
+3,move,*,*,verify,,920,
+3,move_game,*,*,verify,,31268,
+3,translation,*,*,verify,,17453,

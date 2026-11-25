@@ -61,7 +61,9 @@ def save_wiki(m, site, title, final, rev, text, base):
 
 def serebii(m):
     d = CACHE / "serebii"; d.mkdir(exist_ok=True)
+    only = os.environ.get("SEREBII_DEX")
     for dex in SEREBII:
+        if only is not None and (dex or "gen3") not in only.split(","): continue
         base = f"https://www.serebii.net/attackdex{'-' + dex if dex else ''}/"
         time.sleep(1)
         idx = http_get(base).decode("latin-1")
@@ -78,9 +80,10 @@ def serebii(m):
                     continue
                 imgs = [re.search(r'type/([a-z]+)\.(?:gif|png)', x) for x in tds[1:3]]
                 cells = [html.unescape(re.sub(r"<[^>]+>", "", x)).strip() for x in tds]
+                o = 1 if imgs[1] else 0   # Generations I–III pages have no category column
                 rows.append({"slug": a.group(1), "name": html.unescape(a.group(2)).strip(), "type": imgs[0].group(1) if imgs[0] else None,
-                             "category": imgs[1].group(1) if imgs[1] else None, "pp": cells[3], "power": cells[4], "accuracy": cells[5],
-                             "text": re.sub(r"\s+", " ", cells[6]).strip() if len(cells) > 6 else None, "list": t})
+                             "category": imgs[1].group(1) if imgs[1] else None, "pp": cells[2 + o], "power": cells[3 + o], "accuracy": cells[4 + o],
+                             "text": re.sub(r"\s+", " ", cells[5 + o]).strip() if len(cells) > 5 + o else None, "list": t})
         rows.sort(key=lambda r: (r["slug"], r["list"]))
         body = json.dumps(rows, ensure_ascii=False, indent=0)
         fn = d / f"attackdex_{dex or 'gen3'}.json"

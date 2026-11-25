@@ -98,6 +98,21 @@ class Api(unittest.TestCase):
         d = json.loads((API / "pokedex" / "sv-paldea.json").read_text("utf-8"))
         self.assertEqual(d["entries"][0], [1, 906])
 
+    def test_phase2(self):
+        idx = json.loads((API / "index.json").read_text("utf-8"))
+        if not idx["counts"].get("moves"):
+            self.skipTest("phase 2 not built")
+        m = json.loads((API / "move" / "85.json").read_text("utf-8"))   # Thunderbolt
+        self.assertEqual(m["names"]["fr"], "Tonnerre")
+        self.assertEqual(m["games"]["sv"]["power"], 90)
+        self.assertEqual(m["games"]["rb"]["power"], 95)                 # 95 before Generation VI
+        self.assertEqual(m["games"]["sv"]["damage_class"], "special")
+        self.assertEqual(m["machines"]["rb"], "TM24")
+        self.assertEqual(m["machines"]["sv"], "TM126")
+        self.assertEqual(json.loads((API / "move" / "33.json").read_text("utf-8"))["games"]["rb"]["accuracy"], 95)
+        db = sqlite3.connect(BUILD / "pokedata.sqlite")   # Yanma → Yanmega knowing Ancient Power: the condition now points to the move table
+        self.assertIn((246,), db.execute("SELECT m.known_move_id FROM evolution e JOIN evolution_method m ON m.evolution_id=e.id WHERE e.to_form_id='469'").fetchall())
+
     def test_search(self):
         s = json.loads((API / "search" / "fr.json").read_text("utf-8"))
         self.assertIn(["pikachu", "Pikachu", 25], s)

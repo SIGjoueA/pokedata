@@ -13,7 +13,7 @@ id,table_name,row_key,column_name,chosen_value,rule,alternatives,note,opened_upd
 12,evolution_method,"[574,""sv"",1]",*,"[""walk"",null,null,null,null,null,null,null,null,null,null,""{\""steps\"":1000}""]",game-data,"[{""document_id"":13,""source"":""showdown"",""value"":[""[\""other\"",null,null]""]}]",,2,2
 13,evolution_method,"[588,""sv"",1]",*,"[""level-up"",null,null,null,null,null,null,null,null,null,null,""{\""collect\"":999}""]",game-data,"[{""document_id"":74,""source"":""pokeapi"",""value"":[""[\""other\"",null,null]""]},{""document_id"":13,""source"":""showdown"",""value"":[""[\""other\"",null,null]""]}]",,2,2
 14,evolution_method,"[589,""sv"",1]",*,"[""level-up"",null,null,null,null,null,null,null,null,null,null,""{\""collect\"":999}""]",game-data,"[{""document_id"":74,""source"":""pokeapi"",""value"":[""[\""other\"",null,null]""]},{""document_id"":13,""source"":""showdown"",""value"":[""[\""other\"",null,null]""]}]",,2,2
-15,evolution_method,"[87,""sv"",1]",*,"[""level-up"",null,null,null,null,null,null,null,null,null,null,""{\""known_move\"":839}""]",game-data,"[{""document_id"":13,""source"":""showdown"",""value"":[""[\""other\"",null,null]""]}]",,2,2
+15,evolution_method,"[87,""sv"",1]",*,"[""level-up"",null,null,null,839,null,null,null,null,null,null,null]",game-data,"[{""document_id"":13,""source"":""showdown"",""value"":[""[\""other\"",null,null]""]}]",,3,3
 16,form_ability,"[""109"",""b2w2""]",*,"{""1"":26}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":26,""hidden"":1}}]",,1,1
 17,form_ability,"[""109"",""bw""]",*,"{""1"":26}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":26,""hidden"":1}}]",,1,1
 18,form_ability,"[""109"",""oras""]",*,"{""1"":26}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":26,""hidden"":1}}]",,1,1
@@ -181,138 +181,474 @@ id,table_name,row_key,column_name,chosen_value,rule,alternatives,note,opened_upd
 180,form_game,"[""615"",""bw""]",stats,"[70,50,30,95,135,105]",game-data,"[{""document_id"":35,""source"":""pokeapi"",""value"":[70,30,50,95,135,105]}]",,1,1
 181,form_game,"[""615"",""oras""]",stats,"[70,50,30,95,135,105]",game-data,"[{""document_id"":35,""source"":""pokeapi"",""value"":[70,30,50,95,135,105]}]",,1,1
 182,form_game,"[""615"",""xy""]",stats,"[70,50,30,95,135,105]",game-data,"[{""document_id"":35,""source"":""pokeapi"",""value"":[70,30,50,95,135,105]}]",,1,1
-183,species,[1007],is_paradox,1,majority,"[{""document_id"":13,""source"":""showdown"",""value"":0}]",,1,1
-184,species,[1008],is_paradox,1,majority,"[{""document_id"":13,""source"":""showdown"",""value"":0}]",,1,1
-185,species,[1011],growth_rate_id,"""erratic""",game-data,"[{""document_id"":12,""source"":""pokeapi"",""value"":""slow""}]",,1,1
-186,species,[1012],growth_rate_id,"""medium-fast""",game-data,"[{""document_id"":12,""source"":""pokeapi"",""value"":""slow""}]",,1,1
-187,species,[1012],hatch_cycles,20,game-data,"[{""document_id"":12,""source"":""pokeapi"",""value"":50}]",,1,1
-188,species,[1013],growth_rate_id,"""medium-fast""",game-data,"[{""document_id"":12,""source"":""pokeapi"",""value"":""slow""}]",,1,1
-189,species,[1013],hatch_cycles,20,game-data,"[{""document_id"":12,""source"":""pokeapi"",""value"":50}]",,1,1
-190,species,[1014],hatch_cycles,120,game-data,"[{""document_id"":12,""source"":""pokeapi"",""value"":50}]",,1,1
-191,species,[1015],hatch_cycles,120,game-data,"[{""document_id"":12,""source"":""pokeapi"",""value"":50}]",,1,1
-192,species,[1016],hatch_cycles,120,game-data,"[{""document_id"":12,""source"":""pokeapi"",""value"":50}]",,1,1
-193,species,[1017],hatch_cycles,10,game-data,"[{""document_id"":12,""source"":""pokeapi"",""value"":50}]",,1,1
-194,species,[1020],is_paradox,1,majority,"[{""document_id"":13,""source"":""showdown"",""value"":0}]",,1,1
-195,species,[1021],is_paradox,1,majority,"[{""document_id"":13,""source"":""showdown"",""value"":0}]",,1,1
-196,species,[1022],is_paradox,1,majority,"[{""document_id"":13,""source"":""showdown"",""value"":0}]",,1,1
-197,species,[1023],is_paradox,1,majority,"[{""document_id"":13,""source"":""showdown"",""value"":0}]",,1,1
-198,species,[916],gender_rate,4,game-data,"[{""document_id"":12,""source"":""pokeapi"",""value"":0}]",,1,1
-199,translation,"[""ability"",""10"",""name"",""es"",null,null]",text,"""Absorbe Elec""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Absorbe Electricidad""}]",,1,1
-200,translation,"[""ability"",""117"",""name"",""de"",null,null]",text,"""Schneeschauer""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Hagelalarm""}]",,1,1
-201,translation,"[""ability"",""118"",""name"",""es-419"",null,null]",text,"""Cosechamiel""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Recogemiel""}]",,1,1
-202,translation,"[""ability"",""129"",""name"",""es-419"",null,null]",text,"""Flaquear""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Flaqueza""}]",,1,1
-203,translation,"[""ability"",""147"",""name"",""es-419"",null,null]",text,"""Piel Milagrosa""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Piel Milagro""}]",,1,1
-204,translation,"[""ability"",""16"",""name"",""es-419"",null,null]",text,"""Cambio de Color""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Cambio Color""}]",,1,1
-205,translation,"[""ability"",""161"",""name"",""es-419"",null,null]",text,"""Modo Zen""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Modo Daruma""}]",,1,1
-206,translation,"[""ability"",""180"",""name"",""de"",null,null]",text,"""Symbiose""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Nutznießer""}]",,1,1
-207,translation,"[""ability"",""20"",""name"",""de"",null,null]",text,"""Gleichmut""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Tempomacher""}]",,1,1
-208,translation,"[""ability"",""205"",""name"",""es-419"",null,null]",text,"""Socorro""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Primer Auxilio""}]",,1,1
-209,translation,"[""ability"",""218"",""name"",""es-419"",null,null]",text,"""Mullido""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Peluche""}]",,1,1
-210,translation,"[""ability"",""223"",""name"",""ko"",null,null]",text,"""화학의힘""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""과학의힘""}]",,1,1
-211,translation,"[""ability"",""237"",""name"",""es-419"",null,null]",text,"""Buscabola""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Recogebolas""}]",,1,1
-212,translation,"[""ability"",""25"",""name"",""es-419"",null,null]",text,"""Superguardia""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Superguarda""}]",,1,1
-213,translation,"[""ability"",""255"",""name"",""es-419"",null,null]",text,"""Obstinación""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Monotema""}]",,1,1
-214,translation,"[""ability"",""268"",""name"",""es-419"",null,null]",text,"""Aroma Incesante""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Olor Persistente""}]",,1,1
-215,translation,"[""ability"",""270"",""name"",""es-419"",null,null]",text,"""Termoconversión""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Termoscambio""}]",,1,1
-216,translation,"[""ability"",""273"",""name"",""es-419"",null,null]",text,"""Pan Comido""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Cuerpo Horneado""}]",,1,1
-217,translation,"[""ability"",""279"",""name"",""es-419"",null,null]",text,"""Comandante""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Comandar""}]",,1,1
-218,translation,"[""ability"",""280"",""name"",""es-419"",null,null]",text,"""Dinamo""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Dínamo""}]",,1,1
-219,translation,"[""ability"",""287"",""name"",""es-419"",null,null]",text,"""Cuenta Debacle""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Abalorio Debacle""}]",,1,1
-220,translation,"[""ability"",""35"",""name"",""fr"",null,null]",text,"""Luminescence""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Lumiattirance""}]",,1,1
-221,translation,"[""ability"",""38"",""name"",""it"",null,null]",text,"""Velenopunte""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Velenopunto""}]",,1,1
-222,translation,"[""ability"",""41"",""name"",""es-419"",null,null]",text,"""Velo de Agua""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Velo Agua""}]",,1,1
-223,translation,"[""ability"",""54"",""name"",""es"",null,null]",text,"""Pereza""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Ausente""}]",,1,1
-224,translation,"[""ability"",""54"",""name"",""es-419"",null,null]",text,"""Pereza""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Ausente""}]",,1,1
-225,translation,"[""ability"",""64"",""name"",""es"",null,null]",text,"""Viscosecreción""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Lodo Líquido""}]",,1,1
-226,translation,"[""ability"",""64"",""name"",""es-419"",null,null]",text,"""Toxisecreción""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Lodo Líquido""}]",,1,1
-227,translation,"[""ability"",""71"",""name"",""es-419"",null,null]",text,"""Trampa de Arena""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Trampa Arena""}]",,1,1
-228,translation,"[""ability"",""76"",""name"",""es"",null,null]",text,"""Esclusa de Aire""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Bucle Aire""}]",,1,1
-229,translation,"[""ability"",""76"",""name"",""es-419"",null,null]",text,"""Esclusa de Aire""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Bucle Aire""}]",,1,1
-230,translation,"[""ability"",""77"",""name"",""de"",null,null]",text,"""Taumelschritt""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Fußangel""}]",,1,1
-231,translation,"[""ability"",""9"",""name"",""es"",null,null]",text,"""Elec. Estática""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Electricidad Estática""}]",,1,1
-232,translation,"[""ability"",""9"",""name"",""es-419"",null,null]",text,"""Elec. Estática""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Electricidad Estática""}]",,1,1
-233,translation,"[""ability"",""90"",""name"",""de"",null,null]",text,"""Giftheilung""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Aufheber""}]",,1,1
-234,translation,"[""item"",""1633"",""name"",""es-419"",null,null]",text,"""Brazalete Galanuez""",game-data,"[{""document_id"":76,""source"":""pokeapi"",""value"":""Brazal Galanuez""}]",,2,2
-235,translation,"[""item"",""198"",""name"",""it"",null,null]",text,"""Roccia di re""",game-data,"[{""document_id"":76,""source"":""pokeapi"",""value"":""Roccia di Re""}]",,2,2
-236,translation,"[""item"",""203"",""name"",""it"",null,null]",text,"""Dente abissi""",game-data,"[{""document_id"":76,""source"":""pokeapi"",""value"":""Dente Abissi""}]",,2,2
-237,translation,"[""item"",""210"",""name"",""it"",null,null]",text,"""Metalcopertura""",game-data,"[{""document_id"":76,""source"":""pokeapi"",""value"":""Metalcoperta""}]",,2,2
-238,translation,"[""item"",""212"",""name"",""es"",null,null]",text,"""Escama de Dragón""",game-data,"[{""document_id"":76,""source"":""pokeapi"",""value"":""Escama Dragón""}]",,2,2
-239,translation,"[""item"",""212"",""name"",""it"",null,null]",text,"""Squama drago""",game-data,"[{""document_id"":76,""source"":""pokeapi"",""value"":""Squama Drago""}]",,2,2
-240,translation,"[""item"",""303"",""name"",""it"",null,null]",text,"""Affilartiglio""",game-data,"[{""document_id"":76,""source"":""pokeapi"",""value"":""Affilartigli""}]",,2,2
-241,translation,"[""item"",""580"",""name"",""it"",null,null]",text,"""Squama bella""",game-data,"[{""document_id"":76,""source"":""pokeapi"",""value"":""Squama Bella""}]",,2,2
-242,translation,"[""item"",""686"",""name"",""es-419"",null,null]",text,"""Bocadito de Crema""",game-data,"[{""document_id"":76,""source"":""pokeapi"",""value"":""Dulce de Nata""}]",,2,2
-243,translation,"[""item"",""687"",""name"",""es-419"",null,null]",text,"""Bolsita Fragante""",game-data,"[{""document_id"":76,""source"":""pokeapi"",""value"":""Saquito Fragante""}]",,2,2
-244,translation,"[""species"",""1019"",""genus"",""zh-Hans"",null,null]",text,"""苹果大蛇宝可梦""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""糖青苹果""}]",,2,
-245,translation,"[""species"",""1019"",""genus"",""zh-Hant"",null,null]",text,"""蘋果大蛇寶可夢""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""糖青蘋果""}]",,2,
-246,translation,"[""species"",""111"",""genus"",""es"",null,null]",text,"""Pokémon Clavos""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Punzante*""}]",,2,
-247,translation,"[""species"",""133"",""genus"",""de"",null,null]",text,"""Evolutions-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Evolution""}]",,2,
-248,translation,"[""species"",""167"",""genus"",""es"",null,null]",text,"""Pokémon Escupesoga""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Escupehilo*""}]",,2,
-249,translation,"[""species"",""175"",""genus"",""es"",null,null]",text,"""Pokémon Bolaclavos""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Bolapicuda*""}]",,2,
-250,translation,"[""species"",""184"",""genus"",""it"",null,null]",text,"""Pokémon Acquniglio""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Acquaniglio""}]",,2,
-251,translation,"[""species"",""185"",""genus"",""de"",null,null]",text,"""Imitations-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Imitation""}]",,2,
-252,translation,"[""species"",""187"",""genus"",""es"",null,null]",text,"""Pokémon Algadón""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Diente León*""}]",,2,
-253,translation,"[""species"",""188"",""genus"",""es"",null,null]",text,"""Pokémon Algadón""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Diente León*""}]",,2,
-254,translation,"[""species"",""189"",""genus"",""es"",null,null]",text,"""Pokémon Algadón""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Diente León*""}]",,2,
-255,translation,"[""species"",""206"",""genus"",""de"",null,null]",text,"""Schlangen-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Erdschlange*""}]",,2,
-256,translation,"[""species"",""231"",""genus"",""ko"",null,null]",text,"""긴코포켓몬""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""{{tt|긴코""}]",,2,
-257,translation,"[""species"",""254"",""genus"",""es"",null,null]",text,"""Pokémon Monte""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Bosque*""}]",,2,
-258,translation,"[""species"",""256"",""genus"",""de"",null,null]",text,"""Kleinhahn-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Jungvogel*""}]",,2,
-259,translation,"[""species"",""269"",""genus"",""es"",null,null]",text,"""Pokémon Polilla Ven.""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Polilla Venenosa*""}]",,2,
-260,translation,"[""species"",""281"",""genus"",""de"",null,null]",text,"""Emotions-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Emotion""}]",,2,
-261,translation,"[""species"",""303"",""genus"",""de"",null,null]",text,"""Schwindler-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Schwindel""}]",,2,
-262,translation,"[""species"",""321"",""genus"",""fr"",null,null]",text,"""Pokémon Cachabouée""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Carchabouée""}]",,2,
-263,translation,"[""species"",""327"",""genus"",""fr"",null,null]",text,"""Pokémon Panda Tache""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Panda Taché""}]",,2,
-264,translation,"[""species"",""329"",""genus"",""de"",null,null]",text,"""Vibrations-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Vibration""}]",,2,
-265,translation,"[""species"",""329"",""genus"",""zh-Hans"",null,null]",text,"""振动宝可梦""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""震动""}]",,2,
-266,translation,"[""species"",""358"",""genus"",""es"",null,null]",text,"""Pokémon Sonido Aire""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Campanilla*""}]",,2,
-267,translation,"[""species"",""358"",""genus"",""ko"",null,null]",text,"""풍경포켓몬""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""풍령""}]",,2,
-268,translation,"[""species"",""414"",""genus"",""de"",null,null]",text,"""Motte""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Fruchtmotte""}]",,2,
-269,translation,"[""species"",""415"",""genus"",""de"",null,null]",text,"""Kleinbienen-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Baby-Biene""}]",,2,
-270,translation,"[""species"",""417"",""genus"",""ja"",null,null]",text,"""でんきりすポケモン""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""でんきリス""}]",,2,
-271,translation,"[""species"",""418"",""genus"",""es"",null,null]",text,"""Pokémon Nutria Mar.""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Nutria Marina*""}]",,2,
-272,translation,"[""species"",""419"",""genus"",""es"",null,null]",text,"""Pokémon Nutria Mar.""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Nutria Marina*""}]",,2,
-273,translation,"[""species"",""433"",""genus"",""es"",null,null]",text,"""Pokémon Campana""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Cascabel*""}]",,2,
-274,translation,"[""species"",""467"",""genus"",""de"",null,null]",text,"""Detonations-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Detonation""}]",,2,
-275,translation,"[""species"",""469"",""name"",""fr"",null,null]",text,"""Yanmega""",game-data,"[{""document_id"":63,""source"":""bulbapedia"",""value"":""Yanméga""}]",,1,1
-276,translation,"[""species"",""470"",""genus"",""de"",null,null]",text,"""Unreif-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Frischgrün*""}]",,2,
-277,translation,"[""species"",""480"",""genus"",""de"",null,null]",text,"""Wissens-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Wissen""}]",,2,
-278,translation,"[""species"",""481"",""genus"",""de"",null,null]",text,"""Emotions-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Emotion""}]",,2,
-279,translation,"[""species"",""49"",""genus"",""es"",null,null]",text,"""Pokémon Polilla Ven.""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Polilla Venenosa*""}]",,2,
-280,translation,"[""species"",""491"",""genus"",""es"",null,null]",text,"""Pokémon Oscuridad""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Tenebroso*""}]",,2,
-281,translation,"[""species"",""495"",""genus"",""es"",null,null]",text,"""Pokémon Serp. Hierba""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Serpiente Hierba*""}]",,2,
-282,translation,"[""species"",""496"",""genus"",""es"",null,null]",text,"""Pokémon Serp. Hierba""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Serpiente Hierba*""}]",,2,
-283,translation,"[""species"",""499"",""name"",""ko"",null,null]",text,"""차오꿀""",game-data,"[{""document_id"":65,""source"":""bulbapedia"",""value"":""챠오꿀""}]",,1,1
-284,translation,"[""species"",""526"",""genus"",""de"",null,null]",text,"""Kompressions-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Kompression""}]",,2,
-285,translation,"[""species"",""536"",""genus"",""de"",null,null]",text,"""Vibrations-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Vibration""}]",,2,
-286,translation,"[""species"",""536"",""genus"",""zh-Hans"",null,null]",text,"""振动宝可梦""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""震动""}]",,2,
-287,translation,"[""species"",""537"",""genus"",""de"",null,null]",text,"""Vibrations-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Vibration""}]",,2,
-288,translation,"[""species"",""537"",""genus"",""zh-Hans"",null,null]",text,"""振动宝可梦""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""震动""}]",,2,
-289,translation,"[""species"",""56"",""genus"",""de"",null,null]",text,"""Schwein/Affe""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Schwein""}]",,2,
-290,translation,"[""species"",""57"",""genus"",""de"",null,null]",text,"""Schwein/Affe""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Schwein""}]",,2,
-291,translation,"[""species"",""576"",""genus"",""de"",null,null]",text,"""Gestirns-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Gestirn""}]",,2,
-292,translation,"[""species"",""58"",""genus"",""de"",null,null]",text,"""Welpen-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Hund""}]",,2,
-293,translation,"[""species"",""667"",""genus"",""ja"",null,null]",text,"""わかじしポケモン""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""わかしし""}]",,2,
-294,translation,"[""species"",""685"",""genus"",""es"",null,null]",text,"""Pokémon Nata""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Nata Montada*""}]",,2,
-295,translation,"[""species"",""686"",""genus"",""de"",null,null]",text,"""Rotations-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Rotation""}]",,2,
-296,translation,"[""species"",""687"",""genus"",""de"",null,null]",text,"""Inversions-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Inversion""}]",,2,
-297,translation,"[""species"",""697"",""genus"",""de"",null,null]",text,"""Tyrannen-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Tyrann""}]",,2,
-298,translation,"[""species"",""70"",""genus"",""es"",null,null]",text,"""Pokémon Matamoscas""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Atrapamoscas*""}]",,2,
-299,translation,"[""species"",""71"",""genus"",""es"",null,null]",text,"""Pokémon Matamoscas""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Atrapamoscas*""}]",,2,
-300,translation,"[""species"",""716"",""genus"",""de"",null,null]",text,"""Lebens-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Leben""}]",,2,
-301,translation,"[""species"",""727"",""genus"",""fr"",null,null]",text,"""Pokémon Vil Catcheur""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Catcheur""}]",,2,
-302,translation,"[""species"",""766"",""genus"",""ko"",null,null]",text,"""연계포켓몬""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""연게""}]",,2,
-303,translation,"[""species"",""772"",""genus"",""de"",null,null]",text,"""Modifikations-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Modifikation""}]",,2,
-304,translation,"[""species"",""773"",""genus"",""de"",null,null]",text,"""Modifikations-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Modifikation""}]",,2,
-305,translation,"[""species"",""780"",""genus"",""zh-Hans"",null,null]",text,"""悠游宝可梦""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""悠遊""}]",,2,
-306,translation,"[""species"",""790"",""genus"",""de"",null,null]",text,"""Urgestirns-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Urgestirn""}]",,2,
-307,translation,"[""species"",""796"",""genus"",""de"",null,null]",text,"""Illuminations-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Illumination""}]",,2,
-308,translation,"[""species"",""83"",""genus"",""ko"",null,null]",text,"""청둥오리포켓몬""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""천둥오리""}]",,2,
-309,translation,"[""species"",""843"",""genus"",""es"",null,null]",text,"""Pokémon Serp. Arena""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Serpiente Arena*""}]",,2,
-310,translation,"[""species"",""844"",""genus"",""es"",null,null]",text,"""Pokémon Serp. Arena""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Serpiente Arena*""}]",,2,
-311,translation,"[""species"",""865"",""genus"",""ko"",null,null]",text,"""청둥오리포켓몬""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""천둥오리""}]",,2,
-312,translation,"[""species"",""870"",""genus"",""de"",null,null]",text,"""Formations-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Formation""}]",,2,
-313,translation,"[""species"",""876"",""genus"",""de"",null,null]",text,"""Emotions-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Emotion""}]",,2,
-314,translation,"[""species"",""894"",""genus"",""de"",null,null]",text,"""Elektronen-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Elektron""}]",,2,
-315,translation,"[""species"",""904"",""genus"",""ko"",null,null]",text,"""침붕포켓몬몬""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""침붕""}]",,2,
-316,translation,"[""species"",""964"",""genus"",""fr"",null,null]",text,"""Dauphin/Super Héros""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Dauphin""}]",,2,
-317,translation,"[""species"",""999"",""genus"",""fr"",null,null]",text,"""Coffrotrésor/Chassotrésor""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Coffrotrésor""}]",,2,
+183,move_game,"[101,""rb""]",power,"[null,100]",majority,"[{""document_id"":117,""source"":""showdown"",""value"":[1,100]}]",,3,3
+184,move_game,"[101,""y""]",power,"[null,100]",majority,"[{""document_id"":117,""source"":""showdown"",""value"":[1,100]}]",,3,3
+185,move_game,"[102,""c""]",power,"[null,null]",majority,"[{""document_id"":118,""source"":""showdown"",""value"":[null,100]}]",,3,3
+186,move_game,"[102,""gs""]",power,"[null,null]",majority,"[{""document_id"":118,""source"":""showdown"",""value"":[null,100]}]",,3,3
+187,move_game,"[102,""rb""]",power,"[null,null]",majority,"[{""document_id"":117,""source"":""showdown"",""value"":[null,100]}]",,3,3
+188,move_game,"[102,""y""]",power,"[null,null]",majority,"[{""document_id"":117,""source"":""showdown"",""value"":[null,100]}]",,3,3
+189,move_game,"[105,""b2w2""]",type_pp,"[""normal"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",5]}]",,3,3
+190,move_game,"[105,""bw""]",type_pp,"[""normal"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",5]}]",,3,3
+191,move_game,"[105,""dp""]",type_pp,"[""normal"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",5]}]",,3,3
+192,move_game,"[105,""hgss""]",type_pp,"[""normal"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",5]}]",,3,3
+193,move_game,"[105,""oras""]",type_pp,"[""normal"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",5]}]",,3,3
+194,move_game,"[105,""pt""]",type_pp,"[""normal"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",5]}]",,3,3
+195,move_game,"[105,""sm""]",type_pp,"[""normal"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",5]}]",,3,3
+196,move_game,"[105,""sv""]",power,"[""status"",null,null]",majority,"[{""document_id"":232,""source"":""pokepedia"",""value"":[""status"",null,100]}]",,3,3
+197,move_game,"[105,""sw""]",type_pp,"[""normal"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",5]}]",,3,3
+198,move_game,"[105,""usum""]",type_pp,"[""normal"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",5]}]",,3,3
+199,move_game,"[105,""xy""]",type_pp,"[""normal"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",5]}]",,3,3
+200,move_game,"[117,""c""]",power,"[null,null]",majority,"[{""document_id"":118,""source"":""showdown"",""value"":[null,100]}]",,3,3
+201,move_game,"[117,""c""]",priority,0,majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":1}]",,3,3
+202,move_game,"[117,""e""]",power,"[null,null]",majority,"[{""document_id"":120,""source"":""showdown"",""value"":[null,100]}]",,3,3
+203,move_game,"[117,""e""]",priority,0,majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":1}]",,3,3
+204,move_game,"[117,""frlg""]",power,"[null,null]",majority,"[{""document_id"":121,""source"":""showdown"",""value"":[null,100]}]",,3,3
+205,move_game,"[117,""frlg""]",priority,0,majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":1}]",,3,3
+206,move_game,"[117,""gs""]",power,"[null,null]",majority,"[{""document_id"":118,""source"":""showdown"",""value"":[null,100]}]",,3,3
+207,move_game,"[117,""gs""]",priority,0,majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":1}]",,3,3
+208,move_game,"[117,""rb""]",priority,0,majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":1}]",,3,3
+209,move_game,"[117,""rb""]",type_pp,"[""normal"",10]",game-data,"[{""document_id"":117,""source"":""showdown"",""value"":[""???"",10]}]",,3,3
+210,move_game,"[117,""rs""]",power,"[null,null]",majority,"[{""document_id"":119,""source"":""showdown"",""value"":[null,100]}]",,3,3
+211,move_game,"[117,""rs""]",priority,0,majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":1}]",,3,3
+212,move_game,"[117,""sv""]",priority,1,majority,"[{""document_id"":114,""source"":""bulbapedia"",""value"":0}]",,3,3
+213,move_game,"[117,""sw""]",priority,1,open,"[{""document_id"":114,""source"":""bulbapedia"",""value"":0}]",,3,
+214,move_game,"[117,""y""]",priority,0,majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":1}]",,3,3
+215,move_game,"[117,""y""]",type_pp,"[""normal"",10]",game-data,"[{""document_id"":117,""source"":""showdown"",""value"":[""???"",10]}]",,3,3
+216,move_game,"[12,""sv""]",power,"[""physical"",null,30]",majority,"[{""document_id"":145,""source"":""pokepedia"",""value"":[""physical"",null,null]}]",,3,3
+217,move_game,"[135,""b2w2""]",type_pp,"[""normal"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",5]}]",,3,3
+218,move_game,"[135,""bw""]",type_pp,"[""normal"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",5]}]",,3,3
+219,move_game,"[135,""c""]",type_pp,"[""normal"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",5]}]",,3,3
+220,move_game,"[135,""dp""]",type_pp,"[""normal"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",5]}]",,3,3
+221,move_game,"[135,""e""]",type_pp,"[""normal"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",5]}]",,3,3
+222,move_game,"[135,""frlg""]",type_pp,"[""normal"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",5]}]",,3,3
+223,move_game,"[135,""gs""]",type_pp,"[""normal"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",5]}]",,3,3
+224,move_game,"[135,""hgss""]",type_pp,"[""normal"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",5]}]",,3,3
+225,move_game,"[135,""pt""]",type_pp,"[""normal"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",5]}]",,3,3
+226,move_game,"[135,""rs""]",type_pp,"[""normal"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",5]}]",,3,3
+227,move_game,"[149,""rb""]",power,"[null,80]",majority,"[{""document_id"":117,""source"":""showdown"",""value"":[1,80]}]",,3,3
+228,move_game,"[149,""y""]",power,"[null,80]",majority,"[{""document_id"":117,""source"":""showdown"",""value"":[1,80]}]",,3,3
+229,move_game,"[162,""rb""]",power,"[null,90]",majority,"[{""document_id"":117,""source"":""showdown"",""value"":[1,90]}]",,3,3
+230,move_game,"[162,""y""]",power,"[null,90]",majority,"[{""document_id"":117,""source"":""showdown"",""value"":[1,90]}]",,3,3
+231,move_game,"[165,""c""]",power,"[50,100]",majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":[50,null]}]",,3,3
+232,move_game,"[165,""e""]",power,"[50,100]",majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":[50,null]}]",,3,3
+233,move_game,"[165,""frlg""]",power,"[50,100]",majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":[50,null]}]",,3,3
+234,move_game,"[165,""gs""]",power,"[50,100]",majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":[50,null]}]",,3,3
+235,move_game,"[165,""rb""]",power,"[50,100]",majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":[50,null]}]",,3,3
+236,move_game,"[165,""rb""]",type_pp,"[""normal"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",1]}]",,3,3
+237,move_game,"[165,""rs""]",power,"[50,100]",majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":[50,null]}]",,3,3
+238,move_game,"[165,""y""]",power,"[50,100]",majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":[50,null]}]",,3,3
+239,move_game,"[165,""y""]",type_pp,"[""normal"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",1]}]",,3,3
+240,move_game,"[170,""c""]",power,"[null,null]",majority,"[{""document_id"":118,""source"":""showdown"",""value"":[null,100]}]",,3,3
+241,move_game,"[170,""c""]",type_pp,"[""normal"",5]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",40]}]",,3,3
+242,move_game,"[170,""dp""]",type_pp,"[""normal"",5]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",40]}]",,3,3
+243,move_game,"[170,""e""]",power,"[null,null]",majority,"[{""document_id"":120,""source"":""showdown"",""value"":[null,100]}]",,3,3
+244,move_game,"[170,""e""]",type_pp,"[""normal"",5]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",40]}]",,3,3
+245,move_game,"[170,""frlg""]",power,"[null,null]",majority,"[{""document_id"":121,""source"":""showdown"",""value"":[null,100]}]",,3,3
+246,move_game,"[170,""frlg""]",type_pp,"[""normal"",5]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",40]}]",,3,3
+247,move_game,"[170,""gs""]",power,"[null,null]",majority,"[{""document_id"":118,""source"":""showdown"",""value"":[null,100]}]",,3,3
+248,move_game,"[170,""gs""]",type_pp,"[""normal"",5]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",40]}]",,3,3
+249,move_game,"[170,""hgss""]",type_pp,"[""normal"",5]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",40]}]",,3,3
+250,move_game,"[170,""pt""]",type_pp,"[""normal"",5]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",40]}]",,3,3
+251,move_game,"[170,""rs""]",power,"[null,null]",majority,"[{""document_id"":119,""source"":""showdown"",""value"":[null,100]}]",,3,3
+252,move_game,"[170,""rs""]",type_pp,"[""normal"",5]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",40]}]",,3,3
+253,move_game,"[171,""c""]",power,"[null,100]",majority,"[{""document_id"":118,""source"":""showdown"",""value"":[null,null]}]",,3,3
+254,move_game,"[171,""e""]",power,"[null,100]",majority,"[{""document_id"":120,""source"":""showdown"",""value"":[null,null]}]",,3,3
+255,move_game,"[171,""frlg""]",power,"[null,100]",majority,"[{""document_id"":121,""source"":""showdown"",""value"":[null,null]}]",,3,3
+256,move_game,"[171,""gs""]",power,"[null,100]",majority,"[{""document_id"":118,""source"":""showdown"",""value"":[null,null]}]",,3,3
+257,move_game,"[171,""rs""]",power,"[null,100]",majority,"[{""document_id"":119,""source"":""showdown"",""value"":[null,null]}]",,3,3
+258,move_game,"[18,""c""]",priority,-1,majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":-6}]",,3,3
+259,move_game,"[18,""gs""]",priority,-1,majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":-6}]",,3,3
+260,move_game,"[18,""rb""]",priority,0,majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":-6}]",,3,3
+261,move_game,"[18,""y""]",priority,0,majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":-6}]",,3,3
+262,move_game,"[182,""c""]",priority,2,majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":4}]",,3,3
+263,move_game,"[182,""dp""]",priority,3,majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":4}]",,3,3
+264,move_game,"[182,""e""]",priority,3,majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":4}]",,3,3
+265,move_game,"[182,""frlg""]",priority,3,majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":4}]",,3,3
+266,move_game,"[182,""gs""]",priority,2,majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":4}]",,3,3
+267,move_game,"[182,""hgss""]",priority,3,majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":4}]",,3,3
+268,move_game,"[182,""pt""]",priority,3,majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":4}]",,3,3
+269,move_game,"[182,""rs""]",priority,3,majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":4}]",,3,3
+270,move_game,"[193,""c""]",power,"[null,null]",majority,"[{""document_id"":118,""source"":""showdown"",""value"":[null,100]}]",,3,3
+271,move_game,"[193,""e""]",power,"[null,null]",majority,"[{""document_id"":120,""source"":""showdown"",""value"":[null,100]}]",,3,3
+272,move_game,"[193,""frlg""]",power,"[null,null]",majority,"[{""document_id"":121,""source"":""showdown"",""value"":[null,100]}]",,3,3
+273,move_game,"[193,""gs""]",power,"[null,null]",majority,"[{""document_id"":118,""source"":""showdown"",""value"":[null,100]}]",,3,3
+274,move_game,"[193,""rs""]",power,"[null,null]",majority,"[{""document_id"":119,""source"":""showdown"",""value"":[null,100]}]",,3,3
+275,move_game,"[194,""sv""]",power,"[""status"",null,null]",majority,"[{""document_id"":317,""source"":""pokepedia"",""value"":[""status"",null,100]}]",,3,3
+276,move_game,"[197,""c""]",priority,2,majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":4}]",,3,3
+277,move_game,"[197,""dp""]",priority,3,majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":4}]",,3,3
+278,move_game,"[197,""e""]",priority,3,majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":4}]",,3,3
+279,move_game,"[197,""frlg""]",priority,3,majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":4}]",,3,3
+280,move_game,"[197,""gs""]",priority,2,majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":4}]",,3,3
+281,move_game,"[197,""hgss""]",priority,3,majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":4}]",,3,3
+282,move_game,"[197,""pt""]",priority,3,majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":4}]",,3,3
+283,move_game,"[197,""rs""]",priority,3,majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":4}]",,3,3
+284,move_game,"[203,""c""]",priority,2,majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":4}]",,3,3
+285,move_game,"[203,""dp""]",priority,4,open,"[{""document_id"":114,""source"":""bulbapedia"",""value"":3}]",,3,
+286,move_game,"[203,""e""]",priority,4,open,"[{""document_id"":114,""source"":""bulbapedia"",""value"":3}]",,3,
+287,move_game,"[203,""frlg""]",priority,4,open,"[{""document_id"":114,""source"":""bulbapedia"",""value"":3}]",,3,
+288,move_game,"[203,""gs""]",priority,2,majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":4}]",,3,3
+289,move_game,"[203,""hgss""]",priority,4,open,"[{""document_id"":114,""source"":""bulbapedia"",""value"":3}]",,3,
+290,move_game,"[203,""pt""]",priority,4,open,"[{""document_id"":114,""source"":""bulbapedia"",""value"":3}]",,3,
+291,move_game,"[203,""rs""]",priority,4,open,"[{""document_id"":114,""source"":""bulbapedia"",""value"":3}]",,3,
+292,move_game,"[208,""b2w2""]",type_pp,"[""normal"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",5]}]",,3,3
+293,move_game,"[208,""bw""]",type_pp,"[""normal"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",5]}]",,3,3
+294,move_game,"[208,""c""]",type_pp,"[""normal"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",5]}]",,3,3
+295,move_game,"[208,""dp""]",type_pp,"[""normal"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",5]}]",,3,3
+296,move_game,"[208,""e""]",type_pp,"[""normal"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",5]}]",,3,3
+297,move_game,"[208,""frlg""]",type_pp,"[""normal"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",5]}]",,3,3
+298,move_game,"[208,""gs""]",type_pp,"[""normal"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",5]}]",,3,3
+299,move_game,"[208,""hgss""]",type_pp,"[""normal"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",5]}]",,3,3
+300,move_game,"[208,""oras""]",type_pp,"[""normal"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",5]}]",,3,3
+301,move_game,"[208,""pt""]",type_pp,"[""normal"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",5]}]",,3,3
+302,move_game,"[208,""rs""]",type_pp,"[""normal"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",5]}]",,3,3
+303,move_game,"[208,""sm""]",type_pp,"[""normal"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",5]}]",,3,3
+304,move_game,"[208,""sv""]",power,"[""status"",null,null]",majority,"[{""document_id"":331,""source"":""pokepedia"",""value"":[""status"",null,100]}]",,3,3
+305,move_game,"[208,""sw""]",type_pp,"[""normal"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",5]}]",,3,3
+306,move_game,"[208,""usum""]",type_pp,"[""normal"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",5]}]",,3,3
+307,move_game,"[208,""xy""]",type_pp,"[""normal"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",5]}]",,3,3
+308,move_game,"[220,""c""]",power,"[null,null]",majority,"[{""document_id"":118,""source"":""showdown"",""value"":[null,100]}]",,3,3
+309,move_game,"[220,""gs""]",power,"[null,null]",majority,"[{""document_id"":118,""source"":""showdown"",""value"":[null,100]}]",,3,3
+310,move_game,"[233,""sv""]",priority,-1,majority,"[{""document_id"":114,""source"":""bulbapedia"",""value"":0}]",,3,3
+311,move_game,"[237,""oras""]",type_pp,"[""normal"",15]",game-data,"[{""document_id"":127,""source"":""showdown"",""value"":[""water"",15]}]",,3,3
+312,move_game,"[237,""sm""]",type_pp,"[""normal"",15]",game-data,"[{""document_id"":128,""source"":""showdown"",""value"":[""water"",15]}]",,3,3
+313,move_game,"[237,""sv""]",type_pp,"[""normal"",15]",game-data,"[{""document_id"":134,""source"":""showdown"",""value"":[""water"",15]}]",,3,3
+314,move_game,"[237,""sw""]",type_pp,"[""normal"",15]",game-data,"[{""document_id"":131,""source"":""showdown"",""value"":[""water"",15]}]",,3,3
+315,move_game,"[237,""usum""]",type_pp,"[""normal"",15]",game-data,"[{""document_id"":129,""source"":""showdown"",""value"":[""water"",15]}]",,3,3
+316,move_game,"[237,""xy""]",type_pp,"[""normal"",15]",game-data,"[{""document_id"":126,""source"":""showdown"",""value"":[""water"",15]}]",,3,3
+317,move_game,"[243,""c""]",priority,-1,majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":-5}]",,3,3
+318,move_game,"[243,""gs""]",priority,-1,majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":-5}]",,3,3
+319,move_game,"[245,""c""]",priority,1,majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":2}]",,3,3
+320,move_game,"[245,""dp""]",priority,1,majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":2}]",,3,3
+321,move_game,"[245,""e""]",priority,1,majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":2}]",,3,3
+322,move_game,"[245,""frlg""]",priority,1,majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":2}]",,3,3
+323,move_game,"[245,""gs""]",priority,1,majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":2}]",,3,3
+324,move_game,"[245,""hgss""]",priority,1,majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":2}]",,3,3
+325,move_game,"[245,""pt""]",priority,1,majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":2}]",,3,3
+326,move_game,"[245,""rs""]",priority,1,majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":2}]",,3,3
+327,move_game,"[252,""dp""]",priority,1,majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":3}]",,3,3
+328,move_game,"[252,""e""]",priority,1,majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":3}]",,3,3
+329,move_game,"[252,""frlg""]",priority,1,majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":3}]",,3,3
+330,move_game,"[252,""hgss""]",priority,1,majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":3}]",,3,3
+331,move_game,"[252,""pt""]",priority,1,majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":3}]",,3,3
+332,move_game,"[252,""rs""]",priority,1,majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":3}]",,3,3
+333,move_game,"[262,""e""]",power,"[null,100]",majority,"[{""document_id"":120,""source"":""showdown"",""value"":[null,null]}]",,3,3
+334,move_game,"[262,""frlg""]",power,"[null,100]",majority,"[{""document_id"":121,""source"":""showdown"",""value"":[null,null]}]",,3,3
+335,move_game,"[262,""rs""]",power,"[null,100]",majority,"[{""document_id"":119,""source"":""showdown"",""value"":[null,null]}]",,3,3
+336,move_game,"[267,""e""]",power,"[null,95]",majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":[null,null]}]",,3,3
+337,move_game,"[267,""frlg""]",power,"[null,95]",majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":[null,null]}]",,3,3
+338,move_game,"[267,""rs""]",power,"[null,95]",majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":[null,null]}]",,3,3
+339,move_game,"[273,""sv""]",power,"[""status"",null,null]",majority,"[{""document_id"":393,""source"":""pokepedia"",""value"":[""status"",null,100]}]",,3,3
+340,move_game,"[277,""sv""]",priority,4,majority,"[{""document_id"":114,""source"":""bulbapedia"",""value"":0}]",,3,3
+341,move_game,"[279,""sv""]",priority,-4,majority,"[{""document_id"":114,""source"":""bulbapedia"",""value"":0}]",,3,3
+342,move_game,"[282,""oras""]",type_pp,"[""dark"",20]",game-data,"[{""document_id"":113,""source"":""serebii"",""value"":[""dark"",25]}]",,3,3
+343,move_game,"[282,""xy""]",type_pp,"[""dark"",20]",game-data,"[{""document_id"":113,""source"":""serebii"",""value"":[""dark"",25]}]",,3,3
+344,move_game,"[284,""sv""]",power,"[""special"",150,100]",majority,"[{""document_id"":404,""source"":""pokepedia"",""value"":[""special"",null,100]}]",,3,3
+345,move_game,"[289,""sv""]",priority,4,majority,"[{""document_id"":114,""source"":""bulbapedia"",""value"":0}]",,3,3
+346,move_game,"[289,""sw""]",priority,4,open,"[{""document_id"":114,""source"":""bulbapedia"",""value"":0}]",,3,
+347,move_game,"[303,""b2w2""]",type_pp,"[""normal"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",5]}]",,3,3
+348,move_game,"[303,""bw""]",type_pp,"[""normal"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",5]}]",,3,3
+349,move_game,"[303,""dp""]",type_pp,"[""normal"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",5]}]",,3,3
+350,move_game,"[303,""e""]",type_pp,"[""normal"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",5]}]",,3,3
+351,move_game,"[303,""frlg""]",type_pp,"[""normal"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",5]}]",,3,3
+352,move_game,"[303,""hgss""]",type_pp,"[""normal"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",5]}]",,3,3
+353,move_game,"[303,""oras""]",type_pp,"[""normal"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",5]}]",,3,3
+354,move_game,"[303,""pt""]",type_pp,"[""normal"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",5]}]",,3,3
+355,move_game,"[303,""rs""]",type_pp,"[""normal"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",5]}]",,3,3
+356,move_game,"[303,""sm""]",type_pp,"[""normal"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",5]}]",,3,3
+357,move_game,"[303,""sw""]",type_pp,"[""normal"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",5]}]",,3,3
+358,move_game,"[303,""usum""]",type_pp,"[""normal"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",5]}]",,3,3
+359,move_game,"[303,""xy""]",type_pp,"[""normal"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""normal"",5]}]",,3,3
+360,move_game,"[316,""e""]",power,"[null,null]",majority,"[{""document_id"":120,""source"":""showdown"",""value"":[null,100]}]",,3,3
+361,move_game,"[316,""frlg""]",power,"[null,null]",majority,"[{""document_id"":121,""source"":""showdown"",""value"":[null,100]}]",,3,3
+362,move_game,"[316,""rs""]",power,"[null,null]",majority,"[{""document_id"":119,""source"":""showdown"",""value"":[null,100]}]",,3,3
+363,move_game,"[323,""sv""]",power,"[""special"",150,100]",majority,"[{""document_id"":438,""source"":""pokepedia"",""value"":[""special"",null,100]}]",,3,3
+364,move_game,"[329,""sv""]",power,"[""special"",null,30]",majority,"[{""document_id"":444,""source"":""pokepedia"",""value"":[""special"",null,null]}]",,3,3
+365,move_game,"[355,""b2w2""]",type_pp,"[""flying"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""flying"",5]}]",,3,3
+366,move_game,"[355,""bw""]",type_pp,"[""flying"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""flying"",5]}]",,3,3
+367,move_game,"[355,""dp""]",type_pp,"[""flying"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""flying"",5]}]",,3,3
+368,move_game,"[355,""hgss""]",type_pp,"[""flying"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""flying"",5]}]",,3,3
+369,move_game,"[355,""oras""]",type_pp,"[""flying"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""flying"",5]}]",,3,3
+370,move_game,"[355,""pt""]",type_pp,"[""flying"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""flying"",5]}]",,3,3
+371,move_game,"[355,""sm""]",type_pp,"[""flying"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""flying"",5]}]",,3,3
+372,move_game,"[355,""sw""]",type_pp,"[""flying"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""flying"",5]}]",,3,3
+373,move_game,"[355,""usum""]",type_pp,"[""flying"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""flying"",5]}]",,3,3
+374,move_game,"[355,""xy""]",type_pp,"[""flying"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""flying"",5]}]",,3,3
+375,move_game,"[386,""dp""]",power,"[""physical"",null,100]",majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""physical"",60,100]}]",,3,3
+376,move_game,"[386,""hgss""]",power,"[""physical"",null,100]",majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""physical"",60,100]}]",,3,3
+377,move_game,"[386,""pt""]",power,"[""physical"",null,100]",majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""physical"",60,100]}]",,3,3
+378,move_game,"[397,""sv""]",power,"[""status"",null,null]",majority,"[{""document_id"":511,""source"":""pokepedia"",""value"":[""status"",null,100]}]",,3,3
+379,move_game,"[417,""sv""]",power,"[""status"",null,null]",majority,"[{""document_id"":530,""source"":""pokepedia"",""value"":[""status"",null,100]}]",,3,3
+380,move_game,"[46,""c""]",priority,-1,majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":-6}]",,3,3
+381,move_game,"[46,""gs""]",priority,-1,majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":-6}]",,3,3
+382,move_game,"[46,""rb""]",priority,0,majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":-6}]",,3,3
+383,move_game,"[46,""y""]",priority,0,majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":-6}]",,3,3
+384,move_game,"[49,""rb""]",power,"[null,90]",majority,"[{""document_id"":117,""source"":""showdown"",""value"":[1,90]}]",,3,3
+385,move_game,"[49,""y""]",power,"[null,90]",majority,"[{""document_id"":117,""source"":""showdown"",""value"":[1,90]}]",,3,3
+386,move_game,"[561,""oras""]",type_pp,"[""fighting"",10]",game-data,"[{""document_id"":113,""source"":""serebii"",""value"":[""fighting"",15]}]",,3,3
+387,move_game,"[561,""xy""]",type_pp,"[""fighting"",10]",game-data,"[{""document_id"":113,""source"":""serebii"",""value"":[""fighting"",15]}]",,3,3
+388,move_game,"[569,""sv""]",priority,1,majority,"[{""document_id"":114,""source"":""bulbapedia"",""value"":0}]",,3,3
+389,move_game,"[569,""sw""]",priority,1,open,"[{""document_id"":114,""source"":""bulbapedia"",""value"":0}]",,3,
+390,move_game,"[578,""sv""]",priority,3,majority,"[{""document_id"":114,""source"":""bulbapedia"",""value"":0}]",,3,3
+391,move_game,"[584,""sv""]",power,"[""special"",40,100]",majority,"[{""document_id"":691,""source"":""pokepedia"",""value"":[""special"",null,100]}]",,3,3
+392,move_game,"[586,""sv""]",power,"[""special"",140,100]",majority,"[{""document_id"":693,""source"":""pokepedia"",""value"":[""special"",null,100]}]",,3,3
+393,move_game,"[587,""sv""]",power,"[""status"",null,null]",majority,"[{""document_id"":694,""source"":""pokepedia"",""value"":[""status"",null,100]}]",,3,3
+394,move_game,"[594,""oras""]",power,"[""physical"",15,100]",majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""special"",15,100]}]",,3,3
+395,move_game,"[594,""xy""]",power,"[""physical"",15,100]",majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""special"",15,100]}]",,3,3
+396,move_game,"[600,""sv""]",priority,1,majority,"[{""document_id"":114,""source"":""bulbapedia"",""value"":0}]",,3,3
+397,move_game,"[600,""sw""]",priority,1,open,"[{""document_id"":114,""source"":""bulbapedia"",""value"":0}]",,3,
+398,move_game,"[658,""sv""]",type_pp,"[""electric"",1]",game-data,"[{""document_id"":728,""source"":""pokepedia"",""value"":[""electric"",15]}]",,3,3
+399,move_game,"[659,""sm""]",type_pp,"[""ground"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""ground"",5]}]",,3,3
+400,move_game,"[659,""sw""]",type_pp,"[""ground"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""ground"",5]}]",,3,3
+401,move_game,"[659,""usum""]",type_pp,"[""ground"",10]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""ground"",5]}]",,3,3
+402,move_game,"[66,""oras""]",type_pp,"[""fighting"",20]",game-data,"[{""document_id"":113,""source"":""serebii"",""value"":[""fighting"",25]}]",,3,3
+403,move_game,"[66,""xy""]",type_pp,"[""fighting"",20]",game-data,"[{""document_id"":113,""source"":""serebii"",""value"":[""fighting"",25]}]",,3,3
+404,move_game,"[669,""sv""]",power,"[""physical"",125,100]",majority,"[{""document_id"":737,""source"":""pokepedia"",""value"":[""physical"",125,null]}]",,3,3
+405,move_game,"[670,""sv""]",power,"[""physical"",40,100]",majority,"[{""document_id"":738,""source"":""pokepedia"",""value"":[""physical"",null,100]}]",,3,3
+406,move_game,"[671,""sv""]",priority,3,majority,"[{""document_id"":114,""source"":""bulbapedia"",""value"":0}]",,3,3
+407,move_game,"[671,""sw""]",priority,3,open,"[{""document_id"":114,""source"":""bulbapedia"",""value"":0}]",,3,
+408,move_game,"[68,""c""]",priority,-1,majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":-5}]",,3,3
+409,move_game,"[68,""gs""]",priority,-1,majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":-5}]",,3,3
+410,move_game,"[68,""rb""]",power,"[null,100]",majority,"[{""document_id"":117,""source"":""showdown"",""value"":[1,100]}]",,3,3
+411,move_game,"[68,""rb""]",priority,-1,majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":-5}]",,3,3
+412,move_game,"[68,""y""]",power,"[null,100]",majority,"[{""document_id"":117,""source"":""showdown"",""value"":[1,100]}]",,3,3
+413,move_game,"[68,""y""]",priority,-1,majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":-5}]",,3,3
+414,move_game,"[686,""sv""]",power,"[""special"",90,100]",majority,"[{""document_id"":754,""source"":""pokepedia"",""value"":[""special"",90,null]}]",,3,3
+415,move_game,"[69,""rb""]",power,"[null,100]",majority,"[{""document_id"":117,""source"":""showdown"",""value"":[1,100]}]",,3,3
+416,move_game,"[69,""y""]",power,"[null,100]",majority,"[{""document_id"":117,""source"":""showdown"",""value"":[1,100]}]",,3,3
+417,move_game,"[690,""sw""]",priority,-3,open,"[{""document_id"":114,""source"":""bulbapedia"",""value"":0}]",,3,
+418,move_game,"[692,""sv""]",power,"[""physical"",90,100]",majority,"[{""document_id"":760,""source"":""pokepedia"",""value"":[""physical"",null,100]}]",,3,3
+419,move_game,"[695,""sv""]",type_pp,"[""ghost"",1]",game-data,"[{""document_id"":763,""source"":""pokepedia"",""value"":[""ghost"",10]}]",,3,3
+420,move_game,"[696,""sv""]",type_pp,"[""dark"",1]",game-data,"[{""document_id"":764,""source"":""pokepedia"",""value"":[""dark"",10]}]",,3,3
+421,move_game,"[697,""sv""]",type_pp,"[""water"",1]",game-data,"[{""document_id"":765,""source"":""pokepedia"",""value"":[""water"",10]}]",,3,3
+422,move_game,"[699,""sv""]",type_pp,"[""ghost"",1]",game-data,"[{""document_id"":766,""source"":""pokepedia"",""value"":[""ghost"",10]}]",,3,3
+423,move_game,"[700,""sv""]",type_pp,"[""electric"",1]",game-data,"[{""document_id"":767,""source"":""pokepedia"",""value"":[""electric"",15]}]",,3,3
+424,move_game,"[701,""sv""]",type_pp,"[""normal"",1]",game-data,"[{""document_id"":768,""source"":""pokepedia"",""value"":[""normal"",5]}]",,3,3
+425,move_game,"[702,""sv""]",type_pp,"[""normal"",1]",game-data,"[{""document_id"":769,""source"":""pokepedia"",""value"":[""normal"",5]}]",,3,3
+426,move_game,"[703,""sv""]",type_pp,"[""psychic"",1]",game-data,"[{""document_id"":770,""source"":""pokepedia"",""value"":[""psychic"",10]}]",,3,3
+427,move_game,"[704,""sv""]",power,"[""special"",150,100]",majority,"[{""document_id"":771,""source"":""pokepedia"",""value"":[""special"",null,100]}]",,3,3
+428,move_game,"[719,""sv""]",type_pp,"[""electric"",1]",game-data,"[{""document_id"":785,""source"":""pokepedia"",""value"":[""electric"",15]}]",,3,3
+429,move_game,"[724,""sv""]",power,"[""physical"",200,null]",majority,"[{""document_id"":790,""source"":""pokepedia"",""value"":[""physical"",null,null]}]",,3,3
+430,move_game,"[725,""sv""]",power,"[""special"",200,null]",majority,"[{""document_id"":791,""source"":""pokepedia"",""value"":[""special"",null,null]}]",,3,3
+431,move_game,"[727,""sv""]",power,"[""physical"",190,null]",majority,"[{""document_id"":793,""source"":""pokepedia"",""value"":[""physical"",null,null]}]",,3,3
+432,move_game,"[728,""sv""]",power,"[""special"",185,null]",majority,"[{""document_id"":794,""source"":""pokepedia"",""value"":[""special"",null,null]}]",,3,3
+433,move_game,"[729,""sv""]",power,"[""physical"",80,100]",majority,"[{""document_id"":795,""source"":""pokepedia"",""value"":[""physical"",50,100]}]",,3,3
+434,move_game,"[729,""sv""]",priority,2,majority,"[{""document_id"":114,""source"":""bulbapedia"",""value"":0}]",,3,3
+435,move_game,"[729,""sv""]",type_pp,"[""electric"",10]",game-data,"[{""document_id"":795,""source"":""pokepedia"",""value"":[""electric"",15]}]",,3,3
+436,move_game,"[729,""sw""]",priority,2,open,"[{""document_id"":114,""source"":""bulbapedia"",""value"":0}]",,3,
+437,move_game,"[733,""sv""]",power,"[""special"",60,100]",majority,"[{""document_id"":799,""source"":""pokepedia"",""value"":[""special"",90,100]}]",,3,3
+438,move_game,"[733,""sv""]",type_pp,"[""water"",20]",game-data,"[{""document_id"":799,""source"":""pokepedia"",""value"":[""water"",15]}]",,3,3
+439,move_game,"[734,""sv""]",power,"[""special"",60,100]",majority,"[{""document_id"":800,""source"":""pokepedia"",""value"":[""special"",90,100]}]",,3,3
+440,move_game,"[734,""sv""]",type_pp,"[""electric"",20]",game-data,"[{""document_id"":800,""source"":""pokepedia"",""value"":[""electric"",15]}]",,3,3
+441,move_game,"[735,""sv""]",power,"[""physical"",60,100]",majority,"[{""document_id"":801,""source"":""pokepedia"",""value"":[""physical"",90,100]}]",,3,3
+442,move_game,"[735,""sv""]",type_pp,"[""fire"",20]",game-data,"[{""document_id"":801,""source"":""pokepedia"",""value"":[""fire"",15]}]",,3,3
+443,move_game,"[737,""sv""]",power,"[""special"",80,95]",majority,"[{""document_id"":803,""source"":""pokepedia"",""value"":[""special"",90,100]}]",,3,3
+444,move_game,"[738,""sv""]",power,"[""physical"",100,90]",majority,"[{""document_id"":804,""source"":""pokepedia"",""value"":[""physical"",90,100]}]",,3,3
+445,move_game,"[738,""sv""]",type_pp,"[""grass"",10]",game-data,"[{""document_id"":804,""source"":""pokepedia"",""value"":[""grass"",15]}]",,3,3
+446,move_game,"[739,""sv""]",power,"[""special"",100,90]",majority,"[{""document_id"":805,""source"":""pokepedia"",""value"":[""special"",90,100]}]",,3,3
+447,move_game,"[739,""sv""]",type_pp,"[""ice"",10]",game-data,"[{""document_id"":805,""source"":""pokepedia"",""value"":[""ice"",15]}]",,3,3
+448,move_game,"[74,""sv""]",type_pp,"[""normal"",20]",game-data,"[{""document_id"":202,""source"":""pokepedia"",""value"":[""grass"",20]}]",,3,3
+449,move_game,"[740,""sv""]",power,"[""special"",120,85]",majority,"[{""document_id"":806,""source"":""pokepedia"",""value"":[""special"",90,100]}]",,3,3
+450,move_game,"[740,""sv""]",type_pp,"[""fairy"",5]",game-data,"[{""document_id"":806,""source"":""pokepedia"",""value"":[""fairy"",15]}]",,3,3
+451,move_game,"[743,""sv""]",priority,4,majority,"[{""document_id"":114,""source"":""bulbapedia"",""value"":0}]",,3,3
+452,move_game,"[749,""sv""]",power,"[""status"",null,100]",majority,"[{""document_id"":814,""source"":""pokepedia"",""value"":[""status"",null,null]}]",,3,3
+453,move_game,"[756,""sv""]",power,"[""status"",null,100]",majority,"[{""document_id"":821,""source"":""pokepedia"",""value"":[""status"",null,null]}]",,3,3
+454,move_game,"[757,""sv""]",power,"[""physical"",100,null]",majority,"[{""document_id"":822,""source"":""pokepedia"",""value"":[null,null,null]}]",,3,3
+455,move_game,"[758,""sv""]",power,"[""physical"",10,null]",majority,"[{""document_id"":823,""source"":""pokepedia"",""value"":[null,null,null]}]",,3,3
+456,move_game,"[759,""sv""]",power,"[""physical"",10,null]",majority,"[{""document_id"":824,""source"":""pokepedia"",""value"":[null,null,null]}]",,3,3
+457,move_game,"[760,""sv""]",power,"[""physical"",10,null]",majority,"[{""document_id"":825,""source"":""pokepedia"",""value"":[null,null,null]}]",,3,3
+458,move_game,"[761,""sv""]",power,"[""physical"",10,null]",majority,"[{""document_id"":826,""source"":""pokepedia"",""value"":[null,null,null]}]",,3,3
+459,move_game,"[762,""sv""]",power,"[""physical"",10,null]",majority,"[{""document_id"":827,""source"":""pokepedia"",""value"":[null,null,null]}]",,3,3
+460,move_game,"[763,""sv""]",power,"[""physical"",10,null]",majority,"[{""document_id"":828,""source"":""pokepedia"",""value"":[null,null,null]}]",,3,3
+461,move_game,"[764,""sv""]",power,"[""physical"",10,null]",majority,"[{""document_id"":829,""source"":""pokepedia"",""value"":[null,null,null]}]",,3,3
+462,move_game,"[765,""sv""]",power,"[""physical"",10,null]",majority,"[{""document_id"":830,""source"":""pokepedia"",""value"":[null,null,null]}]",,3,3
+463,move_game,"[766,""sv""]",power,"[""physical"",10,null]",majority,"[{""document_id"":831,""source"":""pokepedia"",""value"":[null,null,null]}]",,3,3
+464,move_game,"[767,""sv""]",power,"[""physical"",10,null]",majority,"[{""document_id"":832,""source"":""pokepedia"",""value"":[null,null,null]}]",,3,3
+465,move_game,"[768,""sv""]",power,"[""physical"",10,null]",majority,"[{""document_id"":833,""source"":""pokepedia"",""value"":[null,null,null]}]",,3,3
+466,move_game,"[770,""sv""]",power,"[""physical"",10,null]",majority,"[{""document_id"":835,""source"":""pokepedia"",""value"":[null,null,null]}]",,3,3
+467,move_game,"[771,""sv""]",power,"[""physical"",10,null]",majority,"[{""document_id"":836,""source"":""pokepedia"",""value"":[null,null,null]}]",,3,3
+468,move_game,"[772,""sv""]",power,"[""physical"",10,null]",majority,"[{""document_id"":837,""source"":""pokepedia"",""value"":[null,null,null]}]",,3,3
+469,move_game,"[773,""sv""]",power,"[""physical"",10,null]",majority,"[{""document_id"":838,""source"":""pokepedia"",""value"":[null,null,null]}]",,3,3
+470,move_game,"[774,""sv""]",power,"[""physical"",10,null]",majority,"[{""document_id"":839,""source"":""pokepedia"",""value"":[null,null,null]}]",,3,3
+471,move_game,"[803,""sv""]",priority,0,open,"[{""document_id"":114,""source"":""bulbapedia"",""value"":1}]",,3,
+472,move_game,"[803,""sw""]",power,"[""physical"",70,100]",majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""physical"",55,100]}]",,3,3
+473,move_game,"[803,""sw""]",priority,0,open,"[{""document_id"":114,""source"":""bulbapedia"",""value"":1}]",,3,
+474,move_game,"[817,""sw""]",power,"[""physical"",80,100]",majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""physical"",75,100]}]",,3,3
+475,move_game,"[82,""rb""]",power,"[null,100]",majority,"[{""document_id"":117,""source"":""showdown"",""value"":[1,100]}]",,3,3
+476,move_game,"[82,""y""]",power,"[null,100]",majority,"[{""document_id"":117,""source"":""showdown"",""value"":[1,100]}]",,3,3
+477,move_game,"[824,""sw""]",power,"[""physical"",130,100]",majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""physical"",120,100]}]",,3,3
+478,move_game,"[850,""sv""]",type_pp,"[""psychic"",15]",game-data,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""psychic"",10]}]",,3,3
+479,move_game,"[877,""sv""]",power,"[""special"",null,90]",majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""special"",1,90]}]",,3,3
+480,move_game,"[894,""sv""]",power,"[""physical"",null,100]",majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""physical"",1,100]}]",,3,3
+481,move_game,"[908,""sv""]",power,"[""status"",null,null]",majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""status"",null,0]}]",,3,3
+482,move_game,"[911,""sv""]",power,"[""special"",50,null]",majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""special"",50,0]}]",,3,3
+483,move_game,"[913,""sv""]",power,"[""status"",null,null]",majority,"[{""document_id"":115,""source"":""pokeapi"",""value"":[""status"",null,0]}]",,3,3
+484,species,[1007],is_paradox,1,majority,"[{""document_id"":13,""source"":""showdown"",""value"":0}]",,1,1
+485,species,[1008],is_paradox,1,majority,"[{""document_id"":13,""source"":""showdown"",""value"":0}]",,1,1
+486,species,[1011],growth_rate_id,"""erratic""",game-data,"[{""document_id"":12,""source"":""pokeapi"",""value"":""slow""}]",,1,1
+487,species,[1012],growth_rate_id,"""medium-fast""",game-data,"[{""document_id"":12,""source"":""pokeapi"",""value"":""slow""}]",,1,1
+488,species,[1012],hatch_cycles,20,game-data,"[{""document_id"":12,""source"":""pokeapi"",""value"":50}]",,1,1
+489,species,[1013],growth_rate_id,"""medium-fast""",game-data,"[{""document_id"":12,""source"":""pokeapi"",""value"":""slow""}]",,1,1
+490,species,[1013],hatch_cycles,20,game-data,"[{""document_id"":12,""source"":""pokeapi"",""value"":50}]",,1,1
+491,species,[1014],hatch_cycles,120,game-data,"[{""document_id"":12,""source"":""pokeapi"",""value"":50}]",,1,1
+492,species,[1015],hatch_cycles,120,game-data,"[{""document_id"":12,""source"":""pokeapi"",""value"":50}]",,1,1
+493,species,[1016],hatch_cycles,120,game-data,"[{""document_id"":12,""source"":""pokeapi"",""value"":50}]",,1,1
+494,species,[1017],hatch_cycles,10,game-data,"[{""document_id"":12,""source"":""pokeapi"",""value"":50}]",,1,1
+495,species,[1020],is_paradox,1,majority,"[{""document_id"":13,""source"":""showdown"",""value"":0}]",,1,1
+496,species,[1021],is_paradox,1,majority,"[{""document_id"":13,""source"":""showdown"",""value"":0}]",,1,1
+497,species,[1022],is_paradox,1,majority,"[{""document_id"":13,""source"":""showdown"",""value"":0}]",,1,1
+498,species,[1023],is_paradox,1,majority,"[{""document_id"":13,""source"":""showdown"",""value"":0}]",,1,1
+499,species,[916],gender_rate,4,game-data,"[{""document_id"":12,""source"":""pokeapi"",""value"":0}]",,1,1
+500,translation,"[""ability"",""10"",""name"",""es"",null,null]",text,"""Absorbe Elec""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Absorbe Electricidad""}]",,1,1
+501,translation,"[""ability"",""117"",""name"",""de"",null,null]",text,"""Schneeschauer""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Hagelalarm""}]",,1,1
+502,translation,"[""ability"",""118"",""name"",""es-419"",null,null]",text,"""Cosechamiel""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Recogemiel""}]",,1,1
+503,translation,"[""ability"",""129"",""name"",""es-419"",null,null]",text,"""Flaquear""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Flaqueza""}]",,1,1
+504,translation,"[""ability"",""147"",""name"",""es-419"",null,null]",text,"""Piel Milagrosa""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Piel Milagro""}]",,1,1
+505,translation,"[""ability"",""16"",""name"",""es-419"",null,null]",text,"""Cambio de Color""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Cambio Color""}]",,1,1
+506,translation,"[""ability"",""161"",""name"",""es-419"",null,null]",text,"""Modo Zen""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Modo Daruma""}]",,1,1
+507,translation,"[""ability"",""180"",""name"",""de"",null,null]",text,"""Symbiose""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Nutznießer""}]",,1,1
+508,translation,"[""ability"",""20"",""name"",""de"",null,null]",text,"""Gleichmut""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Tempomacher""}]",,1,1
+509,translation,"[""ability"",""205"",""name"",""es-419"",null,null]",text,"""Socorro""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Primer Auxilio""}]",,1,1
+510,translation,"[""ability"",""218"",""name"",""es-419"",null,null]",text,"""Mullido""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Peluche""}]",,1,1
+511,translation,"[""ability"",""223"",""name"",""ko"",null,null]",text,"""화학의힘""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""과학의힘""}]",,1,1
+512,translation,"[""ability"",""237"",""name"",""es-419"",null,null]",text,"""Buscabola""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Recogebolas""}]",,1,1
+513,translation,"[""ability"",""25"",""name"",""es-419"",null,null]",text,"""Superguardia""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Superguarda""}]",,1,1
+514,translation,"[""ability"",""255"",""name"",""es-419"",null,null]",text,"""Obstinación""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Monotema""}]",,1,1
+515,translation,"[""ability"",""268"",""name"",""es-419"",null,null]",text,"""Aroma Incesante""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Olor Persistente""}]",,1,1
+516,translation,"[""ability"",""270"",""name"",""es-419"",null,null]",text,"""Termoconversión""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Termoscambio""}]",,1,1
+517,translation,"[""ability"",""273"",""name"",""es-419"",null,null]",text,"""Pan Comido""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Cuerpo Horneado""}]",,1,1
+518,translation,"[""ability"",""279"",""name"",""es-419"",null,null]",text,"""Comandante""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Comandar""}]",,1,1
+519,translation,"[""ability"",""280"",""name"",""es-419"",null,null]",text,"""Dinamo""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Dínamo""}]",,1,1
+520,translation,"[""ability"",""287"",""name"",""es-419"",null,null]",text,"""Cuenta Debacle""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Abalorio Debacle""}]",,1,1
+521,translation,"[""ability"",""35"",""name"",""fr"",null,null]",text,"""Luminescence""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Lumiattirance""}]",,1,1
+522,translation,"[""ability"",""38"",""name"",""it"",null,null]",text,"""Velenopunte""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Velenopunto""}]",,1,1
+523,translation,"[""ability"",""41"",""name"",""es-419"",null,null]",text,"""Velo de Agua""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Velo Agua""}]",,1,1
+524,translation,"[""ability"",""54"",""name"",""es"",null,null]",text,"""Pereza""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Ausente""}]",,1,1
+525,translation,"[""ability"",""54"",""name"",""es-419"",null,null]",text,"""Pereza""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Ausente""}]",,1,1
+526,translation,"[""ability"",""64"",""name"",""es"",null,null]",text,"""Viscosecreción""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Lodo Líquido""}]",,1,1
+527,translation,"[""ability"",""64"",""name"",""es-419"",null,null]",text,"""Toxisecreción""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Lodo Líquido""}]",,1,1
+528,translation,"[""ability"",""71"",""name"",""es-419"",null,null]",text,"""Trampa de Arena""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Trampa Arena""}]",,1,1
+529,translation,"[""ability"",""76"",""name"",""es"",null,null]",text,"""Esclusa de Aire""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Bucle Aire""}]",,1,1
+530,translation,"[""ability"",""76"",""name"",""es-419"",null,null]",text,"""Esclusa de Aire""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Bucle Aire""}]",,1,1
+531,translation,"[""ability"",""77"",""name"",""de"",null,null]",text,"""Taumelschritt""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Fußangel""}]",,1,1
+532,translation,"[""ability"",""9"",""name"",""es"",null,null]",text,"""Elec. Estática""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Electricidad Estática""}]",,1,1
+533,translation,"[""ability"",""9"",""name"",""es-419"",null,null]",text,"""Elec. Estática""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Electricidad Estática""}]",,1,1
+534,translation,"[""ability"",""90"",""name"",""de"",null,null]",text,"""Giftheilung""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Aufheber""}]",,1,1
+535,translation,"[""item"",""1633"",""name"",""es-419"",null,null]",text,"""Brazalete Galanuez""",game-data,"[{""document_id"":76,""source"":""pokeapi"",""value"":""Brazal Galanuez""}]",,2,2
+536,translation,"[""item"",""198"",""name"",""it"",null,null]",text,"""Roccia di re""",game-data,"[{""document_id"":76,""source"":""pokeapi"",""value"":""Roccia di Re""}]",,2,2
+537,translation,"[""item"",""203"",""name"",""it"",null,null]",text,"""Dente abissi""",game-data,"[{""document_id"":76,""source"":""pokeapi"",""value"":""Dente Abissi""}]",,2,2
+538,translation,"[""item"",""210"",""name"",""it"",null,null]",text,"""Metalcopertura""",game-data,"[{""document_id"":76,""source"":""pokeapi"",""value"":""Metalcoperta""}]",,2,2
+539,translation,"[""item"",""212"",""name"",""es"",null,null]",text,"""Escama de Dragón""",game-data,"[{""document_id"":76,""source"":""pokeapi"",""value"":""Escama Dragón""}]",,2,2
+540,translation,"[""item"",""212"",""name"",""it"",null,null]",text,"""Squama drago""",game-data,"[{""document_id"":76,""source"":""pokeapi"",""value"":""Squama Drago""}]",,2,2
+541,translation,"[""item"",""303"",""name"",""it"",null,null]",text,"""Affilartiglio""",game-data,"[{""document_id"":76,""source"":""pokeapi"",""value"":""Affilartigli""}]",,2,2
+542,translation,"[""item"",""580"",""name"",""it"",null,null]",text,"""Squama bella""",game-data,"[{""document_id"":76,""source"":""pokeapi"",""value"":""Squama Bella""}]",,2,2
+543,translation,"[""item"",""686"",""name"",""es-419"",null,null]",text,"""Bocadito de Crema""",game-data,"[{""document_id"":76,""source"":""pokeapi"",""value"":""Dulce de Nata""}]",,2,2
+544,translation,"[""item"",""687"",""name"",""es-419"",null,null]",text,"""Bolsita Fragante""",game-data,"[{""document_id"":76,""source"":""pokeapi"",""value"":""Saquito Fragante""}]",,2,2
+545,translation,"[""move"",""136"",""name"",""es"",null,null]",text,"""Pat. Salto Alta""",game-data,"[{""document_id"":116,""source"":""pokeapi"",""value"":""Patada Salto Alta""}]",,3,3
+546,translation,"[""move"",""136"",""name"",""es-419"",null,null]",text,"""Pat. Salto Alto""",game-data,"[{""document_id"":116,""source"":""pokeapi"",""value"":""Patada Salto Alto""}]",,3,3
+547,translation,"[""move"",""140"",""name"",""it"",null,null]",text,"""Sferattacco""",game-data,"[{""document_id"":116,""source"":""pokeapi"",""value"":""Attacco Pioggia""}]",,3,3
+548,translation,"[""move"",""176"",""name"",""de"",null,null]",text,"""Umwandlung 2""",game-data,"[{""document_id"":116,""source"":""pokeapi"",""value"":""Umwandlung2""}]",,3,3
+549,translation,"[""move"",""178"",""name"",""it"",null,null]",text,"""Cotonspora""",game-data,"[{""document_id"":116,""source"":""pokeapi"",""value"":""Cottonspora""}]",,3,3
+550,translation,"[""move"",""192"",""name"",""it"",null,null]",text,"""Elettrocannone""",game-data,"[{""document_id"":116,""source"":""pokeapi"",""value"":""Falcecannone""}]",,3,3
+551,translation,"[""move"",""201"",""name"",""es"",null,null]",text,"""Tormenta Arena""",game-data,"[{""document_id"":116,""source"":""pokeapi"",""value"":""Tormenta de Arena""}]",,3,3
+552,translation,"[""move"",""201"",""name"",""es-419"",null,null]",text,"""Tormenta Arena""",game-data,"[{""document_id"":116,""source"":""pokeapi"",""value"":""Tormenta de Arena""}]",,3,3
+553,translation,"[""move"",""207"",""name"",""es"",null,null]",text,"""Contoneo""",game-data,"[{""document_id"":116,""source"":""pokeapi"",""value"":""Fanfarronear""}]",,3,3
+554,translation,"[""move"",""245"",""name"",""es"",null,null]",text,"""Veloc. Extrema""",game-data,"[{""document_id"":116,""source"":""pokeapi"",""value"":""Velocidad Extrema""}]",,3,3
+555,translation,"[""move"",""245"",""name"",""es-419"",null,null]",text,"""Veloc. Extrema""",game-data,"[{""document_id"":116,""source"":""pokeapi"",""value"":""Velocidad Extrema""}]",,3,3
+556,translation,"[""move"",""263"",""name"",""es"",null,null]",text,"""Imagen""",game-data,"[{""document_id"":116,""source"":""pokeapi"",""value"":""Fachada""}]",,3,3
+557,translation,"[""move"",""280"",""name"",""ko"",null,null]",text,"""깨트리기""",game-data,"[{""document_id"":116,""source"":""pokeapi"",""value"":""깨뜨리다""}]",,3,3
+558,translation,"[""move"",""334"",""name"",""es-419"",null,null]",text,"""Defensa Hierro""",game-data,"[{""document_id"":116,""source"":""pokeapi"",""value"":""Defensa de Hierro""}]",,3,3
+559,translation,"[""move"",""343"",""name"",""ko"",null,null]",text,"""탐내기""",game-data,"[{""document_id"":116,""source"":""pokeapi"",""value"":""탐내다""}]",,3,3
+560,translation,"[""move"",""344"",""name"",""es"",null,null]",text,"""Placaje Eléc""",game-data,"[{""document_id"":116,""source"":""pokeapi"",""value"":""Placaje Eléctrico""}]",,3,3
+561,translation,"[""move"",""353"",""name"",""it"",null,null]",text,"""Desiderio Fatale""",game-data,"[{""document_id"":116,""source"":""pokeapi"",""value"":""Obbliderio""}]",,3,3
+562,translation,"[""move"",""396"",""name"",""it"",null,null]",text,"""Sferapulsar""",game-data,"[{""document_id"":116,""source"":""pokeapi"",""value"":""Forzasfera""}]",,3,3
+563,translation,"[""move"",""437"",""name"",""es-419"",null,null]",text,"""Tormenta Hojas""",game-data,"[{""document_id"":116,""source"":""pokeapi"",""value"":""Tormenta de Hojas""}]",,3,3
+564,translation,"[""move"",""505"",""name"",""it"",null,null]",text,"""Curapulsar""",game-data,"[{""document_id"":116,""source"":""pokeapi"",""value"":""Ondasana""}]",,3,3
+565,translation,"[""move"",""508"",""name"",""fr"",null,null]",text,"""Change-Vitesse""",game-data,"[{""document_id"":116,""source"":""pokeapi"",""value"":""Chgt Vitesse""}]",,3,3
+566,translation,"[""move"",""521"",""name"",""fr"",null,null]",text,"""Change-Éclair""",game-data,"[{""document_id"":116,""source"":""pokeapi"",""value"":""Change Éclair""}]",,3,3
+567,translation,"[""move"",""572"",""name"",""es-419"",null,null]",text,"""Tormenta Pétalos""",game-data,"[{""document_id"":116,""source"":""pokeapi"",""value"":""Tormenta de Pétalos""}]",,3,3
+568,translation,"[""move"",""591"",""name"",""es"",null,null]",text,"""Torm. Diamantes""",game-data,"[{""document_id"":116,""source"":""pokeapi"",""value"":""Tormenta de Diamantes""}]",,3,3
+569,translation,"[""move"",""591"",""name"",""es-419"",null,null]",text,"""Torm. Diamantes""",game-data,"[{""document_id"":116,""source"":""pokeapi"",""value"":""Tormenta de Diamantes""}]",,3,3
+570,translation,"[""move"",""620"",""name"",""es-419"",null,null]",text,"""Ascen. Dracónico""",game-data,"[{""document_id"":116,""source"":""pokeapi"",""value"":""Ascenso Dracónico""}]",,3,3
+571,translation,"[""move"",""626"",""name"",""es-419"",null,null]",text,"""Picada Supersónica""",game-data,"[{""document_id"":116,""source"":""pokeapi"",""value"":""Picado Supersónico""}]",,3,3
+572,translation,"[""move"",""627"",""name"",""es-419"",null,null]",text,"""Picada Supersónica""",game-data,"[{""document_id"":116,""source"":""pokeapi"",""value"":""Picado Supersónico""}]",,3,3
+573,translation,"[""move"",""656"",""name"",""es-419"",null,null]",text,"""Tacleada Sideral""",game-data,"[{""document_id"":116,""source"":""pokeapi"",""value"":""Arrumaco Sideral""}]",,3,3
+574,translation,"[""move"",""657"",""name"",""es-419"",null,null]",text,"""Tacleada Sideral""",game-data,"[{""document_id"":116,""source"":""pokeapi"",""value"":""Arrumaco Sideral""}]",,3,3
+575,translation,"[""move"",""726"",""name"",""es-419"",null,null]",text,"""Paliza Amistosa""",game-data,"[{""document_id"":116,""source"":""pokeapi"",""value"":""Somanta Amistosa""}]",,3,3
+576,translation,"[""move"",""731"",""name"",""es-419"",null,null]",text,"""Pikaída""",game-data,"[{""document_id"":116,""source"":""pokeapi"",""value"":""Pikapicado""}]",,3,3
+577,translation,"[""move"",""770"",""name"",""es-419"",null,null]",text,"""Maxirroca""",game-data,"[{""document_id"":116,""source"":""pokeapi"",""value"":""Maxilito""}]",,3,3
+578,translation,"[""move"",""867"",""name"",""ko"",null,null]",text,"""베껴그리기""",game-data,"[{""document_id"":116,""source"":""pokeapi"",""value"":""배껴그리기""}]",,3,3
+579,translation,"[""move"",""878"",""name"",""ko"",null,null]",text,"""액셀브레이크""",game-data,"[{""document_id"":116,""source"":""pokeapi"",""value"":""엑셀브레이크""}]",,3,3
+580,translation,"[""species"",""1019"",""genus"",""zh-Hans"",null,null]",text,"""苹果大蛇宝可梦""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""糖青苹果""}]",,2,
+581,translation,"[""species"",""1019"",""genus"",""zh-Hant"",null,null]",text,"""蘋果大蛇寶可夢""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""糖青蘋果""}]",,2,
+582,translation,"[""species"",""111"",""genus"",""es"",null,null]",text,"""Pokémon Clavos""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Punzante*""}]",,2,
+583,translation,"[""species"",""133"",""genus"",""de"",null,null]",text,"""Evolutions-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Evolution""}]",,2,
+584,translation,"[""species"",""167"",""genus"",""es"",null,null]",text,"""Pokémon Escupesoga""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Escupehilo*""}]",,2,
+585,translation,"[""species"",""175"",""genus"",""es"",null,null]",text,"""Pokémon Bolaclavos""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Bolapicuda*""}]",,2,
+586,translation,"[""species"",""184"",""genus"",""it"",null,null]",text,"""Pokémon Acquniglio""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Acquaniglio""}]",,2,
+587,translation,"[""species"",""185"",""genus"",""de"",null,null]",text,"""Imitations-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Imitation""}]",,2,
+588,translation,"[""species"",""187"",""genus"",""es"",null,null]",text,"""Pokémon Algadón""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Diente León*""}]",,2,
+589,translation,"[""species"",""188"",""genus"",""es"",null,null]",text,"""Pokémon Algadón""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Diente León*""}]",,2,
+590,translation,"[""species"",""189"",""genus"",""es"",null,null]",text,"""Pokémon Algadón""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Diente León*""}]",,2,
+591,translation,"[""species"",""206"",""genus"",""de"",null,null]",text,"""Schlangen-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Erdschlange*""}]",,2,
+592,translation,"[""species"",""231"",""genus"",""ko"",null,null]",text,"""긴코포켓몬""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""{{tt|긴코""}]",,2,
+593,translation,"[""species"",""254"",""genus"",""es"",null,null]",text,"""Pokémon Monte""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Bosque*""}]",,2,
+594,translation,"[""species"",""256"",""genus"",""de"",null,null]",text,"""Kleinhahn-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Jungvogel*""}]",,2,
+595,translation,"[""species"",""269"",""genus"",""es"",null,null]",text,"""Pokémon Polilla Ven.""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Polilla Venenosa*""}]",,2,
+596,translation,"[""species"",""281"",""genus"",""de"",null,null]",text,"""Emotions-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Emotion""}]",,2,
+597,translation,"[""species"",""303"",""genus"",""de"",null,null]",text,"""Schwindler-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Schwindel""}]",,2,
+598,translation,"[""species"",""321"",""genus"",""fr"",null,null]",text,"""Pokémon Cachabouée""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Carchabouée""}]",,2,
+599,translation,"[""species"",""327"",""genus"",""fr"",null,null]",text,"""Pokémon Panda Tache""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Panda Taché""}]",,2,
+600,translation,"[""species"",""329"",""genus"",""de"",null,null]",text,"""Vibrations-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Vibration""}]",,2,
+601,translation,"[""species"",""329"",""genus"",""zh-Hans"",null,null]",text,"""振动宝可梦""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""震动""}]",,2,
+602,translation,"[""species"",""358"",""genus"",""es"",null,null]",text,"""Pokémon Sonido Aire""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Campanilla*""}]",,2,
+603,translation,"[""species"",""358"",""genus"",""ko"",null,null]",text,"""풍경포켓몬""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""풍령""}]",,2,
+604,translation,"[""species"",""414"",""genus"",""de"",null,null]",text,"""Motte""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Fruchtmotte""}]",,2,
+605,translation,"[""species"",""415"",""genus"",""de"",null,null]",text,"""Kleinbienen-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Baby-Biene""}]",,2,
+606,translation,"[""species"",""417"",""genus"",""ja"",null,null]",text,"""でんきりすポケモン""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""でんきリス""}]",,2,
+607,translation,"[""species"",""418"",""genus"",""es"",null,null]",text,"""Pokémon Nutria Mar.""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Nutria Marina*""}]",,2,
+608,translation,"[""species"",""419"",""genus"",""es"",null,null]",text,"""Pokémon Nutria Mar.""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Nutria Marina*""}]",,2,
+609,translation,"[""species"",""433"",""genus"",""es"",null,null]",text,"""Pokémon Campana""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Cascabel*""}]",,2,
+610,translation,"[""species"",""467"",""genus"",""de"",null,null]",text,"""Detonations-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Detonation""}]",,2,
+611,translation,"[""species"",""469"",""name"",""fr"",null,null]",text,"""Yanmega""",game-data,"[{""document_id"":63,""source"":""bulbapedia"",""value"":""Yanméga""}]",,1,1
+612,translation,"[""species"",""470"",""genus"",""de"",null,null]",text,"""Unreif-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Frischgrün*""}]",,2,
+613,translation,"[""species"",""480"",""genus"",""de"",null,null]",text,"""Wissens-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Wissen""}]",,2,
+614,translation,"[""species"",""481"",""genus"",""de"",null,null]",text,"""Emotions-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Emotion""}]",,2,
+615,translation,"[""species"",""49"",""genus"",""es"",null,null]",text,"""Pokémon Polilla Ven.""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Polilla Venenosa*""}]",,2,
+616,translation,"[""species"",""491"",""genus"",""es"",null,null]",text,"""Pokémon Oscuridad""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Tenebroso*""}]",,2,
+617,translation,"[""species"",""495"",""genus"",""es"",null,null]",text,"""Pokémon Serp. Hierba""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Serpiente Hierba*""}]",,2,
+618,translation,"[""species"",""496"",""genus"",""es"",null,null]",text,"""Pokémon Serp. Hierba""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Serpiente Hierba*""}]",,2,
+619,translation,"[""species"",""499"",""name"",""ko"",null,null]",text,"""차오꿀""",game-data,"[{""document_id"":65,""source"":""bulbapedia"",""value"":""챠오꿀""}]",,1,1
+620,translation,"[""species"",""526"",""genus"",""de"",null,null]",text,"""Kompressions-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Kompression""}]",,2,
+621,translation,"[""species"",""536"",""genus"",""de"",null,null]",text,"""Vibrations-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Vibration""}]",,2,
+622,translation,"[""species"",""536"",""genus"",""zh-Hans"",null,null]",text,"""振动宝可梦""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""震动""}]",,2,
+623,translation,"[""species"",""537"",""genus"",""de"",null,null]",text,"""Vibrations-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Vibration""}]",,2,
+624,translation,"[""species"",""537"",""genus"",""zh-Hans"",null,null]",text,"""振动宝可梦""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""震动""}]",,2,
+625,translation,"[""species"",""56"",""genus"",""de"",null,null]",text,"""Schwein/Affe""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Schwein""}]",,2,
+626,translation,"[""species"",""57"",""genus"",""de"",null,null]",text,"""Schwein/Affe""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Schwein""}]",,2,
+627,translation,"[""species"",""576"",""genus"",""de"",null,null]",text,"""Gestirns-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Gestirn""}]",,2,
+628,translation,"[""species"",""58"",""genus"",""de"",null,null]",text,"""Welpen-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Hund""}]",,2,
+629,translation,"[""species"",""667"",""genus"",""ja"",null,null]",text,"""わかじしポケモン""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""わかしし""}]",,2,
+630,translation,"[""species"",""685"",""genus"",""es"",null,null]",text,"""Pokémon Nata""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Nata Montada*""}]",,2,
+631,translation,"[""species"",""686"",""genus"",""de"",null,null]",text,"""Rotations-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Rotation""}]",,2,
+632,translation,"[""species"",""687"",""genus"",""de"",null,null]",text,"""Inversions-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Inversion""}]",,2,
+633,translation,"[""species"",""697"",""genus"",""de"",null,null]",text,"""Tyrannen-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Tyrann""}]",,2,
+634,translation,"[""species"",""70"",""genus"",""es"",null,null]",text,"""Pokémon Matamoscas""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Atrapamoscas*""}]",,2,
+635,translation,"[""species"",""71"",""genus"",""es"",null,null]",text,"""Pokémon Matamoscas""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Atrapamoscas*""}]",,2,
+636,translation,"[""species"",""716"",""genus"",""de"",null,null]",text,"""Lebens-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Leben""}]",,2,
+637,translation,"[""species"",""727"",""genus"",""fr"",null,null]",text,"""Pokémon Vil Catcheur""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Catcheur""}]",,2,
+638,translation,"[""species"",""766"",""genus"",""ko"",null,null]",text,"""연계포켓몬""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""연게""}]",,2,
+639,translation,"[""species"",""772"",""genus"",""de"",null,null]",text,"""Modifikations-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Modifikation""}]",,2,
+640,translation,"[""species"",""773"",""genus"",""de"",null,null]",text,"""Modifikations-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Modifikation""}]",,2,
+641,translation,"[""species"",""780"",""genus"",""zh-Hans"",null,null]",text,"""悠游宝可梦""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""悠遊""}]",,2,
+642,translation,"[""species"",""790"",""genus"",""de"",null,null]",text,"""Urgestirns-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Urgestirn""}]",,2,
+643,translation,"[""species"",""796"",""genus"",""de"",null,null]",text,"""Illuminations-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Illumination""}]",,2,
+644,translation,"[""species"",""83"",""genus"",""ko"",null,null]",text,"""청둥오리포켓몬""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""천둥오리""}]",,2,
+645,translation,"[""species"",""843"",""genus"",""es"",null,null]",text,"""Pokémon Serp. Arena""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Serpiente Arena*""}]",,2,
+646,translation,"[""species"",""844"",""genus"",""es"",null,null]",text,"""Pokémon Serp. Arena""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Serpiente Arena*""}]",,2,
+647,translation,"[""species"",""865"",""genus"",""ko"",null,null]",text,"""청둥오리포켓몬""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""천둥오리""}]",,2,
+648,translation,"[""species"",""870"",""genus"",""de"",null,null]",text,"""Formations-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Formation""}]",,2,
+649,translation,"[""species"",""876"",""genus"",""de"",null,null]",text,"""Emotions-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Emotion""}]",,2,
+650,translation,"[""species"",""894"",""genus"",""de"",null,null]",text,"""Elektronen-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Elektron""}]",,2,
+651,translation,"[""species"",""904"",""genus"",""ko"",null,null]",text,"""침붕포켓몬몬""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""침붕""}]",,2,
+652,translation,"[""species"",""964"",""genus"",""fr"",null,null]",text,"""Dauphin/Super Héros""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Dauphin""}]",,2,
+653,translation,"[""species"",""999"",""genus"",""fr"",null,null]",text,"""Coffrotrésor/Chassotrésor""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Coffrotrésor""}]",,2,
