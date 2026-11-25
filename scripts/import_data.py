@@ -1,5 +1,5 @@
-"""Phase 1 import: reference tables, species, forms, per-game form data, abilities, names (10 languages),
-with cross-checks, citations, verification status, discrepancies and the update log.
+"""Data import: reference tables, species, forms, per-game form data, abilities, names (10 languages), then the
+later phases (scripts/phases/phase*.py, env PHASES), with cross-checks, citations, verification status, discrepancies and the update log.
 
 Inputs: cache/ (scripts/fetch/fetch_sources.py). Outputs: db/data/*.csv.
 Rules (plan.md §5): game extraction (tier 1) wins; otherwise >= 2 agreeing sources incl. one of tier <= 2.
@@ -42,6 +42,9 @@ def file_sha(path):
 
 def nfkc(s):
     return unicodedata.normalize("NFKC", s).replace("’", "'").strip() if isinstance(s, str) else s
+
+
+PUBLISHED = {"game-data", "unanimous", "majority", "manual", "single-source"}   # disputed / seeded rows are not stored
 
 
 def resolve(table, rk, column, observations, compare=None):
@@ -655,7 +658,7 @@ tr_rows = []
 def add_tr(entity, eid, field, lang, obs, compare=nfkc):
     rk = row_key(entity, str(eid), field, lang, None, None)
     v, st = resolve("translation", rk, "text", obs, lambda x: canon(nfkc(x)))
-    if v: tr_rows.append([entity, str(eid), field, lang, None, None, v, 1])
+    if v and st in PUBLISHED: tr_rows.append([entity, str(eid), field, lang, None, None, v, 1])
 
 # Bulbapedia name lists
 BUL = {}
@@ -735,6 +738,12 @@ for aid, slug, gen in ab_rows:
     ext.append(["ability", str(aid), "slug", slug])
 out["external_id"] = (["entity_type", "entity_id", "system", "value"], ext)
 
+# ----------------------------------------------------------------------------- later phases (same namespace, same rules)
+PHASES = [p for p in os.environ.get("PHASES", "1b").split(",") if p]
+for _ph in PHASES:
+    exec(compile(open(ROOT / f"scripts/phases/phase{_ph}.py", encoding="utf-8").read(), f"phase{_ph}.py", "exec"), globals())
+PHASE_LABEL = os.environ.get("PHASE_LABEL", "Phase " + (PHASES[-1] if PHASES else "1"))
+
 # ----------------------------------------------------------------------------- provenance tables + log
 out["source_document"] = (["id", "source_id", "locator", "revision", "retrieved_at", "content_sha256"],
                           [[d["id"], d["source_id"], d["locator"], d["revision"], d["retrieved_at"], d["content_sha256"]] for d in documents.values()])
@@ -748,30 +757,44 @@ prev = {(r["table_name"], r["row_key"], r["column_name"]): r for r in read_csv("
 prev_log = read_csv("update_log")
 update_id = (max(int(r["id"]) for r in prev_log) + 1) if prev_log else 1
 ver_rows, changed = [], 0
+changed_by_table = collections.Counter()
+seen_v = set()
 for t, rk, col, st, vh, fp in verifs:
+    if (t, rk, col) in seen_v: continue
+    seen_v.add((t, rk, col))
     p = prev.get((t, rk, col))
     if p and p["sources_fingerprint"] == fp and p["value_sha256"] == vh and p["status"] == st:
         ver_rows.append([t, rk, col, st, vh, fp, p["verified_at"], p["update_id"]])
     else:
         changed += 1
+        changed_by_table[t] += 1
         ver_rows.append([t, rk, col, st, vh, fp, NOW, update_id])
 out["verification"] = (["table_name", "row_key", "column_name", "status", "value_sha256", "sources_fingerprint", "verified_at", "update_id"], ver_rows)
+# discrepancies seen before keep the update in which they were opened
+prev_disc = {(r["table_name"], r["row_key"], r["column_name"], r["chosen_value"], r["alternatives"]): r for r in read_csv("discrepancy")}
+disc_rows = []
+for i, d in enumerate(sorted(set(discreps))):
+    p = prev_disc.get((d[0], d[1], d[2], d[3], d[5]))
+    opened = int(p["opened_update_id"]) if p else update_id
+    closed = (int(p["closed_update_id"]) if p and p["closed_update_id"] else update_id) if d[4] != "open" else None
+    disc_rows.append([i + 1, *d, opened, closed])
 out["discrepancy"] = (["id", "table_name", "row_key", "column_name", "chosen_value", "rule", "alternatives", "note",
-                       "opened_update_id", "closed_update_id"],
-                      [[i + 1, *d, update_id, (update_id if d[4] != "open" else None)] for i, d in enumerate(sorted(discreps))])
+                       "opened_update_id", "closed_update_id"], disc_rows)
 
 status_counts = collections.Counter(v[3] for v in verifs)
 stats = {"rows": {t: len(r) for t, (h, r) in out.items()}, "verification": dict(status_counts),
-         "discrepancies": len(discreps), "reverified": changed, "unmapped_pkhex_rows": len(unmapped), "skipped_shared_entry": len(skipped_shared), "cosmetic_filled": len(COSMETIC_FILLED)}
+         "discrepancies": len(set(discreps)), "reverified": changed, "unmapped_pkhex_rows": len(unmapped), "skipped_shared_entry": len(skipped_shared), "cosmetic_filled": len(COSMETIC_FILLED)}
 if changed:
     log = [[int(r["id"]), r["started_at"], r["finished_at"], r["kind"], r["trigger"], r["data_version"], r["schema_version"],
             r["git_commit"], r["summary"], r["stats"]] for r in prev_log]
-    log.append([update_id, NOW, NOW, "initial" if not prev_log else "weekly", "Phase 1 — espèces, formes, noms",
+    log.append([update_id, NOW, NOW, "initial" if not prev_log else "release", PHASE_LABEL,
                 DATA_VERSION, SCHEMA_VERSION, None,
                 f"Import et vérification : {len(sp_rows)} espèces, {len(form_rows)} formes, {len(fg_rows)} lignes forme×jeu, "
-                f"{len(tr_rows)} traductions ; {len(discreps)} écarts notés ; {changed} données (re)vérifiées.", canon(stats)])
+                + "".join(f"{len(out[t][1])} {lbl}, " for t, lbl in [("evolution", "évolutions"), ("pokedex_entry", "entrées de Pokédex régionaux"),
+                                                                  ("move", "capacités"), ("move_game", "lignes capacité×jeu"), ("machine", "CT/CS/DT")] if t in out)
+                + f"{len(tr_rows)} traductions ; {len(set(discreps))} écarts notés ; {changed} données (re)vérifiées.", canon(stats)])
     out["update_log"] = (["id", "started_at", "finished_at", "kind", "trigger", "data_version", "schema_version", "git_commit", "summary", "stats"], log)
-    items = [[update_id, t, "*", "*", "verify", None, str(n), None] for t, n in collections.Counter(v[0] for v in verifs).items()]
+    items = [[update_id, t, "*", "*", "verify", None, str(n), None] for t, n in sorted(changed_by_table.items())]
     prev_items = [[int(r["update_id"]), r["table_name"], r["row_key"], r["column_name"], r["action"], r["old_value"] or None,
                    r["new_value"] or None, r["document_ids"] or None] for r in read_csv("update_log_item")]
     out["update_log_item"] = (["update_id", "table_name", "row_key", "column_name", "action", "old_value", "new_value", "document_ids"], prev_items + items)

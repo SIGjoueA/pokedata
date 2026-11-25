@@ -66,6 +66,10 @@ def main():
     m["showdown-species"] = {"source_id": "showdown", "revision": m["showdown"]["revision"], "retrieved_at": NOW,
                              "path": "cache/showdown-species.json"}
 
+    sh(["node", str(ROOT / "scripts/fetch/showdown_more.mjs"), str(CACHE / "showdown/data"), str(CACHE / "showdown-more.json")])
+    m["showdown-more"] = {"source_id": "showdown", "revision": m["showdown"]["revision"], "retrieved_at": NOW,
+                          "path": "cache/showdown-more.json"}
+
     # PKHeX dump (tier 1)
     dump = CACHE / "pkhex-dump"
     proj = ROOT / "scripts/fetch/pkhex_dumper"

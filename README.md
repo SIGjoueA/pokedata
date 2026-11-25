@@ -39,6 +39,9 @@ Adresses = identifiants du Pokédex (numéro national, `{numéro}-{forme}` pour 
 | `api/v1/pokemon/{id}.json` | une espèce, ses formes et leurs données par jeu |
 | `api/v1/form/{form_id}.json` | une forme (ex. `6-mega-x`, `37-alola`) |
 | `api/v1/ability/{id}.json` | un talent, ses noms et ses porteurs par jeu |
+| `api/v1/evolution/{chain_id}.json` | une famille d'évolution : paires de formes et méthodes par jeu (id de chaîne PokeAPI, donné par `pokemon/{id}.json`) |
+| `api/v1/pokedex/index.json`, `pokedex/{pokedex_id}.json` | Pokédex régionaux par jeu (ex. `sv-paldea`, `xy-kalos-coastal`) et leurs numéros |
+| `api/v1/item/{id}.json` | objets utilisés par les évolutions (noms en 10 langues) |
 | `api/v1/type/index.json`, `game/index.json`, `game/{id}.json` | référentiels |
 | `api/v1/search/{lang}.json` | index de recherche `[nom normalisé, nom, id]` |
 | `api/v1/meta/{sources,changelog,verification,languages}.json` | provenance, journal, statuts |
@@ -58,7 +61,8 @@ Réimporter depuis les sources (nécessite git, Node.js et .NET 10) :
 
 ```sh
 python3 scripts/fetch/fetch_sources.py   # cache/ : PokeAPI, Showdown, extraction PKHeX, pages Bulbapedia/Poképédia
-python3 scripts/import_phase1.py         # -> db/data/*.csv + reports/
+python3 scripts/fetch/fetch_more.py bulbapedia pokepedia serebii   # pages des phases 1b et 2 (Pokédex régionaux, catégories, capacités)
+python3 scripts/import_data.py         # -> db/data/*.csv + reports/
 python3 scripts/changelog.py             # -> CHANGELOG.md
 ```
 

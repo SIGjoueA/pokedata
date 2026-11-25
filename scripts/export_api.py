@@ -48,6 +48,10 @@ def main():
     for r in q("SELECT entity_type, entity_id, language_id, text FROM translation WHERE field='name' AND game_id IS NULL AND version_id IS NULL"):
         if okv("translation", rk(r["entity_type"], r["entity_id"], "name", r["language_id"], None, None), "text"):
             names[(r["entity_type"], r["entity_id"])][r["language_id"]] = r["text"]
+    texts = collections.defaultdict(lambda: collections.defaultdict(dict))   # (entity, id) -> field -> lang -> text
+    for r in q("SELECT entity_type, entity_id, field, language_id, text FROM translation WHERE field<>'name' AND game_id IS NULL AND version_id IS NULL"):
+        if okv("translation", rk(r["entity_type"], r["entity_id"], r["field"], r["language_id"], None, None), "text"):
+            texts[(r["entity_type"], r["entity_id"])][r["field"]][r["language_id"]] = r["text"]
     aliases = collections.defaultdict(dict)
     for r in q("SELECT * FROM external_id"):
         aliases[(r["entity_type"], r["entity_id"])][r["system"]] = r["value"]
@@ -97,6 +101,9 @@ def main():
              "is_battle_only": bool(r["is_battle_only"]), "base_form": r["base_form_id"], "introduced_in": r["introduced_game_id"],
              "aliases": {k: v for k, v in aliases[("form", r["id"])].items()}, "games": gd,
              "verification": status("form", rk(r["id"]))}
+        fn = texts[("form", r["id"])].get("form_name")
+        if fn:
+            o["form_names"] = fn
         if fdisc:
             o["discrepancies"] = fdisc
         form_objs[r["id"]] = o
@@ -105,6 +112,10 @@ def main():
     eggs = collections.defaultdict(list)
     for r in q("SELECT * FROM species_egg_group"):
         eggs[r["species_id"]].append(r["egg_group_id"])
+    dexnum = collections.defaultdict(dict)
+    for r in q("SELECT e.*, p.sort_order FROM pokedex_entry e JOIN pokedex p ON p.id=e.pokedex_id ORDER BY p.sort_order"):
+        if okv("pokedex_entry", rk(r["pokedex_id"], r["species_id"]), "number"):
+            dexnum[r["species_id"]][r["pokedex_id"]] = r["number"]
     index = []
     search = collections.defaultdict(list)
     flags = ["is_baby", "is_legendary", "is_mythical", "is_ultra_beast", "is_paradox", "has_gender_differences"]
@@ -124,6 +135,9 @@ def main():
                "gender_rate": s["gender_rate"] if okv("species", key, "gender_rate") else None,
                "hatch_cycles": s["hatch_cycles"] if okv("species", key, "hatch_cycles") else None,
                "egg_groups": sorted(eggs[sid]), **fl, "forms": forms,
+               "genus": texts[("species", str(sid))].get("genus", {}),
+               "evolution_chain": s["evolution_chain_id"] if okv("species", key, "evolution_chain_id") else None,
+               "pokedex_numbers": dexnum.get(sid, {}),
                "aliases": aliases[("species", str(sid))]}
         sdisc = disc.get(key)
         if sdisc:
@@ -154,6 +168,58 @@ def main():
                                           "aliases": aliases[("ability", str(a["id"]))], "holders": h})
         alist.append({"id": a["id"], "slug": a["slug"], "names": nm})
     write("ability/index.json", alist)
+
+    # evolutions (one file per evolution chain) and the items they use
+    item_names = {r["id"]: {"slug": r["slug"], "names": names[("item", str(r["id"]))]} for r in q("SELECT * FROM item")}
+    methods = collections.defaultdict(lambda: collections.defaultdict(list))
+    em_cols = ["variant", "trigger", "min_level", "item_id", "held_item_id", "known_move_id", "known_move_type_id", "location_id",
+               "time_of_day", "gender", "min_friendship", "min_affection"]
+    for r in q("SELECT * FROM evolution_method ORDER BY evolution_id, game_id, variant"):
+        if not okv("evolution_method", rk(r["evolution_id"], r["game_id"], r["variant"])):
+            continue
+        m = {c: r[c] for c in em_cols if r[c] is not None}
+        if r["conditions"]:
+            m["conditions"] = json.loads(r["conditions"])
+        methods[r["evolution_id"]][r["game_id"]].append(m)
+    sp_chain = {r["id"]: r["evolution_chain_id"] for r in q("SELECT id, evolution_chain_id FROM species")}
+    chains = collections.defaultdict(list)
+    for r in q("SELECT * FROM evolution ORDER BY id"):
+        if not okv("evolution", rk(r["id"])):
+            continue
+        cid = sp_chain.get(form_objs[r["from_form_id"]]["species"]) if r["from_form_id"] in form_objs else None
+        chains[cid].append({"id": r["id"], "from": r["from_form_id"], "to": r["to_form_id"],
+                            "methods": dict(sorted(methods[r["id"]].items(), key=lambda kv: game_order.index(kv[0])))})
+    chain_species = collections.defaultdict(list)
+    for sid_, cid in sp_chain.items():
+        chain_species[cid].append(sid_)
+    clist = []
+    for c in q("SELECT * FROM evolution_chain ORDER BY id"):
+        if not okv("evolution_chain", rk(c["id"])):
+            continue
+        used = sorted({m[k] for e in chains[c["id"]] for ms in e["methods"].values() for m in ms for k in ("item_id", "held_item_id") if k in m})
+        write(f"evolution/{c['id']}.json", {"id": c["id"], "species": sorted(chain_species[c["id"]]), "evolutions": chains[c["id"]],
+                                            "items": {str(i): item_names[i] for i in used if i in item_names}})
+        clist.append({"id": c["id"], "species": sorted(chain_species[c["id"]])})
+    write("evolution/index.json", clist)
+    ilist = []
+    for r in q("SELECT * FROM item ORDER BY id"):
+        if okv("item", rk(r["id"])):
+            o = {"id": r["id"], "slug": r["slug"], "category": r["category"], "names": names[("item", str(r["id"]))],
+                 "aliases": aliases[("item", str(r["id"]))]}
+            write(f"item/{r['id']}.json", o)
+            ilist.append({"id": r["id"], "slug": r["slug"], "names": o["names"]})
+    write("item/index.json", ilist)
+
+    # regional Pokédex
+    dlist = []
+    for d in q("SELECT * FROM pokedex ORDER BY sort_order"):
+        if not okv("pokedex", rk(d["id"])):
+            continue
+        entries = sorted([[n, sid_] for sid_, dn in dexnum.items() for did, n in dn.items() if did == d["id"]])
+        o = {"id": d["id"], "game": d["game_id"], "region": d["region_id"], "pokeapi_id": d["pokeapi_id"], "count": len(entries)}
+        write(f"pokedex/{d['id']}.json", {**o, "entries": entries})
+        dlist.append(o)
+    write("pokedex/index.json", dlist)
 
     write("type/index.json", [{"id": t["id"], "generation": t["generation_id"], "names": names[("type", t["id"])]}
                               for t in q("SELECT * FROM type ORDER BY pokeapi_id")])
@@ -191,7 +257,9 @@ def main():
           "release": f"https://github.com/{REPO}/releases/tag/data-{dv}"}
     write("download.json", dl)
     counts = {"species": len(index), "forms": len(form_objs), "abilities": len(alist), "games": len(glist),
-              "translations": db.execute("SELECT COUNT(*) FROM translation").fetchone()[0]}
+              "translations": db.execute("SELECT COUNT(*) FROM translation").fetchone()[0],
+              "evolution_chains": len(clist), "evolutions": sum(len(v) for v in chains.values()), "items": len(ilist),
+              "pokedexes": len(dlist), "pokedex_entries": sum(d["count"] for d in dlist)}
     write("index.json", {"api_version": "v1", "schema_version": meta["schema_version"], "data_version": dv,
                          "generated_at": meta["generated_at"], "license": {"code": "MIT", "notice": meta["license_notice"]},
                          "counts": counts, "download": dl,
@@ -199,6 +267,9 @@ def main():
                              "pokemon_index": "pokemon/index.json", "pokemon": "pokemon/{id}.json", "form": "form/{form_id}.json",
                              "ability_index": "ability/index.json", "ability": "ability/{id}.json", "types": "type/index.json",
                              "game_index": "game/index.json", "game": "game/{game_id}.json", "search": "search/{lang}.json",
+                             "evolution_index": "evolution/index.json", "evolution_chain": "evolution/{chain_id}.json",
+                             "item_index": "item/index.json", "item": "item/{id}.json",
+                             "pokedex_index": "pokedex/index.json", "pokedex": "pokedex/{pokedex_id}.json",
                              "sources": "meta/sources.json", "changelog": "meta/changelog.json", "verification": "meta/verification.json",
                              "languages": "meta/languages.json", "download": "download.json"}.items()}})
     if (ROOT / "docs").exists():

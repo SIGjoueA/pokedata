@@ -1,7 +1,7 @@
 # pokedata — plan de projet
 
 Base de données Pokémon indépendante et réutilisable, qui deviendra aussi la source unique et vérifiée du Pokédex (sigjouea.github.io/pokedex).
-Statut : **validé le 25/11/2026** (plan et schéma 1.0.0). Décisions prises : identifiants du Pokédex dans les adresses de l'API, alias lisibles en plus (option A) ; textes rédigés par les wikis **exclus** de la base. Phase 1 en cours (voir section 16).
+Statut : **validé le 25/11/2026** (plan et schéma 1.0.0). Décisions prises : identifiants du Pokédex dans les adresses de l'API, alias lisibles en plus (option A) ; textes rédigés par les wikis **exclus** de la base. Phase 1 publiée (section 16), phase 1b publiée (section 17).
 
 ---
 
@@ -121,7 +121,7 @@ pokedata/
 ├── scripts/
 │   ├── fetch/              fetch_sources.py, showdown_species.mjs, pkhex_dumper/ (C#, .NET 10)
 │   ├── common.py, reference.py   utilitaires, référentiels (langues, jeux, versions, sources…)
-│   ├── import_phase1.py    normalisation, croisement, règles de la section 5 → db/data/*.csv
+│   ├── import_data.py      normalisation, croisement, règles de la section 5 → db/data/*.csv
 │   ├── build_sqlite.py     CSV → build/pokedata.sqlite
 │   ├── export_api.py       SQLite → site/api/v1/**
 │   ├── compare_pokedex.py  rapports de comparaison avec le Pokédex
@@ -301,3 +301,21 @@ Reporté :
 - types des formes de combat sans entrée propre dans les anciens jeux (Morphéo en génération 3, Ceriflor en génération 4, Silvallié en génération 7) ;
 - forme « Légende » d'Arceus dans Légendes Arceus (non associée à une forme connue) ;
 - tables des types → phase 5.
+
+## 17. Phase 1b : règles appliquées et reports
+
+Même structure (schéma 1.0.0), mêmes règles de vérification. Précisions :
+- **Évolutions** : méthodes lues dans les arbres d'évolution des jeux (PKHeX, rang 1) par contexte de jeu, appliquées à chaque jeu du contexte où les deux formes ont une ligne `form_game` ; DLC et `frlgsw` reprennent leur jeu de base. Une ligne `evolution_method` par jeu et par variante. Les identifiants `evolution.id` sont stables d'une mise à jour à l'autre (relus dans `evolution.csv`).
+  Correspondances : amitié → `conditions.high_friendship` ; lieux (pierre mousse, pierre glacée, champ magnétique, mont Lanakila…) → `conditions.location` (pas de table des lieux avant la phase 3) ; capacité connue → `conditions.known_move` jusqu'à la phase 2 (la table `move` n'existe pas encore), puis `known_move_id` ; Pancham → `conditions.party_type = dark`.
+  Contrôle croisé pour Écarlate/Violet avec PokeAPI et Showdown sur une signature simplifiée (déclencheur, niveau, objet) ; les écarts sont notés, la donnée du jeu est retenue.
+- **Chaînes** : familles reconstituées depuis les évolutions des jeux ; identifiant = chaîne PokeAPI. Phione/Manaphy et Meltan/Melmetal (évolution GO seulement) : deux familles dans les jeux pour une chaîne PokeAPI, écart noté.
+- **Objets** : seuls les objets utilisés par les évolutions sont importés en 1b (id PokeAPI, correspondance par nom anglais du jeu, index du jeu dans `external_id`, noms en 10 langues).
+- **Pokédex régionaux** : identifiants `{jeu}-{pokédex}` ; numéros = PKHeX (Épée/Bouclier et DLC, DEPS, Légendes Arceus, Écarlate/Violet et DLC) + PokeAPI + Bulbapedia ; un index 0 dans les tables du jeu signifie « pas de donnée », pas « absent ». Pour Légendes Z-A, l'index des tables (`DexIndex`) se répète entre espèces hors Pokédex : il n'est pas utilisé, les numéros viennent de PokeAPI + Bulbapedia (concordants). Les îles d'Alola ont chacune leur Pokédex.
+- **Catégories** : texte complet de PokeAPI (« Pokémon Souris »), contrôlé contre la liste Bulbapedia (mot seul) après retrait de « Pokémon » / ポケモン / 포켓몬 / 寶可夢 / 宝可梦 ; en allemand, la terminaison de composition est ignorée (Drache ↔ Drachen-Pokémon). Le mot de la liste n'est jamais stocké. Les écarts (anciens noms marqués d'un astérisque, coquilles) sont notés et la catégorie n'est pas publiée.
+- **Noms de formes** : publiés seulement quand le libellé PKHeX et le nom PokeAPI sont identiques (après normalisation NFKC). Les libellés PKHeX sont souvent abrégés (« Alola » contre « Forme d'Alola ») : la plupart des langues latines ne sont donc pas publiées.
+
+Reporté :
+- Pokédex de `frlgsw` (Kanto à 150 entrées dans le Pokédex actuel) et de Champions ;
+- catégories en espagnol d'Amérique latine (pas de seconde source) ;
+- noms de formes non concordants (≈ 2 750 couples forme × langue ; ≈ 1 200 publiés, surtout japonais, coréen et chinois) ;
+- objets hors évolutions, objet d'incubation des bébés (`evolution_chain.baby_item_id`).

@@ -1,221 +1,318 @@
 id,table_name,row_key,column_name,chosen_value,rule,alternatives,note,opened_update_id,closed_update_id
-1,form_ability,"[""109"",""b2w2""]",*,"{""1"":26}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":26,""hidden"":1}}]",,1,1
-2,form_ability,"[""109"",""bw""]",*,"{""1"":26}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":26,""hidden"":1}}]",,1,1
-3,form_ability,"[""109"",""oras""]",*,"{""1"":26}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":26,""hidden"":1}}]",,1,1
-4,form_ability,"[""109"",""sm""]",*,"{""1"":26}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":26,""hidden"":1}}]",,1,1
-5,form_ability,"[""109"",""usum""]",*,"{""1"":26}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":26,""hidden"":1}}]",,1,1
-6,form_ability,"[""109"",""xy""]",*,"{""1"":26}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":26,""hidden"":1}}]",,1,1
-7,form_ability,"[""110"",""b2w2""]",*,"{""1"":26}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":26,""hidden"":1}}]",,1,1
-8,form_ability,"[""110"",""bw""]",*,"{""1"":26}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":26,""hidden"":1}}]",,1,1
-9,form_ability,"[""110"",""oras""]",*,"{""1"":26}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":26,""hidden"":1}}]",,1,1
-10,form_ability,"[""110"",""sm""]",*,"{""1"":26}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":26,""hidden"":1}}]",,1,1
-11,form_ability,"[""110"",""usum""]",*,"{""1"":26}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":26,""hidden"":1}}]",,1,1
-12,form_ability,"[""110"",""xy""]",*,"{""1"":26}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":26,""hidden"":1}}]",,1,1
-13,form_ability,"[""174"",""dp""]",*,"{""1"":56}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":56,""2"":172}}]",,1,1
-14,form_ability,"[""174"",""e""]",*,"{""1"":56}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":56,""2"":172}}]",,1,1
-15,form_ability,"[""174"",""frlg""]",*,"{""1"":56}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":56,""2"":172}}]",,1,1
-16,form_ability,"[""174"",""frlgsw""]",*,"{""1"":56}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":56,""2"":172}}]",,1,1
-17,form_ability,"[""174"",""hgss""]",*,"{""1"":56}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":56,""2"":172}}]",,1,1
-18,form_ability,"[""174"",""pt""]",*,"{""1"":56}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":56,""2"":172}}]",,1,1
-19,form_ability,"[""174"",""rs""]",*,"{""1"":56}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":56,""2"":172}}]",,1,1
-20,form_ability,"[""20-totem-alola"",""sm""]",*,"{""1"":82,""2"":55,""hidden"":47}",game-data,"[{""document_id"":51,""source"":""showdown"",""value"":{""1"":47}}]",,1,1
-21,form_ability,"[""20-totem-alola"",""usum""]",*,"{""1"":82,""2"":55,""hidden"":47}",game-data,"[{""document_id"":53,""source"":""showdown"",""value"":{""1"":47}}]",,1,1
-22,form_ability,"[""25-belle"",""oras""]",*,"{""1"":9,""hidden"":31}",game-data,"[{""document_id"":47,""source"":""showdown"",""value"":{""1"":31}}]",,1,1
-23,form_ability,"[""25-cosplay"",""oras""]",*,"{""1"":9,""hidden"":31}",game-data,"[{""document_id"":47,""source"":""showdown"",""value"":{""1"":31}}]",,1,1
-24,form_ability,"[""25-libre"",""oras""]",*,"{""1"":9,""hidden"":31}",game-data,"[{""document_id"":47,""source"":""showdown"",""value"":{""1"":31}}]",,1,1
-25,form_ability,"[""25-phd"",""oras""]",*,"{""1"":9,""hidden"":31}",game-data,"[{""document_id"":47,""source"":""showdown"",""value"":{""1"":31}}]",,1,1
-26,form_ability,"[""25-pop-star"",""oras""]",*,"{""1"":9,""hidden"":31}",game-data,"[{""document_id"":47,""source"":""showdown"",""value"":{""1"":31}}]",,1,1
-27,form_ability,"[""25-rock-star"",""oras""]",*,"{""1"":9,""hidden"":31}",game-data,"[{""document_id"":47,""source"":""showdown"",""value"":{""1"":31}}]",,1,1
-28,form_ability,"[""275"",""dp""]",*,"{""1"":34,""2"":48}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":34,""2"":274}}]",,1,1
-29,form_ability,"[""275"",""e""]",*,"{""1"":34,""2"":48}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":34,""2"":274}}]",,1,1
-30,form_ability,"[""275"",""frlg""]",*,"{""1"":34,""2"":48}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":34,""2"":274}}]",,1,1
-31,form_ability,"[""275"",""frlgsw""]",*,"{""1"":34,""2"":48}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":34,""2"":274}}]",,1,1
-32,form_ability,"[""275"",""hgss""]",*,"{""1"":34,""2"":48}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":34,""2"":274}}]",,1,1
-33,form_ability,"[""275"",""pt""]",*,"{""1"":34,""2"":48}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":34,""2"":274}}]",,1,1
-34,form_ability,"[""275"",""rs""]",*,"{""1"":34,""2"":48}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":34,""2"":274}}]",,1,1
-35,form_ability,"[""278"",""dp""]",*,"{""1"":51}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":51,""2"":93}}]",,1,1
-36,form_ability,"[""278"",""e""]",*,"{""1"":51}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":51,""2"":93}}]",,1,1
-37,form_ability,"[""278"",""frlg""]",*,"{""1"":51}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":51,""2"":93}}]",,1,1
-38,form_ability,"[""278"",""frlgsw""]",*,"{""1"":51}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":51,""2"":93}}]",,1,1
-39,form_ability,"[""278"",""hgss""]",*,"{""1"":51}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":51,""2"":93}}]",,1,1
-40,form_ability,"[""278"",""pt""]",*,"{""1"":51}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":51,""2"":93}}]",,1,1
-41,form_ability,"[""278"",""rs""]",*,"{""1"":51}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":51,""2"":93}}]",,1,1
-42,form_ability,"[""279"",""dp""]",*,"{""1"":51}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":51,""2"":2}}]",,1,1
-43,form_ability,"[""279"",""e""]",*,"{""1"":51}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":51,""2"":2}}]",,1,1
-44,form_ability,"[""279"",""frlg""]",*,"{""1"":51}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":51,""2"":2}}]",,1,1
-45,form_ability,"[""279"",""frlgsw""]",*,"{""1"":51}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":51,""2"":2}}]",,1,1
-46,form_ability,"[""279"",""hgss""]",*,"{""1"":51}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":51,""2"":2}}]",,1,1
-47,form_ability,"[""279"",""pt""]",*,"{""1"":51}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":51,""2"":2}}]",,1,1
-48,form_ability,"[""279"",""rs""]",*,"{""1"":51}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":51,""2"":2}}]",,1,1
-49,form_ability,"[""324"",""dp""]",*,"{""1"":73}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":73,""2"":70}}]",,1,1
-50,form_ability,"[""324"",""e""]",*,"{""1"":73}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":73,""2"":70}}]",,1,1
-51,form_ability,"[""324"",""frlg""]",*,"{""1"":73}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":73,""2"":70}}]",,1,1
-52,form_ability,"[""324"",""frlgsw""]",*,"{""1"":73}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":73,""2"":70}}]",,1,1
-53,form_ability,"[""324"",""hgss""]",*,"{""1"":73}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":73,""2"":70}}]",,1,1
-54,form_ability,"[""324"",""pt""]",*,"{""1"":73}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":73,""2"":70}}]",,1,1
-55,form_ability,"[""324"",""rs""]",*,"{""1"":73}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":73,""2"":70}}]",,1,1
-56,form_ability,"[""349"",""dp""]",*,"{""1"":33}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":33,""2"":12}}]",,1,1
-57,form_ability,"[""349"",""e""]",*,"{""1"":33}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":33,""2"":12}}]",,1,1
-58,form_ability,"[""349"",""frlg""]",*,"{""1"":33}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":33,""2"":12}}]",,1,1
-59,form_ability,"[""349"",""frlgsw""]",*,"{""1"":33}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":33,""2"":12}}]",,1,1
-60,form_ability,"[""349"",""hgss""]",*,"{""1"":33}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":33,""2"":12}}]",,1,1
-61,form_ability,"[""349"",""pt""]",*,"{""1"":33}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":33,""2"":12}}]",,1,1
-62,form_ability,"[""349"",""rs""]",*,"{""1"":33}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":33,""2"":12}}]",,1,1
-63,form_ability,"[""350"",""dp""]",*,"{""1"":63}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":63,""2"":172}}]",,1,1
-64,form_ability,"[""350"",""e""]",*,"{""1"":63}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":63,""2"":172}}]",,1,1
-65,form_ability,"[""350"",""frlg""]",*,"{""1"":63}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":63,""2"":172}}]",,1,1
-66,form_ability,"[""350"",""frlgsw""]",*,"{""1"":63}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":63,""2"":172}}]",,1,1
-67,form_ability,"[""350"",""hgss""]",*,"{""1"":63}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":63,""2"":172}}]",,1,1
-68,form_ability,"[""350"",""pt""]",*,"{""1"":63}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":63,""2"":172}}]",,1,1
-69,form_ability,"[""350"",""rs""]",*,"{""1"":63}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":63,""2"":172}}]",,1,1
-70,form_ability,"[""39"",""dp""]",*,"{""1"":56}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":56,""2"":172}}]",,1,1
-71,form_ability,"[""39"",""e""]",*,"{""1"":56}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":56,""2"":172}}]",,1,1
-72,form_ability,"[""39"",""frlg""]",*,"{""1"":56}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":56,""2"":172}}]",,1,1
-73,form_ability,"[""39"",""frlgsw""]",*,"{""1"":56}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":56,""2"":172}}]",,1,1
-74,form_ability,"[""39"",""hgss""]",*,"{""1"":56}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":56,""2"":172}}]",,1,1
-75,form_ability,"[""39"",""pt""]",*,"{""1"":56}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":56,""2"":172}}]",,1,1
-76,form_ability,"[""39"",""rs""]",*,"{""1"":56}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":56,""2"":172}}]",,1,1
-77,form_ability,"[""40"",""dp""]",*,"{""1"":56}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":56,""2"":172}}]",,1,1
-78,form_ability,"[""40"",""e""]",*,"{""1"":56}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":56,""2"":172}}]",,1,1
-79,form_ability,"[""40"",""frlg""]",*,"{""1"":56}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":56,""2"":172}}]",,1,1
-80,form_ability,"[""40"",""frlgsw""]",*,"{""1"":56}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":56,""2"":172}}]",,1,1
-81,form_ability,"[""40"",""hgss""]",*,"{""1"":56}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":56,""2"":172}}]",,1,1
-82,form_ability,"[""40"",""pt""]",*,"{""1"":56}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":56,""2"":172}}]",,1,1
-83,form_ability,"[""40"",""rs""]",*,"{""1"":56}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":56,""2"":172}}]",,1,1
-84,form_ability,"[""475"",""dp""]",*,"{""1"":80}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":80,""2"":292}}]",,1,1
-85,form_ability,"[""475"",""hgss""]",*,"{""1"":80}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":80,""2"":292}}]",,1,1
-86,form_ability,"[""475"",""pt""]",*,"{""1"":80}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":80,""2"":292}}]",,1,1
-87,form_ability,"[""550-blue-striped"",""bw""]",*,"{""1"":69,""2"":91,""hidden"":104}",game-data,"[{""document_id"":40,""source"":""showdown"",""value"":{""1"":120,""2"":91,""hidden"":104}}]",,1,1
-88,form_ability,"[""555-galar-zen"",""sw""]",*,"{""1"":255,""hidden"":161}",game-data,"[{""document_id"":52,""source"":""showdown"",""value"":{""1"":161}}]",,1,1
-89,form_ability,"[""555-galar-zen"",""swcrown""]",*,"{""1"":255,""hidden"":161}",game-data,"[{""document_id"":52,""source"":""showdown"",""value"":{""1"":161}}]",,1,1
-90,form_ability,"[""555-galar-zen"",""swisle""]",*,"{""1"":255,""hidden"":161}",game-data,"[{""document_id"":52,""source"":""showdown"",""value"":{""1"":161}}]",,1,1
-91,form_ability,"[""555-zen"",""b2w2""]",*,"{""1"":125,""hidden"":161}",game-data,"[{""document_id"":38,""source"":""showdown"",""value"":{""1"":161}}]",,1,1
-92,form_ability,"[""555-zen"",""bw""]",*,"{""1"":125,""hidden"":161}",game-data,"[{""document_id"":40,""source"":""showdown"",""value"":{""1"":161}}]",,1,1
-93,form_ability,"[""555-zen"",""oras""]",*,"{""1"":125,""hidden"":161}",game-data,"[{""document_id"":47,""source"":""showdown"",""value"":{""1"":161}}]",,1,1
-94,form_ability,"[""555-zen"",""sm""]",*,"{""1"":125,""hidden"":161}",game-data,"[{""document_id"":51,""source"":""showdown"",""value"":{""1"":161}}]",,1,1
-95,form_ability,"[""555-zen"",""sw""]",*,"{""1"":125,""hidden"":161}",game-data,"[{""document_id"":52,""source"":""showdown"",""value"":{""1"":161}}]",,1,1
-96,form_ability,"[""555-zen"",""swcrown""]",*,"{""1"":125,""hidden"":161}",game-data,"[{""document_id"":52,""source"":""showdown"",""value"":{""1"":161}}]",,1,1
-97,form_ability,"[""555-zen"",""swisle""]",*,"{""1"":125,""hidden"":161}",game-data,"[{""document_id"":52,""source"":""showdown"",""value"":{""1"":161}}]",,1,1
-98,form_ability,"[""555-zen"",""usum""]",*,"{""1"":125,""hidden"":161}",game-data,"[{""document_id"":53,""source"":""showdown"",""value"":{""1"":161}}]",,1,1
-99,form_ability,"[""555-zen"",""xy""]",*,"{""1"":125,""hidden"":161}",game-data,"[{""document_id"":54,""source"":""showdown"",""value"":{""1"":161}}]",,1,1
-100,form_ability,"[""666-fancy"",""oras""]",*,"{""1"":19,""2"":14,""hidden"":132}",game-data,"[{""document_id"":47,""source"":""showdown"",""value"":{""1"":19,""2"":14}}]",,1,1
-101,form_ability,"[""666-fancy"",""sm""]",*,"{""1"":19,""2"":14,""hidden"":132}",game-data,"[{""document_id"":51,""source"":""showdown"",""value"":{""1"":19,""2"":14}}]",,1,1
-102,form_ability,"[""666-fancy"",""usum""]",*,"{""1"":19,""2"":14,""hidden"":132}",game-data,"[{""document_id"":53,""source"":""showdown"",""value"":{""1"":19,""2"":14}}]",,1,1
-103,form_ability,"[""666-fancy"",""xy""]",*,"{""1"":19,""2"":14,""hidden"":132}",game-data,"[{""document_id"":54,""source"":""showdown"",""value"":{""1"":19,""2"":14}}]",,1,1
-104,form_ability,"[""666-poke-ball"",""oras""]",*,"{""1"":19,""2"":14,""hidden"":132}",game-data,"[{""document_id"":47,""source"":""showdown"",""value"":{""1"":19,""2"":14}}]",,1,1
-105,form_ability,"[""666-poke-ball"",""sm""]",*,"{""1"":19,""2"":14,""hidden"":132}",game-data,"[{""document_id"":51,""source"":""showdown"",""value"":{""1"":19,""2"":14}}]",,1,1
-106,form_ability,"[""666-poke-ball"",""usum""]",*,"{""1"":19,""2"":14,""hidden"":132}",game-data,"[{""document_id"":53,""source"":""showdown"",""value"":{""1"":19,""2"":14}}]",,1,1
-107,form_ability,"[""666-poke-ball"",""xy""]",*,"{""1"":19,""2"":14,""hidden"":132}",game-data,"[{""document_id"":54,""source"":""showdown"",""value"":{""1"":19,""2"":14}}]",,1,1
-108,form_ability,"[""710-large"",""oras""]",*,"{""1"":53,""2"":119,""hidden"":15}",game-data,"[{""document_id"":47,""source"":""showdown"",""value"":{""1"":53,""2"":119}}]",,1,1
-109,form_ability,"[""710-large"",""sm""]",*,"{""1"":53,""2"":119,""hidden"":15}",game-data,"[{""document_id"":51,""source"":""showdown"",""value"":{""1"":53,""2"":119}}]",,1,1
-110,form_ability,"[""710-large"",""usum""]",*,"{""1"":53,""2"":119,""hidden"":15}",game-data,"[{""document_id"":53,""source"":""showdown"",""value"":{""1"":53,""2"":119}}]",,1,1
-111,form_ability,"[""710-large"",""xy""]",*,"{""1"":53,""2"":119,""hidden"":15}",game-data,"[{""document_id"":54,""source"":""showdown"",""value"":{""1"":53,""2"":119}}]",,1,1
-112,form_ability,"[""710-small"",""oras""]",*,"{""1"":53,""2"":119,""hidden"":15}",game-data,"[{""document_id"":47,""source"":""showdown"",""value"":{""1"":53,""2"":119}}]",,1,1
-113,form_ability,"[""710-small"",""sm""]",*,"{""1"":53,""2"":119,""hidden"":15}",game-data,"[{""document_id"":51,""source"":""showdown"",""value"":{""1"":53,""2"":119}}]",,1,1
-114,form_ability,"[""710-small"",""usum""]",*,"{""1"":53,""2"":119,""hidden"":15}",game-data,"[{""document_id"":53,""source"":""showdown"",""value"":{""1"":53,""2"":119}}]",,1,1
-115,form_ability,"[""710-small"",""xy""]",*,"{""1"":53,""2"":119,""hidden"":15}",game-data,"[{""document_id"":54,""source"":""showdown"",""value"":{""1"":53,""2"":119}}]",,1,1
-116,form_ability,"[""711-large"",""oras""]",*,"{""1"":53,""2"":119,""hidden"":15}",game-data,"[{""document_id"":47,""source"":""showdown"",""value"":{""1"":53,""2"":119}}]",,1,1
-117,form_ability,"[""711-large"",""sm""]",*,"{""1"":53,""2"":119,""hidden"":15}",game-data,"[{""document_id"":51,""source"":""showdown"",""value"":{""1"":53,""2"":119}}]",,1,1
-118,form_ability,"[""711-large"",""usum""]",*,"{""1"":53,""2"":119,""hidden"":15}",game-data,"[{""document_id"":53,""source"":""showdown"",""value"":{""1"":53,""2"":119}}]",,1,1
-119,form_ability,"[""711-large"",""xy""]",*,"{""1"":53,""2"":119,""hidden"":15}",game-data,"[{""document_id"":54,""source"":""showdown"",""value"":{""1"":53,""2"":119}}]",,1,1
-120,form_ability,"[""711-small"",""oras""]",*,"{""1"":53,""2"":119,""hidden"":15}",game-data,"[{""document_id"":47,""source"":""showdown"",""value"":{""1"":53,""2"":119}}]",,1,1
-121,form_ability,"[""711-small"",""sm""]",*,"{""1"":53,""2"":119,""hidden"":15}",game-data,"[{""document_id"":51,""source"":""showdown"",""value"":{""1"":53,""2"":119}}]",,1,1
-122,form_ability,"[""711-small"",""usum""]",*,"{""1"":53,""2"":119,""hidden"":15}",game-data,"[{""document_id"":53,""source"":""showdown"",""value"":{""1"":53,""2"":119}}]",,1,1
-123,form_ability,"[""711-small"",""xy""]",*,"{""1"":53,""2"":119,""hidden"":15}",game-data,"[{""document_id"":54,""source"":""showdown"",""value"":{""1"":53,""2"":119}}]",,1,1
-124,form_ability,"[""718-10-power-construct"",""sm""]",*,"{""1"":211}",game-data,"[{""document_id"":51,""source"":""showdown"",""value"":{""1"":188}}]",,1,1
-125,form_ability,"[""718-10-power-construct"",""sw""]",*,"{""1"":211}",game-data,"[{""document_id"":52,""source"":""showdown"",""value"":{""1"":188}}]",,1,1
-126,form_ability,"[""718-10-power-construct"",""swcrown""]",*,"{""1"":211}",game-data,"[{""document_id"":52,""source"":""showdown"",""value"":{""1"":188}}]",,1,1
-127,form_ability,"[""718-10-power-construct"",""swisle""]",*,"{""1"":211}",game-data,"[{""document_id"":52,""source"":""showdown"",""value"":{""1"":188}}]",,1,1
-128,form_ability,"[""718-10-power-construct"",""usum""]",*,"{""1"":211}",game-data,"[{""document_id"":53,""source"":""showdown"",""value"":{""1"":188}}]",,1,1
-129,form_ability,"[""718-50-power-construct"",""sm""]",*,"{""1"":211}",game-data,"[{""document_id"":51,""source"":""showdown"",""value"":{""1"":188}}]",,1,1
-130,form_ability,"[""718-50-power-construct"",""sw""]",*,"{""1"":211}",game-data,"[{""document_id"":52,""source"":""showdown"",""value"":{""1"":188}}]",,1,1
-131,form_ability,"[""718-50-power-construct"",""swcrown""]",*,"{""1"":211}",game-data,"[{""document_id"":52,""source"":""showdown"",""value"":{""1"":188}}]",,1,1
-132,form_ability,"[""718-50-power-construct"",""swisle""]",*,"{""1"":211}",game-data,"[{""document_id"":52,""source"":""showdown"",""value"":{""1"":188}}]",,1,1
-133,form_ability,"[""718-50-power-construct"",""usum""]",*,"{""1"":211}",game-data,"[{""document_id"":53,""source"":""showdown"",""value"":{""1"":188}}]",,1,1
-134,form_ability,"[""735-totem"",""sm""]",*,"{""1"":198,""2"":173,""hidden"":91}",game-data,"[{""document_id"":51,""source"":""showdown"",""value"":{""1"":91}}]",,1,1
-135,form_ability,"[""735-totem"",""usum""]",*,"{""1"":198,""2"":173,""hidden"":91}",game-data,"[{""document_id"":53,""source"":""showdown"",""value"":{""1"":91}}]",,1,1
-136,form_ability,"[""743-totem"",""usum""]",*,"{""1"":118,""2"":19,""hidden"":175}",game-data,"[{""document_id"":53,""source"":""showdown"",""value"":{""1"":175}}]",,1,1
-137,form_ability,"[""752-totem"",""usum""]",*,"{""1"":199,""hidden"":11}",game-data,"[{""document_id"":53,""source"":""showdown"",""value"":{""1"":199}}]",,1,1
-138,form_ability,"[""754-totem"",""sm""]",*,"{""1"":102,""hidden"":126}",game-data,"[{""document_id"":51,""source"":""showdown"",""value"":{""1"":102}}]",,1,1
-139,form_ability,"[""754-totem"",""usum""]",*,"{""1"":102,""hidden"":126}",game-data,"[{""document_id"":53,""source"":""showdown"",""value"":{""1"":102}}]",,1,1
-140,form_ability,"[""758-totem"",""sm""]",*,"{""1"":212,""hidden"":12}",game-data,"[{""document_id"":51,""source"":""showdown"",""value"":{""1"":212}}]",,1,1
-141,form_ability,"[""758-totem"",""usum""]",*,"{""1"":212,""hidden"":12}",game-data,"[{""document_id"":53,""source"":""showdown"",""value"":{""1"":212}}]",,1,1
-142,form_ability,"[""777-totem"",""usum""]",*,"{""1"":160,""2"":31,""hidden"":5}",game-data,"[{""document_id"":53,""source"":""showdown"",""value"":{""1"":5}}]",,1,1
-143,form_ability,"[""784-totem"",""sm""]",*,"{""1"":171,""2"":43,""hidden"":142}",game-data,"[{""document_id"":51,""source"":""showdown"",""value"":{""1"":142}}]",,1,1
-144,form_ability,"[""784-totem"",""usum""]",*,"{""1"":171,""2"":43,""hidden"":142}",game-data,"[{""document_id"":53,""source"":""showdown"",""value"":{""1"":142}}]",,1,1
-145,form_ability,"[""785"",""sm""]",*,"{""1"":226,""hidden"":140}",game-data,"[{""document_id"":51,""source"":""showdown"",""value"":{""1"":226}}]",,1,1
-146,form_ability,"[""785"",""usum""]",*,"{""1"":226,""hidden"":140}",game-data,"[{""document_id"":53,""source"":""showdown"",""value"":{""1"":226}}]",,1,1
-147,form_ability,"[""786"",""sm""]",*,"{""1"":227,""hidden"":140}",game-data,"[{""document_id"":51,""source"":""showdown"",""value"":{""1"":227}}]",,1,1
-148,form_ability,"[""786"",""usum""]",*,"{""1"":227,""hidden"":140}",game-data,"[{""document_id"":53,""source"":""showdown"",""value"":{""1"":227}}]",,1,1
-149,form_ability,"[""787"",""sm""]",*,"{""1"":229,""hidden"":140}",game-data,"[{""document_id"":51,""source"":""showdown"",""value"":{""1"":229}}]",,1,1
-150,form_ability,"[""787"",""usum""]",*,"{""1"":229,""hidden"":140}",game-data,"[{""document_id"":53,""source"":""showdown"",""value"":{""1"":229}}]",,1,1
-151,form_ability,"[""788"",""sm""]",*,"{""1"":228,""hidden"":140}",game-data,"[{""document_id"":51,""source"":""showdown"",""value"":{""1"":228}}]",,1,1
-152,form_ability,"[""788"",""usum""]",*,"{""1"":228,""hidden"":140}",game-data,"[{""document_id"":53,""source"":""showdown"",""value"":{""1"":228}}]",,1,1
-153,form_game,"[""121-mega"",""za""]",stats,"[60,140,105,130,105,120]",game-data,"[{""document_id"":35,""source"":""pokeapi"",""value"":[60,100,105,130,105,120]}]",,1,1
-154,form_game,"[""121-mega"",""zadlc""]",stats,"[60,140,105,130,105,120]",game-data,"[{""document_id"":35,""source"":""pokeapi"",""value"":[60,100,105,130,105,120]}]",,1,1
-155,form_game,"[""303-mega"",""za""]",stats,"[50,147,125,55,95,50]",game-data,"[{""document_id"":35,""source"":""pokeapi"",""value"":[50,105,125,55,95,50]}]",,1,1
-156,form_game,"[""303-mega"",""zadlc""]",stats,"[50,147,125,55,95,50]",game-data,"[{""document_id"":35,""source"":""pokeapi"",""value"":[50,105,125,55,95,50]}]",,1,1
-157,form_game,"[""307"",""za""]",stats,"[30,56,55,40,55,60]",game-data,"[{""document_id"":35,""source"":""pokeapi"",""value"":[30,40,55,40,55,60]},{""document_id"":56,""source"":""showdown"",""value"":[30,40,55,40,55,60]}]",,1,1
-158,form_game,"[""307"",""zadlc""]",stats,"[30,56,55,40,55,60]",game-data,"[{""document_id"":35,""source"":""pokeapi"",""value"":[30,40,55,40,55,60]},{""document_id"":56,""source"":""showdown"",""value"":[30,40,55,40,55,60]}]",,1,1
-159,form_game,"[""308"",""za""]",stats,"[60,84,75,60,75,80]",game-data,"[{""document_id"":35,""source"":""pokeapi"",""value"":[60,60,75,60,75,80]},{""document_id"":56,""source"":""showdown"",""value"":[60,60,75,60,75,80]}]",,1,1
-160,form_game,"[""308"",""zadlc""]",stats,"[60,84,75,60,75,80]",game-data,"[{""document_id"":35,""source"":""pokeapi"",""value"":[60,60,75,60,75,80]},{""document_id"":56,""source"":""showdown"",""value"":[60,60,75,60,75,80]}]",,1,1
-161,form_game,"[""308-mega"",""za""]",stats,"[60,140,85,80,85,100]",game-data,"[{""document_id"":35,""source"":""pokeapi"",""value"":[60,100,85,80,85,100]}]",,1,1
-162,form_game,"[""308-mega"",""zadlc""]",stats,"[60,140,85,80,85,100]",game-data,"[{""document_id"":35,""source"":""pokeapi"",""value"":[60,100,85,80,85,100]}]",,1,1
-163,form_game,"[""421-sunshine"",""la""]",stats,"[70,90,70,87,117,85]",game-data,"[{""document_id"":35,""source"":""pokeapi"",""value"":[70,60,70,87,78,85]}]",,1,1
-164,form_game,"[""615"",""b2w2""]",stats,"[70,50,30,95,135,105]",game-data,"[{""document_id"":35,""source"":""pokeapi"",""value"":[70,30,50,95,135,105]}]",,1,1
-165,form_game,"[""615"",""bw""]",stats,"[70,50,30,95,135,105]",game-data,"[{""document_id"":35,""source"":""pokeapi"",""value"":[70,30,50,95,135,105]}]",,1,1
-166,form_game,"[""615"",""oras""]",stats,"[70,50,30,95,135,105]",game-data,"[{""document_id"":35,""source"":""pokeapi"",""value"":[70,30,50,95,135,105]}]",,1,1
-167,form_game,"[""615"",""xy""]",stats,"[70,50,30,95,135,105]",game-data,"[{""document_id"":35,""source"":""pokeapi"",""value"":[70,30,50,95,135,105]}]",,1,1
-168,species,[1007],is_paradox,1,majority,"[{""document_id"":13,""source"":""showdown"",""value"":0}]",,1,1
-169,species,[1008],is_paradox,1,majority,"[{""document_id"":13,""source"":""showdown"",""value"":0}]",,1,1
-170,species,[1011],growth_rate_id,"""erratic""",game-data,"[{""document_id"":12,""source"":""pokeapi"",""value"":""slow""}]",,1,1
-171,species,[1012],growth_rate_id,"""medium-fast""",game-data,"[{""document_id"":12,""source"":""pokeapi"",""value"":""slow""}]",,1,1
-172,species,[1012],hatch_cycles,20,game-data,"[{""document_id"":12,""source"":""pokeapi"",""value"":50}]",,1,1
-173,species,[1013],growth_rate_id,"""medium-fast""",game-data,"[{""document_id"":12,""source"":""pokeapi"",""value"":""slow""}]",,1,1
-174,species,[1013],hatch_cycles,20,game-data,"[{""document_id"":12,""source"":""pokeapi"",""value"":50}]",,1,1
-175,species,[1014],hatch_cycles,120,game-data,"[{""document_id"":12,""source"":""pokeapi"",""value"":50}]",,1,1
-176,species,[1015],hatch_cycles,120,game-data,"[{""document_id"":12,""source"":""pokeapi"",""value"":50}]",,1,1
-177,species,[1016],hatch_cycles,120,game-data,"[{""document_id"":12,""source"":""pokeapi"",""value"":50}]",,1,1
-178,species,[1017],hatch_cycles,10,game-data,"[{""document_id"":12,""source"":""pokeapi"",""value"":50}]",,1,1
-179,species,[1020],is_paradox,1,majority,"[{""document_id"":13,""source"":""showdown"",""value"":0}]",,1,1
-180,species,[1021],is_paradox,1,majority,"[{""document_id"":13,""source"":""showdown"",""value"":0}]",,1,1
-181,species,[1022],is_paradox,1,majority,"[{""document_id"":13,""source"":""showdown"",""value"":0}]",,1,1
-182,species,[1023],is_paradox,1,majority,"[{""document_id"":13,""source"":""showdown"",""value"":0}]",,1,1
-183,species,[916],gender_rate,4,game-data,"[{""document_id"":12,""source"":""pokeapi"",""value"":0}]",,1,1
-184,translation,"[""ability"",""10"",""name"",""es"",null,null]",text,"""Absorbe Elec""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Absorbe Electricidad""}]",,1,1
-185,translation,"[""ability"",""117"",""name"",""de"",null,null]",text,"""Schneeschauer""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Hagelalarm""}]",,1,1
-186,translation,"[""ability"",""118"",""name"",""es-419"",null,null]",text,"""Cosechamiel""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Recogemiel""}]",,1,1
-187,translation,"[""ability"",""129"",""name"",""es-419"",null,null]",text,"""Flaquear""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Flaqueza""}]",,1,1
-188,translation,"[""ability"",""147"",""name"",""es-419"",null,null]",text,"""Piel Milagrosa""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Piel Milagro""}]",,1,1
-189,translation,"[""ability"",""16"",""name"",""es-419"",null,null]",text,"""Cambio de Color""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Cambio Color""}]",,1,1
-190,translation,"[""ability"",""161"",""name"",""es-419"",null,null]",text,"""Modo Zen""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Modo Daruma""}]",,1,1
-191,translation,"[""ability"",""180"",""name"",""de"",null,null]",text,"""Symbiose""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Nutznießer""}]",,1,1
-192,translation,"[""ability"",""20"",""name"",""de"",null,null]",text,"""Gleichmut""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Tempomacher""}]",,1,1
-193,translation,"[""ability"",""205"",""name"",""es-419"",null,null]",text,"""Socorro""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Primer Auxilio""}]",,1,1
-194,translation,"[""ability"",""218"",""name"",""es-419"",null,null]",text,"""Mullido""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Peluche""}]",,1,1
-195,translation,"[""ability"",""223"",""name"",""ko"",null,null]",text,"""화학의힘""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""과학의힘""}]",,1,1
-196,translation,"[""ability"",""237"",""name"",""es-419"",null,null]",text,"""Buscabola""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Recogebolas""}]",,1,1
-197,translation,"[""ability"",""25"",""name"",""es-419"",null,null]",text,"""Superguardia""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Superguarda""}]",,1,1
-198,translation,"[""ability"",""255"",""name"",""es-419"",null,null]",text,"""Obstinación""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Monotema""}]",,1,1
-199,translation,"[""ability"",""268"",""name"",""es-419"",null,null]",text,"""Aroma Incesante""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Olor Persistente""}]",,1,1
-200,translation,"[""ability"",""270"",""name"",""es-419"",null,null]",text,"""Termoconversión""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Termoscambio""}]",,1,1
-201,translation,"[""ability"",""273"",""name"",""es-419"",null,null]",text,"""Pan Comido""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Cuerpo Horneado""}]",,1,1
-202,translation,"[""ability"",""279"",""name"",""es-419"",null,null]",text,"""Comandante""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Comandar""}]",,1,1
-203,translation,"[""ability"",""280"",""name"",""es-419"",null,null]",text,"""Dinamo""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Dínamo""}]",,1,1
-204,translation,"[""ability"",""287"",""name"",""es-419"",null,null]",text,"""Cuenta Debacle""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Abalorio Debacle""}]",,1,1
-205,translation,"[""ability"",""35"",""name"",""fr"",null,null]",text,"""Luminescence""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Lumiattirance""}]",,1,1
-206,translation,"[""ability"",""38"",""name"",""it"",null,null]",text,"""Velenopunte""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Velenopunto""}]",,1,1
-207,translation,"[""ability"",""41"",""name"",""es-419"",null,null]",text,"""Velo de Agua""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Velo Agua""}]",,1,1
-208,translation,"[""ability"",""54"",""name"",""es"",null,null]",text,"""Pereza""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Ausente""}]",,1,1
-209,translation,"[""ability"",""54"",""name"",""es-419"",null,null]",text,"""Pereza""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Ausente""}]",,1,1
-210,translation,"[""ability"",""64"",""name"",""es"",null,null]",text,"""Viscosecreción""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Lodo Líquido""}]",,1,1
-211,translation,"[""ability"",""64"",""name"",""es-419"",null,null]",text,"""Toxisecreción""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Lodo Líquido""}]",,1,1
-212,translation,"[""ability"",""71"",""name"",""es-419"",null,null]",text,"""Trampa de Arena""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Trampa Arena""}]",,1,1
-213,translation,"[""ability"",""76"",""name"",""es"",null,null]",text,"""Esclusa de Aire""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Bucle Aire""}]",,1,1
-214,translation,"[""ability"",""76"",""name"",""es-419"",null,null]",text,"""Esclusa de Aire""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Bucle Aire""}]",,1,1
-215,translation,"[""ability"",""77"",""name"",""de"",null,null]",text,"""Taumelschritt""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Fußangel""}]",,1,1
-216,translation,"[""ability"",""9"",""name"",""es"",null,null]",text,"""Elec. Estática""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Electricidad Estática""}]",,1,1
-217,translation,"[""ability"",""9"",""name"",""es-419"",null,null]",text,"""Elec. Estática""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Electricidad Estática""}]",,1,1
-218,translation,"[""ability"",""90"",""name"",""de"",null,null]",text,"""Giftheilung""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Aufheber""}]",,1,1
-219,translation,"[""species"",""469"",""name"",""fr"",null,null]",text,"""Yanmega""",game-data,"[{""document_id"":63,""source"":""bulbapedia"",""value"":""Yanméga""}]",,1,1
-220,translation,"[""species"",""499"",""name"",""ko"",null,null]",text,"""차오꿀""",game-data,"[{""document_id"":65,""source"":""bulbapedia"",""value"":""챠오꿀""}]",,1,1
+1,evolution_chain,[250],*,"[[489],[490]]",game-data,"[{""document_id"":12,""source"":""pokeapi"",""value"":[[489,490]]}]",,2,2
+2,evolution_chain,[428],*,"[[808],[809]]",game-data,"[{""document_id"":12,""source"":""pokeapi"",""value"":[[808,809]]}]",,2,2
+3,evolution_method,"[148,""sv"",1]",*,"[""use-item"",null,83,null,null,null,null,null,null,null,null,null]",game-data,"[{""document_id"":13,""source"":""showdown"",""value"":[""[\""level-up\"",null,null]""]}]",,2,2
+4,evolution_method,"[172,""sv"",2]",*,"[""level-up"",null,null,null,null,null,null,null,null,null,null,""{\""min_beauty\"":170}""]",game-data,"[{""document_id"":13,""source"":""showdown"",""value"":[""[\""trade\"",null,null]""]}]",,2,2
+5,evolution_method,"[452,""sv"",2]",*,"[""level-up"",null,null,null,null,null,null,null,null,null,null,""{\""location\"":\""mount-lanakila\""}""]",game-data,"[{""document_id"":13,""source"":""showdown"",""value"":[""[\""use-item\"",null,\""ice-stone\""]""]}]",,2,2
+6,evolution_method,"[540,""sv"",2]",*,"[""use-item"",null,1675,null,null,null,null,null,null,null,null,null]",game-data,"[{""document_id"":13,""source"":""showdown"",""value"":[""[\""other\"",null,null]""]}]",,2,2
+7,evolution_method,"[541,""sv"",2]",*,"[""use-item"",null,1676,null,null,null,null,null,null,null,null,null]",game-data,"[{""document_id"":13,""source"":""showdown"",""value"":[""[\""other\"",null,null]""]}]",,2,2
+8,evolution_method,"[555,""sv"",1]",*,"[""walk"",null,null,null,null,null,null,null,null,null,null,""{\""steps\"":1000}""]",game-data,"[{""document_id"":13,""source"":""showdown"",""value"":[""[\""other\"",null,null]""]}]",,2,2
+9,evolution_method,"[556,""sv"",1]",*,"[""level-up"",25,null,null,null,null,null,null,null,null,null,""{\""in_battle\"":true,\""personality\"":\""ec%100!=0\""}""]",game-data,"[{""document_id"":74,""source"":""pokeapi"",""value"":[""[\""other\"",null,null]""]}]",,2,2
+10,evolution_method,"[557,""sv"",1]",*,"[""level-up"",25,null,null,null,null,null,null,null,null,null,""{\""in_battle\"":true,\""personality\"":\""ec%100==0\""}""]",game-data,"[{""document_id"":74,""source"":""pokeapi"",""value"":[""[\""other\"",null,null]""]}]",,2,2
+11,evolution_method,"[570,""sv"",1]",*,"[""walk"",null,null,null,null,null,null,null,null,null,null,""{\""steps\"":1000}""]",game-data,"[{""document_id"":13,""source"":""showdown"",""value"":[""[\""other\"",null,null]""]}]",,2,2
+12,evolution_method,"[574,""sv"",1]",*,"[""walk"",null,null,null,null,null,null,null,null,null,null,""{\""steps\"":1000}""]",game-data,"[{""document_id"":13,""source"":""showdown"",""value"":[""[\""other\"",null,null]""]}]",,2,2
+13,evolution_method,"[588,""sv"",1]",*,"[""level-up"",null,null,null,null,null,null,null,null,null,null,""{\""collect\"":999}""]",game-data,"[{""document_id"":74,""source"":""pokeapi"",""value"":[""[\""other\"",null,null]""]},{""document_id"":13,""source"":""showdown"",""value"":[""[\""other\"",null,null]""]}]",,2,2
+14,evolution_method,"[589,""sv"",1]",*,"[""level-up"",null,null,null,null,null,null,null,null,null,null,""{\""collect\"":999}""]",game-data,"[{""document_id"":74,""source"":""pokeapi"",""value"":[""[\""other\"",null,null]""]},{""document_id"":13,""source"":""showdown"",""value"":[""[\""other\"",null,null]""]}]",,2,2
+15,evolution_method,"[87,""sv"",1]",*,"[""level-up"",null,null,null,null,null,null,null,null,null,null,""{\""known_move\"":839}""]",game-data,"[{""document_id"":13,""source"":""showdown"",""value"":[""[\""other\"",null,null]""]}]",,2,2
+16,form_ability,"[""109"",""b2w2""]",*,"{""1"":26}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":26,""hidden"":1}}]",,1,1
+17,form_ability,"[""109"",""bw""]",*,"{""1"":26}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":26,""hidden"":1}}]",,1,1
+18,form_ability,"[""109"",""oras""]",*,"{""1"":26}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":26,""hidden"":1}}]",,1,1
+19,form_ability,"[""109"",""sm""]",*,"{""1"":26}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":26,""hidden"":1}}]",,1,1
+20,form_ability,"[""109"",""usum""]",*,"{""1"":26}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":26,""hidden"":1}}]",,1,1
+21,form_ability,"[""109"",""xy""]",*,"{""1"":26}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":26,""hidden"":1}}]",,1,1
+22,form_ability,"[""110"",""b2w2""]",*,"{""1"":26}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":26,""hidden"":1}}]",,1,1
+23,form_ability,"[""110"",""bw""]",*,"{""1"":26}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":26,""hidden"":1}}]",,1,1
+24,form_ability,"[""110"",""oras""]",*,"{""1"":26}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":26,""hidden"":1}}]",,1,1
+25,form_ability,"[""110"",""sm""]",*,"{""1"":26}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":26,""hidden"":1}}]",,1,1
+26,form_ability,"[""110"",""usum""]",*,"{""1"":26}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":26,""hidden"":1}}]",,1,1
+27,form_ability,"[""110"",""xy""]",*,"{""1"":26}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":26,""hidden"":1}}]",,1,1
+28,form_ability,"[""174"",""dp""]",*,"{""1"":56}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":56,""2"":172}}]",,1,1
+29,form_ability,"[""174"",""e""]",*,"{""1"":56}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":56,""2"":172}}]",,1,1
+30,form_ability,"[""174"",""frlg""]",*,"{""1"":56}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":56,""2"":172}}]",,1,1
+31,form_ability,"[""174"",""frlgsw""]",*,"{""1"":56}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":56,""2"":172}}]",,1,1
+32,form_ability,"[""174"",""hgss""]",*,"{""1"":56}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":56,""2"":172}}]",,1,1
+33,form_ability,"[""174"",""pt""]",*,"{""1"":56}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":56,""2"":172}}]",,1,1
+34,form_ability,"[""174"",""rs""]",*,"{""1"":56}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":56,""2"":172}}]",,1,1
+35,form_ability,"[""20-totem-alola"",""sm""]",*,"{""1"":82,""2"":55,""hidden"":47}",game-data,"[{""document_id"":51,""source"":""showdown"",""value"":{""1"":47}}]",,1,1
+36,form_ability,"[""20-totem-alola"",""usum""]",*,"{""1"":82,""2"":55,""hidden"":47}",game-data,"[{""document_id"":53,""source"":""showdown"",""value"":{""1"":47}}]",,1,1
+37,form_ability,"[""25-belle"",""oras""]",*,"{""1"":9,""hidden"":31}",game-data,"[{""document_id"":47,""source"":""showdown"",""value"":{""1"":31}}]",,1,1
+38,form_ability,"[""25-cosplay"",""oras""]",*,"{""1"":9,""hidden"":31}",game-data,"[{""document_id"":47,""source"":""showdown"",""value"":{""1"":31}}]",,1,1
+39,form_ability,"[""25-libre"",""oras""]",*,"{""1"":9,""hidden"":31}",game-data,"[{""document_id"":47,""source"":""showdown"",""value"":{""1"":31}}]",,1,1
+40,form_ability,"[""25-phd"",""oras""]",*,"{""1"":9,""hidden"":31}",game-data,"[{""document_id"":47,""source"":""showdown"",""value"":{""1"":31}}]",,1,1
+41,form_ability,"[""25-pop-star"",""oras""]",*,"{""1"":9,""hidden"":31}",game-data,"[{""document_id"":47,""source"":""showdown"",""value"":{""1"":31}}]",,1,1
+42,form_ability,"[""25-rock-star"",""oras""]",*,"{""1"":9,""hidden"":31}",game-data,"[{""document_id"":47,""source"":""showdown"",""value"":{""1"":31}}]",,1,1
+43,form_ability,"[""275"",""dp""]",*,"{""1"":34,""2"":48}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":34,""2"":274}}]",,1,1
+44,form_ability,"[""275"",""e""]",*,"{""1"":34,""2"":48}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":34,""2"":274}}]",,1,1
+45,form_ability,"[""275"",""frlg""]",*,"{""1"":34,""2"":48}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":34,""2"":274}}]",,1,1
+46,form_ability,"[""275"",""frlgsw""]",*,"{""1"":34,""2"":48}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":34,""2"":274}}]",,1,1
+47,form_ability,"[""275"",""hgss""]",*,"{""1"":34,""2"":48}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":34,""2"":274}}]",,1,1
+48,form_ability,"[""275"",""pt""]",*,"{""1"":34,""2"":48}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":34,""2"":274}}]",,1,1
+49,form_ability,"[""275"",""rs""]",*,"{""1"":34,""2"":48}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":34,""2"":274}}]",,1,1
+50,form_ability,"[""278"",""dp""]",*,"{""1"":51}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":51,""2"":93}}]",,1,1
+51,form_ability,"[""278"",""e""]",*,"{""1"":51}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":51,""2"":93}}]",,1,1
+52,form_ability,"[""278"",""frlg""]",*,"{""1"":51}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":51,""2"":93}}]",,1,1
+53,form_ability,"[""278"",""frlgsw""]",*,"{""1"":51}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":51,""2"":93}}]",,1,1
+54,form_ability,"[""278"",""hgss""]",*,"{""1"":51}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":51,""2"":93}}]",,1,1
+55,form_ability,"[""278"",""pt""]",*,"{""1"":51}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":51,""2"":93}}]",,1,1
+56,form_ability,"[""278"",""rs""]",*,"{""1"":51}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":51,""2"":93}}]",,1,1
+57,form_ability,"[""279"",""dp""]",*,"{""1"":51}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":51,""2"":2}}]",,1,1
+58,form_ability,"[""279"",""e""]",*,"{""1"":51}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":51,""2"":2}}]",,1,1
+59,form_ability,"[""279"",""frlg""]",*,"{""1"":51}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":51,""2"":2}}]",,1,1
+60,form_ability,"[""279"",""frlgsw""]",*,"{""1"":51}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":51,""2"":2}}]",,1,1
+61,form_ability,"[""279"",""hgss""]",*,"{""1"":51}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":51,""2"":2}}]",,1,1
+62,form_ability,"[""279"",""pt""]",*,"{""1"":51}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":51,""2"":2}}]",,1,1
+63,form_ability,"[""279"",""rs""]",*,"{""1"":51}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":51,""2"":2}}]",,1,1
+64,form_ability,"[""324"",""dp""]",*,"{""1"":73}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":73,""2"":70}}]",,1,1
+65,form_ability,"[""324"",""e""]",*,"{""1"":73}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":73,""2"":70}}]",,1,1
+66,form_ability,"[""324"",""frlg""]",*,"{""1"":73}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":73,""2"":70}}]",,1,1
+67,form_ability,"[""324"",""frlgsw""]",*,"{""1"":73}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":73,""2"":70}}]",,1,1
+68,form_ability,"[""324"",""hgss""]",*,"{""1"":73}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":73,""2"":70}}]",,1,1
+69,form_ability,"[""324"",""pt""]",*,"{""1"":73}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":73,""2"":70}}]",,1,1
+70,form_ability,"[""324"",""rs""]",*,"{""1"":73}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":73,""2"":70}}]",,1,1
+71,form_ability,"[""349"",""dp""]",*,"{""1"":33}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":33,""2"":12}}]",,1,1
+72,form_ability,"[""349"",""e""]",*,"{""1"":33}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":33,""2"":12}}]",,1,1
+73,form_ability,"[""349"",""frlg""]",*,"{""1"":33}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":33,""2"":12}}]",,1,1
+74,form_ability,"[""349"",""frlgsw""]",*,"{""1"":33}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":33,""2"":12}}]",,1,1
+75,form_ability,"[""349"",""hgss""]",*,"{""1"":33}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":33,""2"":12}}]",,1,1
+76,form_ability,"[""349"",""pt""]",*,"{""1"":33}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":33,""2"":12}}]",,1,1
+77,form_ability,"[""349"",""rs""]",*,"{""1"":33}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":33,""2"":12}}]",,1,1
+78,form_ability,"[""350"",""dp""]",*,"{""1"":63}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":63,""2"":172}}]",,1,1
+79,form_ability,"[""350"",""e""]",*,"{""1"":63}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":63,""2"":172}}]",,1,1
+80,form_ability,"[""350"",""frlg""]",*,"{""1"":63}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":63,""2"":172}}]",,1,1
+81,form_ability,"[""350"",""frlgsw""]",*,"{""1"":63}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":63,""2"":172}}]",,1,1
+82,form_ability,"[""350"",""hgss""]",*,"{""1"":63}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":63,""2"":172}}]",,1,1
+83,form_ability,"[""350"",""pt""]",*,"{""1"":63}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":63,""2"":172}}]",,1,1
+84,form_ability,"[""350"",""rs""]",*,"{""1"":63}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":63,""2"":172}}]",,1,1
+85,form_ability,"[""39"",""dp""]",*,"{""1"":56}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":56,""2"":172}}]",,1,1
+86,form_ability,"[""39"",""e""]",*,"{""1"":56}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":56,""2"":172}}]",,1,1
+87,form_ability,"[""39"",""frlg""]",*,"{""1"":56}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":56,""2"":172}}]",,1,1
+88,form_ability,"[""39"",""frlgsw""]",*,"{""1"":56}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":56,""2"":172}}]",,1,1
+89,form_ability,"[""39"",""hgss""]",*,"{""1"":56}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":56,""2"":172}}]",,1,1
+90,form_ability,"[""39"",""pt""]",*,"{""1"":56}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":56,""2"":172}}]",,1,1
+91,form_ability,"[""39"",""rs""]",*,"{""1"":56}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":56,""2"":172}}]",,1,1
+92,form_ability,"[""40"",""dp""]",*,"{""1"":56}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":56,""2"":172}}]",,1,1
+93,form_ability,"[""40"",""e""]",*,"{""1"":56}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":56,""2"":172}}]",,1,1
+94,form_ability,"[""40"",""frlg""]",*,"{""1"":56}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":56,""2"":172}}]",,1,1
+95,form_ability,"[""40"",""frlgsw""]",*,"{""1"":56}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":56,""2"":172}}]",,1,1
+96,form_ability,"[""40"",""hgss""]",*,"{""1"":56}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":56,""2"":172}}]",,1,1
+97,form_ability,"[""40"",""pt""]",*,"{""1"":56}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":56,""2"":172}}]",,1,1
+98,form_ability,"[""40"",""rs""]",*,"{""1"":56}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":56,""2"":172}}]",,1,1
+99,form_ability,"[""475"",""dp""]",*,"{""1"":80}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":80,""2"":292}}]",,1,1
+100,form_ability,"[""475"",""hgss""]",*,"{""1"":80}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":80,""2"":292}}]",,1,1
+101,form_ability,"[""475"",""pt""]",*,"{""1"":80}",game-data,"[{""document_id"":37,""source"":""pokeapi"",""value"":{""1"":80,""2"":292}}]",,1,1
+102,form_ability,"[""550-blue-striped"",""bw""]",*,"{""1"":69,""2"":91,""hidden"":104}",game-data,"[{""document_id"":40,""source"":""showdown"",""value"":{""1"":120,""2"":91,""hidden"":104}}]",,1,1
+103,form_ability,"[""555-galar-zen"",""sw""]",*,"{""1"":255,""hidden"":161}",game-data,"[{""document_id"":52,""source"":""showdown"",""value"":{""1"":161}}]",,1,1
+104,form_ability,"[""555-galar-zen"",""swcrown""]",*,"{""1"":255,""hidden"":161}",game-data,"[{""document_id"":52,""source"":""showdown"",""value"":{""1"":161}}]",,1,1
+105,form_ability,"[""555-galar-zen"",""swisle""]",*,"{""1"":255,""hidden"":161}",game-data,"[{""document_id"":52,""source"":""showdown"",""value"":{""1"":161}}]",,1,1
+106,form_ability,"[""555-zen"",""b2w2""]",*,"{""1"":125,""hidden"":161}",game-data,"[{""document_id"":38,""source"":""showdown"",""value"":{""1"":161}}]",,1,1
+107,form_ability,"[""555-zen"",""bw""]",*,"{""1"":125,""hidden"":161}",game-data,"[{""document_id"":40,""source"":""showdown"",""value"":{""1"":161}}]",,1,1
+108,form_ability,"[""555-zen"",""oras""]",*,"{""1"":125,""hidden"":161}",game-data,"[{""document_id"":47,""source"":""showdown"",""value"":{""1"":161}}]",,1,1
+109,form_ability,"[""555-zen"",""sm""]",*,"{""1"":125,""hidden"":161}",game-data,"[{""document_id"":51,""source"":""showdown"",""value"":{""1"":161}}]",,1,1
+110,form_ability,"[""555-zen"",""sw""]",*,"{""1"":125,""hidden"":161}",game-data,"[{""document_id"":52,""source"":""showdown"",""value"":{""1"":161}}]",,1,1
+111,form_ability,"[""555-zen"",""swcrown""]",*,"{""1"":125,""hidden"":161}",game-data,"[{""document_id"":52,""source"":""showdown"",""value"":{""1"":161}}]",,1,1
+112,form_ability,"[""555-zen"",""swisle""]",*,"{""1"":125,""hidden"":161}",game-data,"[{""document_id"":52,""source"":""showdown"",""value"":{""1"":161}}]",,1,1
+113,form_ability,"[""555-zen"",""usum""]",*,"{""1"":125,""hidden"":161}",game-data,"[{""document_id"":53,""source"":""showdown"",""value"":{""1"":161}}]",,1,1
+114,form_ability,"[""555-zen"",""xy""]",*,"{""1"":125,""hidden"":161}",game-data,"[{""document_id"":54,""source"":""showdown"",""value"":{""1"":161}}]",,1,1
+115,form_ability,"[""666-fancy"",""oras""]",*,"{""1"":19,""2"":14,""hidden"":132}",game-data,"[{""document_id"":47,""source"":""showdown"",""value"":{""1"":19,""2"":14}}]",,1,1
+116,form_ability,"[""666-fancy"",""sm""]",*,"{""1"":19,""2"":14,""hidden"":132}",game-data,"[{""document_id"":51,""source"":""showdown"",""value"":{""1"":19,""2"":14}}]",,1,1
+117,form_ability,"[""666-fancy"",""usum""]",*,"{""1"":19,""2"":14,""hidden"":132}",game-data,"[{""document_id"":53,""source"":""showdown"",""value"":{""1"":19,""2"":14}}]",,1,1
+118,form_ability,"[""666-fancy"",""xy""]",*,"{""1"":19,""2"":14,""hidden"":132}",game-data,"[{""document_id"":54,""source"":""showdown"",""value"":{""1"":19,""2"":14}}]",,1,1
+119,form_ability,"[""666-poke-ball"",""oras""]",*,"{""1"":19,""2"":14,""hidden"":132}",game-data,"[{""document_id"":47,""source"":""showdown"",""value"":{""1"":19,""2"":14}}]",,1,1
+120,form_ability,"[""666-poke-ball"",""sm""]",*,"{""1"":19,""2"":14,""hidden"":132}",game-data,"[{""document_id"":51,""source"":""showdown"",""value"":{""1"":19,""2"":14}}]",,1,1
+121,form_ability,"[""666-poke-ball"",""usum""]",*,"{""1"":19,""2"":14,""hidden"":132}",game-data,"[{""document_id"":53,""source"":""showdown"",""value"":{""1"":19,""2"":14}}]",,1,1
+122,form_ability,"[""666-poke-ball"",""xy""]",*,"{""1"":19,""2"":14,""hidden"":132}",game-data,"[{""document_id"":54,""source"":""showdown"",""value"":{""1"":19,""2"":14}}]",,1,1
+123,form_ability,"[""710-large"",""oras""]",*,"{""1"":53,""2"":119,""hidden"":15}",game-data,"[{""document_id"":47,""source"":""showdown"",""value"":{""1"":53,""2"":119}}]",,1,1
+124,form_ability,"[""710-large"",""sm""]",*,"{""1"":53,""2"":119,""hidden"":15}",game-data,"[{""document_id"":51,""source"":""showdown"",""value"":{""1"":53,""2"":119}}]",,1,1
+125,form_ability,"[""710-large"",""usum""]",*,"{""1"":53,""2"":119,""hidden"":15}",game-data,"[{""document_id"":53,""source"":""showdown"",""value"":{""1"":53,""2"":119}}]",,1,1
+126,form_ability,"[""710-large"",""xy""]",*,"{""1"":53,""2"":119,""hidden"":15}",game-data,"[{""document_id"":54,""source"":""showdown"",""value"":{""1"":53,""2"":119}}]",,1,1
+127,form_ability,"[""710-small"",""oras""]",*,"{""1"":53,""2"":119,""hidden"":15}",game-data,"[{""document_id"":47,""source"":""showdown"",""value"":{""1"":53,""2"":119}}]",,1,1
+128,form_ability,"[""710-small"",""sm""]",*,"{""1"":53,""2"":119,""hidden"":15}",game-data,"[{""document_id"":51,""source"":""showdown"",""value"":{""1"":53,""2"":119}}]",,1,1
+129,form_ability,"[""710-small"",""usum""]",*,"{""1"":53,""2"":119,""hidden"":15}",game-data,"[{""document_id"":53,""source"":""showdown"",""value"":{""1"":53,""2"":119}}]",,1,1
+130,form_ability,"[""710-small"",""xy""]",*,"{""1"":53,""2"":119,""hidden"":15}",game-data,"[{""document_id"":54,""source"":""showdown"",""value"":{""1"":53,""2"":119}}]",,1,1
+131,form_ability,"[""711-large"",""oras""]",*,"{""1"":53,""2"":119,""hidden"":15}",game-data,"[{""document_id"":47,""source"":""showdown"",""value"":{""1"":53,""2"":119}}]",,1,1
+132,form_ability,"[""711-large"",""sm""]",*,"{""1"":53,""2"":119,""hidden"":15}",game-data,"[{""document_id"":51,""source"":""showdown"",""value"":{""1"":53,""2"":119}}]",,1,1
+133,form_ability,"[""711-large"",""usum""]",*,"{""1"":53,""2"":119,""hidden"":15}",game-data,"[{""document_id"":53,""source"":""showdown"",""value"":{""1"":53,""2"":119}}]",,1,1
+134,form_ability,"[""711-large"",""xy""]",*,"{""1"":53,""2"":119,""hidden"":15}",game-data,"[{""document_id"":54,""source"":""showdown"",""value"":{""1"":53,""2"":119}}]",,1,1
+135,form_ability,"[""711-small"",""oras""]",*,"{""1"":53,""2"":119,""hidden"":15}",game-data,"[{""document_id"":47,""source"":""showdown"",""value"":{""1"":53,""2"":119}}]",,1,1
+136,form_ability,"[""711-small"",""sm""]",*,"{""1"":53,""2"":119,""hidden"":15}",game-data,"[{""document_id"":51,""source"":""showdown"",""value"":{""1"":53,""2"":119}}]",,1,1
+137,form_ability,"[""711-small"",""usum""]",*,"{""1"":53,""2"":119,""hidden"":15}",game-data,"[{""document_id"":53,""source"":""showdown"",""value"":{""1"":53,""2"":119}}]",,1,1
+138,form_ability,"[""711-small"",""xy""]",*,"{""1"":53,""2"":119,""hidden"":15}",game-data,"[{""document_id"":54,""source"":""showdown"",""value"":{""1"":53,""2"":119}}]",,1,1
+139,form_ability,"[""718-10-power-construct"",""sm""]",*,"{""1"":211}",game-data,"[{""document_id"":51,""source"":""showdown"",""value"":{""1"":188}}]",,1,1
+140,form_ability,"[""718-10-power-construct"",""sw""]",*,"{""1"":211}",game-data,"[{""document_id"":52,""source"":""showdown"",""value"":{""1"":188}}]",,1,1
+141,form_ability,"[""718-10-power-construct"",""swcrown""]",*,"{""1"":211}",game-data,"[{""document_id"":52,""source"":""showdown"",""value"":{""1"":188}}]",,1,1
+142,form_ability,"[""718-10-power-construct"",""swisle""]",*,"{""1"":211}",game-data,"[{""document_id"":52,""source"":""showdown"",""value"":{""1"":188}}]",,1,1
+143,form_ability,"[""718-10-power-construct"",""usum""]",*,"{""1"":211}",game-data,"[{""document_id"":53,""source"":""showdown"",""value"":{""1"":188}}]",,1,1
+144,form_ability,"[""718-50-power-construct"",""sm""]",*,"{""1"":211}",game-data,"[{""document_id"":51,""source"":""showdown"",""value"":{""1"":188}}]",,1,1
+145,form_ability,"[""718-50-power-construct"",""sw""]",*,"{""1"":211}",game-data,"[{""document_id"":52,""source"":""showdown"",""value"":{""1"":188}}]",,1,1
+146,form_ability,"[""718-50-power-construct"",""swcrown""]",*,"{""1"":211}",game-data,"[{""document_id"":52,""source"":""showdown"",""value"":{""1"":188}}]",,1,1
+147,form_ability,"[""718-50-power-construct"",""swisle""]",*,"{""1"":211}",game-data,"[{""document_id"":52,""source"":""showdown"",""value"":{""1"":188}}]",,1,1
+148,form_ability,"[""718-50-power-construct"",""usum""]",*,"{""1"":211}",game-data,"[{""document_id"":53,""source"":""showdown"",""value"":{""1"":188}}]",,1,1
+149,form_ability,"[""735-totem"",""sm""]",*,"{""1"":198,""2"":173,""hidden"":91}",game-data,"[{""document_id"":51,""source"":""showdown"",""value"":{""1"":91}}]",,1,1
+150,form_ability,"[""735-totem"",""usum""]",*,"{""1"":198,""2"":173,""hidden"":91}",game-data,"[{""document_id"":53,""source"":""showdown"",""value"":{""1"":91}}]",,1,1
+151,form_ability,"[""743-totem"",""usum""]",*,"{""1"":118,""2"":19,""hidden"":175}",game-data,"[{""document_id"":53,""source"":""showdown"",""value"":{""1"":175}}]",,1,1
+152,form_ability,"[""752-totem"",""usum""]",*,"{""1"":199,""hidden"":11}",game-data,"[{""document_id"":53,""source"":""showdown"",""value"":{""1"":199}}]",,1,1
+153,form_ability,"[""754-totem"",""sm""]",*,"{""1"":102,""hidden"":126}",game-data,"[{""document_id"":51,""source"":""showdown"",""value"":{""1"":102}}]",,1,1
+154,form_ability,"[""754-totem"",""usum""]",*,"{""1"":102,""hidden"":126}",game-data,"[{""document_id"":53,""source"":""showdown"",""value"":{""1"":102}}]",,1,1
+155,form_ability,"[""758-totem"",""sm""]",*,"{""1"":212,""hidden"":12}",game-data,"[{""document_id"":51,""source"":""showdown"",""value"":{""1"":212}}]",,1,1
+156,form_ability,"[""758-totem"",""usum""]",*,"{""1"":212,""hidden"":12}",game-data,"[{""document_id"":53,""source"":""showdown"",""value"":{""1"":212}}]",,1,1
+157,form_ability,"[""777-totem"",""usum""]",*,"{""1"":160,""2"":31,""hidden"":5}",game-data,"[{""document_id"":53,""source"":""showdown"",""value"":{""1"":5}}]",,1,1
+158,form_ability,"[""784-totem"",""sm""]",*,"{""1"":171,""2"":43,""hidden"":142}",game-data,"[{""document_id"":51,""source"":""showdown"",""value"":{""1"":142}}]",,1,1
+159,form_ability,"[""784-totem"",""usum""]",*,"{""1"":171,""2"":43,""hidden"":142}",game-data,"[{""document_id"":53,""source"":""showdown"",""value"":{""1"":142}}]",,1,1
+160,form_ability,"[""785"",""sm""]",*,"{""1"":226,""hidden"":140}",game-data,"[{""document_id"":51,""source"":""showdown"",""value"":{""1"":226}}]",,1,1
+161,form_ability,"[""785"",""usum""]",*,"{""1"":226,""hidden"":140}",game-data,"[{""document_id"":53,""source"":""showdown"",""value"":{""1"":226}}]",,1,1
+162,form_ability,"[""786"",""sm""]",*,"{""1"":227,""hidden"":140}",game-data,"[{""document_id"":51,""source"":""showdown"",""value"":{""1"":227}}]",,1,1
+163,form_ability,"[""786"",""usum""]",*,"{""1"":227,""hidden"":140}",game-data,"[{""document_id"":53,""source"":""showdown"",""value"":{""1"":227}}]",,1,1
+164,form_ability,"[""787"",""sm""]",*,"{""1"":229,""hidden"":140}",game-data,"[{""document_id"":51,""source"":""showdown"",""value"":{""1"":229}}]",,1,1
+165,form_ability,"[""787"",""usum""]",*,"{""1"":229,""hidden"":140}",game-data,"[{""document_id"":53,""source"":""showdown"",""value"":{""1"":229}}]",,1,1
+166,form_ability,"[""788"",""sm""]",*,"{""1"":228,""hidden"":140}",game-data,"[{""document_id"":51,""source"":""showdown"",""value"":{""1"":228}}]",,1,1
+167,form_ability,"[""788"",""usum""]",*,"{""1"":228,""hidden"":140}",game-data,"[{""document_id"":53,""source"":""showdown"",""value"":{""1"":228}}]",,1,1
+168,form_game,"[""121-mega"",""za""]",stats,"[60,140,105,130,105,120]",game-data,"[{""document_id"":35,""source"":""pokeapi"",""value"":[60,100,105,130,105,120]}]",,1,1
+169,form_game,"[""121-mega"",""zadlc""]",stats,"[60,140,105,130,105,120]",game-data,"[{""document_id"":35,""source"":""pokeapi"",""value"":[60,100,105,130,105,120]}]",,1,1
+170,form_game,"[""303-mega"",""za""]",stats,"[50,147,125,55,95,50]",game-data,"[{""document_id"":35,""source"":""pokeapi"",""value"":[50,105,125,55,95,50]}]",,1,1
+171,form_game,"[""303-mega"",""zadlc""]",stats,"[50,147,125,55,95,50]",game-data,"[{""document_id"":35,""source"":""pokeapi"",""value"":[50,105,125,55,95,50]}]",,1,1
+172,form_game,"[""307"",""za""]",stats,"[30,56,55,40,55,60]",game-data,"[{""document_id"":35,""source"":""pokeapi"",""value"":[30,40,55,40,55,60]},{""document_id"":56,""source"":""showdown"",""value"":[30,40,55,40,55,60]}]",,1,1
+173,form_game,"[""307"",""zadlc""]",stats,"[30,56,55,40,55,60]",game-data,"[{""document_id"":35,""source"":""pokeapi"",""value"":[30,40,55,40,55,60]},{""document_id"":56,""source"":""showdown"",""value"":[30,40,55,40,55,60]}]",,1,1
+174,form_game,"[""308"",""za""]",stats,"[60,84,75,60,75,80]",game-data,"[{""document_id"":35,""source"":""pokeapi"",""value"":[60,60,75,60,75,80]},{""document_id"":56,""source"":""showdown"",""value"":[60,60,75,60,75,80]}]",,1,1
+175,form_game,"[""308"",""zadlc""]",stats,"[60,84,75,60,75,80]",game-data,"[{""document_id"":35,""source"":""pokeapi"",""value"":[60,60,75,60,75,80]},{""document_id"":56,""source"":""showdown"",""value"":[60,60,75,60,75,80]}]",,1,1
+176,form_game,"[""308-mega"",""za""]",stats,"[60,140,85,80,85,100]",game-data,"[{""document_id"":35,""source"":""pokeapi"",""value"":[60,100,85,80,85,100]}]",,1,1
+177,form_game,"[""308-mega"",""zadlc""]",stats,"[60,140,85,80,85,100]",game-data,"[{""document_id"":35,""source"":""pokeapi"",""value"":[60,100,85,80,85,100]}]",,1,1
+178,form_game,"[""421-sunshine"",""la""]",stats,"[70,90,70,87,117,85]",game-data,"[{""document_id"":35,""source"":""pokeapi"",""value"":[70,60,70,87,78,85]}]",,1,1
+179,form_game,"[""615"",""b2w2""]",stats,"[70,50,30,95,135,105]",game-data,"[{""document_id"":35,""source"":""pokeapi"",""value"":[70,30,50,95,135,105]}]",,1,1
+180,form_game,"[""615"",""bw""]",stats,"[70,50,30,95,135,105]",game-data,"[{""document_id"":35,""source"":""pokeapi"",""value"":[70,30,50,95,135,105]}]",,1,1
+181,form_game,"[""615"",""oras""]",stats,"[70,50,30,95,135,105]",game-data,"[{""document_id"":35,""source"":""pokeapi"",""value"":[70,30,50,95,135,105]}]",,1,1
+182,form_game,"[""615"",""xy""]",stats,"[70,50,30,95,135,105]",game-data,"[{""document_id"":35,""source"":""pokeapi"",""value"":[70,30,50,95,135,105]}]",,1,1
+183,species,[1007],is_paradox,1,majority,"[{""document_id"":13,""source"":""showdown"",""value"":0}]",,1,1
+184,species,[1008],is_paradox,1,majority,"[{""document_id"":13,""source"":""showdown"",""value"":0}]",,1,1
+185,species,[1011],growth_rate_id,"""erratic""",game-data,"[{""document_id"":12,""source"":""pokeapi"",""value"":""slow""}]",,1,1
+186,species,[1012],growth_rate_id,"""medium-fast""",game-data,"[{""document_id"":12,""source"":""pokeapi"",""value"":""slow""}]",,1,1
+187,species,[1012],hatch_cycles,20,game-data,"[{""document_id"":12,""source"":""pokeapi"",""value"":50}]",,1,1
+188,species,[1013],growth_rate_id,"""medium-fast""",game-data,"[{""document_id"":12,""source"":""pokeapi"",""value"":""slow""}]",,1,1
+189,species,[1013],hatch_cycles,20,game-data,"[{""document_id"":12,""source"":""pokeapi"",""value"":50}]",,1,1
+190,species,[1014],hatch_cycles,120,game-data,"[{""document_id"":12,""source"":""pokeapi"",""value"":50}]",,1,1
+191,species,[1015],hatch_cycles,120,game-data,"[{""document_id"":12,""source"":""pokeapi"",""value"":50}]",,1,1
+192,species,[1016],hatch_cycles,120,game-data,"[{""document_id"":12,""source"":""pokeapi"",""value"":50}]",,1,1
+193,species,[1017],hatch_cycles,10,game-data,"[{""document_id"":12,""source"":""pokeapi"",""value"":50}]",,1,1
+194,species,[1020],is_paradox,1,majority,"[{""document_id"":13,""source"":""showdown"",""value"":0}]",,1,1
+195,species,[1021],is_paradox,1,majority,"[{""document_id"":13,""source"":""showdown"",""value"":0}]",,1,1
+196,species,[1022],is_paradox,1,majority,"[{""document_id"":13,""source"":""showdown"",""value"":0}]",,1,1
+197,species,[1023],is_paradox,1,majority,"[{""document_id"":13,""source"":""showdown"",""value"":0}]",,1,1
+198,species,[916],gender_rate,4,game-data,"[{""document_id"":12,""source"":""pokeapi"",""value"":0}]",,1,1
+199,translation,"[""ability"",""10"",""name"",""es"",null,null]",text,"""Absorbe Elec""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Absorbe Electricidad""}]",,1,1
+200,translation,"[""ability"",""117"",""name"",""de"",null,null]",text,"""Schneeschauer""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Hagelalarm""}]",,1,1
+201,translation,"[""ability"",""118"",""name"",""es-419"",null,null]",text,"""Cosechamiel""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Recogemiel""}]",,1,1
+202,translation,"[""ability"",""129"",""name"",""es-419"",null,null]",text,"""Flaquear""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Flaqueza""}]",,1,1
+203,translation,"[""ability"",""147"",""name"",""es-419"",null,null]",text,"""Piel Milagrosa""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Piel Milagro""}]",,1,1
+204,translation,"[""ability"",""16"",""name"",""es-419"",null,null]",text,"""Cambio de Color""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Cambio Color""}]",,1,1
+205,translation,"[""ability"",""161"",""name"",""es-419"",null,null]",text,"""Modo Zen""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Modo Daruma""}]",,1,1
+206,translation,"[""ability"",""180"",""name"",""de"",null,null]",text,"""Symbiose""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Nutznießer""}]",,1,1
+207,translation,"[""ability"",""20"",""name"",""de"",null,null]",text,"""Gleichmut""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Tempomacher""}]",,1,1
+208,translation,"[""ability"",""205"",""name"",""es-419"",null,null]",text,"""Socorro""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Primer Auxilio""}]",,1,1
+209,translation,"[""ability"",""218"",""name"",""es-419"",null,null]",text,"""Mullido""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Peluche""}]",,1,1
+210,translation,"[""ability"",""223"",""name"",""ko"",null,null]",text,"""화학의힘""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""과학의힘""}]",,1,1
+211,translation,"[""ability"",""237"",""name"",""es-419"",null,null]",text,"""Buscabola""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Recogebolas""}]",,1,1
+212,translation,"[""ability"",""25"",""name"",""es-419"",null,null]",text,"""Superguardia""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Superguarda""}]",,1,1
+213,translation,"[""ability"",""255"",""name"",""es-419"",null,null]",text,"""Obstinación""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Monotema""}]",,1,1
+214,translation,"[""ability"",""268"",""name"",""es-419"",null,null]",text,"""Aroma Incesante""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Olor Persistente""}]",,1,1
+215,translation,"[""ability"",""270"",""name"",""es-419"",null,null]",text,"""Termoconversión""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Termoscambio""}]",,1,1
+216,translation,"[""ability"",""273"",""name"",""es-419"",null,null]",text,"""Pan Comido""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Cuerpo Horneado""}]",,1,1
+217,translation,"[""ability"",""279"",""name"",""es-419"",null,null]",text,"""Comandante""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Comandar""}]",,1,1
+218,translation,"[""ability"",""280"",""name"",""es-419"",null,null]",text,"""Dinamo""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Dínamo""}]",,1,1
+219,translation,"[""ability"",""287"",""name"",""es-419"",null,null]",text,"""Cuenta Debacle""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Abalorio Debacle""}]",,1,1
+220,translation,"[""ability"",""35"",""name"",""fr"",null,null]",text,"""Luminescence""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Lumiattirance""}]",,1,1
+221,translation,"[""ability"",""38"",""name"",""it"",null,null]",text,"""Velenopunte""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Velenopunto""}]",,1,1
+222,translation,"[""ability"",""41"",""name"",""es-419"",null,null]",text,"""Velo de Agua""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Velo Agua""}]",,1,1
+223,translation,"[""ability"",""54"",""name"",""es"",null,null]",text,"""Pereza""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Ausente""}]",,1,1
+224,translation,"[""ability"",""54"",""name"",""es-419"",null,null]",text,"""Pereza""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Ausente""}]",,1,1
+225,translation,"[""ability"",""64"",""name"",""es"",null,null]",text,"""Viscosecreción""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Lodo Líquido""}]",,1,1
+226,translation,"[""ability"",""64"",""name"",""es-419"",null,null]",text,"""Toxisecreción""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Lodo Líquido""}]",,1,1
+227,translation,"[""ability"",""71"",""name"",""es-419"",null,null]",text,"""Trampa de Arena""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Trampa Arena""}]",,1,1
+228,translation,"[""ability"",""76"",""name"",""es"",null,null]",text,"""Esclusa de Aire""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Bucle Aire""}]",,1,1
+229,translation,"[""ability"",""76"",""name"",""es-419"",null,null]",text,"""Esclusa de Aire""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Bucle Aire""}]",,1,1
+230,translation,"[""ability"",""77"",""name"",""de"",null,null]",text,"""Taumelschritt""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Fußangel""}]",,1,1
+231,translation,"[""ability"",""9"",""name"",""es"",null,null]",text,"""Elec. Estática""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Electricidad Estática""}]",,1,1
+232,translation,"[""ability"",""9"",""name"",""es-419"",null,null]",text,"""Elec. Estática""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Electricidad Estática""}]",,1,1
+233,translation,"[""ability"",""90"",""name"",""de"",null,null]",text,"""Giftheilung""",game-data,"[{""document_id"":60,""source"":""pokeapi"",""value"":""Aufheber""}]",,1,1
+234,translation,"[""item"",""1633"",""name"",""es-419"",null,null]",text,"""Brazalete Galanuez""",game-data,"[{""document_id"":76,""source"":""pokeapi"",""value"":""Brazal Galanuez""}]",,2,2
+235,translation,"[""item"",""198"",""name"",""it"",null,null]",text,"""Roccia di re""",game-data,"[{""document_id"":76,""source"":""pokeapi"",""value"":""Roccia di Re""}]",,2,2
+236,translation,"[""item"",""203"",""name"",""it"",null,null]",text,"""Dente abissi""",game-data,"[{""document_id"":76,""source"":""pokeapi"",""value"":""Dente Abissi""}]",,2,2
+237,translation,"[""item"",""210"",""name"",""it"",null,null]",text,"""Metalcopertura""",game-data,"[{""document_id"":76,""source"":""pokeapi"",""value"":""Metalcoperta""}]",,2,2
+238,translation,"[""item"",""212"",""name"",""es"",null,null]",text,"""Escama de Dragón""",game-data,"[{""document_id"":76,""source"":""pokeapi"",""value"":""Escama Dragón""}]",,2,2
+239,translation,"[""item"",""212"",""name"",""it"",null,null]",text,"""Squama drago""",game-data,"[{""document_id"":76,""source"":""pokeapi"",""value"":""Squama Drago""}]",,2,2
+240,translation,"[""item"",""303"",""name"",""it"",null,null]",text,"""Affilartiglio""",game-data,"[{""document_id"":76,""source"":""pokeapi"",""value"":""Affilartigli""}]",,2,2
+241,translation,"[""item"",""580"",""name"",""it"",null,null]",text,"""Squama bella""",game-data,"[{""document_id"":76,""source"":""pokeapi"",""value"":""Squama Bella""}]",,2,2
+242,translation,"[""item"",""686"",""name"",""es-419"",null,null]",text,"""Bocadito de Crema""",game-data,"[{""document_id"":76,""source"":""pokeapi"",""value"":""Dulce de Nata""}]",,2,2
+243,translation,"[""item"",""687"",""name"",""es-419"",null,null]",text,"""Bolsita Fragante""",game-data,"[{""document_id"":76,""source"":""pokeapi"",""value"":""Saquito Fragante""}]",,2,2
+244,translation,"[""species"",""1019"",""genus"",""zh-Hans"",null,null]",text,"""苹果大蛇宝可梦""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""糖青苹果""}]",,2,
+245,translation,"[""species"",""1019"",""genus"",""zh-Hant"",null,null]",text,"""蘋果大蛇寶可夢""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""糖青蘋果""}]",,2,
+246,translation,"[""species"",""111"",""genus"",""es"",null,null]",text,"""Pokémon Clavos""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Punzante*""}]",,2,
+247,translation,"[""species"",""133"",""genus"",""de"",null,null]",text,"""Evolutions-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Evolution""}]",,2,
+248,translation,"[""species"",""167"",""genus"",""es"",null,null]",text,"""Pokémon Escupesoga""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Escupehilo*""}]",,2,
+249,translation,"[""species"",""175"",""genus"",""es"",null,null]",text,"""Pokémon Bolaclavos""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Bolapicuda*""}]",,2,
+250,translation,"[""species"",""184"",""genus"",""it"",null,null]",text,"""Pokémon Acquniglio""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Acquaniglio""}]",,2,
+251,translation,"[""species"",""185"",""genus"",""de"",null,null]",text,"""Imitations-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Imitation""}]",,2,
+252,translation,"[""species"",""187"",""genus"",""es"",null,null]",text,"""Pokémon Algadón""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Diente León*""}]",,2,
+253,translation,"[""species"",""188"",""genus"",""es"",null,null]",text,"""Pokémon Algadón""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Diente León*""}]",,2,
+254,translation,"[""species"",""189"",""genus"",""es"",null,null]",text,"""Pokémon Algadón""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Diente León*""}]",,2,
+255,translation,"[""species"",""206"",""genus"",""de"",null,null]",text,"""Schlangen-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Erdschlange*""}]",,2,
+256,translation,"[""species"",""231"",""genus"",""ko"",null,null]",text,"""긴코포켓몬""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""{{tt|긴코""}]",,2,
+257,translation,"[""species"",""254"",""genus"",""es"",null,null]",text,"""Pokémon Monte""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Bosque*""}]",,2,
+258,translation,"[""species"",""256"",""genus"",""de"",null,null]",text,"""Kleinhahn-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Jungvogel*""}]",,2,
+259,translation,"[""species"",""269"",""genus"",""es"",null,null]",text,"""Pokémon Polilla Ven.""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Polilla Venenosa*""}]",,2,
+260,translation,"[""species"",""281"",""genus"",""de"",null,null]",text,"""Emotions-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Emotion""}]",,2,
+261,translation,"[""species"",""303"",""genus"",""de"",null,null]",text,"""Schwindler-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Schwindel""}]",,2,
+262,translation,"[""species"",""321"",""genus"",""fr"",null,null]",text,"""Pokémon Cachabouée""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Carchabouée""}]",,2,
+263,translation,"[""species"",""327"",""genus"",""fr"",null,null]",text,"""Pokémon Panda Tache""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Panda Taché""}]",,2,
+264,translation,"[""species"",""329"",""genus"",""de"",null,null]",text,"""Vibrations-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Vibration""}]",,2,
+265,translation,"[""species"",""329"",""genus"",""zh-Hans"",null,null]",text,"""振动宝可梦""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""震动""}]",,2,
+266,translation,"[""species"",""358"",""genus"",""es"",null,null]",text,"""Pokémon Sonido Aire""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Campanilla*""}]",,2,
+267,translation,"[""species"",""358"",""genus"",""ko"",null,null]",text,"""풍경포켓몬""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""풍령""}]",,2,
+268,translation,"[""species"",""414"",""genus"",""de"",null,null]",text,"""Motte""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Fruchtmotte""}]",,2,
+269,translation,"[""species"",""415"",""genus"",""de"",null,null]",text,"""Kleinbienen-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Baby-Biene""}]",,2,
+270,translation,"[""species"",""417"",""genus"",""ja"",null,null]",text,"""でんきりすポケモン""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""でんきリス""}]",,2,
+271,translation,"[""species"",""418"",""genus"",""es"",null,null]",text,"""Pokémon Nutria Mar.""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Nutria Marina*""}]",,2,
+272,translation,"[""species"",""419"",""genus"",""es"",null,null]",text,"""Pokémon Nutria Mar.""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Nutria Marina*""}]",,2,
+273,translation,"[""species"",""433"",""genus"",""es"",null,null]",text,"""Pokémon Campana""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Cascabel*""}]",,2,
+274,translation,"[""species"",""467"",""genus"",""de"",null,null]",text,"""Detonations-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Detonation""}]",,2,
+275,translation,"[""species"",""469"",""name"",""fr"",null,null]",text,"""Yanmega""",game-data,"[{""document_id"":63,""source"":""bulbapedia"",""value"":""Yanméga""}]",,1,1
+276,translation,"[""species"",""470"",""genus"",""de"",null,null]",text,"""Unreif-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Frischgrün*""}]",,2,
+277,translation,"[""species"",""480"",""genus"",""de"",null,null]",text,"""Wissens-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Wissen""}]",,2,
+278,translation,"[""species"",""481"",""genus"",""de"",null,null]",text,"""Emotions-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Emotion""}]",,2,
+279,translation,"[""species"",""49"",""genus"",""es"",null,null]",text,"""Pokémon Polilla Ven.""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Polilla Venenosa*""}]",,2,
+280,translation,"[""species"",""491"",""genus"",""es"",null,null]",text,"""Pokémon Oscuridad""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Tenebroso*""}]",,2,
+281,translation,"[""species"",""495"",""genus"",""es"",null,null]",text,"""Pokémon Serp. Hierba""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Serpiente Hierba*""}]",,2,
+282,translation,"[""species"",""496"",""genus"",""es"",null,null]",text,"""Pokémon Serp. Hierba""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Serpiente Hierba*""}]",,2,
+283,translation,"[""species"",""499"",""name"",""ko"",null,null]",text,"""차오꿀""",game-data,"[{""document_id"":65,""source"":""bulbapedia"",""value"":""챠오꿀""}]",,1,1
+284,translation,"[""species"",""526"",""genus"",""de"",null,null]",text,"""Kompressions-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Kompression""}]",,2,
+285,translation,"[""species"",""536"",""genus"",""de"",null,null]",text,"""Vibrations-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Vibration""}]",,2,
+286,translation,"[""species"",""536"",""genus"",""zh-Hans"",null,null]",text,"""振动宝可梦""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""震动""}]",,2,
+287,translation,"[""species"",""537"",""genus"",""de"",null,null]",text,"""Vibrations-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Vibration""}]",,2,
+288,translation,"[""species"",""537"",""genus"",""zh-Hans"",null,null]",text,"""振动宝可梦""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""震动""}]",,2,
+289,translation,"[""species"",""56"",""genus"",""de"",null,null]",text,"""Schwein/Affe""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Schwein""}]",,2,
+290,translation,"[""species"",""57"",""genus"",""de"",null,null]",text,"""Schwein/Affe""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Schwein""}]",,2,
+291,translation,"[""species"",""576"",""genus"",""de"",null,null]",text,"""Gestirns-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Gestirn""}]",,2,
+292,translation,"[""species"",""58"",""genus"",""de"",null,null]",text,"""Welpen-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Hund""}]",,2,
+293,translation,"[""species"",""667"",""genus"",""ja"",null,null]",text,"""わかじしポケモン""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""わかしし""}]",,2,
+294,translation,"[""species"",""685"",""genus"",""es"",null,null]",text,"""Pokémon Nata""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Nata Montada*""}]",,2,
+295,translation,"[""species"",""686"",""genus"",""de"",null,null]",text,"""Rotations-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Rotation""}]",,2,
+296,translation,"[""species"",""687"",""genus"",""de"",null,null]",text,"""Inversions-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Inversion""}]",,2,
+297,translation,"[""species"",""697"",""genus"",""de"",null,null]",text,"""Tyrannen-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Tyrann""}]",,2,
+298,translation,"[""species"",""70"",""genus"",""es"",null,null]",text,"""Pokémon Matamoscas""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Atrapamoscas*""}]",,2,
+299,translation,"[""species"",""71"",""genus"",""es"",null,null]",text,"""Pokémon Matamoscas""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Atrapamoscas*""}]",,2,
+300,translation,"[""species"",""716"",""genus"",""de"",null,null]",text,"""Lebens-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Leben""}]",,2,
+301,translation,"[""species"",""727"",""genus"",""fr"",null,null]",text,"""Pokémon Vil Catcheur""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Catcheur""}]",,2,
+302,translation,"[""species"",""766"",""genus"",""ko"",null,null]",text,"""연계포켓몬""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""연게""}]",,2,
+303,translation,"[""species"",""772"",""genus"",""de"",null,null]",text,"""Modifikations-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Modifikation""}]",,2,
+304,translation,"[""species"",""773"",""genus"",""de"",null,null]",text,"""Modifikations-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Modifikation""}]",,2,
+305,translation,"[""species"",""780"",""genus"",""zh-Hans"",null,null]",text,"""悠游宝可梦""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""悠遊""}]",,2,
+306,translation,"[""species"",""790"",""genus"",""de"",null,null]",text,"""Urgestirns-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Urgestirn""}]",,2,
+307,translation,"[""species"",""796"",""genus"",""de"",null,null]",text,"""Illuminations-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Illumination""}]",,2,
+308,translation,"[""species"",""83"",""genus"",""ko"",null,null]",text,"""청둥오리포켓몬""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""천둥오리""}]",,2,
+309,translation,"[""species"",""843"",""genus"",""es"",null,null]",text,"""Pokémon Serp. Arena""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Serpiente Arena*""}]",,2,
+310,translation,"[""species"",""844"",""genus"",""es"",null,null]",text,"""Pokémon Serp. Arena""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Serpiente Arena*""}]",,2,
+311,translation,"[""species"",""865"",""genus"",""ko"",null,null]",text,"""청둥오리포켓몬""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""천둥오리""}]",,2,
+312,translation,"[""species"",""870"",""genus"",""de"",null,null]",text,"""Formations-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Formation""}]",,2,
+313,translation,"[""species"",""876"",""genus"",""de"",null,null]",text,"""Emotions-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Emotion""}]",,2,
+314,translation,"[""species"",""894"",""genus"",""de"",null,null]",text,"""Elektronen-Pokémon""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Elektron""}]",,2,
+315,translation,"[""species"",""904"",""genus"",""ko"",null,null]",text,"""침붕포켓몬몬""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""침붕""}]",,2,
+316,translation,"[""species"",""964"",""genus"",""fr"",null,null]",text,"""Dauphin/Super Héros""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Dauphin""}]",,2,
+317,translation,"[""species"",""999"",""genus"",""fr"",null,null]",text,"""Coffrotrésor/Chassotrésor""",open,"[{""document_id"":101,""source"":""bulbapedia"",""value"":""Coffrotrésor""}]",,2,

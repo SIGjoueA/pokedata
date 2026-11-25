@@ -34,7 +34,7 @@ foreach (var (id, t, ctx) in tables) {
         ev = new[] { p.EV_HP, p.EV_ATK, p.EV_DEF, p.EV_SPA, p.EV_SPD, p.EV_SPE },
         gender = p.Gender, hatch = p.HatchCycles, friendship = p.BaseFriendship, growth = p.EXPGrowth,
         egg = new[] { p.EggGroup1, p.EggGroup2 }, abilities = ab, height = p.Height, weight = p.Weight,
-        form_count = p.FormCount
+        form_count = p.FormCount, dex = Dex(p)
       });
     }
   }
@@ -51,3 +51,17 @@ foreach (var l in langs) {
 }
 File.WriteAllText(Path.Combine(outDir, "names.json"), JsonSerializer.Serialize(names));
 Console.WriteLine("names ok");
+Extra.Run(outDir);
+
+// ---------------------------------------------------------------- phase 1b / 2 extractions
+static Dictionary<string, int> Dex(IPersonalInfo p) {
+  var d = new Dictionary<string, int>();
+  switch (p) {
+    case PersonalInfo8SWSH x: d["galar"] = x.PokeDexIndex; d["isle-of-armor"] = x.ArmorDexIndex; d["crown-tundra"] = x.CrownDexIndex; break;
+    case PersonalInfo8BDSP x: d["sinnoh"] = x.PokeDexIndex; break;
+    case PersonalInfo8LA x: d["hisui"] = x.DexIndexHisui; break;
+    case PersonalInfo9SV x: d["paldea"] = x.DexPaldea; d["kitakami"] = x.DexKitakami; d["blueberry"] = x.DexBlueberry; break;
+    case PersonalInfo9ZA x: d["lumiose"] = x.DexIndex; break;
+  }
+  return d;
+}
