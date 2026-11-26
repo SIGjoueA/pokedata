@@ -41,3 +41,7 @@ id,table_name,row_key,column_name,document_id,observed_value,agrees
 566478,shiny_rule,"[""la"",""base""]",*,1024,"{""found"":true,""odds"":""1/4096""}",1
 566479,shiny_rule,"[""sw"",""base""]",*,1023,"{""found"":true,""odds"":""1/4096""}",1
 566480,shiny_rule,"[""sw"",""base""]",*,1024,"{""found"":true,""odds"":""1/4096""}",1
+584342,shiny_rule,"[""sv"",""base""]",*,1023,"{""found"":true,""odds"":""1/4096""}",1
+584343,shiny_rule,"[""sv"",""base""]",*,1024,"{""found"":true,""odds"":""1/4096""}",1
+584344,shiny_rule,"[""za"",""base""]",*,1023,"{""found"":true,""odds"":""1/4096""}",1
+584345,shiny_rule,"[""za"",""base""]",*,1024,"{""found"":true,""odds"":""1/4096""}",1

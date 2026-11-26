@@ -3,6 +3,13 @@
 Généré depuis `db/data/update_log.csv` par `scripts/changelog.py`. Le détail ligne à ligne est dans `update_log_item` (base SQLite) et `api/v1/meta/changelog.json`.
 
 
+## 2026.11.26.8 — Phase 3 (lot 8 : 9e génération — Écarlate/Violet et DLC, Légendes Z-A et Méga-Dimension)
+
+- Type : release · schéma 1.2.0 · 2026-11-26T08:10:34Z → 2026-11-26T08:10:34Z (UTC)
+- Import et vérification : 1025 espèces, 1588 formes, 17497 lignes forme×jeu, 589 évolutions, 7460 entrées de Pokédex régionaux, 920 capacités, 7817 lignes capacité×jeu, 2061 CT/CS/DT, 645613 lignes de movesets, 843 lieux, 68105 rencontres, 52115 lignes de disponibilité, 61062 traductions ; 4061 écarts notés ; 16658 données (re)vérifiées.
+- Statuts de vérification : disputed 87, game-data 244902, majority 188, manual 436, single-source 3, unanimous 46649
+- Lignes : species 1025, form 1588, form_game 17497, form_ability 31012, ability 307, evolution 589, evolution_method 7541, pokedex_entry 7460, item 44, move 920, move_game 7817, machine 2061, learnset 645613, location 843, encounter 68105, availability 52115, shiny_rule 23, translation 61062, discrepancy 4061
+
 ## 2026.11.26.7 — Phase 3 (lot 7 : 8e génération — Épée/Bouclier et DLC, DEPS, Légendes Arceus)
 
 - Type : release · schéma 1.2.0 · 2026-11-26T07:52:04Z → 2026-11-26T07:52:04Z (UTC)

@@ -1335,3 +1335,234 @@ id,table_name,row_key,column_name,document_id,observed_value,agrees
 566059,location,"[""wild-area-station""]",*,1020,"{""met"":[[""swsh"",156,""Wild Area Station"",""created""]]}",1
 566060,location,"[""workout-sea""]",*,1016,"{""identifier"":""workout-sea"",""region"":""galar""}",1
 566061,location,"[""workout-sea""]",*,1020,"{""met"":[[""swsh"",186,""Workout Sea (Isle of Armor)"",""pokeapi-index""]]}",1
+583686,location,"[""academie-etoile""]",*,1020,"{""met"":[[""za"",76,""Académie Étoile"",""created""]]}",1
+583687,location,"[""alfornada-cavern""]",*,1016,"{""identifier"":""alfornada-cavern"",""region"":""paldea""}",1
+583688,location,"[""alfornada-cavern""]",*,1020,"{""met"":[[""sv"",67,""Alfornada Cavern"",""pokeapi-index""]]}",1
+583689,location,"[""apple-hills""]",*,1016,"{""identifier"":""apple-hills"",""region"":""paldea""}",1
+583690,location,"[""apple-hills""]",*,1020,"{""met"":[[""sv"",136,""Apple Hills"",""pokeapi-index""]]}",1
+583691,location,"[""area-zero""]",*,1016,"{""identifier"":""area-zero"",""region"":""paldea""}",1
+583692,location,"[""area-zero""]",*,1020,"{""met"":[[""sv"",124,""Area Zero (5)"",""pokeapi-name""]]}",1
+583693,location,"[""area-zero-underdepths""]",*,1020,"{""met"":[[""sv"",196,""Area Zero Underdepths (1)"",""created""],[""sv"",198,""Area Zero Underdepths (2)"",""created""]]}",1
+583694,location,"[""asado-desert""]",*,1016,"{""identifier"":""asado-desert"",""region"":""paldea""}",1
+583695,location,"[""asado-desert""]",*,1020,"{""met"":[[""sv"",24,""Asado Desert"",""pokeapi-index""]]}",1
+583696,location,"[""autumnal-avenue""]",*,1020,"{""met"":[[""za"",14,""Autumnal Avenue"",""created""]]}",1
+583697,location,"[""aymlis-park""]",*,1020,"{""met"":[[""za"",39,""Aymlis Park"",""created""]]}",1
+583698,location,"[""bleu-sector-1""]",*,1020,"{""met"":[[""za"",37,""Bleu Sector 1"",""created""]]}",1
+583699,location,"[""bleu-sector-3""]",*,1020,"{""met"":[[""za"",38,""Bleu Sector 3"",""created""]]}",1
+583700,location,"[""bleu-sector-4""]",*,1020,"{""met"":[[""za"",43,""Bleu Sector 4"",""created""]]}",1
+583701,location,"[""bleu-sector-5""]",*,1020,"{""met"":[[""za"",40,""Bleu Sector 5"",""created""]]}",1
+583702,location,"[""bleu-sector-6""]",*,1020,"{""met"":[[""za"",45,""Bleu Sector 6"",""created""]]}",1
+583703,location,"[""bleu-sector-7""]",*,1020,"{""met"":[[""za"",41,""Bleu Sector 7"",""created""]]}",1
+583704,location,"[""bleu-sector-8""]",*,1020,"{""met"":[[""za"",46,""Bleu Sector 8"",""created""]]}",1
+583705,location,"[""bleu-sector-9""]",*,1020,"{""met"":[[""za"",47,""Bleu Sector 9"",""created""]]}",1
+583706,location,"[""bleu-street""]",*,1020,"{""met"":[[""za"",34,""Bleu Street (2)"",""created""]]}",1
+583707,location,"[""cabo-poco""]",*,1016,"{""identifier"":""cabo-poco"",""region"":""paldea""}",1
+583708,location,"[""cabo-poco""]",*,1020,"{""met"":[[""sv"",80,""Cabo Poco"",""pokeapi-index""]]}",1
+583709,location,"[""canyon-biome""]",*,1016,"{""identifier"":""canyon-biome"",""region"":""paldea""}",1
+583710,location,"[""canyon-biome""]",*,1020,"{""met"":[[""sv"",178,""Canyon Biome"",""pokeapi-index""]]}",1
+583711,location,"[""casseroya-lake""]",*,1016,"{""identifier"":""casseroya-lake"",""region"":""paldea""}",1
+583712,location,"[""casseroya-lake""]",*,1020,"{""met"":[[""sv"",40,""Casseroya Lake (1)"",""pokeapi-index""]]}",1
+583713,location,"[""central-plaza""]",*,1016,"{""identifier"":""central-plaza"",""region"":""paldea""}",1
+583714,location,"[""central-plaza""]",*,1020,"{""met"":[[""sv"",182,""Central Plaza"",""pokeapi-index""]]}",1
+583715,location,"[""centrico-plaza""]",*,1020,"{""met"":[[""za"",11,""Centrico Plaza"",""created""]]}",1
+583716,location,"[""chargestone-cavern""]",*,1016,"{""identifier"":""chargestone-cavern"",""region"":""paldea""}",1
+583717,location,"[""chargestone-cavern""]",*,1020,"{""met"":[[""sv"",192,""Chargestone Cavern"",""pokeapi-index""]]}",1
+583718,location,"[""chilling-waterhead""]",*,1016,"{""identifier"":""chilling-waterhead"",""region"":""paldea""}",1
+583719,location,"[""chilling-waterhead""]",*,1020,"{""met"":[[""sv"",170,""Chilling Waterhead"",""pokeapi-index""]]}",1
+583720,location,"[""coastal-biome""]",*,1016,"{""identifier"":""coastal-biome"",""region"":""paldea""}",1
+583721,location,"[""coastal-biome""]",*,1020,"{""met"":[[""sv"",176,""Coastal Biome"",""pokeapi-index""]]}",1
+583722,location,"[""coastal-plaza""]",*,1016,"{""identifier"":""coastal-plaza"",""region"":""paldea""}",1
+583723,location,"[""coastal-plaza""]",*,1020,"{""met"":[[""sv"",186,""Coastal Plaza"",""pokeapi-index""]]}",1
+583724,location,"[""coulant-waterway""]",*,1020,"{""met"":[[""za"",23,""Coulant Waterway"",""created""]]}",1
+583725,location,"[""crystal-pool""]",*,1016,"{""identifier"":""crystal-pool"",""region"":""paldea""}",1
+583726,location,"[""crystal-pool""]",*,1020,"{""met"":[[""sv"",152,""Crystal Pool (1)"",""pokeapi-index""]]}",1
+583727,location,"[""dalizapa-passage""]",*,1016,"{""identifier"":""dalizapa-passage"",""region"":""paldea""}",1
+583728,location,"[""dalizapa-passage""]",*,1020,"{""met"":[[""sv"",69,""Dalizapa Passage"",""pokeapi-index""]]}",1
+583729,location,"[""dreaded-den""]",*,1016,"{""identifier"":""dreaded-den"",""region"":""paldea""}",1
+583730,location,"[""dreaded-den""]",*,1020,"{""met"":[[""sv"",146,""Dreaded Den"",""pokeapi-index""]]}",1
+583731,location,"[""east-paldean-sea""]",*,1016,"{""identifier"":""east-paldean-sea"",""region"":""paldea""}",1
+583732,location,"[""east-paldean-sea""]",*,1020,"{""met"":[[""sv"",60,""East Paldean Sea"",""pokeapi-index""]]}",1
+583733,location,"[""espace-vide""]",*,1020,"{""met"":[[""za"",44,""Espace Vide"",""created""]]}",1
+583734,location,"[""estival-avenue""]",*,1020,"{""met"":[[""za"",13,""Estival Avenue"",""created""]]}",1
+583735,location,"[""fellhorn-gorge""]",*,1016,"{""identifier"":""fellhorn-gorge"",""region"":""paldea""}",1
+583736,location,"[""fellhorn-gorge""]",*,1020,"{""met"":[[""sv"",160,""Fellhorn Gorge"",""pokeapi-index""]]}",1
+583737,location,"[""glaseado-mountain""]",*,1016,"{""identifier"":""glaseado-mountain"",""region"":""paldea""}",1
+583738,location,"[""glaseado-mountain""]",*,1020,"{""met"":[[""sv"",38,""Glaseado Mountain (1)"",""pokeapi-index""]]}",1
+583739,location,"[""great-crater-of-paldea""]",*,1020,"{""met"":[[""sv"",50,""Great Crater of Paldea"",""created""]]}",1
+583740,location,"[""hibernal-avenue""]",*,1020,"{""met"":[[""za"",15,""Hibernal Avenue"",""created""]]}",1
+583741,location,"[""hyperspace-desolate-land""]",*,1020,"{""met"":[[""za"",282,""Hyperspace Desolate Land"",""created""]]}",1
+583742,location,"[""hyperspace-disaster-arena""]",*,1020,"{""met"":[[""za"",275,""Hyperspace Disaster Arena"",""created""]]}",1
+583743,location,"[""hyperspace-hunting-grounds""]",*,1020,"{""met"":[[""za"",276,""Hyperspace Hunting Grounds"",""created""]]}",1
+583744,location,"[""hyperspace-infernal-arena""]",*,1020,"{""met"":[[""za"",279,""Hyperspace Infernal Arena"",""created""]]}",1
+583745,location,"[""hyperspace-lumiose""]",*,1020,"{""met"":[[""za"",273,""Hyperspace Lumiose"",""created""]]}",1
+583746,location,"[""hyperspace-newmoon-nightmare""]",*,1020,"{""met"":[[""za"",280,""Hyperspace Newmoon Nightmare"",""created""]]}",1
+583747,location,"[""hyperspace-primordial-sea""]",*,1020,"{""met"":[[""za"",281,""Hyperspace Primordial Sea"",""created""]]}",1
+583748,location,"[""hyperspace-second-sight-arena""]",*,1020,"{""met"":[[""za"",278,""Hyperspace Second-Sight Arena"",""created""]]}",1
+583749,location,"[""hyperspace-sky-pillar""]",*,1020,"{""met"":[[""za"",283,""Hyperspace Sky Pillar"",""created""]]}",1
+583750,location,"[""hyperspace-sushi-paradise""]",*,1020,"{""met"":[[""za"",277,""Hyperspace Sushi Paradise"",""created""]]}",1
+583751,location,"[""infernal-pass""]",*,1016,"{""identifier"":""infernal-pass"",""region"":""paldea""}",1
+583752,location,"[""infernal-pass""]",*,1020,"{""met"":[[""sv"",168,""Infernal Pass"",""pokeapi-index""]]}",1
+583753,location,"[""inlet-grotto""]",*,1016,"{""identifier"":""inlet-grotto"",""region"":""paldea""}",1
+583754,location,"[""inlet-grotto""]",*,1020,"{""met"":[[""sv"",64,""Inlet Grotto"",""pokeapi-index""]]}",1
+583755,location,"[""jaune-sector-1""]",*,1020,"{""met"":[[""za"",85,""Jaune Sector 1"",""created""]]}",1
+583756,location,"[""jaune-sector-10""]",*,1020,"{""met"":[[""za"",95,""Jaune Sector 10"",""created""]]}",1
+583757,location,"[""jaune-sector-11""]",*,1020,"{""met"":[[""za"",96,""Jaune Sector 11"",""created""]]}",1
+583758,location,"[""jaune-sector-12""]",*,1020,"{""met"":[[""za"",97,""Jaune Sector 12"",""created""]]}",1
+583759,location,"[""jaune-sector-2""]",*,1020,"{""met"":[[""za"",91,""Jaune Sector 2"",""created""]]}",1
+583760,location,"[""jaune-sector-3""]",*,1020,"{""met"":[[""za"",86,""Jaune Sector 3"",""created""]]}",1
+583761,location,"[""jaune-sector-4""]",*,1020,"{""met"":[[""za"",87,""Jaune Sector 4"",""created""]]}",1
+583762,location,"[""jaune-sector-5""]",*,1020,"{""met"":[[""za"",88,""Jaune Sector 5"",""created""]]}",1
+583763,location,"[""jaune-sector-6""]",*,1020,"{""met"":[[""za"",93,""Jaune Sector 6"",""created""]]}",1
+583764,location,"[""jaune-sector-7""]",*,1020,"{""met"":[[""za"",89,""Jaune Sector 7"",""created""]]}",1
+583765,location,"[""jaune-sector-8""]",*,1020,"{""met"":[[""za"",90,""Jaune Sector 8"",""created""]]}",1
+583766,location,"[""jaune-sector-9""]",*,1020,"{""met"":[[""za"",94,""Jaune Sector 9"",""created""]]}",1
+583767,location,"[""jaune-street""]",*,1020,"{""met"":[[""za"",81,""Jaune Street"",""created""],[""za"",82,""Jaune Street (2)"",""created""]]}",1
+583768,location,"[""kitakami-hall""]",*,1016,"{""identifier"":""kitakami-hall"",""region"":""paldea""}",1
+583769,location,"[""kitakami-hall""]",*,1020,"{""met"":[[""sv"",142,""Kitakami Hall"",""pokeapi-index""]]}",1
+583770,location,"[""kitakami-road""]",*,1016,"{""identifier"":""kitakami-road"",""region"":""paldea""}",1
+583771,location,"[""kitakami-road""]",*,1020,"{""met"":[[""sv"",132,""Kitakami Road"",""pokeapi-index""]]}",1
+583772,location,"[""kitakami-wilds""]",*,1016,"{""identifier"":""kitakami-wilds"",""region"":""paldea""}",1
+583773,location,"[""kitakami-wilds""]",*,1020,"{""met"":[[""sv"",164,""Kitakami Wilds (1)"",""pokeapi-index""]]}",1
+583774,location,"[""loyalty-plaza""]",*,1016,"{""identifier"":""loyalty-plaza"",""region"":""paldea""}",1
+583775,location,"[""loyalty-plaza""]",*,1020,"{""met"":[[""sv"",138,""Loyalty Plaza"",""pokeapi-index""]]}",1
+583776,location,"[""lysandre-labs""]",*,1016,"{""identifier"":""lysandre-labs"",""region"":""kalos""}",1
+583777,location,"[""lysandre-labs""]",*,1020,"{""met"":[[""za"",234,""Lysandre Labs"",""pokeapi-name""]]}",1
+583778,location,"[""magenta-plaza""]",*,1020,"{""met"":[[""za"",65,""Magenta Plaza"",""created""]]}",1
+583779,location,"[""magenta-sector-1""]",*,1020,"{""met"":[[""za"",54,""Magenta Sector 1"",""created""]]}",1
+583780,location,"[""magenta-sector-2""]",*,1020,"{""met"":[[""za"",59,""Magenta Sector 2"",""created""]]}",1
+583781,location,"[""magenta-sector-3""]",*,1020,"{""met"":[[""za"",55,""Magenta Sector 3"",""created""]]}",1
+583782,location,"[""magenta-sector-4""]",*,1020,"{""met"":[[""za"",60,""Magenta Sector 4"",""created""]]}",1
+583783,location,"[""magenta-sector-6""]",*,1020,"{""met"":[[""za"",57,""Magenta Sector 6"",""created""]]}",1
+583784,location,"[""magenta-sector-7""]",*,1020,"{""met"":[[""za"",61,""Magenta Sector 7"",""created""]]}",1
+583785,location,"[""magenta-sector-8""]",*,1020,"{""met"":[[""za"",63,""Magenta Sector 8"",""created""]]}",1
+583786,location,"[""magenta-sector-9""]",*,1020,"{""met"":[[""za"",64,""Magenta Sector 9"",""created""]]}",1
+583787,location,"[""magenta-street""]",*,1020,"{""met"":[[""za"",50,""Magenta Street"",""created""],[""za"",51,""Magenta Street (2)"",""created""]]}",1
+583788,location,"[""mesagoza""]",*,1016,"{""identifier"":""mesagoza"",""region"":""paldea""}",1
+583789,location,"[""mesagoza""]",*,1020,"{""met"":[[""sv"",8,""Mesagoza (1)"",""pokeapi-index""]]}",1
+583790,location,"[""montenevera""]",*,1016,"{""identifier"":""montenevera"",""region"":""paldea""}",1
+583791,location,"[""montenevera""]",*,1020,"{""met"":[[""sv"",94,""Montenevera"",""pokeapi-index""]]}",1
+583792,location,"[""mossfell-confluence""]",*,1016,"{""identifier"":""mossfell-confluence"",""region"":""paldea""}",1
+583793,location,"[""mossfell-confluence""]",*,1020,"{""met"":[[""sv"",158,""Mossfell Confluence"",""pokeapi-index""]]}",1
+583794,location,"[""mossui-town""]",*,1016,"{""identifier"":""mossui-town"",""region"":""paldea""}",1
+583795,location,"[""mossui-town""]",*,1020,"{""met"":[[""sv"",134,""Mossui Town"",""pokeapi-index""]]}",1
+583796,location,"[""naranja-academy""]",*,1016,"{""identifier"":""naranja-academy"",""region"":""paldea""}",1
+583797,location,"[""naranja-academy""]",*,1020,"{""met"":[[""sv"",130,""Naranja Academy"",""pokeapi-index""]]}",1
+583798,location,"[""north-boulevard""]",*,1020,"{""met"":[[""za"",53,""North Boulevard"",""created""],[""za"",68,""North Boulevard (2)"",""created""],[""za"",69,""North Boulevard (3)"",""created""],[""za"",83,""North Boulevard (4)"",""created""],[""za"",84,""North Boulevard (5)"",""created""]]}",1
+583799,location,"[""north-paldean-sea""]",*,1016,"{""identifier"":""north-paldean-sea"",""region"":""paldea""}",1
+583800,location,"[""north-paldean-sea""]",*,1020,"{""met"":[[""sv"",62,""North Paldean Sea"",""pokeapi-index""]]}",1
+583801,location,"[""old-building""]",*,1020,"{""met"":[[""za"",231,""Old Building"",""created""]]}",1
+583802,location,"[""oni-mountain""]",*,1016,"{""identifier"":""oni-mountain"",""region"":""paldea""}",1
+583803,location,"[""oni-mountain""]",*,1020,"{""met"":[[""sv"",144,""Oni Mountain (1)"",""pokeapi-index""]]}",1
+583804,location,"[""onis-maw""]",*,1016,"{""identifier"":""onis-maw"",""region"":""paldea""}",1
+583805,location,"[""onis-maw""]",*,1020,"{""met"":[[""sv"",148,""Oni’s Maw"",""pokeapi-index""]]}",1
+583806,location,"[""paldea-east-province-area-one""]",*,1016,"{""identifier"":""paldea-east-province-area-one"",""region"":""paldea""}",1
+583807,location,"[""paldea-east-province-area-one""]",*,1020,"{""met"":[[""sv"",34,""East Province (Area One) (1)"",""pokeapi-index""]]}",1
+583808,location,"[""paldea-east-province-area-three""]",*,1016,"{""identifier"":""paldea-east-province-area-three"",""region"":""paldea""}",1
+583809,location,"[""paldea-east-province-area-three""]",*,1020,"{""met"":[[""sv"",32,""East Province (Area Three)"",""pokeapi-index""]]}",1
+583810,location,"[""paldea-east-province-area-two""]",*,1016,"{""identifier"":""paldea-east-province-area-two"",""region"":""paldea""}",1
+583811,location,"[""paldea-east-province-area-two""]",*,1020,"{""met"":[[""sv"",36,""East Province (Area Two)"",""pokeapi-index""]]}",1
+583812,location,"[""paldea-great-crater-of-paldea""]",*,1020,"{""met"":[[""sv"",50,""Great Crater of Paldea"",""created""]]}",1
+583813,location,"[""paldea-north-province-area-one""]",*,1016,"{""identifier"":""paldea-north-province-area-one"",""region"":""paldea""}",1
+583814,location,"[""paldea-north-province-area-one""]",*,1020,"{""met"":[[""sv"",46,""North Province (Area One)"",""pokeapi-index""]]}",1
+583815,location,"[""paldea-north-province-area-three""]",*,1016,"{""identifier"":""paldea-north-province-area-three"",""region"":""paldea""}",1
+583816,location,"[""paldea-north-province-area-three""]",*,1020,"{""met"":[[""sv"",44,""North Province (Area Three) (1)"",""pokeapi-index""]]}",1
+583817,location,"[""paldea-north-province-area-two""]",*,1016,"{""identifier"":""paldea-north-province-area-two"",""region"":""paldea""}",1
+583818,location,"[""paldea-north-province-area-two""]",*,1020,"{""met"":[[""sv"",48,""North Province (Area Two)"",""pokeapi-index""]]}",1
+583819,location,"[""paldea-south-province-area-five""]",*,1016,"{""identifier"":""paldea-south-province-area-five"",""region"":""paldea""}",1
+583820,location,"[""paldea-south-province-area-five""]",*,1020,"{""met"":[[""sv"",18,""South Province (Area Five)"",""pokeapi-index""]]}",1
+583821,location,"[""paldea-south-province-area-four""]",*,1016,"{""identifier"":""paldea-south-province-area-four"",""region"":""paldea""}",1
+583822,location,"[""paldea-south-province-area-four""]",*,1020,"{""met"":[[""sv"",14,""South Province (Area Four)"",""pokeapi-index""]]}",1
+583823,location,"[""paldea-south-province-area-one""]",*,1016,"{""identifier"":""paldea-south-province-area-one"",""region"":""paldea""}",1
+583824,location,"[""paldea-south-province-area-one""]",*,1020,"{""met"":[[""sv"",6,""South Province (Area One)"",""pokeapi-index""]]}",1
+583825,location,"[""paldea-south-province-area-six""]",*,1016,"{""identifier"":""paldea-south-province-area-six"",""region"":""paldea""}",1
+583826,location,"[""paldea-south-province-area-six""]",*,1020,"{""met"":[[""sv"",16,""South Province (Area Six) (1)"",""pokeapi-index""]]}",1
+583827,location,"[""paldea-south-province-area-three""]",*,1016,"{""identifier"":""paldea-south-province-area-three"",""region"":""paldea""}",1
+583828,location,"[""paldea-south-province-area-three""]",*,1020,"{""met"":[[""sv"",20,""South Province (Area Three)"",""pokeapi-index""]]}",1
+583829,location,"[""paldea-south-province-area-two""]",*,1016,"{""identifier"":""paldea-south-province-area-two"",""region"":""paldea""}",1
+583830,location,"[""paldea-south-province-area-two""]",*,1020,"{""met"":[[""sv"",12,""South Province (Area Two)"",""pokeapi-index""]]}",1
+583831,location,"[""paldea-west-province-area-one""]",*,1016,"{""identifier"":""paldea-west-province-area-one"",""region"":""paldea""}",1
+583832,location,"[""paldea-west-province-area-one""]",*,1020,"{""met"":[[""sv"",22,""West Province (Area One) (1)"",""pokeapi-index""]]}",1
+583833,location,"[""paldea-west-province-area-three""]",*,1016,"{""identifier"":""paldea-west-province-area-three"",""region"":""paldea""}",1
+583834,location,"[""paldea-west-province-area-three""]",*,1020,"{""met"":[[""sv"",28,""West Province (Area Three)"",""pokeapi-index""]]}",1
+583835,location,"[""paldea-west-province-area-two""]",*,1016,"{""identifier"":""paldea-west-province-area-two"",""region"":""paldea""}",1
+583836,location,"[""paldea-west-province-area-two""]",*,1020,"{""met"":[[""sv"",26,""West Province (Area Two)"",""pokeapi-index""]]}",1
+583837,location,"[""paradise-barrens""]",*,1016,"{""identifier"":""paradise-barrens"",""region"":""paldea""}",1
+583838,location,"[""paradise-barrens""]",*,1020,"{""met"":[[""sv"",162,""Paradise Barrens"",""pokeapi-index""]]}",1
+583839,location,"[""poco-path""]",*,1016,"{""identifier"":""poco-path"",""region"":""paldea""}",1
+583840,location,"[""poco-path""]",*,1020,"{""met"":[[""sv"",70,""Poco Path"",""pokeapi-index""]]}",1
+583841,location,"[""pokemon-league""]",*,1016,"{""identifier"":""pokemon-league"",""region"":""paldea""}",1
+583842,location,"[""pokemon-league""]",*,1020,"{""met"":[[""sv"",10,""Pokémon League"",""pokeapi-index""]]}",1
+583843,location,"[""pokemon-research-lab""]",*,1020,"{""met"":[[""za"",230,""Pokémon Research Lab (2)"",""created""]]}",1
+583844,location,"[""polar-biome""]",*,1016,"{""identifier"":""polar-biome"",""region"":""paldea""}",1
+583845,location,"[""polar-biome""]",*,1020,"{""met"":[[""sv"",180,""Polar Biome"",""pokeapi-index""]]}",1
+583846,location,"[""polar-plaza""]",*,1016,"{""identifier"":""polar-plaza"",""region"":""paldea""}",1
+583847,location,"[""polar-plaza""]",*,1020,"{""met"":[[""sv"",190,""Polar Plaza"",""pokeapi-index""]]}",1
+583848,location,"[""revelers-road""]",*,1016,"{""identifier"":""revelers-road"",""region"":""paldea""}",1
+583849,location,"[""revelers-road""]",*,1020,"{""met"":[[""sv"",140,""Reveler’s Road"",""pokeapi-index""]]}",1
+583850,location,"[""rouge-plaza""]",*,1020,"{""met"":[[""za"",80,""Rouge Plaza"",""created""]]}",1
+583851,location,"[""rouge-sector-1""]",*,1020,"{""met"":[[""za"",70,""Rouge Sector 1"",""created""]]}",1
+583852,location,"[""rouge-sector-2""]",*,1020,"{""met"":[[""za"",75,""Rouge Sector 2"",""created""]]}",1
+583853,location,"[""rouge-sector-3""]",*,1020,"{""met"":[[""za"",71,""Rouge Sector 3"",""created""]]}",1
+583854,location,"[""rouge-sector-4""]",*,1020,"{""met"":[[""za"",72,""Rouge Sector 4"",""created""]]}",1
+583855,location,"[""rouge-sector-5""]",*,1020,"{""met"":[[""za"",73,""Rouge Sector 5"",""created""]]}",1
+583856,location,"[""rouge-sector-6""]",*,1020,"{""met"":[[""za"",77,""Rouge Sector 6"",""created""]]}",1
+583857,location,"[""rouge-sector-7""]",*,1020,"{""met"":[[""za"",74,""Rouge Sector 7"",""created""]]}",1
+583858,location,"[""rouge-sector-8""]",*,1020,"{""met"":[[""za"",79,""Rouge Sector 8"",""created""]]}",1
+583859,location,"[""rouge-street""]",*,1020,"{""met"":[[""za"",66,""Rouge Street"",""created""],[""za"",67,""Rouge Street (2)"",""created""]]}",1
+583860,location,"[""saison-canal""]",*,1020,"{""met"":[[""za"",16,""Saison Canal"",""created""]]}",1
+583861,location,"[""saison-canalside""]",*,1020,"{""met"":[[""za"",92,""Saison Canalside"",""created""]]}",1
+583862,location,"[""savanna-biome""]",*,1016,"{""identifier"":""savanna-biome"",""region"":""paldea""}",1
+583863,location,"[""savanna-biome""]",*,1020,"{""met"":[[""sv"",174,""Savanna Biome"",""pokeapi-index""]]}",1
+583864,location,"[""savanna-plaza""]",*,1016,"{""identifier"":""savanna-plaza"",""region"":""paldea""}",1
+583865,location,"[""savanna-plaza""]",*,1020,"{""met"":[[""sv"",184,""Savanna Plaza"",""pokeapi-index""]]}",1
+583866,location,"[""socarrat-trail""]",*,1016,"{""identifier"":""socarrat-trail"",""region"":""paldea""}",1
+583867,location,"[""socarrat-trail""]",*,1020,"{""met"":[[""sv"",109,""Socarrat Trail"",""pokeapi-index""]]}",1
+583868,location,"[""south-boulevard""]",*,1020,"{""met"":[[""za"",19,""South Boulevard"",""created""],[""za"",35,""South Boulevard (3)"",""created""],[""za"",36,""South Boulevard (4)"",""created""],[""za"",52,""South Boulevard (5)"",""created""]]}",1
+583869,location,"[""south-paldean-sea""]",*,1016,"{""identifier"":""south-paldean-sea"",""region"":""paldea""}",1
+583870,location,"[""south-paldean-sea""]",*,1020,"{""met"":[[""sv"",56,""South Paldean Sea"",""pokeapi-index""]]}",1
+583871,location,"[""tagtree-thicket""]",*,1016,"{""identifier"":""tagtree-thicket"",""region"":""paldea""}",1
+583872,location,"[""tagtree-thicket""]",*,1020,"{""met"":[[""sv"",30,""Tagtree Thicket (1)"",""pokeapi-index""]]}",1
+583873,location,"[""the-sewers""]",*,1020,"{""met"":[[""za"",235,""The Sewers"",""created""]]}",1
+583874,location,"[""timeless-woods""]",*,1016,"{""identifier"":""timeless-woods"",""region"":""paldea""}",1
+583875,location,"[""timeless-woods""]",*,1020,"{""met"":[[""sv"",166,""Timeless Woods"",""pokeapi-index""]]}",1
+583876,location,"[""torchlit-labyrinth""]",*,1016,"{""identifier"":""torchlit-labyrinth"",""region"":""paldea""}",1
+583877,location,"[""torchlit-labyrinth""]",*,1020,"{""met"":[[""sv"",194,""Torchlit Labyrinth"",""pokeapi-index""]]}",1
+583878,location,"[""uva-academy""]",*,1016,"{""identifier"":""uva-academy"",""region"":""paldea""}",1
+583879,location,"[""uva-academy""]",*,1020,"{""met"":[[""sv"",131,""Uva Academy"",""pokeapi-index""]]}",1
+583880,location,"[""vernal-avenue""]",*,1020,"{""met"":[[""za"",12,""Vernal Avenue"",""created""]]}",1
+583881,location,"[""vert-district""]",*,1020,"{""met"":[[""za"",6,""Vert District"",""created""]]}",1
+583882,location,"[""vert-plaza""]",*,1020,"{""met"":[[""za"",32,""Vert Plaza"",""created""]]}",1
+583883,location,"[""vert-sector-1""]",*,1020,"{""met"":[[""za"",21,""Vert Sector 1"",""created""]]}",1
+583884,location,"[""vert-sector-2""]",*,1020,"{""met"":[[""za"",27,""Vert Sector 2"",""created""]]}",1
+583885,location,"[""vert-sector-3""]",*,1020,"{""met"":[[""za"",22,""Vert Sector 3"",""created""]]}",1
+583886,location,"[""vert-sector-4""]",*,1020,"{""met"":[[""za"",28,""Vert Sector 4"",""created""]]}",1
+583887,location,"[""vert-sector-5""]",*,1020,"{""met"":[[""za"",29,""Vert Sector 5"",""created""]]}",1
+583888,location,"[""vert-sector-6""]",*,1020,"{""met"":[[""za"",24,""Vert Sector 6"",""created""]]}",1
+583889,location,"[""vert-sector-7""]",*,1020,"{""met"":[[""za"",25,""Vert Sector 7"",""created""]]}",1
+583890,location,"[""vert-sector-8""]",*,1020,"{""met"":[[""za"",30,""Vert Sector 8"",""created""]]}",1
+583891,location,"[""vert-sector-9""]",*,1020,"{""met"":[[""za"",31,""Vert Sector 9"",""created""]]}",1
+583892,location,"[""vert-street""]",*,1020,"{""met"":[[""za"",17,""Vert Street"",""created""]]}",1
+583893,location,"[""west-paldean-sea""]",*,1016,"{""identifier"":""west-paldean-sea"",""region"":""paldea""}",1
+583894,location,"[""west-paldean-sea""]",*,1020,"{""met"":[[""sv"",58,""West Paldean Sea"",""pokeapi-index""]]}",1
+583895,location,"[""wild-zone-1""]",*,1020,"{""met"":[[""za"",194,""Wild Zone 1"",""created""]]}",1
+583896,location,"[""wild-zone-10""]",*,1020,"{""met"":[[""za"",197,""Wild Zone 10"",""created""]]}",1
+583897,location,"[""wild-zone-11""]",*,1020,"{""met"":[[""za"",210,""Wild Zone 11"",""created""]]}",1
+583898,location,"[""wild-zone-12""]",*,1020,"{""met"":[[""za"",196,""Wild Zone 12"",""created""]]}",1
+583899,location,"[""wild-zone-13""]",*,1020,"{""met"":[[""za"",204,""Wild Zone 13"",""created""]]}",1
+583900,location,"[""wild-zone-14""]",*,1020,"{""met"":[[""za"",200,""Wild Zone 14"",""created""]]}",1
+583901,location,"[""wild-zone-15""]",*,1020,"{""met"":[[""za"",207,""Wild Zone 15"",""created""]]}",1
+583902,location,"[""wild-zone-16""]",*,1020,"{""met"":[[""za"",199,""Wild Zone 16"",""created""]]}",1
+583903,location,"[""wild-zone-17""]",*,1020,"{""met"":[[""za"",193,""Wild Zone 17"",""created""]]}",1
+583904,location,"[""wild-zone-18""]",*,1020,"{""met"":[[""za"",202,""Wild Zone 18"",""created""]]}",1
+583905,location,"[""wild-zone-19""]",*,1020,"{""met"":[[""za"",208,""Wild Zone 19"",""created""]]}",1
+583906,location,"[""wild-zone-2""]",*,1020,"{""met"":[[""za"",195,""Wild Zone 2"",""created""]]}",1
+583907,location,"[""wild-zone-20""]",*,1020,"{""met"":[[""za"",212,""Wild Zone 20"",""created""]]}",1
+583908,location,"[""wild-zone-3""]",*,1020,"{""met"":[[""za"",206,""Wild Zone 3"",""created""]]}",1
+583909,location,"[""wild-zone-4""]",*,1020,"{""met"":[[""za"",205,""Wild Zone 4"",""created""]]}",1
+583910,location,"[""wild-zone-5""]",*,1020,"{""met"":[[""za"",198,""Wild Zone 5"",""created""]]}",1
+583911,location,"[""wild-zone-6""]",*,1020,"{""met"":[[""za"",209,""Wild Zone 6"",""created""]]}",1
+583912,location,"[""wild-zone-7""]",*,1020,"{""met"":[[""za"",203,""Wild Zone 7"",""created""]]}",1
+583913,location,"[""wild-zone-8""]",*,1020,"{""met"":[[""za"",211,""Wild Zone 8"",""created""]]}",1
+583914,location,"[""wild-zone-9""]",*,1020,"{""met"":[[""za"",201,""Wild Zone 9"",""created""]]}",1
+583915,location,"[""wistful-fields""]",*,1016,"{""identifier"":""wistful-fields"",""region"":""paldea""}",1
+583916,location,"[""wistful-fields""]",*,1020,"{""met"":[[""sv"",156,""Wistful Fields"",""pokeapi-index""]]}",1

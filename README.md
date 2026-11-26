@@ -10,9 +10,9 @@ Base de données Pokémon ouverte, vérifiée et multilingue (ja, en, fr, de, it
 
 ## Contenu
 
-Espèces (1025) et formes (1588) pour chaque jeu du périmètre (Rouge/Bleu → Légendes Z-A et leurs DLC), avec types, statistiques, talents, taille, poids, taux de capture, EV, groupes d'œufs, sexe, croissance, et les noms officiels dans chaque langue où le jeu est sorti (`game_language`). Évolutions, Pokédex régionaux, catégories ; capacités (valeurs par jeu, CT/CS/DT, noms et descriptions de jeu) ; movesets par jeu et par méthode ; lieux, rencontres, disponibilité par version et règles de chromatiques (phase 3, publiée par lots : générations 1 à 8 pour l'instant).
+Espèces (1025) et formes (1588) pour chaque jeu du périmètre (Rouge/Bleu → Légendes Z-A et leurs DLC), avec types, statistiques, talents, taille, poids, taux de capture, EV, groupes d'œufs, sexe, croissance, et les noms officiels dans chaque langue où le jeu est sorti (`game_language`). Évolutions, Pokédex régionaux, catégories ; capacités (valeurs par jeu, CT/CS/DT, noms et descriptions de jeu) ; movesets par jeu et par méthode ; lieux, rencontres, disponibilité par version et règles de chromatiques (phase 3, publiée par lots : générations 1 à 9).
 
-Prévu ensuite : lieux et rencontres de la génération 9 (Écarlate/Violet, Légendes Z-A, DLC compris), objets, GO, tables des types, combats. Voir [`docs/plan.md`](docs/plan.md).
+Prévu ensuite : objets, GO, tables des types, combats. Voir [`docs/plan.md`](docs/plan.md).
 
 ## Vérification
 

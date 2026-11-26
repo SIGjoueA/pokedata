@@ -1033,3 +1033,5 @@ id,source_id,locator,revision,retrieved_at,content_sha256
 1032,pkhex,PKHeX.Core 26.10.18 · Encounters8 (encounters_8.json),PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,39bb7be70f356f38f0abd25fab1d1ff06a4881ebae1d7f03d0cd134de2c2251e
 1033,pkhex,PKHeX.Core 26.10.18 · Encounters8a (encounters_8a.json),PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,d49b1e0963388cfc8d053cb16e693bd013d03a467a371cb8f7ab9804048bf24b
 1034,pkhex,PKHeX.Core 26.10.18 · Encounters8b (encounters_8b.json),PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,03fd2ce10e7cadebf50a2cdec9b16a1aed47f608805dd1a9a6e8b19878749a16
+1035,pkhex,PKHeX.Core 26.10.18 · Encounters9 (encounters_9.json),PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,c785016deb52a319f94771c2ea26a79aacb94c315f3b637a470d1315e599f78b
+1036,pkhex,PKHeX.Core 26.10.18 · Encounters9a (encounters_9a.json),PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,65f5c018b9aef2c67295a6a4836f3937c52698036c4e0b41dca10565907b0578

@@ -219,6 +219,12 @@ class Api(unittest.TestCase):
             self.assertTrue(q("SELECT 1 FROM shiny_lock WHERE form_id='888' AND game_id='sw'"))
             self.assertFalse(q("SELECT 1 FROM availability a JOIN version v ON v.id=a.version_id WHERE v.game_id='la' AND status='breed'"))
             self.assertTrue(q("SELECT 1 FROM encounter e JOIN version v ON v.id=e.version_id WHERE v.game_id='bdsp' AND e.area_id='mt-coronet'"))
+        if "sv" in games:   # lot 8: generation 9 + DLC, Legends: Z-A + Mega Dimension
+            self.assertTrue(q("SELECT 1 FROM encounter e JOIN version v ON v.id=e.version_id WHERE v.game_id='svmask'"))
+            self.assertFalse(q("SELECT 1 FROM encounter e JOIN version v ON v.id=e.version_id WHERE v.game_id='sv' AND e.form_id='144'"))   # Snacksworth (The Indigo Disk)
+            self.assertTrue(q("SELECT 1 FROM encounter e JOIN version v ON v.id=e.version_id WHERE v.game_id='svdisk' AND e.form_id='144'"))
+            self.assertTrue(q("SELECT 1 FROM encounter e JOIN version v ON v.id=e.version_id WHERE v.game_id='zadlc'"))
+            self.assertFalse(q("SELECT 1 FROM availability a JOIN version v ON v.id=a.version_id WHERE v.game_id='za' AND status='breed'"))
         self.assertEqual(q("SELECT odds FROM shiny_rule WHERE game_id='gs' AND method='base'"), [("1/8192",)])
         # place names follow game_language for the games covered
         self.assertEqual(q("""SELECT COUNT(*) FROM location_game lg JOIN game_language gl ON gl.game_id=lg.game_id

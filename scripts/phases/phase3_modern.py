@@ -45,6 +45,11 @@ for _v, _g, _pid in R.VERSIONS:
         for _bv in VERSIONS_OF.get(MOD_BASE[_g], []) or [v for v, g, p in R.VERSIONS if g == MOD_BASE[_g]]:
             if _bv in _v or MOD_BASE[_g] == "za": DLCV[(_g, _bv)] = _v
 
+# Scarlet/Violet statics met in base-game or Kitakami places but only reachable with The Indigo Disk:
+# Snacksworth's legendaries (BB League), Gouging Fire / Raging Bolt / Iron Boulder / Iron Crown (Area Zero, after the DLC),
+# Pecharunt (Mochi Mayhem epilogue)
+SV_NEEDS_DISK = {144, 145, 146, 243, 244, 245, 249, 250, 380, 381, 382, 383, 384, 638, 639, 640, 643, 644, 646,
+                 791, 792, 800, 891, 896, 897, 1020, 1021, 1022, 1023, 1025}
 def dlc_of(base, metid):
     """DLC game of a met location (None = base game)."""
     if base == "sw":
@@ -359,6 +364,8 @@ def mod_record(x, dk):
         g, v = place_version(g0, v0, metid) if metid is not None else (g0, v0)
         if dk == "8" and sp in (144, 145, 146) and fi == 1 and g == "sw":   # Galarian birds roam base-game places after the Crown Tundra quest
             g, v = ("swcrown", DLCV.get(("swcrown", v0))) if "swcrown" in P3_GAMES else (None, None)
+        if dk == "9" and g in ("sv", "svmask") and sp in SV_NEEDS_DISK:   # placed in Paldea / Kitakami, unlocked by The Indigo Disk
+            g, v = ("svdisk", DLCV.get(("svdisk", v0))) if "svdisk" in P3_GAMES else (None, None)
         if not g or g not in P3_GAMES or v not in P3_VERSIONS: continue
         gift = bool(x.get("Gift") or (x.get("FixedBall") not in (None, "None") and t not in ("EncounterStatic8U",)))
         m = ("gift-egg" if egg else "dynamax-adventure" if t == "EncounterStatic8U" else "outbreak" if t == "EncounterOutbreak9"
