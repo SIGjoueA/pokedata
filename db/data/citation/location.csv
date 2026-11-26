@@ -9,31 +9,26 @@ id,table_name,row_key,column_name,document_id,observed_value,agrees
 493200,location,"[""burned-tower""]",*,1020,"{""en"":""Burned Tower"",""gen2_index"":24}",1
 493201,location,"[""celadon-city""]",*,1016,"{""identifier"":""celadon-city"",""region"":""kanto""}",1
 493202,location,"[""celadon-city""]",*,1018,"{""gen1_table"":[94]}",1
-493203,location,"[""celadon-city""]",*,1020,"{""en"":""Celadon City"",""gen2_index"":71}",1
 493204,location,"[""cerulean-cave""]",*,1016,"{""identifier"":""cerulean-cave"",""region"":""kanto""}",1
 493205,location,"[""cerulean-cave""]",*,1018,"{""gen1_table"":[141]}",1
 493206,location,"[""cerulean-city""]",*,1016,"{""identifier"":""cerulean-city"",""region"":""kanto""}",1
 493207,location,"[""cerulean-city""]",*,1018,"{""gen1_table"":[91]}",1
-493208,location,"[""cerulean-city""]",*,1020,"{""en"":""Cerulean City"",""gen2_index"":55}",1
 493209,location,"[""cherrygrove-city""]",*,1016,"{""identifier"":""cherrygrove-city"",""region"":""johto""}",1
 493210,location,"[""cherrygrove-city""]",*,1020,"{""en"":""Cherrygrove City"",""gen2_index"":3}",1
 493211,location,"[""cianwood-city""]",*,1016,"{""identifier"":""cianwood-city"",""region"":""johto""}",1
 493212,location,"[""cianwood-city""]",*,1020,"{""en"":""Cianwood City"",""gen2_index"":33}",1
 493213,location,"[""cinnabar-island""]",*,1016,"{""identifier"":""cinnabar-island"",""region"":""kanto""}",1
 493214,location,"[""cinnabar-island""]",*,1018,"{""gen1_table"":[96]}",1
-493215,location,"[""cinnabar-island""]",*,1020,"{""en"":""Cinnabar Island"",""gen2_index"":85}",1
 493216,location,"[""dark-cave""]",*,1016,"{""identifier"":""dark-cave"",""region"":""johto""}",1
 493217,location,"[""dark-cave""]",*,1020,"{""en"":""Dark Cave"",""gen2_index"":44}",1
 493218,location,"[""digletts-cave""]",*,1016,"{""identifier"":""digletts-cave"",""region"":""kanto""}",1
 493219,location,"[""digletts-cave""]",*,1018,"{""gen1_table"":[131]}",1
-493220,location,"[""digletts-cave""]",*,1020,"{""en"":""Diglett's Cave"",""gen2_index"":62}",1
 493221,location,"[""dragons-den""]",*,1016,"{""identifier"":""dragons-den"",""region"":""johto""}",1
 493222,location,"[""dragons-den""]",*,1020,"{""en"":""Dragon's Den"",""gen2_index"":42}",1
 493223,location,"[""ecruteak-city""]",*,1016,"{""identifier"":""ecruteak-city"",""region"":""johto""}",1
 493224,location,"[""ecruteak-city""]",*,1020,"{""en"":""Ecruteak City"",""gen2_index"":22}",1
 493225,location,"[""fuchsia-city""]",*,1016,"{""identifier"":""fuchsia-city"",""region"":""kanto""}",1
 493226,location,"[""fuchsia-city""]",*,1018,"{""gen1_table"":[95]}",1
-493227,location,"[""fuchsia-city""]",*,1020,"{""en"":""Fuchsia City"",""gen2_index"":81}",1
 493228,location,"[""goldenrod-city""]",*,1016,"{""identifier"":""goldenrod-city"",""region"":""johto""}",1
 493229,location,"[""goldenrod-city""]",*,1020,"{""en"":""Goldenrod City"",""gen2_index"":16}",1
 493230,location,"[""ice-path""]",*,1016,"{""identifier"":""ice-path"",""region"":""johto""}",1
@@ -80,48 +75,34 @@ id,table_name,row_key,column_name,document_id,observed_value,agrees
 493271,location,"[""kanto-power-plant""]",*,1018,"{""gen1_table"":[142]}",1
 493272,location,"[""kanto-route-1""]",*,1016,"{""identifier"":""kanto-route-1"",""region"":""kanto""}",1
 493273,location,"[""kanto-route-1""]",*,1018,"{""gen1_table"":[101]}",1
-493274,location,"[""kanto-route-1""]",*,1020,"{""en"":""Route 1"",""gen2_index"":48}",1
 493275,location,"[""kanto-route-10""]",*,1016,"{""identifier"":""kanto-route-10"",""region"":""kanto""}",1
 493276,location,"[""kanto-route-10""]",*,1018,"{""gen1_table"":[110]}",1
-493277,location,"[""kanto-route-10""]",*,1020,"{""en"":""Route 10"",""gen2_index"":67}",1
 493278,location,"[""kanto-route-11""]",*,1016,"{""identifier"":""kanto-route-11"",""region"":""kanto""}",1
 493279,location,"[""kanto-route-11""]",*,1018,"{""gen1_table"":[111]}",1
-493280,location,"[""kanto-route-11""]",*,1020,"{""en"":""Route 11"",""gen2_index"":73}",1
 493281,location,"[""kanto-route-12""]",*,1016,"{""identifier"":""kanto-route-12"",""region"":""kanto""}",1
 493282,location,"[""kanto-route-12""]",*,1018,"{""gen1_table"":[112]}",1
-493283,location,"[""kanto-route-12""]",*,1020,"{""en"":""Route 12"",""gen2_index"":74}",1
 493284,location,"[""kanto-route-13""]",*,1016,"{""identifier"":""kanto-route-13"",""region"":""kanto""}",1
 493285,location,"[""kanto-route-13""]",*,1018,"{""gen1_table"":[113]}",1
-493286,location,"[""kanto-route-13""]",*,1020,"{""en"":""Route 13"",""gen2_index"":75}",1
 493287,location,"[""kanto-route-14""]",*,1016,"{""identifier"":""kanto-route-14"",""region"":""kanto""}",1
 493288,location,"[""kanto-route-14""]",*,1018,"{""gen1_table"":[114]}",1
-493289,location,"[""kanto-route-14""]",*,1020,"{""en"":""Route 14"",""gen2_index"":76}",1
 493290,location,"[""kanto-route-15""]",*,1016,"{""identifier"":""kanto-route-15"",""region"":""kanto""}",1
 493291,location,"[""kanto-route-15""]",*,1018,"{""gen1_table"":[115]}",1
-493292,location,"[""kanto-route-15""]",*,1020,"{""en"":""Route 15"",""gen2_index"":77}",1
 493293,location,"[""kanto-route-16""]",*,1016,"{""identifier"":""kanto-route-16"",""region"":""kanto""}",1
 493294,location,"[""kanto-route-16""]",*,1018,"{""gen1_table"":[116]}",1
-493295,location,"[""kanto-route-16""]",*,1020,"{""en"":""Route 16"",""gen2_index"":78}",1
 493296,location,"[""kanto-route-17""]",*,1016,"{""identifier"":""kanto-route-17"",""region"":""kanto""}",1
 493297,location,"[""kanto-route-17""]",*,1018,"{""gen1_table"":[117]}",1
-493298,location,"[""kanto-route-17""]",*,1020,"{""en"":""Route 17"",""gen2_index"":79}",1
 493299,location,"[""kanto-route-18""]",*,1016,"{""identifier"":""kanto-route-18"",""region"":""kanto""}",1
 493300,location,"[""kanto-route-18""]",*,1018,"{""gen1_table"":[118]}",1
-493301,location,"[""kanto-route-18""]",*,1020,"{""en"":""Route 18"",""gen2_index"":80}",1
 493302,location,"[""kanto-route-2""]",*,1016,"{""identifier"":""kanto-route-2"",""region"":""kanto""}",1
 493303,location,"[""kanto-route-2""]",*,1018,"{""gen1_table"":[102]}",1
-493304,location,"[""kanto-route-2""]",*,1020,"{""en"":""Route 2"",""gen2_index"":50}",1
 493305,location,"[""kanto-route-22""]",*,1016,"{""identifier"":""kanto-route-22"",""region"":""kanto""}",1
 493306,location,"[""kanto-route-22""]",*,1018,"{""gen1_table"":[122]}",1
-493307,location,"[""kanto-route-22""]",*,1020,"{""en"":""Route 22"",""gen2_index"":87}",1
 493308,location,"[""kanto-route-23""]",*,1016,"{""identifier"":""kanto-route-23"",""region"":""kanto""}",1
 493309,location,"[""kanto-route-23""]",*,1018,"{""gen1_table"":[123]}",1
 493310,location,"[""kanto-route-24""]",*,1016,"{""identifier"":""kanto-route-24"",""region"":""kanto""}",1
 493311,location,"[""kanto-route-24""]",*,1018,"{""gen1_table"":[124]}",1
-493312,location,"[""kanto-route-24""]",*,1020,"{""en"":""Route 24"",""gen2_index"":56}",1
 493313,location,"[""kanto-route-25""]",*,1016,"{""identifier"":""kanto-route-25"",""region"":""kanto""}",1
 493314,location,"[""kanto-route-25""]",*,1018,"{""gen1_table"":[125]}",1
-493315,location,"[""kanto-route-25""]",*,1020,"{""en"":""Route 25"",""gen2_index"":57}",1
 493316,location,"[""kanto-route-26""]",*,1016,"{""identifier"":""kanto-route-26"",""region"":""kanto""}",1
 493317,location,"[""kanto-route-26""]",*,1020,"{""en"":""Route 26"",""gen2_index"":91}",1
 493318,location,"[""kanto-route-27""]",*,1016,"{""identifier"":""kanto-route-27"",""region"":""kanto""}",1
@@ -130,35 +111,25 @@ id,table_name,row_key,column_name,document_id,observed_value,agrees
 493321,location,"[""kanto-route-28""]",*,1020,"{""en"":""Route 28"",""gen2_index"":94}",1
 493322,location,"[""kanto-route-3""]",*,1016,"{""identifier"":""kanto-route-3"",""region"":""kanto""}",1
 493323,location,"[""kanto-route-3""]",*,1018,"{""gen1_table"":[103]}",1
-493324,location,"[""kanto-route-3""]",*,1020,"{""en"":""Route 3"",""gen2_index"":52}",1
 493325,location,"[""kanto-route-4""]",*,1016,"{""identifier"":""kanto-route-4"",""region"":""kanto""}",1
-493326,location,"[""kanto-route-4""]",*,1020,"{""en"":""Route 4"",""gen2_index"":54}",1
 493327,location,"[""kanto-route-5""]",*,1016,"{""identifier"":""kanto-route-5"",""region"":""kanto""}",1
 493328,location,"[""kanto-route-5""]",*,1018,"{""gen1_table"":[105]}",1
-493329,location,"[""kanto-route-5""]",*,1020,"{""en"":""Route 5"",""gen2_index"":58}",1
 493330,location,"[""kanto-route-6""]",*,1016,"{""identifier"":""kanto-route-6"",""region"":""kanto""}",1
 493331,location,"[""kanto-route-6""]",*,1018,"{""gen1_table"":[106]}",1
-493332,location,"[""kanto-route-6""]",*,1020,"{""en"":""Route 6"",""gen2_index"":60}",1
 493333,location,"[""kanto-route-7""]",*,1016,"{""identifier"":""kanto-route-7"",""region"":""kanto""}",1
 493334,location,"[""kanto-route-7""]",*,1018,"{""gen1_table"":[107]}",1
-493335,location,"[""kanto-route-7""]",*,1020,"{""en"":""Route 7"",""gen2_index"":63}",1
 493336,location,"[""kanto-route-8""]",*,1016,"{""identifier"":""kanto-route-8"",""region"":""kanto""}",1
 493337,location,"[""kanto-route-8""]",*,1018,"{""gen1_table"":[108]}",1
-493338,location,"[""kanto-route-8""]",*,1020,"{""en"":""Route 8"",""gen2_index"":64}",1
 493339,location,"[""kanto-route-9""]",*,1016,"{""identifier"":""kanto-route-9"",""region"":""kanto""}",1
 493340,location,"[""kanto-route-9""]",*,1018,"{""gen1_table"":[109]}",1
-493341,location,"[""kanto-route-9""]",*,1020,"{""en"":""Route 9"",""gen2_index"":65}",1
 493342,location,"[""kanto-safari-zone""]",*,1016,"{""identifier"":""kanto-safari-zone"",""region"":""kanto""}",1
 493343,location,"[""kanto-safari-zone""]",*,1018,"{""gen1_table"":[136]}",1
 493344,location,"[""kanto-sea-route-19""]",*,1016,"{""identifier"":""kanto-sea-route-19"",""region"":""kanto""}",1
 493345,location,"[""kanto-sea-route-19""]",*,1018,"{""gen1_table"":[119]}",1
-493346,location,"[""kanto-sea-route-19""]",*,1020,"{""en"":""Route 19"",""gen2_index"":82}",0
 493347,location,"[""kanto-sea-route-20""]",*,1016,"{""identifier"":""kanto-sea-route-20"",""region"":""kanto""}",1
 493348,location,"[""kanto-sea-route-20""]",*,1018,"{""gen1_table"":[120]}",1
-493349,location,"[""kanto-sea-route-20""]",*,1020,"{""en"":""Route 20"",""gen2_index"":83}",0
 493350,location,"[""kanto-sea-route-21""]",*,1016,"{""identifier"":""kanto-sea-route-21"",""region"":""kanto""}",1
 493351,location,"[""kanto-sea-route-21""]",*,1018,"{""gen1_table"":[121]}",1
-493352,location,"[""kanto-sea-route-21""]",*,1020,"{""en"":""Route 21"",""gen2_index"":86}",0
 493353,location,"[""kanto-victory-road-1""]",*,1016,"{""identifier"":""kanto-victory-road-1"",""region"":""kanto""}",1
 493354,location,"[""kanto-victory-road-1""]",*,1020,"{""en"":""Victory Road"",""gen2_index"":88}",1
 493355,location,"[""kanto-victory-road-2""]",*,1016,"{""identifier"":""kanto-victory-road-2"",""region"":""kanto""}",1
@@ -169,7 +140,6 @@ id,table_name,row_key,column_name,document_id,observed_value,agrees
 493360,location,"[""mahogany-town""]",*,1020,"{""en"":""Mahogany Town"",""gen2_index"":36}",1
 493361,location,"[""mt-moon""]",*,1016,"{""identifier"":""mt-moon"",""region"":""kanto""}",1
 493362,location,"[""mt-moon""]",*,1018,"{""gen1_table"":[127]}",1
-493363,location,"[""mt-moon""]",*,1020,"{""en"":""Mt. Moon"",""gen2_index"":53}",1
 493364,location,"[""mt-mortar""]",*,1016,"{""identifier"":""mt-mortar"",""region"":""johto""}",1
 493365,location,"[""mt-mortar""]",*,1020,"{""en"":""Mt. Mortar"",""gen2_index"":35}",1
 493366,location,"[""mt-silver-cave""]",*,1016,"{""identifier"":""mt-silver-cave"",""region"":""johto""}",1
@@ -182,7 +152,6 @@ id,table_name,row_key,column_name,document_id,observed_value,agrees
 493373,location,"[""olivine-city""]",*,1020,"{""en"":""Olivine City"",""gen2_index"":27}",1
 493374,location,"[""pallet-town""]",*,1016,"{""identifier"":""pallet-town"",""region"":""kanto""}",1
 493375,location,"[""pallet-town""]",*,1018,"{""gen1_table"":[88]}",1
-493376,location,"[""pallet-town""]",*,1020,"{""en"":""Pallet Town"",""gen2_index"":47}",1
 493377,location,"[""pewter-city""]",*,1016,"{""identifier"":""pewter-city"",""region"":""kanto""}",1
 493378,location,"[""pokemon-mansion""]",*,1016,"{""identifier"":""pokemon-mansion"",""region"":""kanto""}",1
 493379,location,"[""pokemon-mansion""]",*,1018,"{""gen1_table"":[135]}",1
@@ -190,7 +159,6 @@ id,table_name,row_key,column_name,document_id,observed_value,agrees
 493381,location,"[""pokemon-tower""]",*,1018,"{""gen1_table"":[140]}",1
 493382,location,"[""rock-tunnel""]",*,1016,"{""identifier"":""rock-tunnel"",""region"":""kanto""}",1
 493383,location,"[""rock-tunnel""]",*,1018,"{""gen1_table"":[138]}",1
-493384,location,"[""rock-tunnel""]",*,1020,"{""en"":""Rock Tunnel"",""gen2_index"":66}",1
 493385,location,"[""ruins-of-alph""]",*,1016,"{""identifier"":""ruins-of-alph"",""region"":""johto""}",1
 493386,location,"[""ruins-of-alph""]",*,1020,"{""en"":""Ruins of Alph"",""gen2_index"":9}",1
 493387,location,"[""seafoam-islands""]",*,1016,"{""identifier"":""seafoam-islands"",""region"":""kanto""}",1
@@ -205,13 +173,279 @@ id,table_name,row_key,column_name,document_id,observed_value,agrees
 493396,location,"[""union-cave""]",*,1020,"{""en"":""Union Cave"",""gen2_index"":10}",1
 493397,location,"[""vermilion-city""]",*,1016,"{""identifier"":""vermilion-city"",""region"":""kanto""}",1
 493398,location,"[""vermilion-city""]",*,1018,"{""gen1_table"":[93]}",1
-493399,location,"[""vermilion-city""]",*,1020,"{""en"":""Vermilion City"",""gen2_index"":61}",1
 493400,location,"[""violet-city""]",*,1016,"{""identifier"":""violet-city"",""region"":""johto""}",1
 493401,location,"[""violet-city""]",*,1020,"{""en"":""Violet City"",""gen2_index"":6}",1
 493402,location,"[""viridian-city""]",*,1016,"{""identifier"":""viridian-city"",""region"":""kanto""}",1
 493403,location,"[""viridian-city""]",*,1018,"{""gen1_table"":[89]}",1
-493404,location,"[""viridian-city""]",*,1020,"{""en"":""Viridian City"",""gen2_index"":49}",1
 493405,location,"[""viridian-forest""]",*,1016,"{""identifier"":""viridian-forest"",""region"":""kanto""}",1
 493406,location,"[""viridian-forest""]",*,1018,"{""gen1_table"":[126]}",1
 493407,location,"[""whirl-islands""]",*,1016,"{""identifier"":""whirl-islands"",""region"":""johto""}",1
 493408,location,"[""whirl-islands""]",*,1020,"{""en"":""Whirl Islands"",""gen2_index"":31}",1
+502334,location,"[""abandoned-ship""]",*,1016,"{""identifier"":""abandoned-ship"",""region"":""hoenn""}",1
+502335,location,"[""abandoned-ship""]",*,1020,"{""met"":[[""rsefrlg"",61,""Abandoned Ship"",""pokeapi-index""]]}",1
+502336,location,"[""ancient-tomb""]",*,1016,"{""identifier"":""ancient-tomb"",""region"":""hoenn""}",1
+502337,location,"[""ancient-tomb""]",*,1020,"{""met"":[[""rsefrlg"",83,""Ancient Tomb"",""pokeapi-index""]]}",1
+502338,location,"[""artisan-cave""]",*,1016,"{""identifier"":""artisan-cave"",""region"":""hoenn""}",1
+502339,location,"[""artisan-cave""]",*,1020,"{""met"":[[""rsefrlg"",202,""Artisan Cave"",""pokeapi-index""]]}",1
+502340,location,"[""berry-forest""]",*,1016,"{""identifier"":""berry-forest"",""region"":""kanto""}",1
+502341,location,"[""berry-forest""]",*,1020,"{""met"":[[""rsefrlg"",176,""Berry Forest"",""pokeapi-index""]]}",1
+502342,location,"[""birth-island""]",*,1016,"{""identifier"":""birth-island"",""region"":""kanto""}",1
+502343,location,"[""birth-island""]",*,1020,"{""met"":[[""rsefrlg"",187,""Birth Island (FRLG)"",""pokeapi-index""],[""rsefrlg"",200,""Birth Island (E)"",""pokeapi-name""]]}",1
+502344,location,"[""bond-bridge""]",*,1016,"{""identifier"":""bond-bridge"",""region"":""kanto""}",1
+502345,location,"[""bond-bridge""]",*,1020,"{""met"":[[""rsefrlg"",153,""Bond Bridge"",""pokeapi-index""]]}",1
+502346,location,"[""canyon-entrance""]",*,1016,"{""identifier"":""canyon-entrance"",""region"":""kanto""}",1
+502347,location,"[""canyon-entrance""]",*,1020,"{""met"":[[""rsefrlg"",168,""Canyon Entrance"",""pokeapi-index""]]}",1
+502348,location,"[""cape-brink""]",*,1016,"{""identifier"":""cape-brink"",""region"":""kanto""}",1
+502349,location,"[""cape-brink""]",*,1020,"{""met"":[[""rsefrlg"",152,""Cape Brink"",""pokeapi-index""]]}",1
+502350,location,"[""cave-of-origin""]",*,1016,"{""identifier"":""cave-of-origin"",""region"":""hoenn""}",1
+502351,location,"[""cave-of-origin""]",*,1020,"{""met"":[[""rsefrlg"",72,""Cave of Origin"",""pokeapi-index""]]}",1
+502352,location,"[""celadon-city""]",*,1020,"{""en"":""Celadon City"",""gen2_index"":71,""met"":[[""rsefrlg"",94,""Celadon City"",""pokeapi-index""]]}",1
+502353,location,"[""cerulean-cave""]",*,1020,"{""met"":[[""rsefrlg"",141,""Cerulean Cave"",""pokeapi-index""]]}",1
+502354,location,"[""cerulean-city""]",*,1020,"{""en"":""Cerulean City"",""gen2_index"":55,""met"":[[""rsefrlg"",91,""Cerulean City"",""pokeapi-index""]]}",1
+502355,location,"[""cinnabar-island""]",*,1020,"{""en"":""Cinnabar Island"",""gen2_index"":85,""met"":[[""rsefrlg"",96,""Cinnabar Island"",""pokeapi-index""]]}",1
+502356,location,"[""desert-ruins""]",*,1016,"{""identifier"":""desert-ruins"",""region"":""hoenn""}",1
+502357,location,"[""desert-ruins""]",*,1020,"{""met"":[[""rsefrlg"",82,""Desert Ruins"",""pokeapi-index""]]}",1
+502358,location,"[""desert-underpass""]",*,1016,"{""identifier"":""desert-underpass"",""region"":""hoenn""}",1
+502359,location,"[""desert-underpass""]",*,1020,"{""met"":[[""rsefrlg"",209,""Desert Underpass"",""pokeapi-index""]]}",1
+502360,location,"[""dewford-town""]",*,1016,"{""identifier"":""dewford-town"",""region"":""hoenn""}",1
+502361,location,"[""dewford-town""]",*,1020,"{""met"":[[""rsefrlg"",2,""Dewford Town"",""pokeapi-index""]]}",1
+502362,location,"[""digletts-cave""]",*,1020,"{""en"":""Diglett's Cave"",""gen2_index"":62,""met"":[[""rsefrlg"",131,""Diglett's Cave"",""pokeapi-index""]]}",1
+502363,location,"[""dilford-chamber""]",*,1016,"{""identifier"":""dilford-chamber"",""region"":""kanto""}",1
+502364,location,"[""dilford-chamber""]",*,1020,"{""met"":[[""rsefrlg"",191,""Dilford Chamber"",""pokeapi-index""]]}",1
+502365,location,"[""ever-grande-city""]",*,1016,"{""identifier"":""ever-grande-city"",""region"":""hoenn""}",1
+502366,location,"[""ever-grande-city""]",*,1020,"{""met"":[[""rsefrlg"",15,""Ever Grande City"",""pokeapi-index""]]}",1
+502367,location,"[""faraway-island""]",*,1016,"{""identifier"":""faraway-island"",""region"":""hoenn""}",1
+502368,location,"[""faraway-island""]",*,1020,"{""met"":[[""rsefrlg"",201,""Faraway Island"",""pokeapi-index""]]}",1
+502369,location,"[""fiery-path""]",*,1016,"{""identifier"":""fiery-path"",""region"":""hoenn""}",1
+502370,location,"[""fiery-path""]",*,1020,"{""met"":[[""rsefrlg"",74,""Fiery Path"",""pokeapi-index""]]}",1
+502371,location,"[""five-island""]",*,1016,"{""identifier"":""five-island"",""region"":""kanto""}",1
+502372,location,"[""five-island""]",*,1020,"{""met"":[[""rsefrlg"",147,""Five Island"",""pokeapi-index""]]}",1
+502373,location,"[""five-isle-meadow""]",*,1016,"{""identifier"":""five-isle-meadow"",""region"":""kanto""}",1
+502374,location,"[""five-isle-meadow""]",*,1020,"{""met"":[[""rsefrlg"",161,""Five Isle Meadow"",""pokeapi-index""]]}",1
+502375,location,"[""fortree-city""]",*,1016,"{""identifier"":""fortree-city"",""region"":""hoenn""}",1
+502376,location,"[""four-island""]",*,1016,"{""identifier"":""four-island"",""region"":""kanto""}",1
+502377,location,"[""four-island""]",*,1020,"{""met"":[[""rsefrlg"",146,""Four Island"",""pokeapi-index""]]}",1
+502378,location,"[""fuchsia-city""]",*,1020,"{""en"":""Fuchsia City"",""gen2_index"":81,""met"":[[""rsefrlg"",95,""Fuchsia City"",""pokeapi-index""]]}",1
+502379,location,"[""granite-cave""]",*,1016,"{""identifier"":""granite-cave"",""region"":""hoenn""}",1
+502380,location,"[""granite-cave""]",*,1020,"{""met"":[[""rsefrlg"",55,""Granite Cave"",""pokeapi-index""]]}",1
+502381,location,"[""green-path""]",*,1016,"{""identifier"":""green-path"",""region"":""kanto""}",1
+502382,location,"[""green-path""]",*,1020,"{""met"":[[""rsefrlg"",164,""Green Path"",""pokeapi-index""]]}",1
+502383,location,"[""hoenn-altering-cave""]",*,1016,"{""identifier"":""hoenn-altering-cave"",""region"":""hoenn""}",1
+502384,location,"[""hoenn-altering-cave""]",*,1020,"{""met"":[[""rsefrlg"",210,""Altering Cave (E)"",""pokeapi-index""]]}",1
+502385,location,"[""hoenn-battle-tower""]",*,1016,"{""identifier"":""hoenn-battle-tower"",""region"":""hoenn""}",1
+502386,location,"[""hoenn-battle-tower""]",*,1020,"{""met"":[[""rsefrlg"",58,""Battle Tower (RS) / Battle Frontier (E)"",""pokeapi-index""]]}",1
+502387,location,"[""hoenn-route-101""]",*,1016,"{""identifier"":""hoenn-route-101"",""region"":""hoenn""}",1
+502388,location,"[""hoenn-route-101""]",*,1020,"{""met"":[[""rsefrlg"",16,""Route 101"",""pokeapi-index""]]}",1
+502389,location,"[""hoenn-route-102""]",*,1016,"{""identifier"":""hoenn-route-102"",""region"":""hoenn""}",1
+502390,location,"[""hoenn-route-102""]",*,1020,"{""met"":[[""rsefrlg"",17,""Route 102"",""pokeapi-index""]]}",1
+502391,location,"[""hoenn-route-103""]",*,1016,"{""identifier"":""hoenn-route-103"",""region"":""hoenn""}",1
+502392,location,"[""hoenn-route-103""]",*,1020,"{""met"":[[""rsefrlg"",18,""Route 103"",""pokeapi-index""]]}",1
+502393,location,"[""hoenn-route-104""]",*,1016,"{""identifier"":""hoenn-route-104"",""region"":""hoenn""}",1
+502394,location,"[""hoenn-route-104""]",*,1020,"{""met"":[[""rsefrlg"",19,""Route 104"",""pokeapi-index""]]}",1
+502395,location,"[""hoenn-route-105""]",*,1016,"{""identifier"":""hoenn-route-105"",""region"":""hoenn""}",1
+502396,location,"[""hoenn-route-105""]",*,1020,"{""met"":[[""rsefrlg"",20,""Route 105"",""pokeapi-index""]]}",1
+502397,location,"[""hoenn-route-106""]",*,1016,"{""identifier"":""hoenn-route-106"",""region"":""hoenn""}",1
+502398,location,"[""hoenn-route-106""]",*,1020,"{""met"":[[""rsefrlg"",21,""Route 106"",""pokeapi-index""]]}",1
+502399,location,"[""hoenn-route-107""]",*,1016,"{""identifier"":""hoenn-route-107"",""region"":""hoenn""}",1
+502400,location,"[""hoenn-route-107""]",*,1020,"{""met"":[[""rsefrlg"",22,""Route 107"",""pokeapi-index""]]}",1
+502401,location,"[""hoenn-route-108""]",*,1016,"{""identifier"":""hoenn-route-108"",""region"":""hoenn""}",1
+502402,location,"[""hoenn-route-108""]",*,1020,"{""met"":[[""rsefrlg"",23,""Route 108"",""pokeapi-index""]]}",1
+502403,location,"[""hoenn-route-109""]",*,1016,"{""identifier"":""hoenn-route-109"",""region"":""hoenn""}",1
+502404,location,"[""hoenn-route-109""]",*,1020,"{""met"":[[""rsefrlg"",24,""Route 109"",""pokeapi-index""]]}",1
+502405,location,"[""hoenn-route-110""]",*,1016,"{""identifier"":""hoenn-route-110"",""region"":""hoenn""}",1
+502406,location,"[""hoenn-route-110""]",*,1020,"{""met"":[[""rsefrlg"",25,""Route 110"",""pokeapi-index""]]}",1
+502407,location,"[""hoenn-route-111""]",*,1016,"{""identifier"":""hoenn-route-111"",""region"":""hoenn""}",1
+502408,location,"[""hoenn-route-111""]",*,1020,"{""met"":[[""rsefrlg"",26,""Route 111"",""pokeapi-index""]]}",1
+502409,location,"[""hoenn-route-112""]",*,1016,"{""identifier"":""hoenn-route-112"",""region"":""hoenn""}",1
+502410,location,"[""hoenn-route-112""]",*,1020,"{""met"":[[""rsefrlg"",27,""Route 112"",""pokeapi-index""]]}",1
+502411,location,"[""hoenn-route-113""]",*,1016,"{""identifier"":""hoenn-route-113"",""region"":""hoenn""}",1
+502412,location,"[""hoenn-route-113""]",*,1020,"{""met"":[[""rsefrlg"",28,""Route 113"",""pokeapi-index""]]}",1
+502413,location,"[""hoenn-route-114""]",*,1016,"{""identifier"":""hoenn-route-114"",""region"":""hoenn""}",1
+502414,location,"[""hoenn-route-114""]",*,1020,"{""met"":[[""rsefrlg"",29,""Route 114"",""pokeapi-index""]]}",1
+502415,location,"[""hoenn-route-115""]",*,1016,"{""identifier"":""hoenn-route-115"",""region"":""hoenn""}",1
+502416,location,"[""hoenn-route-115""]",*,1020,"{""met"":[[""rsefrlg"",30,""Route 115"",""pokeapi-index""]]}",1
+502417,location,"[""hoenn-route-116""]",*,1016,"{""identifier"":""hoenn-route-116"",""region"":""hoenn""}",1
+502418,location,"[""hoenn-route-116""]",*,1020,"{""met"":[[""rsefrlg"",31,""Route 116"",""pokeapi-index""]]}",1
+502419,location,"[""hoenn-route-117""]",*,1016,"{""identifier"":""hoenn-route-117"",""region"":""hoenn""}",1
+502420,location,"[""hoenn-route-117""]",*,1020,"{""met"":[[""rsefrlg"",32,""Route 117"",""pokeapi-index""]]}",1
+502421,location,"[""hoenn-route-118""]",*,1016,"{""identifier"":""hoenn-route-118"",""region"":""hoenn""}",1
+502422,location,"[""hoenn-route-118""]",*,1020,"{""met"":[[""rsefrlg"",33,""Route 118"",""pokeapi-index""]]}",1
+502423,location,"[""hoenn-route-119""]",*,1016,"{""identifier"":""hoenn-route-119"",""region"":""hoenn""}",1
+502424,location,"[""hoenn-route-119""]",*,1020,"{""met"":[[""rsefrlg"",34,""Route 119"",""pokeapi-index""]]}",1
+502425,location,"[""hoenn-route-120""]",*,1016,"{""identifier"":""hoenn-route-120"",""region"":""hoenn""}",1
+502426,location,"[""hoenn-route-120""]",*,1020,"{""met"":[[""rsefrlg"",35,""Route 120"",""pokeapi-index""]]}",1
+502427,location,"[""hoenn-route-121""]",*,1016,"{""identifier"":""hoenn-route-121"",""region"":""hoenn""}",1
+502428,location,"[""hoenn-route-121""]",*,1020,"{""met"":[[""rsefrlg"",36,""Route 121"",""pokeapi-index""]]}",1
+502429,location,"[""hoenn-route-122""]",*,1016,"{""identifier"":""hoenn-route-122"",""region"":""hoenn""}",1
+502430,location,"[""hoenn-route-122""]",*,1020,"{""met"":[[""rsefrlg"",37,""Route 122"",""pokeapi-index""]]}",1
+502431,location,"[""hoenn-route-123""]",*,1016,"{""identifier"":""hoenn-route-123"",""region"":""hoenn""}",1
+502432,location,"[""hoenn-route-123""]",*,1020,"{""met"":[[""rsefrlg"",38,""Route 123"",""pokeapi-index""]]}",1
+502433,location,"[""hoenn-route-124""]",*,1016,"{""identifier"":""hoenn-route-124"",""region"":""hoenn""}",1
+502434,location,"[""hoenn-route-124""]",*,1020,"{""met"":[[""rsefrlg"",39,""Route 124"",""pokeapi-index""]]}",1
+502435,location,"[""hoenn-route-125""]",*,1016,"{""identifier"":""hoenn-route-125"",""region"":""hoenn""}",1
+502436,location,"[""hoenn-route-125""]",*,1020,"{""met"":[[""rsefrlg"",40,""Route 125"",""pokeapi-index""]]}",1
+502437,location,"[""hoenn-route-126""]",*,1016,"{""identifier"":""hoenn-route-126"",""region"":""hoenn""}",1
+502438,location,"[""hoenn-route-126""]",*,1020,"{""met"":[[""rsefrlg"",41,""Route 126"",""pokeapi-index""]]}",1
+502439,location,"[""hoenn-route-127""]",*,1016,"{""identifier"":""hoenn-route-127"",""region"":""hoenn""}",1
+502440,location,"[""hoenn-route-127""]",*,1020,"{""met"":[[""rsefrlg"",42,""Route 127"",""pokeapi-index""]]}",1
+502441,location,"[""hoenn-route-128""]",*,1016,"{""identifier"":""hoenn-route-128"",""region"":""hoenn""}",1
+502442,location,"[""hoenn-route-128""]",*,1020,"{""met"":[[""rsefrlg"",43,""Route 128"",""pokeapi-index""]]}",1
+502443,location,"[""hoenn-route-129""]",*,1016,"{""identifier"":""hoenn-route-129"",""region"":""hoenn""}",1
+502444,location,"[""hoenn-route-129""]",*,1020,"{""met"":[[""rsefrlg"",44,""Route 129"",""pokeapi-index""]]}",1
+502445,location,"[""hoenn-route-130""]",*,1016,"{""identifier"":""hoenn-route-130"",""region"":""hoenn""}",1
+502446,location,"[""hoenn-route-130""]",*,1020,"{""met"":[[""rsefrlg"",45,""Route 130"",""pokeapi-index""]]}",1
+502447,location,"[""hoenn-route-131""]",*,1016,"{""identifier"":""hoenn-route-131"",""region"":""hoenn""}",1
+502448,location,"[""hoenn-route-131""]",*,1020,"{""met"":[[""rsefrlg"",46,""Route 131"",""pokeapi-index""]]}",1
+502449,location,"[""hoenn-route-132""]",*,1016,"{""identifier"":""hoenn-route-132"",""region"":""hoenn""}",1
+502450,location,"[""hoenn-route-132""]",*,1020,"{""met"":[[""rsefrlg"",47,""Route 132"",""pokeapi-index""]]}",1
+502451,location,"[""hoenn-route-133""]",*,1016,"{""identifier"":""hoenn-route-133"",""region"":""hoenn""}",1
+502452,location,"[""hoenn-route-133""]",*,1020,"{""met"":[[""rsefrlg"",48,""Route 133"",""pokeapi-index""]]}",1
+502453,location,"[""hoenn-route-134""]",*,1016,"{""identifier"":""hoenn-route-134"",""region"":""hoenn""}",1
+502454,location,"[""hoenn-route-134""]",*,1020,"{""met"":[[""rsefrlg"",49,""Route 134"",""pokeapi-index""]]}",1
+502455,location,"[""hoenn-safari-zone""]",*,1016,"{""identifier"":""hoenn-safari-zone"",""region"":""hoenn""}",1
+502456,location,"[""hoenn-safari-zone""]",*,1020,"{""met"":[[""rsefrlg"",57,""Safari Zone (RSE)"",""pokeapi-index""]]}",1
+502457,location,"[""hoenn-victory-road""]",*,1016,"{""identifier"":""hoenn-victory-road"",""region"":""hoenn""}",1
+502458,location,"[""hoenn-victory-road""]",*,1020,"{""met"":[[""rsefrlg"",70,""Victory Road (RSE)"",""pokeapi-index""]]}",1
+502459,location,"[""icefall-cave""]",*,1016,"{""identifier"":""icefall-cave"",""region"":""kanto""}",1
+502460,location,"[""icefall-cave""]",*,1020,"{""met"":[[""rsefrlg"",177,""Icefall Cave"",""pokeapi-index""]]}",1
+502461,location,"[""island-cave""]",*,1016,"{""identifier"":""island-cave"",""region"":""hoenn""}",1
+502462,location,"[""island-cave""]",*,1020,"{""met"":[[""rsefrlg"",81,""Island Cave"",""pokeapi-index""]]}",1
+502463,location,"[""jagged-pass""]",*,1016,"{""identifier"":""jagged-pass"",""region"":""hoenn""}",1
+502464,location,"[""jagged-pass""]",*,1020,"{""met"":[[""rsefrlg"",76,""Jagged Pass"",""pokeapi-index""]]}",1
+502465,location,"[""kanto-altering-cave""]",*,1016,"{""identifier"":""kanto-altering-cave"",""region"":""kanto""}",1
+502466,location,"[""kanto-altering-cave""]",*,1020,"{""met"":[[""rsefrlg"",183,""Altering Cave (FRLG)"",""pokeapi-index""]]}",1
+502467,location,"[""kanto-power-plant""]",*,1020,"{""met"":[[""rsefrlg"",142,""Power Plant"",""pokeapi-index""]]}",1
+502468,location,"[""kanto-route-1""]",*,1020,"{""en"":""Route 1"",""gen2_index"":48,""met"":[[""rsefrlg"",101,""Route 1"",""pokeapi-index""]]}",1
+502469,location,"[""kanto-route-10""]",*,1020,"{""en"":""Route 10"",""gen2_index"":67,""met"":[[""rsefrlg"",110,""Route 10"",""pokeapi-index""]]}",1
+502470,location,"[""kanto-route-11""]",*,1020,"{""en"":""Route 11"",""gen2_index"":73,""met"":[[""rsefrlg"",111,""Route 11"",""pokeapi-index""]]}",1
+502471,location,"[""kanto-route-12""]",*,1020,"{""en"":""Route 12"",""gen2_index"":74,""met"":[[""rsefrlg"",112,""Route 12"",""pokeapi-index""]]}",1
+502472,location,"[""kanto-route-13""]",*,1020,"{""en"":""Route 13"",""gen2_index"":75,""met"":[[""rsefrlg"",113,""Route 13"",""pokeapi-index""]]}",1
+502473,location,"[""kanto-route-14""]",*,1020,"{""en"":""Route 14"",""gen2_index"":76,""met"":[[""rsefrlg"",114,""Route 14"",""pokeapi-index""]]}",1
+502474,location,"[""kanto-route-15""]",*,1020,"{""en"":""Route 15"",""gen2_index"":77,""met"":[[""rsefrlg"",115,""Route 15"",""pokeapi-index""]]}",1
+502475,location,"[""kanto-route-16""]",*,1020,"{""en"":""Route 16"",""gen2_index"":78,""met"":[[""rsefrlg"",116,""Route 16"",""pokeapi-index""]]}",1
+502476,location,"[""kanto-route-17""]",*,1020,"{""en"":""Route 17"",""gen2_index"":79,""met"":[[""rsefrlg"",117,""Route 17"",""pokeapi-index""]]}",1
+502477,location,"[""kanto-route-18""]",*,1020,"{""en"":""Route 18"",""gen2_index"":80,""met"":[[""rsefrlg"",118,""Route 18"",""pokeapi-index""]]}",1
+502478,location,"[""kanto-route-2""]",*,1020,"{""en"":""Route 2"",""gen2_index"":50,""met"":[[""rsefrlg"",102,""Route 2"",""pokeapi-index""]]}",1
+502479,location,"[""kanto-route-22""]",*,1020,"{""en"":""Route 22"",""gen2_index"":87,""met"":[[""rsefrlg"",122,""Route 22"",""pokeapi-index""]]}",1
+502480,location,"[""kanto-route-23""]",*,1020,"{""met"":[[""rsefrlg"",123,""Route 23"",""pokeapi-index""]]}",1
+502481,location,"[""kanto-route-24""]",*,1020,"{""en"":""Route 24"",""gen2_index"":56,""met"":[[""rsefrlg"",124,""Route 24"",""pokeapi-index""]]}",1
+502482,location,"[""kanto-route-25""]",*,1020,"{""en"":""Route 25"",""gen2_index"":57,""met"":[[""rsefrlg"",125,""Route 25"",""pokeapi-index""]]}",1
+502483,location,"[""kanto-route-3""]",*,1020,"{""en"":""Route 3"",""gen2_index"":52,""met"":[[""rsefrlg"",103,""Route 3"",""pokeapi-index""]]}",1
+502484,location,"[""kanto-route-4""]",*,1020,"{""en"":""Route 4"",""gen2_index"":54,""met"":[[""rsefrlg"",104,""Route 4"",""pokeapi-index""]]}",1
+502485,location,"[""kanto-route-5""]",*,1020,"{""en"":""Route 5"",""gen2_index"":58,""met"":[[""rsefrlg"",105,""Route 5"",""pokeapi-index""]]}",1
+502486,location,"[""kanto-route-6""]",*,1020,"{""en"":""Route 6"",""gen2_index"":60,""met"":[[""rsefrlg"",106,""Route 6"",""pokeapi-index""]]}",1
+502487,location,"[""kanto-route-7""]",*,1020,"{""en"":""Route 7"",""gen2_index"":63,""met"":[[""rsefrlg"",107,""Route 7"",""pokeapi-index""]]}",1
+502488,location,"[""kanto-route-8""]",*,1020,"{""en"":""Route 8"",""gen2_index"":64,""met"":[[""rsefrlg"",108,""Route 8"",""pokeapi-index""]]}",1
+502489,location,"[""kanto-route-9""]",*,1020,"{""en"":""Route 9"",""gen2_index"":65,""met"":[[""rsefrlg"",109,""Route 9"",""pokeapi-index""]]}",1
+502490,location,"[""kanto-safari-zone""]",*,1020,"{""met"":[[""rsefrlg"",136,""Safari Zone (Kanto)"",""pokeapi-index""]]}",1
+502491,location,"[""kanto-sea-route-19""]",*,1020,"{""en"":""Route 19"",""gen2_index"":82,""met"":[[""rsefrlg"",119,""Route 19"",""pokeapi-index""]]}",0
+502492,location,"[""kanto-sea-route-20""]",*,1020,"{""en"":""Route 20"",""gen2_index"":83,""met"":[[""rsefrlg"",120,""Route 20"",""pokeapi-index""]]}",0
+502493,location,"[""kanto-sea-route-21""]",*,1020,"{""en"":""Route 21"",""gen2_index"":86,""met"":[[""rsefrlg"",121,""Route 21"",""pokeapi-index""]]}",0
+502494,location,"[""kanto-victory-road-2""]",*,1020,"{""met"":[[""rsefrlg"",132,""Victory Road (Kanto)"",""pokeapi-index""]]}",1
+502495,location,"[""kindle-road""]",*,1016,"{""identifier"":""kindle-road"",""region"":""kanto""}",1
+502496,location,"[""kindle-road""]",*,1020,"{""met"":[[""rsefrlg"",150,""Kindle Road"",""pokeapi-index""]]}",1
+502497,location,"[""lilycove-city""]",*,1016,"{""identifier"":""lilycove-city"",""region"":""hoenn""}",1
+502498,location,"[""lilycove-city""]",*,1020,"{""met"":[[""rsefrlg"",12,""Lilycove City"",""pokeapi-index""]]}",1
+502499,location,"[""liptoo-chamber""]",*,1016,"{""identifier"":""liptoo-chamber"",""region"":""kanto""}",1
+502500,location,"[""liptoo-chamber""]",*,1020,"{""met"":[[""rsefrlg"",189,""Liptoo Chamber"",""pokeapi-index""]]}",1
+502501,location,"[""littleroot-town""]",*,1016,"{""identifier"":""littleroot-town"",""region"":""hoenn""}",1
+502502,location,"[""littleroot-town""]",*,1020,"{""met"":[[""rsefrlg"",0,""Littleroot Town"",""pokeapi-index""]]}",1
+502503,location,"[""lost-cave""]",*,1016,"{""identifier"":""lost-cave"",""region"":""kanto""}",1
+502504,location,"[""lost-cave""]",*,1020,"{""met"":[[""rsefrlg"",181,""Lost Cave"",""pokeapi-index""]]}",1
+502505,location,"[""magma-hideout""]",*,1016,"{""identifier"":""magma-hideout"",""region"":""hoenn""}",1
+502506,location,"[""magma-hideout""]",*,1020,"{""met"":[[""rsefrlg"",198,""Magma Hideout"",""pokeapi-index""]]}",1
+502507,location,"[""marine-cave""]",*,1016,"{""identifier"":""marine-cave"",""region"":""hoenn""}",1
+502508,location,"[""marine-cave""]",*,1020,"{""met"":[[""rsefrlg"",203,""Marine Cave"",""pokeapi-index""]]}",1
+502509,location,"[""memorial-pillar""]",*,1016,"{""identifier"":""memorial-pillar"",""region"":""kanto""}",1
+502510,location,"[""memorial-pillar""]",*,1020,"{""met"":[[""rsefrlg"",162,""Memorial Pillar"",""pokeapi-index""]]}",1
+502511,location,"[""meteor-falls""]",*,1016,"{""identifier"":""meteor-falls"",""region"":""hoenn""}",1
+502512,location,"[""meteor-falls""]",*,1020,"{""met"":[[""rsefrlg"",63,""Meteor Falls"",""pokeapi-index""]]}",1
+502513,location,"[""mirage-tower""]",*,1016,"{""identifier"":""mirage-tower"",""region"":""hoenn""}",1
+502514,location,"[""mirage-tower""]",*,1020,"{""met"":[[""rsefrlg"",199,""Mirage Tower"",""pokeapi-index""]]}",1
+502515,location,"[""monean-chamber""]",*,1016,"{""identifier"":""monean-chamber"",""region"":""kanto""}",1
+502516,location,"[""monean-chamber""]",*,1020,"{""met"":[[""rsefrlg"",188,""Monean Chamber"",""pokeapi-index""]]}",1
+502517,location,"[""mossdeep-city""]",*,1016,"{""identifier"":""mossdeep-city"",""region"":""hoenn""}",1
+502518,location,"[""mossdeep-city""]",*,1020,"{""met"":[[""rsefrlg"",13,""Mossdeep City"",""pokeapi-index""]]}",1
+502519,location,"[""mt-ember""]",*,1016,"{""identifier"":""mt-ember"",""region"":""kanto""}",1
+502520,location,"[""mt-ember""]",*,1020,"{""met"":[[""rsefrlg"",175,""Mt. Ember"",""pokeapi-index""]]}",1
+502521,location,"[""mt-moon""]",*,1020,"{""en"":""Mt. Moon"",""gen2_index"":53,""met"":[[""rsefrlg"",127,""Mt. Moon"",""pokeapi-index""]]}",1
+502522,location,"[""mt-pyre""]",*,1016,"{""identifier"":""mt-pyre"",""region"":""hoenn""}",1
+502523,location,"[""mt-pyre""]",*,1020,"{""met"":[[""rsefrlg"",65,""Mt. Pyre"",""pokeapi-index""]]}",1
+502524,location,"[""navel-rock""]",*,1016,"{""identifier"":""navel-rock"",""region"":""kanto""}",1
+502525,location,"[""navel-rock""]",*,1020,"{""met"":[[""rsefrlg"",174,""Navel Rock (FRLG)"",""pokeapi-index""],[""rsefrlg"",211,""Navel Rock (E)"",""pokeapi-name""]]}",1
+502526,location,"[""new-mauville""]",*,1016,"{""identifier"":""new-mauville"",""region"":""hoenn""}",1
+502527,location,"[""new-mauville""]",*,1020,"{""met"":[[""rsefrlg"",62,""New Mauville"",""pokeapi-index""]]}",1
+502528,location,"[""one-island""]",*,1016,"{""identifier"":""one-island"",""region"":""kanto""}",1
+502529,location,"[""one-island""]",*,1020,"{""met"":[[""rsefrlg"",143,""One Island"",""pokeapi-index""]]}",1
+502530,location,"[""outcast-island""]",*,1016,"{""identifier"":""outcast-island"",""region"":""kanto""}",1
+502531,location,"[""outcast-island""]",*,1020,"{""met"":[[""rsefrlg"",163,""Outcast Island"",""pokeapi-index""]]}",1
+502532,location,"[""pacifidlog-town""]",*,1016,"{""identifier"":""pacifidlog-town"",""region"":""hoenn""}",1
+502533,location,"[""pacifidlog-town""]",*,1020,"{""met"":[[""rsefrlg"",6,""Pacifidlog Town"",""pokeapi-index""]]}",1
+502534,location,"[""pallet-town""]",*,1020,"{""en"":""Pallet Town"",""gen2_index"":47,""met"":[[""rsefrlg"",88,""Pallet Town"",""pokeapi-index""]]}",1
+502535,location,"[""pattern-bush""]",*,1016,"{""identifier"":""pattern-bush"",""region"":""kanto""}",1
+502536,location,"[""pattern-bush""]",*,1020,"{""met"":[[""rsefrlg"",182,""Pattern Bush"",""pokeapi-index""]]}",1
+502537,location,"[""petalburg-city""]",*,1016,"{""identifier"":""petalburg-city"",""region"":""hoenn""}",1
+502538,location,"[""petalburg-city""]",*,1020,"{""met"":[[""rsefrlg"",7,""Petalburg City"",""pokeapi-index""]]}",1
+502539,location,"[""petalburg-woods""]",*,1016,"{""identifier"":""petalburg-woods"",""region"":""hoenn""}",1
+502540,location,"[""petalburg-woods""]",*,1020,"{""met"":[[""rsefrlg"",59,""Petalburg Woods"",""pokeapi-index""]]}",1
+502541,location,"[""pokemon-mansion""]",*,1020,"{""met"":[[""rsefrlg"",135,""Pokémon Mansion"",""pokeapi-index""]]}",1
+502542,location,"[""pokemon-tower""]",*,1020,"{""met"":[[""rsefrlg"",140,""Pokémon Tower"",""pokeapi-index""]]}",1
+502543,location,"[""resort-gorgeous""]",*,1016,"{""identifier"":""resort-gorgeous"",""region"":""kanto""}",1
+502544,location,"[""resort-gorgeous""]",*,1020,"{""met"":[[""rsefrlg"",159,""Resort Gorgeous"",""pokeapi-index""]]}",1
+502545,location,"[""rixy-chamber""]",*,1016,"{""identifier"":""rixy-chamber"",""region"":""kanto""}",1
+502546,location,"[""rixy-chamber""]",*,1020,"{""met"":[[""rsefrlg"",193,""Rixy Chamber"",""pokeapi-index""]]}",1
+502547,location,"[""rock-tunnel""]",*,1020,"{""en"":""Rock Tunnel"",""gen2_index"":66,""met"":[[""rsefrlg"",138,""Rock Tunnel"",""pokeapi-index""]]}",1
+502548,location,"[""ruin-valley""]",*,1016,"{""identifier"":""ruin-valley"",""region"":""kanto""}",1
+502549,location,"[""ruin-valley""]",*,1020,"{""met"":[[""rsefrlg"",166,""Ruin Valley"",""pokeapi-index""]]}",1
+502550,location,"[""rustboro-city""]",*,1016,"{""identifier"":""rustboro-city"",""region"":""hoenn""}",1
+502551,location,"[""rustboro-city""]",*,1020,"{""met"":[[""rsefrlg"",10,""Rustboro City"",""pokeapi-index""]]}",1
+502552,location,"[""rusturf-tunnel""]",*,1016,"{""identifier"":""rusturf-tunnel"",""region"":""hoenn""}",1
+502553,location,"[""rusturf-tunnel""]",*,1020,"{""met"":[[""rsefrlg"",60,""Rusturf Tunnel"",""pokeapi-index""]]}",1
+502554,location,"[""saffron-city""]",*,1016,"{""identifier"":""saffron-city"",""region"":""kanto""}",1
+502555,location,"[""saffron-city""]",*,1020,"{""met"":[[""rsefrlg"",98,""Saffron City"",""pokeapi-index""]]}",1
+502556,location,"[""scufib-chamber""]",*,1016,"{""identifier"":""scufib-chamber"",""region"":""kanto""}",1
+502557,location,"[""scufib-chamber""]",*,1020,"{""met"":[[""rsefrlg"",192,""Scufib Chamber"",""pokeapi-index""]]}",1
+502558,location,"[""seafloor-cavern""]",*,1016,"{""identifier"":""seafloor-cavern"",""region"":""hoenn""}",1
+502559,location,"[""seafloor-cavern""]",*,1020,"{""met"":[[""rsefrlg"",68,""Seafloor Cavern"",""pokeapi-index""]]}",1
+502560,location,"[""seafoam-islands""]",*,1020,"{""met"":[[""rsefrlg"",139,""Seafoam Islands"",""pokeapi-index""]]}",1
+502561,location,"[""sevault-canyon""]",*,1016,"{""identifier"":""sevault-canyon"",""region"":""kanto""}",1
+502562,location,"[""sevault-canyon""]",*,1020,"{""met"":[[""rsefrlg"",169,""Sevault Canyon"",""pokeapi-index""]]}",1
+502563,location,"[""shoal-cave""]",*,1016,"{""identifier"":""shoal-cave"",""region"":""hoenn""}",1
+502564,location,"[""shoal-cave""]",*,1020,"{""met"":[[""rsefrlg"",67,""Shoal Cave"",""pokeapi-index""]]}",1
+502565,location,"[""silph-co""]",*,1020,"{""met"":[[""rsefrlg"",134,""Silph Co."",""created""]]}",1
+502566,location,"[""sky-pillar""]",*,1016,"{""identifier"":""sky-pillar"",""region"":""hoenn""}",1
+502567,location,"[""sky-pillar""]",*,1020,"{""met"":[[""rsefrlg"",85,""Sky Pillar"",""pokeapi-index""]]}",1
+502568,location,"[""slateport-city""]",*,1016,"{""identifier"":""slateport-city"",""region"":""hoenn""}",1
+502569,location,"[""slateport-city""]",*,1020,"{""met"":[[""rsefrlg"",8,""Slateport City"",""pokeapi-index""]]}",1
+502570,location,"[""sootopolis-city""]",*,1016,"{""identifier"":""sootopolis-city"",""region"":""hoenn""}",1
+502571,location,"[""sootopolis-city""]",*,1020,"{""met"":[[""rsefrlg"",14,""Sootopolis City"",""pokeapi-index""]]}",1
+502572,location,"[""southern-island""]",*,1016,"{""identifier"":""southern-island"",""region"":""hoenn""}",1
+502573,location,"[""southern-island""]",*,1020,"{""met"":[[""rsefrlg"",73,""Southern Island"",""pokeapi-index""]]}",1
+502574,location,"[""ss-anne""]",*,1016,"{""identifier"":""ss-anne"",""region"":""kanto""}",1
+502575,location,"[""ss-anne""]",*,1020,"{""met"":[[""rsefrlg"",128,""S.S. Anne"",""pokeapi-index""]]}",1
+502576,location,"[""tanoby-ruins""]",*,1016,"{""identifier"":""tanoby-ruins"",""region"":""kanto""}",1
+502577,location,"[""tanoby-ruins""]",*,1020,"{""met"":[[""rsefrlg"",170,""Tanoby Ruins"",""pokeapi-index""]]}",1
+502578,location,"[""team-aqua-hideout""]",*,1016,"{""identifier"":""team-aqua-hideout"",""region"":""hoenn""}",1
+502579,location,"[""team-aqua-hideout""]",*,1020,"{""met"":[[""rsefrlg"",66,""Hideout"",""pokeapi-index-version""],[""rsefrlg"",197,""Aqua Hideout"",""pokeapi-name""]]}",1
+502580,location,"[""team-magma-hideout""]",*,1016,"{""identifier"":""team-magma-hideout"",""region"":""hoenn""}",1
+502581,location,"[""team-magma-hideout""]",*,1020,"{""met"":[[""rsefrlg"",66,""Hideout"",""pokeapi-index-version""]]}",1
+502582,location,"[""terra-cave""]",*,1016,"{""identifier"":""terra-cave"",""region"":""hoenn""}",1
+502583,location,"[""terra-cave""]",*,1020,"{""met"":[[""rsefrlg"",205,""Terra Cave"",""pokeapi-index""]]}",1
+502584,location,"[""three-isle-port""]",*,1016,"{""identifier"":""three-isle-port"",""region"":""kanto""}",1
+502585,location,"[""three-isle-port""]",*,1020,"{""met"":[[""rsefrlg"",154,""Three Isle Port"",""pokeapi-index""]]}",1
+502586,location,"[""trainer-tower-exterior""]",*,1020,"{""met"":[[""rsefrlg"",167,""Trainer Tower (exterior)"",""created""]]}",1
+502587,location,"[""treasure-beach""]",*,1016,"{""identifier"":""treasure-beach"",""region"":""kanto""}",1
+502588,location,"[""treasure-beach""]",*,1020,"{""met"":[[""rsefrlg"",151,""Treasure Beach"",""pokeapi-index""]]}",1
+502589,location,"[""underwater-route-124""]",*,1020,"{""met"":[[""rsefrlg"",50,""Underwater (Route 124)"",""created""]]}",1
+502590,location,"[""underwater-route-126""]",*,1020,"{""met"":[[""rsefrlg"",51,""Underwater (Route 126)"",""created""]]}",1
+502591,location,"[""vermilion-city""]",*,1020,"{""en"":""Vermilion City"",""gen2_index"":61,""met"":[[""rsefrlg"",93,""Vermilion City"",""pokeapi-index""]]}",1
+502592,location,"[""viapos-chamber""]",*,1016,"{""identifier"":""viapos-chamber"",""region"":""kanto""}",1
+502593,location,"[""viapos-chamber""]",*,1020,"{""met"":[[""rsefrlg"",194,""Viapois Chamber"",""pokeapi-index""]]}",1
+502594,location,"[""viridian-city""]",*,1020,"{""en"":""Viridian City"",""gen2_index"":49,""met"":[[""rsefrlg"",89,""Viridian City"",""pokeapi-index""]]}",1
+502595,location,"[""viridian-forest""]",*,1020,"{""met"":[[""rsefrlg"",126,""Viridian Forest"",""pokeapi-index""]]}",1
+502596,location,"[""water-labyrinth""]",*,1016,"{""identifier"":""water-labyrinth"",""region"":""kanto""}",1
+502597,location,"[""water-labyrinth""]",*,1020,"{""met"":[[""rsefrlg"",160,""Water Labyrinth"",""pokeapi-index""]]}",1
+502598,location,"[""water-path""]",*,1016,"{""identifier"":""water-path"",""region"":""kanto""}",1
+502599,location,"[""water-path""]",*,1020,"{""met"":[[""rsefrlg"",165,""Water Path"",""pokeapi-index""]]}",1
+502600,location,"[""weepth-chamber""]",*,1016,"{""identifier"":""weepth-chamber"",""region"":""kanto""}",1
+502601,location,"[""weepth-chamber""]",*,1020,"{""met"":[[""rsefrlg"",190,""Weepth Chamber"",""pokeapi-index""]]}",1

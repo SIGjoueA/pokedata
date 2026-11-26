@@ -10,9 +10,9 @@ Base de données Pokémon ouverte, vérifiée et multilingue (ja, en, fr, de, it
 
 ## Contenu
 
-Espèces (1025) et formes (1588) pour chaque jeu du périmètre (Rouge/Bleu → Légendes Z-A et leurs DLC), avec types, statistiques, talents, taille, poids, taux de capture, EV, groupes d'œufs, sexe, croissance, et les noms officiels dans chaque langue où le jeu est sorti (`game_language`). Évolutions, Pokédex régionaux, catégories ; capacités (valeurs par jeu, CT/CS/DT, noms et descriptions de jeu) ; movesets par jeu et par méthode ; lieux, rencontres, disponibilité par version et règles de chromatiques (phase 3, publiée par lots : générations 1 et 2 pour l'instant).
+Espèces (1025) et formes (1588) pour chaque jeu du périmètre (Rouge/Bleu → Légendes Z-A et leurs DLC), avec types, statistiques, talents, taille, poids, taux de capture, EV, groupes d'œufs, sexe, croissance, et les noms officiels dans chaque langue où le jeu est sorti (`game_language`). Évolutions, Pokédex régionaux, catégories ; capacités (valeurs par jeu, CT/CS/DT, noms et descriptions de jeu) ; movesets par jeu et par méthode ; lieux, rencontres, disponibilité par version et règles de chromatiques (phase 3, publiée par lots : générations 1 à 3 pour l'instant).
 
-Prévu ensuite : lieux et rencontres des générations 3 à 9 (DLC compris), objets, GO, tables des types, combats. Voir [`docs/plan.md`](docs/plan.md).
+Prévu ensuite : lieux et rencontres des générations 4 à 9 (DLC compris), objets, GO, tables des types, combats. Voir [`docs/plan.md`](docs/plan.md).
 
 ## Vérification
 
@@ -28,7 +28,7 @@ Chaque valeur a une provenance (`citation` → `source_document`, avec empreinte
 
 Les movesets (`learnset`) sont vérifiés par ensemble forme × jeu × méthode (schéma 1.1.0) : une ligne de `verification` par ensemble, avec l'empreinte de la liste ; les capacités en plus ou en moins selon chaque source de contrôle sont dans `discrepancy`.
 
-Les rencontres (`encounter`) suivent la même convention, par ensemble zone × version × méthode ; la disponibilité (`availability`) et les lieux sont vérifiés ligne par ligne.
+Les rencontres (`encounter`) suivent la même convention, par ensemble zone × version × méthode ; la disponibilité (`availability`) et les lieux sont vérifiés ligne par ligne. À partir de la génération 3, le lieu enregistré par le jeu fait foi ; la provenance du placement est citée. Schéma 1.2.0 (migration 0003) : statut de disponibilité `npc-trade` pour les échanges en jeu.
 
 Les désaccords entre sources sont conservés dans `discrepancy` (et dans l'API, champ `discrepancies`). Une valeur déjà vérifiée n'est re-vérifiée que si son empreinte change. Aucun texte rédigé par un wiki n'est stocké : uniquement des faits et des textes officiels des jeux.
 
@@ -50,7 +50,7 @@ Adresses = identifiants du Pokédex (numéro national, `{numéro}-{forme}` pour 
 | `api/v1/machine/{game_id}.json` | liste des CT/CS/DT d'un jeu `[libellé, id de capacité]` |
 | `api/v1/learnset/{form_id}.json` | movesets d'une forme par jeu et par méthode (`level-up`, `egg`, `machine`, `tutor`, `reminder`, `mastery`, `plus`) : `[id de capacité, niveau]`, plus l'id de version si la capacité n'existe que dans une version ; écarts des sources de contrôle dans `discrepancies` |
 | `api/v1/location/index.json`, `location/{game_id}.json` | lieux d'un jeu : identifiant stable (`kanto-route-3` ≠ `hoenn-route-3`), région, noms de jeu dans les langues du jeu, anciens noms du Pokédex (`aliases.pokedex-legacy`), rencontres par version (méthode, niveaux, conditions), écarts des sources de contrôle |
-| `api/v1/pokemon/{id}/locations.json` | pour chaque forme et version : disponibilité (`wild`, `gift`, `evolve`, `breed`, `trade-version-exclusive`, `transfer`, `event`, `unobtainable`, avec `detail`) et rencontres avec leur lieu |
+| `api/v1/pokemon/{id}/locations.json` | pour chaque forme et version : disponibilité (`wild`, `gift`, `npc-trade`, `evolve`, `breed`, `trade-version-exclusive`, `transfer`, `event`, `unobtainable`, avec `detail`), rencontres avec leur lieu (`placement` / `access` quand le lieu ne vient pas du jeu ou demande un objet distribué) et, pour une version DLC, `arrives_with` (jeu de base ou DLC qui apporte la forme) |
 | `api/v1/type/index.json`, `game/index.json`, `game/{id}.json` | référentiels (`game/{id}.json` : règles et verrous de chromatiques) |
 | `api/v1/search/{lang}.json` | index de recherche `[nom normalisé, nom, id]` |
 | `api/v1/meta/{sources,changelog,verification,languages}.json` | provenance, journal, statuts |

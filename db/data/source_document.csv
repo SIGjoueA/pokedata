@@ -1023,3 +1023,4 @@ id,source_id,locator,revision,retrieved_at,content_sha256
 1022,bulbapedia,https://bulbapedia.bulbagarden.net/wiki/Gift_Pok%C3%A9mon (oldid 4671301),4671301,2026-11-26T05:44:27Z,e78ed20d7ac3b365086fd29adb27441618bd58aca2dca847eb3367e04e734d3b
 1023,bulbapedia,https://bulbapedia.bulbagarden.net/wiki/Shiny_Pok%C3%A9mon (oldid 4674998),4674998,2026-11-26T05:44:27Z,9bfb34e480c6cfbfa5226e8f760cdc8962fe53c8034ebc22370bec56b8fdd02a
 1024,pokepedia,https://www.pokepedia.fr/Pok%C3%A9mon_chromatique (oldid 3623845),3623845,2026-11-26T05:44:27Z,05ec3647985930bb3a41c141e2f2cd72bb5def2caefe47f308afade8bbb7ffd4
+1025,pkhex,PKHeX.Core 26.10.18 · Encounters3 (encounters_3.json),PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,fd03479fdf3ad0ddd117fa5777c77338ec118474022fca9134949f4630cf8c21

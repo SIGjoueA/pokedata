@@ -4707,6 +4707,54 @@ item,2232,name,ja,,,ふくごうきんぞく,1
 item,2232,name,ko,,,복합금속,1
 item,2232,name,zh-Hans,,,复合金属,1
 item,2232,name,zh-Hant,,,複合金屬,1
+location,abandoned-ship,name,de,,,Schiffswrack,1
+location,abandoned-ship,name,de,e,,Schiffswrack,1
+location,abandoned-ship,name,de,rs,,Schiffswrack,1
+location,abandoned-ship,name,en,,,Abandoned Ship,1
+location,abandoned-ship,name,en,e,,Abandoned Ship,1
+location,abandoned-ship,name,en,rs,,Abandoned Ship,1
+location,abandoned-ship,name,es,,,Nao Abandonada,1
+location,abandoned-ship,name,es,e,,Nao Abandonada,1
+location,abandoned-ship,name,es,rs,,Nao Abandonada,1
+location,abandoned-ship,name,fr,,,Épave,1
+location,abandoned-ship,name,fr,e,,Épave,1
+location,abandoned-ship,name,fr,rs,,Épave,1
+location,abandoned-ship,name,it,,,Vecchia Nave,1
+location,abandoned-ship,name,it,e,,Vecchia Nave,1
+location,abandoned-ship,name,it,rs,,Vecchia Nave,1
+location,abandoned-ship,name,ja,,,すてられぶね,1
+location,abandoned-ship,name,ja,e,,すてられぶね,1
+location,abandoned-ship,name,ja,rs,,すてられぶね,1
+location,ancient-tomb,name,de,,,Grabmal,1
+location,ancient-tomb,name,de,e,,Grabmal,1
+location,ancient-tomb,name,de,rs,,Grabmal,1
+location,ancient-tomb,name,en,,,Ancient Tomb,1
+location,ancient-tomb,name,en,e,,Ancient Tomb,1
+location,ancient-tomb,name,en,rs,,Ancient Tomb,1
+location,ancient-tomb,name,es,,,Tumba Antigua,1
+location,ancient-tomb,name,es,e,,Tumba Antigua,1
+location,ancient-tomb,name,es,rs,,Tumba Antigua,1
+location,ancient-tomb,name,fr,,,Tombeau Antique,1
+location,ancient-tomb,name,fr,e,,Tombeau Antique,1
+location,ancient-tomb,name,fr,rs,,Tombeau Antique,1
+location,ancient-tomb,name,it,,,Tomba Antica,1
+location,ancient-tomb,name,it,e,,Tomba Antica,1
+location,ancient-tomb,name,it,rs,,Tomba Antica,1
+location,ancient-tomb,name,ja,,,こだいづか,1
+location,ancient-tomb,name,ja,e,,こだいづか,1
+location,ancient-tomb,name,ja,rs,,こだいづか,1
+location,artisan-cave,name,de,,,Höhlenatelier,1
+location,artisan-cave,name,de,e,,Höhlenatelier,1
+location,artisan-cave,name,en,,,Artisan Cave,1
+location,artisan-cave,name,en,e,,Artisan Cave,1
+location,artisan-cave,name,es,,,Cueva Taller,1
+location,artisan-cave,name,es,e,,Cueva Taller,1
+location,artisan-cave,name,fr,,,Grotte Atelier,1
+location,artisan-cave,name,fr,e,,Grotte Atelier,1
+location,artisan-cave,name,it,,,Grotta Artistica,1
+location,artisan-cave,name,it,e,,Grotta Artistica,1
+location,artisan-cave,name,ja,,,アトリエのあな,1
+location,artisan-cave,name,ja,e,,アトリエのあな,1
 location,azalea-town,name,de,,,Azalea City,1
 location,azalea-town,name,de,c,,Azalea City,1
 location,azalea-town,name,de,gs,,Azalea City,1
@@ -4747,6 +4795,24 @@ location,bell-tower,name,ja,c,,スズのとう,1
 location,bell-tower,name,ja,gs,,スズのとう,1
 location,bell-tower,name,ko,,,방울탑,1
 location,bell-tower,name,ko,gs,,방울탑,1
+location,berry-forest,name,de,,,Beerenforst,1
+location,berry-forest,name,de,frlg,,Beerenforst,1
+location,berry-forest,name,en,,,Berry Forest,1
+location,berry-forest,name,en,frlg,,Berry Forest,1
+location,berry-forest,name,es,,,Bosque Baya,1
+location,berry-forest,name,es,frlg,,Bosque Baya,1
+location,berry-forest,name,fr,,,Bois Baies,1
+location,berry-forest,name,fr,frlg,,Bois Baies,1
+location,berry-forest,name,it,,,Bosco Baccoso,1
+location,berry-forest,name,it,frlg,,Bosco Baccoso,1
+location,berry-forest,name,ja,,,きのみのもり,1
+location,berry-forest,name,ja,frlg,,きのみのもり,1
+location,birth-island,name,en,,,Birth Island,1
+location,birth-island,name,en,e,,Birth Island,1
+location,birth-island,name,en,frlg,,Birth Island,1
+location,birth-island,name,ja,,,たんじょうのしま,1
+location,birth-island,name,ja,e,,たんじょうのしま,1
+location,birth-island,name,ja,frlg,,たんじょうのしま,1
 location,blackthorn-city,name,de,,,Ebenholz City,1
 location,blackthorn-city,name,de,c,,Ebenholz City,1
 location,blackthorn-city,name,de,gs,,Ebenholz City,1
@@ -4767,6 +4833,18 @@ location,blackthorn-city,name,ja,c,,フスベシティ,1
 location,blackthorn-city,name,ja,gs,,フスベシティ,1
 location,blackthorn-city,name,ko,,,검은먹시티,1
 location,blackthorn-city,name,ko,gs,,검은먹시티,1
+location,bond-bridge,name,de,,,Bundbrücke,1
+location,bond-bridge,name,de,frlg,,Bundbrücke,1
+location,bond-bridge,name,en,,,Bond Bridge,1
+location,bond-bridge,name,en,frlg,,Bond Bridge,1
+location,bond-bridge,name,es,,,Puente Unión,1
+location,bond-bridge,name,es,frlg,,Puente Unión,1
+location,bond-bridge,name,fr,,,Pont du Lien,1
+location,bond-bridge,name,fr,frlg,,Pont du Lien,1
+location,bond-bridge,name,it,,,Ponte Abbraccio,1
+location,bond-bridge,name,it,frlg,,Ponte Abbraccio,1
+location,bond-bridge,name,ja,,,きずなばし,1
+location,bond-bridge,name,ja,frlg,,きずなばし,1
 location,burned-tower,name,de,,,Turmruine,1
 location,burned-tower,name,de,c,,Turmruine,1
 location,burned-tower,name,de,gs,,Turmruine,1
@@ -4787,52 +4865,109 @@ location,burned-tower,name,ja,c,,やけたとう,1
 location,burned-tower,name,ja,gs,,やけたとう,1
 location,burned-tower,name,ko,,,불탄탑,1
 location,burned-tower,name,ko,gs,,불탄 탑,1
+location,canyon-entrance,name,de,,,Schluchteingang,1
+location,canyon-entrance,name,de,frlg,,Schluchteingang,1
+location,canyon-entrance,name,en,,,Canyon Entrance,1
+location,canyon-entrance,name,en,frlg,,Canyon Entrance,1
+location,canyon-entrance,name,es,,,Entrada al Cañón,1
+location,canyon-entrance,name,es,frlg,,Entrada al Cañón,1
+location,canyon-entrance,name,fr,,,Entrée Canyon,1
+location,canyon-entrance,name,fr,frlg,,Entrée Canyon,1
+location,canyon-entrance,name,it,,,Ingresso Canyon,1
+location,canyon-entrance,name,it,frlg,,Ingresso Canyon,1
+location,canyon-entrance,name,ja,,,けいこくいりぐち,1
+location,canyon-entrance,name,ja,frlg,,けいこくいりぐち,1
+location,cape-brink,name,de,,,Kap Kante,1
+location,cape-brink,name,de,frlg,,Kap Kante,1
+location,cape-brink,name,en,,,Cape Brink,1
+location,cape-brink,name,en,frlg,,Cape Brink,1
+location,cape-brink,name,es,,,Cabo Extremo,1
+location,cape-brink,name,es,frlg,,Cabo Extremo,1
+location,cape-brink,name,fr,,,Cap Falaise,1
+location,cape-brink,name,fr,frlg,,Cap Falaise,1
+location,cape-brink,name,it,,,Capo Estremo,1
+location,cape-brink,name,it,frlg,,Capo Estremo,1
+location,cape-brink,name,ja,,,きわのみさき,1
+location,cape-brink,name,ja,frlg,,きわのみさき,1
+location,cave-of-origin,name,de,,,Urzeithöhle,1
+location,cave-of-origin,name,de,e,,Urzeithöhle,1
+location,cave-of-origin,name,de,rs,,Urzeithöhle,1
+location,cave-of-origin,name,en,,,Cave of Origin,1
+location,cave-of-origin,name,en,e,,Cave of Origin,1
+location,cave-of-origin,name,en,rs,,Cave of Origin,1
+location,cave-of-origin,name,es,,,Cueva Ancestral,1
+location,cave-of-origin,name,es,e,,Cueva Ancestral,1
+location,cave-of-origin,name,es,rs,,Cueva Ancestral,1
+location,cave-of-origin,name,fr,,,Grotte Origine,1
+location,cave-of-origin,name,fr,e,,Grotte Origine,1
+location,cave-of-origin,name,fr,rs,,Grotte Origine,1
+location,cave-of-origin,name,it,,,Grotta dei Tempi,1
+location,cave-of-origin,name,it,e,,Grotta dei Tempi,1
+location,cave-of-origin,name,it,rs,,Grotta dei Tempi,1
+location,cave-of-origin,name,ja,,,めざめのほこら,1
+location,cave-of-origin,name,ja,e,,めざめのほこら,1
+location,cave-of-origin,name,ja,rs,,めざめのほこら,1
 location,celadon-city,name,de,,,Prismania City,1
 location,celadon-city,name,de,c,,Prismania City,1
+location,celadon-city,name,de,frlg,,Prismania City,1
 location,celadon-city,name,de,gs,,Prismania City,1
 location,celadon-city,name,en,,,Celadon City,1
 location,celadon-city,name,en,c,,Celadon City,1
+location,celadon-city,name,en,frlg,,Celadon City,1
 location,celadon-city,name,en,gs,,Celadon City,1
 location,celadon-city,name,es,,,Ciudad Azulona,1
 location,celadon-city,name,es,c,,Ciudad Azulona,1
+location,celadon-city,name,es,frlg,,Ciudad Azulona,1
 location,celadon-city,name,es,gs,,Ciudad Azulona,1
 location,celadon-city,name,fr,,,Céladopole,1
 location,celadon-city,name,fr,c,,Céladopole,1
+location,celadon-city,name,fr,frlg,,Céladopole,1
 location,celadon-city,name,fr,gs,,Céladopole,1
 location,celadon-city,name,it,,,Azzurropoli,1
 location,celadon-city,name,it,c,,Azzurropoli,1
+location,celadon-city,name,it,frlg,,Azzurropoli,1
 location,celadon-city,name,it,gs,,Azzurropoli,1
 location,celadon-city,name,ja,,,タマムシシティ,1
 location,celadon-city,name,ja,c,,タマムシシティ,1
+location,celadon-city,name,ja,frlg,,タマムシシティ,1
 location,celadon-city,name,ja,gs,,タマムシシティ,1
-location,celadon-city,name,ko,,,무지개시티,1
 location,celadon-city,name,ko,gs,,무지개시티,1
 location,cerulean-cave,name,de,,,Azuria-Höhle,1
+location,cerulean-cave,name,de,frlg,,Azuria-Höhle,1
 location,cerulean-cave,name,en,,,Cerulean Cave,1
+location,cerulean-cave,name,en,frlg,,Cerulean Cave,1
 location,cerulean-cave,name,es,,,Cueva Celeste,1
+location,cerulean-cave,name,es,frlg,,Cueva Celeste,1
 location,cerulean-cave,name,fr,,,Caverne Azurée,1
+location,cerulean-cave,name,fr,frlg,,Caverne Azurée,1
 location,cerulean-cave,name,it,,,Grotta Celeste,1
+location,cerulean-cave,name,it,frlg,,Grotta Celeste,1
 location,cerulean-cave,name,ja,,,ハナダのどうくつ,1
-location,cerulean-cave,name,ko,,,블루시티동굴,1
+location,cerulean-cave,name,ja,frlg,,ハナダのどうくつ,1
 location,cerulean-city,name,de,,,Azuria City,1
 location,cerulean-city,name,de,c,,Azuria City,1
+location,cerulean-city,name,de,frlg,,Azuria City,1
 location,cerulean-city,name,de,gs,,Azuria City,1
 location,cerulean-city,name,en,,,Cerulean City,1
 location,cerulean-city,name,en,c,,Cerulean City,1
+location,cerulean-city,name,en,frlg,,Cerulean City,1
 location,cerulean-city,name,en,gs,,Cerulean City,1
 location,cerulean-city,name,es,,,Ciudad Celeste,1
 location,cerulean-city,name,es,c,,Ciudad Celeste,1
+location,cerulean-city,name,es,frlg,,Ciudad Celeste,1
 location,cerulean-city,name,es,gs,,Ciudad Celeste,1
 location,cerulean-city,name,fr,,,Azuria,1
 location,cerulean-city,name,fr,c,,Azuria,1
+location,cerulean-city,name,fr,frlg,,Azuria,1
 location,cerulean-city,name,fr,gs,,Azuria,1
 location,cerulean-city,name,it,,,Celestopoli,1
 location,cerulean-city,name,it,c,,Celestopoli,1
+location,cerulean-city,name,it,frlg,,Celestopoli,1
 location,cerulean-city,name,it,gs,,Celestopoli,1
 location,cerulean-city,name,ja,,,ハナダシティ,1
 location,cerulean-city,name,ja,c,,ハナダシティ,1
+location,cerulean-city,name,ja,frlg,,ハナダシティ,1
 location,cerulean-city,name,ja,gs,,ハナダシティ,1
-location,cerulean-city,name,ko,,,블루시티,1
 location,cerulean-city,name,ko,gs,,블루시티,1
 location,cherrygrove-city,name,de,,,Rosalia City,1
 location,cherrygrove-city,name,de,c,,Rosalia City,1
@@ -4876,23 +5011,28 @@ location,cianwood-city,name,ko,,,진청시티,1
 location,cianwood-city,name,ko,gs,,진청시티,1
 location,cinnabar-island,name,de,,,Zinnoberinsel,1
 location,cinnabar-island,name,de,c,,Zinnoberinsel,1
+location,cinnabar-island,name,de,frlg,,Zinnoberinsel,1
 location,cinnabar-island,name,de,gs,,Zinnoberinsel,1
 location,cinnabar-island,name,en,,,Cinnabar Island,1
 location,cinnabar-island,name,en,c,,Cinnabar Island,1
+location,cinnabar-island,name,en,frlg,,Cinnabar Island,1
 location,cinnabar-island,name,en,gs,,Cinnabar Island,1
 location,cinnabar-island,name,es,,,Isla Canela,1
 location,cinnabar-island,name,es,c,,Isla Canela,1
+location,cinnabar-island,name,es,frlg,,Isla Canela,1
 location,cinnabar-island,name,es,gs,,Isla Canela,1
-location,cinnabar-island,name,fr,,,Cramois’Ile,1
+location,cinnabar-island,name,fr,,,Cramois'Île,1
 location,cinnabar-island,name,fr,c,,Cramois'Ile,1
+location,cinnabar-island,name,fr,frlg,,Cramois'Île,1
 location,cinnabar-island,name,fr,gs,,Cramois'Ile,1
 location,cinnabar-island,name,it,,,Isola Cannella,1
 location,cinnabar-island,name,it,c,,Isola Cannella,1
+location,cinnabar-island,name,it,frlg,,Isola Cannella,1
 location,cinnabar-island,name,it,gs,,Isola Cannella,1
-location,cinnabar-island,name,ja,,,グレンタウン,1
+location,cinnabar-island,name,ja,,,グレンじま,1
 location,cinnabar-island,name,ja,c,,グレンじま,1
+location,cinnabar-island,name,ja,frlg,,グレンじま,1
 location,cinnabar-island,name,ja,gs,,グレンじま,1
-location,cinnabar-island,name,ko,,,홍련마을,1
 location,cinnabar-island,name,ko,gs,,홍련섬,1
 location,dark-cave,name,de,,,Dunkelhöhle,1
 location,dark-cave,name,de,c,,Dunkelhöhle,1
@@ -4914,26 +5054,91 @@ location,dark-cave,name,ja,c,,くらやみのほらあな,1
 location,dark-cave,name,ja,gs,,くらやみのほらあな,1
 location,dark-cave,name,ko,,,어둠의 동굴,1
 location,dark-cave,name,ko,gs,,어둠의 동굴,1
-location,digletts-cave,name,de,,,DIGDAs Höhle,1
+location,desert-ruins,name,de,,,Wüstenruine,1
+location,desert-ruins,name,de,e,,Wüstenruine,1
+location,desert-ruins,name,de,rs,,Wüstenruine,1
+location,desert-ruins,name,en,,,Desert Ruins,1
+location,desert-ruins,name,en,e,,Desert Ruins,1
+location,desert-ruins,name,en,rs,,Desert Ruins,1
+location,desert-ruins,name,es,,,Ruinas Desierto,1
+location,desert-ruins,name,es,e,,Ruinas Desierto,1
+location,desert-ruins,name,es,rs,,Ruinas Desierto,1
+location,desert-ruins,name,fr,,,Ruines Désert,1
+location,desert-ruins,name,fr,e,,Ruines Désert,1
+location,desert-ruins,name,fr,rs,,Ruines Désert,1
+location,desert-ruins,name,it,,,Rovine Sabbiose,1
+location,desert-ruins,name,it,e,,Rovine Sabbiose,1
+location,desert-ruins,name,it,rs,,Rovine Sabbiose,1
+location,desert-ruins,name,ja,,,さばくいせき,1
+location,desert-ruins,name,ja,e,,さばくいせき,1
+location,desert-ruins,name,ja,rs,,さばくいせき,1
+location,desert-underpass,name,de,,,Wüstentunnel,1
+location,desert-underpass,name,de,e,,Wüstentunnel,1
+location,desert-underpass,name,en,,,Desert Underpass,1
+location,desert-underpass,name,en,e,,Desert Underpass,1
+location,desert-underpass,name,es,,,Gruta Desértica,1
+location,desert-underpass,name,es,e,,Gruta Desértica,1
+location,desert-underpass,name,fr,,,Voie du Désert,1
+location,desert-underpass,name,fr,e,,Voie du Désert,1
+location,desert-underpass,name,it,,,Galleria Deserto,1
+location,desert-underpass,name,it,e,,Galleria Deserto,1
+location,desert-underpass,name,ja,,,さばくのちかどう,1
+location,desert-underpass,name,ja,e,,さばくのちかどう,1
+location,dewford-town,name,de,,,Faustauhaven,1
+location,dewford-town,name,de,e,,Faustauhaven,1
+location,dewford-town,name,de,rs,,Faustauhaven,1
+location,dewford-town,name,en,,,Dewford Town,1
+location,dewford-town,name,en,e,,Dewford Town,1
+location,dewford-town,name,en,rs,,Dewford Town,1
+location,dewford-town,name,es,,,Pueblo Azuliza,1
+location,dewford-town,name,es,e,,Pueblo Azuliza,1
+location,dewford-town,name,es,rs,,Pueblo Azuliza,1
+location,dewford-town,name,fr,,,Village Myokara,1
+location,dewford-town,name,fr,e,,Village Myokara,1
+location,dewford-town,name,fr,rs,,Village Myokara,1
+location,dewford-town,name,it,,,Bluruvia,1
+location,dewford-town,name,it,e,,Bluruvia,1
+location,dewford-town,name,it,rs,,Bluruvia,1
+location,dewford-town,name,ja,,,ムロタウン,1
+location,dewford-town,name,ja,e,,ムロタウン,1
+location,dewford-town,name,ja,rs,,ムロタウン,1
+location,digletts-cave,name,de,,,Digdas Höhle,1
 location,digletts-cave,name,de,c,,Digdas Höhle,1
+location,digletts-cave,name,de,frlg,,Digdas Höhle,1
 location,digletts-cave,name,de,gs,,Digdas Höhle,1
-location,digletts-cave,name,en,,,DIGLETT’s Cave,1
+location,digletts-cave,name,en,,,Diglett's Cave,1
 location,digletts-cave,name,en,c,,Diglett's Cave,1
+location,digletts-cave,name,en,frlg,,Diglett's Cave,1
 location,digletts-cave,name,en,gs,,Diglett's Cave,1
-location,digletts-cave,name,es,,,Cueva DIGLETT,1
+location,digletts-cave,name,es,,,Cueva Diglett,1
 location,digletts-cave,name,es,c,,Cueva Diglett,1
+location,digletts-cave,name,es,frlg,,Cueva Diglett,1
 location,digletts-cave,name,es,gs,,Cueva Diglett,1
-location,digletts-cave,name,fr,,,Cave TAUPIQUEUR,1
+location,digletts-cave,name,fr,,,Cave Taupiqueur,1
 location,digletts-cave,name,fr,c,,Cave Taupiqueur,1
+location,digletts-cave,name,fr,frlg,,Cave Taupiqueur,1
 location,digletts-cave,name,fr,gs,,Cave Taupiqueur,1
-location,digletts-cave,name,it,,,Grotta DIGLETT,1
+location,digletts-cave,name,it,,,Grotta Diglett,1
 location,digletts-cave,name,it,c,,Grotta Diglett,1
+location,digletts-cave,name,it,frlg,,Grotta Diglett,1
 location,digletts-cave,name,it,gs,,Grotta Diglett,1
 location,digletts-cave,name,ja,,,ディグダのあな,1
 location,digletts-cave,name,ja,c,,ディグダのあな,1
+location,digletts-cave,name,ja,frlg,,ディグダのあな,1
 location,digletts-cave,name,ja,gs,,ディグダのあな,1
-location,digletts-cave,name,ko,,,디그다의 굴,1
 location,digletts-cave,name,ko,gs,,디그다의 굴,1
+location,dilford-chamber,name,de,,,Vierzisse-Kammer,1
+location,dilford-chamber,name,de,frlg,,Vierzisse-Kammer,1
+location,dilford-chamber,name,en,,,Dilford Chamber,1
+location,dilford-chamber,name,en,frlg,,Dilford Chamber,1
+location,dilford-chamber,name,es,,,Cámara Quarciso,1
+location,dilford-chamber,name,es,frlg,,Cámara Quarciso,1
+location,dilford-chamber,name,fr,,,Chambre Jonquatr,1
+location,dilford-chamber,name,fr,frlg,,Chambre Jonquatr,1
+location,dilford-chamber,name,it,,,Sala D-afne,1
+location,dilford-chamber,name,it,frlg,,Sala D-afne,1
+location,dilford-chamber,name,ja,,,アレボカのせきしつ,1
+location,dilford-chamber,name,ja,frlg,,アレボカのせきしつ,1
 location,dragons-den,name,de,,,Drachenhöhle,1
 location,dragons-den,name,de,c,,Drachenhöhle,1
 location,dragons-den,name,de,gs,,Drachenhöhle,1
@@ -4974,25 +5179,120 @@ location,ecruteak-city,name,ja,c,,エンジュシティ,1
 location,ecruteak-city,name,ja,gs,,エンジュシティ,1
 location,ecruteak-city,name,ko,,,인주시티,1
 location,ecruteak-city,name,ko,gs,,인주시티,1
+location,ever-grande-city,name,de,,,Prachtpolis City,1
+location,ever-grande-city,name,de,e,,Prachtpolis City,1
+location,ever-grande-city,name,de,rs,,Prachtpolis City,1
+location,ever-grande-city,name,en,,,Ever Grande City,1
+location,ever-grande-city,name,en,e,,Ever Grande City,1
+location,ever-grande-city,name,en,rs,,Ever Grande City,1
+location,ever-grande-city,name,es,,,Ciudad Colosalia,1
+location,ever-grande-city,name,es,e,,Ciudad Colosalia,1
+location,ever-grande-city,name,es,rs,,Ciudad Colosalia,1
+location,ever-grande-city,name,fr,,,Éternara,1
+location,ever-grande-city,name,fr,e,,Éternara,1
+location,ever-grande-city,name,fr,rs,,Éternara,1
+location,ever-grande-city,name,it,,,Iridopoli,1
+location,ever-grande-city,name,it,e,,Iridopoli,1
+location,ever-grande-city,name,it,rs,,Iridopoli,1
+location,ever-grande-city,name,ja,,,サイユウシティ,1
+location,ever-grande-city,name,ja,e,,サイユウシティ,1
+location,ever-grande-city,name,ja,rs,,サイユウシティ,1
+location,faraway-island,name,de,,,Ferneiland,1
+location,faraway-island,name,de,e,,Ferneiland,1
+location,faraway-island,name,en,,,Faraway Island,1
+location,faraway-island,name,en,e,,Faraway Island,1
+location,faraway-island,name,es,,,Isla Suprema,1
+location,faraway-island,name,es,e,,Isla Suprema,1
+location,faraway-island,name,fr,,,Île Lointaine,1
+location,faraway-island,name,fr,e,,Île Lointaine,1
+location,faraway-island,name,it,,,Isola Suprema,1
+location,faraway-island,name,it,e,,Isola Suprema,1
+location,faraway-island,name,ja,,,さいはてのことう,1
+location,faraway-island,name,ja,e,,さいはてのことう,1
+location,fiery-path,name,de,,,Feuriger Pfad,1
+location,fiery-path,name,de,e,,Feuriger Pfad,1
+location,fiery-path,name,de,rs,,Feuriger Pfad,1
+location,fiery-path,name,en,,,Fiery Path,1
+location,fiery-path,name,en,e,,Fiery Path,1
+location,fiery-path,name,en,rs,,Fiery Path,1
+location,fiery-path,name,es,,,Senda Ígnea,1
+location,fiery-path,name,es,e,,Senda Ígnea,1
+location,fiery-path,name,es,rs,,Senda Ígnea,1
+location,fiery-path,name,fr,,,Chemin Ardent,1
+location,fiery-path,name,fr,e,,Chemin Ardent,1
+location,fiery-path,name,fr,rs,,Chemin Ardent,1
+location,fiery-path,name,it,,,Cammino Ardente,1
+location,fiery-path,name,it,e,,Cammino Ardente,1
+location,fiery-path,name,it,rs,,Cammino Ardente,1
+location,fiery-path,name,ja,,,ほのおのぬけみち,1
+location,fiery-path,name,ja,e,,ほのおのぬけみち,1
+location,fiery-path,name,ja,rs,,ほのおのぬけみち,1
+location,five-island,name,de,,,Eiland Fünf,1
+location,five-island,name,de,frlg,,Eiland Fünf,1
+location,five-island,name,en,,,Five Island,1
+location,five-island,name,en,frlg,,Five Island,1
+location,five-island,name,es,,,Isla Inta,1
+location,five-island,name,es,frlg,,Isla Inta,1
+location,five-island,name,fr,,,Île 5,1
+location,five-island,name,fr,frlg,,Île 5,1
+location,five-island,name,it,,,Quintisola,1
+location,five-island,name,it,frlg,,Quintisola,1
+location,five-island,name,ja,,,５のしま,1
+location,five-island,name,ja,frlg,,５のしま,1
+location,five-isle-meadow,name,de,,,Eiland 5-Weide,1
+location,five-isle-meadow,name,de,frlg,,Eiland 5-Weide,1
+location,five-isle-meadow,name,en,,,Five Isle Meadow,1
+location,five-isle-meadow,name,en,frlg,,Five Isle Meadow,1
+location,five-isle-meadow,name,es,,,Prado Isla Inta,1
+location,five-isle-meadow,name,es,frlg,,Prado Isla Inta,1
+location,five-isle-meadow,name,fr,,,Pré de l'Île 5,1
+location,five-isle-meadow,name,fr,frlg,,Pré de l'Île 5,1
+location,five-isle-meadow,name,it,,,Prato Quintisola,1
+location,five-isle-meadow,name,it,frlg,,Prato Quintisola,1
+location,five-isle-meadow,name,ja,,,５のしま　あきち,1
+location,five-isle-meadow,name,ja,frlg,,５のしま　あきち,1
+location,fortree-city,name,de,,,Baumhausen City,1
+location,fortree-city,name,en,,,Fortree City,1
+location,fortree-city,name,es,,,Ciudad Arborada,1
+location,fortree-city,name,fr,,,Cimetronelle,1
+location,fortree-city,name,it,,,Forestopoli,1
+location,fortree-city,name,ja,,,ヒワマキシティ,1
+location,four-island,name,de,,,Eiland Vier,1
+location,four-island,name,de,frlg,,Eiland Vier,1
+location,four-island,name,en,,,Four Island,1
+location,four-island,name,en,frlg,,Four Island,1
+location,four-island,name,es,,,Isla Quarta,1
+location,four-island,name,es,frlg,,Isla Quarta,1
+location,four-island,name,fr,,,Île 4,1
+location,four-island,name,fr,frlg,,Île 4,1
+location,four-island,name,it,,,Quartisola,1
+location,four-island,name,it,frlg,,Quartisola,1
+location,four-island,name,ja,,,４のしま,1
+location,four-island,name,ja,frlg,,４のしま,1
 location,fuchsia-city,name,de,,,Fuchsania City,1
 location,fuchsia-city,name,de,c,,Fuchsania City,1
+location,fuchsia-city,name,de,frlg,,Fuchsania City,1
 location,fuchsia-city,name,de,gs,,Fuchsania City,1
 location,fuchsia-city,name,en,,,Fuchsia City,1
 location,fuchsia-city,name,en,c,,Fuchsia City,1
+location,fuchsia-city,name,en,frlg,,Fuchsia City,1
 location,fuchsia-city,name,en,gs,,Fuchsia City,1
 location,fuchsia-city,name,es,,,Ciudad Fucsia,1
 location,fuchsia-city,name,es,c,,Ciudad Fucsia,1
+location,fuchsia-city,name,es,frlg,,Ciudad Fucsia,1
 location,fuchsia-city,name,es,gs,,Ciudad Fucsia,1
 location,fuchsia-city,name,fr,,,Parmanie,1
 location,fuchsia-city,name,fr,c,,Parmanie,1
+location,fuchsia-city,name,fr,frlg,,Parmanie,1
 location,fuchsia-city,name,fr,gs,,Parmanie,1
 location,fuchsia-city,name,it,,,Fucsiapoli,1
 location,fuchsia-city,name,it,c,,Fucsiapoli,1
+location,fuchsia-city,name,it,frlg,,Fucsiapoli,1
 location,fuchsia-city,name,it,gs,,Fucsiapoli,1
 location,fuchsia-city,name,ja,,,セキチクシティ,1
 location,fuchsia-city,name,ja,c,,セキチクシティ,1
+location,fuchsia-city,name,ja,frlg,,セキチクシティ,1
 location,fuchsia-city,name,ja,gs,,セキチクシティ,1
-location,fuchsia-city,name,ko,,,연분홍시티,1
 location,fuchsia-city,name,ko,gs,,연분홍시티,1
 location,goldenrod-city,name,de,,,Dukatia City,1
 location,goldenrod-city,name,de,c,,Dukatia City,1
@@ -5014,6 +5314,708 @@ location,goldenrod-city,name,ja,c,,コガネシティ,1
 location,goldenrod-city,name,ja,gs,,コガネシティ,1
 location,goldenrod-city,name,ko,,,금빛시티,1
 location,goldenrod-city,name,ko,gs,,금빛시티,1
+location,granite-cave,name,de,,,Granithöhle,1
+location,granite-cave,name,de,e,,Granithöhle,1
+location,granite-cave,name,de,rs,,Granithöhle,1
+location,granite-cave,name,en,,,Granite Cave,1
+location,granite-cave,name,en,e,,Granite Cave,1
+location,granite-cave,name,en,rs,,Granite Cave,1
+location,granite-cave,name,es,,,Cueva Granito,1
+location,granite-cave,name,es,e,,Cueva Granito,1
+location,granite-cave,name,es,rs,,Cueva Granito,1
+location,granite-cave,name,fr,,,Grotte Granite,1
+location,granite-cave,name,fr,e,,Grotte Granite,1
+location,granite-cave,name,fr,rs,,Grotte Granite,1
+location,granite-cave,name,it,,,Grotta Pietrosa,1
+location,granite-cave,name,it,e,,Grotta Pietrosa,1
+location,granite-cave,name,it,rs,,Grotta Pietrosa,1
+location,granite-cave,name,ja,,,いしのどうくつ,1
+location,granite-cave,name,ja,e,,いしのどうくつ,1
+location,granite-cave,name,ja,rs,,いしのどうくつ,1
+location,green-path,name,de,,,Grüner Pfad,1
+location,green-path,name,de,frlg,,Grüner Pfad,1
+location,green-path,name,en,,,Green Path,1
+location,green-path,name,en,frlg,,Green Path,1
+location,green-path,name,es,,,Vía Verde,1
+location,green-path,name,es,frlg,,Vía Verde,1
+location,green-path,name,fr,,,Chemin Vert,1
+location,green-path,name,fr,frlg,,Chemin Vert,1
+location,green-path,name,it,,,Via Verde,1
+location,green-path,name,it,frlg,,Via Verde,1
+location,green-path,name,ja,,,みどりのさんぽみち,1
+location,green-path,name,ja,frlg,,みどりのさんぽみち,1
+location,hoenn-altering-cave,name,de,,,Wandelhöhle (Sm),1
+location,hoenn-altering-cave,name,de,e,,Wandelhöhle (Sm),1
+location,hoenn-altering-cave,name,en,,,Altering Cave,1
+location,hoenn-altering-cave,name,en,e,,Altering Cave,1
+location,hoenn-altering-cave,name,es,,,Cueva Cambiante,1
+location,hoenn-altering-cave,name,es,e,,Cueva Cambiante,1
+location,hoenn-altering-cave,name,fr,,,Grotte Métamo,1
+location,hoenn-altering-cave,name,fr,e,,Grotte Métamo,1
+location,hoenn-altering-cave,name,it,,,Grotta Mutevole (S),1
+location,hoenn-altering-cave,name,it,e,,Grotta Mutevole (S),1
+location,hoenn-altering-cave,name,ja,,,へんげのどうくつ,1
+location,hoenn-altering-cave,name,ja,e,,へんげのどうくつ,1
+location,hoenn-battle-tower,name,de,,,Duellturm (RS) / Kampfzone (Sm),1
+location,hoenn-battle-tower,name,de,e,,Duellturm (RS) / Kampfzone (Sm),1
+location,hoenn-battle-tower,name,en,,,Battle Tower (RS) / Battle Frontier,1
+location,hoenn-battle-tower,name,en,e,,Battle Tower (RS) / Battle Frontier,1
+location,hoenn-battle-tower,name,es,,,Torre Batalla (RZ) / Frente Batalla,1
+location,hoenn-battle-tower,name,es,e,,Torre Batalla (RZ) / Frente Batalla,1
+location,hoenn-battle-tower,name,fr,,,Tour de Combat (RS) / Zone de Combat,1
+location,hoenn-battle-tower,name,fr,e,,Tour de Combat (RS) / Zone de Combat,1
+location,hoenn-battle-tower,name,it,,,Torre Lotta (RZ) / Parco Lotta (S),1
+location,hoenn-battle-tower,name,it,e,,Torre Lotta (RZ) / Parco Lotta (S),1
+location,hoenn-battle-tower,name,ja,,,バトルタワー (RS) / バトルフロンティア,1
+location,hoenn-battle-tower,name,ja,e,,バトルタワー (RS) / バトルフロンティア,1
+location,hoenn-route-101,name,de,,,Route 101,1
+location,hoenn-route-101,name,de,e,,Route 101,1
+location,hoenn-route-101,name,de,rs,,Route 101,1
+location,hoenn-route-101,name,en,,,Route 101,1
+location,hoenn-route-101,name,en,e,,Route 101,1
+location,hoenn-route-101,name,en,rs,,Route 101,1
+location,hoenn-route-101,name,es,,,Ruta 101,1
+location,hoenn-route-101,name,es,e,,Ruta 101,1
+location,hoenn-route-101,name,es,rs,,Ruta 101,1
+location,hoenn-route-101,name,fr,,,Route 101,1
+location,hoenn-route-101,name,fr,e,,Route 101,1
+location,hoenn-route-101,name,fr,rs,,Route 101,1
+location,hoenn-route-101,name,it,,,Percorso 101,1
+location,hoenn-route-101,name,it,e,,Percorso 101,1
+location,hoenn-route-101,name,it,rs,,Percorso 101,1
+location,hoenn-route-101,name,ja,,,１０１ばんどうろ,1
+location,hoenn-route-101,name,ja,e,,１０１ばんどうろ,1
+location,hoenn-route-101,name,ja,rs,,１０１ばんどうろ,1
+location,hoenn-route-102,name,de,,,Route 102,1
+location,hoenn-route-102,name,de,e,,Route 102,1
+location,hoenn-route-102,name,de,rs,,Route 102,1
+location,hoenn-route-102,name,en,,,Route 102,1
+location,hoenn-route-102,name,en,e,,Route 102,1
+location,hoenn-route-102,name,en,rs,,Route 102,1
+location,hoenn-route-102,name,es,,,Ruta 102,1
+location,hoenn-route-102,name,es,e,,Ruta 102,1
+location,hoenn-route-102,name,es,rs,,Ruta 102,1
+location,hoenn-route-102,name,fr,,,Route 102,1
+location,hoenn-route-102,name,fr,e,,Route 102,1
+location,hoenn-route-102,name,fr,rs,,Route 102,1
+location,hoenn-route-102,name,it,,,Percorso 102,1
+location,hoenn-route-102,name,it,e,,Percorso 102,1
+location,hoenn-route-102,name,it,rs,,Percorso 102,1
+location,hoenn-route-102,name,ja,,,１０２ばんどうろ,1
+location,hoenn-route-102,name,ja,e,,１０２ばんどうろ,1
+location,hoenn-route-102,name,ja,rs,,１０２ばんどうろ,1
+location,hoenn-route-103,name,de,,,Route 103,1
+location,hoenn-route-103,name,de,e,,Route 103,1
+location,hoenn-route-103,name,de,rs,,Route 103,1
+location,hoenn-route-103,name,en,,,Route 103,1
+location,hoenn-route-103,name,en,e,,Route 103,1
+location,hoenn-route-103,name,en,rs,,Route 103,1
+location,hoenn-route-103,name,es,,,Ruta 103,1
+location,hoenn-route-103,name,es,e,,Ruta 103,1
+location,hoenn-route-103,name,es,rs,,Ruta 103,1
+location,hoenn-route-103,name,fr,,,Route 103,1
+location,hoenn-route-103,name,fr,e,,Route 103,1
+location,hoenn-route-103,name,fr,rs,,Route 103,1
+location,hoenn-route-103,name,it,,,Percorso 103,1
+location,hoenn-route-103,name,it,e,,Percorso 103,1
+location,hoenn-route-103,name,it,rs,,Percorso 103,1
+location,hoenn-route-103,name,ja,,,１０３ばんどうろ,1
+location,hoenn-route-103,name,ja,e,,１０３ばんどうろ,1
+location,hoenn-route-103,name,ja,rs,,１０３ばんどうろ,1
+location,hoenn-route-104,name,de,,,Route 104,1
+location,hoenn-route-104,name,de,e,,Route 104,1
+location,hoenn-route-104,name,de,rs,,Route 104,1
+location,hoenn-route-104,name,en,,,Route 104,1
+location,hoenn-route-104,name,en,e,,Route 104,1
+location,hoenn-route-104,name,en,rs,,Route 104,1
+location,hoenn-route-104,name,es,,,Ruta 104,1
+location,hoenn-route-104,name,es,e,,Ruta 104,1
+location,hoenn-route-104,name,es,rs,,Ruta 104,1
+location,hoenn-route-104,name,fr,,,Route 104,1
+location,hoenn-route-104,name,fr,e,,Route 104,1
+location,hoenn-route-104,name,fr,rs,,Route 104,1
+location,hoenn-route-104,name,it,,,Percorso 104,1
+location,hoenn-route-104,name,it,e,,Percorso 104,1
+location,hoenn-route-104,name,it,rs,,Percorso 104,1
+location,hoenn-route-104,name,ja,,,１０４ばんどうろ,1
+location,hoenn-route-104,name,ja,e,,１０４ばんどうろ,1
+location,hoenn-route-104,name,ja,rs,,１０４ばんどうろ,1
+location,hoenn-route-105,name,de,,,Route 105,1
+location,hoenn-route-105,name,de,e,,Route 105,1
+location,hoenn-route-105,name,de,rs,,Route 105,1
+location,hoenn-route-105,name,en,,,Route 105,1
+location,hoenn-route-105,name,en,e,,Route 105,1
+location,hoenn-route-105,name,en,rs,,Route 105,1
+location,hoenn-route-105,name,es,,,Ruta 105,1
+location,hoenn-route-105,name,es,e,,Ruta 105,1
+location,hoenn-route-105,name,es,rs,,Ruta 105,1
+location,hoenn-route-105,name,fr,,,Chenal 105,1
+location,hoenn-route-105,name,fr,e,,Chenal 105,1
+location,hoenn-route-105,name,fr,rs,,Chenal 105,1
+location,hoenn-route-105,name,it,,,Percorso 105,1
+location,hoenn-route-105,name,it,e,,Percorso 105,1
+location,hoenn-route-105,name,it,rs,,Percorso 105,1
+location,hoenn-route-105,name,ja,,,１０５ばんすいどう,1
+location,hoenn-route-105,name,ja,e,,１０５ばんすいどう,1
+location,hoenn-route-105,name,ja,rs,,１０５ばんすいどう,1
+location,hoenn-route-106,name,de,,,Route 106,1
+location,hoenn-route-106,name,de,e,,Route 106,1
+location,hoenn-route-106,name,de,rs,,Route 106,1
+location,hoenn-route-106,name,en,,,Route 106,1
+location,hoenn-route-106,name,en,e,,Route 106,1
+location,hoenn-route-106,name,en,rs,,Route 106,1
+location,hoenn-route-106,name,es,,,Ruta 106,1
+location,hoenn-route-106,name,es,e,,Ruta 106,1
+location,hoenn-route-106,name,es,rs,,Ruta 106,1
+location,hoenn-route-106,name,fr,,,Chenal 106,1
+location,hoenn-route-106,name,fr,e,,Chenal 106,1
+location,hoenn-route-106,name,fr,rs,,Chenal 106,1
+location,hoenn-route-106,name,it,,,Percorso 106,1
+location,hoenn-route-106,name,it,e,,Percorso 106,1
+location,hoenn-route-106,name,it,rs,,Percorso 106,1
+location,hoenn-route-106,name,ja,,,１０６ばんすいどう,1
+location,hoenn-route-106,name,ja,e,,１０６ばんすいどう,1
+location,hoenn-route-106,name,ja,rs,,１０６ばんすいどう,1
+location,hoenn-route-107,name,de,,,Route 107,1
+location,hoenn-route-107,name,de,e,,Route 107,1
+location,hoenn-route-107,name,de,rs,,Route 107,1
+location,hoenn-route-107,name,en,,,Route 107,1
+location,hoenn-route-107,name,en,e,,Route 107,1
+location,hoenn-route-107,name,en,rs,,Route 107,1
+location,hoenn-route-107,name,es,,,Ruta 107,1
+location,hoenn-route-107,name,es,e,,Ruta 107,1
+location,hoenn-route-107,name,es,rs,,Ruta 107,1
+location,hoenn-route-107,name,fr,,,Chenal 107,1
+location,hoenn-route-107,name,fr,e,,Chenal 107,1
+location,hoenn-route-107,name,fr,rs,,Chenal 107,1
+location,hoenn-route-107,name,it,,,Percorso 107,1
+location,hoenn-route-107,name,it,e,,Percorso 107,1
+location,hoenn-route-107,name,it,rs,,Percorso 107,1
+location,hoenn-route-107,name,ja,,,１０７ばんすいどう,1
+location,hoenn-route-107,name,ja,e,,１０７ばんすいどう,1
+location,hoenn-route-107,name,ja,rs,,１０７ばんすいどう,1
+location,hoenn-route-108,name,de,,,Route 108,1
+location,hoenn-route-108,name,de,e,,Route 108,1
+location,hoenn-route-108,name,de,rs,,Route 108,1
+location,hoenn-route-108,name,en,,,Route 108,1
+location,hoenn-route-108,name,en,e,,Route 108,1
+location,hoenn-route-108,name,en,rs,,Route 108,1
+location,hoenn-route-108,name,es,,,Ruta 108,1
+location,hoenn-route-108,name,es,e,,Ruta 108,1
+location,hoenn-route-108,name,es,rs,,Ruta 108,1
+location,hoenn-route-108,name,fr,,,Chenal 108,1
+location,hoenn-route-108,name,fr,e,,Chenal 108,1
+location,hoenn-route-108,name,fr,rs,,Chenal 108,1
+location,hoenn-route-108,name,it,,,Percorso 108,1
+location,hoenn-route-108,name,it,e,,Percorso 108,1
+location,hoenn-route-108,name,it,rs,,Percorso 108,1
+location,hoenn-route-108,name,ja,,,１０８ばんすいどう,1
+location,hoenn-route-108,name,ja,e,,１０８ばんすいどう,1
+location,hoenn-route-108,name,ja,rs,,１０８ばんすいどう,1
+location,hoenn-route-109,name,de,,,Route 109,1
+location,hoenn-route-109,name,de,e,,Route 109,1
+location,hoenn-route-109,name,de,rs,,Route 109,1
+location,hoenn-route-109,name,en,,,Route 109,1
+location,hoenn-route-109,name,en,e,,Route 109,1
+location,hoenn-route-109,name,en,rs,,Route 109,1
+location,hoenn-route-109,name,es,,,Ruta 109,1
+location,hoenn-route-109,name,es,e,,Ruta 109,1
+location,hoenn-route-109,name,es,rs,,Ruta 109,1
+location,hoenn-route-109,name,fr,,,Chenal 109,1
+location,hoenn-route-109,name,fr,e,,Chenal 109,1
+location,hoenn-route-109,name,fr,rs,,Chenal 109,1
+location,hoenn-route-109,name,it,,,Percorso 109,1
+location,hoenn-route-109,name,it,e,,Percorso 109,1
+location,hoenn-route-109,name,it,rs,,Percorso 109,1
+location,hoenn-route-109,name,ja,,,１０９ばんすいどう,1
+location,hoenn-route-109,name,ja,e,,１０９ばんすいどう,1
+location,hoenn-route-109,name,ja,rs,,１０９ばんすいどう,1
+location,hoenn-route-110,name,de,,,Route 110,1
+location,hoenn-route-110,name,de,e,,Route 110,1
+location,hoenn-route-110,name,de,rs,,Route 110,1
+location,hoenn-route-110,name,en,,,Route 110,1
+location,hoenn-route-110,name,en,e,,Route 110,1
+location,hoenn-route-110,name,en,rs,,Route 110,1
+location,hoenn-route-110,name,es,,,Ruta 110,1
+location,hoenn-route-110,name,es,e,,Ruta 110,1
+location,hoenn-route-110,name,es,rs,,Ruta 110,1
+location,hoenn-route-110,name,fr,,,Route 110,1
+location,hoenn-route-110,name,fr,e,,Route 110,1
+location,hoenn-route-110,name,fr,rs,,Route 110,1
+location,hoenn-route-110,name,it,,,Percorso 110,1
+location,hoenn-route-110,name,it,e,,Percorso 110,1
+location,hoenn-route-110,name,it,rs,,Percorso 110,1
+location,hoenn-route-110,name,ja,,,１１０ばんどうろ,1
+location,hoenn-route-110,name,ja,e,,１１０ばんどうろ,1
+location,hoenn-route-110,name,ja,rs,,１１０ばんどうろ,1
+location,hoenn-route-111,name,de,,,Route 111,1
+location,hoenn-route-111,name,de,e,,Route 111,1
+location,hoenn-route-111,name,de,rs,,Route 111,1
+location,hoenn-route-111,name,en,,,Route 111,1
+location,hoenn-route-111,name,en,e,,Route 111,1
+location,hoenn-route-111,name,en,rs,,Route 111,1
+location,hoenn-route-111,name,es,,,Ruta 111,1
+location,hoenn-route-111,name,es,e,,Ruta 111,1
+location,hoenn-route-111,name,es,rs,,Ruta 111,1
+location,hoenn-route-111,name,fr,,,Route 111,1
+location,hoenn-route-111,name,fr,e,,Route 111,1
+location,hoenn-route-111,name,fr,rs,,Route 111,1
+location,hoenn-route-111,name,it,,,Percorso 111,1
+location,hoenn-route-111,name,it,e,,Percorso 111,1
+location,hoenn-route-111,name,it,rs,,Percorso 111,1
+location,hoenn-route-111,name,ja,,,１１１ばんどうろ,1
+location,hoenn-route-111,name,ja,e,,１１１ばんどうろ,1
+location,hoenn-route-111,name,ja,rs,,１１１ばんどうろ,1
+location,hoenn-route-112,name,de,,,Route 112,1
+location,hoenn-route-112,name,de,e,,Route 112,1
+location,hoenn-route-112,name,de,rs,,Route 112,1
+location,hoenn-route-112,name,en,,,Route 112,1
+location,hoenn-route-112,name,en,e,,Route 112,1
+location,hoenn-route-112,name,en,rs,,Route 112,1
+location,hoenn-route-112,name,es,,,Ruta 112,1
+location,hoenn-route-112,name,es,e,,Ruta 112,1
+location,hoenn-route-112,name,es,rs,,Ruta 112,1
+location,hoenn-route-112,name,fr,,,Route 112,1
+location,hoenn-route-112,name,fr,e,,Route 112,1
+location,hoenn-route-112,name,fr,rs,,Route 112,1
+location,hoenn-route-112,name,it,,,Percorso 112,1
+location,hoenn-route-112,name,it,e,,Percorso 112,1
+location,hoenn-route-112,name,it,rs,,Percorso 112,1
+location,hoenn-route-112,name,ja,,,１１２ばんどうろ,1
+location,hoenn-route-112,name,ja,e,,１１２ばんどうろ,1
+location,hoenn-route-112,name,ja,rs,,１１２ばんどうろ,1
+location,hoenn-route-113,name,de,,,Route 113,1
+location,hoenn-route-113,name,de,e,,Route 113,1
+location,hoenn-route-113,name,de,rs,,Route 113,1
+location,hoenn-route-113,name,en,,,Route 113,1
+location,hoenn-route-113,name,en,e,,Route 113,1
+location,hoenn-route-113,name,en,rs,,Route 113,1
+location,hoenn-route-113,name,es,,,Ruta 113,1
+location,hoenn-route-113,name,es,e,,Ruta 113,1
+location,hoenn-route-113,name,es,rs,,Ruta 113,1
+location,hoenn-route-113,name,fr,,,Route 113,1
+location,hoenn-route-113,name,fr,e,,Route 113,1
+location,hoenn-route-113,name,fr,rs,,Route 113,1
+location,hoenn-route-113,name,it,,,Percorso 113,1
+location,hoenn-route-113,name,it,e,,Percorso 113,1
+location,hoenn-route-113,name,it,rs,,Percorso 113,1
+location,hoenn-route-113,name,ja,,,１１３ばんどうろ,1
+location,hoenn-route-113,name,ja,e,,１１３ばんどうろ,1
+location,hoenn-route-113,name,ja,rs,,１１３ばんどうろ,1
+location,hoenn-route-114,name,de,,,Route 114,1
+location,hoenn-route-114,name,de,e,,Route 114,1
+location,hoenn-route-114,name,de,rs,,Route 114,1
+location,hoenn-route-114,name,en,,,Route 114,1
+location,hoenn-route-114,name,en,e,,Route 114,1
+location,hoenn-route-114,name,en,rs,,Route 114,1
+location,hoenn-route-114,name,es,,,Ruta 114,1
+location,hoenn-route-114,name,es,e,,Ruta 114,1
+location,hoenn-route-114,name,es,rs,,Ruta 114,1
+location,hoenn-route-114,name,fr,,,Route 114,1
+location,hoenn-route-114,name,fr,e,,Route 114,1
+location,hoenn-route-114,name,fr,rs,,Route 114,1
+location,hoenn-route-114,name,it,,,Percorso 114,1
+location,hoenn-route-114,name,it,e,,Percorso 114,1
+location,hoenn-route-114,name,it,rs,,Percorso 114,1
+location,hoenn-route-114,name,ja,,,１１４ばんどうろ,1
+location,hoenn-route-114,name,ja,e,,１１４ばんどうろ,1
+location,hoenn-route-114,name,ja,rs,,１１４ばんどうろ,1
+location,hoenn-route-115,name,de,,,Route 115,1
+location,hoenn-route-115,name,de,e,,Route 115,1
+location,hoenn-route-115,name,de,rs,,Route 115,1
+location,hoenn-route-115,name,en,,,Route 115,1
+location,hoenn-route-115,name,en,e,,Route 115,1
+location,hoenn-route-115,name,en,rs,,Route 115,1
+location,hoenn-route-115,name,es,,,Ruta 115,1
+location,hoenn-route-115,name,es,e,,Ruta 115,1
+location,hoenn-route-115,name,es,rs,,Ruta 115,1
+location,hoenn-route-115,name,fr,,,Route 115,1
+location,hoenn-route-115,name,fr,e,,Route 115,1
+location,hoenn-route-115,name,fr,rs,,Route 115,1
+location,hoenn-route-115,name,it,,,Percorso 115,1
+location,hoenn-route-115,name,it,e,,Percorso 115,1
+location,hoenn-route-115,name,it,rs,,Percorso 115,1
+location,hoenn-route-115,name,ja,,,１１５ばんどうろ,1
+location,hoenn-route-115,name,ja,e,,１１５ばんどうろ,1
+location,hoenn-route-115,name,ja,rs,,１１５ばんどうろ,1
+location,hoenn-route-116,name,de,,,Route 116,1
+location,hoenn-route-116,name,de,e,,Route 116,1
+location,hoenn-route-116,name,de,rs,,Route 116,1
+location,hoenn-route-116,name,en,,,Route 116,1
+location,hoenn-route-116,name,en,e,,Route 116,1
+location,hoenn-route-116,name,en,rs,,Route 116,1
+location,hoenn-route-116,name,es,,,Ruta 116,1
+location,hoenn-route-116,name,es,e,,Ruta 116,1
+location,hoenn-route-116,name,es,rs,,Ruta 116,1
+location,hoenn-route-116,name,fr,,,Route 116,1
+location,hoenn-route-116,name,fr,e,,Route 116,1
+location,hoenn-route-116,name,fr,rs,,Route 116,1
+location,hoenn-route-116,name,it,,,Percorso 116,1
+location,hoenn-route-116,name,it,e,,Percorso 116,1
+location,hoenn-route-116,name,it,rs,,Percorso 116,1
+location,hoenn-route-116,name,ja,,,１１６ばんどうろ,1
+location,hoenn-route-116,name,ja,e,,１１６ばんどうろ,1
+location,hoenn-route-116,name,ja,rs,,１１６ばんどうろ,1
+location,hoenn-route-117,name,de,,,Route 117,1
+location,hoenn-route-117,name,de,e,,Route 117,1
+location,hoenn-route-117,name,de,rs,,Route 117,1
+location,hoenn-route-117,name,en,,,Route 117,1
+location,hoenn-route-117,name,en,e,,Route 117,1
+location,hoenn-route-117,name,en,rs,,Route 117,1
+location,hoenn-route-117,name,es,,,Ruta 117,1
+location,hoenn-route-117,name,es,e,,Ruta 117,1
+location,hoenn-route-117,name,es,rs,,Ruta 117,1
+location,hoenn-route-117,name,fr,,,Route 117,1
+location,hoenn-route-117,name,fr,e,,Route 117,1
+location,hoenn-route-117,name,fr,rs,,Route 117,1
+location,hoenn-route-117,name,it,,,Percorso 117,1
+location,hoenn-route-117,name,it,e,,Percorso 117,1
+location,hoenn-route-117,name,it,rs,,Percorso 117,1
+location,hoenn-route-117,name,ja,,,１１７ばんどうろ,1
+location,hoenn-route-117,name,ja,e,,１１７ばんどうろ,1
+location,hoenn-route-117,name,ja,rs,,１１７ばんどうろ,1
+location,hoenn-route-118,name,de,,,Route 118,1
+location,hoenn-route-118,name,de,e,,Route 118,1
+location,hoenn-route-118,name,de,rs,,Route 118,1
+location,hoenn-route-118,name,en,,,Route 118,1
+location,hoenn-route-118,name,en,e,,Route 118,1
+location,hoenn-route-118,name,en,rs,,Route 118,1
+location,hoenn-route-118,name,es,,,Ruta 118,1
+location,hoenn-route-118,name,es,e,,Ruta 118,1
+location,hoenn-route-118,name,es,rs,,Ruta 118,1
+location,hoenn-route-118,name,fr,,,Route 118,1
+location,hoenn-route-118,name,fr,e,,Route 118,1
+location,hoenn-route-118,name,fr,rs,,Route 118,1
+location,hoenn-route-118,name,it,,,Percorso 118,1
+location,hoenn-route-118,name,it,e,,Percorso 118,1
+location,hoenn-route-118,name,it,rs,,Percorso 118,1
+location,hoenn-route-118,name,ja,,,１１８ばんどうろ,1
+location,hoenn-route-118,name,ja,e,,１１８ばんどうろ,1
+location,hoenn-route-118,name,ja,rs,,１１８ばんどうろ,1
+location,hoenn-route-119,name,de,,,Route 119,1
+location,hoenn-route-119,name,de,e,,Route 119,1
+location,hoenn-route-119,name,de,rs,,Route 119,1
+location,hoenn-route-119,name,en,,,Route 119,1
+location,hoenn-route-119,name,en,e,,Route 119,1
+location,hoenn-route-119,name,en,rs,,Route 119,1
+location,hoenn-route-119,name,es,,,Ruta 119,1
+location,hoenn-route-119,name,es,e,,Ruta 119,1
+location,hoenn-route-119,name,es,rs,,Ruta 119,1
+location,hoenn-route-119,name,fr,,,Route 119,1
+location,hoenn-route-119,name,fr,e,,Route 119,1
+location,hoenn-route-119,name,fr,rs,,Route 119,1
+location,hoenn-route-119,name,it,,,Percorso 119,1
+location,hoenn-route-119,name,it,e,,Percorso 119,1
+location,hoenn-route-119,name,it,rs,,Percorso 119,1
+location,hoenn-route-119,name,ja,,,１１９ばんどうろ,1
+location,hoenn-route-119,name,ja,e,,１１９ばんどうろ,1
+location,hoenn-route-119,name,ja,rs,,１１９ばんどうろ,1
+location,hoenn-route-120,name,de,,,Route 120,1
+location,hoenn-route-120,name,de,e,,Route 120,1
+location,hoenn-route-120,name,de,rs,,Route 120,1
+location,hoenn-route-120,name,en,,,Route 120,1
+location,hoenn-route-120,name,en,e,,Route 120,1
+location,hoenn-route-120,name,en,rs,,Route 120,1
+location,hoenn-route-120,name,es,,,Ruta 120,1
+location,hoenn-route-120,name,es,e,,Ruta 120,1
+location,hoenn-route-120,name,es,rs,,Ruta 120,1
+location,hoenn-route-120,name,fr,,,Route 120,1
+location,hoenn-route-120,name,fr,e,,Route 120,1
+location,hoenn-route-120,name,fr,rs,,Route 120,1
+location,hoenn-route-120,name,it,,,Percorso 120,1
+location,hoenn-route-120,name,it,e,,Percorso 120,1
+location,hoenn-route-120,name,it,rs,,Percorso 120,1
+location,hoenn-route-120,name,ja,,,１２０ばんどうろ,1
+location,hoenn-route-120,name,ja,e,,１２０ばんどうろ,1
+location,hoenn-route-120,name,ja,rs,,１２０ばんどうろ,1
+location,hoenn-route-121,name,de,,,Route 121,1
+location,hoenn-route-121,name,de,e,,Route 121,1
+location,hoenn-route-121,name,de,rs,,Route 121,1
+location,hoenn-route-121,name,en,,,Route 121,1
+location,hoenn-route-121,name,en,e,,Route 121,1
+location,hoenn-route-121,name,en,rs,,Route 121,1
+location,hoenn-route-121,name,es,,,Ruta 121,1
+location,hoenn-route-121,name,es,e,,Ruta 121,1
+location,hoenn-route-121,name,es,rs,,Ruta 121,1
+location,hoenn-route-121,name,fr,,,Route 121,1
+location,hoenn-route-121,name,fr,e,,Route 121,1
+location,hoenn-route-121,name,fr,rs,,Route 121,1
+location,hoenn-route-121,name,it,,,Percorso 121,1
+location,hoenn-route-121,name,it,e,,Percorso 121,1
+location,hoenn-route-121,name,it,rs,,Percorso 121,1
+location,hoenn-route-121,name,ja,,,１２１ばんどうろ,1
+location,hoenn-route-121,name,ja,e,,１２１ばんどうろ,1
+location,hoenn-route-121,name,ja,rs,,１２１ばんどうろ,1
+location,hoenn-route-122,name,de,,,Route 122,1
+location,hoenn-route-122,name,de,e,,Route 122,1
+location,hoenn-route-122,name,de,rs,,Route 122,1
+location,hoenn-route-122,name,en,,,Route 122,1
+location,hoenn-route-122,name,en,e,,Route 122,1
+location,hoenn-route-122,name,en,rs,,Route 122,1
+location,hoenn-route-122,name,es,,,Ruta 122,1
+location,hoenn-route-122,name,es,e,,Ruta 122,1
+location,hoenn-route-122,name,es,rs,,Ruta 122,1
+location,hoenn-route-122,name,fr,,,Chenal 122,1
+location,hoenn-route-122,name,fr,e,,Chenal 122,1
+location,hoenn-route-122,name,fr,rs,,Chenal 122,1
+location,hoenn-route-122,name,it,,,Percorso 122,1
+location,hoenn-route-122,name,it,e,,Percorso 122,1
+location,hoenn-route-122,name,it,rs,,Percorso 122,1
+location,hoenn-route-122,name,ja,,,１２２ばんすいどう,1
+location,hoenn-route-122,name,ja,e,,１２２ばんすいどう,1
+location,hoenn-route-122,name,ja,rs,,１２２ばんすいどう,1
+location,hoenn-route-123,name,de,,,Route 123,1
+location,hoenn-route-123,name,de,e,,Route 123,1
+location,hoenn-route-123,name,de,rs,,Route 123,1
+location,hoenn-route-123,name,en,,,Route 123,1
+location,hoenn-route-123,name,en,e,,Route 123,1
+location,hoenn-route-123,name,en,rs,,Route 123,1
+location,hoenn-route-123,name,es,,,Ruta 123,1
+location,hoenn-route-123,name,es,e,,Ruta 123,1
+location,hoenn-route-123,name,es,rs,,Ruta 123,1
+location,hoenn-route-123,name,fr,,,Route 123,1
+location,hoenn-route-123,name,fr,e,,Route 123,1
+location,hoenn-route-123,name,fr,rs,,Route 123,1
+location,hoenn-route-123,name,it,,,Percorso 123,1
+location,hoenn-route-123,name,it,e,,Percorso 123,1
+location,hoenn-route-123,name,it,rs,,Percorso 123,1
+location,hoenn-route-123,name,ja,,,１２３ばんどうろ,1
+location,hoenn-route-123,name,ja,e,,１２３ばんどうろ,1
+location,hoenn-route-123,name,ja,rs,,１２３ばんどうろ,1
+location,hoenn-route-124,name,de,,,Route 124,1
+location,hoenn-route-124,name,de,e,,Route 124,1
+location,hoenn-route-124,name,de,rs,,Route 124,1
+location,hoenn-route-124,name,en,,,Route 124,1
+location,hoenn-route-124,name,en,e,,Route 124,1
+location,hoenn-route-124,name,en,rs,,Route 124,1
+location,hoenn-route-124,name,es,,,Ruta 124,1
+location,hoenn-route-124,name,es,e,,Ruta 124,1
+location,hoenn-route-124,name,es,rs,,Ruta 124,1
+location,hoenn-route-124,name,fr,,,Chenal 124,1
+location,hoenn-route-124,name,fr,e,,Chenal 124,1
+location,hoenn-route-124,name,fr,rs,,Chenal 124,1
+location,hoenn-route-124,name,it,,,Percorso 124,1
+location,hoenn-route-124,name,it,e,,Percorso 124,1
+location,hoenn-route-124,name,it,rs,,Percorso 124,1
+location,hoenn-route-124,name,ja,,,１２４ばんすいどう,1
+location,hoenn-route-124,name,ja,e,,１２４ばんすいどう,1
+location,hoenn-route-124,name,ja,rs,,１２４ばんすいどう,1
+location,hoenn-route-125,name,de,,,Route 125,1
+location,hoenn-route-125,name,de,e,,Route 125,1
+location,hoenn-route-125,name,de,rs,,Route 125,1
+location,hoenn-route-125,name,en,,,Route 125,1
+location,hoenn-route-125,name,en,e,,Route 125,1
+location,hoenn-route-125,name,en,rs,,Route 125,1
+location,hoenn-route-125,name,es,,,Ruta 125,1
+location,hoenn-route-125,name,es,e,,Ruta 125,1
+location,hoenn-route-125,name,es,rs,,Ruta 125,1
+location,hoenn-route-125,name,fr,,,Chenal 125,1
+location,hoenn-route-125,name,fr,e,,Chenal 125,1
+location,hoenn-route-125,name,fr,rs,,Chenal 125,1
+location,hoenn-route-125,name,it,,,Percorso 125,1
+location,hoenn-route-125,name,it,e,,Percorso 125,1
+location,hoenn-route-125,name,it,rs,,Percorso 125,1
+location,hoenn-route-125,name,ja,,,１２５ばんすいどう,1
+location,hoenn-route-125,name,ja,e,,１２５ばんすいどう,1
+location,hoenn-route-125,name,ja,rs,,１２５ばんすいどう,1
+location,hoenn-route-126,name,de,,,Route 126,1
+location,hoenn-route-126,name,de,e,,Route 126,1
+location,hoenn-route-126,name,de,rs,,Route 126,1
+location,hoenn-route-126,name,en,,,Route 126,1
+location,hoenn-route-126,name,en,e,,Route 126,1
+location,hoenn-route-126,name,en,rs,,Route 126,1
+location,hoenn-route-126,name,es,,,Ruta 126,1
+location,hoenn-route-126,name,es,e,,Ruta 126,1
+location,hoenn-route-126,name,es,rs,,Ruta 126,1
+location,hoenn-route-126,name,fr,,,Chenal 126,1
+location,hoenn-route-126,name,fr,e,,Chenal 126,1
+location,hoenn-route-126,name,fr,rs,,Chenal 126,1
+location,hoenn-route-126,name,it,,,Percorso 126,1
+location,hoenn-route-126,name,it,e,,Percorso 126,1
+location,hoenn-route-126,name,it,rs,,Percorso 126,1
+location,hoenn-route-126,name,ja,,,１２６ばんすいどう,1
+location,hoenn-route-126,name,ja,e,,１２６ばんすいどう,1
+location,hoenn-route-126,name,ja,rs,,１２６ばんすいどう,1
+location,hoenn-route-127,name,de,,,Route 127,1
+location,hoenn-route-127,name,de,e,,Route 127,1
+location,hoenn-route-127,name,de,rs,,Route 127,1
+location,hoenn-route-127,name,en,,,Route 127,1
+location,hoenn-route-127,name,en,e,,Route 127,1
+location,hoenn-route-127,name,en,rs,,Route 127,1
+location,hoenn-route-127,name,es,,,Ruta 127,1
+location,hoenn-route-127,name,es,e,,Ruta 127,1
+location,hoenn-route-127,name,es,rs,,Ruta 127,1
+location,hoenn-route-127,name,fr,,,Chenal 127,1
+location,hoenn-route-127,name,fr,e,,Chenal 127,1
+location,hoenn-route-127,name,fr,rs,,Chenal 127,1
+location,hoenn-route-127,name,it,,,Percorso 127,1
+location,hoenn-route-127,name,it,e,,Percorso 127,1
+location,hoenn-route-127,name,it,rs,,Percorso 127,1
+location,hoenn-route-127,name,ja,,,１２７ばんすいどう,1
+location,hoenn-route-127,name,ja,e,,１２７ばんすいどう,1
+location,hoenn-route-127,name,ja,rs,,１２７ばんすいどう,1
+location,hoenn-route-128,name,de,,,Route 128,1
+location,hoenn-route-128,name,de,e,,Route 128,1
+location,hoenn-route-128,name,de,rs,,Route 128,1
+location,hoenn-route-128,name,en,,,Route 128,1
+location,hoenn-route-128,name,en,e,,Route 128,1
+location,hoenn-route-128,name,en,rs,,Route 128,1
+location,hoenn-route-128,name,es,,,Ruta 128,1
+location,hoenn-route-128,name,es,e,,Ruta 128,1
+location,hoenn-route-128,name,es,rs,,Ruta 128,1
+location,hoenn-route-128,name,fr,,,Chenal 128,1
+location,hoenn-route-128,name,fr,e,,Chenal 128,1
+location,hoenn-route-128,name,fr,rs,,Chenal 128,1
+location,hoenn-route-128,name,it,,,Percorso 128,1
+location,hoenn-route-128,name,it,e,,Percorso 128,1
+location,hoenn-route-128,name,it,rs,,Percorso 128,1
+location,hoenn-route-128,name,ja,,,１２８ばんすいどう,1
+location,hoenn-route-128,name,ja,e,,１２８ばんすいどう,1
+location,hoenn-route-128,name,ja,rs,,１２８ばんすいどう,1
+location,hoenn-route-129,name,de,,,Route 129,1
+location,hoenn-route-129,name,de,e,,Route 129,1
+location,hoenn-route-129,name,de,rs,,Route 129,1
+location,hoenn-route-129,name,en,,,Route 129,1
+location,hoenn-route-129,name,en,e,,Route 129,1
+location,hoenn-route-129,name,en,rs,,Route 129,1
+location,hoenn-route-129,name,es,,,Ruta 129,1
+location,hoenn-route-129,name,es,e,,Ruta 129,1
+location,hoenn-route-129,name,es,rs,,Ruta 129,1
+location,hoenn-route-129,name,fr,,,Chenal 129,1
+location,hoenn-route-129,name,fr,e,,Chenal 129,1
+location,hoenn-route-129,name,fr,rs,,Chenal 129,1
+location,hoenn-route-129,name,it,,,Percorso 129,1
+location,hoenn-route-129,name,it,e,,Percorso 129,1
+location,hoenn-route-129,name,it,rs,,Percorso 129,1
+location,hoenn-route-129,name,ja,,,１２９ばんすいどう,1
+location,hoenn-route-129,name,ja,e,,１２９ばんすいどう,1
+location,hoenn-route-129,name,ja,rs,,１２９ばんすいどう,1
+location,hoenn-route-130,name,de,,,Route 130,1
+location,hoenn-route-130,name,de,e,,Route 130,1
+location,hoenn-route-130,name,de,rs,,Route 130,1
+location,hoenn-route-130,name,en,,,Route 130,1
+location,hoenn-route-130,name,en,e,,Route 130,1
+location,hoenn-route-130,name,en,rs,,Route 130,1
+location,hoenn-route-130,name,es,,,Ruta 130,1
+location,hoenn-route-130,name,es,e,,Ruta 130,1
+location,hoenn-route-130,name,es,rs,,Ruta 130,1
+location,hoenn-route-130,name,fr,,,Chenal 130,1
+location,hoenn-route-130,name,fr,e,,Chenal 130,1
+location,hoenn-route-130,name,fr,rs,,Chenal 130,1
+location,hoenn-route-130,name,it,,,Percorso 130,1
+location,hoenn-route-130,name,it,e,,Percorso 130,1
+location,hoenn-route-130,name,it,rs,,Percorso 130,1
+location,hoenn-route-130,name,ja,,,１３０ばんすいどう,1
+location,hoenn-route-130,name,ja,e,,１３０ばんすいどう,1
+location,hoenn-route-130,name,ja,rs,,１３０ばんすいどう,1
+location,hoenn-route-131,name,de,,,Route 131,1
+location,hoenn-route-131,name,de,e,,Route 131,1
+location,hoenn-route-131,name,de,rs,,Route 131,1
+location,hoenn-route-131,name,en,,,Route 131,1
+location,hoenn-route-131,name,en,e,,Route 131,1
+location,hoenn-route-131,name,en,rs,,Route 131,1
+location,hoenn-route-131,name,es,,,Ruta 131,1
+location,hoenn-route-131,name,es,e,,Ruta 131,1
+location,hoenn-route-131,name,es,rs,,Ruta 131,1
+location,hoenn-route-131,name,fr,,,Chenal 131,1
+location,hoenn-route-131,name,fr,e,,Chenal 131,1
+location,hoenn-route-131,name,fr,rs,,Chenal 131,1
+location,hoenn-route-131,name,it,,,Percorso 131,1
+location,hoenn-route-131,name,it,e,,Percorso 131,1
+location,hoenn-route-131,name,it,rs,,Percorso 131,1
+location,hoenn-route-131,name,ja,,,１３１ばんすいどう,1
+location,hoenn-route-131,name,ja,e,,１３１ばんすいどう,1
+location,hoenn-route-131,name,ja,rs,,１３１ばんすいどう,1
+location,hoenn-route-132,name,de,,,Route 132,1
+location,hoenn-route-132,name,de,e,,Route 132,1
+location,hoenn-route-132,name,de,rs,,Route 132,1
+location,hoenn-route-132,name,en,,,Route 132,1
+location,hoenn-route-132,name,en,e,,Route 132,1
+location,hoenn-route-132,name,en,rs,,Route 132,1
+location,hoenn-route-132,name,es,,,Ruta 132,1
+location,hoenn-route-132,name,es,e,,Ruta 132,1
+location,hoenn-route-132,name,es,rs,,Ruta 132,1
+location,hoenn-route-132,name,fr,,,Chenal 132,1
+location,hoenn-route-132,name,fr,e,,Chenal 132,1
+location,hoenn-route-132,name,fr,rs,,Chenal 132,1
+location,hoenn-route-132,name,it,,,Percorso 132,1
+location,hoenn-route-132,name,it,e,,Percorso 132,1
+location,hoenn-route-132,name,it,rs,,Percorso 132,1
+location,hoenn-route-132,name,ja,,,１３２ばんすいどう,1
+location,hoenn-route-132,name,ja,e,,１３２ばんすいどう,1
+location,hoenn-route-132,name,ja,rs,,１３２ばんすいどう,1
+location,hoenn-route-133,name,de,,,Route 133,1
+location,hoenn-route-133,name,de,e,,Route 133,1
+location,hoenn-route-133,name,de,rs,,Route 133,1
+location,hoenn-route-133,name,en,,,Route 133,1
+location,hoenn-route-133,name,en,e,,Route 133,1
+location,hoenn-route-133,name,en,rs,,Route 133,1
+location,hoenn-route-133,name,es,,,Ruta 133,1
+location,hoenn-route-133,name,es,e,,Ruta 133,1
+location,hoenn-route-133,name,es,rs,,Ruta 133,1
+location,hoenn-route-133,name,fr,,,Chenal 133,1
+location,hoenn-route-133,name,fr,e,,Chenal 133,1
+location,hoenn-route-133,name,fr,rs,,Chenal 133,1
+location,hoenn-route-133,name,it,,,Percorso 133,1
+location,hoenn-route-133,name,it,e,,Percorso 133,1
+location,hoenn-route-133,name,it,rs,,Percorso 133,1
+location,hoenn-route-133,name,ja,,,１３３ばんすいどう,1
+location,hoenn-route-133,name,ja,e,,１３３ばんすいどう,1
+location,hoenn-route-133,name,ja,rs,,１３３ばんすいどう,1
+location,hoenn-route-134,name,de,,,Route 134,1
+location,hoenn-route-134,name,de,e,,Route 134,1
+location,hoenn-route-134,name,de,rs,,Route 134,1
+location,hoenn-route-134,name,en,,,Route 134,1
+location,hoenn-route-134,name,en,e,,Route 134,1
+location,hoenn-route-134,name,en,rs,,Route 134,1
+location,hoenn-route-134,name,es,,,Ruta 134,1
+location,hoenn-route-134,name,es,e,,Ruta 134,1
+location,hoenn-route-134,name,es,rs,,Ruta 134,1
+location,hoenn-route-134,name,fr,,,Chenal 134,1
+location,hoenn-route-134,name,fr,e,,Chenal 134,1
+location,hoenn-route-134,name,fr,rs,,Chenal 134,1
+location,hoenn-route-134,name,it,,,Percorso 134,1
+location,hoenn-route-134,name,it,e,,Percorso 134,1
+location,hoenn-route-134,name,it,rs,,Percorso 134,1
+location,hoenn-route-134,name,ja,,,１３４ばんすいどう,1
+location,hoenn-route-134,name,ja,e,,１３４ばんすいどう,1
+location,hoenn-route-134,name,ja,rs,,１３４ばんすいどう,1
+location,hoenn-safari-zone,name,de,,,Safari-Zone (RSS),1
+location,hoenn-safari-zone,name,de,e,,Safari-Zone (RSS),1
+location,hoenn-safari-zone,name,de,rs,,Safari-Zone (RSS),1
+location,hoenn-safari-zone,name,en,,,Safari Zone,1
+location,hoenn-safari-zone,name,en,e,,Safari Zone,1
+location,hoenn-safari-zone,name,en,rs,,Safari Zone,1
+location,hoenn-safari-zone,name,es,,,Zona Safari (RZE),1
+location,hoenn-safari-zone,name,es,e,,Zona Safari (RZE),1
+location,hoenn-safari-zone,name,es,rs,,Zona Safari (RZE),1
+location,hoenn-safari-zone,name,fr,,,Parc Safari,1
+location,hoenn-safari-zone,name,fr,e,,Parc Safari,1
+location,hoenn-safari-zone,name,fr,rs,,Parc Safari,1
+location,hoenn-safari-zone,name,it,,,Zona Safari (RZS),1
+location,hoenn-safari-zone,name,it,e,,Zona Safari (RZS),1
+location,hoenn-safari-zone,name,it,rs,,Zona Safari (RZS),1
+location,hoenn-safari-zone,name,ja,,,サファリゾーン,1
+location,hoenn-safari-zone,name,ja,e,,サファリゾーン,1
+location,hoenn-safari-zone,name,ja,rs,,サファリゾーン,1
+location,hoenn-victory-road,name,de,,,Siegesstraße (RSS),1
+location,hoenn-victory-road,name,de,e,,Siegesstraße (RSS),1
+location,hoenn-victory-road,name,de,rs,,Siegesstraße (RSS),1
+location,hoenn-victory-road,name,en,,,Victory Road,1
+location,hoenn-victory-road,name,en,e,,Victory Road,1
+location,hoenn-victory-road,name,en,rs,,Victory Road,1
+location,hoenn-victory-road,name,es,,,Calle Victoria (RZE),1
+location,hoenn-victory-road,name,es,e,,Calle Victoria (RZE),1
+location,hoenn-victory-road,name,es,rs,,Calle Victoria (RZE),1
+location,hoenn-victory-road,name,fr,,,Route Victoire,1
+location,hoenn-victory-road,name,fr,e,,Route Victoire,1
+location,hoenn-victory-road,name,fr,rs,,Route Victoire,1
+location,hoenn-victory-road,name,it,,,Via Vittoria (RZS),1
+location,hoenn-victory-road,name,it,e,,Via Vittoria (RZS),1
+location,hoenn-victory-road,name,it,rs,,Via Vittoria (RZS),1
+location,hoenn-victory-road,name,ja,,,チャンピオンロード,1
+location,hoenn-victory-road,name,ja,e,,チャンピオンロード,1
+location,hoenn-victory-road,name,ja,rs,,チャンピオンロード,1
 location,ice-path,name,de,,,Eispfad,1
 location,ice-path,name,de,c,,Eispfad,1
 location,ice-path,name,de,gs,,Eispfad,1
@@ -5034,6 +6036,18 @@ location,ice-path,name,ja,c,,こおりのぬけみち,1
 location,ice-path,name,ja,gs,,こおりのぬけみち,1
 location,ice-path,name,ko,,,얼음샛길,1
 location,ice-path,name,ko,gs,,얼음샛길,1
+location,icefall-cave,name,de,,,Eiskaskadenhöhle,1
+location,icefall-cave,name,de,frlg,,Eiskaskadenhöhle,1
+location,icefall-cave,name,en,,,Icefall Cave,1
+location,icefall-cave,name,en,frlg,,Icefall Cave,1
+location,icefall-cave,name,es,,,Cueva Glaciada,1
+location,icefall-cave,name,es,frlg,,Cueva Glaciada,1
+location,icefall-cave,name,fr,,,Grotte de Glace,1
+location,icefall-cave,name,fr,frlg,,Grotte de Glace,1
+location,icefall-cave,name,it,,,Grotta Gelata,1
+location,icefall-cave,name,it,frlg,,Grotta Gelata,1
+location,icefall-cave,name,ja,,,いてだきのどうくつ,1
+location,icefall-cave,name,ja,frlg,,いてだきのどうくつ,1
 location,ilex-forest,name,de,,,Steineichenwald,1
 location,ilex-forest,name,de,c,,Steineichenwald,1
 location,ilex-forest,name,de,gs,,Steineichenwald,1
@@ -5054,6 +6068,42 @@ location,ilex-forest,name,ja,c,,ウバメのもり,1
 location,ilex-forest,name,ja,gs,,ウバメのもり,1
 location,ilex-forest,name,ko,,,너도밤나무숲,1
 location,ilex-forest,name,ko,gs,,너도밤나무 숲,1
+location,island-cave,name,de,,,Inselhöhle,1
+location,island-cave,name,de,e,,Inselhöhle,1
+location,island-cave,name,de,rs,,Inselhöhle,1
+location,island-cave,name,en,,,Island Cave,1
+location,island-cave,name,en,e,,Island Cave,1
+location,island-cave,name,en,rs,,Island Cave,1
+location,island-cave,name,es,,,Cueva Insular,1
+location,island-cave,name,es,e,,Cueva Insular,1
+location,island-cave,name,es,rs,,Cueva Insular,1
+location,island-cave,name,fr,,,Grotte Island,1
+location,island-cave,name,fr,e,,Grotte Island,1
+location,island-cave,name,fr,rs,,Grotte Island,1
+location,island-cave,name,it,,,Grotta Insulare,1
+location,island-cave,name,it,e,,Grotta Insulare,1
+location,island-cave,name,it,rs,,Grotta Insulare,1
+location,island-cave,name,ja,,,こじまのよこあな,1
+location,island-cave,name,ja,e,,こじまのよこあな,1
+location,island-cave,name,ja,rs,,こじまのよこあな,1
+location,jagged-pass,name,de,,,Steilpass,1
+location,jagged-pass,name,de,e,,Steilpass,1
+location,jagged-pass,name,de,rs,,Steilpass,1
+location,jagged-pass,name,en,,,Jagged Pass,1
+location,jagged-pass,name,en,e,,Jagged Pass,1
+location,jagged-pass,name,en,rs,,Jagged Pass,1
+location,jagged-pass,name,es,,,Desfiladero,1
+location,jagged-pass,name,es,e,,Desfiladero,1
+location,jagged-pass,name,es,rs,,Desfiladero,1
+location,jagged-pass,name,fr,,,Sentier Sinuroc,1
+location,jagged-pass,name,fr,e,,Sentier Sinuroc,1
+location,jagged-pass,name,fr,rs,,Sentier Sinuroc,1
+location,jagged-pass,name,it,,,Passo Selvaggio,1
+location,jagged-pass,name,it,e,,Passo Selvaggio,1
+location,jagged-pass,name,it,rs,,Passo Selvaggio,1
+location,jagged-pass,name,ja,,,デコボコさんどう,1
+location,jagged-pass,name,ja,e,,デコボコさんどう,1
+location,jagged-pass,name,ja,rs,,デコボコさんどう,1
 location,johto-route-29,name,de,,,Route 29,1
 location,johto-route-29,name,de,c,,Route 29,1
 location,johto-route-29,name,de,gs,,Route 29,1
@@ -5414,299 +6464,391 @@ location,johto-sea-route-41,name,ja,c,,４１ばんすいどう,1
 location,johto-sea-route-41,name,ja,gs,,４１ばんすいどう,1
 location,johto-sea-route-41,name,ko,,,41번수로,1
 location,johto-sea-route-41,name,ko,gs,,41번 도로,1
+location,kanto-altering-cave,name,de,,,Wandelhöhle (FRBG),1
+location,kanto-altering-cave,name,de,frlg,,Wandelhöhle (FRBG),1
+location,kanto-altering-cave,name,en,,,Altering Cave,1
+location,kanto-altering-cave,name,en,frlg,,Altering Cave,1
+location,kanto-altering-cave,name,es,,,Cueva Cambiante (RFVH),1
+location,kanto-altering-cave,name,es,frlg,,Cueva Cambiante (RFVH),1
+location,kanto-altering-cave,name,fr,,,Grotte Métamo (RFVF),1
+location,kanto-altering-cave,name,fr,frlg,,Grotte Métamo (RFVF),1
+location,kanto-altering-cave,name,it,,,Grotta Mutevole (RFVF),1
+location,kanto-altering-cave,name,it,frlg,,Grotta Mutevole (RFVF),1
+location,kanto-altering-cave,name,ja,,,へんげのどうくつ,1
+location,kanto-altering-cave,name,ja,frlg,,へんげのどうくつ,1
 location,kanto-power-plant,name,de,,,Kraftwerk,1
+location,kanto-power-plant,name,de,frlg,,Kraftwerk,1
 location,kanto-power-plant,name,en,,,Power Plant,1
+location,kanto-power-plant,name,en,frlg,,Power Plant,1
 location,kanto-power-plant,name,es,,,Central Energía,1
+location,kanto-power-plant,name,es,frlg,,Central Energía,1
 location,kanto-power-plant,name,fr,,,Centrale,1
-location,kanto-power-plant,name,it,,,Centrale Elettrica,1
-location,kanto-power-plant,name,ja,,,はつでんしょ,1
-location,kanto-power-plant,name,ko,,,발전소,1
+location,kanto-power-plant,name,fr,frlg,,Centrale,1
+location,kanto-power-plant,name,it,,,Centrale Elett.,1
+location,kanto-power-plant,name,it,frlg,,Centrale Elett.,1
+location,kanto-power-plant,name,ja,,,むじんはつでんしょ,1
+location,kanto-power-plant,name,ja,frlg,,むじんはつでんしょ,1
 location,kanto-route-1,name,de,,,Route 1,1
 location,kanto-route-1,name,de,c,,Route 1,1
+location,kanto-route-1,name,de,frlg,,Route 1,1
 location,kanto-route-1,name,de,gs,,Route 1,1
 location,kanto-route-1,name,en,,,Route 1,1
 location,kanto-route-1,name,en,c,,Route 1,1
+location,kanto-route-1,name,en,frlg,,Route 1,1
 location,kanto-route-1,name,en,gs,,Route 1,1
 location,kanto-route-1,name,es,,,Ruta 1,1
 location,kanto-route-1,name,es,c,,Ruta 1,1
+location,kanto-route-1,name,es,frlg,,Ruta 1,1
 location,kanto-route-1,name,es,gs,,Ruta 1,1
 location,kanto-route-1,name,fr,,,Route 1,1
 location,kanto-route-1,name,fr,c,,Route 1,1
+location,kanto-route-1,name,fr,frlg,,Route 1,1
 location,kanto-route-1,name,fr,gs,,Route 1,1
 location,kanto-route-1,name,it,,,Percorso 1,1
 location,kanto-route-1,name,it,c,,Percorso 1,1
+location,kanto-route-1,name,it,frlg,,Percorso 1,1
 location,kanto-route-1,name,it,gs,,Percorso 1,1
 location,kanto-route-1,name,ja,,,１ばんどうろ,1
 location,kanto-route-1,name,ja,c,,１ばんどうろ,1
+location,kanto-route-1,name,ja,frlg,,１ばんどうろ,1
 location,kanto-route-1,name,ja,gs,,１ばんどうろ,1
-location,kanto-route-1,name,ko,,,1번도로,1
 location,kanto-route-1,name,ko,gs,,1번 도로,1
 location,kanto-route-10,name,de,,,Route 10,1
 location,kanto-route-10,name,de,c,,Route 10,1
+location,kanto-route-10,name,de,frlg,,Route 10,1
 location,kanto-route-10,name,de,gs,,Route 10,1
 location,kanto-route-10,name,en,,,Route 10,1
 location,kanto-route-10,name,en,c,,Route 10,1
+location,kanto-route-10,name,en,frlg,,Route 10,1
 location,kanto-route-10,name,en,gs,,Route 10,1
 location,kanto-route-10,name,es,,,Ruta 10,1
 location,kanto-route-10,name,es,c,,Ruta 10,1
+location,kanto-route-10,name,es,frlg,,Ruta 10,1
 location,kanto-route-10,name,es,gs,,Ruta 10,1
 location,kanto-route-10,name,fr,,,Route 10,1
 location,kanto-route-10,name,fr,c,,Route 10,1
+location,kanto-route-10,name,fr,frlg,,Route 10,1
 location,kanto-route-10,name,fr,gs,,Route 10,1
 location,kanto-route-10,name,it,,,Percorso 10,1
 location,kanto-route-10,name,it,c,,Percorso 10,1
+location,kanto-route-10,name,it,frlg,,Percorso 10,1
 location,kanto-route-10,name,it,gs,,Percorso 10,1
 location,kanto-route-10,name,ja,,,１０ばんどうろ,1
 location,kanto-route-10,name,ja,c,,１０ばんどうろ,1
+location,kanto-route-10,name,ja,frlg,,１０ばんどうろ,1
 location,kanto-route-10,name,ja,gs,,１０ばんどうろ,1
-location,kanto-route-10,name,ko,,,10번도로,1
 location,kanto-route-10,name,ko,gs,,10번 도로,1
 location,kanto-route-11,name,de,,,Route 11,1
 location,kanto-route-11,name,de,c,,Route 11,1
+location,kanto-route-11,name,de,frlg,,Route 11,1
 location,kanto-route-11,name,de,gs,,Route 11,1
 location,kanto-route-11,name,en,,,Route 11,1
 location,kanto-route-11,name,en,c,,Route 11,1
+location,kanto-route-11,name,en,frlg,,Route 11,1
 location,kanto-route-11,name,en,gs,,Route 11,1
 location,kanto-route-11,name,es,,,Ruta 11,1
 location,kanto-route-11,name,es,c,,Ruta 11,1
+location,kanto-route-11,name,es,frlg,,Ruta 11,1
 location,kanto-route-11,name,es,gs,,Ruta 11,1
 location,kanto-route-11,name,fr,,,Route 11,1
 location,kanto-route-11,name,fr,c,,Route 11,1
+location,kanto-route-11,name,fr,frlg,,Route 11,1
 location,kanto-route-11,name,fr,gs,,Route 11,1
 location,kanto-route-11,name,it,,,Percorso 11,1
 location,kanto-route-11,name,it,c,,Percorso 11,1
+location,kanto-route-11,name,it,frlg,,Percorso 11,1
 location,kanto-route-11,name,it,gs,,Percorso 11,1
 location,kanto-route-11,name,ja,,,１１ばんどうろ,1
 location,kanto-route-11,name,ja,c,,１１ばんどうろ,1
+location,kanto-route-11,name,ja,frlg,,１１ばんどうろ,1
 location,kanto-route-11,name,ja,gs,,１１ばんどうろ,1
-location,kanto-route-11,name,ko,,,11번도로,1
 location,kanto-route-11,name,ko,gs,,11번 도로,1
 location,kanto-route-12,name,de,,,Route 12,1
 location,kanto-route-12,name,de,c,,Route 12,1
+location,kanto-route-12,name,de,frlg,,Route 12,1
 location,kanto-route-12,name,de,gs,,Route 12,1
 location,kanto-route-12,name,en,,,Route 12,1
 location,kanto-route-12,name,en,c,,Route 12,1
+location,kanto-route-12,name,en,frlg,,Route 12,1
 location,kanto-route-12,name,en,gs,,Route 12,1
 location,kanto-route-12,name,es,,,Ruta 12,1
 location,kanto-route-12,name,es,c,,Ruta 12,1
+location,kanto-route-12,name,es,frlg,,Ruta 12,1
 location,kanto-route-12,name,es,gs,,Ruta 12,1
 location,kanto-route-12,name,fr,,,Route 12,1
 location,kanto-route-12,name,fr,c,,Route 12,1
+location,kanto-route-12,name,fr,frlg,,Route 12,1
 location,kanto-route-12,name,fr,gs,,Route 12,1
 location,kanto-route-12,name,it,,,Percorso 12,1
 location,kanto-route-12,name,it,c,,Percorso 12,1
+location,kanto-route-12,name,it,frlg,,Percorso 12,1
 location,kanto-route-12,name,it,gs,,Percorso 12,1
 location,kanto-route-12,name,ja,,,１２ばんどうろ,1
 location,kanto-route-12,name,ja,c,,１２ばんどうろ,1
+location,kanto-route-12,name,ja,frlg,,１２ばんどうろ,1
 location,kanto-route-12,name,ja,gs,,１２ばんどうろ,1
-location,kanto-route-12,name,ko,,,12번도로,1
 location,kanto-route-12,name,ko,gs,,12번 도로,1
 location,kanto-route-13,name,de,,,Route 13,1
 location,kanto-route-13,name,de,c,,Route 13,1
+location,kanto-route-13,name,de,frlg,,Route 13,1
 location,kanto-route-13,name,de,gs,,Route 13,1
 location,kanto-route-13,name,en,,,Route 13,1
 location,kanto-route-13,name,en,c,,Route 13,1
+location,kanto-route-13,name,en,frlg,,Route 13,1
 location,kanto-route-13,name,en,gs,,Route 13,1
 location,kanto-route-13,name,es,,,Ruta 13,1
 location,kanto-route-13,name,es,c,,Ruta 13,1
+location,kanto-route-13,name,es,frlg,,Ruta 13,1
 location,kanto-route-13,name,es,gs,,Ruta 13,1
 location,kanto-route-13,name,fr,,,Route 13,1
 location,kanto-route-13,name,fr,c,,Route 13,1
+location,kanto-route-13,name,fr,frlg,,Route 13,1
 location,kanto-route-13,name,fr,gs,,Route 13,1
 location,kanto-route-13,name,it,,,Percorso 13,1
 location,kanto-route-13,name,it,c,,Percorso 13,1
+location,kanto-route-13,name,it,frlg,,Percorso 13,1
 location,kanto-route-13,name,it,gs,,Percorso 13,1
 location,kanto-route-13,name,ja,,,１３ばんどうろ,1
 location,kanto-route-13,name,ja,c,,１３ばんどうろ,1
+location,kanto-route-13,name,ja,frlg,,１３ばんどうろ,1
 location,kanto-route-13,name,ja,gs,,１３ばんどうろ,1
-location,kanto-route-13,name,ko,,,13번도로,1
 location,kanto-route-13,name,ko,gs,,13번 도로,1
 location,kanto-route-14,name,de,,,Route 14,1
 location,kanto-route-14,name,de,c,,Route 14,1
+location,kanto-route-14,name,de,frlg,,Route 14,1
 location,kanto-route-14,name,de,gs,,Route 14,1
 location,kanto-route-14,name,en,,,Route 14,1
 location,kanto-route-14,name,en,c,,Route 14,1
+location,kanto-route-14,name,en,frlg,,Route 14,1
 location,kanto-route-14,name,en,gs,,Route 14,1
 location,kanto-route-14,name,es,,,Ruta 14,1
 location,kanto-route-14,name,es,c,,Ruta 14,1
+location,kanto-route-14,name,es,frlg,,Ruta 14,1
 location,kanto-route-14,name,es,gs,,Ruta 14,1
 location,kanto-route-14,name,fr,,,Route 14,1
 location,kanto-route-14,name,fr,c,,Route 14,1
+location,kanto-route-14,name,fr,frlg,,Route 14,1
 location,kanto-route-14,name,fr,gs,,Route 14,1
 location,kanto-route-14,name,it,,,Percorso 14,1
 location,kanto-route-14,name,it,c,,Percorso 14,1
+location,kanto-route-14,name,it,frlg,,Percorso 14,1
 location,kanto-route-14,name,it,gs,,Percorso 14,1
 location,kanto-route-14,name,ja,,,１４ばんどうろ,1
 location,kanto-route-14,name,ja,c,,１４ばんどうろ,1
+location,kanto-route-14,name,ja,frlg,,１４ばんどうろ,1
 location,kanto-route-14,name,ja,gs,,１４ばんどうろ,1
-location,kanto-route-14,name,ko,,,14번도로,1
 location,kanto-route-14,name,ko,gs,,14번 도로,1
 location,kanto-route-15,name,de,,,Route 15,1
 location,kanto-route-15,name,de,c,,Route 15,1
+location,kanto-route-15,name,de,frlg,,Route 15,1
 location,kanto-route-15,name,de,gs,,Route 15,1
 location,kanto-route-15,name,en,,,Route 15,1
 location,kanto-route-15,name,en,c,,Route 15,1
+location,kanto-route-15,name,en,frlg,,Route 15,1
 location,kanto-route-15,name,en,gs,,Route 15,1
 location,kanto-route-15,name,es,,,Ruta 15,1
 location,kanto-route-15,name,es,c,,Ruta 15,1
+location,kanto-route-15,name,es,frlg,,Ruta 15,1
 location,kanto-route-15,name,es,gs,,Ruta 15,1
 location,kanto-route-15,name,fr,,,Route 15,1
 location,kanto-route-15,name,fr,c,,Route 15,1
+location,kanto-route-15,name,fr,frlg,,Route 15,1
 location,kanto-route-15,name,fr,gs,,Route 15,1
 location,kanto-route-15,name,it,,,Percorso 15,1
 location,kanto-route-15,name,it,c,,Percorso 15,1
+location,kanto-route-15,name,it,frlg,,Percorso 15,1
 location,kanto-route-15,name,it,gs,,Percorso 15,1
 location,kanto-route-15,name,ja,,,１５ばんどうろ,1
 location,kanto-route-15,name,ja,c,,１５ばんどうろ,1
+location,kanto-route-15,name,ja,frlg,,１５ばんどうろ,1
 location,kanto-route-15,name,ja,gs,,１５ばんどうろ,1
-location,kanto-route-15,name,ko,,,15번도로,1
 location,kanto-route-15,name,ko,gs,,15번 도로,1
 location,kanto-route-16,name,de,,,Route 16,1
 location,kanto-route-16,name,de,c,,Route 16,1
+location,kanto-route-16,name,de,frlg,,Route 16,1
 location,kanto-route-16,name,de,gs,,Route 16,1
 location,kanto-route-16,name,en,,,Route 16,1
 location,kanto-route-16,name,en,c,,Route 16,1
+location,kanto-route-16,name,en,frlg,,Route 16,1
 location,kanto-route-16,name,en,gs,,Route 16,1
 location,kanto-route-16,name,es,,,Ruta 16,1
 location,kanto-route-16,name,es,c,,Ruta 16,1
+location,kanto-route-16,name,es,frlg,,Ruta 16,1
 location,kanto-route-16,name,es,gs,,Ruta 16,1
 location,kanto-route-16,name,fr,,,Route 16,1
 location,kanto-route-16,name,fr,c,,Route 16,1
+location,kanto-route-16,name,fr,frlg,,Route 16,1
 location,kanto-route-16,name,fr,gs,,Route 16,1
 location,kanto-route-16,name,it,,,Percorso 16,1
 location,kanto-route-16,name,it,c,,Percorso 16,1
+location,kanto-route-16,name,it,frlg,,Percorso 16,1
 location,kanto-route-16,name,it,gs,,Percorso 16,1
 location,kanto-route-16,name,ja,,,１６ばんどうろ,1
 location,kanto-route-16,name,ja,c,,１６ばんどうろ,1
+location,kanto-route-16,name,ja,frlg,,１６ばんどうろ,1
 location,kanto-route-16,name,ja,gs,,１６ばんどうろ,1
-location,kanto-route-16,name,ko,,,16번도로,1
 location,kanto-route-16,name,ko,gs,,16번 도로,1
 location,kanto-route-17,name,de,,,Route 17,1
 location,kanto-route-17,name,de,c,,Route 17,1
+location,kanto-route-17,name,de,frlg,,Route 17,1
 location,kanto-route-17,name,de,gs,,Route 17,1
 location,kanto-route-17,name,en,,,Route 17,1
 location,kanto-route-17,name,en,c,,Route 17,1
+location,kanto-route-17,name,en,frlg,,Route 17,1
 location,kanto-route-17,name,en,gs,,Route 17,1
 location,kanto-route-17,name,es,,,Ruta 17,1
 location,kanto-route-17,name,es,c,,Ruta 17,1
+location,kanto-route-17,name,es,frlg,,Ruta 17,1
 location,kanto-route-17,name,es,gs,,Ruta 17,1
 location,kanto-route-17,name,fr,,,Route 17,1
 location,kanto-route-17,name,fr,c,,Route 17,1
+location,kanto-route-17,name,fr,frlg,,Route 17,1
 location,kanto-route-17,name,fr,gs,,Route 17,1
 location,kanto-route-17,name,it,,,Percorso 17,1
 location,kanto-route-17,name,it,c,,Percorso 17,1
+location,kanto-route-17,name,it,frlg,,Percorso 17,1
 location,kanto-route-17,name,it,gs,,Percorso 17,1
 location,kanto-route-17,name,ja,,,１７ばんどうろ,1
 location,kanto-route-17,name,ja,c,,１７ばんどうろ,1
+location,kanto-route-17,name,ja,frlg,,１７ばんどうろ,1
 location,kanto-route-17,name,ja,gs,,１７ばんどうろ,1
-location,kanto-route-17,name,ko,,,17번도로,1
 location,kanto-route-17,name,ko,gs,,17번 도로,1
 location,kanto-route-18,name,de,,,Route 18,1
 location,kanto-route-18,name,de,c,,Route 18,1
+location,kanto-route-18,name,de,frlg,,Route 18,1
 location,kanto-route-18,name,de,gs,,Route 18,1
 location,kanto-route-18,name,en,,,Route 18,1
 location,kanto-route-18,name,en,c,,Route 18,1
+location,kanto-route-18,name,en,frlg,,Route 18,1
 location,kanto-route-18,name,en,gs,,Route 18,1
 location,kanto-route-18,name,es,,,Ruta 18,1
 location,kanto-route-18,name,es,c,,Ruta 18,1
+location,kanto-route-18,name,es,frlg,,Ruta 18,1
 location,kanto-route-18,name,es,gs,,Ruta 18,1
 location,kanto-route-18,name,fr,,,Route 18,1
 location,kanto-route-18,name,fr,c,,Route 18,1
+location,kanto-route-18,name,fr,frlg,,Route 18,1
 location,kanto-route-18,name,fr,gs,,Route 18,1
 location,kanto-route-18,name,it,,,Percorso 18,1
 location,kanto-route-18,name,it,c,,Percorso 18,1
+location,kanto-route-18,name,it,frlg,,Percorso 18,1
 location,kanto-route-18,name,it,gs,,Percorso 18,1
 location,kanto-route-18,name,ja,,,１８ばんどうろ,1
 location,kanto-route-18,name,ja,c,,１８ばんどうろ,1
+location,kanto-route-18,name,ja,frlg,,１８ばんどうろ,1
 location,kanto-route-18,name,ja,gs,,１８ばんどうろ,1
-location,kanto-route-18,name,ko,,,18번도로,1
 location,kanto-route-18,name,ko,gs,,18번 도로,1
 location,kanto-route-2,name,de,,,Route 2,1
 location,kanto-route-2,name,de,c,,Route 2,1
+location,kanto-route-2,name,de,frlg,,Route 2,1
 location,kanto-route-2,name,de,gs,,Route 2,1
 location,kanto-route-2,name,en,,,Route 2,1
 location,kanto-route-2,name,en,c,,Route 2,1
+location,kanto-route-2,name,en,frlg,,Route 2,1
 location,kanto-route-2,name,en,gs,,Route 2,1
 location,kanto-route-2,name,es,,,Ruta 2,1
 location,kanto-route-2,name,es,c,,Ruta 2,1
+location,kanto-route-2,name,es,frlg,,Ruta 2,1
 location,kanto-route-2,name,es,gs,,Ruta 2,1
 location,kanto-route-2,name,fr,,,Route 2,1
 location,kanto-route-2,name,fr,c,,Route 2,1
+location,kanto-route-2,name,fr,frlg,,Route 2,1
 location,kanto-route-2,name,fr,gs,,Route 2,1
 location,kanto-route-2,name,it,,,Percorso 2,1
 location,kanto-route-2,name,it,c,,Percorso 2,1
+location,kanto-route-2,name,it,frlg,,Percorso 2,1
 location,kanto-route-2,name,it,gs,,Percorso 2,1
 location,kanto-route-2,name,ja,,,２ばんどうろ,1
 location,kanto-route-2,name,ja,c,,２ばんどうろ,1
+location,kanto-route-2,name,ja,frlg,,２ばんどうろ,1
 location,kanto-route-2,name,ja,gs,,２ばんどうろ,1
-location,kanto-route-2,name,ko,,,2번도로,1
 location,kanto-route-2,name,ko,gs,,2번 도로,1
 location,kanto-route-22,name,de,,,Route 22,1
 location,kanto-route-22,name,de,c,,Route 22,1
+location,kanto-route-22,name,de,frlg,,Route 22,1
 location,kanto-route-22,name,de,gs,,Route 22,1
 location,kanto-route-22,name,en,,,Route 22,1
 location,kanto-route-22,name,en,c,,Route 22,1
+location,kanto-route-22,name,en,frlg,,Route 22,1
 location,kanto-route-22,name,en,gs,,Route 22,1
 location,kanto-route-22,name,es,,,Ruta 22,1
 location,kanto-route-22,name,es,c,,Ruta 22,1
+location,kanto-route-22,name,es,frlg,,Ruta 22,1
 location,kanto-route-22,name,es,gs,,Ruta 22,1
 location,kanto-route-22,name,fr,,,Route 22,1
 location,kanto-route-22,name,fr,c,,Route 22,1
+location,kanto-route-22,name,fr,frlg,,Route 22,1
 location,kanto-route-22,name,fr,gs,,Route 22,1
 location,kanto-route-22,name,it,,,Percorso 22,1
 location,kanto-route-22,name,it,c,,Percorso 22,1
+location,kanto-route-22,name,it,frlg,,Percorso 22,1
 location,kanto-route-22,name,it,gs,,Percorso 22,1
 location,kanto-route-22,name,ja,,,２２ばんどうろ,1
 location,kanto-route-22,name,ja,c,,２２ばんどうろ,1
+location,kanto-route-22,name,ja,frlg,,２２ばんどうろ,1
 location,kanto-route-22,name,ja,gs,,２２ばんどうろ,1
-location,kanto-route-22,name,ko,,,22번도로,1
 location,kanto-route-22,name,ko,gs,,22번 도로,1
 location,kanto-route-23,name,de,,,Route 23,1
+location,kanto-route-23,name,de,frlg,,Route 23,1
 location,kanto-route-23,name,en,,,Route 23,1
+location,kanto-route-23,name,en,frlg,,Route 23,1
 location,kanto-route-23,name,es,,,Ruta 23,1
+location,kanto-route-23,name,es,frlg,,Ruta 23,1
 location,kanto-route-23,name,fr,,,Route 23,1
+location,kanto-route-23,name,fr,frlg,,Route 23,1
 location,kanto-route-23,name,it,,,Percorso 23,1
+location,kanto-route-23,name,it,frlg,,Percorso 23,1
 location,kanto-route-23,name,ja,,,２３ばんどうろ,1
-location,kanto-route-23,name,ko,,,23번도로,1
+location,kanto-route-23,name,ja,frlg,,２３ばんどうろ,1
 location,kanto-route-24,name,de,,,Route 24,1
 location,kanto-route-24,name,de,c,,Route 24,1
+location,kanto-route-24,name,de,frlg,,Route 24,1
 location,kanto-route-24,name,de,gs,,Route 24,1
 location,kanto-route-24,name,en,,,Route 24,1
 location,kanto-route-24,name,en,c,,Route 24,1
+location,kanto-route-24,name,en,frlg,,Route 24,1
 location,kanto-route-24,name,en,gs,,Route 24,1
 location,kanto-route-24,name,es,,,Ruta 24,1
 location,kanto-route-24,name,es,c,,Ruta 24,1
+location,kanto-route-24,name,es,frlg,,Ruta 24,1
 location,kanto-route-24,name,es,gs,,Ruta 24,1
 location,kanto-route-24,name,fr,,,Route 24,1
 location,kanto-route-24,name,fr,c,,Route 24,1
+location,kanto-route-24,name,fr,frlg,,Route 24,1
 location,kanto-route-24,name,fr,gs,,Route 24,1
 location,kanto-route-24,name,it,,,Percorso 24,1
 location,kanto-route-24,name,it,c,,Percorso 24,1
+location,kanto-route-24,name,it,frlg,,Percorso 24,1
 location,kanto-route-24,name,it,gs,,Percorso 24,1
 location,kanto-route-24,name,ja,,,２４ばんどうろ,1
 location,kanto-route-24,name,ja,c,,２４ばんどうろ,1
+location,kanto-route-24,name,ja,frlg,,２４ばんどうろ,1
 location,kanto-route-24,name,ja,gs,,２４ばんどうろ,1
-location,kanto-route-24,name,ko,,,24번도로,1
 location,kanto-route-24,name,ko,gs,,24번 도로,1
 location,kanto-route-25,name,de,,,Route 25,1
 location,kanto-route-25,name,de,c,,Route 25,1
+location,kanto-route-25,name,de,frlg,,Route 25,1
 location,kanto-route-25,name,de,gs,,Route 25,1
 location,kanto-route-25,name,en,,,Route 25,1
 location,kanto-route-25,name,en,c,,Route 25,1
+location,kanto-route-25,name,en,frlg,,Route 25,1
 location,kanto-route-25,name,en,gs,,Route 25,1
 location,kanto-route-25,name,es,,,Ruta 25,1
 location,kanto-route-25,name,es,c,,Ruta 25,1
+location,kanto-route-25,name,es,frlg,,Ruta 25,1
 location,kanto-route-25,name,es,gs,,Ruta 25,1
 location,kanto-route-25,name,fr,,,Route 25,1
 location,kanto-route-25,name,fr,c,,Route 25,1
+location,kanto-route-25,name,fr,frlg,,Route 25,1
 location,kanto-route-25,name,fr,gs,,Route 25,1
 location,kanto-route-25,name,it,,,Percorso 25,1
 location,kanto-route-25,name,it,c,,Percorso 25,1
+location,kanto-route-25,name,it,frlg,,Percorso 25,1
 location,kanto-route-25,name,it,gs,,Percorso 25,1
 location,kanto-route-25,name,ja,,,２５ばんどうろ,1
 location,kanto-route-25,name,ja,c,,２５ばんどうろ,1
+location,kanto-route-25,name,ja,frlg,,２５ばんどうろ,1
 location,kanto-route-25,name,ja,gs,,２５ばんどうろ,1
-location,kanto-route-25,name,ko,,,25번도로,1
 location,kanto-route-25,name,ko,gs,,25번 도로,1
 location,kanto-route-26,name,de,,,Route 26,1
 location,kanto-route-26,name,de,c,,Route 26,1
@@ -5770,210 +6912,265 @@ location,kanto-route-28,name,ko,,,28번도로,1
 location,kanto-route-28,name,ko,gs,,28번 도로,1
 location,kanto-route-3,name,de,,,Route 3,1
 location,kanto-route-3,name,de,c,,Route 3,1
+location,kanto-route-3,name,de,frlg,,Route 3,1
 location,kanto-route-3,name,de,gs,,Route 3,1
 location,kanto-route-3,name,en,,,Route 3,1
 location,kanto-route-3,name,en,c,,Route 3,1
+location,kanto-route-3,name,en,frlg,,Route 3,1
 location,kanto-route-3,name,en,gs,,Route 3,1
 location,kanto-route-3,name,es,,,Ruta 3,1
 location,kanto-route-3,name,es,c,,Ruta 3,1
+location,kanto-route-3,name,es,frlg,,Ruta 3,1
 location,kanto-route-3,name,es,gs,,Ruta 3,1
 location,kanto-route-3,name,fr,,,Route 3,1
 location,kanto-route-3,name,fr,c,,Route 3,1
+location,kanto-route-3,name,fr,frlg,,Route 3,1
 location,kanto-route-3,name,fr,gs,,Route 3,1
 location,kanto-route-3,name,it,,,Percorso 3,1
 location,kanto-route-3,name,it,c,,Percorso 3,1
+location,kanto-route-3,name,it,frlg,,Percorso 3,1
 location,kanto-route-3,name,it,gs,,Percorso 3,1
 location,kanto-route-3,name,ja,,,３ばんどうろ,1
 location,kanto-route-3,name,ja,c,,３ばんどうろ,1
+location,kanto-route-3,name,ja,frlg,,３ばんどうろ,1
 location,kanto-route-3,name,ja,gs,,３ばんどうろ,1
-location,kanto-route-3,name,ko,,,3번도로,1
 location,kanto-route-3,name,ko,gs,,3번 도로,1
 location,kanto-route-4,name,de,,,Route 4,1
 location,kanto-route-4,name,de,c,,Route 4,1
+location,kanto-route-4,name,de,frlg,,Route 4,1
 location,kanto-route-4,name,de,gs,,Route 4,1
 location,kanto-route-4,name,en,,,Route 4,1
 location,kanto-route-4,name,en,c,,Route 4,1
+location,kanto-route-4,name,en,frlg,,Route 4,1
 location,kanto-route-4,name,en,gs,,Route 4,1
 location,kanto-route-4,name,es,,,Ruta 4,1
 location,kanto-route-4,name,es,c,,Ruta 4,1
+location,kanto-route-4,name,es,frlg,,Ruta 4,1
 location,kanto-route-4,name,es,gs,,Ruta 4,1
 location,kanto-route-4,name,fr,,,Route 4,1
 location,kanto-route-4,name,fr,c,,Route 4,1
+location,kanto-route-4,name,fr,frlg,,Route 4,1
 location,kanto-route-4,name,fr,gs,,Route 4,1
 location,kanto-route-4,name,it,,,Percorso 4,1
 location,kanto-route-4,name,it,c,,Percorso 4,1
+location,kanto-route-4,name,it,frlg,,Percorso 4,1
 location,kanto-route-4,name,it,gs,,Percorso 4,1
 location,kanto-route-4,name,ja,,,４ばんどうろ,1
 location,kanto-route-4,name,ja,c,,４ばんどうろ,1
+location,kanto-route-4,name,ja,frlg,,４ばんどうろ,1
 location,kanto-route-4,name,ja,gs,,４ばんどうろ,1
-location,kanto-route-4,name,ko,,,4번도로,1
 location,kanto-route-4,name,ko,gs,,4번 도로,1
 location,kanto-route-5,name,de,,,Route 5,1
 location,kanto-route-5,name,de,c,,Route 5,1
+location,kanto-route-5,name,de,frlg,,Route 5,1
 location,kanto-route-5,name,de,gs,,Route 5,1
 location,kanto-route-5,name,en,,,Route 5,1
 location,kanto-route-5,name,en,c,,Route 5,1
+location,kanto-route-5,name,en,frlg,,Route 5,1
 location,kanto-route-5,name,en,gs,,Route 5,1
 location,kanto-route-5,name,es,,,Ruta 5,1
 location,kanto-route-5,name,es,c,,Ruta 5,1
+location,kanto-route-5,name,es,frlg,,Ruta 5,1
 location,kanto-route-5,name,es,gs,,Ruta 5,1
 location,kanto-route-5,name,fr,,,Route 5,1
 location,kanto-route-5,name,fr,c,,Route 5,1
+location,kanto-route-5,name,fr,frlg,,Route 5,1
 location,kanto-route-5,name,fr,gs,,Route 5,1
 location,kanto-route-5,name,it,,,Percorso 5,1
 location,kanto-route-5,name,it,c,,Percorso 5,1
+location,kanto-route-5,name,it,frlg,,Percorso 5,1
 location,kanto-route-5,name,it,gs,,Percorso 5,1
 location,kanto-route-5,name,ja,,,５ばんどうろ,1
 location,kanto-route-5,name,ja,c,,５ばんどうろ,1
+location,kanto-route-5,name,ja,frlg,,５ばんどうろ,1
 location,kanto-route-5,name,ja,gs,,５ばんどうろ,1
-location,kanto-route-5,name,ko,,,5번도로,1
 location,kanto-route-5,name,ko,gs,,5번 도로,1
 location,kanto-route-6,name,de,,,Route 6,1
 location,kanto-route-6,name,de,c,,Route 6,1
+location,kanto-route-6,name,de,frlg,,Route 6,1
 location,kanto-route-6,name,de,gs,,Route 6,1
 location,kanto-route-6,name,en,,,Route 6,1
 location,kanto-route-6,name,en,c,,Route 6,1
+location,kanto-route-6,name,en,frlg,,Route 6,1
 location,kanto-route-6,name,en,gs,,Route 6,1
 location,kanto-route-6,name,es,,,Ruta 6,1
 location,kanto-route-6,name,es,c,,Ruta 6,1
+location,kanto-route-6,name,es,frlg,,Ruta 6,1
 location,kanto-route-6,name,es,gs,,Ruta 6,1
 location,kanto-route-6,name,fr,,,Route 6,1
 location,kanto-route-6,name,fr,c,,Route 6,1
+location,kanto-route-6,name,fr,frlg,,Route 6,1
 location,kanto-route-6,name,fr,gs,,Route 6,1
 location,kanto-route-6,name,it,,,Percorso 6,1
 location,kanto-route-6,name,it,c,,Percorso 6,1
+location,kanto-route-6,name,it,frlg,,Percorso 6,1
 location,kanto-route-6,name,it,gs,,Percorso 6,1
 location,kanto-route-6,name,ja,,,６ばんどうろ,1
 location,kanto-route-6,name,ja,c,,６ばんどうろ,1
+location,kanto-route-6,name,ja,frlg,,６ばんどうろ,1
 location,kanto-route-6,name,ja,gs,,６ばんどうろ,1
-location,kanto-route-6,name,ko,,,6번도로,1
 location,kanto-route-6,name,ko,gs,,6번 도로,1
 location,kanto-route-7,name,de,,,Route 7,1
 location,kanto-route-7,name,de,c,,Route 7,1
+location,kanto-route-7,name,de,frlg,,Route 7,1
 location,kanto-route-7,name,de,gs,,Route 7,1
 location,kanto-route-7,name,en,,,Route 7,1
 location,kanto-route-7,name,en,c,,Route 7,1
+location,kanto-route-7,name,en,frlg,,Route 7,1
 location,kanto-route-7,name,en,gs,,Route 7,1
 location,kanto-route-7,name,es,,,Ruta 7,1
 location,kanto-route-7,name,es,c,,Ruta 7,1
+location,kanto-route-7,name,es,frlg,,Ruta 7,1
 location,kanto-route-7,name,es,gs,,Ruta 7,1
 location,kanto-route-7,name,fr,,,Route 7,1
 location,kanto-route-7,name,fr,c,,Route 7,1
+location,kanto-route-7,name,fr,frlg,,Route 7,1
 location,kanto-route-7,name,fr,gs,,Route 7,1
 location,kanto-route-7,name,it,,,Percorso 7,1
 location,kanto-route-7,name,it,c,,Percorso 7,1
+location,kanto-route-7,name,it,frlg,,Percorso 7,1
 location,kanto-route-7,name,it,gs,,Percorso 7,1
 location,kanto-route-7,name,ja,,,７ばんどうろ,1
 location,kanto-route-7,name,ja,c,,７ばんどうろ,1
+location,kanto-route-7,name,ja,frlg,,７ばんどうろ,1
 location,kanto-route-7,name,ja,gs,,７ばんどうろ,1
-location,kanto-route-7,name,ko,,,7번도로,1
 location,kanto-route-7,name,ko,gs,,7번 도로,1
 location,kanto-route-8,name,de,,,Route 8,1
 location,kanto-route-8,name,de,c,,Route 8,1
+location,kanto-route-8,name,de,frlg,,Route 8,1
 location,kanto-route-8,name,de,gs,,Route 8,1
 location,kanto-route-8,name,en,,,Route 8,1
 location,kanto-route-8,name,en,c,,Route 8,1
+location,kanto-route-8,name,en,frlg,,Route 8,1
 location,kanto-route-8,name,en,gs,,Route 8,1
 location,kanto-route-8,name,es,,,Ruta 8,1
 location,kanto-route-8,name,es,c,,Ruta 8,1
+location,kanto-route-8,name,es,frlg,,Ruta 8,1
 location,kanto-route-8,name,es,gs,,Ruta 8,1
 location,kanto-route-8,name,fr,,,Route 8,1
 location,kanto-route-8,name,fr,c,,Route 8,1
+location,kanto-route-8,name,fr,frlg,,Route 8,1
 location,kanto-route-8,name,fr,gs,,Route 8,1
 location,kanto-route-8,name,it,,,Percorso 8,1
 location,kanto-route-8,name,it,c,,Percorso 8,1
+location,kanto-route-8,name,it,frlg,,Percorso 8,1
 location,kanto-route-8,name,it,gs,,Percorso 8,1
 location,kanto-route-8,name,ja,,,８ばんどうろ,1
 location,kanto-route-8,name,ja,c,,８ばんどうろ,1
+location,kanto-route-8,name,ja,frlg,,８ばんどうろ,1
 location,kanto-route-8,name,ja,gs,,８ばんどうろ,1
-location,kanto-route-8,name,ko,,,8번도로,1
 location,kanto-route-8,name,ko,gs,,8번 도로,1
 location,kanto-route-9,name,de,,,Route 9,1
 location,kanto-route-9,name,de,c,,Route 9,1
+location,kanto-route-9,name,de,frlg,,Route 9,1
 location,kanto-route-9,name,de,gs,,Route 9,1
 location,kanto-route-9,name,en,,,Route 9,1
 location,kanto-route-9,name,en,c,,Route 9,1
+location,kanto-route-9,name,en,frlg,,Route 9,1
 location,kanto-route-9,name,en,gs,,Route 9,1
 location,kanto-route-9,name,es,,,Ruta 9,1
 location,kanto-route-9,name,es,c,,Ruta 9,1
+location,kanto-route-9,name,es,frlg,,Ruta 9,1
 location,kanto-route-9,name,es,gs,,Ruta 9,1
 location,kanto-route-9,name,fr,,,Route 9,1
 location,kanto-route-9,name,fr,c,,Route 9,1
+location,kanto-route-9,name,fr,frlg,,Route 9,1
 location,kanto-route-9,name,fr,gs,,Route 9,1
 location,kanto-route-9,name,it,,,Percorso 9,1
 location,kanto-route-9,name,it,c,,Percorso 9,1
+location,kanto-route-9,name,it,frlg,,Percorso 9,1
 location,kanto-route-9,name,it,gs,,Percorso 9,1
 location,kanto-route-9,name,ja,,,９ばんどうろ,1
 location,kanto-route-9,name,ja,c,,９ばんどうろ,1
+location,kanto-route-9,name,ja,frlg,,９ばんどうろ,1
 location,kanto-route-9,name,ja,gs,,９ばんどうろ,1
-location,kanto-route-9,name,ko,,,9번도로,1
 location,kanto-route-9,name,ko,gs,,9번 도로,1
 location,kanto-safari-zone,name,de,,,Safari-Zone,1
+location,kanto-safari-zone,name,de,frlg,,Safari-Zone,1
 location,kanto-safari-zone,name,en,,,Safari Zone,1
+location,kanto-safari-zone,name,en,frlg,,Safari Zone,1
 location,kanto-safari-zone,name,es,,,Zona Safari,1
+location,kanto-safari-zone,name,es,frlg,,Zona Safari,1
 location,kanto-safari-zone,name,fr,,,Parc Safari,1
+location,kanto-safari-zone,name,fr,frlg,,Parc Safari,1
 location,kanto-safari-zone,name,it,,,Zona Safari,1
+location,kanto-safari-zone,name,it,frlg,,Zona Safari,1
 location,kanto-safari-zone,name,ja,,,サファリゾーン,1
-location,kanto-safari-zone,name,ko,,,사파리존,1
+location,kanto-safari-zone,name,ja,frlg,,サファリゾーン,1
 location,kanto-sea-route-19,name,de,,,Route 19,1
 location,kanto-sea-route-19,name,de,c,,Route 19,1
+location,kanto-sea-route-19,name,de,frlg,,Route 19,1
 location,kanto-sea-route-19,name,de,gs,,Route 19,1
 location,kanto-sea-route-19,name,en,,,Route 19,1
 location,kanto-sea-route-19,name,en,c,,Route 19,1
+location,kanto-sea-route-19,name,en,frlg,,Route 19,1
 location,kanto-sea-route-19,name,en,gs,,Route 19,1
 location,kanto-sea-route-19,name,es,,,Ruta 19,1
 location,kanto-sea-route-19,name,es,c,,Ruta 19,1
+location,kanto-sea-route-19,name,es,frlg,,Ruta 19,1
 location,kanto-sea-route-19,name,es,gs,,Ruta 19,1
 location,kanto-sea-route-19,name,fr,,,Chenal 19,1
 location,kanto-sea-route-19,name,fr,c,,Route 19,1
+location,kanto-sea-route-19,name,fr,frlg,,Chenal 19,1
 location,kanto-sea-route-19,name,fr,gs,,Route 19,1
 location,kanto-sea-route-19,name,it,,,Percorso 19,1
 location,kanto-sea-route-19,name,it,c,,Percorso 19,1
+location,kanto-sea-route-19,name,it,frlg,,Percorso 19,1
 location,kanto-sea-route-19,name,it,gs,,Percorso 19,1
 location,kanto-sea-route-19,name,ja,,,１９ばんすいどう,1
 location,kanto-sea-route-19,name,ja,c,,１９ばんすいどう,1
+location,kanto-sea-route-19,name,ja,frlg,,１９ばんすいどう,1
 location,kanto-sea-route-19,name,ja,gs,,１９ばんすいどう,1
-location,kanto-sea-route-19,name,ko,,,19번수로,1
 location,kanto-sea-route-19,name,ko,gs,,19번 도로,1
 location,kanto-sea-route-20,name,de,,,Route 20,1
 location,kanto-sea-route-20,name,de,c,,Route 20,1
+location,kanto-sea-route-20,name,de,frlg,,Route 20,1
 location,kanto-sea-route-20,name,de,gs,,Route 20,1
 location,kanto-sea-route-20,name,en,,,Route 20,1
 location,kanto-sea-route-20,name,en,c,,Route 20,1
+location,kanto-sea-route-20,name,en,frlg,,Route 20,1
 location,kanto-sea-route-20,name,en,gs,,Route 20,1
 location,kanto-sea-route-20,name,es,,,Ruta 20,1
 location,kanto-sea-route-20,name,es,c,,Ruta 20,1
+location,kanto-sea-route-20,name,es,frlg,,Ruta 20,1
 location,kanto-sea-route-20,name,es,gs,,Ruta 20,1
 location,kanto-sea-route-20,name,fr,,,Chenal 20,1
 location,kanto-sea-route-20,name,fr,c,,Route 20,1
+location,kanto-sea-route-20,name,fr,frlg,,Chenal 20,1
 location,kanto-sea-route-20,name,fr,gs,,Route 20,1
 location,kanto-sea-route-20,name,it,,,Percorso 20,1
 location,kanto-sea-route-20,name,it,c,,Percorso 20,1
+location,kanto-sea-route-20,name,it,frlg,,Percorso 20,1
 location,kanto-sea-route-20,name,it,gs,,Percorso 20,1
 location,kanto-sea-route-20,name,ja,,,２０ばんすいどう,1
 location,kanto-sea-route-20,name,ja,c,,２０ばんすいどう,1
+location,kanto-sea-route-20,name,ja,frlg,,２０ばんすいどう,1
 location,kanto-sea-route-20,name,ja,gs,,２０ばんすいどう,1
-location,kanto-sea-route-20,name,ko,,,20번수로,1
 location,kanto-sea-route-20,name,ko,gs,,20번 도로,1
 location,kanto-sea-route-21,name,de,,,Route 21,1
 location,kanto-sea-route-21,name,de,c,,Route 21,1
+location,kanto-sea-route-21,name,de,frlg,,Route 21,1
 location,kanto-sea-route-21,name,de,gs,,Route 21,1
 location,kanto-sea-route-21,name,en,,,Route 21,1
 location,kanto-sea-route-21,name,en,c,,Route 21,1
+location,kanto-sea-route-21,name,en,frlg,,Route 21,1
 location,kanto-sea-route-21,name,en,gs,,Route 21,1
 location,kanto-sea-route-21,name,es,,,Ruta 21,1
 location,kanto-sea-route-21,name,es,c,,Ruta 21,1
+location,kanto-sea-route-21,name,es,frlg,,Ruta 21,1
 location,kanto-sea-route-21,name,es,gs,,Ruta 21,1
 location,kanto-sea-route-21,name,fr,,,Chenal 21,1
 location,kanto-sea-route-21,name,fr,c,,Route 21,1
+location,kanto-sea-route-21,name,fr,frlg,,Chenal 21,1
 location,kanto-sea-route-21,name,fr,gs,,Route 21,1
 location,kanto-sea-route-21,name,it,,,Percorso 21,1
 location,kanto-sea-route-21,name,it,c,,Percorso 21,1
+location,kanto-sea-route-21,name,it,frlg,,Percorso 21,1
 location,kanto-sea-route-21,name,it,gs,,Percorso 21,1
 location,kanto-sea-route-21,name,ja,,,２１ばんすいどう,1
 location,kanto-sea-route-21,name,ja,c,,２１ばんすいどう,1
+location,kanto-sea-route-21,name,ja,frlg,,２１ばんすいどう,1
 location,kanto-sea-route-21,name,ja,gs,,２１ばんすいどう,1
-location,kanto-sea-route-21,name,ko,,,21번수로,1
 location,kanto-sea-route-21,name,ko,gs,,21번 도로,1
 location,kanto-victory-road-1,name,de,,,Siegesstraße (HG/SS),1
 location,kanto-victory-road-1,name,de,c,,Siegesstrasse,1
@@ -5995,6 +7192,30 @@ location,kanto-victory-road-1,name,ja,c,,チャンピオンロード,1
 location,kanto-victory-road-1,name,ja,gs,,チャンピオンロード,1
 location,kanto-victory-road-1,name,ko,,,챔피언로드 (HG/SS),1
 location,kanto-victory-road-1,name,ko,gs,,챔피언 로드,1
+location,kanto-victory-road-2,name,de,,,Siegesstraße,1
+location,kanto-victory-road-2,name,de,frlg,,Siegesstraße,1
+location,kanto-victory-road-2,name,en,,,Victory Road,1
+location,kanto-victory-road-2,name,en,frlg,,Victory Road,1
+location,kanto-victory-road-2,name,es,,,Calle Victoria,1
+location,kanto-victory-road-2,name,es,frlg,,Calle Victoria,1
+location,kanto-victory-road-2,name,fr,,,Route Victoire,1
+location,kanto-victory-road-2,name,fr,frlg,,Route Victoire,1
+location,kanto-victory-road-2,name,it,,,Via Vittoria,1
+location,kanto-victory-road-2,name,it,frlg,,Via Vittoria,1
+location,kanto-victory-road-2,name,ja,,,チャンピオンロード,1
+location,kanto-victory-road-2,name,ja,frlg,,チャンピオンロード,1
+location,kindle-road,name,de,,,Glühweg,1
+location,kindle-road,name,de,frlg,,Glühweg,1
+location,kindle-road,name,en,,,Kindle Road,1
+location,kindle-road,name,en,frlg,,Kindle Road,1
+location,kindle-road,name,es,,,Camino Candente,1
+location,kindle-road,name,es,frlg,,Camino Candente,1
+location,kindle-road,name,fr,,,Route Tison,1
+location,kindle-road,name,fr,frlg,,Route Tison,1
+location,kindle-road,name,it,,,Via Vulcanica,1
+location,kindle-road,name,it,frlg,,Via Vulcanica,1
+location,kindle-road,name,ja,,,ほてりのみち,1
+location,kindle-road,name,ja,frlg,,ほてりのみち,1
 location,lake-of-rage,name,de,,,See des Zorns,1
 location,lake-of-rage,name,de,c,,See des Zorns,1
 location,lake-of-rage,name,de,gs,,See des Zorns,1
@@ -6015,6 +7236,72 @@ location,lake-of-rage,name,ja,c,,いかりのみずうみ,1
 location,lake-of-rage,name,ja,gs,,いかりのみずうみ,1
 location,lake-of-rage,name,ko,,,분노의 호수,1
 location,lake-of-rage,name,ko,gs,,분노의 호수,1
+location,lilycove-city,name,de,,,Seegrasulb City,1
+location,lilycove-city,name,de,e,,Seegrasulb City,1
+location,lilycove-city,name,de,rs,,Seegrasulb City,1
+location,lilycove-city,name,en,,,Lilycove City,1
+location,lilycove-city,name,en,e,,Lilycove City,1
+location,lilycove-city,name,en,rs,,Lilycove City,1
+location,lilycove-city,name,es,,,Ciudad Calagua,1
+location,lilycove-city,name,es,e,,Ciudad Calagua,1
+location,lilycove-city,name,es,rs,,Ciudad Calagua,1
+location,lilycove-city,name,fr,,,Nénucrique,1
+location,lilycove-city,name,fr,e,,Nénucrique,1
+location,lilycove-city,name,fr,rs,,Nénucrique,1
+location,lilycove-city,name,it,,,Porto Alghepoli,1
+location,lilycove-city,name,it,e,,Porto Alghepoli,1
+location,lilycove-city,name,it,rs,,Porto Alghepoli,1
+location,lilycove-city,name,ja,,,ミナモシティ,1
+location,lilycove-city,name,ja,e,,ミナモシティ,1
+location,lilycove-city,name,ja,rs,,ミナモシティ,1
+location,liptoo-chamber,name,de,,,Pezwulp-Kammer,1
+location,liptoo-chamber,name,de,frlg,,Pezwulp-Kammer,1
+location,liptoo-chamber,name,en,,,Liptoo Chamber,1
+location,liptoo-chamber,name,en,frlg,,Liptoo Chamber,1
+location,liptoo-chamber,name,es,,,Cámara Tulipdos,1
+location,liptoo-chamber,name,es,frlg,,Cámara Tulipdos,1
+location,liptoo-chamber,name,fr,,,Chambre Deulipe,1
+location,liptoo-chamber,name,fr,frlg,,Chambre Deulipe,1
+location,liptoo-chamber,name,it,,,Sala B-etulla,1
+location,liptoo-chamber,name,it,frlg,,Sala B-etulla,1
+location,liptoo-chamber,name,ja,,,ナザンのせきしつ,1
+location,liptoo-chamber,name,ja,frlg,,ナザンのせきしつ,1
+location,littleroot-town,name,de,,,Wurzelheim,1
+location,littleroot-town,name,de,e,,Wurzelheim,1
+location,littleroot-town,name,en,,,Littleroot Town,1
+location,littleroot-town,name,en,e,,Littleroot Town,1
+location,littleroot-town,name,es,,,Villa Raíz,1
+location,littleroot-town,name,es,e,,Villa Raíz,1
+location,littleroot-town,name,fr,,,Bourg-en-Vol,1
+location,littleroot-town,name,fr,e,,Bourg-en-Vol,1
+location,littleroot-town,name,it,,,Albanova,1
+location,littleroot-town,name,it,e,,Albanova,1
+location,littleroot-town,name,ja,,,ミシロタウン,1
+location,littleroot-town,name,ja,e,,ミシロタウン,1
+location,lost-cave,name,de,,,Verlorene Höhle,1
+location,lost-cave,name,de,frlg,,Verlorene Höhle,1
+location,lost-cave,name,en,,,Lost Cave,1
+location,lost-cave,name,en,frlg,,Lost Cave,1
+location,lost-cave,name,es,,,Cueva Perdida,1
+location,lost-cave,name,es,frlg,,Cueva Perdida,1
+location,lost-cave,name,fr,,,Grotte Perdue,1
+location,lost-cave,name,fr,frlg,,Grotte Perdue,1
+location,lost-cave,name,it,,,Grotta Sperduta,1
+location,lost-cave,name,it,frlg,,Grotta Sperduta,1
+location,lost-cave,name,ja,,,かえらずのあな,1
+location,lost-cave,name,ja,frlg,,かえらずのあな,1
+location,magma-hideout,name,de,,,Magmas Versteck,1
+location,magma-hideout,name,de,e,,Magmas Versteck,1
+location,magma-hideout,name,en,,,Magma Hideout,1
+location,magma-hideout,name,en,e,,Magma Hideout,1
+location,magma-hideout,name,es,,,Guarida Magma,1
+location,magma-hideout,name,es,e,,Guarida Magma,1
+location,magma-hideout,name,fr,,,Planque Magma,1
+location,magma-hideout,name,fr,e,,Planque Magma,1
+location,magma-hideout,name,it,,,Rifugio Magma,1
+location,magma-hideout,name,it,e,,Rifugio Magma,1
+location,magma-hideout,name,ja,,,マグマだん アジト,1
+location,magma-hideout,name,ja,e,,マグマだん アジト,1
 location,mahogany-town,name,de,,,Mahagonia City,1
 location,mahogany-town,name,de,c,,Mahagonia City,1
 location,mahogany-town,name,de,gs,,Mahagonia City,1
@@ -6035,25 +7322,126 @@ location,mahogany-town,name,ja,c,,チョウジタウン,1
 location,mahogany-town,name,ja,gs,,チョウジタウン,1
 location,mahogany-town,name,ko,,,황토마을,1
 location,mahogany-town,name,ko,gs,,황토마을,1
+location,marine-cave,name,de,,,Ozeanhöhle,1
+location,marine-cave,name,de,e,,Ozeanhöhle,1
+location,marine-cave,name,en,,,Marine Cave,1
+location,marine-cave,name,en,e,,Marine Cave,1
+location,marine-cave,name,es,,,Cueva Marina,1
+location,marine-cave,name,es,e,,Cueva Marina,1
+location,marine-cave,name,fr,,,Grotte Marine,1
+location,marine-cave,name,fr,e,,Grotte Marine,1
+location,marine-cave,name,it,,,Grotta Mare,1
+location,marine-cave,name,it,e,,Grotta Mare,1
+location,marine-cave,name,ja,,,うみのどうくつ,1
+location,marine-cave,name,ja,e,,うみのどうくつ,1
+location,memorial-pillar,name,de,,,Gedenksäule,1
+location,memorial-pillar,name,de,frlg,,Gedenksäule,1
+location,memorial-pillar,name,en,,,Memorial Pillar,1
+location,memorial-pillar,name,en,frlg,,Memorial Pillar,1
+location,memorial-pillar,name,es,,,Pilar Recuerdo,1
+location,memorial-pillar,name,es,frlg,,Pilar Recuerdo,1
+location,memorial-pillar,name,fr,,,Mémorial,1
+location,memorial-pillar,name,fr,frlg,,Mémorial,1
+location,memorial-pillar,name,it,,,Colonna Rocciosa,1
+location,memorial-pillar,name,it,frlg,,Colonna Rocciosa,1
+location,memorial-pillar,name,ja,,,おもいでのとう,1
+location,memorial-pillar,name,ja,frlg,,おもいでのとう,1
+location,meteor-falls,name,de,,,Meteorfälle,1
+location,meteor-falls,name,de,e,,Meteorfälle,1
+location,meteor-falls,name,de,rs,,Meteorfälle,1
+location,meteor-falls,name,en,,,Meteor Falls,1
+location,meteor-falls,name,en,e,,Meteor Falls,1
+location,meteor-falls,name,en,rs,,Meteor Falls,1
+location,meteor-falls,name,es,,,Cascada Meteoro,1
+location,meteor-falls,name,es,e,,Cascada Meteoro,1
+location,meteor-falls,name,es,rs,,Cascada Meteoro,1
+location,meteor-falls,name,fr,,,Site Météore,1
+location,meteor-falls,name,fr,e,,Site Météore,1
+location,meteor-falls,name,fr,rs,,Site Météore,1
+location,meteor-falls,name,it,,,Cascate Meteora,1
+location,meteor-falls,name,it,e,,Cascate Meteora,1
+location,meteor-falls,name,it,rs,,Cascate Meteora,1
+location,meteor-falls,name,ja,,,りゅうせいのたき,1
+location,meteor-falls,name,ja,e,,りゅうせいのたき,1
+location,meteor-falls,name,ja,rs,,りゅうせいのたき,1
+location,mirage-tower,name,de,,,Wunderturm,1
+location,mirage-tower,name,de,e,,Wunderturm,1
+location,mirage-tower,name,en,,,Mirage Tower,1
+location,mirage-tower,name,en,e,,Mirage Tower,1
+location,mirage-tower,name,es,,,Torre Espejismo,1
+location,mirage-tower,name,es,e,,Torre Espejismo,1
+location,mirage-tower,name,fr,,,Tour Mirage,1
+location,mirage-tower,name,fr,e,,Tour Mirage,1
+location,mirage-tower,name,it,,,Torre Miraggio,1
+location,mirage-tower,name,it,e,,Torre Miraggio,1
+location,mirage-tower,name,ja,,,げんえいのとう,1
+location,mirage-tower,name,ja,e,,げんえいのとう,1
+location,monean-chamber,name,de,,,Einamon-Kammer,1
+location,monean-chamber,name,de,frlg,,Einamon-Kammer,1
+location,monean-chamber,name,en,,,Monean Chamber,1
+location,monean-chamber,name,en,frlg,,Monean Chamber,1
+location,monean-chamber,name,es,,,Cámara Anémuna,1
+location,monean-chamber,name,es,frlg,,Cámara Anémuna,1
+location,monean-chamber,name,fr,,,Chambre Anémune,1
+location,monean-chamber,name,fr,frlg,,Chambre Anémune,1
+location,monean-chamber,name,it,,,Sala A-loe,1
+location,monean-chamber,name,it,frlg,,Sala A-loe,1
+location,monean-chamber,name,ja,,,イレスのせきしつ,1
+location,monean-chamber,name,ja,frlg,,イレスのせきしつ,1
+location,mossdeep-city,name,de,,,Moosbach City,1
+location,mossdeep-city,name,de,e,,Moosbach City,1
+location,mossdeep-city,name,de,rs,,Moosbach City,1
+location,mossdeep-city,name,en,,,Mossdeep City,1
+location,mossdeep-city,name,en,e,,Mossdeep City,1
+location,mossdeep-city,name,en,rs,,Mossdeep City,1
+location,mossdeep-city,name,es,,,Ciudad Algaria,1
+location,mossdeep-city,name,es,e,,Ciudad Algaria,1
+location,mossdeep-city,name,es,rs,,Ciudad Algaria,1
+location,mossdeep-city,name,fr,,,Algatia,1
+location,mossdeep-city,name,fr,e,,Algatia,1
+location,mossdeep-city,name,fr,rs,,Algatia,1
+location,mossdeep-city,name,it,,,Verdeazzupoli,1
+location,mossdeep-city,name,it,e,,Verdeazzupoli,1
+location,mossdeep-city,name,it,rs,,Verdeazzupoli,1
+location,mossdeep-city,name,ja,,,トクサネシティ,1
+location,mossdeep-city,name,ja,e,,トクサネシティ,1
+location,mossdeep-city,name,ja,rs,,トクサネシティ,1
+location,mt-ember,name,de,,,Glutberg,1
+location,mt-ember,name,de,frlg,,Glutberg,1
+location,mt-ember,name,en,,,Mt. Ember,1
+location,mt-ember,name,en,frlg,,Mt. Ember,1
+location,mt-ember,name,es,,,Mt. Ascuas,1
+location,mt-ember,name,es,frlg,,Mt. Ascuas,1
+location,mt-ember,name,fr,,,Mont Braise,1
+location,mt-ember,name,fr,frlg,,Mont Braise,1
+location,mt-ember,name,it,,,Monte Brace,1
+location,mt-ember,name,it,frlg,,Monte Brace,1
+location,mt-ember,name,ja,,,ともしびやま,1
+location,mt-ember,name,ja,frlg,,ともしびやま,1
 location,mt-moon,name,de,,,Mondberg,1
 location,mt-moon,name,de,c,,Mondberg,1
+location,mt-moon,name,de,frlg,,Mondberg,1
 location,mt-moon,name,de,gs,,Mondberg,1
 location,mt-moon,name,en,,,Mt. Moon,1
 location,mt-moon,name,en,c,,Mt. Moon,1
+location,mt-moon,name,en,frlg,,Mt. Moon,1
 location,mt-moon,name,en,gs,,Mt. Moon,1
 location,mt-moon,name,es,,,Mt. Moon,1
 location,mt-moon,name,es,c,,Mt. Moon,1
+location,mt-moon,name,es,frlg,,Mt. Moon,1
 location,mt-moon,name,es,gs,,Mt. Moon,1
 location,mt-moon,name,fr,,,Mont Sélénite,1
 location,mt-moon,name,fr,c,,Mont Sélénite,1
+location,mt-moon,name,fr,frlg,,Mont Sélénite,1
 location,mt-moon,name,fr,gs,,Mont Sélénite,1
-location,mt-moon,name,it,,,Monteluna,1
+location,mt-moon,name,it,,,Monte Luna,1
 location,mt-moon,name,it,c,,Monteluna,1
+location,mt-moon,name,it,frlg,,Monte Luna,1
 location,mt-moon,name,it,gs,,Monteluna,1
-location,mt-moon,name,ja,,,おつきみやま,1
+location,mt-moon,name,ja,,,オツキミやま,1
 location,mt-moon,name,ja,c,,おつきみやま,1
+location,mt-moon,name,ja,frlg,,オツキミやま,1
 location,mt-moon,name,ja,gs,,おつきみやま,1
-location,mt-moon,name,ko,,,달맞이산,1
 location,mt-moon,name,ko,gs,,달맞이 산,1
 location,mt-mortar,name,de,,,Kesselberg,1
 location,mt-mortar,name,de,c,,Kesselberg,1
@@ -6075,6 +7463,24 @@ location,mt-mortar,name,ja,c,,スリバチやま,1
 location,mt-mortar,name,ja,gs,,スリバチやま,1
 location,mt-mortar,name,ko,,,절구산,1
 location,mt-mortar,name,ko,gs,,절구산,1
+location,mt-pyre,name,de,,,Pyroberg,1
+location,mt-pyre,name,de,e,,Pyroberg,1
+location,mt-pyre,name,de,rs,,Pyroberg,1
+location,mt-pyre,name,en,,,Mt. Pyre,1
+location,mt-pyre,name,en,e,,Mt. Pyre,1
+location,mt-pyre,name,en,rs,,Mt. Pyre,1
+location,mt-pyre,name,es,,,Monte Pírico,1
+location,mt-pyre,name,es,e,,Monte Pírico,1
+location,mt-pyre,name,es,rs,,Monte Pírico,1
+location,mt-pyre,name,fr,,,Mont Mémoria,1
+location,mt-pyre,name,fr,e,,Mont Mémoria,1
+location,mt-pyre,name,fr,rs,,Mont Mémoria,1
+location,mt-pyre,name,it,,,Monte Pira,1
+location,mt-pyre,name,it,e,,Monte Pira,1
+location,mt-pyre,name,it,rs,,Monte Pira,1
+location,mt-pyre,name,ja,,,おくりびやま,1
+location,mt-pyre,name,ja,e,,おくりびやま,1
+location,mt-pyre,name,ja,rs,,おくりびやま,1
 location,mt-silver-cave,name,de,,,Silberberghöhle,1
 location,mt-silver-cave,name,de,c,,Silberhöhle,1
 location,mt-silver-cave,name,de,gs,,Silberhöhle,1
@@ -6115,6 +7521,12 @@ location,national-park,name,ja,c,,しぜんこうえん,1
 location,national-park,name,ja,gs,,しぜんこうえん,1
 location,national-park,name,ko,,,자연공원,1
 location,national-park,name,ko,gs,,자연 공원,1
+location,navel-rock,name,en,,,Navel Rock,1
+location,navel-rock,name,en,e,,Navel Rock,1
+location,navel-rock,name,en,frlg,,Navel Rock,1
+location,navel-rock,name,ja,,,へそのいわ,1
+location,navel-rock,name,ja,e,,へそのいわ,1
+location,navel-rock,name,ja,frlg,,へそのいわ,1
 location,new-bark-town,name,de,,,Neuborkia,1
 location,new-bark-town,name,de,c,,Neuborkia,1
 location,new-bark-town,name,de,gs,,Neuborkia,1
@@ -6135,6 +7547,24 @@ location,new-bark-town,name,ja,c,,ワカバタウン,1
 location,new-bark-town,name,ja,gs,,ワカバタウン,1
 location,new-bark-town,name,ko,,,연두마을,1
 location,new-bark-town,name,ko,gs,,연두마을,1
+location,new-mauville,name,de,,,Neu Malvenfroh,1
+location,new-mauville,name,de,e,,Neu Malvenfroh,1
+location,new-mauville,name,de,rs,,Neu Malvenfroh,1
+location,new-mauville,name,en,,,New Mauville,1
+location,new-mauville,name,en,e,,New Mauville,1
+location,new-mauville,name,en,rs,,New Mauville,1
+location,new-mauville,name,es,,,Malvalanova,1
+location,new-mauville,name,es,e,,Malvalanova,1
+location,new-mauville,name,es,rs,,Malvalanova,1
+location,new-mauville,name,fr,,,New Lavandia,1
+location,new-mauville,name,fr,e,,New Lavandia,1
+location,new-mauville,name,fr,rs,,New Lavandia,1
+location,new-mauville,name,it,,,Ciclanova,1
+location,new-mauville,name,it,e,,Ciclanova,1
+location,new-mauville,name,it,rs,,Ciclanova,1
+location,new-mauville,name,ja,,,ニューキンセツ,1
+location,new-mauville,name,ja,e,,ニューキンセツ,1
+location,new-mauville,name,ja,rs,,ニューキンセツ,1
 location,olivine-city,name,de,,,Oliviana City,1
 location,olivine-city,name,de,c,,Oliviana City,1
 location,olivine-city,name,de,gs,,Oliviana City,1
@@ -6155,26 +7585,121 @@ location,olivine-city,name,ja,c,,アサギシティ,1
 location,olivine-city,name,ja,gs,,アサギシティ,1
 location,olivine-city,name,ko,,,담청시티,1
 location,olivine-city,name,ko,gs,,담청시티,1
+location,one-island,name,de,,,Eiland Eins,1
+location,one-island,name,de,frlg,,Eiland Eins,1
+location,one-island,name,en,,,One Island,1
+location,one-island,name,en,frlg,,One Island,1
+location,one-island,name,es,,,Isla Prima,1
+location,one-island,name,es,frlg,,Isla Prima,1
+location,one-island,name,fr,,,Île 1,1
+location,one-island,name,fr,frlg,,Île 1,1
+location,one-island,name,it,,,Primisola,1
+location,one-island,name,it,frlg,,Primisola,1
+location,one-island,name,ja,,,１のしま,1
+location,one-island,name,ja,frlg,,１のしま,1
+location,outcast-island,name,de,,,Fern-Eiland,1
+location,outcast-island,name,de,frlg,,Fern-Eiland,1
+location,outcast-island,name,en,,,Outcast Island,1
+location,outcast-island,name,en,frlg,,Outcast Island,1
+location,outcast-island,name,es,,,Isla Aislada,1
+location,outcast-island,name,es,frlg,,Isla Aislada,1
+location,outcast-island,name,fr,,,Île du Lointain,1
+location,outcast-island,name,fr,frlg,,Île du Lointain,1
+location,outcast-island,name,it,,,Isola Solitaria,1
+location,outcast-island,name,it,frlg,,Isola Solitaria,1
+location,outcast-island,name,ja,,,はずれのしま,1
+location,outcast-island,name,ja,frlg,,はずれのしま,1
+location,pacifidlog-town,name,de,,,Floßbrunn,1
+location,pacifidlog-town,name,de,e,,Floßbrunn,1
+location,pacifidlog-town,name,de,rs,,Floßbrunn,1
+location,pacifidlog-town,name,en,,,Pacifidlog Town,1
+location,pacifidlog-town,name,en,e,,Pacifidlog Town,1
+location,pacifidlog-town,name,en,rs,,Pacifidlog Town,1
+location,pacifidlog-town,name,es,,,Pueblo Oromar,1
+location,pacifidlog-town,name,es,e,,Pueblo Oromar,1
+location,pacifidlog-town,name,es,rs,,Pueblo Oromar,1
+location,pacifidlog-town,name,fr,,,Pacifiville,1
+location,pacifidlog-town,name,fr,e,,Pacifiville,1
+location,pacifidlog-town,name,fr,rs,,Pacifiville,1
+location,pacifidlog-town,name,it,,,Orocea,1
+location,pacifidlog-town,name,it,e,,Orocea,1
+location,pacifidlog-town,name,it,rs,,Orocea,1
+location,pacifidlog-town,name,ja,,,キナギタウン,1
+location,pacifidlog-town,name,ja,e,,キナギタウン,1
+location,pacifidlog-town,name,ja,rs,,キナギタウン,1
 location,pallet-town,name,de,,,Alabastia,1
 location,pallet-town,name,de,c,,Alabastia,1
+location,pallet-town,name,de,frlg,,Alabastia,1
 location,pallet-town,name,de,gs,,Alabastia,1
 location,pallet-town,name,en,,,Pallet Town,1
 location,pallet-town,name,en,c,,Pallet Town,1
+location,pallet-town,name,en,frlg,,Pallet Town,1
 location,pallet-town,name,en,gs,,Pallet Town,1
 location,pallet-town,name,es,,,Pueblo Paleta,1
 location,pallet-town,name,es,c,,Pueblo Paleta,1
+location,pallet-town,name,es,frlg,,Pueblo Paleta,1
 location,pallet-town,name,es,gs,,Pueblo Paleta,1
 location,pallet-town,name,fr,,,Bourg Palette,1
 location,pallet-town,name,fr,c,,Bourg Palette,1
+location,pallet-town,name,fr,frlg,,Bourg Palette,1
 location,pallet-town,name,fr,gs,,Bourg Palette,1
 location,pallet-town,name,it,,,Biancavilla,1
 location,pallet-town,name,it,c,,Biancavilla,1
+location,pallet-town,name,it,frlg,,Biancavilla,1
 location,pallet-town,name,it,gs,,Biancavilla,1
 location,pallet-town,name,ja,,,マサラタウン,1
 location,pallet-town,name,ja,c,,マサラタウン,1
+location,pallet-town,name,ja,frlg,,マサラタウン,1
 location,pallet-town,name,ja,gs,,マサラタウン,1
-location,pallet-town,name,ko,,,태초마을,1
 location,pallet-town,name,ko,gs,,태초마을,1
+location,pattern-bush,name,de,,,Musterbuschwald,1
+location,pattern-bush,name,de,frlg,,Musterbuschwald,1
+location,pattern-bush,name,en,,,Pattern Bush,1
+location,pattern-bush,name,en,frlg,,Pattern Bush,1
+location,pattern-bush,name,es,,,Bosquejo,1
+location,pattern-bush,name,es,frlg,,Bosquejo,1
+location,pattern-bush,name,fr,,,Forbuissons,1
+location,pattern-bush,name,fr,frlg,,Forbuissons,1
+location,pattern-bush,name,it,,,Bosco Disegnato,1
+location,pattern-bush,name,it,frlg,,Bosco Disegnato,1
+location,pattern-bush,name,ja,,,しるしのはやし,1
+location,pattern-bush,name,ja,frlg,,しるしのはやし,1
+location,petalburg-city,name,de,,,Blütenburg City,1
+location,petalburg-city,name,de,e,,Blütenburg City,1
+location,petalburg-city,name,de,rs,,Blütenburg City,1
+location,petalburg-city,name,en,,,Petalburg City,1
+location,petalburg-city,name,en,e,,Petalburg City,1
+location,petalburg-city,name,en,rs,,Petalburg City,1
+location,petalburg-city,name,es,,,Ciudad Petalia,1
+location,petalburg-city,name,es,e,,Ciudad Petalia,1
+location,petalburg-city,name,es,rs,,Ciudad Petalia,1
+location,petalburg-city,name,fr,,,Clémenti-Ville,1
+location,petalburg-city,name,fr,e,,Clémenti-Ville,1
+location,petalburg-city,name,fr,rs,,Clémenti-Ville,1
+location,petalburg-city,name,it,,,Petalipoli,1
+location,petalburg-city,name,it,e,,Petalipoli,1
+location,petalburg-city,name,it,rs,,Petalipoli,1
+location,petalburg-city,name,ja,,,トウカシティ,1
+location,petalburg-city,name,ja,e,,トウカシティ,1
+location,petalburg-city,name,ja,rs,,トウカシティ,1
+location,petalburg-woods,name,de,,,Blütenburgwald,1
+location,petalburg-woods,name,de,e,,Blütenburgwald,1
+location,petalburg-woods,name,de,rs,,Blütenburgwald,1
+location,petalburg-woods,name,en,,,Petalburg Woods,1
+location,petalburg-woods,name,en,e,,Petalburg Woods,1
+location,petalburg-woods,name,en,rs,,Petalburg Woods,1
+location,petalburg-woods,name,es,,,Bosque Petalia,1
+location,petalburg-woods,name,es,e,,Bosque Petalia,1
+location,petalburg-woods,name,es,rs,,Bosque Petalia,1
+location,petalburg-woods,name,fr,,,Bois Clémenti,1
+location,petalburg-woods,name,fr,e,,Bois Clémenti,1
+location,petalburg-woods,name,fr,rs,,Bois Clémenti,1
+location,petalburg-woods,name,it,,,Bosco Petalo,1
+location,petalburg-woods,name,it,e,,Bosco Petalo,1
+location,petalburg-woods,name,it,rs,,Bosco Petalo,1
+location,petalburg-woods,name,ja,,,トウカのもり,1
+location,petalburg-woods,name,ja,e,,トウカのもり,1
+location,petalburg-woods,name,ja,rs,,トウカのもり,1
 location,pewter-city,name,de,,,Marmoria City,1
 location,pewter-city,name,en,,,Pewter City,1
 location,pewter-city,name,es,,,Ciudad Plateada,1
@@ -6182,39 +7707,91 @@ location,pewter-city,name,fr,,,Argenta,1
 location,pewter-city,name,it,,,Plumbeopoli,1
 location,pewter-city,name,ja,,,ニビシティ,1
 location,pewter-city,name,ko,,,회색시티,1
-location,pokemon-mansion,name,de,,,PKMN-Landgut,1
+location,pokemon-mansion,name,de,,,Pokémon-Haus,1
+location,pokemon-mansion,name,de,frlg,,Pokémon-Haus,1
 location,pokemon-mansion,name,en,,,Pokémon Mansion,1
+location,pokemon-mansion,name,en,frlg,,Pokémon Mansion,1
 location,pokemon-mansion,name,es,,,Mansión Pokémon,1
+location,pokemon-mansion,name,es,frlg,,Mansión Pokémon,1
 location,pokemon-mansion,name,fr,,,Manoir Pokémon,1
+location,pokemon-mansion,name,fr,frlg,,Manoir Pokémon,1
 location,pokemon-mansion,name,it,,,Villa Pokémon,1
+location,pokemon-mansion,name,it,frlg,,Villa Pokémon,1
 location,pokemon-mansion,name,ja,,,ポケモンやしき,1
-location,pokemon-mansion,name,ko,,,포켓몬저택,1
+location,pokemon-mansion,name,ja,frlg,,ポケモンやしき,1
 location,pokemon-tower,name,de,,,Pokémon Turm,1
+location,pokemon-tower,name,de,frlg,,Pokémon Turm,1
 location,pokemon-tower,name,en,,,Pokémon Tower,1
+location,pokemon-tower,name,en,frlg,,Pokémon Tower,1
 location,pokemon-tower,name,es,,,Torre Pokémon,1
+location,pokemon-tower,name,es,frlg,,Torre Pokémon,1
 location,pokemon-tower,name,fr,,,Tour Pokémon,1
+location,pokemon-tower,name,fr,frlg,,Tour Pokémon,1
 location,pokemon-tower,name,it,,,Torre Pokémon,1
+location,pokemon-tower,name,it,frlg,,Torre Pokémon,1
 location,pokemon-tower,name,ja,,,ポケモンタワー,1
+location,pokemon-tower,name,ja,frlg,,ポケモンタワー,1
+location,resort-gorgeous,name,de,,,Ferienparadies,1
+location,resort-gorgeous,name,de,frlg,,Ferienparadies,1
+location,resort-gorgeous,name,en,,,Resort Gorgeous,1
+location,resort-gorgeous,name,en,frlg,,Resort Gorgeous,1
+location,resort-gorgeous,name,es,,,Lugar de Recreo,1
+location,resort-gorgeous,name,es,frlg,,Lugar de Recreo,1
+location,resort-gorgeous,name,fr,,,Camp de Vacances,1
+location,resort-gorgeous,name,fr,frlg,,Camp de Vacances,1
+location,resort-gorgeous,name,it,,,Perla dei Mari,1
+location,resort-gorgeous,name,it,frlg,,Perla dei Mari,1
+location,resort-gorgeous,name,ja,,,ゴージャスリゾート,1
+location,resort-gorgeous,name,ja,frlg,,ゴージャスリゾート,1
+location,rixy-chamber,name,de,,,Lilechs-Kammer,1
+location,rixy-chamber,name,de,frlg,,Lilechs-Kammer,1
+location,rixy-chamber,name,en,,,Rixy Chamber,1
+location,rixy-chamber,name,en,frlg,,Rixy Chamber,1
+location,rixy-chamber,name,es,,,Cámara Seiris,1
+location,rixy-chamber,name,es,frlg,,Cámara Seiris,1
+location,rixy-chamber,name,fr,,,Chambre Irix,1
+location,rixy-chamber,name,fr,frlg,,Chambre Irix,1
+location,rixy-chamber,name,it,,,Sala F-elce,1
+location,rixy-chamber,name,it,frlg,,Sala F-elce,1
+location,rixy-chamber,name,ja,,,アヌザのせきしつ,1
+location,rixy-chamber,name,ja,frlg,,アヌザのせきしつ,1
 location,rock-tunnel,name,de,,,Felstunnel,1
 location,rock-tunnel,name,de,c,,Felstunnel,1
+location,rock-tunnel,name,de,frlg,,Felstunnel,1
 location,rock-tunnel,name,de,gs,,Felstunnel,1
 location,rock-tunnel,name,en,,,Rock Tunnel,1
 location,rock-tunnel,name,en,c,,Rock Tunnel,1
+location,rock-tunnel,name,en,frlg,,Rock Tunnel,1
 location,rock-tunnel,name,en,gs,,Rock Tunnel,1
 location,rock-tunnel,name,es,,,Túnel Roca,1
 location,rock-tunnel,name,es,c,,Túnel Roca,1
+location,rock-tunnel,name,es,frlg,,Túnel Roca,1
 location,rock-tunnel,name,es,gs,,Túnel Roca,1
 location,rock-tunnel,name,fr,,,Grotte,1
 location,rock-tunnel,name,fr,c,,Grotte,1
+location,rock-tunnel,name,fr,frlg,,Grotte,1
 location,rock-tunnel,name,fr,gs,,Grotte,1
 location,rock-tunnel,name,it,,,Tunnel Roccioso,1
 location,rock-tunnel,name,it,c,,Tunnel Roccioso,1
+location,rock-tunnel,name,it,frlg,,Tunnel Roccioso,1
 location,rock-tunnel,name,it,gs,,Tunnel Roccioso,1
 location,rock-tunnel,name,ja,,,イワヤマトンネル,1
 location,rock-tunnel,name,ja,c,,イワヤマトンネル,1
+location,rock-tunnel,name,ja,frlg,,イワヤマトンネル,1
 location,rock-tunnel,name,ja,gs,,イワヤマトンネル,1
-location,rock-tunnel,name,ko,,,돌산터널,1
 location,rock-tunnel,name,ko,gs,,돌산 터널,1
+location,ruin-valley,name,de,,,Ruinental,1
+location,ruin-valley,name,de,frlg,,Ruinental,1
+location,ruin-valley,name,en,,,Ruin Valley,1
+location,ruin-valley,name,en,frlg,,Ruin Valley,1
+location,ruin-valley,name,es,,,Valle Ruinas,1
+location,ruin-valley,name,es,frlg,,Valle Ruinas,1
+location,ruin-valley,name,fr,,,Vallée Ruine,1
+location,ruin-valley,name,fr,frlg,,Vallée Ruine,1
+location,ruin-valley,name,it,,,Valle Antica,1
+location,ruin-valley,name,it,frlg,,Valle Antica,1
+location,ruin-valley,name,ja,,,いせきのたに,1
+location,ruin-valley,name,ja,frlg,,いせきのたに,1
 location,ruins-of-alph,name,de,,,Alph-Ruinen,1
 location,ruins-of-alph,name,de,c,,Alph-Ruinen,1
 location,ruins-of-alph,name,de,gs,,Alph-Ruinen,1
@@ -6235,13 +7812,174 @@ location,ruins-of-alph,name,ja,c,,アルフのいせき,1
 location,ruins-of-alph,name,ja,gs,,アルフのいせき,1
 location,ruins-of-alph,name,ko,,,알프의 유적,1
 location,ruins-of-alph,name,ko,gs,,알프의 유적,1
+location,rustboro-city,name,de,,,Metarost City,1
+location,rustboro-city,name,de,e,,Metarost City,1
+location,rustboro-city,name,de,rs,,Metarost City,1
+location,rustboro-city,name,en,,,Rustboro City,1
+location,rustboro-city,name,en,e,,Rustboro City,1
+location,rustboro-city,name,en,rs,,Rustboro City,1
+location,rustboro-city,name,es,,,Ciudad Férrica,1
+location,rustboro-city,name,es,e,,Ciudad Férrica,1
+location,rustboro-city,name,es,rs,,Ciudad Férrica,1
+location,rustboro-city,name,fr,,,Mérouville,1
+location,rustboro-city,name,fr,e,,Mérouville,1
+location,rustboro-city,name,fr,rs,,Mérouville,1
+location,rustboro-city,name,it,,,Ferrugipoli,1
+location,rustboro-city,name,it,e,,Ferrugipoli,1
+location,rustboro-city,name,it,rs,,Ferrugipoli,1
+location,rustboro-city,name,ja,,,カナズミシティ,1
+location,rustboro-city,name,ja,e,,カナズミシティ,1
+location,rustboro-city,name,ja,rs,,カナズミシティ,1
+location,rusturf-tunnel,name,de,,,Metaflurtunnel,1
+location,rusturf-tunnel,name,de,e,,Metaflurtunnel,1
+location,rusturf-tunnel,name,de,rs,,Metaflurtunnel,1
+location,rusturf-tunnel,name,en,,,Rusturf Tunnel,1
+location,rusturf-tunnel,name,en,e,,Rusturf Tunnel,1
+location,rusturf-tunnel,name,en,rs,,Rusturf Tunnel,1
+location,rusturf-tunnel,name,es,,,Túnel Fervergal,1
+location,rusturf-tunnel,name,es,e,,Túnel Fervergal,1
+location,rusturf-tunnel,name,es,rs,,Túnel Fervergal,1
+location,rusturf-tunnel,name,fr,,,Tunnel Mérazon,1
+location,rusturf-tunnel,name,fr,e,,Tunnel Mérazon,1
+location,rusturf-tunnel,name,fr,rs,,Tunnel Mérazon,1
+location,rusturf-tunnel,name,it,,,Tunnel Menferro,1
+location,rusturf-tunnel,name,it,e,,Tunnel Menferro,1
+location,rusturf-tunnel,name,it,rs,,Tunnel Menferro,1
+location,rusturf-tunnel,name,ja,,,カナシダトンネル,1
+location,rusturf-tunnel,name,ja,e,,カナシダトンネル,1
+location,rusturf-tunnel,name,ja,rs,,カナシダトンネル,1
+location,saffron-city,name,de,,,Saffronia City,1
+location,saffron-city,name,de,frlg,,Saffronia City,1
+location,saffron-city,name,en,,,Saffron City,1
+location,saffron-city,name,en,frlg,,Saffron City,1
+location,saffron-city,name,es,,,Ciudad Azafrán,1
+location,saffron-city,name,es,frlg,,Ciudad Azafrán,1
+location,saffron-city,name,fr,,,Safrania,1
+location,saffron-city,name,fr,frlg,,Safrania,1
+location,saffron-city,name,it,,,Zafferanopoli,1
+location,saffron-city,name,it,frlg,,Zafferanopoli,1
+location,saffron-city,name,ja,,,ヤマブキシティ,1
+location,saffron-city,name,ja,frlg,,ヤマブキシティ,1
+location,scufib-chamber,name,de,,,Fünibisku-Kammer,1
+location,scufib-chamber,name,de,frlg,,Fünibisku-Kammer,1
+location,scufib-chamber,name,en,,,Scufib Chamber,1
+location,scufib-chamber,name,en,frlg,,Scufib Chamber,1
+location,scufib-chamber,name,es,,,Cámara Hibinca,1
+location,scufib-chamber,name,es,frlg,,Cámara Hibinca,1
+location,scufib-chamber,name,fr,,,Chambre Hibicinq,1
+location,scufib-chamber,name,fr,frlg,,Chambre Hibicinq,1
+location,scufib-chamber,name,it,,,Sala E-dera,1
+location,scufib-chamber,name,it,frlg,,Sala E-dera,1
+location,scufib-chamber,name,ja,,,コトーのせきしつ,1
+location,scufib-chamber,name,ja,frlg,,コトーのせきしつ,1
+location,seafloor-cavern,name,de,,,Tiefseehöhle,1
+location,seafloor-cavern,name,de,e,,Tiefseehöhle,1
+location,seafloor-cavern,name,de,rs,,Tiefseehöhle,1
+location,seafloor-cavern,name,en,,,Seafloor Cavern,1
+location,seafloor-cavern,name,en,e,,Seafloor Cavern,1
+location,seafloor-cavern,name,en,rs,,Seafloor Cavern,1
+location,seafloor-cavern,name,es,,,Caverna Abisal,1
+location,seafloor-cavern,name,es,e,,Caverna Abisal,1
+location,seafloor-cavern,name,es,rs,,Caverna Abisal,1
+location,seafloor-cavern,name,fr,,,Caverne Fondmer,1
+location,seafloor-cavern,name,fr,e,,Caverne Fondmer,1
+location,seafloor-cavern,name,fr,rs,,Caverne Fondmer,1
+location,seafloor-cavern,name,it,,,Antro Abissale,1
+location,seafloor-cavern,name,it,e,,Antro Abissale,1
+location,seafloor-cavern,name,it,rs,,Antro Abissale,1
+location,seafloor-cavern,name,ja,,,かいていどうくつ,1
+location,seafloor-cavern,name,ja,e,,かいていどうくつ,1
+location,seafloor-cavern,name,ja,rs,,かいていどうくつ,1
 location,seafoam-islands,name,de,,,Seeschauminseln,1
+location,seafoam-islands,name,de,frlg,,Seeschauminseln,1
 location,seafoam-islands,name,en,,,Seafoam Islands,1
+location,seafoam-islands,name,en,frlg,,Seafoam Islands,1
 location,seafoam-islands,name,es,,,Islas Espuma,1
-location,seafoam-islands,name,fr,,,Iles Ecume,1
+location,seafoam-islands,name,es,frlg,,Islas Espuma,1
+location,seafoam-islands,name,fr,,,Îles Écume,1
+location,seafoam-islands,name,fr,frlg,,Îles Écume,1
 location,seafoam-islands,name,it,,,Isole Spumarine,1
+location,seafoam-islands,name,it,frlg,,Isole Spumarine,1
 location,seafoam-islands,name,ja,,,ふたごじま,1
-location,seafoam-islands,name,ko,,,쌍둥이섬,1
+location,seafoam-islands,name,ja,frlg,,ふたごじま,1
+location,sevault-canyon,name,de,,,7-Schatzschlucht,1
+location,sevault-canyon,name,de,frlg,,7-Schatzschlucht,1
+location,sevault-canyon,name,en,,,Sevault Canyon,1
+location,sevault-canyon,name,en,frlg,,Sevault Canyon,1
+location,sevault-canyon,name,es,,,Cañón Sétano,1
+location,sevault-canyon,name,es,frlg,,Cañón Sétano,1
+location,sevault-canyon,name,fr,,,Canyon Sesor,1
+location,sevault-canyon,name,fr,frlg,,Canyon Sesor,1
+location,sevault-canyon,name,it,,,Canyon Seption,1
+location,sevault-canyon,name,it,frlg,,Canyon Seption,1
+location,sevault-canyon,name,ja,,,しっぽうけいこく,1
+location,sevault-canyon,name,ja,frlg,,しっぽうけいこく,1
+location,shoal-cave,name,de,,,Küstenhöhle,1
+location,shoal-cave,name,de,e,,Küstenhöhle,1
+location,shoal-cave,name,de,rs,,Küstenhöhle,1
+location,shoal-cave,name,en,,,Shoal Cave,1
+location,shoal-cave,name,en,e,,Shoal Cave,1
+location,shoal-cave,name,en,rs,,Shoal Cave,1
+location,shoal-cave,name,es,,,Cueva Cardumen,1
+location,shoal-cave,name,es,e,,Cueva Cardumen,1
+location,shoal-cave,name,es,rs,,Cueva Cardumen,1
+location,shoal-cave,name,fr,,,Grotte Tréfonds,1
+location,shoal-cave,name,fr,e,,Grotte Tréfonds,1
+location,shoal-cave,name,fr,rs,,Grotte Tréfonds,1
+location,shoal-cave,name,it,,,Grotta Ondosa,1
+location,shoal-cave,name,it,e,,Grotta Ondosa,1
+location,shoal-cave,name,it,rs,,Grotta Ondosa,1
+location,shoal-cave,name,ja,,,あさせのほらあな,1
+location,shoal-cave,name,ja,e,,あさせのほらあな,1
+location,shoal-cave,name,ja,rs,,あさせのほらあな,1
+location,silph-co,name,de,,,Silph Co.,1
+location,silph-co,name,de,frlg,,Silph Co.,1
+location,silph-co,name,en,,,Silph Co.,1
+location,silph-co,name,en,frlg,,Silph Co.,1
+location,silph-co,name,es,,,Silph S.A.,1
+location,silph-co,name,es,frlg,,Silph S.A.,1
+location,silph-co,name,fr,,,Sylphe SARL,1
+location,silph-co,name,fr,frlg,,Sylphe SARL,1
+location,silph-co,name,it,,,Silph SpA,1
+location,silph-co,name,it,frlg,,Silph SpA,1
+location,silph-co,name,ja,,,シルフカンパニー,1
+location,silph-co,name,ja,frlg,,シルフカンパニー,1
+location,sky-pillar,name,de,,,Himmelturm,1
+location,sky-pillar,name,de,e,,Himmelturm,1
+location,sky-pillar,name,de,rs,,Himmelturm,1
+location,sky-pillar,name,en,,,Sky Pillar,1
+location,sky-pillar,name,en,e,,Sky Pillar,1
+location,sky-pillar,name,en,rs,,Sky Pillar,1
+location,sky-pillar,name,es,,,Pilar Celeste,1
+location,sky-pillar,name,es,e,,Pilar Celeste,1
+location,sky-pillar,name,es,rs,,Pilar Celeste,1
+location,sky-pillar,name,fr,,,Pilier Céleste,1
+location,sky-pillar,name,fr,e,,Pilier Céleste,1
+location,sky-pillar,name,fr,rs,,Pilier Céleste,1
+location,sky-pillar,name,it,,,Torre dei Cieli,1
+location,sky-pillar,name,it,e,,Torre dei Cieli,1
+location,sky-pillar,name,it,rs,,Torre dei Cieli,1
+location,sky-pillar,name,ja,,,そらのはしら,1
+location,sky-pillar,name,ja,e,,そらのはしら,1
+location,sky-pillar,name,ja,rs,,そらのはしら,1
+location,slateport-city,name,de,,,Graphitport City,1
+location,slateport-city,name,de,e,,Graphitport City,1
+location,slateport-city,name,de,rs,,Graphitport City,1
+location,slateport-city,name,en,,,Slateport City,1
+location,slateport-city,name,en,e,,Slateport City,1
+location,slateport-city,name,en,rs,,Slateport City,1
+location,slateport-city,name,es,,,Ciudad Portual,1
+location,slateport-city,name,es,e,,Ciudad Portual,1
+location,slateport-city,name,es,rs,,Ciudad Portual,1
+location,slateport-city,name,fr,,,Poivressel,1
+location,slateport-city,name,fr,e,,Poivressel,1
+location,slateport-city,name,fr,rs,,Poivressel,1
+location,slateport-city,name,it,,,Porto Selcepoli,1
+location,slateport-city,name,it,e,,Porto Selcepoli,1
+location,slateport-city,name,it,rs,,Porto Selcepoli,1
+location,slateport-city,name,ja,,,カイナシティ,1
+location,slateport-city,name,ja,e,,カイナシティ,1
+location,slateport-city,name,ja,rs,,カイナシティ,1
 location,slowpoke-well,name,de,,,FLEGMON-Brunnen,1
 location,slowpoke-well,name,de,c,,Flegmon-Brunnen,1
 location,slowpoke-well,name,de,gs,,Flegmon-Brunnen,1
@@ -6262,6 +8000,42 @@ location,slowpoke-well,name,ja,c,,ヤドンのいど,1
 location,slowpoke-well,name,ja,gs,,ヤドンのいど,1
 location,slowpoke-well,name,ko,,,야돈우물,1
 location,slowpoke-well,name,ko,gs,,야돈 우물,1
+location,sootopolis-city,name,de,,,Xeneroville,1
+location,sootopolis-city,name,de,e,,Xeneroville,1
+location,sootopolis-city,name,de,rs,,Xeneroville,1
+location,sootopolis-city,name,en,,,Sootopolis City,1
+location,sootopolis-city,name,en,e,,Sootopolis City,1
+location,sootopolis-city,name,en,rs,,Sootopolis City,1
+location,sootopolis-city,name,es,,,Arrecípolis,1
+location,sootopolis-city,name,es,e,,Arrecípolis,1
+location,sootopolis-city,name,es,rs,,Arrecípolis,1
+location,sootopolis-city,name,fr,,,Atalanopolis,1
+location,sootopolis-city,name,fr,e,,Atalanopolis,1
+location,sootopolis-city,name,fr,rs,,Atalanopolis,1
+location,sootopolis-city,name,it,,,Ceneride,1
+location,sootopolis-city,name,it,e,,Ceneride,1
+location,sootopolis-city,name,it,rs,,Ceneride,1
+location,sootopolis-city,name,ja,,,ルネシティ,1
+location,sootopolis-city,name,ja,e,,ルネシティ,1
+location,sootopolis-city,name,ja,rs,,ルネシティ,1
+location,southern-island,name,de,,,Insel im Süden,1
+location,southern-island,name,de,e,,Insel im Süden,1
+location,southern-island,name,de,rs,,Insel im Süden,1
+location,southern-island,name,en,,,Southern Island,1
+location,southern-island,name,en,e,,Southern Island,1
+location,southern-island,name,en,rs,,Southern Island,1
+location,southern-island,name,es,,,Isla del Sur,1
+location,southern-island,name,es,e,,Isla del Sur,1
+location,southern-island,name,es,rs,,Isla del Sur,1
+location,southern-island,name,fr,,,Île du Sud,1
+location,southern-island,name,fr,e,,Île du Sud,1
+location,southern-island,name,fr,rs,,Île du Sud,1
+location,southern-island,name,it,,,Isola Remota,1
+location,southern-island,name,it,e,,Isola Remota,1
+location,southern-island,name,it,rs,,Isola Remota,1
+location,southern-island,name,ja,,,みなみのことう,1
+location,southern-island,name,ja,e,,みなみのことう,1
+location,southern-island,name,ja,rs,,みなみのことう,1
 location,sprout-tower,name,de,,,KNOFENSA-Turm,1
 location,sprout-tower,name,de,c,,Knofensa-Turm,1
 location,sprout-tower,name,de,gs,,Knofensa-Turm,1
@@ -6282,6 +8056,72 @@ location,sprout-tower,name,ja,c,,マダツボミのとう,1
 location,sprout-tower,name,ja,gs,,マダツボミのとう,1
 location,sprout-tower,name,ko,,,모다피의 탑,1
 location,sprout-tower,name,ko,gs,,모다피의 탑,1
+location,ss-anne,name,de,,,M.S. Anne,1
+location,ss-anne,name,de,frlg,,M.S. Anne,1
+location,ss-anne,name,en,,,S.S. Anne,1
+location,ss-anne,name,en,frlg,,S.S. Anne,1
+location,ss-anne,name,es,,,S.S. Anne,1
+location,ss-anne,name,es,frlg,,S.S. Anne,1
+location,ss-anne,name,fr,,,L'Océane,1
+location,ss-anne,name,fr,frlg,,L'Océane,1
+location,ss-anne,name,it,,,M/N Anna,1
+location,ss-anne,name,it,frlg,,M/N Anna,1
+location,ss-anne,name,ja,,,サント・アンヌごう,1
+location,ss-anne,name,ja,frlg,,サント・アンヌごう,1
+location,tanoby-ruins,name,de,,,Tanibo-Ruinen,1
+location,tanoby-ruins,name,de,frlg,,Tanibo-Ruinen,1
+location,tanoby-ruins,name,en,,,Tanoby Ruins,1
+location,tanoby-ruins,name,en,frlg,,Tanoby Ruins,1
+location,tanoby-ruins,name,es,,,Ruinas Sete,1
+location,tanoby-ruins,name,es,frlg,,Ruinas Sete,1
+location,tanoby-ruins,name,fr,,,Ruines Tanoby,1
+location,tanoby-ruins,name,fr,frlg,,Ruines Tanoby,1
+location,tanoby-ruins,name,it,,,Rovine Florabeto,1
+location,tanoby-ruins,name,it,frlg,,Rovine Florabeto,1
+location,tanoby-ruins,name,ja,,,アスカナいせき,1
+location,tanoby-ruins,name,ja,frlg,,アスカナいせき,1
+location,team-aqua-hideout,name,de,,,Versteck,1
+location,team-aqua-hideout,name,en,,,Hideout,1
+location,team-aqua-hideout,name,es,,,Guarida,1
+location,team-aqua-hideout,name,fr,,,Planque,1
+location,team-aqua-hideout,name,it,,,Rifugio,1
+location,team-aqua-hideout,name,ja,,,アジト,1
+location,team-magma-hideout,name,de,,,Versteck,1
+location,team-magma-hideout,name,de,rs,,Versteck,1
+location,team-magma-hideout,name,en,,,Hideout,1
+location,team-magma-hideout,name,en,rs,,Hideout,1
+location,team-magma-hideout,name,es,,,Guarida,1
+location,team-magma-hideout,name,es,rs,,Guarida,1
+location,team-magma-hideout,name,fr,,,Planque,1
+location,team-magma-hideout,name,fr,rs,,Planque,1
+location,team-magma-hideout,name,it,,,Rifugio,1
+location,team-magma-hideout,name,it,rs,,Rifugio,1
+location,team-magma-hideout,name,ja,,,アジト,1
+location,team-magma-hideout,name,ja,rs,,アジト,1
+location,terra-cave,name,de,,,Terrahöhle,1
+location,terra-cave,name,de,e,,Terrahöhle,1
+location,terra-cave,name,en,,,Terra Cave,1
+location,terra-cave,name,en,e,,Terra Cave,1
+location,terra-cave,name,es,,,Cueva Terrena,1
+location,terra-cave,name,es,e,,Cueva Terrena,1
+location,terra-cave,name,fr,,,Grotte Terra,1
+location,terra-cave,name,fr,e,,Grotte Terra,1
+location,terra-cave,name,it,,,Grotta Terra,1
+location,terra-cave,name,it,e,,Grotta Terra,1
+location,terra-cave,name,ja,,,りくのどうくつ,1
+location,terra-cave,name,ja,e,,りくのどうくつ,1
+location,three-isle-port,name,de,,,Tri-Eiland Hafen,1
+location,three-isle-port,name,de,frlg,,Tri-Eiland Hafen,1
+location,three-isle-port,name,en,,,Three Isle Port,1
+location,three-isle-port,name,en,frlg,,Three Isle Port,1
+location,three-isle-port,name,es,,,Puerto Isla Tera,1
+location,three-isle-port,name,es,frlg,,Puerto Isla Tera,1
+location,three-isle-port,name,fr,,,Port Île 3,1
+location,three-isle-port,name,fr,frlg,,Port Île 3,1
+location,three-isle-port,name,it,,,Porto Terzisola,1
+location,three-isle-port,name,it,frlg,,Porto Terzisola,1
+location,three-isle-port,name,ja,,,３のしま みなと,1
+location,three-isle-port,name,ja,frlg,,３のしま みなと,1
 location,tohjo-falls,name,de,,,Tohjo-Fälle,1
 location,tohjo-falls,name,de,c,,Tohjo-Fälle,1
 location,tohjo-falls,name,de,gs,,Tohjo-Fälle,1
@@ -6302,6 +8142,66 @@ location,tohjo-falls,name,ja,c,,トージョウのたき,1
 location,tohjo-falls,name,ja,gs,,トージョウのたき,1
 location,tohjo-falls,name,ko,,,동성폭포,1
 location,tohjo-falls,name,ko,gs,,동성폭포,1
+location,trainer-tower-exterior,name,de,,,Trainerturm (Außenbereich),1
+location,trainer-tower-exterior,name,de,frlg,,Trainerturm (Außenbereich),1
+location,trainer-tower-exterior,name,en,,,Trainer Tower (exterior),1
+location,trainer-tower-exterior,name,en,frlg,,Trainer Tower (exterior),1
+location,trainer-tower-exterior,name,es,,,Torre Desafío (exterior),1
+location,trainer-tower-exterior,name,es,frlg,,Torre Desafío (exterior),1
+location,trainer-tower-exterior,name,fr,,,Tour Dresseurs (extérieur),1
+location,trainer-tower-exterior,name,fr,frlg,,Tour Dresseurs (extérieur),1
+location,trainer-tower-exterior,name,it,,,Torre Allenatori (esterno),1
+location,trainer-tower-exterior,name,it,frlg,,Torre Allenatori (esterno),1
+location,trainer-tower-exterior,name,ja,,,トレーナータワー (外部),1
+location,trainer-tower-exterior,name,ja,frlg,,トレーナータワー (外部),1
+location,treasure-beach,name,de,,,Schatzgestade,1
+location,treasure-beach,name,de,frlg,,Schatzgestade,1
+location,treasure-beach,name,en,,,Treasure Beach,1
+location,treasure-beach,name,en,frlg,,Treasure Beach,1
+location,treasure-beach,name,es,,,Playa Tesoro,1
+location,treasure-beach,name,es,frlg,,Playa Tesoro,1
+location,treasure-beach,name,fr,,,Plage Trésor,1
+location,treasure-beach,name,fr,frlg,,Plage Trésor,1
+location,treasure-beach,name,it,,,Riva del Tesoro,1
+location,treasure-beach,name,it,frlg,,Riva del Tesoro,1
+location,treasure-beach,name,ja,,,たからのはま,1
+location,treasure-beach,name,ja,frlg,,たからのはま,1
+location,underwater-route-124,name,de,,,Unterwasser (Route 124),1
+location,underwater-route-124,name,de,e,,Unterwasser (Route 124),1
+location,underwater-route-124,name,de,rs,,Unterwasser (Route 124),1
+location,underwater-route-124,name,en,,,Underwater (Route 124),1
+location,underwater-route-124,name,en,e,,Underwater (Route 124),1
+location,underwater-route-124,name,en,rs,,Underwater (Route 124),1
+location,underwater-route-124,name,es,,,Bajo el agua (Ruta 124),1
+location,underwater-route-124,name,es,e,,Bajo el agua (Ruta 124),1
+location,underwater-route-124,name,es,rs,,Bajo el agua (Ruta 124),1
+location,underwater-route-124,name,fr,,,Fond marin (Chenal 124),1
+location,underwater-route-124,name,fr,e,,Fond marin (Chenal 124),1
+location,underwater-route-124,name,fr,rs,,Fond marin (Chenal 124),1
+location,underwater-route-124,name,it,,,Sott'acqua (Percorso 124),1
+location,underwater-route-124,name,it,e,,Sott'acqua (Percorso 124),1
+location,underwater-route-124,name,it,rs,,Sott'acqua (Percorso 124),1
+location,underwater-route-124,name,ja,,,すいちゅう (１２４番水道),1
+location,underwater-route-124,name,ja,e,,すいちゅう (１２４番水道),1
+location,underwater-route-124,name,ja,rs,,すいちゅう (１２４番水道),1
+location,underwater-route-126,name,de,,,Unterwasser (Route 126),1
+location,underwater-route-126,name,de,e,,Unterwasser (Route 126),1
+location,underwater-route-126,name,de,rs,,Unterwasser (Route 126),1
+location,underwater-route-126,name,en,,,Underwater (Route 126),1
+location,underwater-route-126,name,en,e,,Underwater (Route 126),1
+location,underwater-route-126,name,en,rs,,Underwater (Route 126),1
+location,underwater-route-126,name,es,,,Bajo el agua (Ruta 126),1
+location,underwater-route-126,name,es,e,,Bajo el agua (Ruta 126),1
+location,underwater-route-126,name,es,rs,,Bajo el agua (Ruta 126),1
+location,underwater-route-126,name,fr,,,Fond marin (Chenal 126),1
+location,underwater-route-126,name,fr,e,,Fond marin (Chenal 126),1
+location,underwater-route-126,name,fr,rs,,Fond marin (Chenal 126),1
+location,underwater-route-126,name,it,,,Sott'acqua (Percorso 126),1
+location,underwater-route-126,name,it,e,,Sott'acqua (Percorso 126),1
+location,underwater-route-126,name,it,rs,,Sott'acqua (Percorso 126),1
+location,underwater-route-126,name,ja,,,すいちゅう (１２６番水道),1
+location,underwater-route-126,name,ja,e,,すいちゅう (１２６番水道),1
+location,underwater-route-126,name,ja,rs,,すいちゅう (１２６番水道),1
 location,union-cave,name,de,,,Einheitstunnel,1
 location,union-cave,name,de,c,,Einheitstunnel,1
 location,union-cave,name,de,gs,,Einheitstunnel,1
@@ -6324,24 +8224,41 @@ location,union-cave,name,ko,,,연결동굴,1
 location,union-cave,name,ko,gs,,연결동굴,1
 location,vermilion-city,name,de,,,Orania City,1
 location,vermilion-city,name,de,c,,Orania City,1
+location,vermilion-city,name,de,frlg,,Orania City,1
 location,vermilion-city,name,de,gs,,Orania City,1
 location,vermilion-city,name,en,,,Vermilion City,1
 location,vermilion-city,name,en,c,,Vermilion City,1
+location,vermilion-city,name,en,frlg,,Vermilion City,1
 location,vermilion-city,name,en,gs,,Vermilion City,1
 location,vermilion-city,name,es,,,Ciudad Carmín,1
 location,vermilion-city,name,es,c,,Ciudad Carmín,1
+location,vermilion-city,name,es,frlg,,Ciudad Carmín,1
 location,vermilion-city,name,es,gs,,Ciudad Carmín,1
 location,vermilion-city,name,fr,,,Carmin sur Mer,1
 location,vermilion-city,name,fr,c,,Carmin sur Mer,1
+location,vermilion-city,name,fr,frlg,,Carmin sur Mer,1
 location,vermilion-city,name,fr,gs,,Carmin sur Mer,1
 location,vermilion-city,name,it,,,Aranciopoli,1
 location,vermilion-city,name,it,c,,Aranciopoli,1
+location,vermilion-city,name,it,frlg,,Aranciopoli,1
 location,vermilion-city,name,it,gs,,Aranciopoli,1
 location,vermilion-city,name,ja,,,クチバシティ,1
 location,vermilion-city,name,ja,c,,クチバシティ,1
+location,vermilion-city,name,ja,frlg,,クチバシティ,1
 location,vermilion-city,name,ja,gs,,クチバシティ,1
-location,vermilion-city,name,ko,,,갉색시티,1
 location,vermilion-city,name,ko,gs,,갈색시티,1
+location,viapos-chamber,name,de,,,Sieborbia-Kammer,1
+location,viapos-chamber,name,de,frlg,,Sieborbia-Kammer,1
+location,viapos-chamber,name,en,,,Viapois Chamber,1
+location,viapos-chamber,name,en,frlg,,Viapois Chamber,1
+location,viapos-chamber,name,es,,,Cámara Pasiete,1
+location,viapos-chamber,name,es,frlg,,Cámara Pasiete,1
+location,viapos-chamber,name,fr,,,Chambre Poinsept,1
+location,viapos-chamber,name,fr,frlg,,Chambre Poinsept,1
+location,viapos-chamber,name,it,,,Sala G-ardenia,1
+location,viapos-chamber,name,it,frlg,,Sala G-ardenia,1
+location,viapos-chamber,name,ja,,,オリフのせきしつ,1
+location,viapos-chamber,name,ja,frlg,,オリフのせきしつ,1
 location,violet-city,name,de,,,Viola City,1
 location,violet-city,name,de,c,,Viola City,1
 location,violet-city,name,de,gs,,Viola City,1
@@ -6364,31 +8281,77 @@ location,violet-city,name,ko,,,도라지시티,1
 location,violet-city,name,ko,gs,,도라지시티,1
 location,viridian-city,name,de,,,Vertania City,1
 location,viridian-city,name,de,c,,Vertania City,1
+location,viridian-city,name,de,frlg,,Vertania City,1
 location,viridian-city,name,de,gs,,Vertania City,1
 location,viridian-city,name,en,,,Viridian City,1
 location,viridian-city,name,en,c,,Viridian City,1
+location,viridian-city,name,en,frlg,,Viridian City,1
 location,viridian-city,name,en,gs,,Viridian City,1
 location,viridian-city,name,es,,,Ciudad Verde,1
 location,viridian-city,name,es,c,,Ciudad Verde,1
+location,viridian-city,name,es,frlg,,Ciudad Verde,1
 location,viridian-city,name,es,gs,,Ciudad Verde,1
 location,viridian-city,name,fr,,,Jadielle,1
 location,viridian-city,name,fr,c,,Jadielle,1
+location,viridian-city,name,fr,frlg,,Jadielle,1
 location,viridian-city,name,fr,gs,,Jadielle,1
 location,viridian-city,name,it,,,Smeraldopoli,1
 location,viridian-city,name,it,c,,Smeraldopoli,1
+location,viridian-city,name,it,frlg,,Smeraldopoli,1
 location,viridian-city,name,it,gs,,Smeraldopoli,1
 location,viridian-city,name,ja,,,トキワシティ,1
 location,viridian-city,name,ja,c,,トキワシティ,1
+location,viridian-city,name,ja,frlg,,トキワシティ,1
 location,viridian-city,name,ja,gs,,トキワシティ,1
-location,viridian-city,name,ko,,,상록시티,1
 location,viridian-city,name,ko,gs,,상록시티,1
 location,viridian-forest,name,de,,,Vertania-Wald,1
+location,viridian-forest,name,de,frlg,,Vertania-Wald,1
 location,viridian-forest,name,en,,,Viridian Forest,1
+location,viridian-forest,name,en,frlg,,Viridian Forest,1
 location,viridian-forest,name,es,,,Bosque Verde,1
+location,viridian-forest,name,es,frlg,,Bosque Verde,1
 location,viridian-forest,name,fr,,,Forêt de Jade,1
+location,viridian-forest,name,fr,frlg,,Forêt de Jade,1
 location,viridian-forest,name,it,,,Bosco Smeraldo,1
+location,viridian-forest,name,it,frlg,,Bosco Smeraldo,1
 location,viridian-forest,name,ja,,,トキワのもり,1
-location,viridian-forest,name,ko,,,상록숲,1
+location,viridian-forest,name,ja,frlg,,トキワのもり,1
+location,water-labyrinth,name,de,,,Wasserirrgarten,1
+location,water-labyrinth,name,de,frlg,,Wasserirrgarten,1
+location,water-labyrinth,name,en,,,Water Labyrinth,1
+location,water-labyrinth,name,en,frlg,,Water Labyrinth,1
+location,water-labyrinth,name,es,,,Aquarinto,1
+location,water-labyrinth,name,es,frlg,,Aquarinto,1
+location,water-labyrinth,name,fr,,,Labyrinthe d'O,1
+location,water-labyrinth,name,fr,frlg,,Labyrinthe d'O,1
+location,water-labyrinth,name,it,,,Labirinto Marino,1
+location,water-labyrinth,name,it,frlg,,Labirinto Marino,1
+location,water-labyrinth,name,ja,,,みずのめいろ,1
+location,water-labyrinth,name,ja,frlg,,みずのめいろ,1
+location,water-path,name,de,,,Wasserweg,1
+location,water-path,name,de,frlg,,Wasserweg,1
+location,water-path,name,en,,,Water Path,1
+location,water-path,name,en,frlg,,Water Path,1
+location,water-path,name,es,,,Vía Acuática,1
+location,water-path,name,es,frlg,,Vía Acuática,1
+location,water-path,name,fr,,,Agualcanal,1
+location,water-path,name,fr,frlg,,Agualcanal,1
+location,water-path,name,it,,,Via Marina,1
+location,water-path,name,it,frlg,,Via Marina,1
+location,water-path,name,ja,,,みずのさんぽみち,1
+location,water-path,name,ja,frlg,,みずのさんぽみち,1
+location,weepth-chamber,name,de,,,Dreicke-Kammer,1
+location,weepth-chamber,name,de,frlg,,Dreicke-Kammer,1
+location,weepth-chamber,name,en,,,Weepth Chamber,1
+location,weepth-chamber,name,en,frlg,,Weepth Chamber,1
+location,weepth-chamber,name,es,,,Cámara Trisante,1
+location,weepth-chamber,name,es,frlg,,Cámara Trisante,1
+location,weepth-chamber,name,fr,,,Chambre Prois,1
+location,weepth-chamber,name,fr,frlg,,Chambre Prois,1
+location,weepth-chamber,name,it,,,Sala C-iclamino,1
+location,weepth-chamber,name,it,frlg,,Sala C-iclamino,1
+location,weepth-chamber,name,ja,,,ユゴのせきしつ,1
+location,weepth-chamber,name,ja,frlg,,ユゴのせきしつ,1
 location,whirl-islands,name,de,,,Strudelinseln,1
 location,whirl-islands,name,de,c,,Strudelinseln,1
 location,whirl-islands,name,de,gs,,Strudelinseln,1

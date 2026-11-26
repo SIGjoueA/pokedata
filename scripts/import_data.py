@@ -12,7 +12,7 @@ import reference as R
 MAN = load_manifest()
 NOW = datetime.datetime.now(datetime.timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
 DATA_VERSION = os.environ.get("DATA_VERSION", datetime.date.today().strftime("%Y.%m.%d"))
-SCHEMA_VERSION = "1.1.0"   # 1.1.0 : movesets vérifiés par ensemble, provenance découpée par table (migration 0002)
+SCHEMA_VERSION = "1.2.0"   # 1.2.0 : statut de disponibilité npc-trade (migration 0003) ; 1.1.0 : movesets vérifiés par ensemble, provenance découpée par table (migration 0002)
 TIER = {s[0]: s[2] for s in R.SOURCES}
 PK = CACHE / "pokeapi/data/v2/csv"
 DUMP = CACHE / "pkhex-dump"

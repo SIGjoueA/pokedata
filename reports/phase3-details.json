@@ -3,13 +3,16 @@
 "rb",
 "y",
 "gs",
-"c"
+"c",
+"rs",
+"e",
+"frlg"
 ],
-"locations": 92,
-"encounters": 5271,
-"encounter_sets": 1479,
-"availability": 2630,
-"shiny_rules": 4,
+"locations": 207,
+"encounters": 8668,
+"encounter_sets": 2699,
+"availability": 5605,
+"shiny_rules": 7,
 "shiny_locks": 0,
 "gen1_tables_placed": 42,
 "gen1_tables_ambiguous": {
@@ -968,9 +971,12 @@
 "blue-japan"
 ],
 "names": {
-"-:game-data": 636,
+"-:game-data": 1283,
 "c:game-data": 492,
-"gs:game-data": 574
+"e:game-data": 448,
+"frlg:game-data": 478,
+"gs:game-data": 574,
+"rs:game-data": 390
 },
 "agreement": {
 "c:bug-contest": [
@@ -1032,6 +1038,101 @@
 42,
 57,
 58
+],
+"e:feebas-tile-fishing": [
+1,
+1,
+1
+],
+"e:gift": [
+5,
+5,
+5
+],
+"e:good-rod": [
+44,
+44,
+44
+],
+"e:npc-trade": [
+3,
+3,
+3
+],
+"e:old-rod": [
+44,
+44,
+44
+],
+"e:rock-smash": [
+5,
+5,
+5
+],
+"e:static": [
+13,
+14,
+15
+],
+"e:super-rod": [
+44,
+44,
+44
+],
+"e:surf": [
+44,
+44,
+46
+],
+"e:walk": [
+32,
+37,
+37
+],
+"frlg:gift": [
+10,
+10,
+12
+],
+"frlg:good-rod": [
+84,
+84,
+86
+],
+"frlg:npc-trade": [
+7,
+10,
+10
+],
+"frlg:old-rod": [
+84,
+84,
+86
+],
+"frlg:rock-smash": [
+10,
+10,
+10
+],
+"frlg:static": [
+16,
+18,
+18
+],
+"frlg:super-rod": [
+84,
+84,
+86
+],
+"frlg:surf": [
+84,
+84,
+86
+],
+"frlg:walk": [
+100,
+116,
+116
 ],
 "gs:bug-contest": [
 0,
@@ -1128,6 +1229,56 @@
 132,
 132
 ],
+"rs:feebas-tile-fishing": [
+2,
+2,
+2
+],
+"rs:gift": [
+8,
+8,
+8
+],
+"rs:good-rod": [
+88,
+88,
+88
+],
+"rs:npc-trade": [
+4,
+6,
+6
+],
+"rs:old-rod": [
+88,
+88,
+88
+],
+"rs:rock-smash": [
+10,
+10,
+10
+],
+"rs:static": [
+20,
+20,
+20
+],
+"rs:super-rod": [
+88,
+88,
+88
+],
+"rs:surf": [
+88,
+88,
+92
+],
+"rs:walk": [
+55,
+64,
+64
+],
 "y:gift": [
 1,
 4,
@@ -1168,44 +1319,107 @@
 "c:breed": 108,
 "c:event": 19,
 "c:evolve": 110,
-"c:gift": 26,
+"c:gift": 19,
+"c:npc-trade": 7,
 "c:trade-version-exclusive": 13,
 "c:transfer": 22,
 "c:wild": 181,
+"e:breed": 114,
+"e:event": 23,
+"e:evolve": 115,
+"e:gift": 11,
+"e:npc-trade": 4,
+"e:trade-version-exclusive": 175,
+"e:wild": 143,
+"frlg:breed": 170,
+"frlg:event": 60,
+"frlg:evolve": 197,
+"frlg:gift": 34,
+"frlg:npc-trade": 18,
+"frlg:trade-version-exclusive": 387,
+"frlg:unobtainable": 2,
+"frlg:wild": 280,
 "gs:breed": 212,
 "gs:event": 178,
 "gs:evolve": 220,
-"gs:gift": 34,
+"gs:gift": 22,
+"gs:npc-trade": 12,
 "gs:trade-version-exclusive": 38,
 "gs:transfer": 44,
 "gs:wild": 342,
 "rb:event": 40,
 "rb:evolve": 268,
-"rb:gift": 85,
+"rb:gift": 68,
+"rb:npc-trade": 18,
 "rb:trade-version-exclusive": 52,
 "rb:transfer": 56,
 "rb:wild": 364,
+"rs:breed": 183,
+"rs:event": 168,
+"rs:evolve": 192,
+"rs:gift": 16,
+"rs:npc-trade": 6,
+"rs:trade-version-exclusive": 433,
+"rs:unobtainable": 2,
+"rs:wild": 240,
 "y:event": 9,
-"y:evolve": 67,
-"y:gift": 23,
-"y:trade-version-exclusive": 14,
-"y:transfer": 14,
+"y:evolve": 66,
+"y:gift": 16,
+"y:npc-trade": 7,
+"y:trade-version-exclusive": 15,
+"y:transfer": 15,
 "y:wild": 91
 },
-"legacy_mapped": 90,
+"legacy_mapped": 188,
 "legacy_unmatched": {
-"Casino de Céladopole": 24,
-"Laboratoire (Cramois'Île)": 12,
+"Casino de Céladopole": 34,
+"Laboratoire (Cramois'Île)": 18,
+"Myokara": 18,
+"Tour Dresseurs": 17,
+"Ile 1": 15,
+"Ile du Lointain": 15,
+"Ile 4": 13,
 "Repaire Rocket d'Acajou": 8,
 "Route 4": 8,
+"Centre Pokémon (Hoenn)": 6,
+"Dojo de Combat": 6,
 "Sillonnant Johto": 5,
-"Dojo de Combat": 4,
+"Souterrain de Kanto": 4,
+"Centre Pokémon (Route 3)": 3,
+"Centre Pokémon (Route 4)": 3,
+"Sillonnant Kanto": 3,
+"Toit du manoir Céladon": 3,
 "Centre Commercial de Doublonville (4e ét.)": 2,
-"Centre Pokémon (Route 3)": 2,
-"Centre Pokémon (Route 4)": 2,
-"Souterrain de Kanto": 2,
+"Centre Pokémon (Kanto)": 2,
+"Centre météo (Route 119)": 2,
+"Grotte de l’Îlot": 2,
+"Planque Aqua": 2,
 "Sylphe SARL (6e ét.)": 2,
-"Toit du manoir Céladon": 2,
-"Argenta": 1
-}
+"Vermilava": 2,
+"Zone de Combat": 2,
+"Île Aurore": 2,
+"Île Mirage": 2,
+"Argenta": 1,
+"Chambre Anemune": 1,
+"Chambre Jonquatre": 1,
+"Grotte Métamo (A)": 1,
+"Planque Magma": 1,
+"Port Ile 3": 1
+},
+"modern_skipped": {
+"3:static-no-place": 5,
+"3:trade-unplaced": 9
+},
+"modern_locations": {
+"pokeapi-index": 151,
+"pokeapi-name": 3,
+"created": 4
+},
+"created_locations": [
+"silph-co",
+"trainer-tower-exterior",
+"underwater-route-124",
+"underwater-route-126"
+],
+"form_skips": {}
 }

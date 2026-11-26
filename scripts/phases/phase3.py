@@ -19,7 +19,11 @@
 #   value_sha256 = empreinte de la liste triée des rencontres ; PokeAPI cité avec l'empreinte de sa propre liste
 #   (même projection : forme, niveau min, niveau max, moment de la journée).
 P3_GAMES = [g for g in os.environ.get("P3_GAMES", "rb,y,gs,c").split(",") if g]
-P3_GEN = {"rb": 1, "y": 1, "gs": 2, "c": 2}
+P3_GEN = {g: GAME_GEN[g] for g in P3_GAMES}
+_MOD_DK = {"rs": "3", "e": "3", "frlg": "3", "dp": "4", "pt": "4", "hgss": "4", "bw": "5", "b2w2": "5", "xy": "6", "oras": "6",
+           "sm": "7", "usum": "7", "lgpe": "7b", "sw": "8", "swisle": "8", "swcrown": "8", "la": "8a", "bdsp": "8b",
+           "sv": "9", "svmask": "9", "svdisk": "9", "za": "9a", "zadlc": "9a"}
+DKEY = {g: (P3_GEN[g] if P3_GEN[g] <= 2 else _MOD_DK[g]) for g in P3_GAMES}   # PKHeX dump of each game
 VERSIONS_OF = collections.defaultdict(list)
 for _v, _g, _pid in R.VERSIONS:
     VERSIONS_OF[_g].append(_v)
@@ -75,7 +79,7 @@ for r in pcsv("encounters"):
                        form=f, min=int(r["min_level"]), max=int(r["max_level"]), conds=tuple(sorted(pk_cmap[r["id"]])), slot=s["slot"], rarity=s["rarity"]))
 
 # ----------------------------------------------------------------------------- PKHeX side
-PKX_ENC = {gen: json.load(open(DUMP / f"encounters_{gen}.json", encoding="utf-8")) for gen in sorted({P3_GEN[g] for g in P3_GAMES})}
+PKX_ENC = {gen: json.load(open(DUMP / f"encounters_{gen}.json", encoding="utf-8")) for gen in sorted({DKEY[g] for g in P3_GAMES}, key=str)}
 PKX_LOCN = json.load(open(DUMP / "locations.json", encoding="utf-8"))
 d_pkxenc = {gen: doc("pkhex", f"{PKXREV} · Encounters{gen} (encounters_{gen}.json)", PKXREV, file_sha(DUMP / f"encounters_{gen}.json")) for gen in PKX_ENC}
 d_pkxloc = doc("pkhex", f"{PKXREV} · GameInfo.Strings, met locations (locations.json)", PKXREV, file_sha(DUMP / "locations.json"))
@@ -249,7 +253,11 @@ def pk_place(form, v, methods, level=None):
             and (level is None or e["min"] <= level <= e["max"])}
 p3_trade_unplaced, p3_static_unplaced, p3_unconfirmed = [], [], []
 SPECIAL_PK = {"gift": "gift", "gift-egg": "gift-egg", "static": "static", "only-one": "static", "pokeflute": "static", "squirt-bottle": "static"}
+exec(open(ROOT / "scripts" / "phases" / "phase3_modern.py", encoding="utf-8").read())
 for gen, rows in PKX_ENC.items():
+    if not isinstance(gen, int):
+        for x in rows: mod_record(x, gen)
+        continue
     for x in rows:
         tbl = x["_table"]
         a = x.get("_area")
@@ -280,20 +288,23 @@ for gen, rows in PKX_ENC.items():
                         spots = {e["location"] for e in PK_ENC if e["version"] == v and e["method"] == method}
                         if not spots: p3_unplaced["gen1-old-good-rod"] += 1
                         for l in sorted(spots):
-                            for f in fs: add_enc(f, v, l, method, x["LevelMin"], x["LevelMax"])
+                            for f in fs: add_enc(f, v, l, method, x["LevelMin"], x["LevelMax"]); ENC[(f, v, l, method)]["placement"] = "pokeapi"
                         continue
                     loc = GEN1_LOC.get(a["Location"])
                 elif v in ("gold", "silver") and a["Type"] == "Surf":
                     spots = GS_SURF_LOC.get((a["Location"], v), [])
                     if not spots: p3_unplaced["gs-surf-unmatched"] += 1
                     for l in spots:
-                        for f in fs: add_enc(f, v, l, method, x["LevelMin"], x["LevelMax"], ["any"], x.get("Shiny"))
+                        for f in fs:
+                            add_enc(f, v, l, method, x["LevelMin"], x["LevelMax"], ["any"], x.get("Shiny")); ENC[(f, v, l, method)]["placement"] = "table-match"
                     continue
                 else:
                     loc = GEN2_LOC.get(a["Location"])
                 if not loc: p3_unplaced[f"gen{gen}-slot-unplaced"] += 1; continue
                 t = sorted(times_of(x.get("EncounterTime"))) if gen == 2 else ["any"]
-                for f in fs: add_enc(f, v, loc, method, x["LevelMin"], x["LevelMax"], t, x.get("Shiny"))
+                for f in fs:
+                    add_enc(f, v, loc, method, x["LevelMin"], x["LevelMax"], t, x.get("Shiny"))
+                    if gen == 1: ENC[(f, v, loc, method)]["placement"] = "table-match"
             elif x["_type"].startswith("EncounterTrade"):
                 lvl = x.get("LevelMinRBY") or x.get("Level") or x["LevelMin"]
                 for f in fs:
@@ -302,7 +313,7 @@ for gen, rows in PKX_ENC.items():
                     pl = pk_place(f, v, {"npc-trade"}) & set(BUL_TRADE.get((gen, x["Species"]), {}))
                     if len(pl) == 1:
                         l = pl.pop()
-                        add_enc(f, v, l, "npc-trade", lvl, lvl, shiny=x.get("Shiny"))
+                        add_enc(f, v, l, "npc-trade", lvl, lvl, shiny=x.get("Shiny")); ENC[(f, v, l, "npc-trade")]["placement"] = "pokeapi+bulbapedia"
                         # the Pokémon asked in exchange: Bulbapedia's table and PokeAPI's condition must agree
                         pk_give = {c[6:] for e in PK_ENC if e["form"] == f and e["version"] == v and e["method"] == "npc-trade" and e["location"] == l
                                    for c in e["conds"] if c.startswith("trade-")}
@@ -325,6 +336,7 @@ for gen, rows in PKX_ENC.items():
                     if not recs: p3_unconfirmed.append((f, v, tbl)); continue
                     labels = {SPECIAL_PK[e["method"]] for e in recs}
                     loc = GEN2_LOC.get(x.get("Location")) if gen == 2 else None
+                    placed_by = None
                     if loc:
                         at = {SPECIAL_PK[e["method"]] for e in recs if e["location"] == loc}
                         if not at: p3_static_unplaced.append((f, v, "location-differs")); loc = None
@@ -333,11 +345,13 @@ for gen, rows in PKX_ENC.items():
                         # no location in the game data: PokeAPI and Bulbapedia (gift table) must name the same place
                         pl = {e["location"] for e in recs} & BUL_GIFT.get((gen, x["Species"]), set())
                         if len(pl) == 1:
-                            loc = pl.pop(); labels = {SPECIAL_PK[e["method"]] for e in recs if e["location"] == loc}
+                            loc = pl.pop(); labels = {SPECIAL_PK[e["method"]] for e in recs if e["location"] == loc}; placed_by = "pokeapi+bulbapedia"
                         else: p3_static_unplaced.append((f, v, "no-common-place"))
                     method = "gift-egg" if egg else ("gift" if labels == {"gift"} else "static")
                     AVAIL_SRC[(f, v)].add("gift-egg" if egg else "gift" if method == "gift" else "wild")
-                    if loc: add_enc(f, v, loc, method, lvl, lvl, shiny=x.get("Shiny"))
+                    if loc:
+                        add_enc(f, v, loc, method, lvl, lvl, shiny=x.get("Shiny"))
+                        if placed_by: ENC[(f, v, loc, method)]["placement"] = placed_by
 
 def project(times):
     """time -> [min, max] → list of [min, max, condition] (one row without condition when every time agrees)."""
@@ -354,21 +368,42 @@ for (f, v, loc, m), e in ENC.items():
         ex = {}
         if e["shiny"] == {"Always"}: ex["shiny"] = "always"
         if e.get("gives"): ex["gives_species_id"] = e["gives"]
+        if e.get("placement"): ex["placement"] = e["placement"]
         extra = canon(ex) if ex else None
         enc_sets[(loc, v, m)].append([f, lo, hi, cond, locked, extra])
-
+for k_, rows_ in mod_rows().items(): enc_sets[k_].extend(rows_)
+MODERN = {g for g in P3_GAMES if P3_GEN[g] >= 3}
+GAME_ORDER = {r[0]: int(r[6]) for r in out["game"][1]}
+def mfam(g, m):
+    """Comparison family of a method (ours or PokeAPI's) in a game."""
+    if g not in MODERN: return fam(m)
+    if m in ("gift", "gift-egg", "static", "only-one", "pokeflute", "squirt-bottle", "devon-scope", "wailmer-pail", "roaming-grass",
+             "roaming-water", "roaming", "pokemon-ranger", "island-scan", "colosseum-bonus-disc-jpn", "colosseum-bonus-disc-us",
+             "pokemon-channel-pal", "new-york-pokecenter-wish-eggs", "feebas-tile-fishing", "outbreak", "dynamax-adventure"):
+        return "special" if m != "dynamax-adventure" else m
+    if m in ("npc-trade", "max-raid"): return m
+    if g in ("xy", "oras", "sm", "usum", "lgpe", "sw", "swisle", "swcrown"):
+        return m if m in ("horde", "sos", "friend-safari", "rock-smash") else "wild"
+    return {"dark-grass": "walk", "grass-spots": "walk", "cave-spots": "walk", "bridge-spots": "walk", "seaweed": "walk",
+            "surf-spots": "surf", "super-rod-spots": "super-rod"}.get(m, fam(m))
+def mproj(rows):
+    """Projection used to compare with PokeAPI in generations 3+: one (form, min, max) per form, conditions merged."""
+    d = {}
+    for r in rows:
+        lo, hi = d.get(r[0], (999, 0)); d[r[0]] = (min(lo, r[1]), max(hi, r[2]))
+    return {(f, lo, hi, None) for f, (lo, hi) in d.items()}
 # PokeAPI projection on the same keys (method family, form, min, max, time)
 pk_times = collections.defaultdict(lambda: collections.defaultdict(lambda: [999, 0]))
 for e in PK_ENC:
     ts = [c[5:] for c in e["conds"] if c in ("time-morning", "time-day", "time-night")]
     g = GAME_OF_VERSION[e["version"]]
-    if P3_GEN[g] == 1 or e["method"] in ("gift", "gift-egg", "static", "npc-trade", "pokeflute", "squirt-bottle", "only-one", "roaming-grass", "roaming-water"):
+    if P3_GEN[g] == 1 or g in MODERN or e["method"] in ("gift", "gift-egg", "static", "npc-trade", "pokeflute", "squirt-bottle", "only-one", "roaming-grass", "roaming-water"):
         ts = ["any"]
     elif not ts: ts = list(TIMES)
     m = "roaming" if e["method"].startswith("roaming") else e["method"]
     lo_, hi_ = e["min"], (e["min"] if e["method"] == "npc-trade" else e["max"])
     for t in ts:
-        x = pk_times[(e["location"], e["version"], fam(m), e["form"])][t]
+        x = pk_times[(e["location"], e["version"], mfam(g, m), e["form"])][t]
         x[0] = min(x[0], lo_); x[1] = max(x[1], hi_)
 pk_sets = collections.defaultdict(set)
 for (loc, v, fm, f), times in pk_times.items():
@@ -376,13 +411,13 @@ for (loc, v, fm, f), times in pk_times.items():
         pk_sets[(loc, v, fm)].add((f, lo, hi, cond))
 pk_present = {(loc, v) for (loc, v, fm) in pk_sets}
 
-def verify_set(table, rk, chosen, obs, gen):
+def verify_set(table, rk, chosen, obs, gen, proj=None):
     """Set-level verification (convention A). chosen: list of rows; obs: [(source, doc, projected set or None)]."""
     ch = sorted(chosen, key=lambda r: [str(x) for x in r])
     vh = sha256_text(canon(ch))
     parts, dissent = [], []
     citations.append((table, rk, "*", d_pkxenc[gen], canon({"n": len(ch), "sha256": vh}), 1)); parts.append(f"pkhex:{vh}")
-    mine = {(r[0], r[1], r[2], r[3]) for r in ch}
+    mine = proj(ch) if proj else {(r[0], r[1], r[2], r[3]) for r in ch}
     for s, d, val in obs:
         sh = sha256_text(canon(sorted(val, key=lambda r: [str(x) for x in r])))
         ok = val == mine
@@ -399,13 +434,14 @@ def verify_set(table, rk, chosen, obs, gen):
 enc_rows = []
 fam_sets = collections.defaultdict(set)
 for (loc, v, m), rows in enc_sets.items():
-    for r in rows: fam_sets[(loc, v, fam(m))].add((r[0], r[1], r[2], r[3]))
+    g_ = GAME_OF_VERSION[v]
+    for r in (mproj(rows) if g_ in MODERN else rows): fam_sets[(loc, v, mfam(g_, m))].add((r[0], r[1], r[2], r[3]))
 p3_agree = collections.Counter()
 for (loc, v, m), rows in sorted(enc_sets.items()):
-    g = GAME_OF_VERSION[v]; gen = P3_GEN[g]
+    g = GAME_OF_VERSION[v]; gen = DKEY[g]
     rk = row_key(loc, v, m)
     obs = []
-    fm = fam(m)
+    fm = mfam(g, m)
     if (loc, v) in pk_present or pk_sets.get((loc, v, fm)):
         mine_f = fam_sets[(loc, v, fm)]
         theirs = pk_sets.get((loc, v, fm), set())
@@ -415,33 +451,46 @@ for (loc, v, m), rows in sorted(enc_sets.items()):
             other_forms = {x[0] for x in mine_f} - own_forms
             theirs = {x for x in theirs if x[0] not in other_forms}
         obs.append(("pokeapi", d_pkenc, theirs))
-    dis = verify_set("encounter", rk, rows, obs, gen)
+    if g in MODERN and fm != m:
+        obs = [(s_, d_, {x for x in th if x[0] in {r[0] for r in rows}}) for s_, d_, th in obs]
+    dis = verify_set("encounter", rk, rows, obs, gen, mproj if g in MODERN else None)
     p3_agree[(g, m, "sets")] += 1
     if obs: p3_agree[(g, m, "cited")] += 1
     if obs and not dis: p3_agree[(g, m, "agree")] += 1
-    for f, lo, hi, cond, locked, extra in rows:
-        enc_rows.append([f, v, loc, m, lo, hi, None, 0, locked, extra, cond])
+    for r in rows:
+        f, lo, hi, cond, locked, extra = r[:6]
+        enc_rows.append([f, v, loc, m, lo, hi, None, r[6] if len(r) > 6 else 0, locked, extra, cond])
 # stable ids: same natural key keeps its id
 prev_ids = {}
 prev_links = collections.defaultdict(list)
 for r in read_csv("encounter_condition_link"): prev_links[int(r["encounter_id"])].append(r["condition_id"])
 for r in read_csv("encounter"):
-    prev_ids[(r["form_id"], r["version_id"], r["area_id"], r["method_id"], ",".join(sorted(prev_links[int(r["id"])])))] = int(r["id"])
+    prev_ids[(r["form_id"], r["version_id"], r["area_id"], r["method_id"], ",".join(sorted(prev_links[int(r["id"])])), int(r["is_alpha"] or 0))] = int(r["id"])
 next_id = max(list(prev_ids.values()) + [0]) + 1
 encounter_rows, link_rows = [], []
 for f, v, loc, m, lo, hi, rate, alpha, locked, extra, cond in sorted(enc_rows, key=lambda r: [str(x) for x in r]):
-    k = (f, v, loc, m, cond or "")
+    k = (f, v, loc, m, cond or "", alpha)
     i = prev_ids.get(k)
     if i is None: i = next_id; next_id += 1
     encounter_rows.append([i, f, v, loc, m, lo, hi, rate, alpha, locked, extra])
-    if cond: link_rows.append([i, cond])
+    for c_ in (cond.split(",") if cond else []): link_rows.append([i, c_])
 
 # ----------------------------------------------------------------------------- locations, areas, names
 used_locs = sorted({r[3] for r in encounter_rows})
 loc_games = sorted({(r[3], GAME_OF_VERSION[r[2]]) for r in encounter_rows})
 location_rows, area_rows = [], []
 for l in used_locs:
-    p = pk_loc_by_ident[l]
+    p = pk_loc_by_ident.get(l)
+    if p is None:   # place created from the game's own location list (PokeAPI does not have it)
+        region = MLOC_NEW[l]
+        location_rows.append([l, region, None]); area_rows.append([l, l, None])
+        rk = row_key(l); val = canon({"id": l, "region": region}); obs_parts = []
+        citations.append(("location", rk, "*", d_pkxloc, canon({"met": [[lst, metid, PKX_LOCN[lst]["en"].get(str(metid)), how] for lst, metid, how in sorted(MLOC_SRC[l])]}), 1))
+        obs_parts += [f"pkhex:{lst}:{metid}" for lst, metid, how in sorted(MLOC_SRC[l])]
+        verifs.append(("location", rk, "*", "game-data", sha256_text(val), sha256_text("|".join(sorted(obs_parts)))))
+        verifs.append(("location_area", row_key(l), "*", "game-data", sha256_text(canon({"id": l, "location": l})), sha256_text("|".join(sorted(obs_parts)))))
+        citations.append(("location_area", row_key(l), "*", d_pkxloc, canon({"location": l}), 1))
+        continue
     location_rows.append([l, pk_region.get(p["region_id"]), int(p["id"])])
     area_rows.append([l, l, None])
     rk = row_key(l)
@@ -451,18 +500,25 @@ for l in used_locs:
     val = canon({"id": l, "region": pk_region.get(p["region_id"])})
     obs_parts = []
     if g2:
-        citations.append(("location", rk, "*", d_pkxloc, canon({"gen2_index": g2[0], "en": PKX_LOCN["gsc"]["en"].get(str(g2[0]))}),
+        _c = {"gen2_index": g2[0], "en": PKX_LOCN["gsc"]["en"].get(str(g2[0]))}
+        if MLOC_SRC.get(l):
+            _c["met"] = [[lst, metid, PKX_LOCN[lst]["en"].get(str(metid)), how] for lst, metid, how in sorted(MLOC_SRC[l])]
+            obs_parts += [f"pkhex:{lst}:{metid}" for lst, metid, how in sorted(MLOC_SRC[l])]
+        citations.append(("location", rk, "*", d_pkxloc, canon(_c),
                           1 if p3_norm(PKX_LOCN["gsc"]["en"].get(str(g2[0]))) == p3_norm(pk_locnames[l].get("en")) else 0))
         obs_parts.append(f"pkhex:{g2[0]}")
     if g1:
         citations.append(("location", rk, "*", d_pkxenc[1], canon({"gen1_table": sorted(g1)}), 1)); obs_parts.append(f"pkhex1:{sorted(g1)}")
+    if MLOC_SRC.get(l) and not g2:
+        citations.append(("location", rk, "*", d_pkxloc, canon({"met": [[lst, metid, PKX_LOCN[lst]["en"].get(str(metid)), how] for lst, metid, how in sorted(MLOC_SRC[l])]}), 1))
+        obs_parts += [f"pkhex:{lst}:{metid}" for lst, metid, how in sorted(MLOC_SRC[l])]
     citations.append(("location", rk, "*", d_pkloc, canon({"identifier": l, "region": pk_region.get(p["region_id"])}), 1)); obs_parts.append(f"pokeapi:{l}")
     verifs.append(("location", rk, "*", "game-data", sha256_text(val), sha256_text("|".join(sorted(obs_parts)))))
     verifs.append(("location_area", row_key(l), "*", "game-data", sha256_text(canon({"id": l, "location": l})), sha256_text("|".join(sorted(obs_parts)))))
     citations.append(("location_area", row_key(l), "*", d_pkloc, canon({"location": l}), 1))
 for l, g in loc_games:
     verifs.append(("location_game", row_key(l, g), "*", "game-data", sha256_text(canon([l, g])), sha256_text(f"pkhex:{l}:{g}")))
-    citations.append(("location_game", row_key(l, g), "*", d_pkxenc[P3_GEN[g]], canon({"location": l, "game": g}), 1))
+    citations.append(("location_game", row_key(l, g), "*", d_pkxenc[DKEY[g]], canon({"location": l, "game": g}), 1))
 
 # names: per game (gen 2 met-location text), and one name without game from the latest game text that has the place
 GL = collections.defaultdict(set)
@@ -482,16 +538,35 @@ for l in used_locs:
         for lang in sorted(GL[g]):
             t = PKX_LOCN["gsc"].get(lang, {}).get(str(g2[0]))
             if not t: continue
-            extra_obs = [("pokeapi", d_pkln, pk_locnames[l][lang])] if lang in pk_locnames[l] else []
+            extra_obs = [("pokeapi", d_pkln, pk_locnames[l][lang])] if lang in pk_locnames.get(l, {}) else []
             add_loc_name(l, lang, g, t, extra_obs)
-    # generic name (no game): latest game text that has this place (HGSS, then FR/LG, then G/S/C), in that game's languages
+    # generations 3+: the met-location text of each game (PKHeX tags such as "(1)" removed)
+    mod_text = {}
+    for g in sorted(MODERN, key=lambda g: -GAME_ORDER.get(g, 0)):
+        if (l, g) not in set(loc_games): continue
+        lst = MOD_LIST[MOD_BASE.get(g, g)]
+        ids = sorted({mid for (ls, mid, how) in MLOC_SRC.get(l, ()) if ls == lst})
+        if not ids: continue
+        for lang in sorted(GL[g]):
+            ts = {strip_name(PKX_LOCN[lst].get(lang, {}).get(str(i))) for i in ids} - {""}
+            if len(ts) != 1: continue
+            t = ts.pop()
+            extra_obs = [("pokeapi", d_pkln, pk_locnames[l][lang])] if lang in pk_locnames.get(l, {}) else []
+            add_loc_name(l, lang, g, t, extra_obs)
+            mod_text.setdefault(g, {})[lang] = (t, extra_obs)
+    # generic name (no game): latest published game of generation 3+ that has this place, else the latest game text
+    # that has it (HGSS, then FR/LG, then G/S/C), in that game's languages
+    if mod_text:
+        g = max(mod_text, key=lambda g: GAME_ORDER.get(g, 0))
+        for lang, (t, extra_obs) in sorted(mod_text[g].items()): add_loc_name(l, lang, None, t, extra_obs)
+        continue
     for g, gen, lst in LATEST:
         idx = [i for i, ident in pk_gi[gen].items() if ident == l]
         if not idx or not PKX_LOCN[lst]["en"].get(str(idx[0])): continue
         for lang in sorted(GL[g]):
             t = PKX_LOCN[lst].get(lang, {}).get(str(idx[0]))
             if not t: continue
-            extra_obs = [("pokeapi", d_pkln, pk_locnames[l][lang])] if lang in pk_locnames[l] else []
+            extra_obs = [("pokeapi", d_pkln, pk_locnames[l][lang])] if lang in pk_locnames.get(l, {}) else []
             add_loc_name(l, lang, None, t, extra_obs)
         break
 
@@ -508,35 +583,69 @@ in_dex = collections.defaultdict(set)
 for pid, sid, num in out["pokedex_entry"][1]: in_dex[pid].add(int(sid))
 # Unown: the letter is drawn at random at each encounter, so every letter shares the default form's sources
 for (f_, v_), src_ in list(AVAIL_SRC.items()):
-    if f_ == "201":
+    if f_ == "201" and P3_GEN[GAME_OF_VERSION[v_]] == 2:
         for (ff, gg) in present:
             if ff.startswith("201-") and gg == GAME_OF_VERSION[v_]: AVAIL_SRC[(ff, v_)] |= src_ - {"event"}
 avail_rows = []
 ST_ALL = {}
 p3_avail = collections.Counter()
-NATIVE = {"wild", "gift", "evolve", "breed"}
+NATIVE = {"wild", "gift", "npc-trade", "evolve", "breed"}
+DLC_BASE = {"swisle": "sw", "swcrown": "sw", "svmask": "sv", "svdisk": "sv", "zadlc": "za"}
+DLC_CHAIN = {"swisle": ["sw", "swisle"], "swcrown": ["sw", "swisle", "swcrown"], "svmask": ["sv", "svmask"],
+             "svdisk": ["sv", "svmask", "svdisk"], "zadlc": ["za", "zadlc"]}
+BASE_VERSION = {dv: bv for (d, bv), dv in DLCV.items()}
+def chain_versions(g, v):
+    """Versions whose sources count for (g, v): a DLC version has the base game and the earlier DLC (cumulative)."""
+    if g not in DLC_CHAIN: return [v]
+    bv = BASE_VERSION.get(v, v)
+    return [bv if gg == DLC_BASE[g] else DLCV.get((gg, bv)) for gg in DLC_CHAIN[g] if gg in P3_GAMES or gg == DLC_BASE[g]]
+def src_of(g, v, f):
+    out_ = set()
+    for vv in chain_versions(g, v):
+        if vv: out_ |= AVAIL_SRC.get((f, vv), set())
+    return out_
+NO_BREED = {"lgpe", "la", "za", "zadlc"}          # games without breeding (and generation 1)
+# forms obtained in a way that cannot evolve: Pikachu in Yellow (the only Pikachu is the starter, which refuses the
+# Thunder Stone) → Raichu needs a trade. Checked: partner Pikachu / Eevee of Let's Go and the cap / cosplay Pikachu are
+# separate forms with no evolution, the spiky-eared Pichu is an event form.
+NO_EVOLVE = {("y", "25")}
+LINK = [("rb", "y"), ("gs", "c"), ("rs", "e", "frlg"), ("dp", "pt", "hgss"), ("bw", "b2w2"), ("xy", "oras"), ("sm", "usum")]
+def link_group(g): return next((grp for grp in LINK if g in grp), (g,))
+# transfers between generations, by receiving game: (method, source games)
+TRANSFER_IN = {"dp": [("pal-park", ["rs", "e", "frlg"])], "pt": [("pal-park", ["rs", "e", "frlg"])], "hgss": [("pal-park", ["rs", "e", "frlg"])],
+               "bw": [("poke-transfer", ["dp", "pt", "hgss"])], "b2w2": [("poke-transfer", ["dp", "pt", "hgss"])],
+               "xy": [("poke-bank", ["bw", "b2w2", "xy", "oras"])], "oras": [("poke-bank", ["bw", "b2w2", "xy", "oras"])],
+               "sm": [("poke-bank", ["rb", "y", "gs", "c", "bw", "b2w2", "xy", "oras", "sm", "usum"])],
+               "usum": [("poke-bank", ["rb", "y", "gs", "c", "bw", "b2w2", "xy", "oras", "sm", "usum"])]}
+_HOME_SRC = ["sm", "usum", "lgpe", "sw", "swisle", "swcrown", "bdsp", "la", "sv", "svmask", "svdisk", "za", "zadlc"]
+for _g in ("sw", "swisle", "swcrown", "bdsp", "la", "sv", "svmask", "svdisk", "za", "zadlc"): TRANSFER_IN[_g] = [("home", _HOME_SRC)]
 for g in P3_GAMES:
     forms_g = sorted({f for (f, gg) in present if gg == g})
     pre = collections.defaultdict(set)
-    for a_, b_ in evo_game[g]: pre[b_].add(a_)
+    for a_, b_ in evo_game[g] | evo_game[DLC_BASE.get(g, g)]: pre[b_].add(a_)
     st = {}
     for v in VERSIONS_OF[g]:
         s = collections.defaultdict(set)
+        det_wild = {}
         for f in forms_g:
-            src = AVAIL_SRC.get((f, v), set())
+            src = src_of(g, v, f)
             if "wild" in src: s[f].add("wild")
-            if src & {"gift", "gift-egg", "npc-trade"}: s[f].add("gift")
-        def obtainable(f): return bool(s[f] & {"wild", "gift", "evolve", "breed"})
+            elif any(x.startswith("wild:") for x in src):
+                s[f].add("wild"); det_wild[f] = ",".join(sorted(x[5:] for x in src if x.startswith("wild:")))
+            if src & {"gift", "gift-egg", "gift:pokewalker"}: s[f].add("gift")
+            if "npc-trade" in src: s[f].add("npc-trade")
+        def obtainable(f): return bool(s[f] & NATIVE)
+        def evolvable(f): return obtainable(f) and (g, f) not in NO_EVOLVE
         for _ in range(2):
             ch = True
             while ch:
                 ch = False
                 for f in forms_g:
-                    if "evolve" not in s[f] and any(obtainable(p) for p in pre[f]):
+                    if "evolve" not in s[f] and any(evolvable(p) for p in pre[f]):
                         s[f].add("evolve"); ch = True
-            if P3_GEN[g] >= 2:   # breeding: the first stage of a family whose obtainable member can breed
+            if P3_GEN[g] >= 2 and g not in NO_BREED:   # breeding: the first stage of a family whose obtainable member can breed
                 kids = collections.defaultdict(set)
-                for a_, b_ in evo_game[g]: kids[a_].add(b_)
+                for a_, b_ in evo_game[g] | evo_game[DLC_BASE.get(g, g)]: kids[a_].add(b_)
                 def family(f):
                     seen, todo = set(), [f]
                     while todo:
@@ -548,9 +657,14 @@ for g in P3_GAMES:
                     if pre[f] or "breed" in s[f]: continue
                     if any(obtainable(x) and "undiscovered" not in egg_of[sp_of[x]] for x in family(f)):
                         s[f].add("breed")
+        s["_wild_detail"] = det_wild
         st[v] = s
     ST_ALL[g] = st
-for g in P3_GAMES:
+def native_any(o, f): return any(ST_ALL[o][ov].get(f, set()) & NATIVE or "event" in src_of(o, ov, f) for ov in VERSIONS_OF[o])
+FINAL = {}     # (g, v, f) -> statuses (for the transfer closure)
+TRANSFERS = collections.defaultdict(dict)
+order = sorted(P3_GAMES, key=lambda g: (P3_GEN[g], GAME_ORDER.get(g, 0)))
+for g in order:
     st = ST_ALL[g]
     forms_g = sorted({f for (f, gg) in present if gg == g})
     for v in VERSIONS_OF[g]:
@@ -558,32 +672,39 @@ for g in P3_GAMES:
         for f in forms_g:
             stats = set(st[v][f])
             details = {}
+            if stats & {"wild"} and f in st[v]["_wild_detail"]: details["wild"] = st[v]["_wild_detail"][f]
             if not stats & NATIVE:
                 if any(st[o][f] & NATIVE for o in others): stats.add("trade-version-exclusive")
                 else:
-                    # trade from another game of the same generation (Yellow ← Red/Blue, Crystal ← Gold/Silver)
-                    src_g = sorted(o for o in P3_GAMES if o != g and P3_GEN[o] == P3_GEN[g]
-                                   and any(ST_ALL[o][ov][f] & NATIVE or "event" in AVAIL_SRC.get((f, ov), set()) for ov in VERSIONS_OF[o]))
+                    # trade from another game that can trade with this one (Yellow ← Red/Blue, Emerald ← FR/LG…)
+                    src_g = sorted(o for o in link_group(g) if o != g and o in P3_GAMES and native_any(o, f))
                     if src_g: stats.add("trade-version-exclusive"); details["trade-version-exclusive"] = "from:" + ",".join(src_g)
+                tr = []
                 # Time Capsule between generations 1 and 2 (species 1–151 only)
-                if sp_of[f] <= 151 and {P3_GEN[g]} <= {1, 2}:
-                    cap = sorted(o for o in P3_GAMES if P3_GEN[o] in (1, 2) and P3_GEN[o] != P3_GEN[g]
-                                 and any(ST_ALL[o][ov].get(f, set()) & NATIVE or "event" in AVAIL_SRC.get((f, ov), set()) for ov in VERSIONS_OF[o]))
-                    if cap: stats.add("transfer"); details["transfer"] = "time-capsule:" + ",".join(cap)
-            if "event" in AVAIL_SRC.get((f, v), set()): stats.add("event")
+                if sp_of[f] <= 151 and P3_GEN[g] in (1, 2):
+                    cap = sorted(o for o in P3_GAMES if P3_GEN[o] in (1, 2) and P3_GEN[o] != P3_GEN[g] and native_any(o, f))
+                    if cap: tr.append("time-capsule:" + ",".join(cap))
+                for meth, srcs in TRANSFER_IN.get(g, []):
+                    ok = [o for o in srcs if o in P3_GAMES and o != g and (native_any(o, f) or any(FINAL.get((o, ov, f), set()) - {"unobtainable"} for ov in VERSIONS_OF[o]))]
+                    if ok: tr.append(meth + ":" + ",".join(ok))
+                if tr: stats.add("transfer"); details["transfer"] = ";".join(tr)
+            if "event" in src_of(g, v, f): stats.add("event")
             if not stats: stats.add("unobtainable")
-            dex = 1 if any(sp_of[f] in in_dex[d_] for d_ in dex_of_game[g]) else 0
+            FINAL[(g, v, f)] = stats
+            dexes = set().union(*(dex_of_game[x] for x in DLC_CHAIN.get(g, [g])))
+            dex = 1 if any(sp_of[f] in in_dex[d_] for d_ in dexes) else 0
             for status in sorted(stats):
                 detail = None
                 if status == "gift":
-                    det = sorted(AVAIL_SRC[(f, v)] & {"gift-egg", "npc-trade"})
-                    if "gift" in AVAIL_SRC[(f, v)] and det: det = ["gift"] + det
+                    src = src_of(g, v, f)
+                    det = sorted({"gift-egg": "gift-egg", "gift:pokewalker": "pokewalker"}[x] for x in src & {"gift-egg", "gift:pokewalker"})
+                    if "gift" in src and det: det = ["gift"] + det
                     detail = ",".join(det) or None
                 else: detail = details.get(status)
                 avail_rows.append([f, v, status, detail, dex])
                 rk = row_key(f, v, status)
                 val = canon([status, detail, dex])
-                citations.append(("availability", rk, "*", d_pkxenc[P3_GEN[g]], canon({"status": status, "detail": detail}), 1))
+                citations.append(("availability", rk, "*", d_pkxenc[DKEY[g]], canon({"status": status, "detail": detail}), 1))
                 verifs.append(("availability", rk, "*", "game-data", sha256_text(val), sha256_text(f"pkhex:{val}")))
                 p3_avail[(g, status)] += 1
 
@@ -598,6 +719,13 @@ SHINY = {   # game -> [(method, odds, conditions, [(Bulbapedia needle, Poképéd
     "c": [("base", "1/8192", None, [("1/8192", "1/8192")]),
           ("shiny-parent", "1/64", canon({"breeding_parent_shiny": True}), [("1/64", "chance sur 64")])],
 }
+# generations 3+: base rate in both wikis; the Shiny Charm only where both give its rate (B2W2). The Masuda method and
+# the later Shiny Charm rates are given by Bulbapedia only → not published (reported).
+for _g in ("rs", "e", "frlg", "dp", "pt", "hgss", "bw", "b2w2"):
+    SHINY[_g] = [("base", "1/8192", None, [("1 roll (1/8192)", "1/8192")])]
+SHINY["b2w2"].append(("shiny-charm", "3/8192", canon({"item": "shiny-charm"}), [("3 rolls (~1/2731.00)", "1 sur 2731")]))
+for _g in ("xy", "oras", "sm", "usum", "lgpe", "sw", "bdsp", "la", "sv", "za"):
+    SHINY[_g] = [("base", "1/4096", None, [("1 roll (1/4096)", "1 chance sur 4096")])]
 shiny_rows, lock_rows = [], []
 bul_g2 = wiki_section(text_shiny, "==In the core series games==", "==In spin-off") or text_shiny
 for g in P3_GAMES:
@@ -612,10 +740,10 @@ for g in P3_GAMES:
 # locks: every template of the form in the game is Shiny "Never" and no wild / breeding / evolution path exists
 for (f, g), vals in sorted(PKX_SHINY.items()):
     if P3_GEN[g] < 2 or not vals or any(x != "Never" for x in vals): continue
-    if any(r[0] == f and GAME_OF_VERSION[r[1]] == g and r[2] in ("wild", "evolve", "breed", "transfer") for r in avail_rows): continue
-    lock_rows.append([f, g, "npc-trade" if any(r[0] == f and GAME_OF_VERSION[r[1]] == g and (r[3] or "").find("npc-trade") >= 0 for r in avail_rows) else None])
+    if any(r[0] == f and GAME_OF_VERSION[r[1]] == g and r[2] in ("wild", "evolve", "breed") for r in avail_rows): continue
+    lock_rows.append([f, g, "npc-trade" if any(r[0] == f and GAME_OF_VERSION[r[1]] == g and r[2] == "npc-trade" for r in avail_rows) else None])
     rk = row_key(f, g)
-    citations.append(("shiny_lock", rk, "*", d_pkxenc[P3_GEN[g]], canon({"shiny": sorted(set(vals))}), 1))
+    citations.append(("shiny_lock", rk, "*", d_pkxenc[DKEY[g]], canon({"shiny": sorted(set(vals))}), 1))
     verifs.append(("shiny_lock", rk, "*", "game-data", sha256_text(canon([f, g])), sha256_text(f"pkhex:{f}:{g}")))
 
 # ----------------------------------------------------------------------------- old Pokédex names (external_id pokedex-legacy)
@@ -627,7 +755,7 @@ if (PDX / "loc.json").exists():
     pl = json.load(open(PDX / "loc.json", encoding="utf-8"))
     fr_names = collections.defaultdict(set)   # (location) -> normalised French names (any game text)
     for r in tr_rows:
-        if r[0] == "location" and r[3] == "fr": fr_names[r[1]].add(p3_norm(r[6]))
+        if r[0] == "location" and r[3] in ("fr", "en"): fr_names[r[1]].add(p3_norm(r[6]))   # English too: "Route 105" (FR "Chenal 105")
     locs_in_game = collections.defaultdict(set)
     for l, g in loc_games: locs_in_game[g].add(l)
     for spf in sorted((PDX / "sp").glob("*.json")):
@@ -673,7 +801,10 @@ P3_STATS = dict(games=P3_GAMES, locations=len(location_rows), encounters=len(enc
                 agreement={f"{g}:{m}": [p3_agree[(g, m, "agree")], p3_agree[(g, m, "cited")], p3_agree[(g, m, "sets")]]
                            for (g, m, k) in sorted(p3_agree) if k == "sets"},
                 availability_by_status={f"{g}:{s}": n for (g, s), n in sorted(p3_avail.items())},
-                legacy_mapped=len(legacy), legacy_unmatched=dict(p3_legacy_unmatched.most_common()))
+                legacy_mapped=len(legacy), legacy_unmatched=dict(p3_legacy_unmatched.most_common()),
+                modern_skipped=dict(p3_mod_skip), modern_locations={h: len({l for l, srcs in MLOC_SRC.items() if any(x[2] == h for x in srcs)})
+                                                                    for h in ("pokeapi-index", "pokeapi-name", "created")},
+                created_locations=sorted(MLOC_NEW), form_skips={f"{a}:{b}:{c}:{d}": n for (a, b, c, d), n in sorted(P3_FORMSKIP.items(), key=str)})
 json.dump(P3_STATS, open(ROOT / "reports/phase3-details.json", "w"), ensure_ascii=False, indent=0)
-print("phase3", json.dumps({k: v for k, v in P3_STATS.items() if k not in ("agreement", "legacy_unmatched", "trades_unplaced", "statics_unplaced")}, ensure_ascii=False))
+print("phase3", json.dumps({k: v for k, v in P3_STATS.items() if k not in ("agreement", "legacy_unmatched", "trades_unplaced", "statics_unplaced", "unconfirmed_templates", "created_locations", "form_skips")}, ensure_ascii=False))
 if os.environ.get("P3_DRY"): sys.exit(0)

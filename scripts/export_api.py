@@ -326,6 +326,10 @@ def main():
     for r in q("SELECT * FROM location_game ORDER BY game_id, location_id"):
         if okv("location_game", rk(r["location_id"], r["game_id"])) and r["location_id"] in locs:
             loc_games[r["game_id"]].append(r["location_id"])
+    disc_lg = collections.defaultdict(dict)   # (location, game) -> {key: sources}
+    for k, v in enc_disc.items():
+        k_ = json.loads(k)
+        if len(k_) == 3: disc_lg[(k_[0], version_game.get(k_[1]))][k] = v
     nloc_files = 0
     for g, lids in loc_games.items():
         lst = []
@@ -334,7 +338,7 @@ def main():
                  "names": gnames.get(("location", lid, g)) or names.get(("location", lid), {}),
                  "aliases": dict(aliases.get(("location", lid), {})),
                  "encounters": {v: rows for v, rows in sorted(loc_enc[(g, lid)].items())}}
-            dd = {k: v for k, v in enc_disc.items() if json.loads(k)[0] == lid and version_game.get(json.loads(k)[1]) == g}
+            dd = disc_lg.get((lid, g), {})
             if dd:
                 o["discrepancies"] = [{"version": json.loads(k)[1], "method": json.loads(k)[2], "sources": v} for k, v in sorted(dd.items())]
             if "pokedex-legacy" in o["aliases"]:
@@ -345,12 +349,36 @@ def main():
     write("location/index.json", [{"id": lid, "region": l["region_id"], "names": names.get(("location", lid), {}),
                                     "games": sorted([g for g, ls in loc_games.items() if lid in ls], key=game_order.index)}
                                    for lid, l in sorted(locs.items())])
+    # DLC: for a DLC version, the game (base game or DLC) from which the form can be obtained
+    ginfo = {r["id"]: dict(r) for r in q("SELECT * FROM game")}
+    vers_of = collections.defaultdict(list)
+    for v_, g_ in version_game.items(): vers_of[g_].append(v_)
+    def chain_of(v):
+        g_ = version_game[v]; base = ginfo[g_]["base_game_id"]
+        if ginfo[g_]["kind"] != "dlc" or not base: return None
+        bv = [x for x in vers_of[base] if v.endswith(x)] or (vers_of[base] if len(vers_of[base]) == 1 else [])
+        if len(bv) != 1: return None
+        dlcs = sorted((x for x in ginfo if ginfo[x]["base_game_id"] == base and ginfo[x]["kind"] == "dlc"), key=lambda x: ginfo[x]["sort_order"])
+        out_ = [(base, bv[0])]
+        for d in dlcs:
+            dv = [x for x in vers_of[d] if x.endswith(bv[0])] or (vers_of[d] if len(vers_of[d]) == 1 else [])
+            if len(dv) == 1: out_.append((d, dv[0]))
+            if d == g_: break
+        return out_
+    def arrives_with(sid, fid, v):
+        ch = chain_of(v)
+        if not ch: return None
+        for g_, v_ in ch:
+            if any(a_["status"] != "unobtainable" for a_ in avail[sid][fid].get(v_, [])): return g_
+        return None
     for sid in sorted(set(avail) | set(sp_enc)):
         fo = {}
         for fid in sorted(set(avail[sid]) | set(sp_enc[sid]), key=lambda f: (len(f), f)):
             vv = {}
             for v in sorted(set(avail[sid][fid]) | set(sp_enc[sid][fid])):
                 vv[v] = {"game": version_game[v], "availability": avail[sid][fid].get(v, []), "encounters": sp_enc[sid][fid].get(v, [])}
+                aw = arrives_with(sid, fid, v)
+                if aw: vv[v]["arrives_with"] = aw
             fo[fid] = vv
         write(f"pokemon/{sid}/locations.json", {"species_id": sid, "forms": fo})
     shiny = collections.defaultdict(lambda: {"rules": [], "locks": []})

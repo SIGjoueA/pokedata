@@ -95,7 +95,7 @@ class Build(unittest.TestCase):
         self.assertGreater(self.one("SELECT COUNT(*) FROM learnset WHERE form_id='25' AND game_id='la' AND method_id='mastery'"), 0)
 
     def test_migrations(self):
-        # 0001 + 0002 give the same tables, columns and indexes as schema.sql (0002 changes conventions only)
+        # 0001 + later migrations give the same tables, columns and indexes as schema.sql (0002 changes conventions only)
         def struct(scripts):
             d = sqlite3.connect(":memory:")
             for sc in scripts:
@@ -103,10 +103,10 @@ class Build(unittest.TestCase):
             return sorted(d.execute("SELECT type, name, sql FROM sqlite_master WHERE name NOT LIKE 'sqlite_%'").fetchall())
         mig = sorted((ROOT / "db" / "migrations").glob("*.sql"))
         self.assertEqual([p.name[:4] for p in mig], [f"{i:04d}" for i in range(1, len(mig) + 1)])
-        strip = lambda rows: [(t, n, " ".join(l.split("--")[0] for l in (q or "").splitlines()).split()) for t, n, q in rows]
+        strip = lambda rows: [(t, n, " ".join(l.split("--")[0] for l in (q or "").splitlines()).replace(f'"{n}"', n).split()) for t, n, q in rows]
         self.assertEqual(strip(struct([mig[0].read_text("utf-8")] + [p.read_text("utf-8") for p in mig[1:]])),
                          strip(struct([(ROOT / "db" / "schema.sql").read_text("utf-8")])))
-        self.assertEqual(self.one("SELECT value FROM meta WHERE key='schema_version'"), "1.1.0")
+        self.assertEqual(self.one("SELECT value FROM meta WHERE key='schema_version'"), "1.2.0")
 
 
 class Api(unittest.TestCase):

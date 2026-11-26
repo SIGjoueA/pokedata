@@ -3,6 +3,13 @@
 Généré depuis `db/data/update_log.csv` par `scripts/changelog.py`. Le détail ligne à ligne est dans `update_log_item` (base SQLite) et `api/v1/meta/changelog.json`.
 
 
+## 2026.11.26.2 — Phase 3 (lot 2 : 3e génération — Rubis/Saphir, Émeraude, Rouge Feu/Vert Feuille ; statut npc-trade)
+
+- Type : release · schéma 1.2.0 · 2026-11-26T06:35:38Z → 2026-11-26T06:35:38Z (UTC)
+- Import et vérification : 1025 espèces, 1588 formes, 17497 lignes forme×jeu, 589 évolutions, 7460 entrées de Pokédex régionaux, 920 capacités, 7817 lignes capacité×jeu, 2061 CT/CS/DT, 645613 lignes de movesets, 207 lieux, 8668 rencontres, 5605 lignes de disponibilité, 46444 traductions ; 2132 écarts notés ; 7467 données (re)vérifiées.
+- Statuts de vérification : disputed 87, game-data 175652, majority 188, manual 420, single-source 3, unanimous 46649
+- Lignes : species 1025, form 1588, form_game 17497, form_ability 31012, ability 307, evolution 589, evolution_method 7541, pokedex_entry 7460, item 44, move 920, move_game 7817, machine 2061, learnset 645613, location 207, encounter 8668, availability 5605, shiny_rule 7, translation 46444, discrepancy 2132
+
 ## 2026.11.26.1 — Phase 3 (lot 1 : générations 1 et 2)
 
 - Type : release · schéma 1.1.0 · 2026-11-26T05:44:27Z → 2026-11-26T05:44:27Z (UTC)
