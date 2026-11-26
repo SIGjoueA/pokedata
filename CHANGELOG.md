@@ -3,6 +3,13 @@
 Généré depuis `db/data/update_log.csv` par `scripts/changelog.py`. Le détail ligne à ligne est dans `update_log_item` (base SQLite) et `api/v1/meta/changelog.json`.
 
 
+## 2026.11.26.10 — Correctifs : Méga-Latias/Latios dans X/Y, reproduction de Motisma et de Pikachu Cosplay
+
+- Type : release · schéma 1.3.0 · 2026-11-26T12:59:01Z → 2026-11-26T12:59:01Z (UTC)
+- Import et vérification : 1025 espèces, 1588 formes, 17497 lignes forme×jeu, 589 évolutions, 7460 entrées de Pokédex régionaux, 920 capacités, 7817 lignes capacité×jeu, 2061 CT/CS/DT, 645613 lignes de movesets, 843 lieux, 68105 rencontres, 54519 lignes de disponibilité, 61062 traductions ; 4529 écarts notés ; 52 données (re)vérifiées.
+- Statuts de vérification : disputed 87, game-data 244860, majority 1620, manual 482, single-source 3, unanimous 47665
+- Lignes : species 1025, form 1588, form_game 17497, form_ability 31012, ability 307, evolution 589, evolution_method 7541, pokedex_entry 7460, item 44, move 920, move_game 7817, machine 2061, learnset 645613, location 843, encounter 68105, availability 54519, shiny_rule 23, translation 61062, discrepancy 4529
+
 ## 2026.11.26.9 — Schéma 1.3.0 : statut de disponibilité form-change (changements de forme)
 
 - Type : release · schéma 1.3.0 · 2026-11-26T12:10:01Z → 2026-11-26T12:10:01Z (UTC)

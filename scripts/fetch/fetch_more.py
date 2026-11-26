@@ -24,6 +24,11 @@ BULBA = ["List of Pokémon by Kanto Pokédex number", "List of Pokémon by New P
          "List of categories in other languages", "Priority", "List of moves"]
 BULBA_P3 = ["In-game trade", "Gift Pokémon", "Shiny Pokémon"]
 POKEPEDIA_P3 = ["Pokémon chromatique", "Échange"]
+# targeted checks (26/11/2026): Mega Latias / Latios in X/Y, Rotom's appliance forms and Cosplay Pikachu when breeding
+BULBA_CHECKS = ["Latiasite", "Latiosite", "Rotom (Pokémon)", "Cosplay Pikachu", "Pikachu in a cap"]
+POKEPEDIA_CHECKS = ["Latiasite", "Latiosite", "Motisma", "Pikachu Cosplayeur"]
+SEREBII_ITEMS = ["latiasite", "latiosite"]
+PKHEX_FILES = {"ItemStorage6XY": "PKHeX.Core/Items/ItemStorage6XY.cs"}
 SEREBII = ["rby", "gs", "", "dp", "bw", "xy", "sm", "swsh", "sv"]   # '' = Generation III attackdex
 TYPES = ["normal", "fire", "water", "electric", "grass", "ice", "fighting", "poison", "ground", "flying", "psychic", "bug",
          "rock", "ghost", "dragon", "dark", "steel", "fairy"]
@@ -137,6 +142,32 @@ def main(steps):
         m.save()
     if "serebii" in steps:
         serebii(m)
+        m.save()
+    if "checks" in steps:   # targeted checks: wiki pages, Serebii itemdex facts (locations / distributions), PKHeX source files
+        for api, site, base, titles in [("https://bulbapedia.bulbagarden.net/w/api.php", "bulbapedia", "https://bulbapedia.bulbagarden.net/wiki/", BULBA_CHECKS),
+                                        ("https://www.pokepedia.fr/api.php", "pokepedia", "https://www.pokepedia.fr/", POKEPEDIA_CHECKS)]:
+            got = mw_batch(api, titles)
+            for t in titles:
+                if t not in got: print("MISSING", site, t); continue
+                save_wiki(m, site, t, *got[t], base)
+        d = CACHE / "serebii"; d.mkdir(exist_ok=True)
+        for it in SEREBII_ITEMS:   # page text reduced to its sections « Locations » and « Event Distributions » (facts only)
+            time.sleep(1)
+            url = f"https://www.serebii.net/itemdex/{it}.shtml"
+            t = html.unescape(re.sub(r"<[^>]+>", " ", re.sub(r"<script.*?</script>", "", http_get(url).decode("latin-1"), flags=re.S)))
+            t = re.sub(r"\s+", " ", t)
+            i, j = t.find(" Locations "), t.find(" Pokémon of the Week")
+            body = json.dumps({"url": url, "text": t[i:j if j > i else i + 2000].strip()}, ensure_ascii=False)
+            fn = d / f"itemdex_{it}.json"; fn.write_text(body, "utf-8")
+            m[f"serebii:itemdex-{it}"] = {"source_id": "serebii", "revision": NOW[:10], "retrieved_at": NOW, "path": str(fn.relative_to(ROOT)),
+                                         "url": url, "sha256": sha256_bytes(body.encode())}
+        rev = json.load(open(CACHE / "manifest.json", encoding="utf-8"))["pkhex"]["revision"].split()[-1]
+        for name, path in PKHEX_FILES.items():
+            url = f"https://raw.githubusercontent.com/kwsch/PKHeX/{rev}/{path}"
+            body = http_get(url)
+            fn = CACHE / "pkhex-src" / (name + ".cs"); fn.parent.mkdir(exist_ok=True); fn.write_bytes(body)
+            m[f"pkhex:{name}"] = {"source_id": "pkhex", "revision": rev, "retrieved_at": NOW, "path": str(fn.relative_to(ROOT)),
+                                  "url": f"https://github.com/kwsch/PKHeX/blob/{rev}/{path}", "sha256": sha256_bytes(body)}
         m.save()
 
 

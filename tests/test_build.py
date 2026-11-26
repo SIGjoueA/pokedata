@@ -230,6 +230,15 @@ class Api(unittest.TestCase):
         self.assertIn(("form-change", "item-or-action"), q("SELECT status, detail FROM availability WHERE form_id='479-wash' AND version_id='platinum'"))
         self.assertFalse(q("SELECT 1 FROM availability WHERE status='form-change' AND form_id LIKE '%-totem%'"))
         self.assertFalse(q("SELECT 1 FROM availability WHERE status='form-change' AND form_id='6-mega-x' AND version_id='scarlet'"))
+        # 2026.11.26.10: Mega Latias / Latios in X/Y kept (stone only from ORAS, plus Japanese 2015 Latios events for the
+        # Latiosite), checked by hand against Showdown's gen6xy « Unobtainable »; no 'breed' for forms an Egg never hatches as
+        for f_ in ("380-mega", "381-mega"):
+            self.assertEqual(q(f"SELECT status, detail FROM availability WHERE form_id='{f_}' AND version_id='x'"), [("form-change", "mega")])
+            self.assertEqual(q("SELECT status FROM verification WHERE table_name='availability' AND row_key=?", json.dumps([f_, "x", "form-change"], separators=(",", ":"))), [("manual",)])
+            self.assertTrue(q("SELECT 1 FROM discrepancy WHERE table_name='availability' AND rule='manual' AND row_key=?", json.dumps([f_, "y", "form-change"], separators=(",", ":"))))
+        self.assertFalse(q("SELECT 1 FROM availability WHERE status='breed' AND form_id IN ('479-wash','479-heat','479-frost','479-fan','479-mow')"))
+        self.assertFalse(q("SELECT 1 FROM availability WHERE status='breed' AND form_id IN ('25-cosplay','25-rock-star','25-belle','25-pop-star','25-phd','25-libre')"))
+        self.assertTrue(q("SELECT 1 FROM discrepancy WHERE table_name='availability' AND rule='manual' AND chosen_value IS NULL AND row_key=?", json.dumps(["25-cosplay", "omega-ruby", "breed"], separators=(",", ":"))))
         if "sv" in games:   # lot 8: generation 9 + DLC, Legends: Z-A + Mega Dimension
             self.assertTrue(q("SELECT 1 FROM encounter e JOIN version v ON v.id=e.version_id WHERE v.game_id='svmask'"))
             self.assertFalse(q("SELECT 1 FROM encounter e JOIN version v ON v.id=e.version_id WHERE v.game_id='sv' AND e.form_id='144'"))   # Snacksworth (The Indigo Disk)

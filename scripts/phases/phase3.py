@@ -639,6 +639,20 @@ TRANSFER_IN = {"dp": [("pal-park", ["rs", "e", "frlg"])], "pt": [("pal-park", ["
                "usum": [("poke-bank", ["rb", "y", "gs", "c", "bw", "b2w2", "xy", "oras", "sm", "usum"])]}
 _HOME_SRC = ["sm", "usum", "lgpe", "sw", "swisle", "swcrown", "bdsp", "la", "sv", "svmask", "svdisk", "za", "zadlc"]
 for _g in ("sw", "swisle", "swcrown", "bdsp", "la", "sv", "svmask", "svdisk", "za", "zadlc"): TRANSFER_IN[_g] = [("home", _HOME_SRC)]
+# Forms an Egg never hatches as (checked 26/11/2026): forms in the No Eggs Discovered group in the game's data while
+# their species can breed (Cosplay Pikachu and its outfits, Pikachu in a cap…; PKHeX personal egg group 15), and
+# Rotom's appliance forms (a hatched Rotom is always in its standard form: Bulbapedia « Rotom (Pokémon) »;
+# Showdown: changesFrom "Rotom"). No 'breed' row for them (citations / verification / discrepancy below).
+NO_HATCH = {}
+for _g in P3_GAMES:
+    _pg = pkx.get({"frlg": "fr"}.get(_g, MOD_BASE.get(_g, _g)))
+    if not _pg: continue
+    for _r in _pg:
+        _k = KEYMAP[_g].get((_r["species"], _r["form"]))
+        if not _k or _r["form"] == 0: continue
+        if list(_r["egg"]) == [15, 15]: NO_HATCH[(_k, _g)] = "egg-group-undiscovered"
+        elif _r["species"] == 479: NO_HATCH[(_k, _g)] = "hatches-standard-form"
+NO_HATCH_HIT = []   # (game, version, form, reason): breeding rows no longer given
 for g in P3_GAMES:
     forms_g = sorted({f for (f, gg) in present if gg == g})
     pre = collections.defaultdict(set)
@@ -676,6 +690,9 @@ for g in P3_GAMES:
                 for f in forms_g:
                     if pre[f] or "breed" in s[f]: continue
                     if any(obtainable(x) and "undiscovered" not in egg_of[sp_of[x]] for x in family(f)):
+                        if (f, g) in NO_HATCH:
+                            if _ == 1: NO_HATCH_HIT.append((g, v, f, NO_HATCH[(f, g)]))
+                            continue
                         s[f].add("breed")
         s["_wild_detail"] = det_wild
         st[v] = s
@@ -880,6 +897,108 @@ for g, v, f, dex in FC_CAND:
     FC_LEFT[(f, reason)].add(g)
     p3_formchange[(g, reason)] += 1
 
+# ----------------------------------------------------------------------------- targeted checks (26/11/2026)
+def _wiki_doc(site, title):
+    m_ = MAN[f"{site}:{title}"]
+    return (ROOT / m_["path"]).read_text("utf-8"), doc(site, m_["url"] + f" (oldid {m_['revision']})", m_["revision"], m_["sha256"])
+def _file_doc(key):
+    m_ = MAN[key]
+    return (ROOT / m_["path"]).read_text("utf-8"), doc(m_["source_id"], m_["url"], m_["revision"], m_["sha256"])
+# 1. Mega Latias / Mega Latios in X/Y. The Mega Stones are in X/Y's data (item 684 / 685, held items, not « unreleased »
+# for PKHeX) and work from the games' release, but no X/Y location or distribution gives them: they come held by a
+# Pokémon traded from Omega Ruby / Alpha Sapphire (Bulbapedia, Poképédia, Serebii). Showdown's gen6xy mod describes the
+# X/Y period before ORAS: Mega Latias / Latios « Unobtainable » (tier « Unreleased »), the stones too.
+FC_MANUAL = {"380-mega": ("Latiasite", 684, "latiasmega", "latiasite"), "381-mega": ("Latiosite", 685, "latiosmega", "latiosite")}
+_is6, d_is6 = _file_doc("pkhex:ItemStorage6XY")
+_unrel = _is6[_is6.index("Unreleased =>"):_is6.index("IsLegal")]
+_held = _is6[:_is6.index("Unreleased =>")]
+_sdf6 = (CACHE / "showdown/data/mods/gen6xy/formats-data.ts").read_text("utf-8")
+_sdi6 = (CACHE / "showdown/data/mods/gen6xy/items.ts").read_text("utf-8")
+for _i, _row in enumerate(avail_rows):
+    f, v, st_, det_, dex = _row
+    if st_ != "form-change" or f not in FC_MANUAL or GAME_OF_VERSION[v] != "xy": continue
+    stone, item_no, sd_form, sd_item = FC_MANUAL[f]
+    b_txt, b_doc = _wiki_doc("bulbapedia", stone)
+    p_txt, p_doc = _wiki_doc("pokepedia", stone)
+    s_txt, s_doc = _file_doc(f"serebii:itemdex-{sd_item}")
+    s_txt_j = json.loads(s_txt)["text"]
+    b_trade = "{{gameabbrev6|XY}}\n|\n| ''[[Trade]]''" in b_txt
+    b_held = b_txt.find("=====As a [[held item]]=====")
+    b_ev = b_held >= 0 and "{{gameabbrev6|XYORAS}}" in b_txt[b_held:b_txt.find("==Gallery==")] and "August 1 to September 30, 2015" in b_txt[b_held:]
+    p_xy = p_txt[p_txt.find(";{{Jeu|XY}}"):p_txt.find(";{{Jeu|RuO}}")]
+    p_trade = "À recevoir par [[Échange de Pokémon|échange]] avec {{Jeu|ROSA}}" in p_xy
+    p_ev = "Tenue par le [[Latios]] [[wp:7-Eleven|7-Eleven]]" in p_xy and "Latios [[Pokémon Center]]" in p_xy
+    s_loc = s_txt_j.startswith("Locations Omega Ruby Alpha Sapphire") and not re.search(r"\bX\b", s_txt_j[:s_txt_j.find("Shopping Details")])
+    s_ev = f"Event Pokémon Holding {stone}" in s_txt_j and "2015 X, Y, Omega Ruby, Alpha Sapphire" in s_txt_j
+    if f == "380-mega":   # no X/Y event: only by trade from ORAS
+        new_det = "mega"
+        b_ok, p_ok, s_ok = b_trade and b_held < 0, p_trade and not p_ev and "obtenue légitimement avant la sortie de {{Jeu|ROSA}}" in p_txt, s_loc and not s_ev
+        b_o, p_o, s_o = ({"xy_acquisition": ["trade"], "xy_event": False}, {"xy_acquisition": ["échange avec ROSA"], "obtainable_before_oras": False},
+                         {"locations": ["omega-ruby", "alpha-sapphire", "legends-za", "ultra-sun", "ultra-moon"], "xy_event": False})
+    else:                 # also held by the Japanese 7-Eleven / Pokémon Center Latios (Aug.–Sept. 2015, X/Y/ORAS)
+        new_det = "mega"   # schema 1.3.0 detail vocabulary; the stone origin goes in the discrepancy note
+        b_ok, p_ok, s_ok = b_trade and b_ev, p_trade and p_ev, s_loc and s_ev
+        b_o, p_o, s_o = ({"xy_acquisition": ["trade", "event:held-by-latios-jp-2015"]}, {"xy_acquisition": ["échange avec ROSA", "Latios 7-Eleven", "Latios Pokémon Center"]},
+                         {"locations": ["omega-ruby", "alpha-sapphire", "legends-za", "ultra-sun", "ultra-moon"], "xy_event": "held by Latios, Japan 2015"})
+    avail_rows[_i] = [f, v, st_, new_det, dex]
+    rk = row_key(f, v, "form-change")
+    citations[:] = [c for c in citations if not (c[0] == "availability" and c[1] == rk)]
+    for x in verifs:
+        if x[0] == "availability" and x[1] == rk: fc_status[x[3]] -= 1; fc_status["manual"] += 1
+    verifs[:] = [x for x in verifs if not (x[0] == "availability" and x[1] == rk)]
+    discreps[:] = [x for x in discreps if not (x[0] == "availability" and x[1] == rk)]
+    k_ok = re.search(rf"\b{item_no}\b", _held) is not None and re.search(rf"\b{item_no}\b", _unrel) is None
+    sd_m = re.search(rf"^\t{sd_form}: \{{(.*?)^\t\}}", _sdf6, re.S | re.M); sd_val = sd_m.group(1) if sd_m else ""
+    si_m = re.search(rf"^\t{sd_item}: \{{(.*?)^\t\}}", _sdi6, re.S | re.M); si_val = si_m.group(1) if si_m else ""
+    obs = [(b_doc, b_o, b_ok), (p_doc, p_o, p_ok), (s_doc, s_o, s_ok),
+           (d_is6, {"item": item_no, "held_in_xy": True, "unreleased": False}, k_ok),
+           (_FG_DOC.get(row_key(f, "xy")) or d_pkxenc[DKEY["xy"]], {"form_in_game_data": True, "from": f.split("-")[0]}, True),
+           (d_pkfgen, {"generation": 6, "listed": True}, True)]
+    for d_, o_, ok_ in obs: citations.append(("availability", rk, "*", d_, canon(o_), 1 if ok_ else 0))
+    citations.append(("availability", rk, "*", sdmdoc("formats-data", "gen6xy"), canon({"isNonstandard": "Unobtainable" if "Unobtainable" in sd_val else None, "tier": "Unreleased" if "Unreleased" in sd_val else None}), 0))
+    citations.append(("availability", rk, "*", sdmdoc("items", "gen6xy"), canon({"item": sd_item, "isNonstandard": "Unobtainable" if "Unobtainable" in si_val else None}), 0))
+    val = canon(["form-change", new_det, dex])
+    verifs.append(("availability", rk, "*", "manual", sha256_text(val), sha256_text(f"bulbapedia:{b_ok}|pokepedia:{p_ok}|serebii:{s_ok}|pkhex:{k_ok}|showdown:unobtainable")))
+    alt = [{"source": "showdown", "value": "Unobtainable (tier Unreleased), stone Unobtainable", "document_id": sdmdoc("formats-data", "gen6xy")},
+           {"source": "showdown", "value": f"{sd_item} Unobtainable", "document_id": sdmdoc("items", "gen6xy")}]
+    discreps.append(("availability", rk, "*", val, "manual", canon(alt),
+                     "Mega Stone found nowhere in X/Y: received held by a Pokémon traded from Omega Ruby / Alpha Sapphire"
+                     + (" or held by the Japanese 7-Eleven / Pokémon Center Latios events (Aug.-Sept. 2015)" if f == "381-mega" else ", no X/Y event")
+                     + " (Bulbapedia, Poképédia, Serebii); usable in X/Y (PKHeX: held item, not unreleased). Showdown gen6xy = X/Y period before ORAS."))
+    FC_MANUAL_DONE = globals().setdefault("FC_MANUAL_DONE", []); FC_MANUAL_DONE.append((f, v, b_ok, p_ok, s_ok, k_ok))
+# 2. Breeding: forms an Egg never hatches as (NO_HATCH) — the 'breed' rows given before 2026.11.26.10 are not given
+_cp_txt, d_bcp = _wiki_doc("bulbapedia", "Cosplay Pikachu")
+_cap_txt, d_bcap = _wiki_doc("bulbapedia", "Pikachu in a cap")
+_ro_txt, d_bro = _wiki_doc("bulbapedia", "Rotom (Pokémon)")
+_pcp_txt, d_pcp = _wiki_doc("pokepedia", "Pikachu Cosplayeur")
+_sdp = (CACHE / "showdown/data/pokedex.ts").read_text("utf-8")
+nh_counts = collections.Counter()
+for g, v, f, why in NO_HATCH_HIT:
+    rk = row_key(f, v, "breed")
+    pk_doc = _FG_DOC.get(row_key(f, g)) or d_pkxenc[DKEY[g]]
+    obs = []
+    if why == "egg-group-undiscovered":
+        obs.append((pk_doc, {"egg_groups": [15, 15]}, True))
+        if f in ("25-cosplay", "25-belle", "25-libre", "25-phd", "25-pop-star", "25-rock-star"):
+            obs.append((d_bcp, {"breed": False}, "is in the {{egg3|No Eggs Discovered}}, meaning it cannot [[Pokémon breeding|breed]]" in _cp_txt))
+            obs.append((d_pcp, {"reproduction": False}, "Il ne peut pas non plus se reproduire." in _pcp_txt))
+        elif f.endswith("-cap"):
+            obs.append((d_bcap, {"breed": False}, "cannot [[Pokémon breeding|breed]]" in _cap_txt))
+        sdid_ = {"25-rock-star": "pikachurockstar", "25-belle": "pikachubelle", "25-pop-star": "pikachupopstar", "25-phd": "pikachuphd",
+                 "25-libre": "pikachulibre", "25-cosplay": "pikachucosplay"}.get(f) or sd_index.get(MOD_BASE.get(g, g), {}).get((sp_of[f], sdid(SD_SUFFIX.get(f.partition("-")[2], f.partition("-")[2]))))
+        m_ = re.search(rf"^\t{sdid_}: \{{(.*?)^\t\}}", _sdp, re.S | re.M) if sdid_ else None
+        if m_: obs.append((sdmdoc("pokedex", "gen9"), {"eggGroups": "Undiscovered" if "Undiscovered" in m_.group(1) else "other"}, "Undiscovered" in m_.group(1)))
+    else:
+        obs.append((d_bro, {"hatched_form": "standard"}, "[[Pokémon Egg|Hatched]] Rotom will always be in their standard form." in _ro_txt))
+        m_ = re.search(rf"^\t{('rotom' + f.partition('-')[2])}: \{{(.*?)^\t\}}", _sdp, re.S | re.M)
+        if m_: obs.append((sdmdoc("pokedex", "gen9"), {"changesFrom": "Rotom" if 'changesFrom: "Rotom"' in m_.group(1) else None}, 'changesFrom: "Rotom"' in m_.group(1)))
+    for d_, o_, ok_ in obs: citations.append(("availability", rk, "*", d_, canon(o_), 1 if ok_ else 0))
+    n_ok = sum(1 for o in obs if o[2])
+    verifs.append(("availability", rk, "*", "manual", sha256_text(canon(["breed", "absent"])), sha256_text(f"{why}|{n_ok}/{len(obs)}")))
+    discreps.append(("availability", rk, "*", None, "manual", canon([]),
+                     f"breed row (given until 2026.11.26.9 by the family rule) removed: {why} ({n_ok}/{len(obs)} sources)"))
+    nh_counts[(why, n_ok == len(obs))] += 1
+
 # ----------------------------------------------------------------------------- Shiny rules and locks
 text_shiny, d_bshiny = bulba("Shiny Pokémon")
 _mp = MAN["pokepedia:Pokémon chromatique"]
@@ -978,7 +1097,8 @@ P3_STATS = dict(games=P3_GAMES, locations=len(location_rows), encounters=len(enc
                                                                     for h in ("pokeapi-index", "pokeapi-name", "pokeapi-slug", "created")},
                 shiny_lock_list=[f"{f}:{g}" for f, g, _ in lock_rows],
                 created_locations=sorted(MLOC_NEW), form_change_left={f"{g}:{k}": n for (g, k), n in sorted(p3_formchange.items())},
-                form_change_rows=dict(fc_kinds), form_change_status=dict(fc_status),
+                form_change_rows=dict(fc_kinds), no_hatch={f"{a}:{b}": n for (a, b), n in sorted(nh_counts.items())},
+                no_hatch_rows=sorted({f"{f}:{g}" for g, v, f, w in NO_HATCH_HIT}), fc_manual=[list(x) for x in globals().get("FC_MANUAL_DONE", [])], form_change_status=dict(fc_status),
                 form_change_left_forms={f"{f}|{r}": sorted(gs) for (f, r), gs in sorted(FC_LEFT.items())}, form_skips={f"{a}:{b}:{c}:{d}": n for (a, b, c, d), n in sorted(P3_FORMSKIP.items(), key=str)})
 json.dump(P3_STATS, open(ROOT / "reports/phase3-details.json", "w"), ensure_ascii=False, indent=0)
 print("phase3", json.dumps({k: v for k, v in P3_STATS.items() if k not in ("agreement", "legacy_unmatched", "trades_unplaced", "statics_unplaced", "unconfirmed_templates", "created_locations", "form_skips")}, ensure_ascii=False))

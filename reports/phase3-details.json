@@ -31,9 +31,9 @@
 "locations": 843,
 "encounters": 68105,
 "encounter_sets": 8292,
-"availability": 54561,
+"availability": 54519,
 "shiny_rules": 23,
-"shiny_locks": 156,
+"shiny_locks": 162,
 "gen1_tables_placed": 42,
 "gen1_tables_ambiguous": {
 "104": []
@@ -2080,7 +2080,7 @@
 "lgpe:npc-trade": 16,
 "lgpe:trade-version-exclusive": 32,
 "lgpe:wild": 226,
-"oras:breed": 410,
+"oras:breed": 398,
 "oras:event": 245,
 "oras:evolve": 480,
 "oras:form-change": 170,
@@ -2149,7 +2149,7 @@
 "svmask:trade-version-exclusive": 2,
 "svmask:transfer": 582,
 "svmask:wild": 1170,
-"sw:breed": 380,
+"sw:breed": 370,
 "sw:event": 665,
 "sw:evolve": 426,
 "sw:form-change": 250,
@@ -2158,7 +2158,7 @@
 "sw:trade-version-exclusive": 66,
 "sw:transfer": 666,
 "sw:wild": 724,
-"swcrown:breed": 559,
+"swcrown:breed": 549,
 "swcrown:event": 665,
 "swcrown:evolve": 642,
 "swcrown:form-change": 250,
@@ -2167,7 +2167,7 @@
 "swcrown:trade-version-exclusive": 77,
 "swcrown:transfer": 143,
 "swcrown:wild": 1218,
-"swisle:breed": 496,
+"swisle:breed": 486,
 "swisle:event": 665,
 "swisle:evolve": 564,
 "swisle:form-change": 250,
@@ -2645,6 +2645,12 @@
 "244:svdisk",
 "245:svdisk",
 "249:svdisk",
+"25-belle:oras",
+"25-cosplay:oras",
+"25-libre:oras",
+"25-phd:oras",
+"25-pop-star:oras",
+"25-rock-star:oras",
 "25-starter:lgpe",
 "250:svdisk",
 "26-alola:za",
@@ -2965,9 +2971,71 @@
 "primal": 16,
 "gigantamax": 168
 },
+"no_hatch": {
+"egg-group-undiscovered:True": 12,
+"hatches-standard-form:True": 30
+},
+"no_hatch_rows": [
+"25-belle:oras",
+"25-cosplay:oras",
+"25-libre:oras",
+"25-phd:oras",
+"25-pop-star:oras",
+"25-rock-star:oras",
+"479-fan:sw",
+"479-fan:swcrown",
+"479-fan:swisle",
+"479-frost:sw",
+"479-frost:swcrown",
+"479-frost:swisle",
+"479-heat:sw",
+"479-heat:swcrown",
+"479-heat:swisle",
+"479-mow:sw",
+"479-mow:swcrown",
+"479-mow:swisle",
+"479-wash:sw",
+"479-wash:swcrown",
+"479-wash:swisle"
+],
+"fc_manual": [
+[
+"380-mega",
+"x",
+true,
+true,
+true,
+true
+],
+[
+"381-mega",
+"x",
+true,
+true,
+true,
+true
+],
+[
+"380-mega",
+"y",
+true,
+true,
+true,
+true
+],
+[
+"381-mega",
+"y",
+true,
+true,
+true,
+true
+]
+],
 "form_change_status": {
 "unanimous": 1016,
-"majority": 1436
+"majority": 1432,
+"manual": 4
 },
 "form_change_left_forms": {
 "1007-gliding-build|fixed-at-capture": [

@@ -1050,3 +1050,15 @@ id,source_id,locator,revision,retrieved_at,content_sha256
 1049,showdown,data/mods/gen8legends/formats-data.ts (mod gen8legends)@c7fa6f16503d,c7fa6f16503de510c319239b5b2d29d4f7abd8c4,2026-11-25T19:57:08Z,544ecc302522751b271beaaf1fa3f008dd3d841616379fa1408890e21ff005f2
 1050,showdown,data/formats-data.ts (mod gen9)@c7fa6f16503d,c7fa6f16503de510c319239b5b2d29d4f7abd8c4,2026-11-25T19:57:08Z,6e86cc5ebe933039688f9605ae1462f7934b6dc0776dc371e33dfadd7c8660fa
 1051,showdown,data/mods/gen9legends/formats-data.ts (mod gen9legends)@c7fa6f16503d,c7fa6f16503de510c319239b5b2d29d4f7abd8c4,2026-11-25T19:57:08Z,08683141799b98865b5e86c594461110ebf4ee73831b31c43b40c8ec8cf431fb
+1052,pkhex,https://github.com/kwsch/PKHeX/blob/26.10.18/PKHeX.Core/Items/ItemStorage6XY.cs,26.10.18,2026-11-25T19:57:08Z,2322705f5d7880878b0b29422d6479d66a83fe93ef8ddf1c668710fbf493f00c
+1053,bulbapedia,https://bulbapedia.bulbagarden.net/wiki/Latiasite (oldid 4662715),4662715,2026-11-26T12:59:01Z,e40995b2f6b9f4838e405536559e564eb80580375d331e259a3de1d301bb1754
+1054,pokepedia,https://www.pokepedia.fr/Latiasite (oldid 3192818),3192818,2026-11-26T12:59:01Z,3e7ca760092bdb089256b6e6995847b1b3b4877fb439099a666eb818a553fce2
+1055,serebii,https://www.serebii.net/itemdex/latiasite.shtml,2026-11-26,2026-11-26T12:59:01Z,df568253609b63bded8d685892f349b30cc7b62c35c7b6384119fb0f588022ae
+1056,showdown,data/mods/gen6xy/items.ts (mod gen6xy)@c7fa6f16503d,c7fa6f16503de510c319239b5b2d29d4f7abd8c4,2026-11-25T19:57:08Z,52787a47706e36505ee91e597990cbe3a260aa61382c726e4305117b86912d80
+1057,bulbapedia,https://bulbapedia.bulbagarden.net/wiki/Latiosite (oldid 4647023),4647023,2026-11-26T12:59:01Z,af4b84cc01e8da0d280281c78192863f26967058c69899eb0f916e5e527d1248
+1058,pokepedia,https://www.pokepedia.fr/Latiosite (oldid 3192819),3192819,2026-11-26T12:59:01Z,2ca218638d2666fc8736eca0c34beb03cb3e71a925388efd987c6a21c95411dd
+1059,serebii,https://www.serebii.net/itemdex/latiosite.shtml,2026-11-26,2026-11-26T12:59:01Z,60a2eb81c79793e79d63e21cde2394399b64135738f6e78c57a462f48df061d1
+1060,bulbapedia,https://bulbapedia.bulbagarden.net/wiki/Cosplay_Pikachu (oldid 4608708),4608708,2026-11-26T12:59:01Z,a78e07635a386514d3c08af0d63cfa3092b6a79e94f04d69f4839985a1aa32d3
+1061,bulbapedia,https://bulbapedia.bulbagarden.net/wiki/Pikachu_in_a_cap (oldid 4662372),4662372,2026-11-26T12:59:01Z,9ec0131bdfd66136a97bb345bc262cf39cd38712b1f2e23db95de4e33a43fe7c
+1062,bulbapedia,https://bulbapedia.bulbagarden.net/wiki/Rotom_%28Pok%C3%A9mon%29 (oldid 4674999),4674999,2026-11-26T12:59:01Z,caf577f5d292e163eae2f4dbe5b67b082571243b09e007c363c7a304b96eea73
+1063,pokepedia,https://www.pokepedia.fr/Pikachu_Cosplayeur (oldid 3567282),3567282,2026-11-26T12:59:01Z,4e00113a0f6aa382dcb5abb145cf10779335e526012264e258cf57e4c6d8da69

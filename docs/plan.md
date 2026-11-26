@@ -429,3 +429,13 @@ Règle (`scripts/phases/phase3.py`, bloc « form changes ») :
 - **Sources (2 sur 3)** : PKHeX (forme dans les données du jeu + forme de départ obtenable ; Gigamax : rencontre avec le facteur), Showdown (forme légale dans le mod du jeu, `formats-data`, `isNonstandard`), PokeAPI (`pokemon_form_generations` contient la génération du jeu). Publiée si PKHeX et au moins une autre source concordent : `unanimous` (3) ou `majority` (2, désaccord noté dans `discrepancy`) ; une source qui n'a pas la forme du tout ne vote pas. Sinon : pas de ligne, désaccord `open`.
 - **Hors règle** (pas de ligne, `reports/phase3-details.json` → `form_change_left_forms`) : formes fixées à l'obtention (Cheniselle Sable / Déchet, Papilord, Floette Éternelle, Magearna Couleur du Passé, Lougaroc Crépusculaire, Mordudor Marche (GO), Éthernatos Infinimax, montures de Koraidon / Miraidon), formes dominantes et seigneurs, Deoxys de RF/VF (forme fixée par la version), Gigamax sans rencontre au facteur (Melmetal, starters de Galar, Shifours : Soupe Max ou GO).
 
+
+## 23. Correctifs du 26/11/2026 (données 2026.11.26.10)
+
+**Méga-Latias / Méga-Latios dans X/Y.** Showdown (mod `gen6xy`) les marque `Unobtainable` (tier `Unreleased`), ainsi que la Latiasite et la Latiosite, alors que PKHeX et PokeAPI les admettent. Vérification élargie à Bulbapedia, Poképédia, Serebii et au code de PKHeX (`ItemStorage6XY.cs`). Les deux Méga-Gemmes sont dans les données de X/Y (objets 684 et 685, objets tenus, absents de la liste « non distribués » de PKHeX) et fonctionnent dès la sortie des jeux. En revanche, aucun lieu de X/Y ne les donne. On les reçoit tenues par un Pokémon échangé depuis Rubis Oméga / Saphir Alpha. La Latiosite était aussi tenue par les Latios distribués au Japon (7-Eleven et Pokémon Center, août–septembre 2015, X/Y/ROSA). Le mod `gen6xy` de Showdown décrit la période X/Y avant ROSA. Décision : les 4 lignes `form-change` / `mega` (x, y) restent, vérification `manual` et discrepancy `manual` qui garde l'avis de Showdown et l'origine de la gemme. Un détail plus fin (du genre « mega + gemme venue de ROSA ») serait une nouvelle convention pour `detail`. Il n'est pas publié sans validation.
+
+**Reproduction.** Il n'y a plus de ligne `breed` pour les formes qu'un œuf ne donne jamais :
+- Pikachu Cosplay et ses costumes (ROSA), groupe d'œufs « Inconnu » dans les données du jeu : PKHeX, Showdown, Bulbapedia, Poképédia ;
+- les formes appareil de Motisma (Épée/Bouclier et DLC), car un Motisma éclos a toujours sa forme normale : Bulbapedia, et Showdown `changesFrom`.
+
+Chaque ligne retirée garde ses citations, une vérification `manual` et une discrepancy `manual` dont la valeur retenue est nulle.

@@ -155,3 +155,9 @@ id,table_name,row_key,column_name,document_id,observed_value,agrees
 584339,shiny_lock,"[""932"",""za""]",*,1036,"{""shiny"":[""Never""]}",1
 584340,shiny_lock,"[""999"",""sv""]",*,1035,"{""shiny"":[""Never""]}",1
 584341,shiny_lock,"[""999"",""za""]",*,1036,"{""shiny"":[""Never""]}",1
+594806,shiny_lock,"[""25-belle"",""oras""]",*,1029,"{""shiny"":[""Never""]}",1
+594807,shiny_lock,"[""25-cosplay"",""oras""]",*,1029,"{""shiny"":[""Never""]}",1
+594808,shiny_lock,"[""25-libre"",""oras""]",*,1029,"{""shiny"":[""Never""]}",1
+594809,shiny_lock,"[""25-phd"",""oras""]",*,1029,"{""shiny"":[""Never""]}",1
+594810,shiny_lock,"[""25-pop-star"",""oras""]",*,1029,"{""shiny"":[""Never""]}",1
+594811,shiny_lock,"[""25-rock-star"",""oras""]",*,1029,"{""shiny"":[""Never""]}",1
