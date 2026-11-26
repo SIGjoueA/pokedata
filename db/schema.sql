@@ -35,6 +35,7 @@
 --     sérialisée en tableau JSON compact, ex. '["6-mega-x","sv"]'.
 --     Exception (1.1.0, migration 0002) : learnset est vérifiée par ensemble,
 --     row_key = '[form_id, game_id, method_id]' (voir verification).
+--     Même convention (phase 3) pour encounter : row_key = '[area_id, version_id, method_id]'.
 --   * Fichiers CSV (1.1.0) : une table = un CSV trié dans db/data/, sauf
 --     verification et citation, découpées par table décrite :
 --     db/data/verification/<table_name>.csv, db/data/citation/<table_name>.csv.
@@ -744,6 +745,9 @@ CREATE INDEX citation_row ON citation(table_name, row_key);
 -- learnset (1.1.0) : une ligne par ensemble (forme × jeu × méthode), row_key = '["25","sv","machine"]',
 -- column_name '*', value_sha256 = empreinte de la liste triée [move_id, level, version_id] de l'ensemble.
 -- Les capacités en plus / en moins selon chaque source sont dans discrepancy.alternatives (missing / extra).
+-- encounter (même convention A) : une ligne par ensemble (zone × version × méthode), row_key = '["viridian-forest","red","walk"]',
+-- value_sha256 = empreinte de la liste triée [form_id, min_level, max_level, condition, shiny_locked, extra] ;
+-- les sources de contrôle sont projetées sur (forme, niveau min, niveau max, condition) et leurs écarts notés (missing / extra).
 CREATE TABLE verification (
   table_name     TEXT NOT NULL,
   row_key        TEXT NOT NULL,

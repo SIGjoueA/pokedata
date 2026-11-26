@@ -86,8 +86,12 @@ def main():
         fgame[r["form_id"]][r["game_id"]] = {k: v for k, v in e.items() if v is not None}
 
     disc = collections.defaultdict(list)
+    enc_disc = {}
     ls_disc = collections.defaultdict(dict)   # movesets (verified per set): form -> game -> method -> sources that differ
     for r in q("SELECT * FROM discrepancy"):
+        if r["table_name"] == "encounter":   # encounters (verified per set): (area, version, method) -> sources that differ
+            enc_disc[r["row_key"]] = [{"source": a["source"], "missing": a["missing"], "extra": a["extra"]} for a in json.loads(r["alternatives"])]
+            continue
         if r["table_name"] == "learnset":
             f_, g_, m_ = json.loads(r["row_key"])
             ls_disc[f_].setdefault(g_, {})[m_] = [{"source": a["source"], "missing": a["missing"], "extra": a["extra"]}
@@ -281,6 +285,82 @@ def main():
             o["discrepancies"] = ls_disc[fid]
         write(f"learnset/{fid}.json", o)
 
+    # ---- phase 3: locations, encounters, availability, Shiny rules
+    gnames = collections.defaultdict(dict)   # (entity, id, game) -> lang -> name (per-game names)
+    for r in q("SELECT entity_type, entity_id, game_id, language_id, text FROM translation WHERE field='name' AND game_id IS NOT NULL AND version_id IS NULL"):
+        if okv("translation", rk(r["entity_type"], r["entity_id"], "name", r["language_id"], r["game_id"], None), "text"):
+            gnames[(r["entity_type"], r["entity_id"], r["game_id"])][r["language_id"]] = r["text"]
+    version_game = {r["id"]: r["game_id"] for r in q("SELECT id, game_id FROM version")}
+    locs = {r["id"]: dict(r) for r in q("SELECT * FROM location") if okv("location", rk(r["id"]))}
+    conds = collections.defaultdict(list)
+    for r in q("SELECT * FROM encounter_condition_link"):
+        conds[r["encounter_id"]].append(r["condition_id"])
+    loc_enc = collections.defaultdict(lambda: collections.defaultdict(list))   # (game, location) -> version -> rows
+    sp_enc = collections.defaultdict(lambda: collections.defaultdict(lambda: collections.defaultdict(list)))   # species -> form -> version -> rows
+    form_sp = {r["id"]: r["species_id"] for r in q("SELECT id, species_id FROM form")}
+    loc_of_area = {r["id"]: r["location_id"] for r in q("SELECT * FROM location_area")}
+    nenc = 0
+    for r in q("SELECT * FROM encounter ORDER BY version_id, area_id, method_id, form_id, id"):
+        if not okv("encounter", rk(r["area_id"], r["version_id"], r["method_id"])):
+            continue
+        e = {"form_id": r["form_id"], "method": r["method_id"], "min_level": r["min_level"], "max_level": r["max_level"]}
+        if r["rate_pct"] is not None: e["rate_pct"] = r["rate_pct"]
+        if conds[r["id"]]: e["conditions"] = sorted(conds[r["id"]])
+        if r["shiny_locked"]: e["shiny_locked"] = True
+        if r["is_alpha"]: e["alpha"] = True
+        if r["extra"]: e.update(json.loads(r["extra"]))
+        loc = loc_of_area[r["area_id"]]
+        loc_enc[(version_game[r["version_id"]], loc)][r["version_id"]].append(e)
+        e2 = {k: v for k, v in e.items() if k != "form_id"}
+        e2["location"] = loc
+        sp_enc[form_sp[r["form_id"]]][r["form_id"]][r["version_id"]].append(e2)
+        nenc += 1
+    avail = collections.defaultdict(lambda: collections.defaultdict(lambda: collections.defaultdict(list)))
+    for r in q("SELECT * FROM availability ORDER BY form_id, version_id, status"):
+        if okv("availability", rk(r["form_id"], r["version_id"], r["status"])):
+            a_ = {"status": r["status"]}
+            if r["detail"]: a_["detail"] = r["detail"].split(",")
+            if r["in_regional_dex"] is not None: a_["in_regional_dex"] = bool(r["in_regional_dex"])
+            avail[form_sp[r["form_id"]]][r["form_id"]][r["version_id"]].append(a_)
+    loc_games = collections.defaultdict(list)
+    for r in q("SELECT * FROM location_game ORDER BY game_id, location_id"):
+        if okv("location_game", rk(r["location_id"], r["game_id"])) and r["location_id"] in locs:
+            loc_games[r["game_id"]].append(r["location_id"])
+    nloc_files = 0
+    for g, lids in loc_games.items():
+        lst = []
+        for lid in lids:
+            o = {"id": lid, "region": locs[lid]["region_id"], "pokeapi_id": locs[lid]["pokeapi_id"],
+                 "names": gnames.get(("location", lid, g)) or names.get(("location", lid), {}),
+                 "aliases": dict(aliases.get(("location", lid), {})),
+                 "encounters": {v: rows for v, rows in sorted(loc_enc[(g, lid)].items())}}
+            dd = {k: v for k, v in enc_disc.items() if json.loads(k)[0] == lid and version_game.get(json.loads(k)[1]) == g}
+            if dd:
+                o["discrepancies"] = [{"version": json.loads(k)[1], "method": json.loads(k)[2], "sources": v} for k, v in sorted(dd.items())]
+            if "pokedex-legacy" in o["aliases"]:
+                o["aliases"]["pokedex-legacy"] = json.loads(o["aliases"]["pokedex-legacy"])
+            lst.append(o)
+        write(f"location/{g}.json", {"game_id": g, "locations": lst})
+        nloc_files += 1
+    write("location/index.json", [{"id": lid, "region": l["region_id"], "names": names.get(("location", lid), {}),
+                                    "games": sorted([g for g, ls in loc_games.items() if lid in ls], key=game_order.index)}
+                                   for lid, l in sorted(locs.items())])
+    for sid in sorted(set(avail) | set(sp_enc)):
+        fo = {}
+        for fid in sorted(set(avail[sid]) | set(sp_enc[sid]), key=lambda f: (len(f), f)):
+            vv = {}
+            for v in sorted(set(avail[sid][fid]) | set(sp_enc[sid][fid])):
+                vv[v] = {"game": version_game[v], "availability": avail[sid][fid].get(v, []), "encounters": sp_enc[sid][fid].get(v, [])}
+            fo[fid] = vv
+        write(f"pokemon/{sid}/locations.json", {"species_id": sid, "forms": fo})
+    shiny = collections.defaultdict(lambda: {"rules": [], "locks": []})
+    for r in q("SELECT * FROM shiny_rule ORDER BY game_id, method"):
+        if okv("shiny_rule", rk(r["game_id"], r["method"])):
+            shiny[r["game_id"]]["rules"].append({"method": r["method"], "odds": r["odds"], **({"conditions": json.loads(r["conditions"])} if r["conditions"] else {})})
+    for r in q("SELECT * FROM shiny_lock ORDER BY game_id, form_id"):
+        if okv("shiny_lock", rk(r["form_id"], r["game_id"])):
+            shiny[r["game_id"]]["locks"].append({"form_id": r["form_id"], **({"note": r["note"]} if r["note"] else {})})
+
     write("type/index.json", [{"id": t["id"], "generation": t["generation_id"], "names": names[("type", t["id"])]}
                               for t in q("SELECT * FROM type ORDER BY pokeapi_id")])
     glist = []
@@ -293,7 +373,9 @@ def main():
              "versions": versions[g["id"]], "languages": sorted(glang[g["id"]], key=lambda x: LANGS.index(x["language"]) if x["language"] in LANGS else 99),
              "forms_in_data": len(present[g["id"]])}
         glist.append(o)
-        write(f"game/{g['id']}.json", {**o, "forms": sorted(present[g["id"]], key=lambda f: (int(f.split('-')[0]), f))})
+        extra_g = {"shiny": shiny[g["id"]]} if g["id"] in shiny else {}
+        if g["id"] in loc_games: extra_g["locations"] = len(loc_games[g["id"]])
+        write(f"game/{g['id']}.json", {**o, **extra_g, "forms": sorted(present[g["id"]], key=lambda f: (int(f.split('-')[0]), f))})
     write("game/index.json", glist)
 
     write("meta/languages.json", [dict(r) for r in q("SELECT * FROM language ORDER BY sort_order")])
@@ -322,7 +404,9 @@ def main():
               "pokedexes": len(dlist), "pokedex_entries": sum(d["count"] for d in dlist),
               "moves": len(mlist), "move_game": db.execute("SELECT COUNT(*) FROM move_game").fetchone()[0],
               "machines": db.execute("SELECT COUNT(*) FROM machine").fetchone()[0],
-              "learnset_forms": len(lsets), "learnset_rows": nls}
+              "learnset_forms": len(lsets), "learnset_rows": nls,
+              "locations": len(locs), "location_games": len(loc_games), "encounters": nenc,
+              "availability_rows": sum(len(x) for sp in avail.values() for f in sp.values() for x in f.values())}
     write("index.json", {"api_version": "v1", "schema_version": meta["schema_version"], "data_version": dv,
                          "generated_at": meta["generated_at"], "license": {"code": "MIT", "notice": meta["license_notice"]},
                          "counts": counts, "download": dl,
@@ -335,6 +419,8 @@ def main():
                              "pokedex_index": "pokedex/index.json", "pokedex": "pokedex/{pokedex_id}.json",
                              "move_index": "move/index.json", "move": "move/{id}.json", "machines": "machine/{game_id}.json",
                              "learnset": "learnset/{form_id}.json",
+                             "location_index": "location/index.json", "locations": "location/{game_id}.json",
+                             "pokemon_locations": "pokemon/{id}/locations.json",
                              "sources": "meta/sources.json", "changelog": "meta/changelog.json", "verification": "meta/verification.json",
                              "languages": "meta/languages.json", "download": "download.json"}.items()}})
     if (ROOT / "docs").exists():

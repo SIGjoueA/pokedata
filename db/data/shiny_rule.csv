@@ -1,0 +1,5 @@
+game_id,method,odds,conditions
+c,base,1/8192,
+c,shiny-parent,1/64,"{""breeding_parent_shiny"":true}"
+gs,base,1/8192,
+gs,shiny-parent,1/64,"{""breeding_parent_shiny"":true}"

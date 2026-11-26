@@ -1013,3 +1013,13 @@ id,source_id,locator,revision,retrieved_at,content_sha256
 1012,showdown,data/learnsets.ts (mod gen9)@c7fa6f16503d,c7fa6f16503de510c319239b5b2d29d4f7abd8c4,2026-11-25T19:57:08Z,cdab542e58b6d276122cce4ee2ff5597123f773cd1d053ecbfd4b81a54d1bafb
 1013,showdown,data/mods/gen9legends/learnsets.ts (mod gen9legends)@c7fa6f16503d,c7fa6f16503de510c319239b5b2d29d4f7abd8c4,2026-11-25T19:57:08Z,6e38b656dd26e718761a0c5bd3ca37a7bc59d5cced026d7aaddd90786e2922a2
 1014,showdown,data/mods/gen8legends/learnsets.ts (mod gen8legends)@c7fa6f16503d,c7fa6f16503de510c319239b5b2d29d4f7abd8c4,2026-11-25T19:57:08Z,13e5ea02044b3da78314f1ef3b790e3551434d9a82ff21a1314ab8943df52b4e
+1015,pokeapi,data/v2/csv/encounters.csv@de6760be38b6,de6760be38b60a3024f1d9054330ff265f0dc619,2026-11-25T19:57:08Z,edaa1ffbfee0b7db4852d0fe97ce972d321e9c7702eabcb352c28fe14e44c6ee
+1016,pokeapi,data/v2/csv/location_game_indices.csv@de6760be38b6,de6760be38b60a3024f1d9054330ff265f0dc619,2026-11-25T19:57:08Z,3a3e6795f037fd785690208297bc5433d60652c167785c3816892fcdb40601f7
+1017,pokeapi,data/v2/csv/location_names.csv@de6760be38b6,de6760be38b60a3024f1d9054330ff265f0dc619,2026-11-25T19:57:08Z,4f901da13ab1fcd4cfeee99dd653652c2bd10afe21739f47a99ee906a99a004e
+1018,pkhex,PKHeX.Core 26.10.18 · Encounters1 (encounters_1.json),PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,0d02548f3318270990c8f7d7953ee34dbf0a87710df6260fe7bb007bcf85733b
+1019,pkhex,PKHeX.Core 26.10.18 · Encounters2 (encounters_2.json),PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,120dc928ffc904a9492400648bcdf28702bafa2cec09d83e0de0235c352b29c7
+1020,pkhex,"PKHeX.Core 26.10.18 · GameInfo.Strings, met locations (locations.json)",PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,4d88c6fcd3511ad82c4a460c64774d9b8bbc44184ba9b3f3826d99c2e192c6c8
+1021,bulbapedia,https://bulbapedia.bulbagarden.net/wiki/In-game_trade (oldid 4675589),4675589,2026-11-26T05:44:27Z,4a079792c3599da2086a93b9cb91b04072bf37513daab047314767dfc82e47c2
+1022,bulbapedia,https://bulbapedia.bulbagarden.net/wiki/Gift_Pok%C3%A9mon (oldid 4671301),4671301,2026-11-26T05:44:27Z,e78ed20d7ac3b365086fd29adb27441618bd58aca2dca847eb3367e04e734d3b
+1023,bulbapedia,https://bulbapedia.bulbagarden.net/wiki/Shiny_Pok%C3%A9mon (oldid 4674998),4674998,2026-11-26T05:44:27Z,9bfb34e480c6cfbfa5226e8f760cdc8962fe53c8034ebc22370bec56b8fdd02a
+1024,pokepedia,https://www.pokepedia.fr/Pok%C3%A9mon_chromatique (oldid 3623845),3623845,2026-11-26T05:44:27Z,05ec3647985930bb3a41c141e2f2cd72bb5def2caefe47f308afade8bbb7ffd4

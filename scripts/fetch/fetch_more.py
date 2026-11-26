@@ -2,6 +2,7 @@
 
   bulbapedia  regional Pokédex lists, categories in other languages, priority brackets (wikitext + revid)
   pokepedia   move pages (infobox + in-game descriptions), batched 50 titles per request
+  phase 3     Bulbapedia « In-game trade », « Gift Pokémon », « Shiny Pokémon » ; Poképédia « Pokémon chromatique », « Échange »
   serebii     attackdex lists per type and per game (facts only: type, category, PP, power, accuracy;
               the in-game description column is kept only to cross-check the official text)
 Polite: MediaWiki API, 1 request/second, identifiable User-Agent, local cache.
@@ -21,6 +22,8 @@ BULBA = ["List of Pokémon by Kanto Pokédex number", "List of Pokémon by New P
          "List of Pokémon by Hisui Pokédex number", "List of Pokémon by Paldea Pokédex number", "List of Pokémon by Kitakami Pokédex number",
          "List of Pokémon by Blueberry Pokédex number", "List of Pokémon by Lumiose Pokédex number", "List of Pokémon by Hyperspace Pokédex number",
          "List of categories in other languages", "Priority", "List of moves"]
+BULBA_P3 = ["In-game trade", "Gift Pokémon", "Shiny Pokémon"]
+POKEPEDIA_P3 = ["Pokémon chromatique", "Échange"]
 SEREBII = ["rby", "gs", "", "dp", "bw", "xy", "sm", "swsh", "sv"]   # '' = Generation III attackdex
 TYPES = ["normal", "fire", "water", "electric", "grass", "ice", "fighting", "poison", "ground", "flying", "psychic", "bug",
          "rock", "ghost", "dragon", "dark", "steel", "fairy"]
@@ -123,6 +126,14 @@ def main(steps):
         m["pokepedia:moves"] = {"source_id": "pokepedia", "revision": "revids in file", "retrieved_at": NOW, "path": str(fn.relative_to(ROOT)),
                                 "url": "https://www.pokepedia.fr/", "sha256": sha256_bytes(body.encode())}
         print("pokepedia moves", len(moves), "of", len(titles))
+        m.save()
+    if "phase3" in steps:   # locations and availability: in-game trades, gifts, Shiny rules
+        for api, site, base, titles in [("https://bulbapedia.bulbagarden.net/w/api.php", "bulbapedia", "https://bulbapedia.bulbagarden.net/wiki/", BULBA_P3),
+                                        ("https://www.pokepedia.fr/api.php", "pokepedia", "https://www.pokepedia.fr/", POKEPEDIA_P3)]:
+            got = mw_batch(api, titles)
+            for t in titles:
+                if t not in got: print("MISSING", site, t); continue
+                save_wiki(m, site, t, *got[t], base)
         m.save()
     if "serebii" in steps:
         serebii(m)

@@ -52,6 +52,7 @@ foreach (var l in langs) {
 File.WriteAllText(Path.Combine(outDir, "names.json"), JsonSerializer.Serialize(names));
 Console.WriteLine("names ok");
 Extra.Run(outDir);
+Encounters.Run(outDir);
 
 // ---------------------------------------------------------------- phase 1b / 2 extractions
 static Dictionary<string, int> Dex(IPersonalInfo p) {

@@ -739,7 +739,7 @@ for aid, slug, gen in ab_rows:
 out["external_id"] = (["entity_type", "entity_id", "system", "value"], ext)
 
 # ----------------------------------------------------------------------------- later phases (same namespace, same rules)
-PHASES = [p for p in os.environ.get("PHASES", "1b,2,2b").split(",") if p]
+PHASES = [p for p in os.environ.get("PHASES", "1b,2,2b,3").split(",") if p]
 for _ph in PHASES:
     exec(compile(open(ROOT / f"scripts/phases/phase{_ph}.py", encoding="utf-8").read(), f"phase{_ph}.py", "exec"), globals())
 PHASE_LABEL = os.environ.get("PHASE_LABEL", "Phase " + (PHASES[-1] if PHASES else "1"))
@@ -826,7 +826,8 @@ if changed:
                 f"Import et vérification : {len(sp_rows)} espèces, {len(form_rows)} formes, {len(fg_rows)} lignes forme×jeu, "
                 + "".join(f"{len(out[t][1])} {lbl}, " for t, lbl in [("evolution", "évolutions"), ("pokedex_entry", "entrées de Pokédex régionaux"),
                                                                   ("move", "capacités"), ("move_game", "lignes capacité×jeu"), ("machine", "CT/CS/DT"),
-                                                                  ("learnset", "lignes de movesets")] if t in out)
+                                                                  ("learnset", "lignes de movesets"), ("location", "lieux"), ("encounter", "rencontres"),
+                                                                  ("availability", "lignes de disponibilité")] if t in out)
                 + f"{len(tr_rows)} traductions ; {len(set(discreps))} écarts notés ; {changed} données (re)vérifiées.", canon(stats)])
     out["update_log"] = (["id", "started_at", "finished_at", "kind", "trigger", "data_version", "schema_version", "git_commit", "summary", "stats"], log)
     items = [[update_id, t, "*", "*", "verify", None, str(n), None] for t, n in sorted(changed_by_table.items())]

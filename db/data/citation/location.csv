@@ -1,0 +1,217 @@
+id,table_name,row_key,column_name,document_id,observed_value,agrees
+493193,location,"[""azalea-town""]",*,1016,"{""identifier"":""azalea-town"",""region"":""johto""}",1
+493194,location,"[""azalea-town""]",*,1020,"{""en"":""Azalea Town"",""gen2_index"":12}",1
+493195,location,"[""bell-tower""]",*,1016,"{""identifier"":""bell-tower"",""region"":""johto""}",1
+493196,location,"[""bell-tower""]",*,1020,"{""en"":""Tin Tower"",""gen2_index"":23}",0
+493197,location,"[""blackthorn-city""]",*,1016,"{""identifier"":""blackthorn-city"",""region"":""johto""}",1
+493198,location,"[""blackthorn-city""]",*,1020,"{""en"":""Blackthorn City"",""gen2_index"":41}",1
+493199,location,"[""burned-tower""]",*,1016,"{""identifier"":""burned-tower"",""region"":""johto""}",1
+493200,location,"[""burned-tower""]",*,1020,"{""en"":""Burned Tower"",""gen2_index"":24}",1
+493201,location,"[""celadon-city""]",*,1016,"{""identifier"":""celadon-city"",""region"":""kanto""}",1
+493202,location,"[""celadon-city""]",*,1018,"{""gen1_table"":[94]}",1
+493203,location,"[""celadon-city""]",*,1020,"{""en"":""Celadon City"",""gen2_index"":71}",1
+493204,location,"[""cerulean-cave""]",*,1016,"{""identifier"":""cerulean-cave"",""region"":""kanto""}",1
+493205,location,"[""cerulean-cave""]",*,1018,"{""gen1_table"":[141]}",1
+493206,location,"[""cerulean-city""]",*,1016,"{""identifier"":""cerulean-city"",""region"":""kanto""}",1
+493207,location,"[""cerulean-city""]",*,1018,"{""gen1_table"":[91]}",1
+493208,location,"[""cerulean-city""]",*,1020,"{""en"":""Cerulean City"",""gen2_index"":55}",1
+493209,location,"[""cherrygrove-city""]",*,1016,"{""identifier"":""cherrygrove-city"",""region"":""johto""}",1
+493210,location,"[""cherrygrove-city""]",*,1020,"{""en"":""Cherrygrove City"",""gen2_index"":3}",1
+493211,location,"[""cianwood-city""]",*,1016,"{""identifier"":""cianwood-city"",""region"":""johto""}",1
+493212,location,"[""cianwood-city""]",*,1020,"{""en"":""Cianwood City"",""gen2_index"":33}",1
+493213,location,"[""cinnabar-island""]",*,1016,"{""identifier"":""cinnabar-island"",""region"":""kanto""}",1
+493214,location,"[""cinnabar-island""]",*,1018,"{""gen1_table"":[96]}",1
+493215,location,"[""cinnabar-island""]",*,1020,"{""en"":""Cinnabar Island"",""gen2_index"":85}",1
+493216,location,"[""dark-cave""]",*,1016,"{""identifier"":""dark-cave"",""region"":""johto""}",1
+493217,location,"[""dark-cave""]",*,1020,"{""en"":""Dark Cave"",""gen2_index"":44}",1
+493218,location,"[""digletts-cave""]",*,1016,"{""identifier"":""digletts-cave"",""region"":""kanto""}",1
+493219,location,"[""digletts-cave""]",*,1018,"{""gen1_table"":[131]}",1
+493220,location,"[""digletts-cave""]",*,1020,"{""en"":""Diglett's Cave"",""gen2_index"":62}",1
+493221,location,"[""dragons-den""]",*,1016,"{""identifier"":""dragons-den"",""region"":""johto""}",1
+493222,location,"[""dragons-den""]",*,1020,"{""en"":""Dragon's Den"",""gen2_index"":42}",1
+493223,location,"[""ecruteak-city""]",*,1016,"{""identifier"":""ecruteak-city"",""region"":""johto""}",1
+493224,location,"[""ecruteak-city""]",*,1020,"{""en"":""Ecruteak City"",""gen2_index"":22}",1
+493225,location,"[""fuchsia-city""]",*,1016,"{""identifier"":""fuchsia-city"",""region"":""kanto""}",1
+493226,location,"[""fuchsia-city""]",*,1018,"{""gen1_table"":[95]}",1
+493227,location,"[""fuchsia-city""]",*,1020,"{""en"":""Fuchsia City"",""gen2_index"":81}",1
+493228,location,"[""goldenrod-city""]",*,1016,"{""identifier"":""goldenrod-city"",""region"":""johto""}",1
+493229,location,"[""goldenrod-city""]",*,1020,"{""en"":""Goldenrod City"",""gen2_index"":16}",1
+493230,location,"[""ice-path""]",*,1016,"{""identifier"":""ice-path"",""region"":""johto""}",1
+493231,location,"[""ice-path""]",*,1020,"{""en"":""Ice Path"",""gen2_index"":40}",1
+493232,location,"[""ilex-forest""]",*,1016,"{""identifier"":""ilex-forest"",""region"":""johto""}",1
+493233,location,"[""ilex-forest""]",*,1020,"{""en"":""Ilex Forest"",""gen2_index"":14}",1
+493234,location,"[""johto-route-29""]",*,1016,"{""identifier"":""johto-route-29"",""region"":""johto""}",1
+493235,location,"[""johto-route-29""]",*,1020,"{""en"":""Route 29"",""gen2_index"":2}",1
+493236,location,"[""johto-route-30""]",*,1016,"{""identifier"":""johto-route-30"",""region"":""johto""}",1
+493237,location,"[""johto-route-30""]",*,1020,"{""en"":""Route 30"",""gen2_index"":4}",1
+493238,location,"[""johto-route-31""]",*,1016,"{""identifier"":""johto-route-31"",""region"":""johto""}",1
+493239,location,"[""johto-route-31""]",*,1020,"{""en"":""Route 31"",""gen2_index"":5}",1
+493240,location,"[""johto-route-32""]",*,1016,"{""identifier"":""johto-route-32"",""region"":""johto""}",1
+493241,location,"[""johto-route-32""]",*,1020,"{""en"":""Route 32"",""gen2_index"":8}",1
+493242,location,"[""johto-route-33""]",*,1016,"{""identifier"":""johto-route-33"",""region"":""johto""}",1
+493243,location,"[""johto-route-33""]",*,1020,"{""en"":""Route 33"",""gen2_index"":11}",1
+493244,location,"[""johto-route-34""]",*,1016,"{""identifier"":""johto-route-34"",""region"":""johto""}",1
+493245,location,"[""johto-route-34""]",*,1020,"{""en"":""Route 34"",""gen2_index"":15}",1
+493246,location,"[""johto-route-35""]",*,1016,"{""identifier"":""johto-route-35"",""region"":""johto""}",1
+493247,location,"[""johto-route-35""]",*,1020,"{""en"":""Route 35"",""gen2_index"":18}",1
+493248,location,"[""johto-route-36""]",*,1016,"{""identifier"":""johto-route-36"",""region"":""johto""}",1
+493249,location,"[""johto-route-36""]",*,1020,"{""en"":""Route 36"",""gen2_index"":20}",1
+493250,location,"[""johto-route-37""]",*,1016,"{""identifier"":""johto-route-37"",""region"":""johto""}",1
+493251,location,"[""johto-route-37""]",*,1020,"{""en"":""Route 37"",""gen2_index"":21}",1
+493252,location,"[""johto-route-38""]",*,1016,"{""identifier"":""johto-route-38"",""region"":""johto""}",1
+493253,location,"[""johto-route-38""]",*,1020,"{""en"":""Route 38"",""gen2_index"":25}",1
+493254,location,"[""johto-route-39""]",*,1016,"{""identifier"":""johto-route-39"",""region"":""johto""}",1
+493255,location,"[""johto-route-39""]",*,1020,"{""en"":""Route 39"",""gen2_index"":26}",1
+493256,location,"[""johto-route-42""]",*,1016,"{""identifier"":""johto-route-42"",""region"":""johto""}",1
+493257,location,"[""johto-route-42""]",*,1020,"{""en"":""Route 42"",""gen2_index"":34}",1
+493258,location,"[""johto-route-43""]",*,1016,"{""identifier"":""johto-route-43"",""region"":""johto""}",1
+493259,location,"[""johto-route-43""]",*,1020,"{""en"":""Route 43"",""gen2_index"":37}",1
+493260,location,"[""johto-route-44""]",*,1016,"{""identifier"":""johto-route-44"",""region"":""johto""}",1
+493261,location,"[""johto-route-44""]",*,1020,"{""en"":""Route 44"",""gen2_index"":39}",1
+493262,location,"[""johto-route-45""]",*,1016,"{""identifier"":""johto-route-45"",""region"":""johto""}",1
+493263,location,"[""johto-route-45""]",*,1020,"{""en"":""Route 45"",""gen2_index"":43}",1
+493264,location,"[""johto-route-46""]",*,1016,"{""identifier"":""johto-route-46"",""region"":""johto""}",1
+493265,location,"[""johto-route-46""]",*,1020,"{""en"":""Route 46"",""gen2_index"":45}",1
+493266,location,"[""johto-sea-route-40""]",*,1016,"{""identifier"":""johto-sea-route-40"",""region"":""johto""}",1
+493267,location,"[""johto-sea-route-40""]",*,1020,"{""en"":""Route 40"",""gen2_index"":30}",0
+493268,location,"[""johto-sea-route-41""]",*,1016,"{""identifier"":""johto-sea-route-41"",""region"":""johto""}",1
+493269,location,"[""johto-sea-route-41""]",*,1020,"{""en"":""Route 41"",""gen2_index"":32}",0
+493270,location,"[""kanto-power-plant""]",*,1016,"{""identifier"":""kanto-power-plant"",""region"":""kanto""}",1
+493271,location,"[""kanto-power-plant""]",*,1018,"{""gen1_table"":[142]}",1
+493272,location,"[""kanto-route-1""]",*,1016,"{""identifier"":""kanto-route-1"",""region"":""kanto""}",1
+493273,location,"[""kanto-route-1""]",*,1018,"{""gen1_table"":[101]}",1
+493274,location,"[""kanto-route-1""]",*,1020,"{""en"":""Route 1"",""gen2_index"":48}",1
+493275,location,"[""kanto-route-10""]",*,1016,"{""identifier"":""kanto-route-10"",""region"":""kanto""}",1
+493276,location,"[""kanto-route-10""]",*,1018,"{""gen1_table"":[110]}",1
+493277,location,"[""kanto-route-10""]",*,1020,"{""en"":""Route 10"",""gen2_index"":67}",1
+493278,location,"[""kanto-route-11""]",*,1016,"{""identifier"":""kanto-route-11"",""region"":""kanto""}",1
+493279,location,"[""kanto-route-11""]",*,1018,"{""gen1_table"":[111]}",1
+493280,location,"[""kanto-route-11""]",*,1020,"{""en"":""Route 11"",""gen2_index"":73}",1
+493281,location,"[""kanto-route-12""]",*,1016,"{""identifier"":""kanto-route-12"",""region"":""kanto""}",1
+493282,location,"[""kanto-route-12""]",*,1018,"{""gen1_table"":[112]}",1
+493283,location,"[""kanto-route-12""]",*,1020,"{""en"":""Route 12"",""gen2_index"":74}",1
+493284,location,"[""kanto-route-13""]",*,1016,"{""identifier"":""kanto-route-13"",""region"":""kanto""}",1
+493285,location,"[""kanto-route-13""]",*,1018,"{""gen1_table"":[113]}",1
+493286,location,"[""kanto-route-13""]",*,1020,"{""en"":""Route 13"",""gen2_index"":75}",1
+493287,location,"[""kanto-route-14""]",*,1016,"{""identifier"":""kanto-route-14"",""region"":""kanto""}",1
+493288,location,"[""kanto-route-14""]",*,1018,"{""gen1_table"":[114]}",1
+493289,location,"[""kanto-route-14""]",*,1020,"{""en"":""Route 14"",""gen2_index"":76}",1
+493290,location,"[""kanto-route-15""]",*,1016,"{""identifier"":""kanto-route-15"",""region"":""kanto""}",1
+493291,location,"[""kanto-route-15""]",*,1018,"{""gen1_table"":[115]}",1
+493292,location,"[""kanto-route-15""]",*,1020,"{""en"":""Route 15"",""gen2_index"":77}",1
+493293,location,"[""kanto-route-16""]",*,1016,"{""identifier"":""kanto-route-16"",""region"":""kanto""}",1
+493294,location,"[""kanto-route-16""]",*,1018,"{""gen1_table"":[116]}",1
+493295,location,"[""kanto-route-16""]",*,1020,"{""en"":""Route 16"",""gen2_index"":78}",1
+493296,location,"[""kanto-route-17""]",*,1016,"{""identifier"":""kanto-route-17"",""region"":""kanto""}",1
+493297,location,"[""kanto-route-17""]",*,1018,"{""gen1_table"":[117]}",1
+493298,location,"[""kanto-route-17""]",*,1020,"{""en"":""Route 17"",""gen2_index"":79}",1
+493299,location,"[""kanto-route-18""]",*,1016,"{""identifier"":""kanto-route-18"",""region"":""kanto""}",1
+493300,location,"[""kanto-route-18""]",*,1018,"{""gen1_table"":[118]}",1
+493301,location,"[""kanto-route-18""]",*,1020,"{""en"":""Route 18"",""gen2_index"":80}",1
+493302,location,"[""kanto-route-2""]",*,1016,"{""identifier"":""kanto-route-2"",""region"":""kanto""}",1
+493303,location,"[""kanto-route-2""]",*,1018,"{""gen1_table"":[102]}",1
+493304,location,"[""kanto-route-2""]",*,1020,"{""en"":""Route 2"",""gen2_index"":50}",1
+493305,location,"[""kanto-route-22""]",*,1016,"{""identifier"":""kanto-route-22"",""region"":""kanto""}",1
+493306,location,"[""kanto-route-22""]",*,1018,"{""gen1_table"":[122]}",1
+493307,location,"[""kanto-route-22""]",*,1020,"{""en"":""Route 22"",""gen2_index"":87}",1
+493308,location,"[""kanto-route-23""]",*,1016,"{""identifier"":""kanto-route-23"",""region"":""kanto""}",1
+493309,location,"[""kanto-route-23""]",*,1018,"{""gen1_table"":[123]}",1
+493310,location,"[""kanto-route-24""]",*,1016,"{""identifier"":""kanto-route-24"",""region"":""kanto""}",1
+493311,location,"[""kanto-route-24""]",*,1018,"{""gen1_table"":[124]}",1
+493312,location,"[""kanto-route-24""]",*,1020,"{""en"":""Route 24"",""gen2_index"":56}",1
+493313,location,"[""kanto-route-25""]",*,1016,"{""identifier"":""kanto-route-25"",""region"":""kanto""}",1
+493314,location,"[""kanto-route-25""]",*,1018,"{""gen1_table"":[125]}",1
+493315,location,"[""kanto-route-25""]",*,1020,"{""en"":""Route 25"",""gen2_index"":57}",1
+493316,location,"[""kanto-route-26""]",*,1016,"{""identifier"":""kanto-route-26"",""region"":""kanto""}",1
+493317,location,"[""kanto-route-26""]",*,1020,"{""en"":""Route 26"",""gen2_index"":91}",1
+493318,location,"[""kanto-route-27""]",*,1016,"{""identifier"":""kanto-route-27"",""region"":""kanto""}",1
+493319,location,"[""kanto-route-27""]",*,1020,"{""en"":""Route 27"",""gen2_index"":92}",1
+493320,location,"[""kanto-route-28""]",*,1016,"{""identifier"":""kanto-route-28"",""region"":""kanto""}",1
+493321,location,"[""kanto-route-28""]",*,1020,"{""en"":""Route 28"",""gen2_index"":94}",1
+493322,location,"[""kanto-route-3""]",*,1016,"{""identifier"":""kanto-route-3"",""region"":""kanto""}",1
+493323,location,"[""kanto-route-3""]",*,1018,"{""gen1_table"":[103]}",1
+493324,location,"[""kanto-route-3""]",*,1020,"{""en"":""Route 3"",""gen2_index"":52}",1
+493325,location,"[""kanto-route-4""]",*,1016,"{""identifier"":""kanto-route-4"",""region"":""kanto""}",1
+493326,location,"[""kanto-route-4""]",*,1020,"{""en"":""Route 4"",""gen2_index"":54}",1
+493327,location,"[""kanto-route-5""]",*,1016,"{""identifier"":""kanto-route-5"",""region"":""kanto""}",1
+493328,location,"[""kanto-route-5""]",*,1018,"{""gen1_table"":[105]}",1
+493329,location,"[""kanto-route-5""]",*,1020,"{""en"":""Route 5"",""gen2_index"":58}",1
+493330,location,"[""kanto-route-6""]",*,1016,"{""identifier"":""kanto-route-6"",""region"":""kanto""}",1
+493331,location,"[""kanto-route-6""]",*,1018,"{""gen1_table"":[106]}",1
+493332,location,"[""kanto-route-6""]",*,1020,"{""en"":""Route 6"",""gen2_index"":60}",1
+493333,location,"[""kanto-route-7""]",*,1016,"{""identifier"":""kanto-route-7"",""region"":""kanto""}",1
+493334,location,"[""kanto-route-7""]",*,1018,"{""gen1_table"":[107]}",1
+493335,location,"[""kanto-route-7""]",*,1020,"{""en"":""Route 7"",""gen2_index"":63}",1
+493336,location,"[""kanto-route-8""]",*,1016,"{""identifier"":""kanto-route-8"",""region"":""kanto""}",1
+493337,location,"[""kanto-route-8""]",*,1018,"{""gen1_table"":[108]}",1
+493338,location,"[""kanto-route-8""]",*,1020,"{""en"":""Route 8"",""gen2_index"":64}",1
+493339,location,"[""kanto-route-9""]",*,1016,"{""identifier"":""kanto-route-9"",""region"":""kanto""}",1
+493340,location,"[""kanto-route-9""]",*,1018,"{""gen1_table"":[109]}",1
+493341,location,"[""kanto-route-9""]",*,1020,"{""en"":""Route 9"",""gen2_index"":65}",1
+493342,location,"[""kanto-safari-zone""]",*,1016,"{""identifier"":""kanto-safari-zone"",""region"":""kanto""}",1
+493343,location,"[""kanto-safari-zone""]",*,1018,"{""gen1_table"":[136]}",1
+493344,location,"[""kanto-sea-route-19""]",*,1016,"{""identifier"":""kanto-sea-route-19"",""region"":""kanto""}",1
+493345,location,"[""kanto-sea-route-19""]",*,1018,"{""gen1_table"":[119]}",1
+493346,location,"[""kanto-sea-route-19""]",*,1020,"{""en"":""Route 19"",""gen2_index"":82}",0
+493347,location,"[""kanto-sea-route-20""]",*,1016,"{""identifier"":""kanto-sea-route-20"",""region"":""kanto""}",1
+493348,location,"[""kanto-sea-route-20""]",*,1018,"{""gen1_table"":[120]}",1
+493349,location,"[""kanto-sea-route-20""]",*,1020,"{""en"":""Route 20"",""gen2_index"":83}",0
+493350,location,"[""kanto-sea-route-21""]",*,1016,"{""identifier"":""kanto-sea-route-21"",""region"":""kanto""}",1
+493351,location,"[""kanto-sea-route-21""]",*,1018,"{""gen1_table"":[121]}",1
+493352,location,"[""kanto-sea-route-21""]",*,1020,"{""en"":""Route 21"",""gen2_index"":86}",0
+493353,location,"[""kanto-victory-road-1""]",*,1016,"{""identifier"":""kanto-victory-road-1"",""region"":""kanto""}",1
+493354,location,"[""kanto-victory-road-1""]",*,1020,"{""en"":""Victory Road"",""gen2_index"":88}",1
+493355,location,"[""kanto-victory-road-2""]",*,1016,"{""identifier"":""kanto-victory-road-2"",""region"":""kanto""}",1
+493356,location,"[""kanto-victory-road-2""]",*,1018,"{""gen1_table"":[132]}",1
+493357,location,"[""lake-of-rage""]",*,1016,"{""identifier"":""lake-of-rage"",""region"":""johto""}",1
+493358,location,"[""lake-of-rage""]",*,1020,"{""en"":""Lake of Rage"",""gen2_index"":38}",1
+493359,location,"[""mahogany-town""]",*,1016,"{""identifier"":""mahogany-town"",""region"":""johto""}",1
+493360,location,"[""mahogany-town""]",*,1020,"{""en"":""Mahogany Town"",""gen2_index"":36}",1
+493361,location,"[""mt-moon""]",*,1016,"{""identifier"":""mt-moon"",""region"":""kanto""}",1
+493362,location,"[""mt-moon""]",*,1018,"{""gen1_table"":[127]}",1
+493363,location,"[""mt-moon""]",*,1020,"{""en"":""Mt. Moon"",""gen2_index"":53}",1
+493364,location,"[""mt-mortar""]",*,1016,"{""identifier"":""mt-mortar"",""region"":""johto""}",1
+493365,location,"[""mt-mortar""]",*,1020,"{""en"":""Mt. Mortar"",""gen2_index"":35}",1
+493366,location,"[""mt-silver-cave""]",*,1016,"{""identifier"":""mt-silver-cave"",""region"":""johto""}",1
+493367,location,"[""mt-silver-cave""]",*,1020,"{""en"":""Silver Cave"",""gen2_index"":46}",0
+493368,location,"[""national-park""]",*,1016,"{""identifier"":""national-park"",""region"":""johto""}",1
+493369,location,"[""national-park""]",*,1020,"{""en"":""National Park"",""gen2_index"":19}",1
+493370,location,"[""new-bark-town""]",*,1016,"{""identifier"":""new-bark-town"",""region"":""johto""}",1
+493371,location,"[""new-bark-town""]",*,1020,"{""en"":""New Bark Town"",""gen2_index"":1}",1
+493372,location,"[""olivine-city""]",*,1016,"{""identifier"":""olivine-city"",""region"":""johto""}",1
+493373,location,"[""olivine-city""]",*,1020,"{""en"":""Olivine City"",""gen2_index"":27}",1
+493374,location,"[""pallet-town""]",*,1016,"{""identifier"":""pallet-town"",""region"":""kanto""}",1
+493375,location,"[""pallet-town""]",*,1018,"{""gen1_table"":[88]}",1
+493376,location,"[""pallet-town""]",*,1020,"{""en"":""Pallet Town"",""gen2_index"":47}",1
+493377,location,"[""pewter-city""]",*,1016,"{""identifier"":""pewter-city"",""region"":""kanto""}",1
+493378,location,"[""pokemon-mansion""]",*,1016,"{""identifier"":""pokemon-mansion"",""region"":""kanto""}",1
+493379,location,"[""pokemon-mansion""]",*,1018,"{""gen1_table"":[135]}",1
+493380,location,"[""pokemon-tower""]",*,1016,"{""identifier"":""pokemon-tower"",""region"":""kanto""}",1
+493381,location,"[""pokemon-tower""]",*,1018,"{""gen1_table"":[140]}",1
+493382,location,"[""rock-tunnel""]",*,1016,"{""identifier"":""rock-tunnel"",""region"":""kanto""}",1
+493383,location,"[""rock-tunnel""]",*,1018,"{""gen1_table"":[138]}",1
+493384,location,"[""rock-tunnel""]",*,1020,"{""en"":""Rock Tunnel"",""gen2_index"":66}",1
+493385,location,"[""ruins-of-alph""]",*,1016,"{""identifier"":""ruins-of-alph"",""region"":""johto""}",1
+493386,location,"[""ruins-of-alph""]",*,1020,"{""en"":""Ruins of Alph"",""gen2_index"":9}",1
+493387,location,"[""seafoam-islands""]",*,1016,"{""identifier"":""seafoam-islands"",""region"":""kanto""}",1
+493388,location,"[""seafoam-islands""]",*,1018,"{""gen1_table"":[139]}",1
+493389,location,"[""slowpoke-well""]",*,1016,"{""identifier"":""slowpoke-well"",""region"":""johto""}",1
+493390,location,"[""slowpoke-well""]",*,1020,"{""en"":""Slowpoke Well"",""gen2_index"":13}",1
+493391,location,"[""sprout-tower""]",*,1016,"{""identifier"":""sprout-tower"",""region"":""johto""}",1
+493392,location,"[""sprout-tower""]",*,1020,"{""en"":""Sprout Tower"",""gen2_index"":7}",1
+493393,location,"[""tohjo-falls""]",*,1016,"{""identifier"":""tohjo-falls"",""region"":""johto""}",1
+493394,location,"[""tohjo-falls""]",*,1020,"{""en"":""Tohjo Falls"",""gen2_index"":93}",1
+493395,location,"[""union-cave""]",*,1016,"{""identifier"":""union-cave"",""region"":""johto""}",1
+493396,location,"[""union-cave""]",*,1020,"{""en"":""Union Cave"",""gen2_index"":10}",1
+493397,location,"[""vermilion-city""]",*,1016,"{""identifier"":""vermilion-city"",""region"":""kanto""}",1
+493398,location,"[""vermilion-city""]",*,1018,"{""gen1_table"":[93]}",1
+493399,location,"[""vermilion-city""]",*,1020,"{""en"":""Vermilion City"",""gen2_index"":61}",1
+493400,location,"[""violet-city""]",*,1016,"{""identifier"":""violet-city"",""region"":""johto""}",1
+493401,location,"[""violet-city""]",*,1020,"{""en"":""Violet City"",""gen2_index"":6}",1
+493402,location,"[""viridian-city""]",*,1016,"{""identifier"":""viridian-city"",""region"":""kanto""}",1
+493403,location,"[""viridian-city""]",*,1018,"{""gen1_table"":[89]}",1
+493404,location,"[""viridian-city""]",*,1020,"{""en"":""Viridian City"",""gen2_index"":49}",1
+493405,location,"[""viridian-forest""]",*,1016,"{""identifier"":""viridian-forest"",""region"":""kanto""}",1
+493406,location,"[""viridian-forest""]",*,1018,"{""gen1_table"":[126]}",1
+493407,location,"[""whirl-islands""]",*,1016,"{""identifier"":""whirl-islands"",""region"":""johto""}",1
+493408,location,"[""whirl-islands""]",*,1020,"{""en"":""Whirl Islands"",""gen2_index"":31}",1

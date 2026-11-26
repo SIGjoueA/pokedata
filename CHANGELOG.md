@@ -3,6 +3,13 @@
 Généré depuis `db/data/update_log.csv` par `scripts/changelog.py`. Le détail ligne à ligne est dans `update_log_item` (base SQLite) et `api/v1/meta/changelog.json`.
 
 
+## 2026.11.26.1 — Phase 3 (lot 1 : générations 1 et 2)
+
+- Type : release · schéma 1.1.0 · 2026-11-26T05:44:27Z → 2026-11-26T05:44:27Z (UTC)
+- Import et vérification : 1025 espèces, 1588 formes, 17497 lignes forme×jeu, 589 évolutions, 7460 entrées de Pokédex régionaux, 920 capacités, 7817 lignes capacité×jeu, 2061 CT/CS/DT, 645613 lignes de movesets, 92 lieux, 5271 rencontres, 2630 lignes de disponibilité, 44481 traductions ; 2003 écarts notés ; 6249 données (re)vérifiées.
+- Statuts de vérification : disputed 87, game-data 169038, majority 188, manual 417, single-source 3, unanimous 46649
+- Lignes : species 1025, form 1588, form_game 17497, form_ability 31012, ability 307, evolution 589, evolution_method 7541, pokedex_entry 7460, item 44, move 920, move_game 7817, machine 2061, learnset 645613, location 92, encounter 5271, availability 2630, shiny_rule 4, translation 44481, discrepancy 2003
+
 ## 2026.11.26 — Phase 2b — movesets vérifiés par ensemble ; schéma 1.1.0 (provenance découpée par table)
 
 - Type : release · schéma 1.1.0 · 2026-11-26T04:45:04Z → 2026-11-26T04:45:04Z (UTC)

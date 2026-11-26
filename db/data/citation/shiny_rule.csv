@@ -1,0 +1,9 @@
+id,table_name,row_key,column_name,document_id,observed_value,agrees
+493751,shiny_rule,"[""c"",""base""]",*,1023,"{""found"":true,""odds"":""1/8192""}",1
+493752,shiny_rule,"[""c"",""base""]",*,1024,"{""found"":true,""odds"":""1/8192""}",1
+493753,shiny_rule,"[""c"",""shiny-parent""]",*,1023,"{""found"":true,""odds"":""1/64""}",1
+493754,shiny_rule,"[""c"",""shiny-parent""]",*,1024,"{""found"":true,""odds"":""1/64""}",1
+493755,shiny_rule,"[""gs"",""base""]",*,1023,"{""found"":true,""odds"":""1/8192""}",1
+493756,shiny_rule,"[""gs"",""base""]",*,1024,"{""found"":true,""odds"":""1/8192""}",1
+493757,shiny_rule,"[""gs"",""shiny-parent""]",*,1023,"{""found"":true,""odds"":""1/64""}",1
+493758,shiny_rule,"[""gs"",""shiny-parent""]",*,1024,"{""found"":true,""odds"":""1/64""}",1

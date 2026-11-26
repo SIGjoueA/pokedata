@@ -152,6 +152,39 @@ class Api(unittest.TestCase):
         self.assertIn([85, 0], ls["games"]["sv"]["machine"])   # Pikachu: Thunderbolt by TM in Scarlet/Violet
         self.assertTrue(all(len(e) in (2, 3) for g in ls["games"].values() for m in g.values() for e in m))
 
+    def test_phase3(self):
+        db = sqlite3.connect(BUILD / "pokedata.sqlite")
+        q = lambda sql, *a: db.execute(sql, a).fetchall()
+        if not q("SELECT 1 FROM encounter LIMIT 1"):
+            self.skipTest("phase 3 not built")
+        # every (area, version, method) set of encounters is verified as a whole (convention A)
+        self.assertEqual(q("""SELECT COUNT(*) FROM (SELECT DISTINCT area_id, version_id, method_id FROM encounter) e
+            WHERE NOT EXISTS (SELECT 1 FROM verification v WHERE v.table_name='encounter'
+              AND v.row_key=json_array(e.area_id, e.version_id, e.method_id))"""), [(0,)])
+        self.assertEqual(q("SELECT COUNT(*) FROM availability a WHERE NOT EXISTS (SELECT 1 FROM verification v WHERE v.table_name='availability' AND v.row_key=json_array(a.form_id, a.version_id, a.status))"), [(0,)])
+        # Kanto Route 3 and Hoenn Route 3 are distinct places
+        self.assertTrue(q("SELECT 1 FROM location WHERE id='kanto-route-3'"))
+        self.assertFalse(q("SELECT 1 FROM location WHERE id='route-3'"))
+        # Pikachu in Viridian Forest (Red), levels 3–5
+        self.assertIn((3, 5), q("SELECT min_level, max_level FROM encounter WHERE form_id='25' AND version_id='red' AND area_id='viridian-forest' AND method_id='walk'"))
+        # Lickitung traded for Slowbro on Route 18 (Red)
+        self.assertEqual(q("SELECT json_extract(extra,'$.gives_species_id') FROM encounter WHERE form_id='108' AND version_id='red' AND method_id='npc-trade'"), [(80,)])
+        self.assertIn(("event",), q("SELECT status FROM availability WHERE form_id='151' AND version_id='red'"))
+        self.assertIn(("trade-version-exclusive",), q("SELECT status FROM availability WHERE form_id='123' AND version_id='blue'"))   # Scyther: Red only
+        self.assertIn(("transfer", "time-capsule:rb,y"), q("SELECT status, detail FROM availability WHERE form_id='1' AND version_id='gold'"))
+        self.assertEqual(q("SELECT COUNT(*) FROM availability WHERE form_id LIKE '201-%' AND version_id='gold' AND status='wild'"), [(25,)])   # every Unown letter
+        self.assertEqual(q("SELECT DISTINCT json_extract(extra,'$.shiny') FROM encounter WHERE form_id='130' AND area_id='lake-of-rage' AND method_id='static'"), [("always",)])
+        self.assertEqual(q("SELECT odds FROM shiny_rule WHERE game_id='gs' AND method='base'"), [("1/8192",)])
+        # place names follow game_language for the games covered
+        self.assertEqual(q("""SELECT COUNT(*) FROM location_game lg JOIN game_language gl ON gl.game_id=lg.game_id
+            WHERE lg.game_id IN ('gs','c') AND NOT EXISTS (SELECT 1 FROM translation t WHERE t.entity_type='location'
+              AND t.entity_id=lg.location_id AND t.field='name' AND t.language_id=gl.language_id
+              AND (t.game_id=lg.game_id OR t.game_id IS NULL))"""), [(0,)])
+        g = json.loads((API / "location" / "gs.json").read_text("utf-8"))
+        self.assertTrue(any(l["id"] == "johto-route-32" for l in g["locations"]))
+        p = json.loads((API / "pokemon" / "25" / "locations.json").read_text("utf-8"))
+        self.assertEqual(p["forms"]["25"]["red"]["game"], "rb")
+
     def test_search(self):
         s = json.loads((API / "search" / "fr.json").read_text("utf-8"))
         self.assertIn(["pikachu", "Pikachu", 25], s)
