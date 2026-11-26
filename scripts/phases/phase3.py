@@ -382,7 +382,10 @@ def mfam(g, m):
              "pokemon-channel-pal", "new-york-pokecenter-wish-eggs", "feebas-tile-fishing", "outbreak", "dynamax-adventure"):
         return "special" if m != "dynamax-adventure" else m
     if m in ("npc-trade", "max-raid"): return m
-    if g in ("xy", "oras", "sm", "usum", "lgpe", "sw", "swisle", "swcrown"):
+    if g in ("xy", "oras"):
+        if m.endswith("-ambush"): return "ambush"
+        return {"yellow-flowers": "walk", "purple-flowers": "walk", "red-flowers": "walk", "rough-terrain": "walk", "seaweed": "walk"}.get(m, m)
+    if g in ("sm", "usum", "lgpe", "sw", "swisle", "swcrown"):
         return m if m in ("horde", "sos", "friend-safari", "rock-smash") else "wild"
     return {"dark-grass": "walk", "grass-spots": "walk", "cave-spots": "walk", "bridge-spots": "walk", "seaweed": "walk",
             "surf-spots": "surf", "super-rod-spots": "super-rod"}.get(m, fam(m))

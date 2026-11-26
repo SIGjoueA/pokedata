@@ -25,3 +25,7 @@ id,table_name,row_key,column_name,document_id,observed_value,agrees
 525457,shiny_rule,"[""b2w2"",""shiny-charm""]",*,1024,"{""found"":true,""odds"":""3/8192""}",1
 525458,shiny_rule,"[""bw"",""base""]",*,1023,"{""found"":true,""odds"":""1/8192""}",1
 525459,shiny_rule,"[""bw"",""base""]",*,1024,"{""found"":true,""odds"":""1/8192""}",1
+535927,shiny_rule,"[""oras"",""base""]",*,1023,"{""found"":true,""odds"":""1/4096""}",1
+535928,shiny_rule,"[""oras"",""base""]",*,1024,"{""found"":true,""odds"":""1/4096""}",1
+535929,shiny_rule,"[""xy"",""base""]",*,1023,"{""found"":true,""odds"":""1/4096""}",1
+535930,shiny_rule,"[""xy"",""base""]",*,1024,"{""found"":true,""odds"":""1/4096""}",1

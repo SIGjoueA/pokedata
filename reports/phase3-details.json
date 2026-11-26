@@ -11,13 +11,15 @@
 "pt",
 "hgss",
 "bw",
-"b2w2"
+"b2w2",
+"xy",
+"oras"
 ],
-"locations": 372,
-"encounters": 18203,
-"encounter_sets": 4839,
-"availability": 16045,
-"shiny_rules": 13,
+"locations": 433,
+"encounters": 21673,
+"encounter_sets": 5833,
+"availability": 22196,
+"shiny_rules": 15,
 "shiny_locks": 1,
 "gen1_tables_placed": 42,
 "gen1_tables_ambiguous": {
@@ -976,7 +978,7 @@
 "blue-japan"
 ],
 "names": {
-"-:game-data": 2470,
+"-:game-data": 2960,
 "b2w2:game-data": 476,
 "bw:game-data": 371,
 "c:game-data": 492,
@@ -985,8 +987,10 @@
 "frlg:game-data": 478,
 "gs:game-data": 574,
 "hgss:game-data": 672,
+"oras:game-data": 560,
 "pt:game-data": 532,
-"rs:game-data": 390
+"rs:game-data": 390,
+"xy:game-data": 308
 },
 "agreement": {
 "b2w2:gift": [
@@ -1369,6 +1373,56 @@
 126,
 132
 ],
+"oras:dexnav": [
+0,
+54,
+78
+],
+"oras:gift": [
+10,
+12,
+14
+],
+"oras:good-rod": [
+18,
+58,
+96
+],
+"oras:horde": [
+64,
+64,
+64
+],
+"oras:old-rod": [
+18,
+58,
+96
+],
+"oras:rock-smash": [
+4,
+22,
+22
+],
+"oras:static": [
+32,
+38,
+38
+],
+"oras:super-rod": [
+18,
+58,
+96
+],
+"oras:surf": [
+18,
+58,
+96
+],
+"oras:walk": [
+18,
+74,
+84
+],
 "pt:gift": [
 3,
 3,
@@ -1499,6 +1553,61 @@
 64,
 64
 ],
+"xy:ambush": [
+12,
+14,
+14
+],
+"xy:friend-safari": [
+0,
+2,
+2
+],
+"xy:gift": [
+8,
+10,
+10
+],
+"xy:good-rod": [
+38,
+38,
+38
+],
+"xy:horde": [
+38,
+40,
+40
+],
+"xy:old-rod": [
+38,
+38,
+38
+],
+"xy:rock-smash": [
+20,
+20,
+20
+],
+"xy:static": [
+9,
+14,
+14
+],
+"xy:super-rod": [
+38,
+38,
+38
+],
+"xy:surf": [
+34,
+34,
+34
+],
+"xy:walk": [
+54,
+62,
+62
+],
 "y:gift": [
 1,
 4,
@@ -1600,6 +1709,14 @@
 "hgss:trade-version-exclusive": 113,
 "hgss:transfer": 99,
 "hgss:wild": 520,
+"oras:breed": 410,
+"oras:event": 245,
+"oras:evolve": 480,
+"oras:gift": 72,
+"oras:npc-trade": 6,
+"oras:trade-version-exclusive": 658,
+"oras:transfer": 684,
+"oras:wild": 520,
 "pt:breed": 197,
 "pt:event": 46,
 "pt:evolve": 221,
@@ -1623,6 +1740,14 @@
 "rs:trade-version-exclusive": 433,
 "rs:unobtainable": 2,
 "rs:wild": 240,
+"xy:breed": 603,
+"xy:event": 218,
+"xy:evolve": 704,
+"xy:gift": 38,
+"xy:npc-trade": 18,
+"xy:trade-version-exclusive": 327,
+"xy:transfer": 353,
+"xy:wild": 815,
 "y:event": 9,
 "y:evolve": 66,
 "y:gift": 16,
@@ -1631,11 +1756,11 @@
 "y:transfer": 15,
 "y:wild": 91
 },
-"legacy_mapped": 335,
+"legacy_mapped": 397,
 "legacy_unmatched": {
 "Casino de Céladopole": 37,
+"Route 4": 20,
 "Laboratoire (Cramois'Île)": 18,
-"Myokara": 18,
 "Tour Dresseurs": 17,
 "Pré de Floraville": 16,
 "Ile 1": 15,
@@ -1645,7 +1770,6 @@
 "Repaire Rocket d'Acajou": 12,
 "Zone inconnue ; que des Ptitard": 10,
 "Sillonnant Johto": 9,
-"Route 4": 8,
 "Aire de repos du Mont Sélénite": 6,
 "Centre Pokémon (Hoenn)": 6,
 "Dojo de Combat": 6,
@@ -1664,10 +1788,7 @@
 "Toit du manoir Céladon": 3,
 "Arabelle": 2,
 "Centre Pokémon (Kanto)": 2,
-"Centre météo (Route 119)": 2,
-"Grotte de l’Îlot": 2,
 "Ile Nouvellelune": 2,
-"Planque Aqua": 2,
 "Repaire Team Flare": 2,
 "Route Victoire (6e ét.)": 2,
 "Résidence de Vestigion": 2,
@@ -1683,6 +1804,11 @@
 "Arène d'Oliville": 1,
 "Bureaux de Game Freak (Volucité)": 1,
 "Centre Pokémon (Irisia)": 1,
+"Centre Spatial d’Algatia": 1,
+"Centre de concours (Autéquia)": 1,
+"Centre de concours (Nénucrique)": 1,
+"Centre de concours (Poivressel)": 1,
+"Centre de concours (Vergazon)": 1,
 "Centre météo (Route 6)": 1,
 "Chambre Anemune": 1,
 "Chambre Jonquatre": 1,
@@ -1693,7 +1819,6 @@
 "Mont Renenvers B1F": 1,
 "Paradis Fleuri": 1,
 "Phare de la Liberté": 1,
-"Planque Magma": 1,
 "Port Ile 3": 1
 },
 "modern_skipped": {
@@ -1702,10 +1827,12 @@
 "4:static-no-place": 14,
 "4:trade-unplaced": 13,
 "5:static-no-place": 4,
-"5:trade-unplaced": 48
+"5:trade-unplaced": 48,
+"6:static-no-place": 8,
+"6:trade-unplaced": 24
 },
 "modern_locations": {
-"pokeapi-index": 357,
+"pokeapi-index": 420,
 "pokeapi-name": 3,
 "created": 8
 },
@@ -1726,7 +1853,11 @@
 "bw:form-change": 32,
 "dp:form-change": 8,
 "hgss:form-change": 20,
-"pt:form-change": 10
+"oras:battle-only": 114,
+"oras:form-change": 62,
+"pt:form-change": 10,
+"xy:battle-only": 74,
+"xy:form-change": 60
 },
 "form_skips": {}
 }

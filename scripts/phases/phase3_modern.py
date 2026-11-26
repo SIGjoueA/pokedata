@@ -180,7 +180,16 @@ def mod_slot_method(dk, x, a):
     if dk == "5":
         return {"Grass": "walk", "Surf": "surf", "Super_Rod": "super-rod", "Swarm": "walk", "HiddenGrotto": "hidden-grotto"}.get(T)
     if dk == "6":
-        return {"Standard": "wild", "Rock_Smash": "rock-smash", "Horde": "horde", "Grass": "wild", "FriendSafari": "friend-safari"}.get(T)
+        # "Standard" tables hold several methods, by slot position (game table layout):
+        # X/Y: 0–59 grass, flowers, rough terrain · 60–64 Surf · 65–69 Rock Smash · 70–72 / 73–75 / 76–78 Old / Good / Super Rod
+        # OR/AS: 0–23 grass, long grass · 24–26 DexNav-only Pokémon · 27–31 Surf · 32–34 / 35–37 / 38–40 Old / Good / Super Rod
+        if T == "Standard":
+            i = x.get("_slot_index", 0)
+            if x["_type"] == "EncounterSlot6AO":
+                return "walk" if i < 24 else "dexnav" if i < 27 else "surf" if i < 32 else "old-rod" if i < 35 else "good-rod" if i < 38 else "super-rod"
+            return ("walk" if i < 60 else "surf" if i < 65 else "rock-smash" if i < 70 else "old-rod" if i < 73 else "good-rod" if i < 76
+                    else "super-rod" if i < 79 else "walk")
+        return {"Rock_Smash": "rock-smash", "Horde": "horde", "Grass": "ambush", "FriendSafari": "friend-safari"}.get(T)
     if dk == "7":
         return {"Standard": "wild", "SOS": "sos"}.get(T)
     if dk == "7b": return "wild"

@@ -202,6 +202,11 @@ class Api(unittest.TestCase):
             self.assertEqual(q("SELECT area_id, json_extract(extra,'$.shiny') FROM encounter WHERE form_id='612' AND version_id='black-2' AND method_id='static'"), [("nature-preserve", "always")])
             self.assertEqual(q("SELECT json_extract(extra,'$.access') FROM encounter WHERE form_id='494' AND version_id='black'"), [("event-item",)])   # Liberty Pass
             self.assertTrue(q("SELECT 1 FROM encounter_condition_link WHERE condition_id='swarm-yes'"))
+        if "xy" in games:   # lot 5: generation 6
+            self.assertTrue(q("SELECT 1 FROM encounter WHERE form_id='557' AND version_id='x' AND area_id='ambrette-town' AND method_id='rock-smash'"))
+            self.assertTrue(q("SELECT 1 FROM encounter WHERE version_id='omega-ruby' AND method_id='dexnav'"))
+            self.assertTrue([d for (d,) in q("SELECT detail FROM availability WHERE form_id='252' AND version_id='x' AND status='transfer'") if d.startswith("poke-bank:")])
+            self.assertEqual(q("SELECT odds FROM shiny_rule WHERE game_id='xy' AND method='base'"), [("1/4096",)])
         self.assertEqual(q("SELECT odds FROM shiny_rule WHERE game_id='gs' AND method='base'"), [("1/8192",)])
         # place names follow game_language for the games covered
         self.assertEqual(q("""SELECT COUNT(*) FROM location_game lg JOIN game_language gl ON gl.game_id=lg.game_id
