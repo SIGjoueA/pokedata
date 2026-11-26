@@ -1035,3 +1035,18 @@ id,source_id,locator,revision,retrieved_at,content_sha256
 1034,pkhex,PKHeX.Core 26.10.18 · Encounters8b (encounters_8b.json),PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,03fd2ce10e7cadebf50a2cdec9b16a1aed47f608805dd1a9a6e8b19878749a16
 1035,pkhex,PKHeX.Core 26.10.18 · Encounters9 (encounters_9.json),PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,c785016deb52a319f94771c2ea26a79aacb94c315f3b637a470d1315e599f78b
 1036,pkhex,PKHeX.Core 26.10.18 · Encounters9a (encounters_9a.json),PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,65f5c018b9aef2c67295a6a4836f3937c52698036c4e0b41dca10565907b0578
+1037,pokeapi,data/v2/csv/pokemon_form_generations.csv@de6760be38b6,de6760be38b60a3024f1d9054330ff265f0dc619,2026-11-25T19:57:08Z,486b44803896ba1f2c5f132901ff1f75e166658cb38c62de27f0bb95efab007b
+1038,showdown,data/mods/gen4/formats-data.ts (mod gen4)@c7fa6f16503d,c7fa6f16503de510c319239b5b2d29d4f7abd8c4,2026-11-25T19:57:08Z,e15a234e996dc818a571ed13770b68c99e2b8710cf46a3592f95065fd89a04b7
+1039,showdown,data/mods/gen4pt/formats-data.ts (mod gen4pt)@c7fa6f16503d,c7fa6f16503de510c319239b5b2d29d4f7abd8c4,2026-11-25T19:57:08Z,538a7ca37297ae454f78719a2472acc2c181fc685da17d760eba2bc6e3083d6d
+1040,showdown,data/mods/gen5bw1/formats-data.ts (mod gen5bw1)@c7fa6f16503d,c7fa6f16503de510c319239b5b2d29d4f7abd8c4,2026-11-25T19:57:08Z,07f7dc3aa15bb6ecbeb0de93e0074953783d9090f146cfb5ef65a909b02a8ec0
+1041,showdown,data/mods/gen5/formats-data.ts (mod gen5)@c7fa6f16503d,c7fa6f16503de510c319239b5b2d29d4f7abd8c4,2026-11-25T19:57:08Z,3d565f603d95735f464bfebdf83b18f772fb5e6070b6abdeaf295bbbb3d330bc
+1042,showdown,data/mods/gen6xy/formats-data.ts (mod gen6xy)@c7fa6f16503d,c7fa6f16503de510c319239b5b2d29d4f7abd8c4,2026-11-25T19:57:08Z,5ea2e70496c49b8c2f85c3f162c69e56305b92c5e3b42f781318c11dd4a374c4
+1043,showdown,data/mods/gen6/formats-data.ts (mod gen6)@c7fa6f16503d,c7fa6f16503de510c319239b5b2d29d4f7abd8c4,2026-11-25T19:57:08Z,8b4f2bed68fd6ae4de3d819020b785707dd73fbc0924f84ec980fd5280a00ba4
+1044,showdown,data/mods/gen7sm/formats-data.ts (mod gen7sm)@c7fa6f16503d,c7fa6f16503de510c319239b5b2d29d4f7abd8c4,2026-11-25T19:57:08Z,f0fb93a3ed66280b09c35b0cf071e0ddb598a5906b24ac7c994654da9d90120a
+1045,showdown,data/mods/gen7/formats-data.ts (mod gen7)@c7fa6f16503d,c7fa6f16503de510c319239b5b2d29d4f7abd8c4,2026-11-25T19:57:08Z,df62913eb6568ed6ac1e244bef3cf515aeef3c2dacf5e56cadb4df63bf6d83c9
+1046,showdown,data/mods/gen7letsgo/formats-data.ts (mod gen7letsgo)@c7fa6f16503d,c7fa6f16503de510c319239b5b2d29d4f7abd8c4,2026-11-25T19:57:08Z,8ff393488117dc23f0331767012a85b4e026ac09a212abf5138eea524dd1d2fa
+1047,showdown,data/mods/gen8/formats-data.ts (mod gen8)@c7fa6f16503d,c7fa6f16503de510c319239b5b2d29d4f7abd8c4,2026-11-25T19:57:08Z,fc25ea3c53b76548007679ef0c00af06f6cb06c8a1eecbda727b570b25356acb
+1048,showdown,data/mods/gen8bdsp/formats-data.ts (mod gen8bdsp)@c7fa6f16503d,c7fa6f16503de510c319239b5b2d29d4f7abd8c4,2026-11-25T19:57:08Z,fe8efd71c50851983e47992e746b09302575d29b3f9075b8afeaa0e4b876dc85
+1049,showdown,data/mods/gen8legends/formats-data.ts (mod gen8legends)@c7fa6f16503d,c7fa6f16503de510c319239b5b2d29d4f7abd8c4,2026-11-25T19:57:08Z,544ecc302522751b271beaaf1fa3f008dd3d841616379fa1408890e21ff005f2
+1050,showdown,data/formats-data.ts (mod gen9)@c7fa6f16503d,c7fa6f16503de510c319239b5b2d29d4f7abd8c4,2026-11-25T19:57:08Z,6e86cc5ebe933039688f9605ae1462f7934b6dc0776dc371e33dfadd7c8660fa
+1051,showdown,data/mods/gen9legends/formats-data.ts (mod gen9legends)@c7fa6f16503d,c7fa6f16503de510c319239b5b2d29d4f7abd8c4,2026-11-25T19:57:08Z,08683141799b98865b5e86c594461110ebf4ee73831b31c43b40c8ec8cf431fb

@@ -106,7 +106,11 @@ class Build(unittest.TestCase):
         strip = lambda rows: [(t, n, " ".join(l.split("--")[0] for l in (q or "").splitlines()).replace(f'"{n}"', n).split()) for t, n, q in rows]
         self.assertEqual(strip(struct([mig[0].read_text("utf-8")] + [p.read_text("utf-8") for p in mig[1:]])),
                          strip(struct([(ROOT / "db" / "schema.sql").read_text("utf-8")])))
-        self.assertEqual(self.one("SELECT value FROM meta WHERE key='schema_version'"), "1.2.0")
+        self.assertEqual(self.one("SELECT value FROM meta WHERE key='schema_version'"), "1.3.0")
+        d = sqlite3.connect(":memory:")   # 0004 only widens the CHECK: a form-change row is accepted after the migrations
+        for p in mig: d.executescript(p.read_text("utf-8"))
+        d.execute("PRAGMA foreign_keys = OFF")
+        d.execute("INSERT INTO availability (form_id, version_id, status) VALUES ('x', 'y', 'form-change')")
 
 
 class Api(unittest.TestCase):
@@ -219,6 +223,13 @@ class Api(unittest.TestCase):
             self.assertTrue(q("SELECT 1 FROM shiny_lock WHERE form_id='888' AND game_id='sw'"))
             self.assertFalse(q("SELECT 1 FROM availability a JOIN version v ON v.id=a.version_id WHERE v.game_id='la' AND status='breed'"))
             self.assertTrue(q("SELECT 1 FROM encounter e JOIN version v ON v.id=e.version_id WHERE v.game_id='bdsp' AND e.area_id='mt-coronet'"))
+        # schema 1.3.0: forms reached by a change of form
+        fc = dict(q("SELECT detail, COUNT(*) FROM availability WHERE status='form-change' GROUP BY detail"))
+        for k in ("gender", "mega", "battle", "item-or-action"): self.assertTrue(fc.get(k), k)
+        self.assertIn(("form-change", "mega"), q("SELECT status, detail FROM availability WHERE form_id='6-mega-x' AND version_id='x'"))
+        self.assertIn(("form-change", "item-or-action"), q("SELECT status, detail FROM availability WHERE form_id='479-wash' AND version_id='platinum'"))
+        self.assertFalse(q("SELECT 1 FROM availability WHERE status='form-change' AND form_id LIKE '%-totem%'"))
+        self.assertFalse(q("SELECT 1 FROM availability WHERE status='form-change' AND form_id='6-mega-x' AND version_id='scarlet'"))
         if "sv" in games:   # lot 8: generation 9 + DLC, Legends: Z-A + Mega Dimension
             self.assertTrue(q("SELECT 1 FROM encounter e JOIN version v ON v.id=e.version_id WHERE v.game_id='svmask'"))
             self.assertFalse(q("SELECT 1 FROM encounter e JOIN version v ON v.id=e.version_id WHERE v.game_id='sv' AND e.form_id='144'"))   # Snacksworth (The Indigo Disk)

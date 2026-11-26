@@ -90,3 +90,4 @@ update_id,table_name,row_key,column_name,action,old_value,new_value,document_ids
 12,shiny_lock,*,*,verify,,73,
 12,shiny_rule,*,*,verify,,2,
 12,translation,*,*,verify,,3370,
+13,availability,*,*,verify,,2452,

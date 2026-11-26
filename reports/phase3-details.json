@@ -31,7 +31,7 @@
 "locations": 843,
 "encounters": 68105,
 "encounter_sets": 8292,
-"availability": 52115,
+"availability": 54561,
 "shiny_rules": 23,
 "shiny_locks": 156,
 "gen1_tables_placed": 42,
@@ -1994,6 +1994,7 @@
 "b2w2:breed": 441,
 "b2w2:event": 506,
 "b2w2:evolve": 462,
+"b2w2:form-change": 44,
 "b2w2:gift": 36,
 "b2w2:npc-trade": 46,
 "b2w2:trade-version-exclusive": 281,
@@ -2002,6 +2003,7 @@
 "bdsp:breed": 394,
 "bdsp:event": 12,
 "bdsp:evolve": 464,
+"bdsp:form-change": 44,
 "bdsp:gift": 30,
 "bdsp:npc-trade": 8,
 "bdsp:trade-version-exclusive": 70,
@@ -2010,6 +2012,7 @@
 "bw:breed": 389,
 "bw:event": 586,
 "bw:evolve": 409,
+"bw:form-change": 38,
 "bw:gift": 34,
 "bw:npc-trade": 10,
 "bw:trade-version-exclusive": 386,
@@ -2026,6 +2029,7 @@
 "dp:breed": 386,
 "dp:event": 111,
 "dp:evolve": 438,
+"dp:form-change": 4,
 "dp:gift": 26,
 "dp:npc-trade": 8,
 "dp:trade-version-exclusive": 152,
@@ -2045,7 +2049,6 @@
 "frlg:gift": 34,
 "frlg:npc-trade": 18,
 "frlg:trade-version-exclusive": 387,
-"frlg:unobtainable": 2,
 "frlg:wild": 280,
 "gs:breed": 212,
 "gs:event": 178,
@@ -2058,6 +2061,7 @@
 "hgss:breed": 394,
 "hgss:event": 98,
 "hgss:evolve": 463,
+"hgss:form-change": 16,
 "hgss:gift": 276,
 "hgss:npc-trade": 24,
 "hgss:trade-version-exclusive": 113,
@@ -2065,12 +2069,13 @@
 "hgss:wild": 520,
 "la:event": 9,
 "la:evolve": 138,
+"la:form-change": 22,
 "la:gift": 7,
 "la:transfer": 9,
-"la:unobtainable": 4,
 "la:wild": 276,
 "lgpe:event": 18,
 "lgpe:evolve": 144,
+"lgpe:form-change": 30,
 "lgpe:gift": 26,
 "lgpe:npc-trade": 16,
 "lgpe:trade-version-exclusive": 32,
@@ -2078,6 +2083,7 @@
 "oras:breed": 410,
 "oras:event": 245,
 "oras:evolve": 480,
+"oras:form-change": 170,
 "oras:gift": 72,
 "oras:npc-trade": 6,
 "oras:trade-version-exclusive": 658,
@@ -2086,6 +2092,7 @@
 "pt:breed": 197,
 "pt:event": 46,
 "pt:evolve": 221,
+"pt:form-change": 8,
 "pt:gift": 14,
 "pt:npc-trade": 4,
 "pt:trade-version-exclusive": 64,
@@ -2109,6 +2116,7 @@
 "sm:breed": 364,
 "sm:event": 164,
 "sm:evolve": 422,
+"sm:form-change": 178,
 "sm:gift": 46,
 "sm:npc-trade": 14,
 "sm:trade-version-exclusive": 640,
@@ -2117,6 +2125,7 @@
 "sv:breed": 476,
 "sv:event": 274,
 "sv:evolve": 552,
+"sv:form-change": 200,
 "sv:gift": 18,
 "sv:npc-trade": 66,
 "sv:trade-version-exclusive": 2,
@@ -2125,6 +2134,7 @@
 "svdisk:breed": 720,
 "svdisk:event": 274,
 "svdisk:evolve": 852,
+"svdisk:form-change": 200,
 "svdisk:gift": 22,
 "svdisk:npc-trade": 66,
 "svdisk:trade-version-exclusive": 6,
@@ -2133,6 +2143,7 @@
 "svmask:breed": 564,
 "svmask:event": 274,
 "svmask:evolve": 654,
+"svmask:form-change": 200,
 "svmask:gift": 22,
 "svmask:npc-trade": 66,
 "svmask:trade-version-exclusive": 2,
@@ -2141,6 +2152,7 @@
 "sw:breed": 380,
 "sw:event": 665,
 "sw:evolve": 426,
+"sw:form-change": 250,
 "sw:gift": 24,
 "sw:npc-trade": 32,
 "sw:trade-version-exclusive": 66,
@@ -2149,6 +2161,7 @@
 "swcrown:breed": 559,
 "swcrown:event": 665,
 "swcrown:evolve": 642,
+"swcrown:form-change": 250,
 "swcrown:gift": 58,
 "swcrown:npc-trade": 32,
 "swcrown:trade-version-exclusive": 77,
@@ -2157,6 +2170,7 @@
 "swisle:breed": 496,
 "swisle:event": 665,
 "swisle:evolve": 564,
+"swisle:form-change": 250,
 "swisle:gift": 54,
 "swisle:npc-trade": 32,
 "swisle:trade-version-exclusive": 72,
@@ -2165,6 +2179,7 @@
 "usum:breed": 546,
 "usum:event": 132,
 "usum:evolve": 618,
+"usum:form-change": 184,
 "usum:gift": 62,
 "usum:npc-trade": 14,
 "usum:trade-version-exclusive": 220,
@@ -2173,6 +2188,7 @@
 "xy:breed": 603,
 "xy:event": 218,
 "xy:evolve": 704,
+"xy:form-change": 128,
 "xy:gift": 38,
 "xy:npc-trade": 18,
 "xy:trade-version-exclusive": 327,
@@ -2187,12 +2203,14 @@
 "y:wild": 91,
 "za:event": 9,
 "za:evolve": 150,
+"za:form-change": 118,
 "za:gift": 21,
 "za:npc-trade": 5,
 "za:transfer": 196,
 "za:wild": 217,
 "zadlc:event": 9,
 "zadlc:evolve": 204,
+"zadlc:form-change": 118,
 "zadlc:gift": 21,
 "zadlc:npc-trade": 5,
 "zadlc:transfer": 58,
@@ -2907,44 +2925,214 @@
 "wild-zone-8",
 "wild-zone-9"
 ],
-"form_change_omitted": {
-"b2w2:battle-only": 10,
-"b2w2:form-change": 38,
-"bdsp:battle-only": 8,
-"bdsp:form-change": 36,
-"bw:battle-only": 10,
-"bw:form-change": 32,
-"dp:form-change": 8,
-"hgss:form-change": 20,
-"la:battle-only": 1,
-"la:form-change": 22,
-"lgpe:battle-only": 30,
-"lgpe:form-change": 4,
-"oras:battle-only": 114,
-"oras:form-change": 62,
-"pt:form-change": 10,
-"sm:battle-only": 124,
-"sm:form-change": 68,
-"sv:battle-only": 30,
-"sv:form-change": 190,
-"svdisk:battle-only": 30,
-"svdisk:form-change": 190,
-"svmask:battle-only": 30,
-"svmask:form-change": 190,
-"sw:battle-only": 96,
-"sw:form-change": 168,
-"swcrown:battle-only": 96,
-"swcrown:form-change": 168,
-"swisle:battle-only": 96,
-"swisle:form-change": 168,
-"usum:battle-only": 126,
-"usum:form-change": 74,
-"xy:battle-only": 74,
-"xy:form-change": 60,
-"za:battle-only": 104,
-"za:form-change": 16,
-"zadlc:battle-only": 104,
-"zadlc:form-change": 16
+"form_change_left": {
+"b2w2:fixed-at-capture": 4,
+"bw:fixed-at-capture": 4,
+"dp:fixed-at-capture": 4,
+"frlg:deoxys-form-by-game": 2,
+"hgss:fixed-at-capture": 4,
+"la:totem": 5,
+"lgpe:totem": 4,
+"oras:fixed-at-capture": 6,
+"pt:fixed-at-capture": 2,
+"sm:fixed-at-capture": 12,
+"sm:totem": 2,
+"sv:fixed-at-capture": 18,
+"sv:sources:showdown=None,pokeapi=False": 2,
+"svdisk:fixed-at-capture": 18,
+"svdisk:sources:showdown=None,pokeapi=False": 2,
+"svmask:fixed-at-capture": 18,
+"svmask:sources:showdown=None,pokeapi=False": 2,
+"sw:fixed-at-capture": 2,
+"sw:no-gigantamax-encounter": 12,
+"swcrown:fixed-at-capture": 2,
+"swcrown:no-gigantamax-encounter": 12,
+"swisle:fixed-at-capture": 2,
+"swisle:no-gigantamax-encounter": 12,
+"usum:fixed-at-capture": 14,
+"usum:totem": 2,
+"xy:fixed-at-capture": 6,
+"za:fixed-at-capture": 1,
+"za:sources:showdown=None,pokeapi=False": 1,
+"zadlc:fixed-at-capture": 1,
+"zadlc:sources:showdown=None,pokeapi=False": 1
+},
+"form_change_rows": {
+"item-or-action": 1365,
+"battle": 287,
+"gender": 44,
+"mega": 572,
+"primal": 16,
+"gigantamax": 168
+},
+"form_change_status": {
+"unanimous": 1016,
+"majority": 1436
+},
+"form_change_left_forms": {
+"1007-gliding-build|fixed-at-capture": [
+"sv",
+"svdisk",
+"svmask"
+],
+"1007-limited-build|fixed-at-capture": [
+"sv",
+"svdisk",
+"svmask"
+],
+"1007-sprinting-build|fixed-at-capture": [
+"sv",
+"svdisk",
+"svmask"
+],
+"1007-swimming-build|fixed-at-capture": [
+"sv",
+"svdisk",
+"svmask"
+],
+"1008-aquatic-mode|fixed-at-capture": [
+"sv",
+"svdisk",
+"svmask"
+],
+"1008-drive-mode|fixed-at-capture": [
+"sv",
+"svdisk",
+"svmask"
+],
+"1008-glide-mode|fixed-at-capture": [
+"sv",
+"svdisk",
+"svmask"
+],
+"1008-low-power-mode|fixed-at-capture": [
+"sv",
+"svdisk",
+"svmask"
+],
+"101-lord|totem": [
+"la"
+],
+"105-totem|totem": [
+"lgpe"
+],
+"20-totem-alola|totem": [
+"lgpe"
+],
+"386-attack|deoxys-form-by-game": [
+"frlg"
+],
+"386-defense|deoxys-form-by-game": [
+"frlg"
+],
+"413-sandy|fixed-at-capture": [
+"b2w2",
+"bw",
+"dp",
+"hgss",
+"oras",
+"pt",
+"sm",
+"usum",
+"xy"
+],
+"413-trash|fixed-at-capture": [
+"b2w2",
+"bw",
+"dp",
+"hgss",
+"oras",
+"pt",
+"sm",
+"usum",
+"xy"
+],
+"414-sandy|fixed-at-capture": [
+"sm",
+"usum"
+],
+"414-trash|fixed-at-capture": [
+"sm",
+"usum"
+],
+"549-lady|totem": [
+"la"
+],
+"59-lord|totem": [
+"la"
+],
+"668-female|sources:showdown=None,pokeapi=False": [
+"sv",
+"svdisk",
+"svmask",
+"za",
+"zadlc"
+],
+"670-eternal|fixed-at-capture": [
+"oras",
+"sm",
+"usum",
+"xy"
+],
+"713-lord|totem": [
+"la"
+],
+"745-dusk|fixed-at-capture": [
+"usum"
+],
+"778-totem-busted|totem": [
+"sm",
+"usum"
+],
+"801-original|fixed-at-capture": [
+"sm",
+"usum"
+],
+"809-gmax|no-gigantamax-encounter": [
+"sw",
+"swcrown",
+"swisle"
+],
+"812-gmax|no-gigantamax-encounter": [
+"sw",
+"swcrown",
+"swisle"
+],
+"815-gmax|no-gigantamax-encounter": [
+"sw",
+"swcrown",
+"swisle"
+],
+"818-gmax|no-gigantamax-encounter": [
+"sw",
+"swcrown",
+"swisle"
+],
+"890-eternamax|fixed-at-capture": [
+"sw",
+"swcrown",
+"swisle"
+],
+"892-rapid-strike-gmax|no-gigantamax-encounter": [
+"sw",
+"swcrown",
+"swisle"
+],
+"892-single-strike-gmax|no-gigantamax-encounter": [
+"sw",
+"swcrown",
+"swisle"
+],
+"900-lord|totem": [
+"la"
+],
+"999-roaming|fixed-at-capture": [
+"sv",
+"svdisk",
+"svmask",
+"za",
+"zadlc"
+]
 },
 "form_skips": {}
 }

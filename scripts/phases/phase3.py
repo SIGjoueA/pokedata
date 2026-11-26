@@ -686,6 +686,7 @@ _fh = out["form"][0]
 FORM_INFO = {r[0]: (str(r[_fh.index("is_default")]), str(r[_fh.index("is_battle_only")]), r[_fh.index("base_form_id")] or None) for r in out["form"][1]}
 DEFAULT_FORM = {int(r[_fh.index("species_id")]): r[0] for r in out["form"][1] if str(r[_fh.index("is_default")]) == "1"}
 p3_formchange = collections.Counter()
+FC_CAND = []   # (game, version, form, in_regional_dex): non-default forms with no other way to get them
 TRANSFERS = collections.defaultdict(dict)
 order = sorted(P3_GAMES, key=lambda g: (P3_GEN[g], GAME_ORDER.get(g, 0)))
 for g in order:
@@ -718,9 +719,9 @@ for g in order:
             if stats == {"unobtainable"} and f in FORM_INFO and FORM_INFO[f][0] == "0":
                 # forms reached by a change of form (battle-only forms, Rotom's appliances, Burmy's cloaks…): the schema has
                 # no status for them → no row (counted, reported)
-                base_ = FORM_INFO[f][2] or DEFAULT_FORM.get(sp_of[f])
-                if FORM_INFO[f][1] == "1": p3_formchange[(g, "battle-only")] += 1; continue
-                if base_ and FINAL.get((g, v, base_), set()) - {"unobtainable"}: p3_formchange[(g, "form-change")] += 1; continue
+                dexes_ = set().union(*(dex_of_game[x] for x in DLC_CHAIN.get(g, [g])))
+                FC_CAND.append((g, v, f, 1 if any(sp_of[f] in in_dex[d_] for d_ in dexes_) else 0))
+                continue
             dexes = set().union(*(dex_of_game[x] for x in DLC_CHAIN.get(g, [g])))
             dex = 1 if any(sp_of[f] in in_dex[d_] for d_ in dexes) else 0
             for status in sorted(stats):
@@ -739,6 +740,145 @@ for g in order:
                                   canon({"status": status, "detail": detail}), 1))
                 verifs.append(("availability", rk, "*", "game-data", sha256_text(val), sha256_text(f"pkhex:{val}")))
                 p3_avail[(g, status)] += 1
+
+# ----------------------------------------------------------------------------- form changes (schema 1.3.0, migration 0004)
+# A non-default form that no encounter, gift, trade, evolution, breeding, transfer or event gives, in a game whose data
+# has the form, reached by changing a form that is obtainable in that version: status 'form-change', detail = kind of
+# change (gender, mega, primal, gigantamax, battle, item-or-action). Sources: PKHeX (form in the game's data + base form
+# obtainable; Gigantamax: an encounter with the Gigantamax factor), Showdown (form legal in the game's mod, formats-data
+# isNonstandard), PokeAPI (pokemon_form_generations lists the game's generation). Published when PKHeX and at least one
+# other source agree (2 of 3); a source without the form at all gives no vote.
+FC_ITEM_SPECIES = {386, 412, 479, 483, 484, 487, 492, 493, 585, 586, 641, 642, 645, 646, 647, 649, 676, 720, 741, 773,
+                   800, 869, 898, 905, 1017}
+FC_SEASON_GAMES = {"bw", "b2w2"}   # Deerling / Sawsbuck change with the season only in Black/White 1–2
+FC_COSPLAY = {"25-belle", "25-libre", "25-phd", "25-pop-star", "25-rock-star"}   # Cosplay Pikachu's outfits (ORAS)
+FC_BASE = {"658-ash": "658-battle-bond", "678-female-mega": "678-female", **{c: "25-cosplay" for c in FC_COSPLAY}}
+_fcat = {r[0]: r[_fh.index("category")] for r in out["form"][1]}
+_fpk = {r[0]: r[_fh.index("pokeapi_form_id")] for r in out["form"][1]}
+def fc_kind(f, g):
+    """(kind, base form) when the form is reached by changing another form in game g, else (None, reason)."""
+    cat = _fcat.get(f); sp = sp_of[f]
+    base = FC_BASE.get(f) or FORM_INFO[f][2] or DEFAULT_FORM.get(sp)
+    if cat == "gender": return "gender", DEFAULT_FORM.get(sp)
+    if cat in ("mega", "primal", "gigantamax"): return cat, base
+    if cat == "totem": return None, "totem"
+    if cat == "battle-only": return "battle", base
+    if f in FC_COSPLAY: return ("item-or-action", base) if g == "oras" else (None, "cosplay-outside-oras")
+    if sp in FC_ITEM_SPECIES:
+        if sp in (585, 586) and g not in FC_SEASON_GAMES: return None, "season-fixed"
+        if sp == 386 and P3_GEN[g] == 3: return None, "deoxys-form-by-game"
+        return "item-or-action", base
+    return None, "fixed-at-capture"
+# Gigantamax factor: PKHeX encounters that can Gigantamax (raids, gifts, Dynamax Adventures), by version (DLC by place)
+GMAX_OK = set()
+for x in json.load(open(DUMP / "encounters_8.json", encoding="utf-8")):
+    if not x.get("CanGigantamax"): continue
+    loc_ = 244 if x.get("_type") == "EncounterStatic8U" else x.get("Location")
+    for v0 in {"SW": ["sword"], "SH": ["shield"]}.get(x.get("Version"), ["sword", "shield"]):
+        d_ = dlc_of("sw", loc_) if loc_ is not None else None
+        vv = DLCV.get((d_, v0)) if d_ else v0
+        if vv: GMAX_OK.add((x["Species"], vv))
+# Showdown: formats-data of the game's mod (with the mods' inheritance)
+_SD_FMT = {}
+_SDJ = json.load(open(CACHE / "showdown-species.json", encoding="utf-8"))   # (`sd` is reused by later code)
+# our form suffix → Showdown forme (when the names differ; "" = Showdown's base entry)
+FC_SD_SUF = {"female-mega": "F-Mega", "male-mega": "M-Mega", "cornerstone-mask": "Cornerstone", "hearthflame-mask": "Hearthflame",
+             "wellspring-mask": "Wellspring", "dawn": "Dawn-Wings", "dusk": "Dusk-Mane", "active": "", "amped-gmax": "Gmax",
+             "vanilla-cream": ""}
+SD_ILLEGAL = {"Past", "Future", "Unobtainable", "CAP", "Custom", "LGPE"}
+def sd_formats(mod):
+    if mod in _SD_FMT: return _SD_FMT[mod]
+    base_dir = CACHE / "showdown/data"
+    parent = None
+    if mod != "gen9":
+        sc = base_dir / f"mods/{mod}/scripts.ts"
+        m_ = re.search(r"inherit:\s*['\"](\w+)['\"]", sc.read_text("utf-8")) if sc.exists() else None
+        parent = m_.group(1) if m_ else "gen9"
+    res = dict(sd_formats(parent)) if parent else {}
+    p_ = base_dir / ("formats-data.ts" if mod == "gen9" else f"mods/{mod}/formats-data.ts")
+    if p_.exists():
+        for m_ in re.finditer(r"^\t(\w+): \{(.*?)^\t\},?", p_.read_text("utf-8"), re.S | re.M):
+            body = m_.group(2); ns = re.search(r'isNonstandard:\s*(?:"(\w+)"|null)', body)
+            if ns: res[m_.group(1)] = ns.group(1)
+            elif "inherit: true" not in body or m_.group(1) not in res: res[m_.group(1)] = None
+    _SD_FMT[mod] = res
+    return res
+def sd_vote(f, g):
+    """True / False: Showdown has the form legal / not legal in the game; None: Showdown does not have the form."""
+    gb = MOD_BASE.get(g, g); mod = _SDJ["mods"].get(gb)
+    if not mod: return None
+    fmt = sd_formats(mod); sp = sp_of[f]; suf = f.partition("-")[2]
+    if sp == 869: suf = re.sub(r"-[a-z]+-sweet$", "", suf)   # Showdown has the creams, not the sweets
+    suf = FC_SD_SUF.get(suf, suf)
+    sid = sd_index.get(gb, {}).get((sp, sdid(SD_SUFFIX.get(suf, suf) if suf not in FC_SD_SUF.values() else suf)))
+    if sid and sid in fmt: return fmt[sid] not in SD_ILLEGAL
+    base_id = sd_index.get(gb, {}).get((sp, ""))
+    be = _SDJ["games"].get(gb, {}).get(base_id) if base_id else None
+    if be and be.get("formeOrder") and suf and any(sdid(n) == sdid(be["name"] + suf) for n in be["formeOrder"]):
+        return fmt.get(base_id) not in SD_ILLEGAL   # cosmetic forme of the species
+    return None
+_pk_fgen = collections.defaultdict(set)
+for r in pcsv("pokemon_form_generations"): _pk_fgen[r["pokemon_form_id"]].add(int(r["generation_id"]))
+def pk_vote(f, g):
+    gens = _pk_fgen.get(str(_fpk.get(f) or ""))
+    if not gens: return None
+    return P3_GEN[g] in gens
+_FG_DOC = {}
+for t_, rk_, col_, d_, obs_, ag_ in citations:
+    if t_ == "form_game" and col_ == "*" and rk_ not in _FG_DOC: _FG_DOC[rk_] = d_
+d_pkfgen = pkdoc("pokemon_form_generations")
+FC_AV = {(v, f) for (g, v, f), st in FINAL.items() if st - {"unobtainable"}}
+fc_done, fc_kinds, fc_votes = set(), collections.Counter(), {}
+fc_status = collections.Counter()
+FC_LEFT = collections.defaultdict(set)   # (form, reason) -> games
+_progress = True
+while _progress:   # a changed form can be the base of another (Ogerpon's masks → Terastal forms)
+    _progress = False
+    for g, v, f, dex in FC_CAND:
+        if (g, v, f) in fc_done: continue
+        kind, base = fc_kind(f, g)
+        if not kind or (v, base) not in FC_AV: continue
+        if kind == "gigantamax" and not any((sp_of[f], vv) in GMAX_OK for vv in chain_versions(g, v) if vv): continue
+        if (f, g) not in fc_votes: fc_votes[(f, g)] = (sd_vote(f, g), pk_vote(f, g))
+        sdv, pkv = fc_votes[(f, g)]
+        agree = 1 + (sdv is True) + (pkv is True)
+        if agree < 2: continue
+        fc_done.add((g, v, f)); FC_AV.add((v, f)); _progress = True
+        rk = row_key(f, v, "form-change")
+        val = canon(["form-change", kind, dex])
+        pk_doc = _FG_DOC.get(row_key(f, g)) or d_pkxenc[DKEY[g]]
+        citations.append(("availability", rk, "*", pk_doc, canon({"form_in_game_data": True, "from": base, "kind": kind}), 1))
+        if kind == "gigantamax":
+            citations.append(("availability", rk, "*", d_pkxenc[DKEY["sw"]], canon({"can_gigantamax": True}), 1))
+        mod = _SDJ["mods"][MOD_BASE.get(g, g)]
+        if sdv is not None: citations.append(("availability", rk, "*", sdmdoc("formats-data", mod), canon({"legal": sdv}), 1 if sdv else 0))
+        if pkv is not None: citations.append(("availability", rk, "*", d_pkfgen, canon({"generation": P3_GEN[g], "listed": pkv}), 1 if pkv else 0))
+        st_ = "unanimous" if agree == 3 else "majority"
+        verifs.append(("availability", rk, "*", st_, sha256_text(val), sha256_text(f"pkhex:true|showdown:{sdv}|pokeapi:{pkv}")))
+        if sdv is False or pkv is False:
+            alt = [{"source": s_, "value": "absent", "document_id": dd} for s_, vv_, dd in
+                   (("showdown", sdv, sdmdoc("formats-data", mod)), ("pokeapi", pkv, d_pkfgen)) if vv_ is False]
+            discreps.append(("availability", rk, "*", val, "majority", canon(alt), None))
+        avail_rows.append([f, v, "form-change", kind, dex])
+        p3_avail[(g, "form-change")] += 1; fc_kinds[kind] += 1; fc_status[st_] += 1
+# forms left without availability (reported)
+for g, v, f, dex in FC_CAND:
+    if (g, v, f) in fc_done: continue
+    kind, base = fc_kind(f, g)
+    if not kind: reason = base
+    elif (v, base) not in FC_AV: reason = "base-unavailable"
+    elif kind == "gigantamax" and not any((sp_of[f], vv) in GMAX_OK for vv in chain_versions(g, v) if vv): reason = "no-gigantamax-encounter"
+    else:
+        sdv, pkv = fc_votes.get((f, g), (sd_vote(f, g), pk_vote(f, g)))
+        reason = f"sources:showdown={sdv},pokeapi={pkv}"
+        if sdv is False or pkv is False:
+            rk = row_key(f, v, "form-change")
+            alt = [{"source": s_, "value": "absent", "document_id": dd} for s_, vv_, dd in
+                   (("showdown", sdv, sdmdoc("formats-data", _SDJ["mods"][MOD_BASE.get(g, g)])), ("pokeapi", pkv, d_pkfgen)) if vv_ is False]
+            if not any(d[1] == rk for d in discreps[-50:]):
+                discreps.append(("availability", rk, "*", canon(["form-change", kind, dex]), "open", canon(alt), "unpublished: PKHeX only"))
+    FC_LEFT[(f, reason)].add(g)
+    p3_formchange[(g, reason)] += 1
 
 # ----------------------------------------------------------------------------- Shiny rules and locks
 text_shiny, d_bshiny = bulba("Shiny Pokémon")
@@ -837,7 +977,9 @@ P3_STATS = dict(games=P3_GAMES, locations=len(location_rows), encounters=len(enc
                 modern_skipped=dict(p3_mod_skip), modern_locations={h: len({l for l, srcs in MLOC_SRC.items() if any(x[2] == h for x in srcs)})
                                                                     for h in ("pokeapi-index", "pokeapi-name", "pokeapi-slug", "created")},
                 shiny_lock_list=[f"{f}:{g}" for f, g, _ in lock_rows],
-                created_locations=sorted(MLOC_NEW), form_change_omitted={f"{g}:{k}": n for (g, k), n in sorted(p3_formchange.items())}, form_skips={f"{a}:{b}:{c}:{d}": n for (a, b, c, d), n in sorted(P3_FORMSKIP.items(), key=str)})
+                created_locations=sorted(MLOC_NEW), form_change_left={f"{g}:{k}": n for (g, k), n in sorted(p3_formchange.items())},
+                form_change_rows=dict(fc_kinds), form_change_status=dict(fc_status),
+                form_change_left_forms={f"{f}|{r}": sorted(gs) for (f, r), gs in sorted(FC_LEFT.items())}, form_skips={f"{a}:{b}:{c}:{d}": n for (a, b, c, d), n in sorted(P3_FORMSKIP.items(), key=str)})
 json.dump(P3_STATS, open(ROOT / "reports/phase3-details.json", "w"), ensure_ascii=False, indent=0)
 print("phase3", json.dumps({k: v for k, v in P3_STATS.items() if k not in ("agreement", "legacy_unmatched", "trades_unplaced", "statics_unplaced", "unconfirmed_templates", "created_locations", "form_skips")}, ensure_ascii=False))
 if os.environ.get("P3_DRY"):

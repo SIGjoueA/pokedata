@@ -447,12 +447,15 @@ CREATE TABLE encounter_condition_link (
 
 -- Comment obtenir une forme dans un jeu, au-delà des rencontres sauvages
 -- (Pokédex : sp.pln, trade.json, « Hors dex »). 'npc-trade' : échange avec un
--- personnage du jeu (schéma 1.2.0, migration 0003).
+-- personnage du jeu (schéma 1.2.0, migration 0003). 'form-change' : forme obtenue en
+-- changeant la forme d'un Pokémon obtenable dans la même version ; detail = type de
+-- changement : gender, mega, primal, gigantamax, battle, item-or-action (schéma 1.3.0,
+-- migration 0004).
 CREATE TABLE availability (
   form_id    TEXT NOT NULL REFERENCES form(id),
   version_id TEXT NOT NULL REFERENCES version(id),
   status     TEXT NOT NULL CHECK (status IN ('wild','evolve','breed','gift','npc-trade','trade-version-exclusive',
-                'transfer','event','unobtainable','storable-only')),
+                'transfer','event','unobtainable','storable-only','form-change')),
   detail     TEXT,                   -- clé de texte libre, traduite via translation (entity 'availability')
   in_regional_dex INTEGER CHECK (in_regional_dex IN (0,1)),
   PRIMARY KEY (form_id, version_id, status)
