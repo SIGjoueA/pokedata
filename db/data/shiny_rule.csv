@@ -1,4 +1,7 @@
 game_id,method,odds,conditions
+b2w2,base,1/8192,
+b2w2,shiny-charm,3/8192,"{""item"":""shiny-charm""}"
+bw,base,1/8192,
 c,base,1/8192,
 c,shiny-parent,1/64,"{""breeding_parent_shiny"":true}"
 dp,base,1/8192,

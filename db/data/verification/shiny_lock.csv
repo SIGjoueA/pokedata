@@ -1,0 +1,2 @@
+table_name,row_key,column_name,status,value_sha256,sources_fingerprint,verified_at,update_id
+shiny_lock,"[""494"",""bw""]",*,game-data,3f2b28bc3f8e80291a6e8b3d537db684aadd7a5a42511b9f787a3a4942107c49,604053ab85e2f47c34602824d5f513e817e79607b7565b5e24d14e1ee498b787,2026-11-26T07:03:02Z,8

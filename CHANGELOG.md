@@ -3,6 +3,13 @@
 Généré depuis `db/data/update_log.csv` par `scripts/changelog.py`. Le détail ligne à ligne est dans `update_log_item` (base SQLite) et `api/v1/meta/changelog.json`.
 
 
+## 2026.11.26.4 — Phase 3 (lot 4 : 5e génération — Noir/Blanc, Noir 2/Blanc 2)
+
+- Type : release · schéma 1.2.0 · 2026-11-26T07:03:02Z → 2026-11-26T07:03:02Z (UTC)
+- Import et vérification : 1025 espèces, 1588 formes, 17497 lignes forme×jeu, 589 évolutions, 7460 entrées de Pokédex régionaux, 920 capacités, 7817 lignes capacité×jeu, 2061 CT/CS/DT, 645613 lignes de movesets, 372 lieux, 18203 rencontres, 16045 lignes de disponibilité, 50165 traductions ; 2418 écarts notés ; 7972 données (re)vérifiées.
+- Statuts de vérification : disputed 87, game-data 192652, majority 188, manual 426, single-source 3, unanimous 46649
+- Lignes : species 1025, form 1588, form_game 17497, form_ability 31012, ability 307, evolution 589, evolution_method 7541, pokedex_entry 7460, item 44, move 920, move_game 7817, machine 2061, learnset 645613, location 372, encounter 18203, availability 16045, shiny_rule 13, translation 50165, discrepancy 2418
+
 ## 2026.11.26.3 — Phase 3 (lot 3 : 4e génération — Diamant/Perle, Platine, HeartGold/SoulSilver)
 
 - Type : release · schéma 1.2.0 · 2026-11-26T06:49:44Z → 2026-11-26T06:49:44Z (UTC)

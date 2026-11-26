@@ -622,3 +622,154 @@ id,table_name,row_key,column_name,document_id,observed_value,agrees
 514559,location,"[""wayward-cave""]",*,1016,"{""identifier"":""wayward-cave"",""region"":""sinnoh""}",1
 514560,location,"[""wayward-cave""]",*,1020,"{""met"":[[""hgss"",65,""Wayward Cave"",""pokeapi-index""]]}",1
 514561,location,"[""whirl-islands""]",*,1020,"{""en"":""Whirl Islands"",""gen2_index"":31,""met"":[[""hgss"",218,""Whirl Islands"",""pokeapi-index""]]}",1
+525102,location,"[""abundant-shrine""]",*,1016,"{""identifier"":""abundant-shrine"",""region"":""unova""}",1
+525103,location,"[""abundant-shrine""]",*,1020,"{""met"":[[""bw2"",70,""Abundant Shrine"",""pokeapi-index""]]}",1
+525104,location,"[""accumula-town""]",*,1016,"{""identifier"":""accumula-town"",""region"":""unova""}",1
+525105,location,"[""aspertia-city""]",*,1016,"{""identifier"":""aspertia-city"",""region"":""unova""}",1
+525106,location,"[""aspertia-city""]",*,1020,"{""met"":[[""bw2"",117,""Aspertia City"",""pokeapi-index""]]}",1
+525107,location,"[""castelia-city""]",*,1016,"{""identifier"":""castelia-city"",""region"":""unova""}",1
+525108,location,"[""castelia-city""]",*,1020,"{""met"":[[""bw2"",8,""Castelia City"",""pokeapi-index""]]}",1
+525109,location,"[""castelia-sewers""]",*,1016,"{""identifier"":""castelia-sewers"",""region"":""unova""}",1
+525110,location,"[""castelia-sewers""]",*,1020,"{""met"":[[""bw2"",129,""Castelia Sewers"",""pokeapi-index""]]}",1
+525111,location,"[""celestial-tower""]",*,1016,"{""identifier"":""celestial-tower"",""region"":""unova""}",1
+525112,location,"[""celestial-tower""]",*,1020,"{""met"":[[""bw2"",56,""Celestial Tower"",""pokeapi-index""]]}",1
+525113,location,"[""challengers-cave""]",*,1016,"{""identifier"":""challengers-cave"",""region"":""unova""}",1
+525114,location,"[""challengers-cave""]",*,1020,"{""met"":[[""bw2"",59,""Challenger's Cave"",""pokeapi-index""]]}",1
+525115,location,"[""chargestone-cave""]",*,1016,"{""identifier"":""chargestone-cave"",""region"":""unova""}",1
+525116,location,"[""chargestone-cave""]",*,1020,"{""met"":[[""bw2"",37,""Chargestone Cave"",""pokeapi-index""]]}",1
+525117,location,"[""clay-tunnel""]",*,1016,"{""identifier"":""clay-tunnel"",""region"":""unova""}",1
+525118,location,"[""clay-tunnel""]",*,1020,"{""met"":[[""bw2"",137,""Clay Tunnel"",""pokeapi-index""]]}",1
+525119,location,"[""cold-storage""]",*,1016,"{""identifier"":""cold-storage"",""region"":""unova""}",1
+525120,location,"[""cold-storage""]",*,1020,"{""met"":[[""bw2"",36,""Cold Storage/PWT"",""pokeapi-index""]]}",1
+525121,location,"[""desert-resort""]",*,1016,"{""identifier"":""desert-resort"",""region"":""unova""}",1
+525122,location,"[""desert-resort""]",*,1020,"{""met"":[[""bw2"",34,""Desert Resort"",""pokeapi-index""]]}",1
+525123,location,"[""dragonspiral-tower""]",*,1016,"{""identifier"":""dragonspiral-tower"",""region"":""unova""}",1
+525124,location,"[""dragonspiral-tower""]",*,1020,"{""met"":[[""bw2"",39,""Dragonspiral Tower"",""pokeapi-index""]]}",1
+525125,location,"[""dreamyard""]",*,1016,"{""identifier"":""dreamyard"",""region"":""unova""}",1
+525126,location,"[""dreamyard""]",*,1020,"{""met"":[[""bw2"",32,""Dreamyard"",""pokeapi-index""]]}",1
+525127,location,"[""driftveil-city""]",*,1016,"{""identifier"":""driftveil-city"",""region"":""unova""}",1
+525128,location,"[""driftveil-city""]",*,1020,"{""met"":[[""bw2"",10,""Driftveil City"",""pokeapi-index""]]}",1
+525129,location,"[""driftveil-drawbridge""]",*,1016,"{""identifier"":""driftveil-drawbridge"",""region"":""unova""}",1
+525130,location,"[""driftveil-drawbridge""]",*,1020,"{""met"":[[""bw2"",65,""Driftveil Drawbridge"",""pokeapi-index""]]}",1
+525131,location,"[""floccesy-ranch""]",*,1016,"{""identifier"":""floccesy-ranch"",""region"":""unova""}",1
+525132,location,"[""floccesy-ranch""]",*,1020,"{""met"":[[""bw2"",130,""Floccesy Ranch"",""pokeapi-index""]]}",1
+525133,location,"[""floccesy-town""]",*,1016,"{""identifier"":""floccesy-town"",""region"":""unova""}",1
+525134,location,"[""floccesy-town""]",*,1020,"{""met"":[[""bw2"",122,""Floccesy Town"",""pokeapi-index""]]}",1
+525135,location,"[""giant-chasm""]",*,1016,"{""identifier"":""giant-chasm"",""region"":""unova""}",1
+525136,location,"[""giant-chasm""]",*,1020,"{""met"":[[""bw2"",61,""Giant Chasm"",""pokeapi-index""]]}",1
+525137,location,"[""guidance-chamber""]",*,1016,"{""identifier"":""guidance-chamber"",""region"":""unova""}",1
+525138,location,"[""guidance-chamber""]",*,1020,"{""met"":[[""bw2"",74,""Guidance Chamber"",""pokeapi-index""]]}",1
+525139,location,"[""hidden-grotto""]",*,1016,"{""identifier"":""hidden-grotto"",""region"":""unova""}",1
+525140,location,"[""hidden-grotto""]",*,1020,"{""met"":[[""bw2"",143,""Hidden Grotto"",""pokeapi-index""]]}",1
+525141,location,"[""humilau-city""]",*,1016,"{""identifier"":""humilau-city"",""region"":""unova""}",1
+525142,location,"[""humilau-city""]",*,1020,"{""met"":[[""bw2"",119,""Humilau City"",""pokeapi-index""]]}",1
+525143,location,"[""iceberg-chamber""]",*,1020,"{""met"":[[""bw2"",151,""Iceberg Chamber"",""created""]]}",1
+525144,location,"[""icirrus-city""]",*,1016,"{""identifier"":""icirrus-city"",""region"":""unova""}",1
+525145,location,"[""icirrus-city""]",*,1020,"{""met"":[[""bw2"",12,""Icirrus City"",""pokeapi-index""]]}",1
+525146,location,"[""iron-chamber""]",*,1020,"{""met"":[[""bw2"",152,""Iron Chamber"",""created""]]}",1
+525147,location,"[""liberty-garden""]",*,1016,"{""identifier"":""liberty-garden"",""region"":""unova""}",1
+525148,location,"[""liberty-garden""]",*,1020,"{""met"":[[""bw2"",62,""Liberty Garden"",""pokeapi-index""]]}",1
+525149,location,"[""lostlorn-forest""]",*,1016,"{""identifier"":""lostlorn-forest"",""region"":""unova""}",1
+525150,location,"[""lostlorn-forest""]",*,1020,"{""met"":[[""bw2"",72,""Lostlorn Forest"",""pokeapi-index""]]}",1
+525151,location,"[""marvelous-bridge""]",*,1016,"{""identifier"":""marvelous-bridge"",""region"":""unova""}",1
+525152,location,"[""marvelous-bridge""]",*,1020,"{""met"":[[""bw2"",68,""Marvelous Bridge"",""pokeapi-index""]]}",1
+525153,location,"[""mistralton-cave""]",*,1016,"{""identifier"":""mistralton-cave"",""region"":""unova""}",1
+525154,location,"[""mistralton-cave""]",*,1020,"{""met"":[[""bw2"",54,""Mistralton Cave"",""pokeapi-index""]]}",1
+525155,location,"[""moor-of-icirrus""]",*,1016,"{""identifier"":""moor-of-icirrus"",""region"":""unova""}",1
+525156,location,"[""moor-of-icirrus""]",*,1020,"{""met"":[[""bw2"",57,""Moor of Icirrus"",""pokeapi-index""]]}",1
+525157,location,"[""nacrene-city""]",*,1016,"{""identifier"":""nacrene-city"",""region"":""unova""}",1
+525158,location,"[""nacrene-city""]",*,1020,"{""met"":[[""bw2"",7,""Nacrene City"",""pokeapi-index""]]}",1
+525159,location,"[""nature-preserve""]",*,1020,"{""met"":[[""bw2"",147,""Nature Preserve"",""created""]]}",1
+525160,location,"[""ns-castle""]",*,1016,"{""identifier"":""ns-castle"",""region"":""unova""}",1
+525161,location,"[""ns-castle""]",*,1020,"{""met"":[[""bw2"",45,""N's Castle"",""pokeapi-index""]]}",1
+525162,location,"[""nuvema-town""]",*,1016,"{""identifier"":""nuvema-town"",""region"":""unova""}",1
+525163,location,"[""nuvema-town""]",*,1020,"{""met"":[[""bw2"",4,""Nuvema Town"",""pokeapi-index""]]}",1
+525164,location,"[""p2-laboratory""]",*,1016,"{""identifier"":""p2-laboratory"",""region"":""unova""}",1
+525165,location,"[""p2-laboratory""]",*,1020,"{""met"":[[""bw2"",63,""P2 Laboratory"",""pokeapi-index""]]}",1
+525166,location,"[""pinwheel-forest""]",*,1016,"{""identifier"":""pinwheel-forest"",""region"":""unova""}",1
+525167,location,"[""pinwheel-forest""]",*,1020,"{""met"":[[""bw2"",33,""Pinwheel Forest"",""pokeapi-index""]]}",1
+525168,location,"[""relic-castle""]",*,1016,"{""identifier"":""relic-castle"",""region"":""unova""}",1
+525169,location,"[""relic-castle""]",*,1020,"{""met"":[[""bw2"",35,""Relic Castle"",""pokeapi-index""]]}",1
+525170,location,"[""relic-passage""]",*,1016,"{""identifier"":""relic-passage"",""region"":""unova""}",1
+525171,location,"[""relic-passage""]",*,1020,"{""met"":[[""bw2"",136,""Relic Passage"",""pokeapi-index""]]}",1
+525172,location,"[""reversal-mountain""]",*,1016,"{""identifier"":""reversal-mountain"",""region"":""unova""}",1
+525173,location,"[""reversal-mountain""]",*,1020,"{""met"":[[""bw2"",132,""Reversal Mountain"",""pokeapi-index""]]}",1
+525174,location,"[""rock-peak-chamber""]",*,1020,"{""met"":[[""bw2"",150,""Rock Peak Chamber"",""created""]]}",1
+525175,location,"[""rumination-field""]",*,1016,"{""identifier"":""rumination-field"",""region"":""unova""}",1
+525176,location,"[""rumination-field""]",*,1020,"{""met"":[[""bw2"",55,""Rumination Field"",""pokeapi-index""]]}",1
+525177,location,"[""seaside-cave""]",*,1016,"{""identifier"":""seaside-cave"",""region"":""unova""}",1
+525178,location,"[""seaside-cave""]",*,1020,"{""met"":[[""bw2"",141,""Seaside Cave"",""pokeapi-index""]]}",1
+525179,location,"[""strange-house""]",*,1016,"{""identifier"":""strange-house"",""region"":""unova""}",1
+525180,location,"[""strange-house""]",*,1020,"{""met"":[[""bw2"",133,""Strange House"",""pokeapi-index""]]}",1
+525181,location,"[""striaton-city""]",*,1016,"{""identifier"":""striaton-city"",""region"":""unova""}",1
+525182,location,"[""striaton-city""]",*,1020,"{""met"":[[""bw2"",6,""Striaton City"",""pokeapi-index""]]}",1
+525183,location,"[""trial-chamber""]",*,1016,"{""identifier"":""trial-chamber"",""region"":""unova""}",1
+525184,location,"[""trial-chamber""]",*,1020,"{""met"":[[""bw2"",73,""Trial Chamber"",""pokeapi-index""]]}",1
+525185,location,"[""twist-mountain""]",*,1016,"{""identifier"":""twist-mountain"",""region"":""unova""}",1
+525186,location,"[""twist-mountain""]",*,1020,"{""met"":[[""bw2"",38,""Twist Mountain"",""pokeapi-index""]]}",1
+525187,location,"[""undella-bay""]",*,1016,"{""identifier"":""undella-bay"",""region"":""unova""}",1
+525188,location,"[""undella-bay""]",*,1020,"{""met"":[[""bw2"",71,""Undella Bay"",""pokeapi-index""]]}",1
+525189,location,"[""undella-town""]",*,1016,"{""identifier"":""undella-town"",""region"":""unova""}",1
+525190,location,"[""undella-town""]",*,1020,"{""met"":[[""bw2"",42,""Undella Town"",""pokeapi-index""]]}",1
+525191,location,"[""underground-ruins""]",*,1016,"{""identifier"":""underground-ruins"",""region"":""unova""}",1
+525192,location,"[""underground-ruins""]",*,1020,"{""met"":[[""bw2"",149,""Underground Ruins"",""pokeapi-index""]]}",1
+525193,location,"[""unova-route-1""]",*,1016,"{""identifier"":""unova-route-1"",""region"":""unova""}",1
+525194,location,"[""unova-route-1""]",*,1020,"{""met"":[[""bw2"",14,""Route 1"",""pokeapi-index""]]}",1
+525195,location,"[""unova-route-10""]",*,1016,"{""identifier"":""unova-route-10"",""region"":""unova""}",1
+525196,location,"[""unova-route-10""]",*,1020,"{""met"":[[""bw2"",23,""Route 10"",""pokeapi-index""]]}",1
+525197,location,"[""unova-route-11""]",*,1016,"{""identifier"":""unova-route-11"",""region"":""unova""}",1
+525198,location,"[""unova-route-11""]",*,1020,"{""met"":[[""bw2"",24,""Route 11"",""pokeapi-index""]]}",1
+525199,location,"[""unova-route-12""]",*,1016,"{""identifier"":""unova-route-12"",""region"":""unova""}",1
+525200,location,"[""unova-route-12""]",*,1020,"{""met"":[[""bw2"",25,""Route 12"",""pokeapi-index""]]}",1
+525201,location,"[""unova-route-13""]",*,1016,"{""identifier"":""unova-route-13"",""region"":""unova""}",1
+525202,location,"[""unova-route-13""]",*,1020,"{""met"":[[""bw2"",26,""Route 13"",""pokeapi-index""]]}",1
+525203,location,"[""unova-route-14""]",*,1016,"{""identifier"":""unova-route-14"",""region"":""unova""}",1
+525204,location,"[""unova-route-14""]",*,1020,"{""met"":[[""bw2"",27,""Route 14"",""pokeapi-index""]]}",1
+525205,location,"[""unova-route-15""]",*,1016,"{""identifier"":""unova-route-15"",""region"":""unova""}",1
+525206,location,"[""unova-route-15""]",*,1020,"{""met"":[[""bw2"",28,""Route 15"",""pokeapi-index""]]}",1
+525207,location,"[""unova-route-16""]",*,1016,"{""identifier"":""unova-route-16"",""region"":""unova""}",1
+525208,location,"[""unova-route-16""]",*,1020,"{""met"":[[""bw2"",29,""Route 16"",""pokeapi-index""]]}",1
+525209,location,"[""unova-route-17""]",*,1016,"{""identifier"":""unova-route-17"",""region"":""unova""}",1
+525210,location,"[""unova-route-17""]",*,1020,"{""met"":[[""bw2"",30,""Route 17"",""pokeapi-index""]]}",1
+525211,location,"[""unova-route-18""]",*,1016,"{""identifier"":""unova-route-18"",""region"":""unova""}",1
+525212,location,"[""unova-route-18""]",*,1020,"{""met"":[[""bw2"",31,""Route 18"",""pokeapi-index""]]}",1
+525213,location,"[""unova-route-19""]",*,1016,"{""identifier"":""unova-route-19"",""region"":""unova""}",1
+525214,location,"[""unova-route-19""]",*,1020,"{""met"":[[""bw2"",124,""Route 19"",""pokeapi-index""]]}",1
+525215,location,"[""unova-route-2""]",*,1016,"{""identifier"":""unova-route-2"",""region"":""unova""}",1
+525216,location,"[""unova-route-2""]",*,1020,"{""met"":[[""bw2"",15,""Route 2"",""pokeapi-index""]]}",1
+525217,location,"[""unova-route-20""]",*,1016,"{""identifier"":""unova-route-20"",""region"":""unova""}",1
+525218,location,"[""unova-route-20""]",*,1020,"{""met"":[[""bw2"",125,""Route 20"",""pokeapi-index""]]}",1
+525219,location,"[""unova-route-21""]",*,1016,"{""identifier"":""unova-route-21"",""region"":""unova""}",1
+525220,location,"[""unova-route-21""]",*,1020,"{""met"":[[""bw2"",126,""Route 21"",""pokeapi-index""]]}",1
+525221,location,"[""unova-route-22""]",*,1016,"{""identifier"":""unova-route-22"",""region"":""unova""}",1
+525222,location,"[""unova-route-22""]",*,1020,"{""met"":[[""bw2"",127,""Route 22"",""pokeapi-index""]]}",1
+525223,location,"[""unova-route-23""]",*,1016,"{""identifier"":""unova-route-23"",""region"":""unova""}",1
+525224,location,"[""unova-route-23""]",*,1020,"{""met"":[[""bw2"",128,""Route 23"",""pokeapi-index""]]}",1
+525225,location,"[""unova-route-3""]",*,1016,"{""identifier"":""unova-route-3"",""region"":""unova""}",1
+525226,location,"[""unova-route-3""]",*,1020,"{""met"":[[""bw2"",16,""Route 3"",""pokeapi-index""]]}",1
+525227,location,"[""unova-route-4""]",*,1016,"{""identifier"":""unova-route-4"",""region"":""unova""}",1
+525228,location,"[""unova-route-4""]",*,1020,"{""met"":[[""bw2"",17,""Route 4"",""pokeapi-index""]]}",1
+525229,location,"[""unova-route-5""]",*,1016,"{""identifier"":""unova-route-5"",""region"":""unova""}",1
+525230,location,"[""unova-route-5""]",*,1020,"{""met"":[[""bw2"",18,""Route 5"",""pokeapi-index""]]}",1
+525231,location,"[""unova-route-6""]",*,1016,"{""identifier"":""unova-route-6"",""region"":""unova""}",1
+525232,location,"[""unova-route-6""]",*,1020,"{""met"":[[""bw2"",19,""Route 6"",""pokeapi-index""]]}",1
+525233,location,"[""unova-route-7""]",*,1016,"{""identifier"":""unova-route-7"",""region"":""unova""}",1
+525234,location,"[""unova-route-7""]",*,1020,"{""met"":[[""bw2"",20,""Route 7"",""pokeapi-index""]]}",1
+525235,location,"[""unova-route-8""]",*,1016,"{""identifier"":""unova-route-8"",""region"":""unova""}",1
+525236,location,"[""unova-route-8""]",*,1020,"{""met"":[[""bw2"",21,""Route 8"",""pokeapi-index""]]}",1
+525237,location,"[""unova-route-9""]",*,1016,"{""identifier"":""unova-route-9"",""region"":""unova""}",1
+525238,location,"[""unova-route-9""]",*,1020,"{""met"":[[""bw2"",22,""Route 9"",""pokeapi-index""]]}",1
+525239,location,"[""unova-victory-road""]",*,1016,"{""identifier"":""unova-victory-road"",""region"":""unova""}",1
+525240,location,"[""unova-victory-road""]",*,1020,"{""met"":[[""bw2"",40,""Victory Road (B/W)"",""pokeapi-index""]]}",1
+525241,location,"[""unova-victory-road-2""]",*,1016,"{""identifier"":""unova-victory-road-2"",""region"":""unova""}",1
+525242,location,"[""unova-victory-road-2""]",*,1020,"{""met"":[[""bw2"",134,""Victory Road (B2/W2)"",""pokeapi-index""]]}",1
+525243,location,"[""village-bridge""]",*,1016,"{""identifier"":""village-bridge"",""region"":""unova""}",1
+525244,location,"[""village-bridge""]",*,1020,"{""met"":[[""bw2"",67,""Village Bridge"",""pokeapi-index""]]}",1
+525245,location,"[""virbank-city""]",*,1016,"{""identifier"":""virbank-city"",""region"":""unova""}",1
+525246,location,"[""virbank-city""]",*,1020,"{""met"":[[""bw2"",118,""Virbank City"",""pokeapi-index""]]}",1
+525247,location,"[""virbank-complex""]",*,1016,"{""identifier"":""virbank-complex"",""region"":""unova""}",1
+525248,location,"[""virbank-complex""]",*,1020,"{""met"":[[""bw2"",131,""Virbank Complex"",""pokeapi-index""]]}",1
+525249,location,"[""wellspring-cave""]",*,1016,"{""identifier"":""wellspring-cave"",""region"":""unova""}",1
+525250,location,"[""wellspring-cave""]",*,1020,"{""met"":[[""bw2"",53,""Wellspring Cave"",""pokeapi-index""]]}",1
+525251,location,"[""white-forest""]",*,1016,"{""identifier"":""white-forest"",""region"":""unova""}",1
+525252,location,"[""white-forest""]",*,1020,"{""met"":[[""bw2"",51,""White Forest"",""pokeapi-index""]]}",1

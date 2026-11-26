@@ -9,14 +9,16 @@
 "frlg",
 "dp",
 "pt",
-"hgss"
+"hgss",
+"bw",
+"b2w2"
 ],
-"locations": 294,
-"encounters": 15084,
-"encounter_sets": 4257,
-"availability": 10333,
-"shiny_rules": 10,
-"shiny_locks": 0,
+"locations": 372,
+"encounters": 18203,
+"encounter_sets": 4839,
+"availability": 16045,
+"shiny_rules": 13,
+"shiny_locks": 1,
 "gen1_tables_placed": 42,
 "gen1_tables_ambiguous": {
 "104": []
@@ -974,7 +976,9 @@
 "blue-japan"
 ],
 "names": {
-"-:game-data": 1931,
+"-:game-data": 2470,
+"b2w2:game-data": 476,
+"bw:game-data": 371,
 "c:game-data": 492,
 "dp:game-data": 483,
 "e:game-data": 448,
@@ -985,6 +989,71 @@
 "rs:game-data": 390
 },
 "agreement": {
+"b2w2:gift": [
+14,
+14,
+14
+],
+"b2w2:hidden-grotto": [
+0,
+0,
+2
+],
+"b2w2:npc-trade": [
+10,
+10,
+10
+],
+"b2w2:static": [
+32,
+44,
+52
+],
+"b2w2:super-rod": [
+76,
+76,
+78
+],
+"b2w2:surf": [
+76,
+76,
+78
+],
+"b2w2:walk": [
+98,
+104,
+112
+],
+"bw:gift": [
+8,
+8,
+8
+],
+"bw:npc-trade": [
+10,
+10,
+10
+],
+"bw:static": [
+22,
+28,
+30
+],
+"bw:super-rod": [
+52,
+52,
+52
+],
+"bw:surf": [
+52,
+52,
+53
+],
+"bw:walk": [
+76,
+82,
+83
+],
 "c:bug-contest": [
 0,
 1,
@@ -1467,6 +1536,22 @@
 ]
 },
 "availability_by_status": {
+"b2w2:breed": 441,
+"b2w2:event": 506,
+"b2w2:evolve": 462,
+"b2w2:gift": 36,
+"b2w2:npc-trade": 46,
+"b2w2:trade-version-exclusive": 281,
+"b2w2:transfer": 419,
+"b2w2:wild": 626,
+"bw:breed": 389,
+"bw:event": 586,
+"bw:evolve": 409,
+"bw:gift": 34,
+"bw:npc-trade": 10,
+"bw:trade-version-exclusive": 386,
+"bw:transfer": 544,
+"bw:wild": 531,
 "c:breed": 108,
 "c:event": 19,
 "c:evolve": 110,
@@ -1508,11 +1593,11 @@
 "gs:transfer": 44,
 "gs:wild": 342,
 "hgss:breed": 394,
-"hgss:event": 92,
+"hgss:event": 98,
 "hgss:evolve": 463,
-"hgss:gift": 282,
+"hgss:gift": 276,
 "hgss:npc-trade": 24,
-"hgss:trade-version-exclusive": 107,
+"hgss:trade-version-exclusive": 113,
 "hgss:transfer": 99,
 "hgss:wild": 520,
 "pt:breed": 197,
@@ -1520,9 +1605,9 @@
 "pt:evolve": 221,
 "pt:gift": 14,
 "pt:npc-trade": 4,
-"pt:trade-version-exclusive": 63,
+"pt:trade-version-exclusive": 64,
 "pt:transfer": 80,
-"pt:wild": 281,
+"pt:wild": 280,
 "rb:event": 40,
 "rb:evolve": 268,
 "rb:gift": 68,
@@ -1546,7 +1631,7 @@
 "y:transfer": 15,
 "y:wild": 91
 },
-"legacy_mapped": 262,
+"legacy_mapped": 335,
 "legacy_unmatched": {
 "Casino de Céladopole": 37,
 "Laboratoire (Cramois'Île)": 18,
@@ -1564,9 +1649,11 @@
 "Aire de repos du Mont Sélénite": 6,
 "Centre Pokémon (Hoenn)": 6,
 "Dojo de Combat": 6,
+"Route Victoire 2 (zone inconnue 76)": 6,
 "Porte du Parc Safari": 5,
 "Grotte Ruinemaniac (de 0 à 9 Zarbi différents capturés)": 4,
 "Grotte Ruinemaniac (de 10 à 25 Zarbi différents capturés)": 4,
+"Route Victoire 2 (zone inconnue 74)": 4,
 "Souterrain de Kanto": 4,
 "Sylphe SARL": 4,
 "Tunnel Ruinemaniac (+ de 26 Zarbi différents attrapés)": 4,
@@ -1575,11 +1662,14 @@
 "Centre Pokémon (Route 4)": 3,
 "Sillonnant Kanto": 3,
 "Toit du manoir Céladon": 3,
+"Arabelle": 2,
 "Centre Pokémon (Kanto)": 2,
 "Centre météo (Route 119)": 2,
 "Grotte de l’Îlot": 2,
 "Ile Nouvellelune": 2,
 "Planque Aqua": 2,
+"Repaire Team Flare": 2,
+"Route Victoire (6e ét.)": 2,
 "Résidence de Vestigion": 2,
 "Salle Originelle": 2,
 "Sinnoh Pokemart": 2,
@@ -1591,13 +1681,18 @@
 "Île Mirage": 2,
 "Argenta": 1,
 "Arène d'Oliville": 1,
+"Bureaux de Game Freak (Volucité)": 1,
 "Centre Pokémon (Irisia)": 1,
+"Centre météo (Route 6)": 1,
 "Chambre Anemune": 1,
 "Chambre Jonquatre": 1,
 "Gare de Safrania": 1,
 "Grotte Métamo (A)": 1,
 "Johto Pokemart": 1,
+"Mont Foré B4F": 1,
+"Mont Renenvers B1F": 1,
 "Paradis Fleuri": 1,
+"Phare de la Liberté": 1,
 "Planque Magma": 1,
 "Port Ile 3": 1
 },
@@ -1605,20 +1700,30 @@
 "3:static-no-place": 5,
 "3:trade-unplaced": 9,
 "4:static-no-place": 14,
-"4:trade-unplaced": 13
+"4:trade-unplaced": 13,
+"5:static-no-place": 4,
+"5:trade-unplaced": 48
 },
 "modern_locations": {
-"pokeapi-index": 284,
+"pokeapi-index": 357,
 "pokeapi-name": 3,
-"created": 4
+"created": 8
 },
 "created_locations": [
+"iceberg-chamber",
+"iron-chamber",
+"nature-preserve",
+"rock-peak-chamber",
 "silph-co",
 "trainer-tower-exterior",
 "underwater-route-124",
 "underwater-route-126"
 ],
 "form_change_omitted": {
+"b2w2:battle-only": 10,
+"b2w2:form-change": 38,
+"bw:battle-only": 10,
+"bw:form-change": 32,
 "dp:form-change": 8,
 "hgss:form-change": 20,
 "pt:form-change": 10

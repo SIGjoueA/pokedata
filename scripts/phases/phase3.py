@@ -386,10 +386,12 @@ def mfam(g, m):
         return m if m in ("horde", "sos", "friend-safari", "rock-smash") else "wild"
     return {"dark-grass": "walk", "grass-spots": "walk", "cave-spots": "walk", "bridge-spots": "walk", "seaweed": "walk",
             "surf-spots": "surf", "super-rod-spots": "super-rod"}.get(m, fam(m))
-def mproj(rows):
+NO_SWARM_CMP = {"bw", "b2w2"}   # PokeAPI has no swarms for Black/White 1–2: swarm rows are left out of the comparison
+def mproj(rows, g=None):
     """Projection used to compare with PokeAPI in generations 3+: one (form, min, max) per form, conditions merged."""
     d = {}
     for r in rows:
+        if g in NO_SWARM_CMP and r[3] and "swarm-" in r[3]: continue
         lo, hi = d.get(r[0], (999, 0)); d[r[0]] = (min(lo, r[1]), max(hi, r[2]))
     return {(f, lo, hi, None) for f, (lo, hi) in d.items()}
 # PokeAPI projection on the same keys (method family, form, min, max, time)
@@ -435,7 +437,7 @@ enc_rows = []
 fam_sets = collections.defaultdict(set)
 for (loc, v, m), rows in enc_sets.items():
     g_ = GAME_OF_VERSION[v]
-    for r in (mproj(rows) if g_ in MODERN else rows): fam_sets[(loc, v, mfam(g_, m))].add((r[0], r[1], r[2], r[3]))
+    for r in (mproj(rows, g_) if g_ in MODERN else rows): fam_sets[(loc, v, mfam(g_, m))].add((r[0], r[1], r[2], r[3]))
 p3_agree = collections.Counter()
 for (loc, v, m), rows in sorted(enc_sets.items()):
     g = GAME_OF_VERSION[v]; gen = DKEY[g]
@@ -453,7 +455,7 @@ for (loc, v, m), rows in sorted(enc_sets.items()):
         obs.append(("pokeapi", d_pkenc, theirs))
     if g in MODERN and fm != m:
         obs = [(s_, d_, {x for x in th if x[0] in {r[0] for r in rows}}) for s_, d_, th in obs]
-    dis = verify_set("encounter", rk, rows, obs, gen, mproj if g in MODERN else None)
+    dis = verify_set("encounter", rk, rows, obs, gen, (lambda ch, g=g: mproj(ch, g)) if g in MODERN else None)
     p3_agree[(g, m, "sets")] += 1
     if obs: p3_agree[(g, m, "cited")] += 1
     if obs and not dis: p3_agree[(g, m, "agree")] += 1
@@ -819,4 +821,6 @@ P3_STATS = dict(games=P3_GAMES, locations=len(location_rows), encounters=len(enc
                 created_locations=sorted(MLOC_NEW), form_change_omitted={f"{g}:{k}": n for (g, k), n in sorted(p3_formchange.items())}, form_skips={f"{a}:{b}:{c}:{d}": n for (a, b, c, d), n in sorted(P3_FORMSKIP.items(), key=str)})
 json.dump(P3_STATS, open(ROOT / "reports/phase3-details.json", "w"), ensure_ascii=False, indent=0)
 print("phase3", json.dumps({k: v for k, v in P3_STATS.items() if k not in ("agreement", "legacy_unmatched", "trades_unplaced", "statics_unplaced", "unconfirmed_templates", "created_locations", "form_skips")}, ensure_ascii=False))
-if os.environ.get("P3_DRY"): sys.exit(0)
+if os.environ.get("P3_DRY"):
+    json.dump([[d_[1], json.loads(d_[5])] for d_ in discreps if d_[0] == "encounter"], open("/tmp/p3disc.json", "w"))
+    sys.exit(0)

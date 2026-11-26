@@ -196,6 +196,12 @@ class Api(unittest.TestCase):
             self.assertTrue(q("SELECT 1 FROM availability a JOIN version v ON v.id=a.version_id WHERE v.game_id='hgss' AND status='gift' AND detail='pokewalker'"))
             self.assertIn(("event",), q("SELECT status FROM availability WHERE form_id='493' AND version_id='diamond'"))   # Mystery Gift (PKHeX MGDB)
             self.assertEqual(q("SELECT odds FROM shiny_rule WHERE game_id='hgss' AND method='base'"), [("1/8192",)])
+        if "bw" in games:   # lot 4: generation 5
+            self.assertIn(("transfer", "poke-transfer:dp,pt,hgss"), q("SELECT status, detail FROM availability WHERE form_id='387' AND version_id='black'"))
+            self.assertEqual(q("SELECT odds FROM shiny_rule WHERE game_id='b2w2' AND method='shiny-charm'"), [("3/8192",)])
+            self.assertEqual(q("SELECT area_id, json_extract(extra,'$.shiny') FROM encounter WHERE form_id='612' AND version_id='black-2' AND method_id='static'"), [("nature-preserve", "always")])
+            self.assertEqual(q("SELECT json_extract(extra,'$.access') FROM encounter WHERE form_id='494' AND version_id='black'"), [("event-item",)])   # Liberty Pass
+            self.assertTrue(q("SELECT 1 FROM encounter_condition_link WHERE condition_id='swarm-yes'"))
         self.assertEqual(q("SELECT odds FROM shiny_rule WHERE game_id='gs' AND method='base'"), [("1/8192",)])
         # place names follow game_language for the games covered
         self.assertEqual(q("""SELECT COUNT(*) FROM location_game lg JOIN game_language gl ON gl.game_id=lg.game_id

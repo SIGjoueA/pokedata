@@ -263,6 +263,9 @@ for gen_, s_, e_ in _gen_sections:
 
 p3_mod_skip = collections.Counter()
 P3_FORMSKIP = collections.Counter()
+# places reached only with a distributed item that PKHeX does not mark: Newmoon Island (Member Card), Sinjoh Ruins
+# (event Arceus), Liberty Garden (Liberty Pass)
+EVENT_ITEM_LOC = {("hgss", 79), ("hgss", 231), ("bw2", 62)}
 def mod_record(x, dk):
     tbl = x["_table"]; t = x["_type"]; a = x.get("_area")
     if "Colo" in tbl or "XD" in tbl or (x.get("Version") in ("COLO", "XD", "CXD")): return
@@ -343,7 +346,8 @@ def mod_record(x, dk):
         # Letter, Azure Flute, Liberty Pass): PKHeX marks those encounters "fateful" (generations 3–5); in Ruby/Sapphire the
         # Southern Island (Eon Ticket) is not marked → listed here
         ext = None
-        if (gen_ <= 5 and x.get("FatefulEncounter")) or (dk == "3" and metid == 73 and set(vers) <= {"ruby", "sapphire"}):
+        if ((gen_ <= 5 and x.get("FatefulEncounter")) or (dk == "3" and metid == 73 and set(vers) <= {"ruby", "sapphire"})
+                or (MOD_LIST.get(MOD_BASE.get(g, g)), metid) in EVENT_ITEM_LOC):
             tag = "event"; ext = {"access": "event-item"}
         fs = mforms(sp, fi, g, x.get("IsRandomUnspecificForm", False))
         if not fs: p3_mod_skip[f"{dk}:form"] += 1; P3_FORMSKIP[(dk, sp, fi, g)] += 1; continue
