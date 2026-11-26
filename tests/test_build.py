@@ -213,6 +213,12 @@ class Api(unittest.TestCase):
             self.assertTrue(q("SELECT 1 FROM shiny_lock WHERE form_id='25-starter' AND game_id='lgpe'"))
             self.assertFalse(q("SELECT 1 FROM availability a JOIN version v ON v.id=a.version_id WHERE v.game_id='lgpe' AND status='breed'"))
             self.assertTrue(q("SELECT 1 FROM location WHERE id='ultra-desert'"))
+        if "sw" in games:   # lot 7: generation 8, Isle of Armor / Crown Tundra, BDSP, Legends: Arceus
+            self.assertTrue(q("SELECT 1 FROM encounter WHERE version_id='the-isle-of-armor-sword'"))
+            self.assertFalse(q("SELECT 1 FROM encounter WHERE version_id='sword' AND form_id='145-galar'"))   # Crown Tundra quest
+            self.assertTrue(q("SELECT 1 FROM shiny_lock WHERE form_id='888' AND game_id='sw'"))
+            self.assertFalse(q("SELECT 1 FROM availability a JOIN version v ON v.id=a.version_id WHERE v.game_id='la' AND status='breed'"))
+            self.assertTrue(q("SELECT 1 FROM encounter e JOIN version v ON v.id=e.version_id WHERE v.game_id='bdsp' AND e.area_id='mt-coronet'"))
         self.assertEqual(q("SELECT odds FROM shiny_rule WHERE game_id='gs' AND method='base'"), [("1/8192",)])
         # place names follow game_language for the games covered
         self.assertEqual(q("""SELECT COUNT(*) FROM location_game lg JOIN game_language gl ON gl.game_id=lg.game_id

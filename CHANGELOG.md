@@ -3,6 +3,13 @@
 Généré depuis `db/data/update_log.csv` par `scripts/changelog.py`. Le détail ligne à ligne est dans `update_log_item` (base SQLite) et `api/v1/meta/changelog.json`.
 
 
+## 2026.11.26.7 — Phase 3 (lot 7 : 8e génération — Épée/Bouclier et DLC, DEPS, Légendes Arceus)
+
+- Type : release · schéma 1.2.0 · 2026-11-26T07:52:04Z → 2026-11-26T07:52:04Z (UTC)
+- Import et vérification : 1025 espèces, 1588 formes, 17497 lignes forme×jeu, 589 évolutions, 7460 entrées de Pokédex régionaux, 920 capacités, 7817 lignes capacité×jeu, 2061 CT/CS/DT, 645613 lignes de movesets, 676 lieux, 39802 rencontres, 40737 lignes de disponibilité, 57692 traductions ; 4022 écarts notés ; 17212 données (re)vérifiées.
+- Statuts de vérification : disputed 87, game-data 229109, majority 188, manual 434, single-source 3, unanimous 46649
+- Lignes : species 1025, form 1588, form_game 17497, form_ability 31012, ability 307, evolution 589, evolution_method 7541, pokedex_entry 7460, item 44, move 920, move_game 7817, machine 2061, learnset 645613, location 676, encounter 39802, availability 40737, shiny_rule 21, translation 57692, discrepancy 4022
+
 ## 2026.11.26.6 — Phase 3 (lot 6 : 7e génération — Soleil/Lune, Ultra-Soleil/Ultra-Lune, Let's Go)
 
 - Type : release · schéma 1.2.0 · 2026-11-26T07:38:40Z → 2026-11-26T07:38:40Z (UTC)

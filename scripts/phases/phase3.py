@@ -393,6 +393,7 @@ def mfam(g, m):
     return {"dark-grass": "walk", "grass-spots": "walk", "cave-spots": "walk", "bridge-spots": "walk", "seaweed": "walk",
             "surf-spots": "surf", "super-rod-spots": "super-rod"}.get(m, fam(m))
 FAMILY_WHOLE = {"sm", "usum"}
+LEVEL_BOOST = {"sw", "swisle", "swcrown"}   # Wild Area / DLC levels rise with badges
 NO_SWARM_CMP = {"bw", "b2w2"}   # PokeAPI has no swarms for Black/White 1–2: swarm rows are left out of the comparison
 def mproj(rows, g=None):
     """Projection used to compare with PokeAPI in generations 3+: one (form, min, max) per form, conditions merged."""
@@ -468,7 +469,11 @@ for (loc, v, m), rows in sorted(enc_sets.items()):
     else:
         if g in MODERN and fm != m:
             obs = [(s_, d_, {x for x in th if x[0] in {r[0] for r in rows}}) for s_, d_, th in obs]
-        dis = verify_set("encounter", rk, rows, obs, gen, (lambda ch, g=g: mproj(ch, g)) if g in MODERN else None)
+        if g in LEVEL_BOOST and m not in ("static", "gift", "npc-trade"):   # levels rise with badges (PokeAPI: up to 60): forms only
+            obs = [(s_, d_, {(x[0], None, None, None) for x in th}) for s_, d_, th in obs]
+            dis = verify_set("encounter", rk, rows, obs, gen, lambda ch, g=g: {(x[0], None, None, None) for x in mproj(ch, g)})
+        else:
+            dis = verify_set("encounter", rk, rows, obs, gen, (lambda ch, g=g: mproj(ch, g)) if g in MODERN else None)
     p3_agree[(g, m, "sets")] += 1
     if obs: p3_agree[(g, m, "cited")] += 1
     if obs and not dis: p3_agree[(g, m, "agree")] += 1
@@ -838,3 +843,4 @@ print("phase3", json.dumps({k: v for k, v in P3_STATS.items() if k not in ("agre
 if os.environ.get("P3_DRY"):
     json.dump([[d_[1], json.loads(d_[5])] for d_ in discreps if d_[0] == "encounter"], open("/tmp/p3disc.json", "w"))
     sys.exit(0)
+

@@ -296,18 +296,14 @@ id,table_name,row_key,column_name,document_id,observed_value,agrees
 502600,location,"[""weepth-chamber""]",*,1016,"{""identifier"":""weepth-chamber"",""region"":""kanto""}",1
 502601,location,"[""weepth-chamber""]",*,1020,"{""met"":[[""rsefrlg"",190,""Weepth Chamber"",""pokeapi-index""]]}",1
 514303,location,"[""acuity-cavern""]",*,1016,"{""identifier"":""acuity-cavern"",""region"":""sinnoh""}",1
-514304,location,"[""acuity-cavern""]",*,1020,"{""met"":[[""hgss"",89,""Acuity Cavern"",""pokeapi-index""]]}",1
 514305,location,"[""acuity-lakefront""]",*,1016,"{""identifier"":""acuity-lakefront"",""region"":""sinnoh""}",1
-514306,location,"[""acuity-lakefront""]",*,1020,"{""met"":[[""hgss"",74,""Acuity Lakefront"",""pokeapi-index""]]}",1
 514307,location,"[""azalea-town""]",*,1020,"{""en"":""Azalea Town"",""gen2_index"":12,""met"":[[""hgss"",129,""Azalea Town"",""pokeapi-index""]]}",1
 514308,location,"[""bell-tower""]",*,1020,"{""en"":""Tin Tower"",""gen2_index"":23,""met"":[[""hgss"",205,""Bell Tower"",""pokeapi-index""]]}",0
 514309,location,"[""blackthorn-city""]",*,1020,"{""en"":""Blackthorn City"",""gen2_index"":41,""met"":[[""hgss"",136,""Blackthorn City"",""pokeapi-index""]]}",1
 514310,location,"[""burned-tower""]",*,1020,"{""en"":""Burned Tower"",""gen2_index"":24,""met"":[[""hgss"",206,""Burned Tower"",""pokeapi-index""]]}",1
 514311,location,"[""canalave-city""]",*,1016,"{""identifier"":""canalave-city"",""region"":""sinnoh""}",1
-514312,location,"[""canalave-city""]",*,1020,"{""met"":[[""hgss"",7,""Canalave City"",""pokeapi-index""]]}",1
 514313,location,"[""celadon-city""]",*,1020,"{""en"":""Celadon City"",""gen2_index"":71,""met"":[[""hgss"",144,""Celadon City"",""pokeapi-index""],[""rsefrlg"",94,""Celadon City"",""pokeapi-index""]]}",1
 514314,location,"[""celestic-town""]",*,1016,"{""identifier"":""celestic-town"",""region"":""sinnoh""}",1
-514315,location,"[""celestic-town""]",*,1020,"{""met"":[[""hgss"",5,""Celestic Town"",""pokeapi-index""]]}",1
 514318,location,"[""cherrygrove-city""]",*,1020,"{""en"":""Cherrygrove City"",""gen2_index"":3,""met"":[[""hgss"",127,""Cherrygrove City"",""pokeapi-index""]]}",1
 514319,location,"[""cianwood-city""]",*,1020,"{""en"":""Cianwood City"",""gen2_index"":33,""met"":[[""hgss"",130,""Cianwood City"",""pokeapi-index""]]}",1
 514321,location,"[""cliff-cave""]",*,1016,"{""identifier"":""cliff-cave"",""region"":""johto""}",1
@@ -322,27 +318,19 @@ id,table_name,row_key,column_name,document_id,observed_value,agrees
 514331,location,"[""embedded-tower""]",*,1016,"{""identifier"":""embedded-tower"",""region"":""johto""}",1
 514332,location,"[""embedded-tower""]",*,1020,"{""met"":[[""hgss"",232,""Embedded Tower"",""pokeapi-index""]]}",1
 514333,location,"[""eterna-city""]",*,1016,"{""identifier"":""eterna-city"",""region"":""sinnoh""}",1
-514334,location,"[""eterna-city""]",*,1020,"{""met"":[[""hgss"",9,""Eterna City"",""pokeapi-index""]]}",1
 514335,location,"[""eterna-forest""]",*,1016,"{""identifier"":""eterna-forest"",""region"":""sinnoh""}",1
-514336,location,"[""eterna-forest""]",*,1020,"{""met"":[[""hgss"",48,""Eterna Forest"",""pokeapi-index""]]}",1
 514337,location,"[""floaroma-meadow""]",*,1016,"{""identifier"":""floaroma-meadow"",""region"":""sinnoh""}",1
-514338,location,"[""floaroma-meadow""]",*,1020,"{""met"":[[""hgss"",58,""Floaroma Meadow"",""pokeapi-index""]]}",1
 514339,location,"[""flower-paradise""]",*,1016,"{""identifier"":""flower-paradise"",""region"":""sinnoh""}",1
-514340,location,"[""flower-paradise""]",*,1020,"{""met"":[[""hgss"",63,""Flower Paradise"",""pokeapi-index""]]}",1
 514341,location,"[""fuchsia-city""]",*,1020,"{""en"":""Fuchsia City"",""gen2_index"":81,""met"":[[""hgss"",145,""Fuchsia City"",""pokeapi-index""],[""rsefrlg"",95,""Fuchsia City"",""pokeapi-index""]]}",1
 514342,location,"[""fuego-ironworks""]",*,1016,"{""identifier"":""fuego-ironworks"",""region"":""sinnoh""}",1
-514343,location,"[""fuego-ironworks""]",*,1020,"{""met"":[[""hgss"",49,""Fuego Ironworks"",""pokeapi-index""]]}",1
 514344,location,"[""goldenrod-city""]",*,1020,"{""en"":""Goldenrod City"",""gen2_index"":16,""met"":[[""hgss"",131,""Goldenrod City"",""pokeapi-index""]]}",1
 514345,location,"[""great-marsh""]",*,1016,"{""identifier"":""great-marsh"",""region"":""sinnoh""}",1
-514346,location,"[""great-marsh""]",*,1020,"{""met"":[[""hgss"",52,""Great Marsh"",""pokeapi-index""]]}",1
 514347,location,"[""hearthome-city""]",*,1016,"{""identifier"":""hearthome-city"",""region"":""sinnoh""}",1
-514348,location,"[""hearthome-city""]",*,1020,"{""met"":[[""hgss"",10,""Hearthome City"",""pokeapi-index""]]}",1
 514349,location,"[""ice-path""]",*,1020,"{""en"":""Ice Path"",""gen2_index"":40,""met"":[[""hgss"",217,""Ice Path"",""pokeapi-index""]]}",1
 514350,location,"[""iceberg-ruins""]",*,1016,"{""identifier"":""iceberg-ruins"",""region"":""sinnoh""}",1
 514351,location,"[""iceberg-ruins""]",*,1020,"{""met"":[[""hgss"",124,""Iceberg Ruins"",""pokeapi-index""]]}",1
 514352,location,"[""ilex-forest""]",*,1020,"{""en"":""Ilex Forest"",""gen2_index"":14,""met"":[[""hgss"",214,""Ilex Forest"",""pokeapi-index""]]}",1
 514353,location,"[""iron-island""]",*,1016,"{""identifier"":""iron-island"",""region"":""sinnoh""}",1
-514354,location,"[""iron-island""]",*,1020,"{""met"":[[""hgss"",69,""Iron Island"",""pokeapi-index""]]}",1
 514355,location,"[""iron-ruins""]",*,1016,"{""identifier"":""iron-ruins"",""region"":""sinnoh""}",1
 514356,location,"[""iron-ruins""]",*,1020,"{""met"":[[""hgss"",123,""Iron Ruins"",""pokeapi-index""]]}",1
 514357,location,"[""johto-route-29""]",*,1020,"{""en"":""Route 29"",""gen2_index"":2,""met"":[[""hgss"",177,""Route 29"",""pokeapi-index""]]}",1
@@ -372,18 +360,13 @@ id,table_name,row_key,column_name,document_id,observed_value,agrees
 514395,location,"[""kanto-route-28""]",*,1020,"{""en"":""Route 28"",""gen2_index"":94,""met"":[[""hgss"",176,""Route 28"",""pokeapi-index""]]}",1
 514403,location,"[""kanto-safari-zone""]",*,1020,"{""met"":[[""hgss"",202,""Safari Zone"",""pokeapi-index""],[""rsefrlg"",136,""Safari Zone (Kanto)"",""pokeapi-index""]]}",1
 514408,location,"[""lake-acuity""]",*,1016,"{""identifier"":""lake-acuity"",""region"":""sinnoh""}",1
-514409,location,"[""lake-acuity""]",*,1020,"{""met"":[[""hgss"",78,""Lake Acuity"",""pokeapi-index""]]}",1
 514410,location,"[""lake-of-rage""]",*,1020,"{""en"":""Lake of Rage"",""gen2_index"":38,""met"":[[""hgss"",135,""Lake of Rage"",""pokeapi-index""]]}",1
 514411,location,"[""lake-valor""]",*,1016,"{""identifier"":""lake-valor"",""region"":""sinnoh""}",1
-514412,location,"[""lake-valor""]",*,1020,"{""met"":[[""hgss"",77,""Lake Valor"",""pokeapi-index""]]}",1
 514413,location,"[""lake-verity""]",*,1016,"{""identifier"":""lake-verity"",""region"":""sinnoh""}",1
-514414,location,"[""lake-verity""]",*,1020,"{""met"":[[""hgss"",76,""Lake Verity"",""pokeapi-index""]]}",1
 514415,location,"[""maniac-tunnel""]",*,1016,"{""identifier"":""maniac-tunnel"",""region"":""sinnoh""}",1
-514416,location,"[""maniac-tunnel""]",*,1020,"{""met"":[[""hgss"",67,""Maniac Tunnel"",""pokeapi-index""]]}",1
 514417,location,"[""mining-museum""]",*,1016,"{""identifier"":""mining-museum"",""region"":""sinnoh""}",1
 514418,location,"[""mining-museum""]",*,1020,"{""met"":[[""hgss"",94,""Mining Museum"",""pokeapi-index""]]}",1
 514419,location,"[""mt-coronet""]",*,1016,"{""identifier"":""mt-coronet"",""region"":""sinnoh""}",1
-514420,location,"[""mt-coronet""]",*,1020,"{""met"":[[""hgss"",50,""Mt. Coronet"",""pokeapi-index""]]}",1
 514422,location,"[""mt-mortar""]",*,1020,"{""en"":""Mt. Mortar"",""gen2_index"":35,""met"":[[""hgss"",216,""Mt. Mortar"",""pokeapi-index""]]}",1
 514423,location,"[""mt-silver""]",*,1016,"{""identifier"":""mt-silver"",""region"":""johto""}",1
 514424,location,"[""mt-silver""]",*,1020,"{""met"":[[""hgss"",137,""Mt. Silver"",""pokeapi-index""]]}",1
@@ -391,132 +374,79 @@ id,table_name,row_key,column_name,document_id,observed_value,agrees
 514426,location,"[""national-park""]",*,1020,"{""en"":""National Park"",""gen2_index"":19,""met"":[[""hgss"",207,""National Park"",""pokeapi-index""]]}",1
 514427,location,"[""new-bark-town""]",*,1020,"{""en"":""New Bark Town"",""gen2_index"":1,""met"":[[""hgss"",126,""New Bark Town"",""pokeapi-index""]]}",1
 514428,location,"[""newmoon-island""]",*,1016,"{""identifier"":""newmoon-island"",""region"":""sinnoh""}",1
-514429,location,"[""newmoon-island""]",*,1020,"{""met"":[[""hgss"",79,""Newmoon Island"",""pokeapi-index""]]}",1
 514430,location,"[""old-chateau""]",*,1016,"{""identifier"":""old-chateau"",""region"":""sinnoh""}",1
-514431,location,"[""old-chateau""]",*,1020,"{""met"":[[""hgss"",70,""Old Chateau"",""pokeapi-index""]]}",1
 514432,location,"[""olivine-city""]",*,1020,"{""en"":""Olivine City"",""gen2_index"":27,""met"":[[""hgss"",132,""Olivine City"",""pokeapi-index""]]}",1
 514433,location,"[""oreburgh-city""]",*,1016,"{""identifier"":""oreburgh-city"",""region"":""sinnoh""}",1
 514434,location,"[""oreburgh-gate""]",*,1016,"{""identifier"":""oreburgh-gate"",""region"":""sinnoh""}",1
-514435,location,"[""oreburgh-gate""]",*,1020,"{""met"":[[""hgss"",59,""Oreburgh Gate"",""pokeapi-index""]]}",1
 514436,location,"[""oreburgh-mine""]",*,1016,"{""identifier"":""oreburgh-mine"",""region"":""sinnoh""}",1
-514437,location,"[""oreburgh-mine""]",*,1020,"{""met"":[[""hgss"",46,""Oreburgh Mine"",""pokeapi-index""]]}",1
 514439,location,"[""pastoria-city""]",*,1016,"{""identifier"":""pastoria-city"",""region"":""sinnoh""}",1
-514440,location,"[""pastoria-city""]",*,1020,"{""met"":[[""hgss"",11,""Pastoria City"",""pokeapi-index""]]}",1
 514441,location,"[""pewter-city""]",*,1020,"{""met"":[[""hgss"",140,""Pewter City"",""pokeapi-index""]]}",1
 514442,location,"[""ravaged-path""]",*,1016,"{""identifier"":""ravaged-path"",""region"":""sinnoh""}",1
-514443,location,"[""ravaged-path""]",*,1020,"{""met"":[[""hgss"",57,""Ravaged Path"",""pokeapi-index""]]}",1
 514444,location,"[""resort-area""]",*,1016,"{""identifier"":""resort-area"",""region"":""sinnoh""}",1
-514445,location,"[""resort-area""]",*,1020,"{""met"":[[""hgss"",83,""Resort Area"",""pokeapi-index""]]}",1
 514446,location,"[""rock-peak-ruins""]",*,1016,"{""identifier"":""rock-peak-ruins"",""region"":""sinnoh""}",1
 514447,location,"[""rock-peak-ruins""]",*,1020,"{""met"":[[""hgss"",125,""Rock Peak Ruins"",""pokeapi-index""]]}",1
 514449,location,"[""ruin-maniac-cave""]",*,1016,"{""identifier"":""ruin-maniac-cave"",""region"":""sinnoh""}",1
-514450,location,"[""ruin-maniac-cave""]",*,1020,"{""met"":[[""hgss"",66,""Ruin Maniac Cave"",""pokeapi-index""]]}",1
 514451,location,"[""ruins-of-alph""]",*,1020,"{""en"":""Ruins of Alph"",""gen2_index"":9,""met"":[[""hgss"",209,""Ruins of Alph"",""pokeapi-index""]]}",1
 514452,location,"[""safari-zone-gate""]",*,1016,"{""identifier"":""safari-zone-gate"",""region"":""johto""}",1
 514453,location,"[""safari-zone-gate""]",*,1020,"{""met"":[[""hgss"",227,""Safari Zone Gate"",""pokeapi-index""]]}",1
 514456,location,"[""sendoff-spring""]",*,1016,"{""identifier"":""sendoff-spring"",""region"":""sinnoh""}",1
-514457,location,"[""sendoff-spring""]",*,1020,"{""met"":[[""hgss"",61,""Sendoff Spring"",""pokeapi-index""]]}",1
 514458,location,"[""sinjoh-ruins""]",*,1016,"{""identifier"":""sinjoh-ruins"",""region"":""johto""}",1
 514459,location,"[""sinjoh-ruins""]",*,1020,"{""met"":[[""hgss"",231,""Sinjoh Ruins"",""pokeapi-index""]]}",1
 514460,location,"[""sinnoh-pokemon-league""]",*,1016,"{""identifier"":""sinnoh-pokemon-league"",""region"":""sinnoh""}",1
-514461,location,"[""sinnoh-pokemon-league""]",*,1020,"{""met"":[[""hgss"",15,""Pokémon League"",""pokeapi-index""]]}",1
 514462,location,"[""sinnoh-route-201""]",*,1016,"{""identifier"":""sinnoh-route-201"",""region"":""sinnoh""}",1
-514463,location,"[""sinnoh-route-201""]",*,1020,"{""met"":[[""hgss"",16,""Route 201"",""pokeapi-index""]]}",1
 514464,location,"[""sinnoh-route-202""]",*,1016,"{""identifier"":""sinnoh-route-202"",""region"":""sinnoh""}",1
-514465,location,"[""sinnoh-route-202""]",*,1020,"{""met"":[[""hgss"",17,""Route 202"",""pokeapi-index""]]}",1
 514466,location,"[""sinnoh-route-203""]",*,1016,"{""identifier"":""sinnoh-route-203"",""region"":""sinnoh""}",1
-514467,location,"[""sinnoh-route-203""]",*,1020,"{""met"":[[""hgss"",18,""Route 203"",""pokeapi-index""]]}",1
 514468,location,"[""sinnoh-route-204""]",*,1016,"{""identifier"":""sinnoh-route-204"",""region"":""sinnoh""}",1
-514469,location,"[""sinnoh-route-204""]",*,1020,"{""met"":[[""hgss"",19,""Route 204"",""pokeapi-index""]]}",1
 514470,location,"[""sinnoh-route-205""]",*,1016,"{""identifier"":""sinnoh-route-205"",""region"":""sinnoh""}",1
-514471,location,"[""sinnoh-route-205""]",*,1020,"{""met"":[[""hgss"",20,""Route 205"",""pokeapi-index""]]}",1
 514472,location,"[""sinnoh-route-206""]",*,1016,"{""identifier"":""sinnoh-route-206"",""region"":""sinnoh""}",1
-514473,location,"[""sinnoh-route-206""]",*,1020,"{""met"":[[""hgss"",21,""Route 206"",""pokeapi-index""]]}",1
 514474,location,"[""sinnoh-route-207""]",*,1016,"{""identifier"":""sinnoh-route-207"",""region"":""sinnoh""}",1
-514475,location,"[""sinnoh-route-207""]",*,1020,"{""met"":[[""hgss"",22,""Route 207"",""pokeapi-index""]]}",1
 514476,location,"[""sinnoh-route-208""]",*,1016,"{""identifier"":""sinnoh-route-208"",""region"":""sinnoh""}",1
-514477,location,"[""sinnoh-route-208""]",*,1020,"{""met"":[[""hgss"",23,""Route 208"",""pokeapi-index""]]}",1
 514478,location,"[""sinnoh-route-209""]",*,1016,"{""identifier"":""sinnoh-route-209"",""region"":""sinnoh""}",1
-514479,location,"[""sinnoh-route-209""]",*,1020,"{""met"":[[""hgss"",24,""Route 209"",""pokeapi-index""]]}",1
 514480,location,"[""sinnoh-route-210""]",*,1016,"{""identifier"":""sinnoh-route-210"",""region"":""sinnoh""}",1
-514481,location,"[""sinnoh-route-210""]",*,1020,"{""met"":[[""hgss"",25,""Route 210"",""pokeapi-index""]]}",1
 514482,location,"[""sinnoh-route-211""]",*,1016,"{""identifier"":""sinnoh-route-211"",""region"":""sinnoh""}",1
-514483,location,"[""sinnoh-route-211""]",*,1020,"{""met"":[[""hgss"",26,""Route 211"",""pokeapi-index""]]}",1
 514484,location,"[""sinnoh-route-212""]",*,1016,"{""identifier"":""sinnoh-route-212"",""region"":""sinnoh""}",1
-514485,location,"[""sinnoh-route-212""]",*,1020,"{""met"":[[""hgss"",27,""Route 212"",""pokeapi-index""]]}",1
 514486,location,"[""sinnoh-route-213""]",*,1016,"{""identifier"":""sinnoh-route-213"",""region"":""sinnoh""}",1
-514487,location,"[""sinnoh-route-213""]",*,1020,"{""met"":[[""hgss"",28,""Route 213"",""pokeapi-index""]]}",1
 514488,location,"[""sinnoh-route-214""]",*,1016,"{""identifier"":""sinnoh-route-214"",""region"":""sinnoh""}",1
-514489,location,"[""sinnoh-route-214""]",*,1020,"{""met"":[[""hgss"",29,""Route 214"",""pokeapi-index""]]}",1
 514490,location,"[""sinnoh-route-215""]",*,1016,"{""identifier"":""sinnoh-route-215"",""region"":""sinnoh""}",1
-514491,location,"[""sinnoh-route-215""]",*,1020,"{""met"":[[""hgss"",30,""Route 215"",""pokeapi-index""]]}",1
 514492,location,"[""sinnoh-route-216""]",*,1016,"{""identifier"":""sinnoh-route-216"",""region"":""sinnoh""}",1
-514493,location,"[""sinnoh-route-216""]",*,1020,"{""met"":[[""hgss"",31,""Route 216"",""pokeapi-index""]]}",1
 514494,location,"[""sinnoh-route-217""]",*,1016,"{""identifier"":""sinnoh-route-217"",""region"":""sinnoh""}",1
-514495,location,"[""sinnoh-route-217""]",*,1020,"{""met"":[[""hgss"",32,""Route 217"",""pokeapi-index""]]}",1
 514496,location,"[""sinnoh-route-218""]",*,1016,"{""identifier"":""sinnoh-route-218"",""region"":""sinnoh""}",1
-514497,location,"[""sinnoh-route-218""]",*,1020,"{""met"":[[""hgss"",33,""Route 218"",""pokeapi-index""]]}",1
 514498,location,"[""sinnoh-route-219""]",*,1016,"{""identifier"":""sinnoh-route-219"",""region"":""sinnoh""}",1
-514499,location,"[""sinnoh-route-219""]",*,1020,"{""met"":[[""hgss"",34,""Route 219"",""pokeapi-index""]]}",1
 514500,location,"[""sinnoh-route-221""]",*,1016,"{""identifier"":""sinnoh-route-221"",""region"":""sinnoh""}",1
-514501,location,"[""sinnoh-route-221""]",*,1020,"{""met"":[[""hgss"",36,""Route 221"",""pokeapi-index""]]}",1
 514502,location,"[""sinnoh-route-222""]",*,1016,"{""identifier"":""sinnoh-route-222"",""region"":""sinnoh""}",1
-514503,location,"[""sinnoh-route-222""]",*,1020,"{""met"":[[""hgss"",37,""Route 222"",""pokeapi-index""]]}",1
 514504,location,"[""sinnoh-route-224""]",*,1016,"{""identifier"":""sinnoh-route-224"",""region"":""sinnoh""}",1
-514505,location,"[""sinnoh-route-224""]",*,1020,"{""met"":[[""hgss"",39,""Route 224"",""pokeapi-index""]]}",1
 514506,location,"[""sinnoh-route-225""]",*,1016,"{""identifier"":""sinnoh-route-225"",""region"":""sinnoh""}",1
-514507,location,"[""sinnoh-route-225""]",*,1020,"{""met"":[[""hgss"",40,""Route 225"",""pokeapi-index""]]}",1
 514508,location,"[""sinnoh-route-227""]",*,1016,"{""identifier"":""sinnoh-route-227"",""region"":""sinnoh""}",1
-514509,location,"[""sinnoh-route-227""]",*,1020,"{""met"":[[""hgss"",42,""Route 227"",""pokeapi-index""]]}",1
 514510,location,"[""sinnoh-route-228""]",*,1016,"{""identifier"":""sinnoh-route-228"",""region"":""sinnoh""}",1
-514511,location,"[""sinnoh-route-228""]",*,1020,"{""met"":[[""hgss"",43,""Route 228"",""pokeapi-index""]]}",1
 514512,location,"[""sinnoh-route-229""]",*,1016,"{""identifier"":""sinnoh-route-229"",""region"":""sinnoh""}",1
-514513,location,"[""sinnoh-route-229""]",*,1020,"{""met"":[[""hgss"",44,""Route 229"",""pokeapi-index""]]}",1
 514514,location,"[""sinnoh-sea-route-220""]",*,1016,"{""identifier"":""sinnoh-sea-route-220"",""region"":""sinnoh""}",1
-514515,location,"[""sinnoh-sea-route-220""]",*,1020,"{""met"":[[""hgss"",35,""Route 220"",""pokeapi-index""]]}",1
 514516,location,"[""sinnoh-sea-route-223""]",*,1016,"{""identifier"":""sinnoh-sea-route-223"",""region"":""sinnoh""}",1
-514517,location,"[""sinnoh-sea-route-223""]",*,1020,"{""met"":[[""hgss"",38,""Route 223"",""pokeapi-index""]]}",1
 514518,location,"[""sinnoh-sea-route-226""]",*,1016,"{""identifier"":""sinnoh-sea-route-226"",""region"":""sinnoh""}",1
-514519,location,"[""sinnoh-sea-route-226""]",*,1020,"{""met"":[[""hgss"",41,""Route 226"",""pokeapi-index""]]}",1
 514520,location,"[""sinnoh-sea-route-230""]",*,1016,"{""identifier"":""sinnoh-sea-route-230"",""region"":""sinnoh""}",1
-514521,location,"[""sinnoh-sea-route-230""]",*,1020,"{""met"":[[""hgss"",45,""Route 230"",""pokeapi-index""]]}",1
 514522,location,"[""sinnoh-victory-road""]",*,1016,"{""identifier"":""sinnoh-victory-road"",""region"":""sinnoh""}",1
-514523,location,"[""sinnoh-victory-road""]",*,1020,"{""met"":[[""hgss"",54,""Victory Road (D/P/Pt)"",""pokeapi-index""]]}",1
 514524,location,"[""slowpoke-well""]",*,1020,"{""en"":""Slowpoke Well"",""gen2_index"":13,""met"":[[""hgss"",211,""SLOWPOKE Well"",""pokeapi-index""]]}",1
 514525,location,"[""snowpoint-city""]",*,1016,"{""identifier"":""snowpoint-city"",""region"":""sinnoh""}",1
 514526,location,"[""snowpoint-temple""]",*,1016,"{""identifier"":""snowpoint-temple"",""region"":""sinnoh""}",1
-514527,location,"[""snowpoint-temple""]",*,1020,"{""met"":[[""hgss"",64,""Snowpoint Temple"",""pokeapi-index""]]}",1
 514528,location,"[""solaceon-ruins""]",*,1016,"{""identifier"":""solaceon-ruins"",""region"":""sinnoh""}",1
-514529,location,"[""solaceon-ruins""]",*,1020,"{""met"":[[""hgss"",53,""Solaceon Ruins"",""pokeapi-index""]]}",1
 514530,location,"[""spear-pillar""]",*,1016,"{""identifier"":""spear-pillar"",""region"":""sinnoh""}",1
-514531,location,"[""spear-pillar""]",*,1020,"{""met"":[[""hgss"",51,""Spear Pillar"",""pokeapi-index""]]}",1
 514532,location,"[""sprout-tower""]",*,1020,"{""en"":""Sprout Tower"",""gen2_index"":7,""met"":[[""hgss"",204,""Sprout Tower"",""pokeapi-index""]]}",1
 514533,location,"[""stark-mountain""]",*,1016,"{""identifier"":""stark-mountain"",""region"":""sinnoh""}",1
-514534,location,"[""stark-mountain""]",*,1020,"{""met"":[[""hgss"",84,""Stark Mountain"",""pokeapi-index""]]}",1
 514535,location,"[""sunyshore-city""]",*,1016,"{""identifier"":""sunyshore-city"",""region"":""sinnoh""}",1
-514536,location,"[""sunyshore-city""]",*,1020,"{""met"":[[""hgss"",13,""Sunyshore City"",""pokeapi-index""]]}",1
 514537,location,"[""team-rocket-hq""]",*,1016,"{""identifier"":""team-rocket-hq"",""region"":""johto""}",1
 514538,location,"[""team-rocket-hq""]",*,1020,"{""met"":[[""hgss"",213,""Team Rocket HQ"",""pokeapi-index""]]}",1
 514539,location,"[""tohjo-falls""]",*,1020,"{""en"":""Tohjo Falls"",""gen2_index"":93,""met"":[[""hgss"",223,""Tohjo Falls"",""pokeapi-index""]]}",1
 514540,location,"[""trophy-garden""]",*,1016,"{""identifier"":""trophy-garden"",""region"":""sinnoh""}",1
-514541,location,"[""trophy-garden""]",*,1020,"{""met"":[[""hgss"",68,""Trophy Garden"",""pokeapi-index""]]}",1
 514542,location,"[""turnback-cave""]",*,1016,"{""identifier"":""turnback-cave"",""region"":""sinnoh""}",1
-514543,location,"[""turnback-cave""]",*,1020,"{""met"":[[""hgss"",62,""Turnback Cave"",""pokeapi-index""]]}",1
 514544,location,"[""twinleaf-town""]",*,1016,"{""identifier"":""twinleaf-town"",""region"":""sinnoh""}",1
-514545,location,"[""twinleaf-town""]",*,1020,"{""met"":[[""hgss"",1,""Twinleaf Town"",""pokeapi-index""]]}",1
 514546,location,"[""union-cave""]",*,1020,"{""en"":""Union Cave"",""gen2_index"":10,""met"":[[""hgss"",210,""Union Cave"",""pokeapi-index""]]}",1
 514547,location,"[""valley-windworks""]",*,1016,"{""identifier"":""valley-windworks"",""region"":""sinnoh""}",1
-514548,location,"[""valley-windworks""]",*,1020,"{""met"":[[""hgss"",47,""Valley Windworks"",""pokeapi-index""]]}",1
 514549,location,"[""valor-cavern""]",*,1016,"{""identifier"":""valor-cavern"",""region"":""sinnoh""}",1
-514550,location,"[""valor-cavern""]",*,1020,"{""met"":[[""hgss"",88,""Valor Cavern"",""pokeapi-index""]]}",1
 514551,location,"[""valor-lakefront""]",*,1016,"{""identifier"":""valor-lakefront"",""region"":""sinnoh""}",1
-514552,location,"[""valor-lakefront""]",*,1020,"{""met"":[[""hgss"",73,""Valor Lakefront"",""pokeapi-index""]]}",1
 514553,location,"[""veilstone-city""]",*,1016,"{""identifier"":""veilstone-city"",""region"":""sinnoh""}",1
 514554,location,"[""veilstone-city""]",*,1020,"{""met"":[[""hgss"",12,""Veilstone City"",""pokeapi-index""]]}",1
 514556,location,"[""violet-city""]",*,1020,"{""en"":""Violet City"",""gen2_index"":6,""met"":[[""hgss"",128,""Violet City"",""pokeapi-index""]]}",1
 514557,location,"[""viridian-city""]",*,1020,"{""en"":""Viridian City"",""gen2_index"":49,""met"":[[""hgss"",139,""Viridian City"",""pokeapi-index""],[""rsefrlg"",89,""Viridian City"",""pokeapi-index""]]}",1
 514559,location,"[""wayward-cave""]",*,1016,"{""identifier"":""wayward-cave"",""region"":""sinnoh""}",1
-514560,location,"[""wayward-cave""]",*,1020,"{""met"":[[""hgss"",65,""Wayward Cave"",""pokeapi-index""]]}",1
 514561,location,"[""whirl-islands""]",*,1020,"{""en"":""Whirl Islands"",""gen2_index"":31,""met"":[[""hgss"",218,""Whirl Islands"",""pokeapi-index""]]}",1
 525102,location,"[""abundant-shrine""]",*,1016,"{""identifier"":""abundant-shrine"",""region"":""unova""}",1
 525103,location,"[""abundant-shrine""]",*,1020,"{""met"":[[""bw2"",70,""Abundant Shrine"",""pokeapi-index""]]}",1
@@ -1064,3 +994,344 @@ id,table_name,row_key,column_name,document_id,observed_value,agrees
 547290,location,"[""viridian-forest""]",*,1020,"{""met"":[[""gg"",39,""Viridian Forest"",""pokeapi-name""],[""hgss"",224,""Viridian Forest"",""pokeapi-index""],[""rsefrlg"",126,""Viridian Forest"",""pokeapi-index""]]}",1
 547291,location,"[""wela-volcano-park""]",*,1016,"{""identifier"":""wela-volcano-park"",""region"":""alola""}",1
 547292,location,"[""wela-volcano-park""]",*,1020,"{""met"":[[""sm"",82,""Wela Volcano Park"",""pokeapi-index""]]}",1
+565721,location,"[""acuity-cavern""]",*,1020,"{""met"":[[""hgss"",89,""Acuity Cavern"",""pokeapi-index""],[""la"",111,""Acuity Cavern"",""pokeapi-name""]]}",1
+565722,location,"[""acuity-lakefront""]",*,1020,"{""met"":[[""bdsp"",351,""Acuity Lakefront"",""pokeapi-name""],[""hgss"",74,""Acuity Lakefront"",""pokeapi-index""]]}",1
+565723,location,"[""alabaster-icelands""]",*,1020,"{""met"":[[""la"",11,""Alabaster Icelands"",""created""]]}",1
+565724,location,"[""ancient-quarry""]",*,1016,"{""identifier"":""ancient-quarry"",""region"":""hisui""}",1
+565725,location,"[""ancient-quarry""]",*,1020,"{""met"":[[""la"",72,""Ancient Quarry"",""pokeapi-name""]]}",1
+565726,location,"[""arenas-approach""]",*,1016,"{""identifier"":""arenas-approach"",""region"":""hisui""}",1
+565727,location,"[""arenas-approach""]",*,1020,"{""met"":[[""la"",99,""Arena’s Approach"",""pokeapi-name""]]}",1
+565728,location,"[""avaluggs-legacy""]",*,1016,"{""identifier"":""avaluggs-legacy"",""region"":""hisui""}",1
+565729,location,"[""avaluggs-legacy""]",*,1020,"{""met"":[[""la"",92,""Avalugg’s Legacy"",""pokeapi-name""]]}",1
+565730,location,"[""axews-eye""]",*,1016,"{""identifier"":""axews-eye"",""region"":""galar""}",1
+565731,location,"[""axews-eye""]",*,1020,"{""met"":[[""swsh"",132,""Axew’s Eye (Wild Area)"",""pokeapi-index""]]}",1
+565732,location,"[""ballimere-lake""]",*,1016,"{""identifier"":""ballimere-lake"",""region"":""galar""}",1
+565733,location,"[""ballimere-lake""]",*,1020,"{""met"":[[""swsh"",230,""Ballimere Lake (Crown Tundra)"",""pokeapi-index""]]}",1
+565734,location,"[""bolderoll-slope""]",*,1016,"{""identifier"":""bolderoll-slope"",""region"":""hisui""}",1
+565735,location,"[""bolderoll-slope""]",*,1020,"{""met"":[[""la"",39,""Bolderoll Slope"",""pokeapi-name""]]}",1
+565736,location,"[""bonechill-wastes""]",*,1016,"{""identifier"":""bonechill-wastes"",""region"":""hisui""}",1
+565737,location,"[""bonechill-wastes""]",*,1020,"{""met"":[[""la"",90,""Bonechill Wastes"",""pokeapi-name""]]}",1
+565738,location,"[""brawlers-cave""]",*,1016,"{""identifier"":""brawlers-cave"",""region"":""galar""}",1
+565739,location,"[""brawlers-cave""]",*,1020,"{""met"":[[""swsh"",172,""Brawlers’ Cave (Isle of Armor)"",""pokeapi-index""]]}",1
+565740,location,"[""bridge-field""]",*,1016,"{""identifier"":""bridge-field"",""region"":""galar""}",1
+565741,location,"[""bridge-field""]",*,1020,"{""met"":[[""swsh"",142,""Bridge Field (Wild Area)"",""pokeapi-index""]]}",1
+565742,location,"[""canalave-city""]",*,1020,"{""met"":[[""bdsp"",24,""Canalave City"",""pokeapi-name""],[""hgss"",7,""Canalave City"",""pokeapi-index""]]}",1
+565743,location,"[""celestic-town""]",*,1020,"{""met"":[[""bdsp"",456,""Celestic Town"",""pokeapi-name""],[""hgss"",5,""Celestic Town"",""pokeapi-index""]]}",1
+565744,location,"[""celestica-ruins""]",*,1016,"{""identifier"":""celestica-ruins"",""region"":""hisui""}",1
+565745,location,"[""celestica-ruins""]",*,1020,"{""met"":[[""la"",81,""Celestica Ruins"",""pokeapi-name""]]}",1
+565746,location,"[""challenge-beach""]",*,1016,"{""identifier"":""challenge-beach"",""region"":""galar""}",1
+565747,location,"[""challenge-beach""]",*,1020,"{""met"":[[""swsh"",170,""Challenge Beach (Isle of Armor)"",""pokeapi-index""]]}",1
+565748,location,"[""challenge-road""]",*,1016,"{""identifier"":""challenge-road"",""region"":""galar""}",1
+565749,location,"[""challenge-road""]",*,1020,"{""met"":[[""swsh"",174,""Challenge Road (Isle of Armor)"",""pokeapi-index""]]}",1
+565750,location,"[""cobalt-coastlands""]",*,1020,"{""met"":[[""la"",9,""Cobalt Coastlands"",""created""]]}",1
+565751,location,"[""coronet-highlands""]",*,1020,"{""met"":[[""la"",10,""Coronet Highlands"",""created""]]}",1
+565752,location,"[""courageous-cavern""]",*,1016,"{""identifier"":""courageous-cavern"",""region"":""galar""}",1
+565753,location,"[""courageous-cavern""]",*,1020,"{""met"":[[""swsh"",176,""Courageous Cavern (Isle of Armor)"",""pokeapi-index""]]}",1
+565754,location,"[""crimson-mirelands""]",*,1020,"{""met"":[[""la"",8,""Crimson Mirelands"",""created""]]}",1
+565755,location,"[""crown-shrine""]",*,1016,"{""identifier"":""crown-shrine"",""region"":""galar""}",1
+565756,location,"[""crown-shrine""]",*,1020,"{""met"":[[""swsh"",220,""Crown Shrine (Crown Tundra)"",""pokeapi-index""]]}",1
+565757,location,"[""dappled-grove""]",*,1016,"{""identifier"":""dappled-grove"",""region"":""galar""}",1
+565758,location,"[""dappled-grove""]",*,1020,"{""met"":[[""swsh"",124,""Dappled Grove (Wild Area)"",""pokeapi-index""]]}",1
+565759,location,"[""deadwood-haunt""]",*,1016,"{""identifier"":""deadwood-haunt"",""region"":""hisui""}",1
+565760,location,"[""deadwood-haunt""]",*,1020,"{""met"":[[""la"",51,""Deadwood Haunt"",""pokeapi-name""]]}",1
+565761,location,"[""diamond-settlement""]",*,1016,"{""identifier"":""diamond-settlement"",""region"":""hisui""}",1
+565762,location,"[""diamond-settlement""]",*,1020,"{""met"":[[""la"",40,""Diamond Settlement"",""pokeapi-name""]]}",1
+565763,location,"[""dusty-bowl""]",*,1016,"{""identifier"":""dusty-bowl"",""region"":""galar""}",1
+565764,location,"[""dusty-bowl""]",*,1020,"{""met"":[[""swsh"",146,""Dusty Bowl (Wild Area)"",""pokeapi-index""]]}",1
+565765,location,"[""dyna-tree-hill""]",*,1016,"{""identifier"":""dyna-tree-hill"",""region"":""galar""}",1
+565766,location,"[""dyna-tree-hill""]",*,1020,"{""met"":[[""swsh"",234,""Dyna Tree Hill (Crown Tundra)"",""pokeapi-index""]]}",1
+565767,location,"[""east-lake-axewell""]",*,1016,"{""identifier"":""east-lake-axewell"",""region"":""galar""}",1
+565768,location,"[""east-lake-axewell""]",*,1020,"{""met"":[[""swsh"",128,""East Lake Axewell (Wild Area)"",""pokeapi-index""]]}",1
+565769,location,"[""eterna-city""]",*,1020,"{""met"":[[""bdsp"",54,""Eterna City"",""pokeapi-name""],[""hgss"",9,""Eterna City"",""pokeapi-index""]]}",1
+565770,location,"[""eterna-forest""]",*,1020,"{""met"":[[""bdsp"",199,""Eterna Forest"",""pokeapi-name""],[""bdsp"",200,""Eterna Forest (2)"",""pokeapi-name""],[""hgss"",48,""Eterna Forest"",""pokeapi-index""]]}",1
+565771,location,"[""fabled-spring""]",*,1016,"{""identifier"":""fabled-spring"",""region"":""hisui""}",1
+565772,location,"[""fabled-spring""]",*,1020,"{""met"":[[""la"",75,""Fabled Spring"",""pokeapi-name""]]}",1
+565773,location,"[""fields-of-honor""]",*,1016,"{""identifier"":""fields-of-honor"",""region"":""galar""}",1
+565774,location,"[""fields-of-honor""]",*,1020,"{""met"":[[""swsh"",164,""Fields of Honor (Isle of Armor)"",""pokeapi-index""]]}",1
+565775,location,"[""firespit-island""]",*,1016,"{""identifier"":""firespit-island"",""region"":""hisui""}",1
+565776,location,"[""firespit-island""]",*,1020,"{""met"":[[""la"",56,""Firespit Island"",""pokeapi-name""]]}",1
+565777,location,"[""floaro-gardens""]",*,1016,"{""identifier"":""floaro-gardens"",""region"":""hisui""}",1
+565778,location,"[""floaro-gardens""]",*,1020,"{""met"":[[""la"",26,""Floaro Gardens"",""pokeapi-name""]]}",1
+565779,location,"[""floaroma-meadow""]",*,1020,"{""met"":[[""bdsp"",253,""Floaroma Meadow"",""pokeapi-name""],[""hgss"",58,""Floaroma Meadow"",""pokeapi-index""]]}",1
+565780,location,"[""floaroma-town""]",*,1016,"{""identifier"":""floaroma-town"",""region"":""sinnoh""}",1
+565781,location,"[""floaroma-town""]",*,1020,"{""met"":[[""bdsp"",438,""Floaroma Town"",""pokeapi-name""]]}",1
+565782,location,"[""flower-paradise""]",*,1020,"{""met"":[[""bdsp"",285,""Flower Paradise"",""pokeapi-name""],[""hgss"",63,""Flower Paradise"",""pokeapi-index""]]}",1
+565783,location,"[""forest-of-focus""]",*,1016,"{""identifier"":""forest-of-focus"",""region"":""galar""}",1
+565784,location,"[""forest-of-focus""]",*,1020,"{""met"":[[""swsh"",168,""Forest of Focus (Isle of Armor)"",""pokeapi-index""]]}",1
+565785,location,"[""freezington""]",*,1016,"{""identifier"":""freezington"",""region"":""galar""}",1
+565786,location,"[""freezington""]",*,1020,"{""met"":[[""swsh"",206,""Freezington (Crown Tundra)"",""pokeapi-index""]]}",1
+565787,location,"[""frigid-sea""]",*,1016,"{""identifier"":""frigid-sea"",""region"":""galar""}",1
+565788,location,"[""frigid-sea""]",*,1020,"{""met"":[[""swsh"",226,""Frigid Sea (Crown Tundra)"",""pokeapi-index""]]}",1
+565789,location,"[""frostpoint-field""]",*,1016,"{""identifier"":""frostpoint-field"",""region"":""galar""}",1
+565790,location,"[""frostpoint-field""]",*,1020,"{""met"":[[""swsh"",208,""Frostpoint Field (Crown Tundra)"",""pokeapi-index""]]}",1
+565791,location,"[""fuego-ironworks""]",*,1020,"{""met"":[[""bdsp"",201,""Fuego Ironworks"",""pokeapi-name""],[""hgss"",49,""Fuego Ironworks"",""pokeapi-index""]]}",1
+565792,location,"[""galar-battle-tower""]",*,1016,"{""identifier"":""galar-battle-tower"",""region"":""galar""}",1
+565793,location,"[""galar-battle-tower""]",*,1020,"{""met"":[[""swsh"",158,""Battle Tower"",""pokeapi-index""]]}",1
+565794,location,"[""galar-iceberg-ruins""]",*,1016,"{""identifier"":""galar-iceberg-ruins"",""region"":""galar""}",1
+565795,location,"[""galar-iceberg-ruins""]",*,1020,"{""met"":[[""swsh"",238,""Iceberg Ruins"",""pokeapi-name""]]}",1
+565796,location,"[""galar-iron-ruins""]",*,1016,"{""identifier"":""galar-iron-ruins"",""region"":""galar""}",1
+565797,location,"[""galar-iron-ruins""]",*,1020,"{""met"":[[""swsh"",240,""Iron Ruins"",""pokeapi-name""]]}",1
+565798,location,"[""galar-mine""]",*,1016,"{""identifier"":""galar-mine"",""region"":""galar""}",1
+565799,location,"[""galar-mine""]",*,1020,"{""met"":[[""swsh"",30,""Galar Mine"",""pokeapi-index""]]}",1
+565800,location,"[""galar-mine-no-2""]",*,1016,"{""identifier"":""galar-mine-no-2"",""region"":""galar""}",1
+565801,location,"[""galar-mine-no-2""]",*,1020,"{""met"":[[""swsh"",54,""Galar Mine No. 2"",""pokeapi-index""]]}",1
+565802,location,"[""galar-rock-peak-ruins""]",*,1016,"{""identifier"":""galar-rock-peak-ruins"",""region"":""galar""}",1
+565803,location,"[""galar-rock-peak-ruins""]",*,1020,"{""met"":[[""swsh"",236,""Rock Peak Ruins"",""pokeapi-name""]]}",1
+565804,location,"[""galar-route-1""]",*,1016,"{""identifier"":""galar-route-1"",""region"":""galar""}",1
+565805,location,"[""galar-route-1""]",*,1020,"{""met"":[[""swsh"",12,""Route 1"",""pokeapi-index""]]}",1
+565806,location,"[""galar-route-10""]",*,1016,"{""identifier"":""galar-route-10"",""region"":""galar""}",1
+565807,location,"[""galar-route-10""]",*,1020,"{""met"":[[""swsh"",106,""Route 10"",""pokeapi-index""]]}",1
+565808,location,"[""galar-route-2""]",*,1016,"{""identifier"":""galar-route-2"",""region"":""galar""}",1
+565809,location,"[""galar-route-2""]",*,1020,"{""met"":[[""swsh"",18,""Route 2"",""pokeapi-index""]]}",1
+565810,location,"[""galar-route-3""]",*,1016,"{""identifier"":""galar-route-3"",""region"":""galar""}",1
+565811,location,"[""galar-route-3""]",*,1020,"{""met"":[[""swsh"",28,""Route 3"",""pokeapi-index""]]}",1
+565812,location,"[""galar-route-4""]",*,1016,"{""identifier"":""galar-route-4"",""region"":""galar""}",1
+565813,location,"[""galar-route-4""]",*,1020,"{""met"":[[""swsh"",32,""Route 4"",""pokeapi-index""]]}",1
+565814,location,"[""galar-route-5""]",*,1016,"{""identifier"":""galar-route-5"",""region"":""galar""}",1
+565815,location,"[""galar-route-5""]",*,1020,"{""met"":[[""swsh"",40,""Route 5"",""pokeapi-index""]]}",1
+565816,location,"[""galar-route-6""]",*,1016,"{""identifier"":""galar-route-6"",""region"":""galar""}",1
+565817,location,"[""galar-route-6""]",*,1020,"{""met"":[[""swsh"",68,""Route 6"",""pokeapi-index""]]}",1
+565818,location,"[""galar-route-7""]",*,1016,"{""identifier"":""galar-route-7"",""region"":""galar""}",1
+565819,location,"[""galar-route-7""]",*,1020,"{""met"":[[""swsh"",84,""Route 7"",""pokeapi-index""]]}",1
+565820,location,"[""galar-route-8""]",*,1016,"{""identifier"":""galar-route-8"",""region"":""galar""}",1
+565821,location,"[""galar-route-8""]",*,1020,"{""met"":[[""swsh"",86,""Route 8"",""pokeapi-index""]]}",1
+565822,location,"[""galar-route-8-steamdrift-way""]",*,1020,"{""met"":[[""swsh"",88,""Route 8 (Steamdrift Way)"",""created""]]}",1
+565823,location,"[""galar-route-9""]",*,1016,"{""identifier"":""galar-route-9"",""region"":""galar""}",1
+565824,location,"[""galar-route-9""]",*,1020,"{""met"":[[""swsh"",90,""Route 9"",""pokeapi-index""]]}",1
+565825,location,"[""galar-route-9-circhester-bay""]",*,1020,"{""met"":[[""swsh"",92,""Route 9 (Circhester Bay)"",""created""]]}",1
+565826,location,"[""galar-route-9-outer-spikemuth""]",*,1020,"{""met"":[[""swsh"",94,""Route 9 (Outer Spikemuth)"",""created""]]}",1
+565827,location,"[""gapejaw-bog""]",*,1016,"{""identifier"":""gapejaw-bog"",""region"":""hisui""}",1
+565828,location,"[""gapejaw-bog""]",*,1020,"{""met"":[[""la"",36,""Gapejaw Bog"",""pokeapi-name""]]}",1
+565829,location,"[""giants-bed""]",*,1016,"{""identifier"":""giants-bed"",""region"":""galar""}",1
+565830,location,"[""giants-bed""]",*,1020,"{""met"":[[""swsh"",210,""Giant’s Bed (Crown Tundra)"",""pokeapi-index""]]}",1
+565831,location,"[""giants-cap""]",*,1016,"{""identifier"":""giants-cap"",""region"":""galar""}",1
+565832,location,"[""giants-cap""]",*,1020,"{""met"":[[""swsh"",152,""Giant’s Cap (Wild Area)"",""pokeapi-index""]]}",1
+565833,location,"[""giants-foot""]",*,1016,"{""identifier"":""giants-foot"",""region"":""galar""}",1
+565834,location,"[""giants-foot""]",*,1020,"{""met"":[[""swsh"",222,""Giant’s Foot (Crown Tundra)"",""pokeapi-index""]]}",1
+565835,location,"[""giants-mirror""]",*,1016,"{""identifier"":""giants-mirror"",""region"":""galar""}",1
+565836,location,"[""giants-mirror""]",*,1020,"{""met"":[[""swsh"",148,""Giant’s Mirror (Wild Area)"",""pokeapi-index""]]}",1
+565837,location,"[""giants-seat""]",*,1016,"{""identifier"":""giants-seat"",""region"":""galar""}",1
+565838,location,"[""giants-seat""]",*,1020,"{""met"":[[""swsh"",136,""Giant’s Seat (Wild Area)"",""pokeapi-index""]]}",1
+565839,location,"[""glimwood-tangle""]",*,1016,"{""identifier"":""glimwood-tangle"",""region"":""galar""}",1
+565840,location,"[""glimwood-tangle""]",*,1020,"{""met"":[[""swsh"",76,""Glimwood Tangle"",""pokeapi-index""]]}",1
+565841,location,"[""grand-underground-big-bluff-cavern""]",*,1020,"{""met"":[[""bdsp"",612,""Grand Underground (Big Bluff Cavern)"",""created""]]}",1
+565842,location,"[""grand-underground-bogsunk-cavern""]",*,1020,"{""met"":[[""bdsp"",616,""Grand Underground (Bogsunk Cavern)"",""created""]]}",1
+565843,location,"[""grand-underground-dazzling-cave""]",*,1020,"{""met"":[[""bdsp"",561,""Grand Underground (Dazzling Cave)"",""created""],[""bdsp"",579,""Grand Underground (Dazzling Cave) (2)"",""created""],[""bdsp"",580,""Grand Underground (Dazzling Cave) (3)"",""created""],[""bdsp"",601,""Grand Underground (Dazzling Cave) (4)"",""created""]]}",1
+565844,location,"[""grand-underground-fountainspring-cave""]",*,1020,"{""met"":[[""bdsp"",550,""Grand Underground (Fountainspring Cave)"",""created""],[""bdsp"",552,""Grand Underground (Fountainspring Cave) (2)"",""created""],[""bdsp"",553,""Grand Underground (Fountainspring Cave) (3)"",""created""],[""bdsp"",571,""Grand Underground (Fountainspring Cave) (4)"",""created""],[""bdsp"",591,""Grand Underground (Fountainspring Cave) (5)"",""created""],[""bdsp"",595,""Grand Underground (Fountainspring Cave) (6)"",""created""],[""bdsp"",604,""Grand Underground (Fountainspring Cave) (7)"",""created""]]}",1
+565845,location,"[""grand-underground-glacial-cavern""]",*,1020,"{""met"":[[""bdsp"",615,""Grand Underground (Glacial Cavern)"",""created""]]}",1
+565846,location,"[""grand-underground-grassland-cave""]",*,1020,"{""met"":[[""bdsp"",544,""Grand Underground (Grassland Cave)"",""created""],[""bdsp"",549,""Grand Underground (Grassland Cave) (2)"",""created""],[""bdsp"",567,""Grand Underground (Grassland Cave) (3)"",""created""],[""bdsp"",570,""Grand Underground (Grassland Cave) (4)"",""created""],[""bdsp"",605,""Grand Underground (Grassland Cave) (5)"",""created""]]}",1
+565847,location,"[""grand-underground-icy-cave""]",*,1020,"{""met"":[[""bdsp"",578,""Grand Underground (Icy Cave)"",""created""],[""bdsp"",581,""Grand Underground (Icy Cave) (2)"",""created""],[""bdsp"",582,""Grand Underground (Icy Cave) (3)"",""created""],[""bdsp"",583,""Grand Underground (Icy Cave) (4)"",""created""]]}",1
+565848,location,"[""grand-underground-riverbank-cave""]",*,1020,"{""met"":[[""bdsp"",545,""Grand Underground (Riverbank Cave)"",""created""],[""bdsp"",568,""Grand Underground (Riverbank Cave) (2)"",""created""],[""bdsp"",577,""Grand Underground (Riverbank Cave) (3)"",""created""]]}",1
+565849,location,"[""grand-underground-rocky-cave""]",*,1020,"{""met"":[[""bdsp"",556,""Grand Underground (Rocky Cave)"",""created""],[""bdsp"",559,""Grand Underground (Rocky Cave) (2)"",""created""],[""bdsp"",565,""Grand Underground (Rocky Cave) (3)"",""created""],[""bdsp"",596,""Grand Underground (Rocky Cave) (4)"",""created""],[""bdsp"",603,""Grand Underground (Rocky Cave) (5)"",""created""],[""bdsp"",608,""Grand Underground (Rocky Cave) (6)"",""created""]]}",1
+565850,location,"[""grand-underground-sandsear-cave""]",*,1020,"{""met"":[[""bdsp"",562,""Grand Underground (Sandsear Cave)"",""created""],[""bdsp"",599,""Grand Underground (Sandsear Cave) (2)"",""created""],[""bdsp"",609,""Grand Underground (Sandsear Cave) (3)"",""created""]]}",1
+565851,location,"[""grand-underground-spacious-cave""]",*,1020,"{""met"":[[""bdsp"",543,""Grand Underground (Spacious Cave)"",""created""],[""bdsp"",546,""Grand Underground (Spacious Cave) (02)"",""created""],[""bdsp"",547,""Grand Underground (Spacious Cave) (03)"",""created""],[""bdsp"",551,""Grand Underground (Spacious Cave) (04)"",""created""],[""bdsp"",554,""Grand Underground (Spacious Cave) (05)"",""created""],[""bdsp"",555,""Grand Underground (Spacious Cave) (06)"",""created""],[""bdsp"",558,""Grand Underground (Spacious Cave) (07)"",""created""],[""bdsp"",563,""Grand Underground (Spacious Cave) (08)"",""created""],[""bdsp"",564,""Grand Underground (Spacious Cave) (09)"",""created""],[""bdsp"",566,""Grand Underground (Spacious Cave) (10)"",""created""],[""bdsp"",569,""Grand Underground (Spacious Cave) (11)"",""created""],[""bdsp"",573,""Grand Underground (Spacious Cave) (12)"",""created""],[""bdsp"",574,""Grand Underground (Spacious Cave) (13)"",""created""],[""bdsp"",575,""Grand Underground (Spacious Cave) (14)"",""created""],[""bdsp"",584,""Grand Underground (Spacious Cave) (15)"",""created""],[""bdsp"",585,""Grand Underground (Spacious Cave) (16)"",""created""],[""bdsp"",592,""Grand Underground (Spacious Cave) (17)"",""created""],[""bdsp"",594,""Grand Underground (Spacious Cave) (18)"",""created""],[""bdsp"",598,""Grand Underground (Spacious Cave) (19)"",""created""],[""bdsp"",606,""Grand Underground (Spacious Cave) (20)"",""created""]]}",1
+565852,location,"[""grand-underground-stargleam-cavern""]",*,1020,"{""met"":[[""bdsp"",614,""Grand Underground (Stargleam Cavern)"",""created""]]}",1
+565853,location,"[""grand-underground-still-water-cavern""]",*,1020,"{""met"":[[""bdsp"",611,""Grand Underground (Still-Water Cavern)"",""created""]]}",1
+565854,location,"[""grand-underground-sunlit-cavern""]",*,1020,"{""met"":[[""bdsp"",613,""Grand Underground (Sunlit Cavern)"",""created""]]}",1
+565855,location,"[""grand-underground-swampy-cave""]",*,1020,"{""met"":[[""bdsp"",548,""Grand Underground (Swampy Cave)"",""created""],[""bdsp"",572,""Grand Underground (Swampy Cave) (2)"",""created""],[""bdsp"",576,""Grand Underground (Swampy Cave) (3)"",""created""],[""bdsp"",590,""Grand Underground (Swampy Cave) (4)"",""created""],[""bdsp"",593,""Grand Underground (Swampy Cave) (5)"",""created""],[""bdsp"",597,""Grand Underground (Swampy Cave) (6)"",""created""],[""bdsp"",607,""Grand Underground (Swampy Cave) (7)"",""created""]]}",1
+565856,location,"[""grand-underground-typhlo-cavern""]",*,1020,"{""met"":[[""bdsp"",617,""Grand Underground (Typhlo Cavern)"",""created""]]}",1
+565857,location,"[""grand-underground-volcanic-cave""]",*,1020,"{""met"":[[""bdsp"",557,""Grand Underground (Volcanic Cave)"",""created""],[""bdsp"",560,""Grand Underground (Volcanic Cave) (2)"",""created""],[""bdsp"",600,""Grand Underground (Volcanic Cave) (3)"",""created""],[""bdsp"",602,""Grand Underground (Volcanic Cave) (4)"",""created""],[""bdsp"",610,""Grand Underground (Volcanic Cave) (5)"",""created""]]}",1
+565858,location,"[""grand-underground-whiteout-cave""]",*,1020,"{""met"":[[""bdsp"",586,""Grand Underground (Whiteout Cave)"",""created""],[""bdsp"",587,""Grand Underground (Whiteout Cave) (2)"",""created""],[""bdsp"",588,""Grand Underground (Whiteout Cave) (3)"",""created""],[""bdsp"",589,""Grand Underground (Whiteout Cave) (4)"",""created""]]}",1
+565859,location,"[""grandtree-arena""]",*,1016,"{""identifier"":""grandtree-arena"",""region"":""hisui""}",1
+565860,location,"[""grandtree-arena""]",*,1020,"{""met"":[[""la"",21,""Grandtree Arena"",""pokeapi-name""]]}",1
+565861,location,"[""great-marsh""]",*,1020,"{""met"":[[""bdsp"",219,""Great Marsh"",""pokeapi-name""],[""bdsp"",220,""Great Marsh (2)"",""pokeapi-name""],[""bdsp"",221,""Great Marsh (3)"",""pokeapi-name""],[""bdsp"",222,""Great Marsh (4)"",""pokeapi-name""],[""bdsp"",223,""Great Marsh (5)"",""pokeapi-name""],[""bdsp"",224,""Great Marsh (6)"",""pokeapi-name""],[""hgss"",52,""Great Marsh"",""pokeapi-index""]]}",1
+565862,location,"[""grueling-grove""]",*,1016,"{""identifier"":""grueling-grove"",""region"":""hisui""}",1
+565863,location,"[""grueling-grove""]",*,1020,"{""met"":[[""la"",22,""Grueling Grove"",""pokeapi-name""]]}",1
+565864,location,"[""hall-of-origin""]",*,1020,"{""met"":[[""bdsp"",218,""Hall of Origin"",""created""],[""bdsp"",618,""Hall of Origin (2)"",""created""]]}",1
+565865,location,"[""hammerlocke-hills""]",*,1016,"{""identifier"":""hammerlocke-hills"",""region"":""galar""}",1
+565866,location,"[""hammerlocke-hills""]",*,1020,"{""met"":[[""swsh"",150,""Hammerlocke Hills (Wild Area)"",""pokeapi-index""]]}",1
+565867,location,"[""hearthome-city""]",*,1020,"{""met"":[[""bdsp"",104,""Hearthome City (18)"",""pokeapi-name""],[""hgss"",10,""Hearthome City"",""pokeapi-index""]]}",1
+565868,location,"[""hearts-crag""]",*,1016,"{""identifier"":""hearts-crag"",""region"":""hisui""}",1
+565869,location,"[""hearts-crag""]",*,1020,"{""met"":[[""la"",101,""Heart’s Crag"",""pokeapi-name""]]}",1
+565870,location,"[""hisui-lake-verity""]",*,1016,"{""identifier"":""hisui-lake-verity"",""region"":""hisui""}",1
+565871,location,"[""hisui-lake-verity""]",*,1020,"{""met"":[[""la"",23,""Lake Verity"",""pokeapi-name""]]}",1
+565872,location,"[""hisui-snowpoint-temple""]",*,1016,"{""identifier"":""hisui-snowpoint-temple"",""region"":""hisui""}",1
+565873,location,"[""hisui-snowpoint-temple""]",*,1020,"{""met"":[[""la"",95,""Snowpoint Temple"",""pokeapi-name""]]}",1
+565874,location,"[""hisui-spring-path""]",*,1016,"{""identifier"":""hisui-spring-path"",""region"":""hisui""}",1
+565875,location,"[""hisui-spring-path""]",*,1020,"{""met"":[[""la"",58,""Spring Path"",""pokeapi-name""]]}",1
+565876,location,"[""hisui-turnback-cave""]",*,1016,"{""identifier"":""hisui-turnback-cave"",""region"":""hisui""}",1
+565877,location,"[""hisui-turnback-cave""]",*,1020,"{""met"":[[""la"",67,""Turnback Cave"",""pokeapi-name""]]}",1
+565878,location,"[""hisui-wayward-cave""]",*,1016,"{""identifier"":""hisui-wayward-cave"",""region"":""hisui""}",1
+565879,location,"[""hisui-wayward-cave""]",*,1020,"{""met"":[[""la"",86,""Wayward Cave"",""pokeapi-name""]]}",1
+565880,location,"[""honeycalm-island""]",*,1016,"{""identifier"":""honeycalm-island"",""region"":""galar""}",1
+565881,location,"[""honeycalm-island""]",*,1020,"{""met"":[[""swsh"",194,""Honeycalm Island (Isle of Armor)"",""pokeapi-index""]]}",1
+565882,location,"[""honeycalm-sea""]",*,1016,"{""identifier"":""honeycalm-sea"",""region"":""galar""}",1
+565883,location,"[""honeycalm-sea""]",*,1020,"{""met"":[[""swsh"",192,""Honeycalm Sea (Isle of Armor)"",""pokeapi-index""]]}",1
+565884,location,"[""horseshoe-plains""]",*,1016,"{""identifier"":""horseshoe-plains"",""region"":""hisui""}",1
+565885,location,"[""horseshoe-plains""]",*,1020,"{""met"":[[""la"",14,""Horseshoe Plains"",""pokeapi-name""]]}",1
+565886,location,"[""hulbury""]",*,1016,"{""identifier"":""hulbury"",""region"":""galar""}",1
+565887,location,"[""hulbury""]",*,1020,"{""met"":[[""swsh"",44,""Hulbury"",""pokeapi-index""]]}",1
+565888,location,"[""ice-column-chamber""]",*,1016,"{""identifier"":""ice-column-chamber"",""region"":""hisui""}",1
+565889,location,"[""ice-column-chamber""]",*,1020,"{""met"":[[""la"",102,""Ice Column Chamber"",""pokeapi-name""]]}",1
+565890,location,"[""icebound-falls""]",*,1016,"{""identifier"":""icebound-falls"",""region"":""hisui""}",1
+565891,location,"[""icebound-falls""]",*,1020,"{""met"":[[""la"",97,""Icebound Falls"",""pokeapi-name""]]}",1
+565892,location,"[""icepeak-arena""]",*,1016,"{""identifier"":""icepeak-arena"",""region"":""hisui""}",1
+565893,location,"[""icepeak-arena""]",*,1020,"{""met"":[[""la"",141,""Icepeak Arena"",""pokeapi-name""]]}",1
+565894,location,"[""insular-sea""]",*,1016,"{""identifier"":""insular-sea"",""region"":""galar""}",1
+565895,location,"[""insular-sea""]",*,1020,"{""met"":[[""swsh"",190,""Insular Sea (Isle of Armor)"",""pokeapi-index""]]}",1
+565896,location,"[""iron-island""]",*,1020,"{""met"":[[""bdsp"",298,""Iron Island"",""pokeapi-name""],[""bdsp"",299,""Iron Island (2)"",""pokeapi-name""],[""bdsp"",300,""Iron Island (3)"",""pokeapi-name""],[""bdsp"",301,""Iron Island (4)"",""pokeapi-name""],[""bdsp"",302,""Iron Island (5)"",""pokeapi-name""],[""bdsp"",303,""Iron Island (6)"",""pokeapi-name""],[""bdsp"",304,""Iron Island (7)"",""pokeapi-name""],[""hgss"",69,""Iron Island"",""pokeapi-index""]]}",1
+565897,location,"[""jubilife-village""]",*,1016,"{""identifier"":""jubilife-village"",""region"":""hisui""}",1
+565898,location,"[""jubilife-village""]",*,1020,"{""met"":[[""la"",6,""Jubilife Village"",""pokeapi-name""]]}",1
+565899,location,"[""lake-acuity""]",*,1020,"{""met"":[[""bdsp"",330,""Lake Acuity (2)"",""pokeapi-name""],[""hgss"",78,""Lake Acuity"",""pokeapi-index""]]}",1
+565900,location,"[""lake-acuity-acuity-cavern""]",*,1020,"{""met"":[[""bdsp"",331,""Lake Acuity (Acuity Cavern)"",""created""]]}",1
+565901,location,"[""lake-of-outrage""]",*,1016,"{""identifier"":""lake-of-outrage"",""region"":""galar""}",1
+565902,location,"[""lake-of-outrage""]",*,1020,"{""met"":[[""swsh"",154,""Lake of Outrage (Wild Area)"",""pokeapi-index""]]}",1
+565903,location,"[""lake-valor""]",*,1020,"{""met"":[[""bdsp"",327,""Lake Valor (2)"",""pokeapi-name""],[""hgss"",77,""Lake Valor"",""pokeapi-index""]]}",1
+565904,location,"[""lake-valor-valor-cavern""]",*,1020,"{""met"":[[""bdsp"",328,""Lake Valor (Valor Cavern)"",""created""]]}",1
+565905,location,"[""lake-verity""]",*,1020,"{""met"":[[""bdsp"",323,""Lake Verity"",""pokeapi-name""],[""bdsp"",324,""Lake Verity (2)"",""pokeapi-name""],[""hgss"",76,""Lake Verity"",""pokeapi-index""]]}",1
+565906,location,"[""lakeside-cave""]",*,1016,"{""identifier"":""lakeside-cave"",""region"":""galar""}",1
+565907,location,"[""lakeside-cave""]",*,1020,"{""met"":[[""swsh"",232,""Lakeside Cave (Crown Tundra)"",""pokeapi-index""]]}",1
+565908,location,"[""lava-dome-sanctum""]",*,1020,"{""met"":[[""la"",68,""Lava Dome Sanctum"",""created""]]}",1
+565909,location,"[""lonely-spring""]",*,1016,"{""identifier"":""lonely-spring"",""region"":""hisui""}",1
+565910,location,"[""lonely-spring""]",*,1020,"{""met"":[[""la"",74,""Lonely Spring"",""pokeapi-name""]]}",1
+565911,location,"[""loop-lagoon""]",*,1016,"{""identifier"":""loop-lagoon"",""region"":""galar""}",1
+565912,location,"[""loop-lagoon""]",*,1020,"{""met"":[[""swsh"",178,""Loop Lagoon (Isle of Armor)"",""pokeapi-index""]]}",1
+565913,location,"[""lunkers-lair""]",*,1016,"{""identifier"":""lunkers-lair"",""region"":""hisui""}",1
+565914,location,"[""lunkers-lair""]",*,1020,"{""met"":[[""la"",59,""Lunker’s Lair"",""pokeapi-name""]]}",1
+565915,location,"[""maniac-tunnel""]",*,1020,"{""met"":[[""bdsp"",296,""Maniac Tunnel"",""pokeapi-name""],[""hgss"",67,""Maniac Tunnel"",""pokeapi-index""]]}",1
+565916,location,"[""master-dojo""]",*,1016,"{""identifier"":""master-dojo"",""region"":""galar""}",1
+565917,location,"[""master-dojo""]",*,1020,"{""met"":[[""swsh"",196,""Master Dojo"",""pokeapi-index""]]}",1
+565918,location,"[""max-lair""]",*,1016,"{""identifier"":""max-lair"",""region"":""galar""}",1
+565919,location,"[""max-lair""]",*,1020,"{""met"":[[""swsh"",244,""Max Lair"",""pokeapi-index""]]}",1
+565920,location,"[""moonview-arena""]",*,1016,"{""identifier"":""moonview-arena"",""region"":""hisui""}",1
+565921,location,"[""moonview-arena""]",*,1020,"{""met"":[[""la"",82,""Moonview Arena"",""pokeapi-name""]]}",1
+565922,location,"[""motostoke""]",*,1016,"{""identifier"":""motostoke"",""region"":""galar""}",1
+565923,location,"[""motostoke""]",*,1020,"{""met"":[[""swsh"",20,""Motostoke"",""pokeapi-index""]]}",1
+565924,location,"[""motostoke-outskirts""]",*,1016,"{""identifier"":""motostoke-outskirts"",""region"":""galar""}",1
+565925,location,"[""motostoke-outskirts""]",*,1020,"{""met"":[[""swsh"",52,""Motostoke Outskirts"",""pokeapi-index""]]}",1
+565926,location,"[""motostoke-riverbank""]",*,1016,"{""identifier"":""motostoke-riverbank"",""region"":""galar""}",1
+565927,location,"[""motostoke-riverbank""]",*,1020,"{""met"":[[""swsh"",140,""Motostoke Riverbank (Wild Area)"",""pokeapi-index""]]}",1
+565928,location,"[""motostoke-stadium""]",*,1020,"{""met"":[[""swsh"",24,""Motostoke Stadium"",""created""]]}",1
+565929,location,"[""mt-coronet""]",*,1020,"{""met"":[[""bdsp"",203,""Mount Coronet"",""pokeapi-name""],[""bdsp"",204,""Mount Coronet (02)"",""pokeapi-name""],[""bdsp"",205,""Mount Coronet (03)"",""pokeapi-name""],[""bdsp"",206,""Mount Coronet (04)"",""pokeapi-name""],[""bdsp"",207,""Mount Coronet (05)"",""pokeapi-name""],[""bdsp"",208,""Mount Coronet (06)"",""pokeapi-name""],[""bdsp"",209,""Mount Coronet (07)"",""pokeapi-name""],[""bdsp"",210,""Mount Coronet (08)"",""pokeapi-name""],[""bdsp"",211,""Mount Coronet (09)"",""pokeapi-name""],[""bdsp"",212,""Mount Coronet (10)"",""pokeapi-name""],[""bdsp"",213,""Mount Coronet (11)"",""pokeapi-name""],[""bdsp"",214,""Mount Coronet (12)"",""pokeapi-name""],[""bdsp"",215,""Mount Coronet (13)"",""pokeapi-name""],[""hgss"",50,""Mt. Coronet"",""pokeapi-index""]]}",1
+565930,location,"[""natures-pantry""]",*,1016,"{""identifier"":""natures-pantry"",""region"":""hisui""}",1
+565931,location,"[""natures-pantry""]",*,1020,"{""met"":[[""la"",19,""Nature’s Pantry"",""pokeapi-name""]]}",1
+565932,location,"[""newmoon-island""]",*,1020,"{""met"":[[""bdsp"",333,""Newmoon Island (2)"",""pokeapi-name""],[""hgss"",79,""Newmoon Island"",""pokeapi-index""]]}",1
+565933,location,"[""north-lake-miloch""]",*,1016,"{""identifier"":""north-lake-miloch"",""region"":""galar""}",1
+565934,location,"[""north-lake-miloch""]",*,1020,"{""met"":[[""swsh"",138,""North Lake Miloch (Wild Area)"",""pokeapi-index""]]}",1
+565935,location,"[""obsidian-falls""]",*,1016,"{""identifier"":""obsidian-falls"",""region"":""hisui""}",1
+565936,location,"[""obsidian-falls""]",*,1020,"{""met"":[[""la"",17,""Obsidian Falls"",""pokeapi-name""]]}",1
+565937,location,"[""obsidian-fieldlands""]",*,1020,"{""met"":[[""la"",7,""Obsidian Fieldlands"",""created""]]}",1
+565938,location,"[""old-cemetery""]",*,1016,"{""identifier"":""old-cemetery"",""region"":""galar""}",1
+565939,location,"[""old-cemetery""]",*,1020,"{""met"":[[""swsh"",212,""Old Cemetery (Crown Tundra)"",""pokeapi-index""]]}",1
+565940,location,"[""old-chateau""]",*,1020,"{""met"":[[""bdsp"",306,""Old Chateau"",""pokeapi-name""],[""bdsp"",307,""Old Chateau (2)"",""pokeapi-name""],[""bdsp"",308,""Old Chateau (3)"",""pokeapi-name""],[""bdsp"",309,""Old Chateau (4)"",""pokeapi-name""],[""bdsp"",310,""Old Chateau (5)"",""pokeapi-name""],[""bdsp"",311,""Old Chateau (6)"",""pokeapi-name""],[""bdsp"",312,""Old Chateau (7)"",""pokeapi-name""],[""bdsp"",313,""Old Chateau (8)"",""pokeapi-name""],[""bdsp"",314,""Old Chateau (9)"",""pokeapi-name""],[""hgss"",70,""Old Chateau"",""pokeapi-index""]]}",1
+565941,location,"[""oreburgh-city""]",*,1020,"{""met"":[[""bdsp"",49,""Oreburgh City (11)"",""pokeapi-name""]]}",1
+565942,location,"[""oreburgh-gate""]",*,1020,"{""met"":[[""bdsp"",255,""Oreburgh Gate"",""pokeapi-name""],[""bdsp"",256,""Oreburgh Gate (2)"",""pokeapi-name""],[""hgss"",59,""Oreburgh Gate"",""pokeapi-index""]]}",1
+565943,location,"[""oreburgh-mine""]",*,1020,"{""met"":[[""bdsp"",195,""Oreburgh Mine"",""pokeapi-name""],[""bdsp"",196,""Oreburgh Mine (2)"",""pokeapi-name""],[""hgss"",46,""Oreburgh Mine"",""pokeapi-index""]]}",1
+565944,location,"[""pastoria-city""]",*,1020,"{""met"":[[""bdsp"",110,""Pastoria City"",""pokeapi-name""],[""hgss"",11,""Pastoria City"",""pokeapi-index""]]}",1
+565945,location,"[""path-to-the-peak""]",*,1016,"{""identifier"":""path-to-the-peak"",""region"":""galar""}",1
+565946,location,"[""path-to-the-peak""]",*,1020,"{""met"":[[""swsh"",218,""Path to the Peak (Crown Tundra)"",""pokeapi-index""]]}",1
+565947,location,"[""postwick""]",*,1016,"{""identifier"":""postwick"",""region"":""galar""}",1
+565948,location,"[""postwick""]",*,1020,"{""met"":[[""swsh"",6,""Postwick"",""pokeapi-index""]]}",1
+565949,location,"[""potbottom-desert""]",*,1016,"{""identifier"":""potbottom-desert"",""region"":""galar""}",1
+565950,location,"[""potbottom-desert""]",*,1020,"{""met"":[[""swsh"",184,""Potbottom Desert (Isle of Armor)"",""pokeapi-index""]]}",1
+565951,location,"[""ramanas-island""]",*,1016,"{""identifier"":""ramanas-island"",""region"":""hisui""}",1
+565952,location,"[""ramanas-island""]",*,1020,"{""met"":[[""la"",27,""Ramanas Island"",""pokeapi-name""]]}",1
+565953,location,"[""ramanas-park-pure-space""]",*,1020,"{""met"":[[""bdsp"",506,""Ramanas Park (Pure Space)"",""created""]]}",1
+565954,location,"[""ramanas-park-strange-space""]",*,1020,"{""met"":[[""bdsp"",507,""Ramanas Park (Strange Space)"",""created""]]}",1
+565955,location,"[""ravaged-path""]",*,1020,"{""met"":[[""bdsp"",252,""Ravaged Path"",""pokeapi-name""],[""hgss"",57,""Ravaged Path"",""pokeapi-index""]]}",1
+565956,location,"[""resort-area""]",*,1020,"{""met"":[[""bdsp"",473,""Resort Area"",""pokeapi-name""],[""hgss"",83,""Resort Area"",""pokeapi-index""]]}",1
+565957,location,"[""roaring-sea-caves""]",*,1016,"{""identifier"":""roaring-sea-caves"",""region"":""galar""}",1
+565958,location,"[""roaring-sea-caves""]",*,1020,"{""met"":[[""swsh"",224,""Roaring-Sea Caves (Crown Tundra)"",""pokeapi-index""]]}",1
+565959,location,"[""rolling-fields""]",*,1016,"{""identifier"":""rolling-fields"",""region"":""galar""}",1
+565960,location,"[""rolling-fields""]",*,1020,"{""met"":[[""swsh"",122,""Rolling Fields (Wild Area)"",""pokeapi-index""]]}",1
+565961,location,"[""ruin-maniac-cave""]",*,1020,"{""met"":[[""bdsp"",294,""Ruin Maniac Cave"",""pokeapi-name""],[""bdsp"",295,""Ruin Maniac Cave (2)"",""pokeapi-name""],[""hgss"",66,""Ruin Maniac Cave"",""pokeapi-index""]]}",1
+565962,location,"[""sands-reach""]",*,1016,"{""identifier"":""sands-reach"",""region"":""hisui""}",1
+565963,location,"[""sands-reach""]",*,1020,"{""met"":[[""la"",129,""Sand’s Reach"",""pokeapi-name""]]}",1
+565964,location,"[""scarlet-bog""]",*,1016,"{""identifier"":""scarlet-bog"",""region"":""hisui""}",1
+565965,location,"[""scarlet-bog""]",*,1020,"{""met"":[[""la"",38,""Scarlet Bog"",""pokeapi-name""]]}",1
+565966,location,"[""seaside-hollow""]",*,1016,"{""identifier"":""seaside-hollow"",""region"":""hisui""}",1
+565967,location,"[""seaside-hollow""]",*,1020,"{""met"":[[""la"",64,""Seaside Hollow"",""pokeapi-name""]]}",1
+565968,location,"[""sendoff-spring""]",*,1020,"{""met"":[[""bdsp"",263,""Sendoff Spring"",""pokeapi-name""],[""hgss"",61,""Sendoff Spring"",""pokeapi-index""]]}",1
+565969,location,"[""shrouded-ruins""]",*,1016,"{""identifier"":""shrouded-ruins"",""region"":""hisui""}",1
+565970,location,"[""shrouded-ruins""]",*,1020,"{""met"":[[""la"",43,""Shrouded Ruins"",""pokeapi-name""]]}",1
+565971,location,"[""sinnoh-pokemon-league""]",*,1020,"{""met"":[[""bdsp"",167,""Pokémon League"",""pokeapi-name""],[""hgss"",15,""Pokémon League"",""pokeapi-index""]]}",1
+565972,location,"[""sinnoh-route-201""]",*,1020,"{""met"":[[""bdsp"",354,""Route 201"",""pokeapi-name""],[""hgss"",16,""Route 201"",""pokeapi-index""]]}",1
+565973,location,"[""sinnoh-route-202""]",*,1020,"{""met"":[[""bdsp"",355,""Route 202"",""pokeapi-name""],[""hgss"",17,""Route 202"",""pokeapi-index""]]}",1
+565974,location,"[""sinnoh-route-203""]",*,1020,"{""met"":[[""bdsp"",356,""Route 203"",""pokeapi-name""],[""hgss"",18,""Route 203"",""pokeapi-index""]]}",1
+565975,location,"[""sinnoh-route-204""]",*,1020,"{""met"":[[""bdsp"",357,""Route 204"",""pokeapi-name""],[""bdsp"",358,""Route 204 (2)"",""pokeapi-name""],[""hgss"",19,""Route 204"",""pokeapi-index""]]}",1
+565976,location,"[""sinnoh-route-205""]",*,1020,"{""met"":[[""bdsp"",359,""Route 205"",""pokeapi-name""],[""bdsp"",361,""Route 205 (3)"",""pokeapi-name""],[""hgss"",20,""Route 205"",""pokeapi-index""]]}",1
+565977,location,"[""sinnoh-route-206""]",*,1020,"{""met"":[[""bdsp"",362,""Route 206"",""pokeapi-name""],[""hgss"",21,""Route 206"",""pokeapi-index""]]}",1
+565978,location,"[""sinnoh-route-207""]",*,1020,"{""met"":[[""bdsp"",364,""Route 207"",""pokeapi-name""],[""hgss"",22,""Route 207"",""pokeapi-index""]]}",1
+565979,location,"[""sinnoh-route-208""]",*,1020,"{""met"":[[""bdsp"",365,""Route 208"",""pokeapi-name""],[""hgss"",23,""Route 208"",""pokeapi-index""]]}",1
+565980,location,"[""sinnoh-route-209""]",*,1020,"{""met"":[[""bdsp"",367,""Route 209"",""pokeapi-name""],[""bdsp"",368,""Route 209 (2)"",""pokeapi-name""],[""bdsp"",369,""Route 209 (3)"",""pokeapi-name""],[""bdsp"",370,""Route 209 (4)"",""pokeapi-name""],[""bdsp"",371,""Route 209 (5)"",""pokeapi-name""],[""bdsp"",372,""Route 209 (6)"",""pokeapi-name""],[""hgss"",24,""Route 209"",""pokeapi-index""]]}",1
+565981,location,"[""sinnoh-route-210""]",*,1020,"{""met"":[[""bdsp"",373,""Route 210"",""pokeapi-name""],[""bdsp"",375,""Route 210 (3)"",""pokeapi-name""],[""hgss"",25,""Route 210"",""pokeapi-index""]]}",1
+565982,location,"[""sinnoh-route-211""]",*,1020,"{""met"":[[""bdsp"",377,""Route 211"",""pokeapi-name""],[""bdsp"",378,""Route 211 (2)"",""pokeapi-name""],[""hgss"",26,""Route 211"",""pokeapi-index""]]}",1
+565983,location,"[""sinnoh-route-212""]",*,1020,"{""met"":[[""bdsp"",379,""Route 212"",""pokeapi-name""],[""bdsp"",383,""Route 212 (5)"",""pokeapi-name""],[""hgss"",27,""Route 212"",""pokeapi-index""]]}",1
+565984,location,"[""sinnoh-route-213""]",*,1020,"{""met"":[[""bdsp"",385,""Route 213"",""pokeapi-name""],[""hgss"",28,""Route 213"",""pokeapi-index""]]}",1
+565985,location,"[""sinnoh-route-214""]",*,1020,"{""met"":[[""bdsp"",392,""Route 214"",""pokeapi-name""],[""hgss"",29,""Route 214"",""pokeapi-index""]]}",1
+565986,location,"[""sinnoh-route-215""]",*,1020,"{""met"":[[""bdsp"",394,""Route 215"",""pokeapi-name""],[""hgss"",30,""Route 215"",""pokeapi-index""]]}",1
+565987,location,"[""sinnoh-route-216""]",*,1020,"{""met"":[[""bdsp"",395,""Route 216"",""pokeapi-name""],[""hgss"",31,""Route 216"",""pokeapi-index""]]}",1
+565988,location,"[""sinnoh-route-217""]",*,1020,"{""met"":[[""bdsp"",397,""Route 217"",""pokeapi-name""],[""hgss"",32,""Route 217"",""pokeapi-index""]]}",1
+565989,location,"[""sinnoh-route-218""]",*,1020,"{""met"":[[""bdsp"",400,""Route 218"",""pokeapi-name""],[""hgss"",33,""Route 218"",""pokeapi-index""]]}",1
+565990,location,"[""sinnoh-route-219""]",*,1020,"{""met"":[[""bdsp"",403,""Route 219"",""pokeapi-name""],[""hgss"",34,""Route 219"",""pokeapi-index""]]}",1
+565991,location,"[""sinnoh-route-221""]",*,1020,"{""met"":[[""bdsp"",404,""Route 221"",""pokeapi-name""],[""hgss"",36,""Route 221"",""pokeapi-index""]]}",1
+565992,location,"[""sinnoh-route-222""]",*,1020,"{""met"":[[""bdsp"",407,""Route 222"",""pokeapi-name""],[""hgss"",37,""Route 222"",""pokeapi-index""]]}",1
+565993,location,"[""sinnoh-route-224""]",*,1020,"{""met"":[[""bdsp"",411,""Route 224"",""pokeapi-name""],[""hgss"",39,""Route 224"",""pokeapi-index""]]}",1
+565994,location,"[""sinnoh-route-225""]",*,1020,"{""met"":[[""bdsp"",412,""Route 225"",""pokeapi-name""],[""hgss"",40,""Route 225"",""pokeapi-index""]]}",1
+565995,location,"[""sinnoh-route-227""]",*,1020,"{""met"":[[""bdsp"",414,""Route 227"",""pokeapi-name""],[""hgss"",42,""Route 227"",""pokeapi-index""]]}",1
+565996,location,"[""sinnoh-route-228""]",*,1020,"{""met"":[[""bdsp"",416,""Route 228"",""pokeapi-name""],[""hgss"",43,""Route 228"",""pokeapi-index""]]}",1
+565997,location,"[""sinnoh-route-229""]",*,1020,"{""met"":[[""bdsp"",420,""Route 229"",""pokeapi-name""],[""hgss"",44,""Route 229"",""pokeapi-index""]]}",1
+565998,location,"[""sinnoh-sea-route-220""]",*,1020,"{""met"":[[""bdsp"",485,""Route 220"",""pokeapi-slug""],[""hgss"",35,""Route 220"",""pokeapi-index""]]}",1
+565999,location,"[""sinnoh-sea-route-223""]",*,1020,"{""met"":[[""bdsp"",486,""Route 223"",""pokeapi-slug""],[""hgss"",38,""Route 223"",""pokeapi-index""]]}",1
+566000,location,"[""sinnoh-sea-route-226""]",*,1020,"{""met"":[[""bdsp"",487,""Route 226"",""pokeapi-slug""],[""hgss"",41,""Route 226"",""pokeapi-index""]]}",1
+566001,location,"[""sinnoh-sea-route-230""]",*,1020,"{""met"":[[""bdsp"",489,""Route 230"",""pokeapi-slug""],[""hgss"",45,""Route 230"",""pokeapi-index""]]}",1
+566002,location,"[""sinnoh-victory-road""]",*,1020,"{""met"":[[""bdsp"",244,""Victory Road"",""pokeapi-name""],[""bdsp"",245,""Victory Road (2)"",""pokeapi-name""],[""bdsp"",246,""Victory Road (3)"",""pokeapi-name""],[""bdsp"",247,""Victory Road (4)"",""pokeapi-name""],[""bdsp"",248,""Victory Road (5)"",""pokeapi-name""],[""bdsp"",249,""Victory Road (6)"",""pokeapi-name""],[""hgss"",54,""Victory Road (D/P/Pt)"",""pokeapi-index""]]}",1
+566003,location,"[""slippery-slope""]",*,1016,"{""identifier"":""slippery-slope"",""region"":""galar""}",1
+566004,location,"[""slippery-slope""]",*,1020,"{""met"":[[""swsh"",204,""Slippery Slope (Crown Tundra)"",""pokeapi-index""]]}",1
+566005,location,"[""sludge-mound""]",*,1016,"{""identifier"":""sludge-mound"",""region"":""hisui""}",1
+566006,location,"[""sludge-mound""]",*,1020,"{""met"":[[""la"",37,""Sludge Mound"",""pokeapi-name""]]}",1
+566007,location,"[""slumbering-weald""]",*,1016,"{""identifier"":""slumbering-weald"",""region"":""galar""}",1
+566008,location,"[""slumbering-weald""]",*,1020,"{""met"":[[""swsh"",8,""Slumbering Weald"",""pokeapi-index""]]}",1
+566009,location,"[""snowfall-hot-spring""]",*,1016,"{""identifier"":""snowfall-hot-spring"",""region"":""hisui""}",1
+566010,location,"[""snowfall-hot-spring""]",*,1020,"{""met"":[[""la"",142,""Snowfall Hot Spring"",""pokeapi-name""]]}",1
+566011,location,"[""snowpoint-temple""]",*,1020,"{""met"":[[""bdsp"",286,""Snowpoint Temple"",""pokeapi-name""],[""bdsp"",287,""Snowpoint Temple (2)"",""pokeapi-name""],[""bdsp"",288,""Snowpoint Temple (3)"",""pokeapi-name""],[""bdsp"",289,""Snowpoint Temple (4)"",""pokeapi-name""],[""bdsp"",290,""Snowpoint Temple (5)"",""pokeapi-name""],[""bdsp"",291,""Snowpoint Temple (6)"",""pokeapi-name""],[""hgss"",64,""Snowpoint Temple"",""pokeapi-index""]]}",1
+566012,location,"[""snowslide-slope""]",*,1016,"{""identifier"":""snowslide-slope"",""region"":""galar""}",1
+566013,location,"[""snowslide-slope""]",*,1020,"{""met"":[[""swsh"",214,""Snowslide Slope (Crown Tundra)"",""pokeapi-index""]]}",1
+566014,location,"[""solaceon-ruins""]",*,1020,"{""met"":[[""bdsp"",225,""Solaceon Ruins"",""pokeapi-name""],[""bdsp"",227,""Solaceon Ruins (03)"",""pokeapi-name""],[""bdsp"",228,""Solaceon Ruins (04)"",""pokeapi-name""],[""bdsp"",229,""Solaceon Ruins (05)"",""pokeapi-name""],[""bdsp"",230,""Solaceon Ruins (06)"",""pokeapi-name""],[""bdsp"",231,""Solaceon Ruins (07)"",""pokeapi-name""],[""bdsp"",232,""Solaceon Ruins (08)"",""pokeapi-name""],[""bdsp"",233,""Solaceon Ruins (09)"",""pokeapi-name""],[""bdsp"",234,""Solaceon Ruins (10)"",""pokeapi-name""],[""bdsp"",235,""Solaceon Ruins (11)"",""pokeapi-name""],[""bdsp"",236,""Solaceon Ruins (12)"",""pokeapi-name""],[""bdsp"",237,""Solaceon Ruins (13)"",""pokeapi-name""],[""bdsp"",238,""Solaceon Ruins (14)"",""pokeapi-name""],[""bdsp"",239,""Solaceon Ruins (15)"",""pokeapi-name""],[""bdsp"",240,""Solaceon Ruins (16)"",""pokeapi-name""],[""bdsp"",241,""Solaceon Ruins (17)"",""pokeapi-name""],[""bdsp"",242,""Solaceon Ruins (18)"",""pokeapi-name""],[""bdsp"",243,""Solaceon Ruins (19)"",""pokeapi-name""],[""hgss"",53,""Solaceon Ruins"",""pokeapi-index""]]}",1
+566015,location,"[""soothing-wetlands""]",*,1016,"{""identifier"":""soothing-wetlands"",""region"":""galar""}",1
+566016,location,"[""soothing-wetlands""]",*,1020,"{""met"":[[""swsh"",166,""Soothing Wetlands (Isle of Armor)"",""pokeapi-index""]]}",1
+566017,location,"[""south-lake-miloch""]",*,1016,"{""identifier"":""south-lake-miloch"",""region"":""galar""}",1
+566018,location,"[""south-lake-miloch""]",*,1020,"{""met"":[[""swsh"",134,""South Lake Miloch (Wild Area)"",""pokeapi-index""]]}",1
+566019,location,"[""spear-pillar""]",*,1020,"{""met"":[[""bdsp"",216,""Spear Pillar"",""pokeapi-name""],[""bdsp"",217,""Spear Pillar (2)"",""pokeapi-name""],[""hgss"",51,""Spear Pillar"",""pokeapi-index""]]}",1
+566020,location,"[""split-decision-ruins""]",*,1016,"{""identifier"":""split-decision-ruins"",""region"":""galar""}",1
+566021,location,"[""split-decision-ruins""]",*,1020,"{""met"":[[""swsh"",242,""Split-Decision Ruins"",""pokeapi-index""]]}",1
+566022,location,"[""stark-mountain""]",*,1020,"{""met"":[[""bdsp"",259,""Stark Mountain"",""pokeapi-name""],[""bdsp"",260,""Stark Mountain (2)"",""pokeapi-name""],[""bdsp"",261,""Stark Mountain (3)"",""pokeapi-name""],[""bdsp"",262,""Stark Mountain (4)"",""pokeapi-name""],[""hgss"",84,""Stark Mountain"",""pokeapi-index""]]}",1
+566023,location,"[""stepping-stone-sea""]",*,1016,"{""identifier"":""stepping-stone-sea"",""region"":""galar""}",1
+566024,location,"[""stepping-stone-sea""]",*,1020,"{""met"":[[""swsh"",188,""Stepping-Stone Sea (Isle of Armor)"",""pokeapi-index""]]}",1
+566025,location,"[""stony-wilderness""]",*,1016,"{""identifier"":""stony-wilderness"",""region"":""galar""}",1
+566026,location,"[""stony-wilderness""]",*,1020,"{""met"":[[""swsh"",144,""Stony Wilderness (Wild Area)"",""pokeapi-index""]]}",1
+566027,location,"[""sunyshore-city""]",*,1020,"{""met"":[[""bdsp"",142,""Sunyshore City"",""pokeapi-name""],[""hgss"",13,""Sunyshore City"",""pokeapi-index""]]}",1
+566028,location,"[""temple-of-sinnoh""]",*,1016,"{""identifier"":""temple-of-sinnoh"",""region"":""hisui""}",1
+566029,location,"[""temple-of-sinnoh""]",*,1020,"{""met"":[[""la"",109,""Temple of Sinnoh"",""pokeapi-name""]]}",1
+566030,location,"[""three-point-pass""]",*,1016,"{""identifier"":""three-point-pass"",""region"":""galar""}",1
+566031,location,"[""three-point-pass""]",*,1020,"{""met"":[[""swsh"",228,""Three-Point Pass (Crown Tundra)"",""pokeapi-index""]]}",1
+566032,location,"[""tidewater-dam""]",*,1016,"{""identifier"":""tidewater-dam"",""region"":""hisui""}",1
+566033,location,"[""tidewater-dam""]",*,1020,"{""met"":[[""la"",25,""Tidewater Dam"",""pokeapi-name""]]}",1
+566034,location,"[""tower-summit""]",*,1020,"{""met"":[[""swsh"",66,""Tower Summit"",""created""]]}",1
+566035,location,"[""training-lowlands""]",*,1016,"{""identifier"":""training-lowlands"",""region"":""galar""}",1
+566036,location,"[""training-lowlands""]",*,1020,"{""met"":[[""swsh"",180,""Training Lowlands (Isle of Armor)"",""pokeapi-index""]]}",1
+566037,location,"[""trophy-garden""]",*,1020,"{""met"":[[""bdsp"",297,""Trophy Garden"",""pokeapi-name""],[""hgss"",68,""Trophy Garden"",""pokeapi-index""]]}",1
+566038,location,"[""tunnel-to-the-top""]",*,1016,"{""identifier"":""tunnel-to-the-top"",""region"":""galar""}",1
+566039,location,"[""tunnel-to-the-top""]",*,1020,"{""met"":[[""swsh"",216,""Tunnel to the Top (Crown Tundra)"",""pokeapi-index""]]}",1
+566040,location,"[""turffield""]",*,1016,"{""identifier"":""turffield"",""region"":""galar""}",1
+566041,location,"[""turffield""]",*,1020,"{""met"":[[""swsh"",34,""Turffield"",""pokeapi-index""]]}",1
+566042,location,"[""turnback-cave""]",*,1020,"{""met"":[[""bdsp"",264,""Turnback Cave"",""pokeapi-name""],[""bdsp"",265,""Turnback Cave (02)"",""pokeapi-name""],[""bdsp"",266,""Turnback Cave (03)"",""pokeapi-name""],[""bdsp"",267,""Turnback Cave (04)"",""pokeapi-name""],[""bdsp"",268,""Turnback Cave (05)"",""pokeapi-name""],[""bdsp"",269,""Turnback Cave (06)"",""pokeapi-name""],[""bdsp"",270,""Turnback Cave (07)"",""pokeapi-name""],[""bdsp"",271,""Turnback Cave (08)"",""pokeapi-name""],[""bdsp"",272,""Turnback Cave (09)"",""pokeapi-name""],[""bdsp"",273,""Turnback Cave (10)"",""pokeapi-name""],[""bdsp"",274,""Turnback Cave (11)"",""pokeapi-name""],[""bdsp"",275,""Turnback Cave (12)"",""pokeapi-name""],[""bdsp"",276,""Turnback Cave (13)"",""pokeapi-name""],[""bdsp"",277,""Turnback Cave (14)"",""pokeapi-name""],[""bdsp"",278,""Turnback Cave (15)"",""pokeapi-name""],[""bdsp"",279,""Turnback Cave (16)"",""pokeapi-name""],[""bdsp"",280,""Turnback Cave (17)"",""pokeapi-name""],[""bdsp"",281,""Turnback Cave (18)"",""pokeapi-name""],[""bdsp"",282,""Turnback Cave (19)"",""pokeapi-name""],[""bdsp"",283,""Turnback Cave (20)"",""pokeapi-name""],[""bdsp"",284,""Turnback Cave (21)"",""pokeapi-name""],[""hgss"",62,""Turnback Cave"",""pokeapi-index""]]}",1
+566043,location,"[""twinleaf-town""]",*,1020,"{""met"":[[""bdsp"",422,""Twinleaf Town"",""pokeapi-name""],[""hgss"",1,""Twinleaf Town"",""pokeapi-index""]]}",1
+566044,location,"[""valley-windworks""]",*,1020,"{""met"":[[""bdsp"",197,""Valley Windworks"",""pokeapi-name""],[""hgss"",47,""Valley Windworks"",""pokeapi-index""]]}",1
+566045,location,"[""valor-cavern""]",*,1020,"{""met"":[[""hgss"",88,""Valor Cavern"",""pokeapi-index""],[""la"",105,""Valor Cavern"",""pokeapi-name""]]}",1
+566046,location,"[""valor-lakefront""]",*,1020,"{""met"":[[""bdsp"",347,""Valor Lakefront"",""pokeapi-name""],[""hgss"",73,""Valor Lakefront"",""pokeapi-index""]]}",1
+566047,location,"[""verity-cavern""]",*,1016,"{""identifier"":""verity-cavern"",""region"":""sinnoh""}",1
+566048,location,"[""verity-cavern""]",*,1020,"{""met"":[[""la"",104,""Verity Cavern"",""pokeapi-name""]]}",1
+566049,location,"[""warm-up-tunnel""]",*,1016,"{""identifier"":""warm-up-tunnel"",""region"":""galar""}",1
+566050,location,"[""warm-up-tunnel""]",*,1020,"{""met"":[[""swsh"",182,""Warm-Up Tunnel (Isle of Armor)"",""pokeapi-index""]]}",1
+566051,location,"[""watchtower-ruins""]",*,1016,"{""identifier"":""watchtower-ruins"",""region"":""galar""}",1
+566052,location,"[""watchtower-ruins""]",*,1020,"{""met"":[[""swsh"",126,""Watchtower Ruins (Wild Area)"",""pokeapi-index""]]}",1
+566053,location,"[""wayward-cave""]",*,1020,"{""met"":[[""bdsp"",292,""Wayward Cave"",""pokeapi-name""],[""bdsp"",293,""Wayward Cave (2)"",""pokeapi-name""],[""hgss"",65,""Wayward Cave"",""pokeapi-index""]]}",1
+566054,location,"[""wedgehurst-station""]",*,1020,"{""met"":[[""swsh"",16,""Wedgehurst Station"",""created""]]}",1
+566055,location,"[""west-lake-axewell""]",*,1016,"{""identifier"":""west-lake-axewell"",""region"":""galar""}",1
+566056,location,"[""west-lake-axewell""]",*,1020,"{""met"":[[""swsh"",130,""West Lake Axewell (Wild Area)"",""pokeapi-index""]]}",1
+566057,location,"[""whiteout-valley""]",*,1016,"{""identifier"":""whiteout-valley"",""region"":""hisui""}",1
+566058,location,"[""whiteout-valley""]",*,1020,"{""met"":[[""la"",88,""Whiteout Valley"",""pokeapi-name""]]}",1
+566059,location,"[""wild-area-station""]",*,1020,"{""met"":[[""swsh"",156,""Wild Area Station"",""created""]]}",1
+566060,location,"[""workout-sea""]",*,1016,"{""identifier"":""workout-sea"",""region"":""galar""}",1
+566061,location,"[""workout-sea""]",*,1020,"{""met"":[[""swsh"",186,""Workout Sea (Isle of Armor)"",""pokeapi-index""]]}",1

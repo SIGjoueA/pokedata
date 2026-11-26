@@ -111,7 +111,7 @@ def mloc(game, metid, version=None):
                 if len(c2) == 1: cands = c2
             if len(set(cands)) == 1: how = "pokeapi-index"
         if not how:
-            _nm = (pk_by_name.get(p3_norm(name)) or pk_by_name.get(p3_norm("Team " + name))   # "Aqua Hideout" = "Team Aqua Hideout"
+            _nm = (pk_by_name.get(p3_norm(name)) or pk_by_name.get(p3_norm("Team " + name)) or pk_by_name.get(p3_norm(name.replace("Mount ", "Mt. ")))   # "Aqua Hideout" = "Team Aqua Hideout"
                    or set().union(*[pk_by_name.get(p3_norm(r_ + " " + name), set()) for r_ in regions]))   # "Kanto Power Plant"
             cands = sorted(i for i in _nm if pk_reg(i) in regions)
             if len(cands) > 1:   # the one PokeAPI uses for this game's versions
@@ -357,6 +357,8 @@ def mod_record(x, dk):
         if t == "EncounterStatic8U": metid = 244   # Dynamax Adventures: met at the Max Lair
         if egg: metid = x.get("EggLocation") if x.get("EggLocation") not in (None, 0, 65535) else None
         g, v = place_version(g0, v0, metid) if metid is not None else (g0, v0)
+        if dk == "8" and sp in (144, 145, 146) and fi == 1 and g == "sw":   # Galarian birds roam base-game places after the Crown Tundra quest
+            g, v = ("swcrown", DLCV.get(("swcrown", v0))) if "swcrown" in P3_GAMES else (None, None)
         if not g or g not in P3_GAMES or v not in P3_VERSIONS: continue
         gift = bool(x.get("Gift") or (x.get("FixedBall") not in (None, "None") and t not in ("EncounterStatic8U",)))
         m = ("gift-egg" if egg else "dynamax-adventure" if t == "EncounterStatic8U" else "outbreak" if t == "EncounterOutbreak9"
