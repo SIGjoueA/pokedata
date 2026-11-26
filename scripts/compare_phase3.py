@@ -107,7 +107,7 @@ for g in GAMES:
     b = {f.split("-")[0] for (gg, v, f), st in avail_v.items() if gg == g and st & {"trade-version-exclusive", "transfer"}
          and not st & {"wild", "gift", "evolve", "breed", "event"}}
     p(f"- {g} : Pokédex **{len(a)}**, pokedata **{len(b)}** (espèces à faire venir d’une autre version, d’un autre jeu ou par la Capsule Temporelle) ; seulement Pokédex : "
-      f"{', '.join(sorted(a - b, key=int)) or '—'} ; seulement pokedata : {', '.join(sorted(b - a, key=int)) or '—'}.")
+      f"{', '.join(sorted(a - b, key=lambda x: (int(x.split("-")[0]), x))) or '—'} ; seulement pokedata : {', '.join(sorted(b - a, key=lambda x: (int(x.split("-")[0]), x))) or '—'}.")
 p("")
 
 sh = J("shiny.json")

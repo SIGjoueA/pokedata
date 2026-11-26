@@ -207,6 +207,12 @@ class Api(unittest.TestCase):
             self.assertTrue(q("SELECT 1 FROM encounter WHERE version_id='omega-ruby' AND method_id='dexnav'"))
             self.assertTrue([d for (d,) in q("SELECT detail FROM availability WHERE form_id='252' AND version_id='x' AND status='transfer'") if d.startswith("poke-bank:")])
             self.assertEqual(q("SELECT odds FROM shiny_rule WHERE game_id='xy' AND method='base'"), [("1/4096",)])
+        if "sm" in games:   # lot 6: generation 7 + Let's Go
+            self.assertTrue(q("SELECT 1 FROM encounter WHERE version_id='sun' AND method_id='sos'"))
+            self.assertTrue(q("SELECT 1 FROM shiny_lock WHERE form_id='789' AND game_id='sm'"))   # Cosmog
+            self.assertTrue(q("SELECT 1 FROM shiny_lock WHERE form_id='25-starter' AND game_id='lgpe'"))
+            self.assertFalse(q("SELECT 1 FROM availability a JOIN version v ON v.id=a.version_id WHERE v.game_id='lgpe' AND status='breed'"))
+            self.assertTrue(q("SELECT 1 FROM location WHERE id='ultra-desert'"))
         self.assertEqual(q("SELECT odds FROM shiny_rule WHERE game_id='gs' AND method='base'"), [("1/8192",)])
         # place names follow game_language for the games covered
         self.assertEqual(q("""SELECT COUNT(*) FROM location_game lg JOIN game_language gl ON gl.game_id=lg.game_id

@@ -1028,3 +1028,5 @@ id,source_id,locator,revision,retrieved_at,content_sha256
 1027,pkhex,PKHeX.Core 26.10.18 · EncounterEvent MGDB (events.json),PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,87820eea971f4a37d6339c4fb51185509a477d449732b8b80ab8f857e8e1be72
 1028,pkhex,PKHeX.Core 26.10.18 · Encounters5 (encounters_5.json),PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,74d4f7b8c089b28d8f5941c163feb8ba6e652107e5346b7aecf4f1845cdfd86d
 1029,pkhex,PKHeX.Core 26.10.18 · Encounters6 (encounters_6.json),PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,ebff7030f0b07b58d54804a73e2678dd7c9e4c7ac19d47096065732d88100e55
+1030,pkhex,PKHeX.Core 26.10.18 · Encounters7 (encounters_7.json),PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,64898779da2e44d4e389569eca96b5c15d194ed9d897241cc58593b0367519fc
+1031,pkhex,PKHeX.Core 26.10.18 · Encounters7b (encounters_7b.json),PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,6fe40bd561c8edd13b81b9eb15c9b9d3ba424c34b7407948d853c5236c38febd

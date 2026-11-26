@@ -3,6 +3,13 @@
 Généré depuis `db/data/update_log.csv` par `scripts/changelog.py`. Le détail ligne à ligne est dans `update_log_item` (base SQLite) et `api/v1/meta/changelog.json`.
 
 
+## 2026.11.26.6 — Phase 3 (lot 6 : 7e génération — Soleil/Lune, Ultra-Soleil/Ultra-Lune, Let's Go)
+
+- Type : release · schéma 1.2.0 · 2026-11-26T07:38:40Z → 2026-11-26T07:38:40Z (UTC)
+- Import et vérification : 1025 espèces, 1588 formes, 17497 lignes forme×jeu, 589 évolutions, 7460 entrées de Pokédex régionaux, 920 capacités, 7817 lignes capacité×jeu, 2061 CT/CS/DT, 645613 lignes de movesets, 523 lieux, 27028 rencontres, 28978 lignes de disponibilité, 54148 traductions ; 3542 écarts notés ; 10784 données (re)vérifiées.
+- Statuts de vérification : disputed 87, game-data 212077, majority 188, manual 431, single-source 3, unanimous 46649
+- Lignes : species 1025, form 1588, form_game 17497, form_ability 31012, ability 307, evolution 589, evolution_method 7541, pokedex_entry 7460, item 44, move 920, move_game 7817, machine 2061, learnset 645613, location 523, encounter 27028, availability 28978, shiny_rule 18, translation 54148, discrepancy 3542
+
 ## 2026.11.26.5 — Phase 3 (lot 5 : 6e génération — X/Y, Rubis Oméga/Saphir Alpha)
 
 - Type : release · schéma 1.2.0 · 2026-11-26T07:13:33Z → 2026-11-26T07:13:33Z (UTC)

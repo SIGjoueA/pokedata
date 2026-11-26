@@ -385,10 +385,14 @@ def mfam(g, m):
     if g in ("xy", "oras"):
         if m.endswith("-ambush"): return "ambush"
         return {"yellow-flowers": "walk", "purple-flowers": "walk", "red-flowers": "walk", "rough-terrain": "walk", "seaweed": "walk"}.get(m, m)
-    if g in ("sm", "usum", "lgpe", "sw", "swisle", "swcrown"):
+    if m == "sos-from-bubbling-spot": return "sos"
+    if g in ("sm", "usum"):   # SOS allies: PKHeX and PokeAPI split them differently from the plain wild tables → compared together
+        return "special" if m in ("island-scan",) else "wild"
+    if g in ("lgpe", "sw", "swisle", "swcrown"):
         return m if m in ("horde", "sos", "friend-safari", "rock-smash") else "wild"
     return {"dark-grass": "walk", "grass-spots": "walk", "cave-spots": "walk", "bridge-spots": "walk", "seaweed": "walk",
             "surf-spots": "surf", "super-rod-spots": "super-rod"}.get(m, fam(m))
+FAMILY_WHOLE = {"sm", "usum"}
 NO_SWARM_CMP = {"bw", "b2w2"}   # PokeAPI has no swarms for Black/White 1–2: swarm rows are left out of the comparison
 def mproj(rows, g=None):
     """Projection used to compare with PokeAPI in generations 3+: one (form, min, max) per form, conditions merged."""
@@ -438,9 +442,11 @@ def verify_set(table, rk, chosen, obs, gen, proj=None):
 # group sets by method family for the PokeAPI comparison, publish per exact method
 enc_rows = []
 fam_sets = collections.defaultdict(set)
+fam_raw = collections.defaultdict(list)
 for (loc, v, m), rows in enc_sets.items():
     g_ = GAME_OF_VERSION[v]
     for r in (mproj(rows, g_) if g_ in MODERN else rows): fam_sets[(loc, v, mfam(g_, m))].add((r[0], r[1], r[2], r[3]))
+    fam_raw[(loc, v, mfam(g_, m))].extend(rows)
 p3_agree = collections.Counter()
 for (loc, v, m), rows in sorted(enc_sets.items()):
     g = GAME_OF_VERSION[v]; gen = DKEY[g]
@@ -451,14 +457,18 @@ for (loc, v, m), rows in sorted(enc_sets.items()):
         mine_f = fam_sets[(loc, v, fm)]
         theirs = pk_sets.get((loc, v, fm), set())
         # compare at family level, restricted to this method's forms when the family groups several methods
-        if fm != m:   # several published methods share this PokeAPI family: leave out the forms of the other methods
+        if fm != m and not (g in FAMILY_WHOLE and fm == "wild"):   # several published methods share this PokeAPI family: leave out the forms of the other methods
             own_forms = {r[0] for r in rows}
             other_forms = {x[0] for x in mine_f} - own_forms
             theirs = {x for x in theirs if x[0] not in other_forms}
         obs.append(("pokeapi", d_pkenc, theirs))
-    if g in MODERN and fm != m:
-        obs = [(s_, d_, {x for x in th if x[0] in {r[0] for r in rows}}) for s_, d_, th in obs]
-    dis = verify_set("encounter", rk, rows, obs, gen, (lambda ch, g=g: mproj(ch, g)) if g in MODERN else None)
+    if g in FAMILY_WHOLE and fm == "wild":   # the whole family is compared (Sun/Moon: wild + SOS allies)
+        fs_ = mproj(fam_raw[(loc, v, fm)], g)
+        dis = verify_set("encounter", rk, rows, obs, gen, lambda ch, fs_=fs_: set(fs_))
+    else:
+        if g in MODERN and fm != m:
+            obs = [(s_, d_, {x for x in th if x[0] in {r[0] for r in rows}}) for s_, d_, th in obs]
+        dis = verify_set("encounter", rk, rows, obs, gen, (lambda ch, g=g: mproj(ch, g)) if g in MODERN else None)
     p3_agree[(g, m, "sets")] += 1
     if obs: p3_agree[(g, m, "cited")] += 1
     if obs and not dis: p3_agree[(g, m, "agree")] += 1
@@ -754,10 +764,10 @@ for g in P3_GAMES:
         st_ = "manual" if (b_ok and p_ok) else "disputed"
         verifs.append(("shiny_rule", rk, "*", st_, sha256_text(canon([odds, cond])), sha256_text(f"bulbapedia:{b_ok}|pokepedia:{p_ok}")))
         if st_ in PUBLISHED: shiny_rows.append([g, method, odds, cond])
-# locks: every template of the form in the game is Shiny "Never" and no wild / breeding / evolution path exists
+# locks: every template of the form in the game is Shiny "Never" (its wild / static rows included) and no breeding / evolution path exists
 for (f, g), vals in sorted(PKX_SHINY.items()):
     if P3_GEN[g] < 2 or not vals or any(x != "Never" for x in vals): continue
-    if any(r[0] == f and GAME_OF_VERSION[r[1]] == g and r[2] in ("wild", "evolve", "breed") for r in avail_rows): continue
+    if any(r[0] == f and GAME_OF_VERSION[r[1]] == g and r[2] in ("evolve", "breed") for r in avail_rows): continue   # wild rows come from these same never-shiny templates
     lock_rows.append([f, g, "npc-trade" if any(r[0] == f and GAME_OF_VERSION[r[1]] == g and r[2] == "npc-trade" for r in avail_rows) else None])
     rk = row_key(f, g)
     citations.append(("shiny_lock", rk, "*", d_pkxenc[DKEY[g]], canon({"shiny": sorted(set(vals))}), 1))
@@ -820,7 +830,8 @@ P3_STATS = dict(games=P3_GAMES, locations=len(location_rows), encounters=len(enc
                 availability_by_status={f"{g}:{s}": n for (g, s), n in sorted(p3_avail.items())},
                 legacy_mapped=len(legacy), legacy_unmatched=dict(p3_legacy_unmatched.most_common()),
                 modern_skipped=dict(p3_mod_skip), modern_locations={h: len({l for l, srcs in MLOC_SRC.items() if any(x[2] == h for x in srcs)})
-                                                                    for h in ("pokeapi-index", "pokeapi-name", "created")},
+                                                                    for h in ("pokeapi-index", "pokeapi-name", "pokeapi-slug", "created")},
+                shiny_lock_list=[f"{f}:{g}" for f, g, _ in lock_rows],
                 created_locations=sorted(MLOC_NEW), form_change_omitted={f"{g}:{k}": n for (g, k), n in sorted(p3_formchange.items())}, form_skips={f"{a}:{b}:{c}:{d}": n for (a, b, c, d), n in sorted(P3_FORMSKIP.items(), key=str)})
 json.dump(P3_STATS, open(ROOT / "reports/phase3-details.json", "w"), ensure_ascii=False, indent=0)
 print("phase3", json.dumps({k: v for k, v in P3_STATS.items() if k not in ("agreement", "legacy_unmatched", "trades_unplaced", "statics_unplaced", "unconfirmed_templates", "created_locations", "form_skips")}, ensure_ascii=False))

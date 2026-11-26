@@ -111,12 +111,22 @@ def mloc(game, metid, version=None):
                 if len(c2) == 1: cands = c2
             if len(set(cands)) == 1: how = "pokeapi-index"
         if not how:
-            _nm = pk_by_name.get(p3_norm(name)) or pk_by_name.get(p3_norm("Team " + name), ())   # "Aqua Hideout" = "Team Aqua Hideout"
+            _nm = (pk_by_name.get(p3_norm(name)) or pk_by_name.get(p3_norm("Team " + name))   # "Aqua Hideout" = "Team Aqua Hideout"
+                   or set().union(*[pk_by_name.get(p3_norm(r_ + " " + name), set()) for r_ in regions]))   # "Kanto Power Plant"
             cands = sorted(i for i in _nm if pk_reg(i) in regions)
+            if len(cands) > 1:   # the one PokeAPI uses for this game's versions
+                vs_ = set(VERSIONS_OF.get(game, [])) or {v for v, g_, p_ in R.VERSIONS if g_ == game}
+                c2 = sorted(c for c in cands if PK_LOC_V[c] & vs_)
+                if len(c2) == 1: cands = c2
             if len(cands) == 1: how = "pokeapi-name"
             elif not cands:   # the same place reached from another region (Navel Rock…): unique English name anywhere
                 cands = sorted(_nm)
                 if len(cands) == 1: how = "pokeapi-name"
+        if not how:   # PokeAPI sub-place identifiers ("hau-oli-city--shopping-district") and sea routes ("kanto-sea-route-19")
+            sl = slugify(name)
+            want = {sl} | {f"{r_}-sea-{sl}" for r_ in regions} if sl else set()
+            cands = sorted(i for i in pk_loc_by_ident if pk_reg(i) in regions and (i.replace("--", "-") in want or i in want))
+            if len(cands) == 1: how = "pokeapi-slug"
         if how:
             res = cands[0]
         else:
@@ -125,6 +135,7 @@ def mloc(game, metid, version=None):
             if k2 in _new_by_name: res = _new_by_name[k2]
             else:
                 s = slugify(name) or f"{lst}-{metid}"
+                if s.startswith("route-") and region: s = f"{region}-{s}"   # routes: always with the region
                 if s in pk_loc_by_ident or s in MLOC_NEW: s = f"{region}-{s}" if region else f"{lst}-{s}"
                 while s in pk_loc_by_ident or s in MLOC_NEW: s += "-x"
                 MLOC_NEW[s] = region; _new_by_name[k2] = s; res = s

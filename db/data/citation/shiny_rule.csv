@@ -29,3 +29,9 @@ id,table_name,row_key,column_name,document_id,observed_value,agrees
 535928,shiny_rule,"[""oras"",""base""]",*,1024,"{""found"":true,""odds"":""1/4096""}",1
 535929,shiny_rule,"[""xy"",""base""]",*,1023,"{""found"":true,""odds"":""1/4096""}",1
 535930,shiny_rule,"[""xy"",""base""]",*,1024,"{""found"":true,""odds"":""1/4096""}",1
+547629,shiny_rule,"[""lgpe"",""base""]",*,1023,"{""found"":true,""odds"":""1/4096""}",1
+547630,shiny_rule,"[""lgpe"",""base""]",*,1024,"{""found"":true,""odds"":""1/4096""}",1
+547631,shiny_rule,"[""sm"",""base""]",*,1023,"{""found"":true,""odds"":""1/4096""}",1
+547632,shiny_rule,"[""sm"",""base""]",*,1024,"{""found"":true,""odds"":""1/4096""}",1
+547633,shiny_rule,"[""usum"",""base""]",*,1023,"{""found"":true,""odds"":""1/4096""}",1
+547634,shiny_rule,"[""usum"",""base""]",*,1024,"{""found"":true,""odds"":""1/4096""}",1
