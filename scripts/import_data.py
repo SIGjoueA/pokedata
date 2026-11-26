@@ -12,7 +12,7 @@ import reference as R
 MAN = load_manifest()
 NOW = datetime.datetime.now(datetime.timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
 DATA_VERSION = os.environ.get("DATA_VERSION", datetime.date.today().strftime("%Y.%m.%d"))
-SCHEMA_VERSION = "1.0.0"
+SCHEMA_VERSION = "1.1.0"   # 1.1.0 : movesets vérifiés par ensemble, provenance découpée par table (migration 0002)
 TIER = {s[0]: s[2] for s in R.SOURCES}
 PK = CACHE / "pokeapi/data/v2/csv"
 DUMP = CACHE / "pkhex-dump"
@@ -739,17 +739,46 @@ for aid, slug, gen in ab_rows:
 out["external_id"] = (["entity_type", "entity_id", "system", "value"], ext)
 
 # ----------------------------------------------------------------------------- later phases (same namespace, same rules)
-PHASES = [p for p in os.environ.get("PHASES", "1b,2").split(",") if p]
+PHASES = [p for p in os.environ.get("PHASES", "1b,2,2b").split(",") if p]
 for _ph in PHASES:
     exec(compile(open(ROOT / f"scripts/phases/phase{_ph}.py", encoding="utf-8").read(), f"phase{_ph}.py", "exec"), globals())
 PHASE_LABEL = os.environ.get("PHASE_LABEL", "Phase " + (PHASES[-1] if PHASES else "1"))
 
 # ----------------------------------------------------------------------------- provenance tables + log
+# stable ids: a document already published (same source, locator and content fingerprint) keeps its id and the
+# date it was first retrieved; citations and discrepancies keep their ids too. New rows get the next free ids.
+prev_docs = {(r["source_id"], r["locator"], r["content_sha256"]): r for r in read_csv("source_document")}
+next_doc = max([int(r["id"]) for r in prev_docs.values()] + [0]) + 1
+DOC_REMAP = {}
+for d in sorted(documents.values(), key=lambda d: d["id"]):
+    p = prev_docs.get((d["source_id"], d["locator"], d["content_sha256"]))
+    if p:
+        DOC_REMAP[d["id"]] = int(p["id"]); d["retrieved_at"] = p["retrieved_at"]
+    else:
+        DOC_REMAP[d["id"]] = next_doc; next_doc += 1
+    d["id"] = DOC_REMAP[d["id"]]
+assert len(set(DOC_REMAP.values())) == len(DOC_REMAP)
 out["source_document"] = (["id", "source_id", "locator", "revision", "retrieved_at", "content_sha256"],
                           [[d["id"], d["source_id"], d["locator"], d["revision"], d["retrieved_at"], d["content_sha256"]] for d in documents.values()])
 bad=[c for c in citations if c[3] is None]
 if bad: print("BAD", len(bad), bad[:5]); sys.exit(1)
-cit_rows = [[i + 1, *c] for i, c in enumerate(sorted(set(citations)))]
+citations = [(t, rk, col, DOC_REMAP[d], obs, ag) for t, rk, col, d, obs, ag in citations]
+def _remap_alt(a):
+    lst = json.loads(a)
+    for x in lst:
+        if isinstance(x, dict) and "document_id" in x: x["document_id"] = DOC_REMAP[x["document_id"]]
+    return canon(lst)
+discreps = [(t, rk, col, ch, rule, _remap_alt(alt), note) for t, rk, col, ch, rule, alt, note in discreps]
+prev_cit = {(r["table_name"], r["row_key"], r["column_name"], int(r["document_id"]), r["observed_value"], int(r["agrees"])): int(r["id"])
+            for r in read_csv("citation")}
+next_cit = max(list(prev_cit.values()) + [0]) + 1
+cit_rows = []
+for c in sorted(set(citations)):
+    i = prev_cit.get(c)
+    if i is None:
+        i = next_cit; next_cit += 1
+    cit_rows.append([i, *c])
+del prev_cit
 out["citation"] = (["id", "table_name", "row_key", "column_name", "document_id", "observed_value", "agrees"], cit_rows)
 
 # keep verified_at / update_id of rows whose fingerprint did not change (no re-verification loop)
@@ -773,11 +802,16 @@ out["verification"] = (["table_name", "row_key", "column_name", "status", "value
 # discrepancies seen before keep the update in which they were opened
 prev_disc = {(r["table_name"], r["row_key"], r["column_name"], r["chosen_value"], r["alternatives"]): r for r in read_csv("discrepancy")}
 disc_rows = []
-for i, d in enumerate(sorted(set(discreps))):
+next_disc = max([int(r["id"]) for r in prev_disc.values()] + [0]) + 1
+for d in sorted(set(discreps)):
     p = prev_disc.get((d[0], d[1], d[2], d[3], d[5]))
     opened = int(p["opened_update_id"]) if p else update_id
     closed = (int(p["closed_update_id"]) if p and p["closed_update_id"] else update_id) if d[4] != "open" else None
-    disc_rows.append([i + 1, *d, opened, closed])
+    if p:
+        i = int(p["id"])
+    else:
+        i = next_disc; next_disc += 1
+    disc_rows.append([i, *d, opened, closed])
 out["discrepancy"] = (["id", "table_name", "row_key", "column_name", "chosen_value", "rule", "alternatives", "note",
                        "opened_update_id", "closed_update_id"], disc_rows)
 
@@ -791,7 +825,8 @@ if changed:
                 DATA_VERSION, SCHEMA_VERSION, None,
                 f"Import et vérification : {len(sp_rows)} espèces, {len(form_rows)} formes, {len(fg_rows)} lignes forme×jeu, "
                 + "".join(f"{len(out[t][1])} {lbl}, " for t, lbl in [("evolution", "évolutions"), ("pokedex_entry", "entrées de Pokédex régionaux"),
-                                                                  ("move", "capacités"), ("move_game", "lignes capacité×jeu"), ("machine", "CT/CS/DT")] if t in out)
+                                                                  ("move", "capacités"), ("move_game", "lignes capacité×jeu"), ("machine", "CT/CS/DT"),
+                                                                  ("learnset", "lignes de movesets")] if t in out)
                 + f"{len(tr_rows)} traductions ; {len(set(discreps))} écarts notés ; {changed} données (re)vérifiées.", canon(stats)])
     out["update_log"] = (["id", "started_at", "finished_at", "kind", "trigger", "data_version", "schema_version", "git_commit", "summary", "stats"], log)
     items = [[update_id, t, "*", "*", "verify", None, str(n), None] for t, n in sorted(changed_by_table.items())]
@@ -801,5 +836,5 @@ if changed:
 
 for name, (hdr, rows) in out.items():
     write_csv(name, hdr, rows)
-json.dump({"mapping": sorted(set(MAPLOG), key=lambda x: (x[0], x[1], str(x[2]))), "unmapped": unmapped, "skipped_shared_entry": sorted(set(skipped_shared))}, open(ROOT / "reports/phase1-unmapped.json", "w"), ensure_ascii=False, indent=0)
+json.dump({"mapping": sorted(set(MAPLOG), key=lambda x: (x[0], x[1], str(x[2])) + tuple(str(v) for v in x[3:])), "unmapped": unmapped, "skipped_shared_entry": sorted(set(skipped_shared))}, open(ROOT / "reports/phase1-unmapped.json", "w"), ensure_ascii=False, indent=0)
 print(json.dumps(stats, indent=1, ensure_ascii=False))

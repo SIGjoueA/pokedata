@@ -52,34 +52,7 @@ Lignes capacité × jeu publiées : rb 152, y 152, gs 230, c 230, rs 317, frlg 3
 - **za** : seulement pokedata 4, 6, 13, 47, 80, 90, 102, 130, 138, 143, 161, 206, 207, 246, 252, 259, 263, 299, 305, 307
 - **bdsp** : différentes (capacité : Pokédex / pokedata) 15 HM1/TM93, 19 HM2/TM94, 57 HM3/TM95, 70 HM4/TM96, 127 HM7/TM99, 249 HM6/TM98, 431 HM8/TM100, 432 HM5/TM97; seulement pokedata 14, 46, 53, 58, 59, 63, 76, 85, 86, 87, 89, 91, 92, 94, 104, 113, 115, 126, 138, 148
 
-## Movesets (calculés localement depuis les données des jeux, non publiés)
+## Movesets
 
-Comparaison par jeu sur les couples (forme, capacité), puis par méthode (montée de niveau, CT, œuf, tuteur).
-
-| Jeu | Couples Pokédex | Couples pokedata | Communs | Seulement Pokédex | Seulement pokedata | Méthode identique (communs) |
-|---|---|---|---|---|---|---|
-| b2w2 | 18399 | 34026 | 15548 | 2851 | 18478 | 14826 (95 %) |
-| bdsp | 7262 | 25426 | 7217 | 45 | 18209 | 7217 (100 %) |
-| bw | 7940 | 33610 | 7937 | 3 | 25673 | 7937 (100 %) |
-| c | 8933 | 8632 | 8632 | 301 | 0 | 8602 (99 %) |
-| dp | 7560 | 24863 | 7115 | 445 | 17748 | 7113 (99 %) |
-| e | 9536 | 13103 | 6795 | 2741 | 6308 | 6539 (96 %) |
-| frlg | 6042 | 13166 | 5155 | 887 | 8011 | 5060 (98 %) |
-| gs | 8725 | 8611 | 8611 | 114 | 0 | 8611 (100 %) |
-| hgss | 15003 | 30160 | 14272 | 731 | 15888 | 14267 (99 %) |
-| la | 2383 | 5801 | 2367 | 16 | 3434 | 1806 (76 %) |
-| lgpe | 5135 | 5135 | 5086 | 49 | 49 | 5086 (100 %) |
-| oras | 18366 | 46283 | 15442 | 2924 | 30841 | 14895 (96 %) |
-| pt | 12478 | 25221 | 10353 | 2125 | 14868 | 10042 (96 %) |
-| rb | 3893 | 3849 | 3849 | 44 | 0 | 3849 (100 %) |
-| rs | 6922 | 13102 | 6794 | 128 | 6308 | 6794 (100 %) |
-| sm | 22063 | 50263 | 21681 | 382 | 28582 | 21671 (99 %) |
-| sv | 26923 | 53155 | 26854 | 69 | 26301 | 26801 (99 %) |
-| sw | 27707 | 30049 | 18263 | 9444 | 11786 | 16861 (92 %) |
-| usum | 34019 | 62005 | 33522 | 497 | 28483 | 33482 (99 %) |
-| xy | 27707 | 43721 | 27457 | 250 | 16264 | 27457 (100 %) |
-| y | 3925 | 3882 | 3882 | 43 | 0 | 3882 (100 %) |
-| za | — | 22836 | | | | |
-
-Les écarts de méthode viennent surtout des tuteurs (listes de tuteurs non lues pour les générations 3, 6 et 7, voir le plan) et des capacités apprises au rappel / à l'évolution.
+Publiés à partir des données 2026.11.26 (schéma 1.1.0) : comparaison dans `reports/compare-learnsets.md`.
 

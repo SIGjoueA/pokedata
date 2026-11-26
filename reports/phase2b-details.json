@@ -1,0 +1,390 @@
+{
+"rows": 645613,
+"sets": 34777,
+"dropped": {
+"form-not-in-game": 19086,
+"form-unmapped": 54
+},
+"by_game": {
+"rb": 4127,
+"y": 4151,
+"gs": 9049,
+"c": 9286,
+"rs": 13847,
+"e": 19156,
+"frlg": 16310,
+"dp": 26247,
+"pt": 30840,
+"hgss": 32221,
+"bw": 34396,
+"b2w2": 42312,
+"xy": 45689,
+"oras": 58892,
+"sm": 52051,
+"usum": 65241,
+"lgpe": 5765,
+"sw": 46417,
+"bdsp": 27417,
+"la": 8758,
+"sv": 59514,
+"za": 33927
+},
+"agreement": {
+"b2w2:egg:pokeapi": [
+268,
+268
+],
+"b2w2:level-up:pokeapi": [
+714,
+714
+],
+"b2w2:machine:pokeapi": [
+667,
+667
+],
+"b2w2:tutor:pokeapi": [
+678,
+682
+],
+"bdsp:egg:pokeapi": [
+202,
+202
+],
+"bdsp:egg:showdown": [
+198,
+198
+],
+"bdsp:level-up:pokeapi": [
+559,
+559
+],
+"bdsp:machine:pokeapi": [
+518,
+519
+],
+"bdsp:machine:showdown": [
+482,
+482
+],
+"bdsp:tutor:pokeapi": [
+50,
+50
+],
+"bdsp:tutor:showdown": [
+32,
+32
+],
+"bw:egg:pokeapi": [
+268,
+268
+],
+"bw:level-up:pokeapi": [
+708,
+708
+],
+"bw:machine:pokeapi": [
+661,
+661
+],
+"bw:tutor:pokeapi": [
+76,
+76
+],
+"c:egg:pokeapi": [
+105,
+105
+],
+"c:level-up:pokeapi": [
+251,
+251
+],
+"c:machine:pokeapi": [
+242,
+242
+],
+"c:tutor:pokeapi": [
+153,
+153
+],
+"dp:egg:pokeapi": [
+199,
+199
+],
+"dp:level-up:pokeapi": [
+502,
+502
+],
+"dp:machine:pokeapi": [
+483,
+483
+],
+"dp:tutor:pokeapi": [
+31,
+31
+],
+"e:egg:pokeapi": [
+165,
+165
+],
+"e:level-up:pokeapi": [
+386,
+386
+],
+"e:machine:pokeapi": [
+372,
+372
+],
+"e:tutor:pokeapi": [
+372,
+372
+],
+"frlg:egg:pokeapi": [
+165,
+165
+],
+"frlg:level-up:pokeapi": [
+385,
+386
+],
+"frlg:machine:pokeapi": [
+372,
+372
+],
+"frlg:tutor:pokeapi": [
+372,
+372
+],
+"gs:egg:pokeapi": [
+101,
+105
+],
+"gs:level-up:pokeapi": [
+251,
+251
+],
+"gs:machine:pokeapi": [
+242,
+242
+],
+"hgss:egg:pokeapi": [
+199,
+200
+],
+"hgss:level-up:pokeapi": [
+510,
+510
+],
+"hgss:machine:pokeapi": [
+491,
+491
+],
+"hgss:tutor:pokeapi": [
+504,
+505
+],
+"la:level-up:pokeapi": [
+312,
+312
+],
+"la:mastery:pokeapi": [
+293,
+312
+],
+"la:tutor:pokeapi": [
+276,
+276
+],
+"la:tutor:showdown": [
+241,
+241
+],
+"lgpe:level-up:pokeapi": [
+188,
+188
+],
+"lgpe:machine:pokeapi": [
+182,
+182
+],
+"lgpe:machine:showdown": [
+167,
+167
+],
+"oras:egg:pokeapi": [
+339,
+339
+],
+"oras:level-up:pokeapi": [
+927,
+927
+],
+"oras:machine:pokeapi": [
+897,
+897
+],
+"oras:tutor:pokeapi": [
+52,
+895
+],
+"pt:egg:pokeapi": [
+199,
+199
+],
+"pt:level-up:pokeapi": [
+509,
+509
+],
+"pt:machine:pokeapi": [
+490,
+490
+],
+"pt:tutor:pokeapi": [
+500,
+503
+],
+"rb:level-up:pokeapi": [
+151,
+151
+],
+"rb:machine:pokeapi": [
+145,
+145
+],
+"rs:egg:pokeapi": [
+165,
+165
+],
+"rs:level-up:pokeapi": [
+386,
+386
+],
+"rs:machine:pokeapi": [
+372,
+372
+],
+"sm:egg:pokeapi": [
+361,
+361
+],
+"sm:level-up:pokeapi": [
+1060,
+1060
+],
+"sm:machine:pokeapi": [
+1027,
+1027
+],
+"sm:tutor:pokeapi": [
+139,
+139
+],
+"sv:egg:pokeapi": [
+332,
+334
+],
+"sv:egg:showdown": [
+295,
+295
+],
+"sv:level-up:pokeapi": [
+974,
+975
+],
+"sv:machine:pokeapi": [
+965,
+970
+],
+"sv:machine:showdown": [
+796,
+801
+],
+"sv:reminder:pokeapi": [
+76,
+76
+],
+"sw:egg:pokeapi": [
+272,
+272
+],
+"sw:egg:showdown": [
+267,
+267
+],
+"sw:level-up:pokeapi": [
+785,
+785
+],
+"sw:machine:pokeapi": [
+782,
+782
+],
+"sw:machine:showdown": [
+709,
+709
+],
+"sw:tutor:pokeapi": [
+654,
+672
+],
+"sw:tutor:showdown": [
+601,
+601
+],
+"usum:egg:pokeapi": [
+361,
+362
+],
+"usum:level-up:pokeapi": [
+1077,
+1077
+],
+"usum:machine:pokeapi": [
+1044,
+1044
+],
+"usum:tutor:pokeapi": [
+1030,
+1043
+],
+"xy:egg:pokeapi": [
+337,
+337
+],
+"xy:level-up:pokeapi": [
+900,
+900
+],
+"xy:machine:pokeapi": [
+870,
+870
+],
+"xy:tutor:pokeapi": [
+104,
+104
+],
+"y:level-up:pokeapi": [
+151,
+151
+],
+"y:machine:pokeapi": [
+145,
+145
+],
+"za:level-up:pokeapi": [
+477,
+594
+],
+"za:machine:pokeapi": [
+594,
+594
+],
+"za:machine:showdown": [
+385,
+385
+],
+"za:plus:pokeapi": [
+476,
+594
+]
+}
+}

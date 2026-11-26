@@ -984,3 +984,32 @@ id,source_id,locator,revision,retrieved_at,content_sha256
 983,pokeapi,data/v2/csv/machines.csv@de6760be38b6,de6760be38b60a3024f1d9054330ff265f0dc619,2026-11-25T19:57:08Z,fe70116e294ec7da7402bf94ffecf4e6ea8f9a28161839bd99db68c357c23e77
 984,pokeapi,data/v2/csv/move_flavor_text.csv@de6760be38b6,de6760be38b60a3024f1d9054330ff265f0dc619,2026-11-25T19:57:08Z,de633840c49991a5a180453f311b1ce3c517fb70998f5e95be2bf4bf17dac63b
 985,pokepedia,https://www.pokepedia.fr/Lux_Nihilum (oldid 3236530),3236530,2026-11-25T21:36:24Z,2dd8564c8da175384f4f8c5a6d9b2ff7886a59af90d5fac4f593d617c87fe6d2
+986,pkhex,PKHeX.Core 26.10.18 · Learnset RB (learnset_rb.json),PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,38808b37802fb7b012c881239ac95a0a20ea762efce1b305ce803f7706e6671a
+987,pkhex,PKHeX.Core 26.10.18 · Learnset Y (learnset_y.json),PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,af27fc4fbdaa06981f021d469e06e1c0af54341b6787b6ff577953be8dbd53f6
+988,pkhex,PKHeX.Core 26.10.18 · Learnset GS (learnset_gs.json),PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,6008c351b3249ba0d2644f950e86fdde83e52c6539624b27e77d13d164343b76
+989,pkhex,PKHeX.Core 26.10.18 · Learnset C (learnset_c.json),PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,903027a3d330850880d054a4c67997daec0d9d7c17906a8ab249ba1c1fae0c2b
+990,pkhex,PKHeX.Core 26.10.18 · Learnset RS (learnset_rs.json),PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,3b00cae4ab196390018da96dbe3e2aac0860c771562558fb41b9048168039874
+991,pkhex,PKHeX.Core 26.10.18 · Learnset E (learnset_e.json),PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,0af05d58be517246c7ad88f40a84ae85cc4276d5bc5b76c75209253b99806718
+992,pkhex,PKHeX.Core 26.10.18 · Learnset FR (learnset_fr.json),PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,89ada1b57e4aa09bd0346a696335ec5bd556481647d0256982772cb5c68697dc
+993,pkhex,PKHeX.Core 26.10.18 · Learnset LG (learnset_lg.json),PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,1a7916f7fb3312e9e392fc1145f5c0ce023369ff10c6244b803dc708cdc86b80
+994,pkhex,PKHeX.Core 26.10.18 · Learnset DP (learnset_dp.json),PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,bdcbff08989dc90a200468e43b9cafc8d946cb07061a23ffaaeb2a9cc7e7475a
+995,pkhex,PKHeX.Core 26.10.18 · Learnset PT (learnset_pt.json),PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,21aa5f5f1151e229932e6445c7053944541bc1ce3d459858e7c919046f8adcea
+996,pkhex,PKHeX.Core 26.10.18 · Learnset HGSS (learnset_hgss.json),PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,5fcd0d045c9bcc5d360dd6fe71af5b1c6c7a61a7542d8351cabe9526dd3a3b72
+997,pkhex,PKHeX.Core 26.10.18 · Learnset BW (learnset_bw.json),PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,f712894f06f83a5b8358bfff812e2842f793505260f919906752b1fbbb5d7da4
+998,pkhex,PKHeX.Core 26.10.18 · Learnset B2W2 (learnset_b2w2.json),PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,abe2d7a7dd036721f55f1a040e723e32548cd1f6ef5d8dce63536854a40c7dd1
+999,pkhex,PKHeX.Core 26.10.18 · Learnset XY (learnset_xy.json),PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,7095f9220f58e4983dcaafa2ce3c2a2e0a5b79feea44af02bd2610182a259aee
+1000,pkhex,PKHeX.Core 26.10.18 · Learnset ORAS (learnset_oras.json),PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,ed67c2092a939c0026084ce4a1c491ca7fc3bda2dc06e31fa0419240613520b6
+1001,pkhex,PKHeX.Core 26.10.18 · Learnset SM (learnset_sm.json),PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,dff22f733144b61608ffba81f34d9d9d5a91d75b21861ab081d4ec6e2e015550
+1002,pkhex,PKHeX.Core 26.10.18 · Learnset USUM (learnset_usum.json),PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,1b7f00fe3c62c8dd28d1245270cbc2665a3a2ddae98d59e46dc9423ff74af2b2
+1003,pkhex,PKHeX.Core 26.10.18 · Learnset LGPE (learnset_lgpe.json),PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,2aa51d951eda196c8a23bfd6c26bdad1ea87b6d07cdb819739f45ce7d9c7279f
+1004,pkhex,PKHeX.Core 26.10.18 · Learnset SW (learnset_sw.json),PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,9482282d5cd27637e560031a81c8d07567041bc147ae6cc0c15c9670c1d6d7d9
+1005,pkhex,PKHeX.Core 26.10.18 · Learnset BDSP (learnset_bdsp.json),PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,778f933a9bb49de1fff6231f582d001d9004f30c5eebb12b2759e52596085187
+1006,pkhex,PKHeX.Core 26.10.18 · Learnset LA (learnset_la.json),PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,8a95b0438999ca801b83b8da733c5d94ccd8afe691dc3dd2d2154092a5c80abc
+1007,pkhex,PKHeX.Core 26.10.18 · Learnset SV (learnset_sv.json),PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,7545442c14da5772c1bd51ad6664b1ad358531fea0061b1fa5bf2e3e224110f3
+1008,pkhex,PKHeX.Core 26.10.18 · Learnset ZA (learnset_za.json),PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,7af35a1670ae144096f64191cec0e20e956410aefb9a76d619cbf87278f2d634
+1009,pokeapi,data/v2/csv/pokemon_moves.csv@de6760be38b6,de6760be38b60a3024f1d9054330ff265f0dc619,2026-11-25T19:57:08Z,24e0ace4ae8841e8879864b11247a5ad7058f34898b53f89df541284fc0847df
+1010,showdown,data/mods/gen8bdsp/learnsets.ts (mod gen8bdsp)@c7fa6f16503d,c7fa6f16503de510c319239b5b2d29d4f7abd8c4,2026-11-25T19:57:08Z,645ede52d10b77caf94d5bc46535c11599a6fb488e94e39b6786a3739f9fc4cf
+1011,showdown,data/mods/gen7letsgo/learnsets.ts (mod gen7letsgo)@c7fa6f16503d,c7fa6f16503de510c319239b5b2d29d4f7abd8c4,2026-11-25T19:57:08Z,ef2965eb8838794deb230c025323c8de4429f5ef5cd333e8cde07a7da4dcf8fc
+1012,showdown,data/learnsets.ts (mod gen9)@c7fa6f16503d,c7fa6f16503de510c319239b5b2d29d4f7abd8c4,2026-11-25T19:57:08Z,cdab542e58b6d276122cce4ee2ff5597123f773cd1d053ecbfd4b81a54d1bafb
+1013,showdown,data/mods/gen9legends/learnsets.ts (mod gen9legends)@c7fa6f16503d,c7fa6f16503de510c319239b5b2d29d4f7abd8c4,2026-11-25T19:57:08Z,6e38b656dd26e718761a0c5bd3ca37a7bc59d5cced026d7aaddd90786e2922a2
+1014,showdown,data/mods/gen8legends/learnsets.ts (mod gen8legends)@c7fa6f16503d,c7fa6f16503de510c319239b5b2d29d4f7abd8c4,2026-11-25T19:57:08Z,13e5ea02044b3da78314f1ef3b790e3551434d9a82ff21a1314ab8943df52b4e

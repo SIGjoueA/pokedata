@@ -76,6 +76,38 @@ class Build(unittest.TestCase):
         self.assertEqual(self.one("SELECT number FROM pokedex_entry WHERE pokedex_id='b2w2-unova' AND species_id=494"), 0)
         self.assertEqual(self.one("SELECT COUNT(*) FROM pokedex_entry WHERE pokedex_id='rb-kanto'"), 151)
 
+    def test_learnsets(self):
+        # schema 1.1.0: one verification per set (form × game × method), every published set is verified
+        self.assertEqual(self.one("""SELECT COUNT(*) FROM (SELECT DISTINCT form_id, game_id, method_id FROM learnset) s
+            WHERE NOT EXISTS (SELECT 1 FROM verification v WHERE v.table_name='learnset'
+            AND v.row_key=json_array(s.form_id, s.game_id, s.method_id) AND v.column_name='*'
+            AND v.status IN ('game-data','unanimous','majority','manual','single-source'))"""), 0)
+        self.assertEqual(self.one("SELECT COUNT(*) FROM verification WHERE table_name='learnset' AND json_array_length(row_key)<>3"), 0)
+        has = lambda f, g, m, mv: self.one("SELECT COUNT(*) FROM learnset WHERE form_id=? AND game_id=? AND method_id=? AND move_id=?", f, g, m, mv) > 0
+        self.assertTrue(has("6", "sw", "machine", 53))       # Charizard: Flamethrower is TR02 in Sword/Shield
+        self.assertTrue(has("25", "e", "tutor", 9))          # Pikachu: Thunder Punch from an Emerald tutor
+        self.assertTrue(has("25", "frlg", "tutor", 34))      # Body Slam from a FireRed/LeafGreen tutor
+        self.assertFalse(has("25", "frlg", "tutor", 9))      # …but no Thunder Punch tutor in FR/LG
+        self.assertTrue(has("25", "pt", "tutor", 9))         # Platinum tutors
+        self.assertTrue(has("1", "dp", "machine", 15))       # HM01 Cut
+        self.assertTrue(has("3", "xy", "tutor", 338))        # Frenzy Plant (X/Y tutor)
+        self.assertEqual(self.one("SELECT level FROM learnset WHERE form_id='1' AND game_id='rb' AND method_id='level-up' AND move_id=33"), 1)
+        self.assertGreater(self.one("SELECT COUNT(*) FROM learnset WHERE form_id='25' AND game_id='la' AND method_id='mastery'"), 0)
+
+    def test_migrations(self):
+        # 0001 + 0002 give the same tables, columns and indexes as schema.sql (0002 changes conventions only)
+        def struct(scripts):
+            d = sqlite3.connect(":memory:")
+            for sc in scripts:
+                d.executescript(sc)
+            return sorted(d.execute("SELECT type, name, sql FROM sqlite_master WHERE name NOT LIKE 'sqlite_%'").fetchall())
+        mig = sorted((ROOT / "db" / "migrations").glob("*.sql"))
+        self.assertEqual([p.name[:4] for p in mig], [f"{i:04d}" for i in range(1, len(mig) + 1)])
+        strip = lambda rows: [(t, n, " ".join(l.split("--")[0] for l in (q or "").splitlines()).split()) for t, n, q in rows]
+        self.assertEqual(strip(struct([mig[0].read_text("utf-8")] + [p.read_text("utf-8") for p in mig[1:]])),
+                         strip(struct([(ROOT / "db" / "schema.sql").read_text("utf-8")])))
+        self.assertEqual(self.one("SELECT value FROM meta WHERE key='schema_version'"), "1.1.0")
+
 
 class Api(unittest.TestCase):
     def test_index(self):
@@ -112,6 +144,13 @@ class Api(unittest.TestCase):
         self.assertEqual(json.loads((API / "move" / "33.json").read_text("utf-8"))["games"]["rb"]["accuracy"], 95)
         db = sqlite3.connect(BUILD / "pokedata.sqlite")   # Yanma → Yanmega knowing Ancient Power: the condition now points to the move table
         self.assertIn((246,), db.execute("SELECT m.known_move_id FROM evolution e JOIN evolution_method m ON m.evolution_id=e.id WHERE e.to_form_id='469'").fetchall())
+
+    def test_learnset_api(self):
+        idx = json.loads((API / "index.json").read_text("utf-8"))
+        self.assertIn("learnset", idx["endpoints"])
+        ls = json.loads((API / "learnset" / "25.json").read_text("utf-8"))
+        self.assertIn([85, 0], ls["games"]["sv"]["machine"])   # Pikachu: Thunderbolt by TM in Scarlet/Violet
+        self.assertTrue(all(len(e) in (2, 3) for g in ls["games"].values() for m in g.values() for e in m))
 
     def test_search(self):
         s = json.loads((API / "search" / "fr.json").read_text("utf-8"))

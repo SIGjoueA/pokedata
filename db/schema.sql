@@ -1,5 +1,5 @@
 -- =============================================================================
--- pokedata : schéma SQLite v1 (1.0.0, validé le 25/11/2026)
+-- pokedata : schéma SQLite v1 (1.1.0 ; 1.0.0 validé le 25/11/2026, 1.1.0 le 26/11/2026)
 -- =============================================================================
 -- Projet de fans non officiel. Pokémon et tous les noms, textes et données de
 -- jeu associés © Nintendo, Creatures Inc., GAME FREAK inc. et The Pokémon
@@ -33,6 +33,11 @@
 --   * Provenance : section 13. Chaque ligne d'une table de données est
 --     identifiée par (table_name, row_key) où row_key est la clé primaire
 --     sérialisée en tableau JSON compact, ex. '["6-mega-x","sv"]'.
+--     Exception (1.1.0, migration 0002) : learnset est vérifiée par ensemble,
+--     row_key = '[form_id, game_id, method_id]' (voir verification).
+--   * Fichiers CSV (1.1.0) : une table = un CSV trié dans db/data/, sauf
+--     verification et citation, découpées par table décrite :
+--     db/data/verification/<table_name>.csv, db/data/citation/<table_name>.csv.
 -- =============================================================================
 
 PRAGMA foreign_keys = ON;
@@ -726,16 +731,19 @@ CREATE INDEX source_document_locator ON source_document(source_id, locator, retr
 CREATE TABLE citation (
   id              INTEGER PRIMARY KEY,
   table_name      TEXT NOT NULL,
-  row_key         TEXT NOT NULL,      -- clé primaire en JSON : '["6-mega-x","sv"]'
-  column_name     TEXT NOT NULL DEFAULT '*',  -- '*' = la ligne entière
+  row_key         TEXT NOT NULL,      -- clé primaire en JSON : '["6-mega-x","sv"]' ; learnset : '[form,jeu,méthode]'
+  column_name     TEXT NOT NULL DEFAULT '*',  -- '*' = la ligne entière (learnset : l'ensemble)
   document_id     INTEGER NOT NULL REFERENCES source_document(id),
-  observed_value  TEXT,               -- valeur lue (normalisée)
+  observed_value  TEXT,               -- valeur lue (normalisée) ; learnset : {"n": taille, "sha256": empreinte de l'ensemble lu}
   agrees          INTEGER NOT NULL CHECK (agrees IN (0,1)), -- 1 = conforme à la valeur retenue
   UNIQUE (table_name, row_key, column_name, document_id)
 ) STRICT;
 CREATE INDEX citation_row ON citation(table_name, row_key);
 
 -- Statut de vérification courant d'une donnée.
+-- learnset (1.1.0) : une ligne par ensemble (forme × jeu × méthode), row_key = '["25","sv","machine"]',
+-- column_name '*', value_sha256 = empreinte de la liste triée [move_id, level, version_id] de l'ensemble.
+-- Les capacités en plus / en moins selon chaque source sont dans discrepancy.alternatives (missing / extra).
 CREATE TABLE verification (
   table_name     TEXT NOT NULL,
   row_key        TEXT NOT NULL,

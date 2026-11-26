@@ -6,13 +6,13 @@ Base de données Pokémon ouverte, vérifiée et multilingue (ja, en, fr, de, it
 
 - **API statique JSON** : <https://sigjouea.github.io/pokedata/api/v1/index.json>
 - **base SQLite** téléchargeable à chaque version de données (Releases `data-AAAA.MM.JJ`)
-- **CSV** triés dans [`db/data/`](db/data), qui sont la source de vérité (diffs lisibles d'une mise à jour à l'autre)
+- **CSV** triés dans [`db/data/`](db/data), qui sont la source de vérité (diffs lisibles d'une mise à jour à l'autre) ; la provenance est découpée par table décrite : `db/data/verification/{table}.csv`, `db/data/citation/{table}.csv`
 
-## Contenu (phase 1)
+## Contenu
 
-Espèces (1025) et formes (1588) pour chaque jeu du périmètre (Rouge/Bleu → Légendes Z-A et leurs DLC), avec types, statistiques, talents, taille, poids, taux de capture, EV, groupes d'œufs, sexe, croissance, et les noms officiels dans chaque langue où le jeu est sorti (`game_language`).
+Espèces (1025) et formes (1588) pour chaque jeu du périmètre (Rouge/Bleu → Légendes Z-A et leurs DLC), avec types, statistiques, talents, taille, poids, taux de capture, EV, groupes d'œufs, sexe, croissance, et les noms officiels dans chaque langue où le jeu est sorti (`game_language`). Évolutions, Pokédex régionaux, catégories ; capacités (valeurs par jeu, CT/CS/DT, noms et descriptions de jeu) ; movesets par jeu et par méthode.
 
-Prévu ensuite : évolutions et Pokédex régionaux, capacités et apprentissages, objets, lieux et rencontres, GO, tables des types, combats. Voir [`docs/plan.md`](docs/plan.md).
+Prévu ensuite : objets, lieux et rencontres, GO, tables des types, combats. Voir [`docs/plan.md`](docs/plan.md).
 
 ## Vérification
 
@@ -25,6 +25,8 @@ Chaque valeur a une provenance (`citation` → `source_document`, avec empreinte
 | `majority` | au moins 2 sources concordantes, dont une de rang 1–2 |
 | `single-source` | une seule source existe (signalé dans l'API) |
 | `manual` | référentiel saisi à la main et sourcé |
+
+Les movesets (`learnset`) sont vérifiés par ensemble forme × jeu × méthode (schéma 1.1.0) : une ligne de `verification` par ensemble, avec l'empreinte de la liste ; les capacités en plus ou en moins selon chaque source de contrôle sont dans `discrepancy`.
 
 Les désaccords entre sources sont conservés dans `discrepancy` (et dans l'API, champ `discrepancies`). Une valeur déjà vérifiée n'est re-vérifiée que si son empreinte change. Aucun texte rédigé par un wiki n'est stocké : uniquement des faits et des textes officiels des jeux.
 
@@ -44,6 +46,7 @@ Adresses = identifiants du Pokédex (numéro national, `{numéro}-{forme}` pour 
 | `api/v1/item/{id}.json` | objets utilisés par les évolutions (noms en 10 langues) |
 | `api/v1/move/index.json`, `move/{id}.json` | capacités : noms en 10 langues, valeurs par jeu (type, catégorie, puissance, précision, PP, priorité), CT/CS/DT, descriptions de jeu (anglais, français) |
 | `api/v1/machine/{game_id}.json` | liste des CT/CS/DT d'un jeu `[libellé, id de capacité]` |
+| `api/v1/learnset/{form_id}.json` | movesets d'une forme par jeu et par méthode (`level-up`, `egg`, `machine`, `tutor`, `reminder`, `mastery`, `plus`) : `[id de capacité, niveau]`, plus l'id de version si la capacité n'existe que dans une version ; écarts des sources de contrôle dans `discrepancies` |
 | `api/v1/type/index.json`, `game/index.json`, `game/{id}.json` | référentiels |
 | `api/v1/search/{lang}.json` | index de recherche `[nom normalisé, nom, id]` |
 | `api/v1/meta/{sources,changelog,verification,languages}.json` | provenance, journal, statuts |
@@ -54,7 +57,7 @@ Les fichiers de données ne contiennent ni date ni numéro de version (seul `ind
 ## Construire localement
 
 ```sh
-python3 scripts/build_sqlite.py      # db/data/*.csv + db/schema.sql -> build/pokedata.sqlite
+python3 scripts/build_sqlite.py      # db/data/**/*.csv + db/schema.sql -> build/pokedata.sqlite
 python3 scripts/export_api.py        # -> site/api/v1/**
 python3 -m unittest discover tests
 ```
@@ -66,6 +69,7 @@ python3 scripts/fetch/fetch_sources.py   # cache/ : PokeAPI, Showdown, extractio
 python3 scripts/fetch/fetch_more.py bulbapedia pokepedia serebii   # pages des phases 1b et 2 (Pokédex régionaux, catégories, capacités)
 python3 scripts/import_data.py         # -> db/data/*.csv + reports/
 python3 scripts/changelog.py             # -> CHANGELOG.md
+python3 scripts/compare_learnsets.py > reports/compare-learnsets.md   # comparaison avec le Pokédex (lecture seule)
 ```
 
 ## Journal

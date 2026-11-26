@@ -17,7 +17,7 @@ for r in sorted(read_csv("update_log"), key=lambda r: -int(r["id"])):
         out.append("- Statuts de vérification : " + ", ".join(f"{k} {v}" for k, v in sorted(st["verification"].items())))
     if st.get("rows"):
         keep = ["species", "form", "form_game", "form_ability", "ability", "evolution", "evolution_method", "pokedex_entry", "item",
-                "move", "move_game", "machine", "translation", "discrepancy"]
+                "move", "move_game", "machine", "learnset", "translation", "discrepancy"]
         out.append("- Lignes : " + ", ".join(f"{k} {st['rows'][k]}" for k in keep if k in st["rows"]))
 (ROOT / "CHANGELOG.md").write_text("\n".join(out) + "\n", "utf-8")
 print("CHANGELOG.md written")

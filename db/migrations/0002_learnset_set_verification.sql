@@ -1,0 +1,28 @@
+-- =============================================================================
+-- pokedata : migration 0002 — schéma 1.0.0 → 1.1.0 (26/11/2026)
+-- =============================================================================
+-- Décision validée : options A + B du plan (section 18).
+--
+-- A. Movesets vérifiés par ensemble. Pour la table learnset, verification et
+--    citation ne décrivent plus une ligne mais un ensemble (forme × jeu ×
+--    méthode) :
+--      row_key      = '[form_id, game_id, method_id]', column_name = '*'
+--      value_sha256 = sha256 de la liste triée [move_id, level, version_id]
+--      citation.observed_value = {"n": taille, "sha256": empreinte de
+--                                 l'ensemble lu par la source}
+--    Les capacités en plus / en moins d'une source sont rangées dans
+--    discrepancy.alternatives ({"source", "document_id", "missing", "extra"}).
+--    Les autres tables gardent une vérification par ligne (ou par groupe de
+--    colonnes), inchangée.
+--
+-- B. Fichiers CSV de provenance découpés par table décrite :
+--      db/data/verification/<table_name>.csv
+--      db/data/citation/<table_name>.csv
+--    (avant : db/data/verification.csv et db/data/citation.csv). Contenu
+--    identique, ids de citation inchangés.
+--
+-- Aucune table, colonne, contrainte ni index n'est ajouté, modifié ou supprimé :
+-- la base SQLite garde la même structure. Seules les conventions ci-dessus et
+-- la version du schéma changent. Sur une base 1.0.0 existante :
+
+UPDATE meta SET value = '1.1.0' WHERE key = 'schema_version';

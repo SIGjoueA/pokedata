@@ -52,7 +52,7 @@ def showdown_move(mid, game):
 SEREBII_OF = {"rb": "rby", "y": "rby", "gs": "gs", "c": "gs", "rs": "gen3", "e": "gen3", "frlg": "gen3", "dp": "dp", "pt": "dp", "hgss": "dp",
               "bw": "bw", "b2w2": "bw", "xy": "xy", "oras": "xy", "sm": "sm", "usum": "sm", "sw": "swsh", "sv": "sv"}
 SER, SER_DOC = {}, {}
-for dex in set(SEREBII_OF.values()):
+for dex in sorted(set(SEREBII_OF.values())):
     m = MAN.get(f"serebii:attackdex-{dex}")
     if not m: continue
     rows = json.load(open(ROOT / m["path"], encoding="utf-8"))
@@ -291,30 +291,10 @@ for mid in move_ids:
 # Lucario etc.: evolution conditions that name a known move now point to the move table
 # (done in phase 1b when PHASES contains "2")
 
-# ----------------------------------------------------------------------------- learnsets: computed locally, NOT published
-LS_DIR = ROOT / "work" / "learnset"
-LS_DIR.mkdir(parents=True, exist_ok=True)
-ls_counts = {}
-LS_GAMES = {"rb": ["rb"], "y": ["y"], "gs": ["gs"], "c": ["c"], "rs": ["rs"], "e": ["e"], "frlg": ["fr", "lg"], "dp": ["dp"], "pt": ["pt"],
-            "hgss": ["hgss"], "bw": ["bw"], "b2w2": ["b2w2"], "xy": ["xy"], "oras": ["oras"], "sm": ["sm"], "usum": ["usum"], "lgpe": ["lgpe"],
-            "sw": ["sw"], "bdsp": ["bdsp"], "la": ["la"], "sv": ["sv"], "za": ["za"]}
-for g, files in LS_GAMES.items():
-    rows = set()
-    for f in files:
-        p = DUMP / f"learnset_{f}.json"
-        if not p.exists(): continue
-        for sp, fi, meth, mv, lvl in json.load(open(p, encoding="utf-8")):
-            k = KEYMAP[g].get((sp, fi))
-            if not k: continue
-            method = "level-up" if meth == "level-up-1" else meth
-            rows.add((k, g, mv, method, lvl if method in ("level-up", "mastery", "plus") else 0))
-    rows = sorted(rows, key=lambda r: (int(r[0].split("-")[0]), r[0], r[3], r[4], r[2]))
-    with open(LS_DIR / f"{g}.csv", "w", encoding="utf-8", newline="") as fh:
-        w = csv.writer(fh, lineterminator="\n"); w.writerow(["form_id", "game_id", "move_id", "method_id", "level"]); w.writerows(rows)
-    ls_counts[g] = len(rows)
+# Movesets : voir phase2b.py (publiés à partir du schéma 1.1.0).
 
 PHASE2_STATS = dict(moves=len(move_rows), move_game=len(mg_rows), machines=len(mach_rows), move_game_unpublished=dict(mg_unpublished),
                     move_game_no_tier2=dict(mg_noserebii), flavor={f"{l}:{k}": n for (l, k), n in sorted(fl_stats.items())},
-                    learnset_rows_local=ls_counts)
+                    )
 json.dump(dict(stats=PHASE2_STATS, move_game_unpublished=mg_unpub_list), open(ROOT / "reports/phase2-details.json", "w"), ensure_ascii=False, indent=0)
 print("phase2", json.dumps(PHASE2_STATS, ensure_ascii=False))

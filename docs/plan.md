@@ -1,7 +1,7 @@
 # pokedata — plan de projet
 
 Base de données Pokémon indépendante et réutilisable, qui deviendra aussi la source unique et vérifiée du Pokédex (sigjouea.github.io/pokedex).
-Statut : **validé le 25/11/2026** (plan et schéma 1.0.0). Décisions prises : identifiants du Pokédex dans les adresses de l'API, alias lisibles en plus (option A) ; textes rédigés par les wikis **exclus** de la base. Phase 1 publiée (section 16), phase 1b publiée (section 17), phase 2 publiée sans les movesets (section 18).
+Statut : **validé le 25/11/2026** (plan et schéma 1.0.0) ; schéma **1.1.0** validé le 26/11/2026 (options A + B de la section 18, migration 0002). Décisions prises : identifiants du Pokédex dans les adresses de l'API, alias lisibles en plus (option A) ; textes rédigés par les wikis **exclus** de la base. Phase 1 publiée (section 16), phase 1b publiée (section 17), phase 2 publiée sans les movesets (section 18), movesets publiés en phase 2b (section 19).
 
 ---
 
@@ -100,6 +100,7 @@ Pour chaque donnée, dans l'ordre :
 
 ## 6. Vérification, empreintes et journal
 
+- Une ligne de `verification` par ligne de données (ou par groupe de colonnes), sauf `learnset` (schéma 1.1.0) : une ligne par ensemble forme × jeu × méthode (section 19).
 - `source_document.content_sha256` = empreinte de la partie utile du document (section de page, ligne de table du dump), pas de la page entière. On ignore ainsi le bruit : publicités, compteurs, mise en page.
 - `verification.sources_fingerprint` = sha256 des empreintes citées, triées. Chaque semaine, le pipeline recalcule les empreintes. **Seules les données dont l'empreinte a changé sont recroisées**, plus les nouvelles données et celles en statut `seeded` ou `disputed`.
 - `update_log` contient une entrée par passage : date, type (`weekly`, `release`, `correction`, `schema`), déclencheur (ex. « Z-A 2.0.0 »), version des données, commit et statistiques.
@@ -117,7 +118,8 @@ pokedata/
 ├── db/
 │   ├── schema.sql          schéma (source de vérité de la structure)
 │   ├── migrations/         0001_init.sql, 0002_….sql
-│   └── data/               une table = un CSV trié (source de vérité des données)
+│   └── data/               une table = un CSV trié (source de vérité des données) ;
+│                           verification/ et citation/ : un CSV par table décrite (schéma 1.1.0)
 ├── scripts/
 │   ├── fetch/              fetch_sources.py, showdown_species.mjs, pkhex_dumper/ (C#, .NET 10)
 │   ├── common.py, reference.py   utilitaires, référentiels (langues, jeux, versions, sources…)
@@ -320,7 +322,7 @@ Reporté :
 - noms de formes non concordants (≈ 2 750 couples forme × langue ; ≈ 1 200 publiés, surtout japonais, coréen et chinois) ;
 - objets hors évolutions, objet d'incubation des bébés (`evolution_chain.baby_item_id`).
 
-## 18. Phase 2 : règles appliquées, reports et décision en attente
+## 18. Phase 2 : règles appliquées, reports et décision sur les movesets
 
 Même structure (schéma 1.0.0). Précisions :
 - **Capacités** : id = index du jeu (= PokeAPI) ; génération = premier contexte de jeu où la capacité existe (PKHeX, concordant avec PokeAPI) ; `kind` z / max / gmax d'après Showdown. Noms : PKHeX (rang 1) + PokeAPI, suffixes « (P) / (S) » des capacités Z retirés.
@@ -340,8 +342,27 @@ Reporté :
 - descriptions dans les 8 autres langues (une seule source de rang 3, PKHeX n'expose pas ces textes) ;
 - `target`, contact, drapeaux, probabilité d'effet ; objets CT.
 
-**Movesets : calculés, non publiés — changement de structure à valider.** L'extraction des jeux donne ≈ 614 000 lignes `learnset` (≈ 14 Mo en CSV, 32 000 ensembles forme × jeu × méthode). Avec la règle actuelle (une ligne de `verification` par ligne de données, citations par source), il faudrait ≈ 125 Mo de `verification.csv` et ≈ 100–150 Mo de `citation.csv`, au-delà de la limite de 100 Mo par fichier de GitHub ; après la phase 2, `verification.csv` fait déjà ≈ 36 Mo et `citation.csv` ≈ 33 Mo (alerte GitHub à 50 Mo). Options :
+**Movesets : décision prise le 26/11/2026 — options A + B retenues, publiés en phase 2b (section 19).** Constat d'origine : L'extraction des jeux donne ≈ 614 000 lignes `learnset` (≈ 14 Mo en CSV, 32 000 ensembles forme × jeu × méthode). Avec la règle actuelle (une ligne de `verification` par ligne de données, citations par source), il faudrait ≈ 125 Mo de `verification.csv` et ≈ 100–150 Mo de `citation.csv`, au-delà de la limite de 100 Mo par fichier de GitHub ; après la phase 2, `verification.csv` fait déjà ≈ 36 Mo et `citation.csv` ≈ 33 Mo (alerte GitHub à 50 Mo). Options :
 - **A (recommandée)** : vérification par ensemble — `row_key` = `[form_id, game_id, method_id]`, `column_name = '*'`, `value_sha256` = empreinte de la liste triée (capacité, niveau) ; citations au même niveau avec l'empreinte de l'ensemble observé par chaque source ; les écarts détaillés (capacités en plus ou en moins) dans `discrepancy.alternatives`. ≈ 32 000 vérifications (+7 Mo) et ≈ 100 000 citations (+15 Mo).
 - **B** : découper les CSV de provenance par table (`db/data/verification/{table}.csv`, idem pour `citation`) — nécessaire aussi avec A à moyen terme pour rester sous 50 Mo par fichier.
 - **C** : garder la provenance des movesets hors du dépôt (seulement dans la base SQLite de la Release).
 Proposition : A + B. Défauts connus de l'extraction à corriger avant publication : tuteurs des générations 3 (Émeraude), 6 et 7 non lus (API non publique de PKHeX), DT d'Épée/Bouclier sous-comptés.
+
+## 19. Phase 2b : movesets (schéma 1.1.0)
+
+Changement de structure validé (options A + B de la section 18), migration `db/migrations/0002_learnset_set_verification.sql` : aucune table ni colonne modifiée ; seules changent les conventions suivantes et la version du schéma (1.1.0).
+- **A — vérification par ensemble** pour `learnset` : `row_key` = `[form_id, game_id, method_id]`, `column_name = '*'`, `value_sha256` = sha256 de la liste triée `[move_id, level, version_id]`. Une citation par document : `observed_value` = `{"n": taille, "sha256": empreinte de l'ensemble lu}`. Les capacités en plus / en moins d'une source sont dans `discrepancy.alternatives` (`missing` = dans les données du jeu mais pas dans la source, `extra` = l'inverse).
+- **B — provenance découpée par table** : `db/data/verification/{table}.csv` et `db/data/citation/{table}.csv` (contenu et ids inchangés par rapport aux fichiers uniques de la version 1.0.0). Les autres CSV restent un fichier par table.
+- Les ids de `source_document`, `citation` et `discrepancy` déjà publiés sont conservés d'une version à l'autre (un document identique — même source, adresse et empreinte — garde son id et sa date de lecture) ; les nouvelles lignes prennent les ids suivants.
+
+Règles appliquées :
+- **Données** : extraction des jeux (PKHeX, rang 1) pour les 22 jeux de Rouge/Bleu à Légendes Z-A, DLC inclus (rangées sous le jeu de base, comme les valeurs par jeu). Méthodes : `level-up` (niveau ; 0 = à l'évolution ; attaques de départ de la génération 1 au niveau 1), `egg`, `machine` (CT, CS, DT), `tutor`, `reminder` (Écarlate/Violet), `mastery` (Légendes Arceus, niveau de maîtrise dans `level`), `plus` (Légendes Z-A, niveau dans `level`). `sort_order` = ordre des données du jeu au même niveau. `version_id` rempli quand une capacité n'existe que dans une version (Deoxys dans Rouge Feu / Vert Feuille).
+- **Corrections de l'extraction** (avant publication) : DT d'Épée/Bouclier lues dans leur propre table (elles étaient lues dans les drapeaux des CT) ; CS de la génération 4 ; tuteurs de Cristal, Émeraude, Rouge Feu / Vert Feuille (les 15 tuteurs communs avec Émeraude + attaques ultimes), Diamant/Perle (tuteurs spéciaux), Platine (38 premiers tuteurs de la table commune avec HeartGold/SoulSilver, d'après l'ordre des données), HeartGold/SoulSilver (+ tuteurs spéciaux), Noir 2/Blanc 2, X/Y, Rubis Oméga/Saphir Alpha, Soleil/Lune et Ultra-Soleil/Ultra-Lune (tuteurs de type et spéciaux de PKHeX). Rubis/Saphir n'ont pas de tuteur (les tuteurs Colosseum/XD de PKHeX sont exclus).
+- **Contrôles** : PokeAPI (`pokemon_moves.csv`, groupes de versions du jeu et de ses DLC ; maîtrise et Plus = `enhancement_level`) pour toutes les formes que PokeAPI a dans le jeu ; Showdown pour machine, tuteur et œuf seulement, et seulement là où ses données sont propres au jeu (Écarlate/Violet, Épée/Bouclier, DEPS, Légendes Arceus, Let's Go, Légendes Z-A) — ses listes par génération fusionnent les versions et ses niveaux mélangent les jeux d'une génération.
+- Statut `game-data` pour chaque ensemble ; les écarts des sources de contrôle sont notés (`reports/compare-learnsets.md`).
+
+Reporté :
+- capacités apprises au changement de forme (Motisma, méthode `form-change`), capacités signature enseignées par des personnages (Lame Sainte de Keldeo, Chant Antique de Meloetta en Noir/Blanc et Noir 2/Blanc 2) ;
+- movesets des variantes cosmétiques sans entrée propre dans les données du jeu (bonbons de Charmilly…) : le moveset est sur la forme de l'entrée du jeu ;
+- écarts à examiner : tuteur Blabla Dodo (Sleep Talk) de Rubis Oméga/Saphir Alpha donné par PKHeX mais pas par PokeAPI ni Showdown (843 ensembles) ; capacités au niveau 0 de Légendes Z-A absentes de PokeAPI (117 ensembles) ; Aires d'Eau/de Feu de Silvallié dans Épée/Bouclier (PokeAPI).
+

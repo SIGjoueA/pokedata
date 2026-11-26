@@ -1,7 +1,8 @@
-"""Build build/pokedata.sqlite from db/schema.sql + db/data/*.csv (the CSVs are the source of truth)."""
+"""Build build/pokedata.sqlite from db/schema.sql + db/data/*.csv (the CSVs are the source of truth).
+verification and citation are split by described table: db/data/verification/*.csv, db/data/citation/*.csv."""
 import csv, datetime, os, sqlite3, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from common import BUILD, DATA, SCHEMA, read_csv
+from common import BUILD, DATA, SCHEMA, data_tables, read_csv
 
 ORDER = ["language", "generation", "region", "game", "version", "game_language", "game_patch", "pokedex", "type",
          "type_chart", "type_chart_game", "type_efficacy", "growth_rate", "egg_group", "evolution_chain", "species",
@@ -24,7 +25,7 @@ def main(out=None):
     db.execute("PRAGMA foreign_keys = ON")
     db.executescript(open(SCHEMA, encoding="utf-8").read())
     tables = {r[0] for r in db.execute("SELECT name FROM sqlite_master WHERE type='table'")}
-    present = {p.stem for p in DATA.glob("*.csv")}
+    present = data_tables()
     unknown = present - tables
     if unknown:
         raise SystemExit(f"CSV without table: {sorted(unknown)}")

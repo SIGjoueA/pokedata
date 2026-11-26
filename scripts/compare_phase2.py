@@ -1,7 +1,7 @@
-"""Compare pokedata phase 2 (moves, values per game, machines, learnsets computed locally) with the current Pokédex data.
+"""Compare pokedata phase 2 (moves, values per game, machines) with the current Pokédex data.
 
 Usage: python3 scripts/compare_phase2.py <path to pokedex/docs/data> > reports/compare-moves.md
-Read-only on the Pokédex side. Learnsets are compared from work/learnset/*.csv (computed by the import, not published).
+Read-only on the Pokédex side. Movesets (published from schema 1.1.0) are compared by scripts/compare_learnsets.py.
 """
 import collections, csv, json, os, re, sqlite3, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -75,35 +75,7 @@ for g, diff, oa, ob in mdet:
         ("seulement pokedata " + ", ".join(map(str, ob[:20]))) if ob else ""] if x))
 p("")
 
-# ---------------------------------------------------------------- learnsets (local, not published)
-p("## Movesets (calculés localement depuis les données des jeux, non publiés)\n")
-li = json.load(open(os.path.join(PX, "learn-index.json"), encoding="utf-8"))
-G, K = li["g"], li["k"]
-theirs = collections.defaultdict(set)
-for mv, arr in li["L"].items():
-    i = 0
-    while i < len(arr):
-        f, n = arr[i], arr[i + 1]
-        for c in arr[i + 2:i + 2 + n]:
-            theirs[G[c >> 5]].add((K[f], int(mv), c & 31))
-        i += 2 + n
-BIT = {"level-up": 1, "reminder": 1, "mastery": 1, "plus": 1, "machine": 2, "egg": 4, "tutor": 8}
-p("Comparaison par jeu sur les couples (forme, capacité), puis par méthode (montée de niveau, CT, œuf, tuteur).\n")
-p("| Jeu | Couples Pokédex | Couples pokedata | Communs | Seulement Pokédex | Seulement pokedata | Méthode identique (communs) |\n|---|---|---|---|---|---|---|")
-for path in sorted((ROOT / "work" / "learnset").glob("*.csv")):
-    g = path.stem
-    ours = collections.defaultdict(int)
-    with open(path, encoding="utf-8") as fh:
-        for r in csv.DictReader(fh):
-            ours[(r["form_id"], int(r["move_id"]))] |= BIT.get(r["method_id"], 16)
-    th = collections.defaultdict(int)
-    for f, mv, bits in theirs.get(g, ()):
-        th[(f, mv)] |= bits
-    if not th:
-        p(f"| {g} | — | {len(ours)} | | | | |"); continue
-    common = set(ours) & set(th)
-    same_m = sum(1 for k in common if (ours[k] & 15) == (th[k] & 15))
-    p(f"| {g} | {len(th)} | {len(ours)} | {len(common)} | {len(set(th) - set(ours))} | {len(set(ours) - set(th))} | {same_m} ({100 * same_m // max(1, len(common))} %) |")
-p("\nLes écarts de méthode viennent surtout des tuteurs (listes de tuteurs non lues pour les générations 3, 6 et 7, voir le plan) "
-  "et des capacités apprises au rappel / à l'évolution.\n")
+# ---------------------------------------------------------------- learnsets: see compare_learnsets.py
+p("## Movesets\n")
+p("Publiés à partir des données 2026.11.26 (schéma 1.1.0) : comparaison dans `reports/compare-learnsets.md`.\n")
 print("\n".join(L))

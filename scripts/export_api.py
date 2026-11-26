@@ -86,7 +86,13 @@ def main():
         fgame[r["form_id"]][r["game_id"]] = {k: v for k, v in e.items() if v is not None}
 
     disc = collections.defaultdict(list)
+    ls_disc = collections.defaultdict(dict)   # movesets (verified per set): form -> game -> method -> sources that differ
     for r in q("SELECT * FROM discrepancy"):
+        if r["table_name"] == "learnset":
+            f_, g_, m_ = json.loads(r["row_key"])
+            ls_disc[f_].setdefault(g_, {})[m_] = [{"source": a["source"], "missing": a["missing"], "extra": a["extra"]}
+                                                  for a in json.loads(r["alternatives"])]
+            continue
         disc[r["row_key"]].append({"table": r["table_name"], "column": r["column_name"], "chosen": json.loads(r["chosen_value"]) if r["chosen_value"] else None,
                                    "rule": r["rule"], "others": [{"source": a["source"], "value": a["value"]} for a in json.loads(r["alternatives"])]})
 
@@ -261,6 +267,20 @@ def main():
         for g, lst in mach_by_game.items():
             write(f"machine/{g}.json", sorted(lst, key=lambda x: (x[0][:2], int(re.sub(r"\D", "", x[0]) or 0))))
 
+    # movesets (schema 1.1.0): one file per form; entries [move_id, level] (+ version_id when the move is version-exclusive)
+    nls = 0
+    lsets = collections.defaultdict(lambda: collections.defaultdict(lambda: collections.defaultdict(list)))
+    for r in q("SELECT * FROM learnset ORDER BY form_id, game_id, method_id, level, sort_order, move_id"):
+        if not okv("learnset", rk(r["form_id"], r["game_id"], r["method_id"])):
+            continue
+        lsets[r["form_id"]][r["game_id"]][r["method_id"]].append([r["move_id"], r["level"]] + ([r["version_id"]] if r["version_id"] else []))
+        nls += 1
+    for fid, gm in lsets.items():
+        o = {"form_id": fid, "games": {g: dict(sorted(gm[g].items())) for g in sorted(gm, key=game_order.index)}}
+        if fid in ls_disc:
+            o["discrepancies"] = ls_disc[fid]
+        write(f"learnset/{fid}.json", o)
+
     write("type/index.json", [{"id": t["id"], "generation": t["generation_id"], "names": names[("type", t["id"])]}
                               for t in q("SELECT * FROM type ORDER BY pokeapi_id")])
     glist = []
@@ -301,7 +321,8 @@ def main():
               "evolution_chains": len(clist), "evolutions": sum(len(v) for v in chains.values()), "items": len(ilist),
               "pokedexes": len(dlist), "pokedex_entries": sum(d["count"] for d in dlist),
               "moves": len(mlist), "move_game": db.execute("SELECT COUNT(*) FROM move_game").fetchone()[0],
-              "machines": db.execute("SELECT COUNT(*) FROM machine").fetchone()[0]}
+              "machines": db.execute("SELECT COUNT(*) FROM machine").fetchone()[0],
+              "learnset_forms": len(lsets), "learnset_rows": nls}
     write("index.json", {"api_version": "v1", "schema_version": meta["schema_version"], "data_version": dv,
                          "generated_at": meta["generated_at"], "license": {"code": "MIT", "notice": meta["license_notice"]},
                          "counts": counts, "download": dl,
@@ -313,6 +334,7 @@ def main():
                              "item_index": "item/index.json", "item": "item/{id}.json",
                              "pokedex_index": "pokedex/index.json", "pokedex": "pokedex/{pokedex_id}.json",
                              "move_index": "move/index.json", "move": "move/{id}.json", "machines": "machine/{game_id}.json",
+                             "learnset": "learnset/{form_id}.json",
                              "sources": "meta/sources.json", "changelog": "meta/changelog.json", "verification": "meta/verification.json",
                              "languages": "meta/languages.json", "download": "download.json"}.items()}})
     if (ROOT / "docs").exists():

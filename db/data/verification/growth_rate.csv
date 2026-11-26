@@ -1,0 +1,7 @@
+table_name,row_key,column_name,status,value_sha256,sources_fingerprint,verified_at,update_id
+growth_rate,"[""erratic""]",*,manual,9eb6a80d45d7b08ea00e4cd57e045ee6cb3dd4a2d597b8e54d6e797516bf7d15,2fb11eb25b7df7dc181467a52c5a88039c10f9a1d5cceccedca72195b6837cf4,2026-11-25T20:05:16Z,1
+growth_rate,"[""fast""]",*,manual,1ad4861a74fb678efbceaf779c7e03d1ff4be8b318c660114f24e827d89cfb09,c10983ab8baac2e36bc38e75414226b0be760bf8055e59b7bf1e086120447a89,2026-11-25T20:05:16Z,1
+growth_rate,"[""fluctuating""]",*,manual,455dcb3c15e6fe49cab36bc0c46e25b95720518545db3fa56c2c2add151d80ca,96127fbb4bbd01f0ec3ef310ba437ecca0cbddb0bb4df83b587872d63f7ba5a8,2026-11-25T20:05:16Z,1
+growth_rate,"[""medium-fast""]",*,manual,02558e9213cfb0ca71e5fa55887babcb88253e7a9de2b9095958fee5ccc08e0b,cfa120501681499a7563d6e9404ccd9b42a5a14361cddac3996708ace366a71f,2026-11-25T20:05:16Z,1
+growth_rate,"[""medium-slow""]",*,manual,af817e5ad4dc6ce4d6950db4e3ad858a35f6c94755d56313d4be01706c57af12,10d7c09690c509dbf8d43e637d2ed35b547d750fd12b5c740c2b21747aca346c,2026-11-25T20:05:16Z,1
+growth_rate,"[""slow""]",*,manual,50989f11a549a4b44e56e178fc22f2ec85c9723f89ff27e57917f9d2b0314acb,727e4d761d61220379d000f6a9f084cbf0e479789c01c78863d1129f82ba3d4e,2026-11-25T20:05:16Z,1

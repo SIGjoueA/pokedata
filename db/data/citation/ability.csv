@@ -1,0 +1,920 @@
+id,table_name,row_key,column_name,document_id,observed_value,agrees
+1,ability,[100],*,59,"""Stall""",1
+2,ability,[100],*,60,"""Stall""",1
+3,ability,[100],*,61,"""Stall""",1
+4,ability,[101],*,59,"""Technician""",1
+5,ability,[101],*,60,"""Technician""",1
+6,ability,[101],*,61,"""Technician""",1
+7,ability,[102],*,59,"""Leaf Guard""",1
+8,ability,[102],*,60,"""Leaf Guard""",1
+9,ability,[102],*,61,"""Leaf Guard""",1
+10,ability,[103],*,59,"""Klutz""",1
+11,ability,[103],*,60,"""Klutz""",1
+12,ability,[103],*,61,"""Klutz""",1
+13,ability,[104],*,59,"""Mold Breaker""",1
+14,ability,[104],*,60,"""Mold Breaker""",1
+15,ability,[104],*,61,"""Mold Breaker""",1
+16,ability,[105],*,59,"""Super Luck""",1
+17,ability,[105],*,60,"""Super Luck""",1
+18,ability,[105],*,61,"""Super Luck""",1
+19,ability,[106],*,59,"""Aftermath""",1
+20,ability,[106],*,60,"""Aftermath""",1
+21,ability,[106],*,61,"""Aftermath""",1
+22,ability,[107],*,59,"""Anticipation""",1
+23,ability,[107],*,60,"""Anticipation""",1
+24,ability,[107],*,61,"""Anticipation""",1
+25,ability,[108],*,59,"""Forewarn""",1
+26,ability,[108],*,60,"""Forewarn""",1
+27,ability,[108],*,61,"""Forewarn""",1
+28,ability,[109],*,59,"""Unaware""",1
+29,ability,[109],*,60,"""Unaware""",1
+30,ability,[109],*,61,"""Unaware""",1
+31,ability,[10],*,59,"""Volt Absorb""",1
+32,ability,[10],*,60,"""Volt Absorb""",1
+33,ability,[10],*,61,"""Volt Absorb""",1
+34,ability,[110],*,59,"""Tinted Lens""",1
+35,ability,[110],*,60,"""Tinted Lens""",1
+36,ability,[110],*,61,"""Tinted Lens""",1
+37,ability,[111],*,59,"""Filter""",1
+38,ability,[111],*,60,"""Filter""",1
+39,ability,[111],*,61,"""Filter""",1
+40,ability,[112],*,59,"""Slow Start""",1
+41,ability,[112],*,60,"""Slow Start""",1
+42,ability,[112],*,61,"""Slow Start""",1
+43,ability,[113],*,59,"""Scrappy""",1
+44,ability,[113],*,60,"""Scrappy""",1
+45,ability,[113],*,61,"""Scrappy""",1
+46,ability,[114],*,59,"""Storm Drain""",1
+47,ability,[114],*,60,"""Storm Drain""",1
+48,ability,[114],*,61,"""Storm Drain""",1
+49,ability,[115],*,59,"""Ice Body""",1
+50,ability,[115],*,60,"""Ice Body""",1
+51,ability,[115],*,61,"""Ice Body""",1
+52,ability,[116],*,59,"""Solid Rock""",1
+53,ability,[116],*,60,"""Solid Rock""",1
+54,ability,[116],*,61,"""Solid Rock""",1
+55,ability,[117],*,59,"""Snow Warning""",1
+56,ability,[117],*,60,"""Snow Warning""",1
+57,ability,[117],*,61,"""Snow Warning""",1
+58,ability,[118],*,59,"""Honey Gather""",1
+59,ability,[118],*,60,"""Honey Gather""",1
+60,ability,[118],*,61,"""Honey Gather""",1
+61,ability,[119],*,59,"""Frisk""",1
+62,ability,[119],*,60,"""Frisk""",1
+63,ability,[119],*,61,"""Frisk""",1
+64,ability,[11],*,59,"""Water Absorb""",1
+65,ability,[11],*,60,"""Water Absorb""",1
+66,ability,[11],*,61,"""Water Absorb""",1
+67,ability,[120],*,59,"""Reckless""",1
+68,ability,[120],*,60,"""Reckless""",1
+69,ability,[120],*,61,"""Reckless""",1
+70,ability,[121],*,59,"""Multitype""",1
+71,ability,[121],*,60,"""Multitype""",1
+72,ability,[121],*,61,"""Multitype""",1
+73,ability,[122],*,59,"""Flower Gift""",1
+74,ability,[122],*,60,"""Flower Gift""",1
+75,ability,[122],*,61,"""Flower Gift""",1
+76,ability,[123],*,59,"""Bad Dreams""",1
+77,ability,[123],*,60,"""Bad Dreams""",1
+78,ability,[123],*,61,"""Bad Dreams""",1
+79,ability,[124],*,59,"""Pickpocket""",1
+80,ability,[124],*,60,"""Pickpocket""",1
+81,ability,[124],*,61,"""Pickpocket""",1
+82,ability,[125],*,59,"""Sheer Force""",1
+83,ability,[125],*,60,"""Sheer Force""",1
+84,ability,[125],*,61,"""Sheer Force""",1
+85,ability,[126],*,59,"""Contrary""",1
+86,ability,[126],*,60,"""Contrary""",1
+87,ability,[126],*,61,"""Contrary""",1
+88,ability,[127],*,59,"""Unnerve""",1
+89,ability,[127],*,60,"""Unnerve""",1
+90,ability,[127],*,61,"""Unnerve""",1
+91,ability,[128],*,59,"""Defiant""",1
+92,ability,[128],*,60,"""Defiant""",1
+93,ability,[128],*,61,"""Defiant""",1
+94,ability,[129],*,59,"""Defeatist""",1
+95,ability,[129],*,60,"""Defeatist""",1
+96,ability,[129],*,61,"""Defeatist""",1
+97,ability,[12],*,59,"""Oblivious""",1
+98,ability,[12],*,60,"""Oblivious""",1
+99,ability,[12],*,61,"""Oblivious""",1
+100,ability,[130],*,59,"""Cursed Body""",1
+101,ability,[130],*,60,"""Cursed Body""",1
+102,ability,[130],*,61,"""Cursed Body""",1
+103,ability,[131],*,59,"""Healer""",1
+104,ability,[131],*,60,"""Healer""",1
+105,ability,[131],*,61,"""Healer""",1
+106,ability,[132],*,59,"""Friend Guard""",1
+107,ability,[132],*,60,"""Friend Guard""",1
+108,ability,[132],*,61,"""Friend Guard""",1
+109,ability,[133],*,59,"""Weak Armor""",1
+110,ability,[133],*,60,"""Weak Armor""",1
+111,ability,[133],*,61,"""Weak Armor""",1
+112,ability,[134],*,59,"""Heavy Metal""",1
+113,ability,[134],*,60,"""Heavy Metal""",1
+114,ability,[134],*,61,"""Heavy Metal""",1
+115,ability,[135],*,59,"""Light Metal""",1
+116,ability,[135],*,60,"""Light Metal""",1
+117,ability,[135],*,61,"""Light Metal""",1
+118,ability,[136],*,59,"""Multiscale""",1
+119,ability,[136],*,60,"""Multiscale""",1
+120,ability,[136],*,61,"""Multiscale""",1
+121,ability,[137],*,59,"""Toxic Boost""",1
+122,ability,[137],*,60,"""Toxic Boost""",1
+123,ability,[137],*,61,"""Toxic Boost""",1
+124,ability,[138],*,59,"""Flare Boost""",1
+125,ability,[138],*,60,"""Flare Boost""",1
+126,ability,[138],*,61,"""Flare Boost""",1
+127,ability,[139],*,59,"""Harvest""",1
+128,ability,[139],*,60,"""Harvest""",1
+129,ability,[139],*,61,"""Harvest""",1
+130,ability,[13],*,59,"""Cloud Nine""",1
+131,ability,[13],*,60,"""Cloud Nine""",1
+132,ability,[13],*,61,"""Cloud Nine""",1
+133,ability,[140],*,59,"""Telepathy""",1
+134,ability,[140],*,60,"""Telepathy""",1
+135,ability,[140],*,61,"""Telepathy""",1
+136,ability,[141],*,59,"""Moody""",1
+137,ability,[141],*,60,"""Moody""",1
+138,ability,[141],*,61,"""Moody""",1
+139,ability,[142],*,59,"""Overcoat""",1
+140,ability,[142],*,60,"""Overcoat""",1
+141,ability,[142],*,61,"""Overcoat""",1
+142,ability,[143],*,59,"""Poison Touch""",1
+143,ability,[143],*,60,"""Poison Touch""",1
+144,ability,[143],*,61,"""Poison Touch""",1
+145,ability,[144],*,59,"""Regenerator""",1
+146,ability,[144],*,60,"""Regenerator""",1
+147,ability,[144],*,61,"""Regenerator""",1
+148,ability,[145],*,59,"""Big Pecks""",1
+149,ability,[145],*,60,"""Big Pecks""",1
+150,ability,[145],*,61,"""Big Pecks""",1
+151,ability,[146],*,59,"""Sand Rush""",1
+152,ability,[146],*,60,"""Sand Rush""",1
+153,ability,[146],*,61,"""Sand Rush""",1
+154,ability,[147],*,59,"""Wonder Skin""",1
+155,ability,[147],*,60,"""Wonder Skin""",1
+156,ability,[147],*,61,"""Wonder Skin""",1
+157,ability,[148],*,59,"""Analytic""",1
+158,ability,[148],*,60,"""Analytic""",1
+159,ability,[148],*,61,"""Analytic""",1
+160,ability,[149],*,59,"""Illusion""",1
+161,ability,[149],*,60,"""Illusion""",1
+162,ability,[149],*,61,"""Illusion""",1
+163,ability,[14],*,59,"""Compound Eyes""",1
+164,ability,[14],*,60,"""Compound Eyes""",1
+165,ability,[14],*,61,"""Compound Eyes""",1
+166,ability,[150],*,59,"""Imposter""",1
+167,ability,[150],*,60,"""Imposter""",1
+168,ability,[150],*,61,"""Imposter""",1
+169,ability,[151],*,59,"""Infiltrator""",1
+170,ability,[151],*,60,"""Infiltrator""",1
+171,ability,[151],*,61,"""Infiltrator""",1
+172,ability,[152],*,59,"""Mummy""",1
+173,ability,[152],*,60,"""Mummy""",1
+174,ability,[152],*,61,"""Mummy""",1
+175,ability,[153],*,59,"""Moxie""",1
+176,ability,[153],*,60,"""Moxie""",1
+177,ability,[153],*,61,"""Moxie""",1
+178,ability,[154],*,59,"""Justified""",1
+179,ability,[154],*,60,"""Justified""",1
+180,ability,[154],*,61,"""Justified""",1
+181,ability,[155],*,59,"""Rattled""",1
+182,ability,[155],*,60,"""Rattled""",1
+183,ability,[155],*,61,"""Rattled""",1
+184,ability,[156],*,59,"""Magic Bounce""",1
+185,ability,[156],*,60,"""Magic Bounce""",1
+186,ability,[156],*,61,"""Magic Bounce""",1
+187,ability,[157],*,59,"""Sap Sipper""",1
+188,ability,[157],*,60,"""Sap Sipper""",1
+189,ability,[157],*,61,"""Sap Sipper""",1
+190,ability,[158],*,59,"""Prankster""",1
+191,ability,[158],*,60,"""Prankster""",1
+192,ability,[158],*,61,"""Prankster""",1
+193,ability,[159],*,59,"""Sand Force""",1
+194,ability,[159],*,60,"""Sand Force""",1
+195,ability,[159],*,61,"""Sand Force""",1
+196,ability,[15],*,59,"""Insomnia""",1
+197,ability,[15],*,60,"""Insomnia""",1
+198,ability,[15],*,61,"""Insomnia""",1
+199,ability,[160],*,59,"""Iron Barbs""",1
+200,ability,[160],*,60,"""Iron Barbs""",1
+201,ability,[160],*,61,"""Iron Barbs""",1
+202,ability,[161],*,59,"""Zen Mode""",1
+203,ability,[161],*,60,"""Zen Mode""",1
+204,ability,[161],*,61,"""Zen Mode""",1
+205,ability,[162],*,59,"""Victory Star""",1
+206,ability,[162],*,60,"""Victory Star""",1
+207,ability,[162],*,61,"""Victory Star""",1
+208,ability,[163],*,59,"""Turboblaze""",1
+209,ability,[163],*,60,"""Turboblaze""",1
+210,ability,[163],*,61,"""Turboblaze""",1
+211,ability,[164],*,59,"""Teravolt""",1
+212,ability,[164],*,60,"""Teravolt""",1
+213,ability,[164],*,61,"""Teravolt""",1
+214,ability,[165],*,59,"""Aroma Veil""",1
+215,ability,[165],*,60,"""Aroma Veil""",1
+216,ability,[165],*,61,"""Aroma Veil""",1
+217,ability,[166],*,59,"""Flower Veil""",1
+218,ability,[166],*,60,"""Flower Veil""",1
+219,ability,[166],*,61,"""Flower Veil""",1
+220,ability,[167],*,59,"""Cheek Pouch""",1
+221,ability,[167],*,60,"""Cheek Pouch""",1
+222,ability,[167],*,61,"""Cheek Pouch""",1
+223,ability,[168],*,59,"""Protean""",1
+224,ability,[168],*,60,"""Protean""",1
+225,ability,[168],*,61,"""Protean""",1
+226,ability,[169],*,59,"""Fur Coat""",1
+227,ability,[169],*,60,"""Fur Coat""",1
+228,ability,[169],*,61,"""Fur Coat""",1
+229,ability,[16],*,59,"""Color Change""",1
+230,ability,[16],*,60,"""Color Change""",1
+231,ability,[16],*,61,"""Color Change""",1
+232,ability,[170],*,59,"""Magician""",1
+233,ability,[170],*,60,"""Magician""",1
+234,ability,[170],*,61,"""Magician""",1
+235,ability,[171],*,59,"""Bulletproof""",1
+236,ability,[171],*,60,"""Bulletproof""",1
+237,ability,[171],*,61,"""Bulletproof""",1
+238,ability,[172],*,59,"""Competitive""",1
+239,ability,[172],*,60,"""Competitive""",1
+240,ability,[172],*,61,"""Competitive""",1
+241,ability,[173],*,59,"""Strong Jaw""",1
+242,ability,[173],*,60,"""Strong Jaw""",1
+243,ability,[173],*,61,"""Strong Jaw""",1
+244,ability,[174],*,59,"""Refrigerate""",1
+245,ability,[174],*,60,"""Refrigerate""",1
+246,ability,[174],*,61,"""Refrigerate""",1
+247,ability,[175],*,59,"""Sweet Veil""",1
+248,ability,[175],*,60,"""Sweet Veil""",1
+249,ability,[175],*,61,"""Sweet Veil""",1
+250,ability,[176],*,59,"""Stance Change""",1
+251,ability,[176],*,60,"""Stance Change""",1
+252,ability,[176],*,61,"""Stance Change""",1
+253,ability,[177],*,59,"""Gale Wings""",1
+254,ability,[177],*,60,"""Gale Wings""",1
+255,ability,[177],*,61,"""Gale Wings""",1
+256,ability,[178],*,59,"""Mega Launcher""",1
+257,ability,[178],*,60,"""Mega Launcher""",1
+258,ability,[178],*,61,"""Mega Launcher""",1
+259,ability,[179],*,59,"""Grass Pelt""",1
+260,ability,[179],*,60,"""Grass Pelt""",1
+261,ability,[179],*,61,"""Grass Pelt""",1
+262,ability,[17],*,59,"""Immunity""",1
+263,ability,[17],*,60,"""Immunity""",1
+264,ability,[17],*,61,"""Immunity""",1
+265,ability,[180],*,59,"""Symbiosis""",1
+266,ability,[180],*,60,"""Symbiosis""",1
+267,ability,[180],*,61,"""Symbiosis""",1
+268,ability,[181],*,59,"""Tough Claws""",1
+269,ability,[181],*,60,"""Tough Claws""",1
+270,ability,[181],*,61,"""Tough Claws""",1
+271,ability,[182],*,59,"""Pixilate""",1
+272,ability,[182],*,60,"""Pixilate""",1
+273,ability,[182],*,61,"""Pixilate""",1
+274,ability,[183],*,59,"""Gooey""",1
+275,ability,[183],*,60,"""Gooey""",1
+276,ability,[183],*,61,"""Gooey""",1
+277,ability,[184],*,59,"""Aerilate""",1
+278,ability,[184],*,60,"""Aerilate""",1
+279,ability,[184],*,61,"""Aerilate""",1
+280,ability,[185],*,59,"""Parental Bond""",1
+281,ability,[185],*,60,"""Parental Bond""",1
+282,ability,[185],*,61,"""Parental Bond""",1
+283,ability,[186],*,59,"""Dark Aura""",1
+284,ability,[186],*,60,"""Dark Aura""",1
+285,ability,[186],*,61,"""Dark Aura""",1
+286,ability,[187],*,59,"""Fairy Aura""",1
+287,ability,[187],*,60,"""Fairy Aura""",1
+288,ability,[187],*,61,"""Fairy Aura""",1
+289,ability,[188],*,59,"""Aura Break""",1
+290,ability,[188],*,60,"""Aura Break""",1
+291,ability,[188],*,61,"""Aura Break""",1
+292,ability,[189],*,59,"""Primordial Sea""",1
+293,ability,[189],*,60,"""Primordial Sea""",1
+294,ability,[189],*,61,"""Primordial Sea""",1
+295,ability,[18],*,59,"""Flash Fire""",1
+296,ability,[18],*,60,"""Flash Fire""",1
+297,ability,[18],*,61,"""Flash Fire""",1
+298,ability,[190],*,59,"""Desolate Land""",1
+299,ability,[190],*,60,"""Desolate Land""",1
+300,ability,[190],*,61,"""Desolate Land""",1
+301,ability,[191],*,59,"""Delta Stream""",1
+302,ability,[191],*,60,"""Delta Stream""",1
+303,ability,[191],*,61,"""Delta Stream""",1
+304,ability,[192],*,59,"""Stamina""",1
+305,ability,[192],*,60,"""Stamina""",1
+306,ability,[192],*,61,"""Stamina""",1
+307,ability,[193],*,59,"""Wimp Out""",1
+308,ability,[193],*,60,"""Wimp Out""",1
+309,ability,[193],*,61,"""Wimp Out""",1
+310,ability,[194],*,59,"""Emergency Exit""",1
+311,ability,[194],*,60,"""Emergency Exit""",1
+312,ability,[194],*,61,"""Emergency Exit""",1
+313,ability,[195],*,59,"""Water Compaction""",1
+314,ability,[195],*,60,"""Water Compaction""",1
+315,ability,[195],*,61,"""Water Compaction""",1
+316,ability,[196],*,59,"""Merciless""",1
+317,ability,[196],*,60,"""Merciless""",1
+318,ability,[196],*,61,"""Merciless""",1
+319,ability,[197],*,59,"""Shields Down""",1
+320,ability,[197],*,60,"""Shields Down""",1
+321,ability,[197],*,61,"""Shields Down""",1
+322,ability,[198],*,59,"""Stakeout""",1
+323,ability,[198],*,60,"""Stakeout""",1
+324,ability,[198],*,61,"""Stakeout""",1
+325,ability,[199],*,59,"""Water Bubble""",1
+326,ability,[199],*,60,"""Water Bubble""",1
+327,ability,[199],*,61,"""Water Bubble""",1
+328,ability,[19],*,59,"""Shield Dust""",1
+329,ability,[19],*,60,"""Shield Dust""",1
+330,ability,[19],*,61,"""Shield Dust""",1
+331,ability,[1],*,59,"""Stench""",1
+332,ability,[1],*,60,"""Stench""",1
+333,ability,[1],*,61,"""Stench""",1
+334,ability,[200],*,59,"""Steelworker""",1
+335,ability,[200],*,60,"""Steelworker""",1
+336,ability,[200],*,61,"""Steelworker""",1
+337,ability,[201],*,59,"""Berserk""",1
+338,ability,[201],*,60,"""Berserk""",1
+339,ability,[201],*,61,"""Berserk""",1
+340,ability,[202],*,59,"""Slush Rush""",1
+341,ability,[202],*,60,"""Slush Rush""",1
+342,ability,[202],*,61,"""Slush Rush""",1
+343,ability,[203],*,59,"""Long Reach""",1
+344,ability,[203],*,60,"""Long Reach""",1
+345,ability,[203],*,61,"""Long Reach""",1
+346,ability,[204],*,59,"""Liquid Voice""",1
+347,ability,[204],*,60,"""Liquid Voice""",1
+348,ability,[204],*,61,"""Liquid Voice""",1
+349,ability,[205],*,59,"""Triage""",1
+350,ability,[205],*,60,"""Triage""",1
+351,ability,[205],*,61,"""Triage""",1
+352,ability,[206],*,59,"""Galvanize""",1
+353,ability,[206],*,60,"""Galvanize""",1
+354,ability,[206],*,61,"""Galvanize""",1
+355,ability,[207],*,59,"""Surge Surfer""",1
+356,ability,[207],*,60,"""Surge Surfer""",1
+357,ability,[207],*,61,"""Surge Surfer""",1
+358,ability,[208],*,59,"""Schooling""",1
+359,ability,[208],*,60,"""Schooling""",1
+360,ability,[208],*,61,"""Schooling""",1
+361,ability,[209],*,59,"""Disguise""",1
+362,ability,[209],*,60,"""Disguise""",1
+363,ability,[209],*,61,"""Disguise""",1
+364,ability,[20],*,59,"""Own Tempo""",1
+365,ability,[20],*,60,"""Own Tempo""",1
+366,ability,[20],*,61,"""Own Tempo""",1
+367,ability,[210],*,59,"""Battle Bond""",1
+368,ability,[210],*,60,"""Battle Bond""",1
+369,ability,[210],*,61,"""Battle Bond""",1
+370,ability,[211],*,59,"""Power Construct""",1
+371,ability,[211],*,60,"""Power Construct""",1
+372,ability,[211],*,61,"""Power Construct""",1
+373,ability,[212],*,59,"""Corrosion""",1
+374,ability,[212],*,60,"""Corrosion""",1
+375,ability,[212],*,61,"""Corrosion""",1
+376,ability,[213],*,59,"""Comatose""",1
+377,ability,[213],*,60,"""Comatose""",1
+378,ability,[213],*,61,"""Comatose""",1
+379,ability,[214],*,59,"""Queenly Majesty""",1
+380,ability,[214],*,60,"""Queenly Majesty""",1
+381,ability,[214],*,61,"""Queenly Majesty""",1
+382,ability,[215],*,59,"""Innards Out""",1
+383,ability,[215],*,60,"""Innards Out""",1
+384,ability,[215],*,61,"""Innards Out""",1
+385,ability,[216],*,59,"""Dancer""",1
+386,ability,[216],*,60,"""Dancer""",1
+387,ability,[216],*,61,"""Dancer""",1
+388,ability,[217],*,59,"""Battery""",1
+389,ability,[217],*,60,"""Battery""",1
+390,ability,[217],*,61,"""Battery""",1
+391,ability,[218],*,59,"""Fluffy""",1
+392,ability,[218],*,60,"""Fluffy""",1
+393,ability,[218],*,61,"""Fluffy""",1
+394,ability,[219],*,59,"""Dazzling""",1
+395,ability,[219],*,60,"""Dazzling""",1
+396,ability,[219],*,61,"""Dazzling""",1
+397,ability,[21],*,59,"""Suction Cups""",1
+398,ability,[21],*,60,"""Suction Cups""",1
+399,ability,[21],*,61,"""Suction Cups""",1
+400,ability,[220],*,59,"""Soul-Heart""",1
+401,ability,[220],*,60,"""Soul-Heart""",1
+402,ability,[220],*,61,"""Soul-Heart""",1
+403,ability,[221],*,59,"""Tangling Hair""",1
+404,ability,[221],*,60,"""Tangling Hair""",1
+405,ability,[221],*,61,"""Tangling Hair""",1
+406,ability,[222],*,59,"""Receiver""",1
+407,ability,[222],*,60,"""Receiver""",1
+408,ability,[222],*,61,"""Receiver""",1
+409,ability,[223],*,59,"""Power of Alchemy""",1
+410,ability,[223],*,60,"""Power of Alchemy""",1
+411,ability,[223],*,61,"""Power of Alchemy""",1
+412,ability,[224],*,59,"""Beast Boost""",1
+413,ability,[224],*,60,"""Beast Boost""",1
+414,ability,[224],*,61,"""Beast Boost""",1
+415,ability,[225],*,59,"""RKS System""",1
+416,ability,[225],*,60,"""RKS System""",1
+417,ability,[225],*,61,"""RKS System""",1
+418,ability,[226],*,59,"""Electric Surge""",1
+419,ability,[226],*,60,"""Electric Surge""",1
+420,ability,[226],*,61,"""Electric Surge""",1
+421,ability,[227],*,59,"""Psychic Surge""",1
+422,ability,[227],*,60,"""Psychic Surge""",1
+423,ability,[227],*,61,"""Psychic Surge""",1
+424,ability,[228],*,59,"""Misty Surge""",1
+425,ability,[228],*,60,"""Misty Surge""",1
+426,ability,[228],*,61,"""Misty Surge""",1
+427,ability,[229],*,59,"""Grassy Surge""",1
+428,ability,[229],*,60,"""Grassy Surge""",1
+429,ability,[229],*,61,"""Grassy Surge""",1
+430,ability,[22],*,59,"""Intimidate""",1
+431,ability,[22],*,60,"""Intimidate""",1
+432,ability,[22],*,61,"""Intimidate""",1
+433,ability,[230],*,59,"""Full Metal Body""",1
+434,ability,[230],*,60,"""Full Metal Body""",1
+435,ability,[230],*,61,"""Full Metal Body""",1
+436,ability,[231],*,59,"""Shadow Shield""",1
+437,ability,[231],*,60,"""Shadow Shield""",1
+438,ability,[231],*,61,"""Shadow Shield""",1
+439,ability,[232],*,59,"""Prism Armor""",1
+440,ability,[232],*,60,"""Prism Armor""",1
+441,ability,[232],*,61,"""Prism Armor""",1
+442,ability,[233],*,59,"""Neuroforce""",1
+443,ability,[233],*,60,"""Neuroforce""",1
+444,ability,[233],*,61,"""Neuroforce""",1
+445,ability,[234],*,59,"""Intrepid Sword""",1
+446,ability,[234],*,60,"""Intrepid Sword""",1
+447,ability,[234],*,61,"""Intrepid Sword""",1
+448,ability,[235],*,59,"""Dauntless Shield""",1
+449,ability,[235],*,60,"""Dauntless Shield""",1
+450,ability,[235],*,61,"""Dauntless Shield""",1
+451,ability,[236],*,59,"""Libero""",1
+452,ability,[236],*,60,"""Libero""",1
+453,ability,[236],*,61,"""Libero""",1
+454,ability,[237],*,59,"""Ball Fetch""",1
+455,ability,[237],*,60,"""Ball Fetch""",1
+456,ability,[237],*,61,"""Ball Fetch""",1
+457,ability,[238],*,59,"""Cotton Down""",1
+458,ability,[238],*,60,"""Cotton Down""",1
+459,ability,[238],*,61,"""Cotton Down""",1
+460,ability,[239],*,59,"""Propeller Tail""",1
+461,ability,[239],*,60,"""Propeller Tail""",1
+462,ability,[239],*,61,"""Propeller Tail""",1
+463,ability,[23],*,59,"""Shadow Tag""",1
+464,ability,[23],*,60,"""Shadow Tag""",1
+465,ability,[23],*,61,"""Shadow Tag""",1
+466,ability,[240],*,59,"""Mirror Armor""",1
+467,ability,[240],*,60,"""Mirror Armor""",1
+468,ability,[240],*,61,"""Mirror Armor""",1
+469,ability,[241],*,59,"""Gulp Missile""",1
+470,ability,[241],*,60,"""Gulp Missile""",1
+471,ability,[241],*,61,"""Gulp Missile""",1
+472,ability,[242],*,59,"""Stalwart""",1
+473,ability,[242],*,60,"""Stalwart""",1
+474,ability,[242],*,61,"""Stalwart""",1
+475,ability,[243],*,59,"""Steam Engine""",1
+476,ability,[243],*,60,"""Steam Engine""",1
+477,ability,[243],*,61,"""Steam Engine""",1
+478,ability,[244],*,59,"""Punk Rock""",1
+479,ability,[244],*,60,"""Punk Rock""",1
+480,ability,[244],*,61,"""Punk Rock""",1
+481,ability,[245],*,59,"""Sand Spit""",1
+482,ability,[245],*,60,"""Sand Spit""",1
+483,ability,[245],*,61,"""Sand Spit""",1
+484,ability,[246],*,59,"""Ice Scales""",1
+485,ability,[246],*,60,"""Ice Scales""",1
+486,ability,[246],*,61,"""Ice Scales""",1
+487,ability,[247],*,59,"""Ripen""",1
+488,ability,[247],*,60,"""Ripen""",1
+489,ability,[247],*,61,"""Ripen""",1
+490,ability,[248],*,59,"""Ice Face""",1
+491,ability,[248],*,60,"""Ice Face""",1
+492,ability,[248],*,61,"""Ice Face""",1
+493,ability,[249],*,59,"""Power Spot""",1
+494,ability,[249],*,60,"""Power Spot""",1
+495,ability,[249],*,61,"""Power Spot""",1
+496,ability,[24],*,59,"""Rough Skin""",1
+497,ability,[24],*,60,"""Rough Skin""",1
+498,ability,[24],*,61,"""Rough Skin""",1
+499,ability,[250],*,59,"""Mimicry""",1
+500,ability,[250],*,60,"""Mimicry""",1
+501,ability,[250],*,61,"""Mimicry""",1
+502,ability,[251],*,59,"""Screen Cleaner""",1
+503,ability,[251],*,60,"""Screen Cleaner""",1
+504,ability,[251],*,61,"""Screen Cleaner""",1
+505,ability,[252],*,59,"""Steely Spirit""",1
+506,ability,[252],*,60,"""Steely Spirit""",1
+507,ability,[252],*,61,"""Steely Spirit""",1
+508,ability,[253],*,59,"""Perish Body""",1
+509,ability,[253],*,60,"""Perish Body""",1
+510,ability,[253],*,61,"""Perish Body""",1
+511,ability,[254],*,59,"""Wandering Spirit""",1
+512,ability,[254],*,60,"""Wandering Spirit""",1
+513,ability,[254],*,61,"""Wandering Spirit""",1
+514,ability,[255],*,59,"""Gorilla Tactics""",1
+515,ability,[255],*,60,"""Gorilla Tactics""",1
+516,ability,[255],*,61,"""Gorilla Tactics""",1
+517,ability,[256],*,59,"""Neutralizing Gas""",1
+518,ability,[256],*,60,"""Neutralizing Gas""",1
+519,ability,[256],*,61,"""Neutralizing Gas""",1
+520,ability,[257],*,59,"""Pastel Veil""",1
+521,ability,[257],*,60,"""Pastel Veil""",1
+522,ability,[257],*,61,"""Pastel Veil""",1
+523,ability,[258],*,59,"""Hunger Switch""",1
+524,ability,[258],*,60,"""Hunger Switch""",1
+525,ability,[258],*,61,"""Hunger Switch""",1
+526,ability,[259],*,59,"""Quick Draw""",1
+527,ability,[259],*,60,"""Quick Draw""",1
+528,ability,[259],*,61,"""Quick Draw""",1
+529,ability,[25],*,59,"""Wonder Guard""",1
+530,ability,[25],*,60,"""Wonder Guard""",1
+531,ability,[25],*,61,"""Wonder Guard""",1
+532,ability,[260],*,59,"""Unseen Fist""",1
+533,ability,[260],*,60,"""Unseen Fist""",1
+534,ability,[260],*,61,"""Unseen Fist""",1
+535,ability,[261],*,59,"""Curious Medicine""",1
+536,ability,[261],*,60,"""Curious Medicine""",1
+537,ability,[261],*,61,"""Curious Medicine""",1
+538,ability,[262],*,59,"""Transistor""",1
+539,ability,[262],*,60,"""Transistor""",1
+540,ability,[262],*,61,"""Transistor""",1
+541,ability,[263],*,59,"""Dragon's Maw""",1
+542,ability,[263],*,60,"""Dragon’s Maw""",1
+543,ability,[263],*,61,"""Dragon’s Maw""",1
+544,ability,[264],*,59,"""Chilling Neigh""",1
+545,ability,[264],*,60,"""Chilling Neigh""",1
+546,ability,[264],*,61,"""Chilling Neigh""",1
+547,ability,[265],*,59,"""Grim Neigh""",1
+548,ability,[265],*,60,"""Grim Neigh""",1
+549,ability,[265],*,61,"""Grim Neigh""",1
+550,ability,[266],*,59,"""As One""",1
+551,ability,[266],*,60,"""As One""",1
+552,ability,[266],*,61,"""As One""",1
+553,ability,[267],*,59,"""As One""",1
+554,ability,[267],*,60,"""As One""",1
+555,ability,[267],*,61,"""As One""",1
+556,ability,[268],*,59,"""Lingering Aroma""",1
+557,ability,[268],*,60,"""Lingering Aroma""",1
+558,ability,[268],*,61,"""Lingering Aroma""",1
+559,ability,[269],*,59,"""Seed Sower""",1
+560,ability,[269],*,60,"""Seed Sower""",1
+561,ability,[269],*,61,"""Seed Sower""",1
+562,ability,[26],*,59,"""Levitate""",1
+563,ability,[26],*,60,"""Levitate""",1
+564,ability,[26],*,61,"""Levitate""",1
+565,ability,[270],*,59,"""Thermal Exchange""",1
+566,ability,[270],*,60,"""Thermal Exchange""",1
+567,ability,[270],*,61,"""Thermal Exchange""",1
+568,ability,[271],*,59,"""Anger Shell""",1
+569,ability,[271],*,60,"""Anger Shell""",1
+570,ability,[271],*,61,"""Anger Shell""",1
+571,ability,[272],*,59,"""Purifying Salt""",1
+572,ability,[272],*,60,"""Purifying Salt""",1
+573,ability,[272],*,61,"""Purifying Salt""",1
+574,ability,[273],*,59,"""Well-Baked Body""",1
+575,ability,[273],*,60,"""Well-Baked Body""",1
+576,ability,[273],*,61,"""Well-Baked Body""",1
+577,ability,[274],*,59,"""Wind Rider""",1
+578,ability,[274],*,60,"""Wind Rider""",1
+579,ability,[274],*,61,"""Wind Rider""",1
+580,ability,[275],*,59,"""Guard Dog""",1
+581,ability,[275],*,60,"""Guard Dog""",1
+582,ability,[275],*,61,"""Guard Dog""",1
+583,ability,[276],*,59,"""Rocky Payload""",1
+584,ability,[276],*,60,"""Rocky Payload""",1
+585,ability,[276],*,61,"""Rocky Payload""",1
+586,ability,[277],*,59,"""Wind Power""",1
+587,ability,[277],*,60,"""Wind Power""",1
+588,ability,[277],*,61,"""Wind Power""",1
+589,ability,[278],*,59,"""Zero to Hero""",1
+590,ability,[278],*,60,"""Zero to Hero""",1
+591,ability,[278],*,61,"""Zero to Hero""",1
+592,ability,[279],*,59,"""Commander""",1
+593,ability,[279],*,60,"""Commander""",1
+594,ability,[279],*,61,"""Commander""",1
+595,ability,[27],*,59,"""Effect Spore""",1
+596,ability,[27],*,60,"""Effect Spore""",1
+597,ability,[27],*,61,"""Effect Spore""",1
+598,ability,[280],*,59,"""Electromorphosis""",1
+599,ability,[280],*,60,"""Electromorphosis""",1
+600,ability,[280],*,61,"""Electromorphosis""",1
+601,ability,[281],*,59,"""Protosynthesis""",1
+602,ability,[281],*,60,"""Protosynthesis""",1
+603,ability,[281],*,61,"""Protosynthesis""",1
+604,ability,[282],*,59,"""Quark Drive""",1
+605,ability,[282],*,60,"""Quark Drive""",1
+606,ability,[282],*,61,"""Quark Drive""",1
+607,ability,[283],*,59,"""Good as Gold""",1
+608,ability,[283],*,60,"""Good as Gold""",1
+609,ability,[283],*,61,"""Good as Gold""",1
+610,ability,[284],*,59,"""Vessel of Ruin""",1
+611,ability,[284],*,60,"""Vessel of Ruin""",1
+612,ability,[284],*,61,"""Vessel of Ruin""",1
+613,ability,[285],*,59,"""Sword of Ruin""",1
+614,ability,[285],*,60,"""Sword of Ruin""",1
+615,ability,[285],*,61,"""Sword of Ruin""",1
+616,ability,[286],*,60,"""Tablets of Ruin""",1
+617,ability,[286],*,61,"""Tablets of Ruin""",1
+618,ability,[287],*,60,"""Beads of Ruin""",1
+619,ability,[287],*,61,"""Beads of Ruin""",1
+620,ability,[288],*,59,"""Orichalcum Pulse""",1
+621,ability,[288],*,60,"""Orichalcum Pulse""",1
+622,ability,[288],*,61,"""Orichalcum Pulse""",1
+623,ability,[289],*,59,"""Hadron Engine""",1
+624,ability,[289],*,60,"""Hadron Engine""",1
+625,ability,[289],*,61,"""Hadron Engine""",1
+626,ability,[28],*,59,"""Synchronize""",1
+627,ability,[28],*,60,"""Synchronize""",1
+628,ability,[28],*,61,"""Synchronize""",1
+629,ability,[290],*,59,"""Opportunist""",1
+630,ability,[290],*,60,"""Opportunist""",1
+631,ability,[290],*,61,"""Opportunist""",1
+632,ability,[291],*,59,"""Cud Chew""",1
+633,ability,[291],*,60,"""Cud Chew""",1
+634,ability,[291],*,61,"""Cud Chew""",1
+635,ability,[292],*,59,"""Sharpness""",1
+636,ability,[292],*,60,"""Sharpness""",1
+637,ability,[292],*,61,"""Sharpness""",1
+638,ability,[293],*,59,"""Supreme Overlord""",1
+639,ability,[293],*,60,"""Supreme Overlord""",1
+640,ability,[293],*,61,"""Supreme Overlord""",1
+641,ability,[294],*,59,"""Costar""",1
+642,ability,[294],*,60,"""Costar""",1
+643,ability,[294],*,61,"""Costar""",1
+644,ability,[295],*,59,"""Toxic Debris""",1
+645,ability,[295],*,60,"""Toxic Debris""",1
+646,ability,[295],*,61,"""Toxic Debris""",1
+647,ability,[296],*,59,"""Armor Tail""",1
+648,ability,[296],*,60,"""Armor Tail""",1
+649,ability,[296],*,61,"""Armor Tail""",1
+650,ability,[297],*,59,"""Earth Eater""",1
+651,ability,[297],*,60,"""Earth Eater""",1
+652,ability,[297],*,61,"""Earth Eater""",1
+653,ability,[298],*,59,"""Mycelium Might""",1
+654,ability,[298],*,60,"""Mycelium Might""",1
+655,ability,[298],*,61,"""Mycelium Might""",1
+656,ability,[299],*,59,"""Mind's Eye""",1
+657,ability,[299],*,60,"""Mind’s Eye""",1
+658,ability,[299],*,61,"""Mind’s Eye""",1
+659,ability,[29],*,59,"""Clear Body""",1
+660,ability,[29],*,60,"""Clear Body""",1
+661,ability,[29],*,61,"""Clear Body""",1
+662,ability,[2],*,59,"""Drizzle""",1
+663,ability,[2],*,60,"""Drizzle""",1
+664,ability,[2],*,61,"""Drizzle""",1
+665,ability,[300],*,59,"""Supersweet Syrup""",1
+666,ability,[300],*,60,"""Supersweet Syrup""",1
+667,ability,[300],*,61,"""Supersweet Syrup""",1
+668,ability,[301],*,59,"""Hospitality""",1
+669,ability,[301],*,60,"""Hospitality""",1
+670,ability,[301],*,61,"""Hospitality""",1
+671,ability,[302],*,59,"""Toxic Chain""",1
+672,ability,[302],*,60,"""Toxic Chain""",1
+673,ability,[302],*,61,"""Toxic Chain""",1
+674,ability,[303],*,59,"""Embody Aspect""",1
+675,ability,[303],*,60,"""Embody Aspect""",1
+676,ability,[303],*,61,"""Embody Aspect""",1
+677,ability,[304],*,59,"""Tera Shift""",1
+678,ability,[304],*,60,"""Tera Shift""",1
+679,ability,[304],*,61,"""Tera Shift""",1
+680,ability,[305],*,59,"""Tera Shell""",1
+681,ability,[305],*,60,"""Tera Shell""",1
+682,ability,[305],*,61,"""Tera Shell""",1
+683,ability,[306],*,59,"""Teraform Zero""",1
+684,ability,[306],*,60,"""Teraform Zero""",1
+685,ability,[306],*,61,"""Teraform Zero""",1
+686,ability,[307],*,59,"""Poison Puppeteer""",1
+687,ability,[307],*,60,"""Poison Puppeteer""",1
+688,ability,[307],*,61,"""Poison Puppeteer""",1
+689,ability,[30],*,59,"""Natural Cure""",1
+690,ability,[30],*,60,"""Natural Cure""",1
+691,ability,[30],*,61,"""Natural Cure""",1
+692,ability,[31],*,59,"""Lightning Rod""",1
+693,ability,[31],*,60,"""Lightning Rod""",1
+694,ability,[31],*,61,"""Lightning Rod""",1
+695,ability,[32],*,59,"""Serene Grace""",1
+696,ability,[32],*,60,"""Serene Grace""",1
+697,ability,[32],*,61,"""Serene Grace""",1
+698,ability,[33],*,59,"""Swift Swim""",1
+699,ability,[33],*,60,"""Swift Swim""",1
+700,ability,[33],*,61,"""Swift Swim""",1
+701,ability,[34],*,59,"""Chlorophyll""",1
+702,ability,[34],*,60,"""Chlorophyll""",1
+703,ability,[34],*,61,"""Chlorophyll""",1
+704,ability,[35],*,59,"""Illuminate""",1
+705,ability,[35],*,60,"""Illuminate""",1
+706,ability,[35],*,61,"""Illuminate""",1
+707,ability,[36],*,59,"""Trace""",1
+708,ability,[36],*,60,"""Trace""",1
+709,ability,[36],*,61,"""Trace""",1
+710,ability,[37],*,59,"""Huge Power""",1
+711,ability,[37],*,60,"""Huge Power""",1
+712,ability,[37],*,61,"""Huge Power""",1
+713,ability,[38],*,59,"""Poison Point""",1
+714,ability,[38],*,60,"""Poison Point""",1
+715,ability,[38],*,61,"""Poison Point""",1
+716,ability,[39],*,59,"""Inner Focus""",1
+717,ability,[39],*,60,"""Inner Focus""",1
+718,ability,[39],*,61,"""Inner Focus""",1
+719,ability,[3],*,59,"""Speed Boost""",1
+720,ability,[3],*,60,"""Speed Boost""",1
+721,ability,[3],*,61,"""Speed Boost""",1
+722,ability,[40],*,59,"""Magma Armor""",1
+723,ability,[40],*,60,"""Magma Armor""",1
+724,ability,[40],*,61,"""Magma Armor""",1
+725,ability,[41],*,59,"""Water Veil""",1
+726,ability,[41],*,60,"""Water Veil""",1
+727,ability,[41],*,61,"""Water Veil""",1
+728,ability,[42],*,59,"""Magnet Pull""",1
+729,ability,[42],*,60,"""Magnet Pull""",1
+730,ability,[42],*,61,"""Magnet Pull""",1
+731,ability,[43],*,59,"""Soundproof""",1
+732,ability,[43],*,60,"""Soundproof""",1
+733,ability,[43],*,61,"""Soundproof""",1
+734,ability,[44],*,59,"""Rain Dish""",1
+735,ability,[44],*,60,"""Rain Dish""",1
+736,ability,[44],*,61,"""Rain Dish""",1
+737,ability,[45],*,59,"""Sand Stream""",1
+738,ability,[45],*,60,"""Sand Stream""",1
+739,ability,[45],*,61,"""Sand Stream""",1
+740,ability,[46],*,59,"""Pressure""",1
+741,ability,[46],*,60,"""Pressure""",1
+742,ability,[46],*,61,"""Pressure""",1
+743,ability,[47],*,59,"""Thick Fat""",1
+744,ability,[47],*,60,"""Thick Fat""",1
+745,ability,[47],*,61,"""Thick Fat""",1
+746,ability,[48],*,59,"""Early Bird""",1
+747,ability,[48],*,60,"""Early Bird""",1
+748,ability,[48],*,61,"""Early Bird""",1
+749,ability,[49],*,59,"""Flame Body""",1
+750,ability,[49],*,60,"""Flame Body""",1
+751,ability,[49],*,61,"""Flame Body""",1
+752,ability,[4],*,59,"""Battle Armor""",1
+753,ability,[4],*,60,"""Battle Armor""",1
+754,ability,[4],*,61,"""Battle Armor""",1
+755,ability,[50],*,59,"""Run Away""",1
+756,ability,[50],*,60,"""Run Away""",1
+757,ability,[50],*,61,"""Run Away""",1
+758,ability,[51],*,59,"""Keen Eye""",1
+759,ability,[51],*,60,"""Keen Eye""",1
+760,ability,[51],*,61,"""Keen Eye""",1
+761,ability,[52],*,59,"""Hyper Cutter""",1
+762,ability,[52],*,60,"""Hyper Cutter""",1
+763,ability,[52],*,61,"""Hyper Cutter""",1
+764,ability,[53],*,59,"""Pickup""",1
+765,ability,[53],*,60,"""Pickup""",1
+766,ability,[53],*,61,"""Pickup""",1
+767,ability,[54],*,59,"""Truant""",1
+768,ability,[54],*,60,"""Truant""",1
+769,ability,[54],*,61,"""Truant""",1
+770,ability,[55],*,59,"""Hustle""",1
+771,ability,[55],*,60,"""Hustle""",1
+772,ability,[55],*,61,"""Hustle""",1
+773,ability,[56],*,59,"""Cute Charm""",1
+774,ability,[56],*,60,"""Cute Charm""",1
+775,ability,[56],*,61,"""Cute Charm""",1
+776,ability,[57],*,59,"""Plus""",1
+777,ability,[57],*,60,"""Plus""",1
+778,ability,[57],*,61,"""Plus""",1
+779,ability,[58],*,59,"""Minus""",1
+780,ability,[58],*,60,"""Minus""",1
+781,ability,[58],*,61,"""Minus""",1
+782,ability,[59],*,59,"""Forecast""",1
+783,ability,[59],*,60,"""Forecast""",1
+784,ability,[59],*,61,"""Forecast""",1
+785,ability,[5],*,59,"""Sturdy""",1
+786,ability,[5],*,60,"""Sturdy""",1
+787,ability,[5],*,61,"""Sturdy""",1
+788,ability,[60],*,59,"""Sticky Hold""",1
+789,ability,[60],*,60,"""Sticky Hold""",1
+790,ability,[60],*,61,"""Sticky Hold""",1
+791,ability,[61],*,59,"""Shed Skin""",1
+792,ability,[61],*,60,"""Shed Skin""",1
+793,ability,[61],*,61,"""Shed Skin""",1
+794,ability,[62],*,59,"""Guts""",1
+795,ability,[62],*,60,"""Guts""",1
+796,ability,[62],*,61,"""Guts""",1
+797,ability,[63],*,59,"""Marvel Scale""",1
+798,ability,[63],*,60,"""Marvel Scale""",1
+799,ability,[63],*,61,"""Marvel Scale""",1
+800,ability,[64],*,59,"""Liquid Ooze""",1
+801,ability,[64],*,60,"""Liquid Ooze""",1
+802,ability,[64],*,61,"""Liquid Ooze""",1
+803,ability,[65],*,59,"""Overgrow""",1
+804,ability,[65],*,60,"""Overgrow""",1
+805,ability,[65],*,61,"""Overgrow""",1
+806,ability,[66],*,59,"""Blaze""",1
+807,ability,[66],*,60,"""Blaze""",1
+808,ability,[66],*,61,"""Blaze""",1
+809,ability,[67],*,59,"""Torrent""",1
+810,ability,[67],*,60,"""Torrent""",1
+811,ability,[67],*,61,"""Torrent""",1
+812,ability,[68],*,59,"""Swarm""",1
+813,ability,[68],*,60,"""Swarm""",1
+814,ability,[68],*,61,"""Swarm""",1
+815,ability,[69],*,59,"""Rock Head""",1
+816,ability,[69],*,60,"""Rock Head""",1
+817,ability,[69],*,61,"""Rock Head""",1
+818,ability,[6],*,59,"""Damp""",1
+819,ability,[6],*,60,"""Damp""",1
+820,ability,[6],*,61,"""Damp""",1
+821,ability,[70],*,59,"""Drought""",1
+822,ability,[70],*,60,"""Drought""",1
+823,ability,[70],*,61,"""Drought""",1
+824,ability,[71],*,59,"""Arena Trap""",1
+825,ability,[71],*,60,"""Arena Trap""",1
+826,ability,[71],*,61,"""Arena Trap""",1
+827,ability,[72],*,59,"""Vital Spirit""",1
+828,ability,[72],*,60,"""Vital Spirit""",1
+829,ability,[72],*,61,"""Vital Spirit""",1
+830,ability,[73],*,59,"""White Smoke""",1
+831,ability,[73],*,60,"""White Smoke""",1
+832,ability,[73],*,61,"""White Smoke""",1
+833,ability,[74],*,59,"""Pure Power""",1
+834,ability,[74],*,60,"""Pure Power""",1
+835,ability,[74],*,61,"""Pure Power""",1
+836,ability,[75],*,59,"""Shell Armor""",1
+837,ability,[75],*,60,"""Shell Armor""",1
+838,ability,[75],*,61,"""Shell Armor""",1
+839,ability,[76],*,59,"""Air Lock""",1
+840,ability,[76],*,60,"""Air Lock""",1
+841,ability,[76],*,61,"""Air Lock""",1
+842,ability,[77],*,59,"""Tangled Feet""",1
+843,ability,[77],*,60,"""Tangled Feet""",1
+844,ability,[77],*,61,"""Tangled Feet""",1
+845,ability,[78],*,59,"""Motor Drive""",1
+846,ability,[78],*,60,"""Motor Drive""",1
+847,ability,[78],*,61,"""Motor Drive""",1
+848,ability,[79],*,59,"""Rivalry""",1
+849,ability,[79],*,60,"""Rivalry""",1
+850,ability,[79],*,61,"""Rivalry""",1
+851,ability,[7],*,59,"""Limber""",1
+852,ability,[7],*,60,"""Limber""",1
+853,ability,[7],*,61,"""Limber""",1
+854,ability,[80],*,59,"""Steadfast""",1
+855,ability,[80],*,60,"""Steadfast""",1
+856,ability,[80],*,61,"""Steadfast""",1
+857,ability,[81],*,59,"""Snow Cloak""",1
+858,ability,[81],*,60,"""Snow Cloak""",1
+859,ability,[81],*,61,"""Snow Cloak""",1
+860,ability,[82],*,59,"""Gluttony""",1
+861,ability,[82],*,60,"""Gluttony""",1
+862,ability,[82],*,61,"""Gluttony""",1
+863,ability,[83],*,59,"""Anger Point""",1
+864,ability,[83],*,60,"""Anger Point""",1
+865,ability,[83],*,61,"""Anger Point""",1
+866,ability,[84],*,59,"""Unburden""",1
+867,ability,[84],*,60,"""Unburden""",1
+868,ability,[84],*,61,"""Unburden""",1
+869,ability,[85],*,59,"""Heatproof""",1
+870,ability,[85],*,60,"""Heatproof""",1
+871,ability,[85],*,61,"""Heatproof""",1
+872,ability,[86],*,59,"""Simple""",1
+873,ability,[86],*,60,"""Simple""",1
+874,ability,[86],*,61,"""Simple""",1
+875,ability,[87],*,59,"""Dry Skin""",1
+876,ability,[87],*,60,"""Dry Skin""",1
+877,ability,[87],*,61,"""Dry Skin""",1
+878,ability,[88],*,59,"""Download""",1
+879,ability,[88],*,60,"""Download""",1
+880,ability,[88],*,61,"""Download""",1
+881,ability,[89],*,59,"""Iron Fist""",1
+882,ability,[89],*,60,"""Iron Fist""",1
+883,ability,[89],*,61,"""Iron Fist""",1
+884,ability,[8],*,59,"""Sand Veil""",1
+885,ability,[8],*,60,"""Sand Veil""",1
+886,ability,[8],*,61,"""Sand Veil""",1
+887,ability,[90],*,59,"""Poison Heal""",1
+888,ability,[90],*,60,"""Poison Heal""",1
+889,ability,[90],*,61,"""Poison Heal""",1
+890,ability,[91],*,59,"""Adaptability""",1
+891,ability,[91],*,60,"""Adaptability""",1
+892,ability,[91],*,61,"""Adaptability""",1
+893,ability,[92],*,59,"""Skill Link""",1
+894,ability,[92],*,60,"""Skill Link""",1
+895,ability,[92],*,61,"""Skill Link""",1
+896,ability,[93],*,59,"""Hydration""",1
+897,ability,[93],*,60,"""Hydration""",1
+898,ability,[93],*,61,"""Hydration""",1
+899,ability,[94],*,59,"""Solar Power""",1
+900,ability,[94],*,60,"""Solar Power""",1
+901,ability,[94],*,61,"""Solar Power""",1
+902,ability,[95],*,59,"""Quick Feet""",1
+903,ability,[95],*,60,"""Quick Feet""",1
+904,ability,[95],*,61,"""Quick Feet""",1
+905,ability,[96],*,59,"""Normalize""",1
+906,ability,[96],*,60,"""Normalize""",1
+907,ability,[96],*,61,"""Normalize""",1
+908,ability,[97],*,59,"""Sniper""",1
+909,ability,[97],*,60,"""Sniper""",1
+910,ability,[97],*,61,"""Sniper""",1
+911,ability,[98],*,59,"""Magic Guard""",1
+912,ability,[98],*,60,"""Magic Guard""",1
+913,ability,[98],*,61,"""Magic Guard""",1
+914,ability,[99],*,59,"""No Guard""",1
+915,ability,[99],*,60,"""No Guard""",1
+916,ability,[99],*,61,"""No Guard""",1
+917,ability,[9],*,59,"""Static""",1
+918,ability,[9],*,60,"""Static""",1
+919,ability,[9],*,61,"""Static""",1
