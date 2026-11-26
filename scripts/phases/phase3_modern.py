@@ -353,6 +353,24 @@ def mod_record(x, dk):
             if loc: madd(f, v, loc, m, lo_, hi_, shiny=x.get("Shiny"), alpha=x.get("IsAlpha"), extra=ext)
         if not loc: p3_mod_skip[f"{dk}:static-no-place"] += 1
 
+# Mystery Gift database of PKHeX (generations 4+): an event for every version of the games of the card's generation,
+# narrowed to the versions PKHeX names when it names some of that generation
+EV_CTX = {"Gen4": ["dp", "pt", "hgss"], "Gen5": ["bw", "b2w2"], "Gen6": ["xy", "oras"], "Gen7": ["sm", "usum"], "Gen7b": ["lgpe"],
+          "Gen8": ["sw"], "Gen8b": ["bdsp"], "Gen8a": ["la"], "Gen9": ["sv"], "Gen9a": ["za"]}
+EV_SRC = set()
+_evf = DUMP / "events.json"
+d_pkxev = doc("pkhex", f"{PKXREV} · EncounterEvent MGDB (events.json)", PKXREV, file_sha(_evf)) if _evf.exists() else None
+for x in (json.load(open(_evf, encoding="utf-8")) if _evf.exists() else []):
+    sp, fi = x.get("Species", 0), x.get("Form", 0)
+    games = [g for g in EV_CTX.get(x.get("Context"), []) if g in P3_GAMES]
+    if not sp or not games: continue
+    allv = [v for g in games for v in VERSIONS_OF[g]]
+    named = [v for v in PKXV.get(x.get("Version") or "", []) if v in allv] if x.get("_type") != "PCD" else []
+    if x.get("_type") == "WC8" and x.get("RestrictVersion") in (1, 2): named = [["sword"], ["shield"]][x["RestrictVersion"] - 1]
+    for v in (named or allv):
+        for f in mforms(sp, fi, GAME_OF_VERSION[v], False):
+            AVAIL_SRC[(f, v)].add("event"); EV_SRC.add((f, v))
+
 COLLAPSIBLE = {"weather", "time"}
 def collapse(entries, universe):
     """entries: label(tuple of (dim, value)) -> [lo, hi]. Drop a dimension when every value of the set appears with the same levels."""

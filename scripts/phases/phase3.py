@@ -662,6 +662,10 @@ for g in P3_GAMES:
     ST_ALL[g] = st
 def native_any(o, f): return any(ST_ALL[o][ov].get(f, set()) & NATIVE or "event" in src_of(o, ov, f) for ov in VERSIONS_OF[o])
 FINAL = {}     # (g, v, f) -> statuses (for the transfer closure)
+_fh = out["form"][0]
+FORM_INFO = {r[0]: (str(r[_fh.index("is_default")]), str(r[_fh.index("is_battle_only")]), r[_fh.index("base_form_id")] or None) for r in out["form"][1]}
+DEFAULT_FORM = {int(r[_fh.index("species_id")]): r[0] for r in out["form"][1] if str(r[_fh.index("is_default")]) == "1"}
+p3_formchange = collections.Counter()
 TRANSFERS = collections.defaultdict(dict)
 order = sorted(P3_GAMES, key=lambda g: (P3_GEN[g], GAME_ORDER.get(g, 0)))
 for g in order:
@@ -691,6 +695,12 @@ for g in order:
             if "event" in src_of(g, v, f): stats.add("event")
             if not stats: stats.add("unobtainable")
             FINAL[(g, v, f)] = stats
+            if stats == {"unobtainable"} and f in FORM_INFO and FORM_INFO[f][0] == "0":
+                # forms reached by a change of form (battle-only forms, Rotom's appliances, Burmy's cloaks…): the schema has
+                # no status for them → no row (counted, reported)
+                base_ = FORM_INFO[f][2] or DEFAULT_FORM.get(sp_of[f])
+                if FORM_INFO[f][1] == "1": p3_formchange[(g, "battle-only")] += 1; continue
+                if base_ and FINAL.get((g, v, base_), set()) - {"unobtainable"}: p3_formchange[(g, "form-change")] += 1; continue
             dexes = set().union(*(dex_of_game[x] for x in DLC_CHAIN.get(g, [g])))
             dex = 1 if any(sp_of[f] in in_dex[d_] for d_ in dexes) else 0
             for status in sorted(stats):
@@ -704,7 +714,9 @@ for g in order:
                 avail_rows.append([f, v, status, detail, dex])
                 rk = row_key(f, v, status)
                 val = canon([status, detail, dex])
-                citations.append(("availability", rk, "*", d_pkxenc[DKEY[g]], canon({"status": status, "detail": detail}), 1))
+                citations.append(("availability", rk, "*", d_pkxev if (status == "event" and (f, v) in EV_SRC and not any(
+                    "event" in AVAIL_SRC.get((f, vv), set()) and (f, vv) not in EV_SRC for vv in chain_versions(g, v))) else d_pkxenc[DKEY[g]],
+                                  canon({"status": status, "detail": detail}), 1))
                 verifs.append(("availability", rk, "*", "game-data", sha256_text(val), sha256_text(f"pkhex:{val}")))
                 p3_avail[(g, status)] += 1
 
@@ -804,7 +816,7 @@ P3_STATS = dict(games=P3_GAMES, locations=len(location_rows), encounters=len(enc
                 legacy_mapped=len(legacy), legacy_unmatched=dict(p3_legacy_unmatched.most_common()),
                 modern_skipped=dict(p3_mod_skip), modern_locations={h: len({l for l, srcs in MLOC_SRC.items() if any(x[2] == h for x in srcs)})
                                                                     for h in ("pokeapi-index", "pokeapi-name", "created")},
-                created_locations=sorted(MLOC_NEW), form_skips={f"{a}:{b}:{c}:{d}": n for (a, b, c, d), n in sorted(P3_FORMSKIP.items(), key=str)})
+                created_locations=sorted(MLOC_NEW), form_change_omitted={f"{g}:{k}": n for (g, k), n in sorted(p3_formchange.items())}, form_skips={f"{a}:{b}:{c}:{d}": n for (a, b, c, d), n in sorted(P3_FORMSKIP.items(), key=str)})
 json.dump(P3_STATS, open(ROOT / "reports/phase3-details.json", "w"), ensure_ascii=False, indent=0)
 print("phase3", json.dumps({k: v for k, v in P3_STATS.items() if k not in ("agreement", "legacy_unmatched", "trades_unplaced", "statics_unplaced", "unconfirmed_templates", "created_locations", "form_skips")}, ensure_ascii=False))
 if os.environ.get("P3_DRY"): sys.exit(0)

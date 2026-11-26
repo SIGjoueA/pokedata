@@ -16,6 +16,7 @@ var tables = new (string id, IPersonalTable t, EntityContext ctx)[] {
 var langs = new[] { "ja", "en", "fr", "de", "it", "es", "es-419", "ko", "zh-Hans", "zh-Hant" };
 var outDir = args.Length > 0 ? args[0] : "out";
 Directory.CreateDirectory(outDir);
+if (args.Length > 1 && args[1] == "events") { Events.Run(outDir); return; }   // Mystery Gift database only
 var en = GameInfo.GetStrings("en");
 foreach (var (id, t, ctx) in tables) {
   var rows = new List<object>();
@@ -53,6 +54,7 @@ File.WriteAllText(Path.Combine(outDir, "names.json"), JsonSerializer.Serialize(n
 Console.WriteLine("names ok");
 Extra.Run(outDir);
 Encounters.Run(outDir);
+Events.Run(outDir);
 
 // ---------------------------------------------------------------- phase 1b / 2 extractions
 static Dictionary<string, int> Dex(IPersonalInfo p) {

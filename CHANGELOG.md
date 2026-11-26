@@ -3,6 +3,13 @@
 Généré depuis `db/data/update_log.csv` par `scripts/changelog.py`. Le détail ligne à ligne est dans `update_log_item` (base SQLite) et `api/v1/meta/changelog.json`.
 
 
+## 2026.11.26.3 — Phase 3 (lot 3 : 4e génération — Diamant/Perle, Platine, HeartGold/SoulSilver)
+
+- Type : release · schéma 1.2.0 · 2026-11-26T06:49:44Z → 2026-11-26T06:49:44Z (UTC)
+- Import et vérification : 1025 espèces, 1588 formes, 17497 lignes forme×jeu, 589 évolutions, 7460 entrées de Pokédex régionaux, 920 capacités, 7817 lignes capacité×jeu, 2061 CT/CS/DT, 645613 lignes de movesets, 294 lieux, 15084 rencontres, 10333 lignes de disponibilité, 48779 traductions ; 2253 écarts notés ; 9235 données (re)vérifiées.
+- Statuts de vérification : disputed 87, game-data 184693, majority 188, manual 423, single-source 3, unanimous 46649
+- Lignes : species 1025, form 1588, form_game 17497, form_ability 31012, ability 307, evolution 589, evolution_method 7541, pokedex_entry 7460, item 44, move 920, move_game 7817, machine 2061, learnset 645613, location 294, encounter 15084, availability 10333, shiny_rule 10, translation 48779, discrepancy 2253
+
 ## 2026.11.26.2 — Phase 3 (lot 2 : 3e génération — Rubis/Saphir, Émeraude, Rouge Feu/Vert Feuille ; statut npc-trade)
 
 - Type : release · schéma 1.2.0 · 2026-11-26T06:35:38Z → 2026-11-26T06:35:38Z (UTC)

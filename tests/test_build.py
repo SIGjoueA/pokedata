@@ -174,6 +174,28 @@ class Api(unittest.TestCase):
         self.assertIn(("transfer", "time-capsule:rb,y"), q("SELECT status, detail FROM availability WHERE form_id='1' AND version_id='gold'"))
         self.assertEqual(q("SELECT COUNT(*) FROM availability WHERE form_id LIKE '201-%' AND version_id='gold' AND status='wild'"), [(25,)])   # every Unown letter
         self.assertEqual(q("SELECT DISTINCT json_extract(extra,'$.shiny') FROM encounter WHERE form_id='130' AND area_id='lake-of-rage' AND method_id='static'"), [("always",)])
+        # schema 1.2.0: in-game trades have their own status; Raichu in Yellow needs a trade (the starter Pikachu cannot evolve)
+        self.assertIn(("npc-trade",), q("SELECT status FROM availability WHERE form_id='108' AND version_id='red'"))
+        self.assertFalse(q("SELECT 1 FROM availability WHERE status='gift' AND ',' || detail || ',' LIKE '%,npc-trade,%'"))
+        self.assertEqual(q("SELECT status, detail FROM availability WHERE form_id='26' AND version_id='yellow' ORDER BY status"),
+                         [("trade-version-exclusive", "from:rb"), ("transfer", "time-capsule:c,gs")])
+        games = {r[0] for r in q("SELECT DISTINCT v.game_id FROM encounter e JOIN version v ON v.id=e.version_id")}
+        if "rs" in games:   # lot 2: generation 3 (the met location stored by the game)
+            self.assertEqual(q("SELECT min_level, max_level FROM encounter WHERE form_id='261' AND version_id='ruby' AND area_id='hoenn-route-101' AND method_id='walk'"), [(2, 3)])
+            self.assertEqual(q("SELECT area_id FROM encounter WHERE form_id='349' AND version_id='ruby' AND method_id='feebas-tile-fishing'"), [("hoenn-route-119",)])
+            self.assertEqual(q("SELECT area_id FROM encounter WHERE form_id='101' AND version_id='ruby' AND method_id='static'"), [("team-magma-hideout",)])
+            self.assertIn(("event",), q("SELECT status FROM availability WHERE form_id='386-attack' AND version_id='firered'"))   # Aurora Ticket
+            self.assertEqual(q("SELECT json_extract(extra,'$.access') FROM encounter WHERE form_id='386-attack' AND version_id='firered'"), [("event-item",)])
+            self.assertEqual(q("SELECT detail FROM availability WHERE form_id='252' AND version_id='firered' AND status='trade-version-exclusive'"), [("from:e,rs",)])
+            self.assertEqual(q("SELECT odds FROM shiny_rule WHERE game_id='rs' AND method='base'"), [("1/8192",)])
+            self.assertTrue(q("SELECT 1 FROM location WHERE id='underwater-route-124' AND pokeapi_id IS NULL"))   # created from the game's list
+        if "dp" in games:   # lot 3: generation 4
+            self.assertEqual(q("SELECT min_level, max_level FROM encounter WHERE form_id='396' AND version_id='diamond' AND area_id='sinnoh-route-201' AND method_id='walk'"), [(2, 3)])
+            self.assertEqual(q("SELECT area_id, min_level FROM encounter WHERE form_id='483' AND version_id='diamond' AND method_id='static'"), [("spear-pillar", 47)])
+            self.assertIn(("transfer", "pal-park:rs,e,frlg"), q("SELECT status, detail FROM availability WHERE form_id='252' AND version_id='diamond'"))
+            self.assertTrue(q("SELECT 1 FROM availability a JOIN version v ON v.id=a.version_id WHERE v.game_id='hgss' AND status='gift' AND detail='pokewalker'"))
+            self.assertIn(("event",), q("SELECT status FROM availability WHERE form_id='493' AND version_id='diamond'"))   # Mystery Gift (PKHeX MGDB)
+            self.assertEqual(q("SELECT odds FROM shiny_rule WHERE game_id='hgss' AND method='base'"), [("1/8192",)])
         self.assertEqual(q("SELECT odds FROM shiny_rule WHERE game_id='gs' AND method='base'"), [("1/8192",)])
         # place names follow game_language for the games covered
         self.assertEqual(q("""SELECT COUNT(*) FROM location_game lg JOIN game_language gl ON gl.game_id=lg.game_id

@@ -1024,3 +1024,5 @@ id,source_id,locator,revision,retrieved_at,content_sha256
 1023,bulbapedia,https://bulbapedia.bulbagarden.net/wiki/Shiny_Pok%C3%A9mon (oldid 4674998),4674998,2026-11-26T05:44:27Z,9bfb34e480c6cfbfa5226e8f760cdc8962fe53c8034ebc22370bec56b8fdd02a
 1024,pokepedia,https://www.pokepedia.fr/Pok%C3%A9mon_chromatique (oldid 3623845),3623845,2026-11-26T05:44:27Z,05ec3647985930bb3a41c141e2f2cd72bb5def2caefe47f308afade8bbb7ffd4
 1025,pkhex,PKHeX.Core 26.10.18 · Encounters3 (encounters_3.json),PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,fd03479fdf3ad0ddd117fa5777c77338ec118474022fca9134949f4630cf8c21
+1026,pkhex,PKHeX.Core 26.10.18 · Encounters4 (encounters_4.json),PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,827d0f670a41104e481f04399d923d0f6a42e55feae3304a4d89f1a2c14fa838
+1027,pkhex,PKHeX.Core 26.10.18 · EncounterEvent MGDB (events.json),PKHeX.Core 26.10.18,2026-11-25T19:57:08Z,87820eea971f4a37d6339c4fb51185509a477d449732b8b80ab8f857e8e1be72
